@@ -1,4 +1,11 @@
 var project_collection_name = "gestrich_index"
+const annoUrl = "https://anno.onb.ac.at/cgi-content/anno?aid=wrz&datum="
+
+function makeAnnoLink(hit) {
+    let hitDate = hit.day;
+    let hitPage = hit.page;
+    return `${annoUrl}${hitDate}&seite=${hitPage}`
+}
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     server: {
         apiKey: "jgQAkG16CRrqpASNqV0Zn8xUNtZ5nq96",
@@ -11,7 +18,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
         ],
     },
     additionalSearchParameters: {
-        query_by: "full_text",
+        query_by: "full_text,extra_full_text",
     },
 });
 
@@ -42,11 +49,11 @@ search.addWidgets([
             empty: "Keine Resultate für <q>{{ query }}</q>",
             item(hit, { html, components }) {
                 return html` 
-            <h2><a href='${hit.rec_id}'>${hit.title}</a></h2>
-            <h3>${hit.title}</h3>
+            <h3><a href='${makeAnnoLink(hit)}'>${hit.title}</a></h3>
             <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
-            
-            ${hit.places.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-info">${item.title}</span></a>`)} 
+            <p>${hit.places.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-info">${item}</span></a>`)}
+            ${hit.keywords.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-success">${item}</span></a>`)}</p>
+            <p><small>sonstige Schlagworte:</small> ${hit.extra_full_text}</p>
             `;
             },
         },
@@ -76,22 +83,21 @@ search.addWidgets([
         },
     }),
 
-    // instantsearch.widgets.refinementList({
-    //     container: "#refinement-list-related-persons",
-    //     attribute: "case.related_persons.name_and_role",
-    //     searchable: true,
-    //     searchablePlaceholder: "Suchen",
-    //     cssClasses: {
-    //         searchableInput: "form-control form-control-sm m-2 border-light-2",
-    //         searchableSubmit: "d-none",
-    //         searchableReset: "d-none",
-    //         showMore: "btn btn-secondary btn-sm align-content-center",
-    //         list: "list-unstyled",
-    //         count: "badge m-2 badge-secondary hideme ",
-    //         label: "d-flex align-items-center text-capitalize",
-    //         checkbox: "m-2",
-    //     },
-    // }),
+    instantsearch.widgets.refinementList({
+        container: "#has-fulltext",
+        attribute: "has_fulltext",
+        searchable: false,
+        cssClasses: {
+            searchableInput: "form-control form-control-sm m-2 border-light-2",
+            searchableSubmit: "d-none",
+            searchableReset: "d-none",
+            showMore: "btn btn-secondary btn-sm align-content-center",
+            list: "list-unstyled",
+            count: "badge m-2 badge-secondary hideme ",
+            label: "d-flex align-items-center text-capitalize",
+            checkbox: "m-2",
+        },
+    }),
 
     instantsearch.widgets.refinementList({
         container: "#refinement-list-keywords",
@@ -163,33 +169,33 @@ search.addWidgets([
     //     },
     // }),
 
-      instantsearch.widgets.rangeInput({
+    instantsearch.widgets.rangeInput({
         container: "#refinement-range-year",
         attribute: "year",
         templates: {
-          separatorText: "bis",
-          submitText: "Suchen",
+            separatorText: "bis",
+            submitText: "Suchen",
         },
         cssClasses: {
-          form: "form-inline",
-          input: "form-control",
-          submit: "btn",
+            form: "form-inline",
+            input: "form-control",
+            submit: "btn",
         },
-      }),
-    
-    //   instantsearch.widgets.rangeInput({
-    //     container: "#refinement-range-rel-docs",
-    //     attribute: "case.nr_of_docs",
-    //     templates: {
-    //       separatorText: "bis",
-    //       submitText: "Suchen",
-    //     },
-    //     cssClasses: {
-    //       form: "form-inline",
-    //       input: "form-control",
-    //       submit: "btn",
-    //     },
-    //   }),
+    }),
+
+    instantsearch.widgets.rangeInput({
+        container: "#refinement-article_count",
+        attribute: "article_count",
+        templates: {
+            separatorText: "bis",
+            submitText: "Suchen",
+        },
+        cssClasses: {
+            form: "form-inline",
+            input: "form-control",
+            submit: "btn",
+        },
+    }),
 
     instantsearch.widgets.pagination({
         container: "#pagination",
@@ -219,15 +225,15 @@ search.addWidgets([
         },
     }),
 
-    // instantsearch.widgets.sortBy({
-    //     container: "#sort-by",
-    //     items: [
-    //         { label: "Dokument (aufsteigend)", value: "legalkraus/sort/rec_id:asc" },
-    //         { label: "Dokument (absteigend)", value: "legalkraus/sort/rec_id:desc" },
-    //         { label: "Akt (aufsteigend)", value: "legalkraus/sort/case_id:asc" },
-    //         { label: "Akt (absteigende)", value: "legalkraus/sort/case_id:desc" },
-    //     ],
-    // }),
+    instantsearch.widgets.sortBy({
+        container: "#sort-by",
+        items: [
+            { label: "Jahr (aufsteigend)", value: "gestrich_index/sort/year:asc" },
+            { label: "Jahr (absteigend)", value: "gestrich_index/sort/year:desc" },
+            { label: "Laufende Nummer (aufsteigend)", value: "gestrich_index/sort/order_id:asc" },
+            { label: "Laufende Nummer (absteigende)", value: "gestrich_index/sort/order_id:desc" },
+        ],
+    }),
 
     instantsearch.widgets.configure({
         hitsPerPage: 20,
