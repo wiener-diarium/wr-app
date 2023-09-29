@@ -98,6 +98,21 @@ search.addWidgets([
             checkbox: "m-2",
         },
     }),
+    instantsearch.widgets.refinementList({
+        container: "#digitarium-issue",
+        attribute: "digitarium_issue",
+        searchable: false,
+        cssClasses: {
+            searchableInput: "form-control form-control-sm m-2 border-light-2",
+            searchableSubmit: "d-none",
+            searchableReset: "d-none",
+            showMore: "btn btn-secondary btn-sm align-content-center",
+            list: "list-unstyled",
+            count: "badge m-2 badge-secondary hideme ",
+            label: "d-flex align-items-center text-capitalize",
+            checkbox: "m-2",
+        },
+    }),
 
     instantsearch.widgets.refinementList({
         container: "#refinement-list-keywords",
@@ -230,8 +245,6 @@ search.addWidgets([
         items: [
             { label: "Jahr (aufsteigend)", value: "gestrich_index/sort/year:asc" },
             { label: "Jahr (absteigend)", value: "gestrich_index/sort/year:desc" },
-            { label: "Laufende Nummer (aufsteigend)", value: "gestrich_index/sort/order_id:asc" },
-            { label: "Laufende Nummer (absteigende)", value: "gestrich_index/sort/order_id:desc" },
         ],
     }),
 
