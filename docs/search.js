@@ -113,6 +113,21 @@ search.addWidgets([
             checkbox: "m-2",
         },
     }),
+    instantsearch.widgets.refinementList({
+        container: "#gestrich",
+        attribute: "gestrich",
+        searchable: false,
+        cssClasses: {
+            searchableInput: "form-control form-control-sm m-2 border-light-2",
+            searchableSubmit: "d-none",
+            searchableReset: "d-none",
+            showMore: "btn btn-secondary btn-sm align-content-center",
+            list: "list-unstyled",
+            count: "badge m-2 badge-secondary hideme ",
+            label: "d-flex align-items-center text-capitalize",
+            checkbox: "m-2",
+        },
+    }),
 
     instantsearch.widgets.refinementList({
         container: "#refinement-list-keywords",
