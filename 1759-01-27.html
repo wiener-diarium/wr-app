@@ -1,0 +1,1234 @@
+<html  class="h-100">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="Wiennerisches Diarium" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="msapplication-TileImage" content="images/logo.png" />
+      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any" />
+      <link rel="profile" href="http://gmpg.org/xfn/11" />
+      <title>Wiennerisches Diarium</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/micro-editor.css" type="text/css" />
+      <style>
+                    .navBarNavDropdown ul li:nth-child(2) {
+                        display: none !important;
+                    }
+                </style>
+   </head>
+   <body class="d-flex flex-column h-100">
+      <header>
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html">wrd</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a><ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="about.html">Über das Projekt</a></li>
+                           <li><a class="dropdown-item" href="imprint.html">Impressum</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="toc.html">Editionseinheiten</a></li>
+                     <li class="nav-item dropdown disabled"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a><ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="listperson.html">Personen</a></li>
+                           <li><a class="dropdown-item" href="listplace.html">Orte</a></li>
+                           <li><a class="dropdown-item" href="listorg.html">Organisationen</a></li>
+                           <li><a class="dropdown-item" href="listbibl.html">Werke</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a title="Suche" class="nav-link" href="search.html">Suche</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="flex-shrink-0">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-2 col-lg-2 col-sm-12"></div>
+               <div class="col-md-8 col-lg-8 col-sm-12">
+                  <h1 align="center">Wiennerisches Diarium</h1>
+                  <h3 align="center"><a href=""><i class="bi bi-download" title="TEI/XML"></i></a></h3>
+               </div>
+               <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right"></div>
+               <div id="editor-widget">
+                  <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                           <full-size opt="fls"></full-size>
+                        </li>
+                        <li class="dropdown-item">
+                           <image-switch opt="es"></image-switch>
+                        </li>
+                        <li class="dropdown-item">
+                           <font-size opt="fs"></font-size>
+                        </li>
+                        <li class="dropdown-item">
+                           <font-family opt="ff"></font-family>
+                        </li>
+                        <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
+                           <annotation-slider opt="ef"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="prs"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="plc"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="wrk"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="org"></annotation-slider>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            
+            <div id="div__1033">
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_1">1</span>
+               
+               
+               <p id="p__37" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Januarii 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Num. 8. Samstag den 27.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Mn
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />5
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  </p>
+               
+               
+               <p id="p__49" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vienerisches DIARIUM
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gedruckt in dem Kaiserl. Kön. privilegirten Zeitung=verlag und Buch=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />druckerey im neuen Michaeler=haus mit von Ghelischen Schriften.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Petersburg 2. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dacht, daß sich die dasige Einwohner ihr
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sen denen Küsten der Ost=see sind seit
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Schicksal gröstentheils selbst zuzuschreiben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />verwichenen Herbst viele Schif=brü=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />haben, indem sie die aus allerhöchster Kai=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />che geschehen. Unter denen verun=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />serl. Huld ihnen zugegebene=Salve Garden
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />glückten Schiffen befinden sich einige, die mit
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />öfters an die Preußische Trupen verrahten,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Lebens=mitteln und Fourage für die Rus=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und zu deren Aufhebung, wodurch dann
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sisch=kaiserliche Armee bestimmet waren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ihre eigene Sicherheit aufgehoben worden,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Es ist auch das Wasser zu Schusterbeck
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Anlaß gegeben. Wer die Wahrheit liebet,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dergestalt angeschwollen gewesen, daß die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der wird denen Rußischen Generals mit Recht
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Teiche durchgebrochen sind, und die Waf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nachrühmen, daß sie alles gethan, um die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fen=fabrique und die Münze, welche seit
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Cosacken durch Straffen im Zaum zu hal=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zwey Jahren unter Direction des Herrn
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ten; sie haben selbst deren Officiers nicht ver=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Grafens von Schuwalow daselbst angelegt
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schont, und verschiedene derselben haben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gewesen ist, grossen Schaden genommen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />durch ihre erlittene Bestraffung das Leben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />haben.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />eingebüsset.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Da man sich über mancherley Ausschweif=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Copenhagen 10. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fungen, die unsere Trupen in dem Bran=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Nunmehro ist das Friederichswerk zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />denburgischen Pommern und der Mark sol=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Vollkommenheit gebracht, daß es nicht
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />len verübet haben, so empfindlich beschwe=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />allein Sr. Königl. Majestät Dienst mit denen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ret hat, so hat man ohne Zweifel nicht be=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />erforderlichen Pulfer=sorten, sondern auch
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bey=
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_2">2</span>
+               
+               
+               <p id="p__24" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />beyde Reiche mit dem, was es daran braucht,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />versehen kan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Londen 5. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Da die seit 12. Jahren alhier graßirte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vieh=seuche, ein Ende genommen, und man
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />die mindeste Anzeichen davon nicht mehr
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wahrnihmt, so haben Se. Majestät der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />König befohlen, daß dieserwegen in allen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kirchen dem Allmächtigen ein Dank=opfer
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />abgestattet werden solle. Vorgestern hat der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hof einige Depeschen von der Alliirten Ar=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mee, wegen der Anstalten bekommen, die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />aldorten gemacht werden, solche Armee auf
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einen noch respectablern Fuß zu setzen, als
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sie seithero gewesen ist. Dem Versichern ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mäß, sind alle Operationen für die künftige
+                  </p>
+               
+               
+               <p id="p__22" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Campagne in Teutschland, wenigstens dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wesentlichen nach, zwischen unsern Hof und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />seinen Alliirten regulirt. Die Königliche
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Armee wird würklich bis auf 80000. Mann,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem gemachten Project zufolge, gesetzet wer=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den, allein es scheint dabey nicht, daß mehr
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />andere Hülfs=völker dazu kommen werden,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />als die schon dermalen dabey stehen, die je=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />doch ansehnlich vermehret werden sollen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zur Bezahlung der Groß=britannischen Tru=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />pen bey der Alliirten Armee, hat der Hof
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />eine grosse Geld=summa abgehen lassen; und
+                  </p>
+               
+               
+               <p id="p__25" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auf den 10. des künftigen Monats wer=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den ihnen neue Uniformen nachgeschicket
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />werden. Obgleich das Ministerium noch
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />keine directe Nachricht von der Weg=nahm
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />des Forts du Quesne am Ohio bekommen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hat, so melden doch alle aus der Gegend
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von dortigen Platz eingeloffene Briefe, daß
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />diese Sache seine Richtigkeit habe. Die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zeit aber, muß die beste Entscheidung allein
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hierinnen geben. Jn allen unsern See=häfen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wird ohne Unterlaß an dem Schif=bau, so
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wie zwey Monat her, mit gröstem Eifer an
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />denen Kriegs=zurüstungen gearbeitet: und
+                  </p>
+               
+               
+               <p id="p__24" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gegen das Ende dieses Monats, wird von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Portsmouth aus, eine Escadre von 10. Linien=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Schiffen, verschiedenen Fregatten, Brandern,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bombardier=galiotten und einer grossen An=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zahl Transport=schiffen mit Trupen am
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bord, unter Seegel gehen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Verschiedene von denen Kriegs=schiffen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />so seit Anfang dieses Kriegs gedienet ha=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ben, sind ausser Commißion gesetzet worden,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />an deren statt aber neue Schiffe von glei=
+                  </p>
+               
+               
+               <p id="p__29" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />chem Rang kommen werden. Die Unter=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nehmung, womit der Chef d'Escadre Hug=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hes beladen ist, muß sehr wichtig, und die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zu Reußirung derselben genommene nöhtige
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Anstalten, müssen sehr wol abgefast seyn,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />weilen man vieles darauf baut, daß man
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />noch in dem künftigen Monat Martio von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einem guten Erfolg hören werde. Man
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />will noch immerzu versichern, daß sie wider
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Martinique oder Guardeloupe gerichtet
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />seyn.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Danzig 4. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Obgleich die Ruß. Trupen in dem alhie=
+                  </p>
+               
+               
+               <p id="p__38" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sigen Gebiete die beste Manns=zucht beob=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />achten, so ist man doch noch immer gegen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />jede Bewegungen aufmerksam. Man hat
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nicht nur die Wachen an denen Thören seit=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />her verdoppelt, sondern es sind auch täglich
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einige Detaschements Cavallerie beordert,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />längs denen Wällen zu patrouilliren. So ru=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hig auch bisher die Rußischen Armee in denen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Winter=quartieren ist, so vermutet man doch,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />daß sie sich nächstens gegen die Pommeri=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schen Gränze in Bewegung setzen werde.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Den 31. Decemb. sind bey Mewa 2. Jnf.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regimenter über die Weichsel gegangen wel=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />che nach Pohln. Stargard marschieet, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Vernehmen nach, sollen verschiedne an=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dere über Marienwerder gleichfalls im An=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />marsch seyn. Die zugefrornen Gräben,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und andere Wasser werden täglich aufgeeiset,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und die dortigen Vestungs=werke noch im=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mer
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_3">3</span>
+               
+               
+               <p id="p__38" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mer verbessert. Vor einigen Tagen wurde
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von dem hiesigen Magistrat ein ansehn=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />liches Weihnachts=geschenk nach Ma=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rienwerder an den Herrn General=feld=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />marschall, Grafen von Fermor, abgeschickt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Solches bestund in einigen mit denen ausge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />suchtesten Erfrischungen beladenen Wägen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hanover 11. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Seit etwelchen tägen seynd alle im Land
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />angeworbene Recruten nach denen in denen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Westphäl. Bistümern befindlichen Regimen=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tern abgegangen. Nach Münster sind an=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />statt des abgeführten schweren Geschützes,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einige 12. 6. bis 3. Pfündige Canonen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />kürzlich abgeführet worden, und sollen die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />neu=angeworbene Artilleristen ehestens nach=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />folgen. Aus dem Haupt=quartiere daselbst,
+                  </p>
+               
+               
+               <p id="p__37" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ist jüngst an die Land=ständedes Bistums
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hildesheim, wegen Lieferung der geforderten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Contributionen eine abermalige Erinne=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rung geschehen, und bey längern Verzug=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit militarischer Execution gedrohet worden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Nieder=elbe 11. Jan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vorgestern Abend erhielt der Königl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Preußische Minister, der geheime Raht
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von Hecht, eine Staffette aus Schwedisch=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Pommern, und zugleich Nachrichten von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der weiteren Vorrückung der Königl. Preus=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sischen Armee unter dem Commando des
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Herrn General= leutenants, Burg=grafens
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von Dohna, gegen die Königl. Schwe=
+                  </p>
+               
+               
+               <p id="p__36" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dische Armee, von welchen wir Folgendes
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mittheilen können:
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Auszug eines Schreibens aus dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Haupt=quartier der Dohnaischen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Armer zu Greifswalde
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />„ Jn Erfüllung meiner Zusage melde hie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit, daß, nachdem des Herrn General=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />leutenants, Burg=grafens und Grafens von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dohna Excellenz, den Uebergang über
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />die Roecknitz bey Damgarten forciret ha=
+                  </p>
+               
+               
+               <p id="p__45" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ben, unter dem General=major von Die=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ricke sogleich die Avant=garde weiter vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gerucket seye. Die übrigen Brigaden der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Armee folgten derselben auf dem Fuß nach,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />so, daß alles auf einander schloß. Die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />feindliche Besatzungen aus Triebsees so=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wol, als der nach Damgarten bestimmte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Succurs zogen sich alsogleich bey unserer
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Annäherung zurück. Jnzwischen wurden
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />11. Officiers und 300. Gemeine zu Ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fangenen gemacht, worunter 50. Reiter
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit ihren Officiers durch unsere Grena=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />diers bey Steinhagen aufgehoben wurden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Die Armee setzte ihren Marsch ohne Auf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />enthalt fort, occupirte Richtenberg, Grim=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />me und Greifswalde, und versicherte sich
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dadurch der Pässe; die feindliche Trupen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />aber erwarteten unsere Ankunft nicht,
+                  </p>
+               
+               
+               <p id="p__42" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sondern begaben sich jenseits des einen vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fliessenden Arms der Trewell hinter die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Defileen, so vor Stralsund ligen, nach=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem sie die Dörfer Brandshugen und El=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />menhorst stark besetzet hatten. Es ware auch,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sie daselbst zu attaquiren bereits alles veran=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />staltet, als sie auch solche Oerter verlies=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sen. Drey Tage nach dem Übergang
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit der Armee über die Roecknitz, paßirte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Herr General=leutenant von Manteu=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fel bey Stolpe die Pene, und machte da=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bey einen Officier, 2. Unter=officier und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />32. Gemeine, der General=major von
+                  </p>
+               
+               
+               <p id="p__44" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Platen aber mit dem Leib=escadron seines
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regiments bey Schladkow 1. Capitain,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />5. Officiers und 50. Dragoner zu Kriegs=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gefangenen. Wir haben bey diesem Vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fall noch keinen erheblichen Verlust gehabt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gegenwärtig ist die Vereinigung der zeit=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hero unter der Ordre des General=leute=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nants von Manteufel gestandenen Trupen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit diesem Corps der Armee geschehen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Loitz ist vom Feinde geräumet, und die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />feindliche Besatzung in Demmin und a
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />lans
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_4">4</span>
+               
+               
+               <p id="p__51" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />lam abgeschnitten, welche man anzugreif=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fen im Begrif stehet.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Prag 13. Jan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vorgestern wurden über 800. Mann
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Recruten, welche in dem Reich, zu Aug=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />spurg, Ulm, Nördlingen, Günzburg und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mehr andern Orten angeworben worden,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />durch ein Commando hieher gebracht, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wurden in der Königl. Alt=stadt, in dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sogenannten Ball=haus einlogiret. Von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hier werden täglich viele Montirungs=sor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ten, als Kleider, Hüte, Schuhe und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Strümpfe rc. durch alt=commandirte Leu=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />te abgeführet, derselben befinden sich der=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />malen von vielen verschiedenen Regimentern
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />allhier; ingleichen viele Herren Staabs=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und andere Officiers, welche stark ab= und
+                  </p>
+               
+               
+               <p id="p__50" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zugehen. Von denen Cordons höret man
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />noch zur Zeit von keinen Neuigkeiten. Von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Eger wird gemeldet, daß der Kaiserl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Königl. Obrist Törreck mit seinen Trupen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in dasigen Kreis eingetrossen, und seine
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Mannschaft nach Fleussen, Haselau, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wildstein, dann längs dasigen Gränzen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />verleget habe, und daß seine Vor=posten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gegen Graßlitz und Schönbach sich erstre=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />cken. Dahingegen die Preußische Vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />trupen bey Plauen und Oelsniz sich befin=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den, allwo sie sich fortwährend verschanzen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Straßburg 13. Jan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Sowol alhier als in ganz Elsaß wird
+                  </p>
+               
+               
+               <p id="p__50" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />eine Menge von Fourage zusammen ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bracht, welche für die Königl. Französi=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sche Armeen in Teutschland bestimmt ist
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und zum Theil auf dem Rhein bis Cöln
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gebracht werden soll. Da sich die Franzö=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sische Trupen der vornehmsten Plätzen an
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />diesem Strom, und vornemlich auch der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Festung Rheinfels versichert haben, so ist
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />die Schiffahrt vollkommen sicher. Die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Magazine an der Mosel und Maas sollen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gleichfalls mit frischem Vorrat versehen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />werden.
+                  </p>
+               
+               
+               <p id="p__62" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Paris 10. Jan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Se. Allerchristlichste Majest. haben mit
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einer Gesellschaft einen Contract geschlossen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nach welchen diese sich verbindlich gemacht
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />40. seegelfertige und equipirte Kriegs=schiffe
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zu liefern, nämlich 20. im April, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />die übrigen 20. während der Campagne.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bis zu Anfang des Merzens soll sich auf
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Küste der Normandie eine Armee ver=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sammlen und verschiedene Generals haben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bereits Ordre dahin abzugehen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Neapel 3. Jan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Sowol in diesem ganzen Königreich,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />als auch in Sicilien werden die Kriegs=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rüstungen zu Wasser und zu Land eifrigst
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Es haben nicht nur alle Of=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fortgesetzet.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ficiere Ordre erhalten, sich bey denen Re=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gimentern zu stellen, sondern es sind auch
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />an die Trupen Befehle ergangen, sich auf
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den ersten Wink zwischen Capua und Ben=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />vento längs dem Volturno zu vereinigen.
+                  </p>
+               
+               
+               <p id="p__54" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Man sagt, daß die letztern Depeschen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />welche ein Spanischer Cabinets=courier
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von Sr. Königl. Hoheit dem Jnfanten Don
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Louis überbrachte, diese Anstalten veran=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />lasset hätten, und da sich alle Königliche
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Schiffe und Galeeren, die bisher theils
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in der Bay von Policastro und Salerno ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />legen, nach Neapel begeben, so ist nach
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />aller Wahrscheinlichkeit der Abreise des Ho=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fes nach Madrid nicht mehr weit entfernet.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Brüssel 15. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Diesen Augenblick empfangt man alhier
+                  </p>
+               
+               
+               <p id="p__54" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />die Nachricht aus dem Haag, daß die Prin=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zeßin Statt=halterin daselbst mit Tode abge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gangen seye. Jhre Königl. Hoheit haben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dero Kindern, soviel ihre Personen, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Staaten dero Hauses in Teutschland be=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />trift, derenselben Groß=mutter die verwit=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tibte Prinzeßin von Oranien, und den Prin=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zen Ludwig von Wolfenbütel zu Vormün=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dern ernannt, auch kurz vor dero Hinschei=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_5">5</span>
+               
+               
+               <p id="p__60" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den an Jhre Hochmögende ein Schreiben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />erlassen, darinnen sie denenselben von der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zwischen Dero Prinzeßin Tochter Carolina,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und dem Prinzen von Nassau Weilburg ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />troffenen Mariage Nachricht geben.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Cöln 17. Jan.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Des Herzogs von Ahremberg Hoch=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fürstliche Durchleucht, so während diesen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Feld=zügen bey der Kaiserl. Königl. Ar=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mee gedienet, ist hierdurch nach Brüssel
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />abgereiset, ein Courier ist ebenfalls hier=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />durch paßirt, der den Tods=fall der Prin=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zeßin Statthalterin deren vereinigten Pro=
+                  </p>
+               
+               
+               <p id="p__65" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />vinzen bekräftiget hat. Aus Hanover hat
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />man die Nachricht, daß dasige Werber
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nicht sehr bekümmert seynd, woher sie Leut
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bekommen sollen, weil die Land=beamte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Stadt=obrigkeiten dafür sorgen, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auch die Stifter, Münster, Paderborn,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Osnabrück und Hildesheim, ausser denen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />8. Millionen an Geld, eine ansehnliche
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zahl Recrouten zu einer gesetzten Zeit her=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />beyschaffen müssen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kurz=gefaßte Nachrichten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Es geben die frischeste Briefe
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Von München: daß am 7. vorigen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Monats Herr Oscalca, Graf von Minucci,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />weyland Sr. Römisch=Kaiserl. Majestät
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Carl VII., wie auch Sr. jetzt=regierenden
+                  </p>
+               
+               
+               <p id="p__64" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Churfürstl. Durchl. in Bayern rc. rc. Cäm=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />merer und würklicher geheimer Raht, Ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />neral=feld=zeugmeister, und Obrister über
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ein Regiment zu Fuß, dann commandiren=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der General der sämtlichen Chur=bayerischen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Trupen, wie auch des Hoch=adelichen Rit=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ter=ordens St. Georgii Groß=creutz, nach
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einer 4. Monate lang überstandenen aus=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zehrenden Krankheit, in einem Alter von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />85. Jahren das Zeitliche gesegnet habe.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Von Cöln: Daß allda den 12. dieses
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Monats Januarii Thomas Schlosser in
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem hundert und fünften Jahr seines Al=
+                  </p>
+               
+               
+               <p id="p__74" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ters mit Tod abgegangen sey, nachden
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />derselbe Anno 1755. gemeldeter=mas=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sen annoch in seinem hunderten Jahr sich
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />verheyratet hatte.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Won Mannheim: Daß Seine Chur=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fürstliche Durchl. von der Pfalz Dero bis=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />herigen Minister zu Paris, Herrn von Gre=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />venbroick, zu Bezeugung Dero höchsten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wolgefallens über dessen geleistete Dienste
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zum Vice=präsidenten der Regierung zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Sulzbach ernannt haben.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Von Madrid: Daß Se. Catholische
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Maj. zwar seit einiger Zeit in etwas besser
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sich befunden, allein die Hofnung zur gänzl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wieder=herstellung noch immer entfernet blei=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />be. Dem Vernehmen nach, haben Seine
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Majestät die wenige Tage, da Sie einige
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Erleichterung empfanden, zur Verfertigung
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dero letzten Willens angewandt. Das
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Ministerium mache alle Anstalten die Ruhe
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in der Monarchie beyzubehalten, alleine zu
+                  </p>
+               
+               
+               <p id="p__66" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gleicher Zeit werde auch an denen Kriegs=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rüstungen stark gearbeitet, um gegen alle
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Fälle gesichert zu seyn.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />—
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wien den 27. Januarii 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wittwoch seynd in der Kaiserl. Königl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />grossen Hof=capelle für die Hoch=ade=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />liche Stern=kreutz Ordens=dame (Titl.) Fr.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Theresia Gräfin von Sereni, geborne Grä=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fin von Sternberg, so den 17. dieses al=
+                  </p>
+               
+               
+               <p id="p__69" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hier das Zeitliche mit dem Ewigen verwech=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />selt hat, die Exequien gehalten worden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Donnerstags am Fest Pauli Bekehrung
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vormittags ware in Beywohnung beyder
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kaiserl. Majestäten, und deren Durchl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ältesten jungen Herrschaften Königl. Ho=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />heiten, in der offentlichen Hof=capelle
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der gewöhnliche GOttes=dienst. Abends
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sodann ist für Jhre Königl. Hoheiten die
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Durchlauchtigste junge Herrschaften, worzu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auch andere junge Cavaliers und Fräulen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />des
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_6">6</span>
+               
+               
+               <p id="p__80" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />des hohen Adels erschienen, auf der Seite
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jhrer Majestät der Kaiserin ein Cammer=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fest gehalten worden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gestrigen Freytags haben Jhre Kaiserl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Majestäten mit denen wichtigsten Staats=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Landes=angelegenheiten sich beschäf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tiget.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Verflossenen Mittwoch als den 24. lauf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fenden Monats Januarii, ist alhier die Zie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hung der Kaiserl. Königl. privilegirten Lot=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />terie beschehen, und die Num. 80. 22. 17.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />62. und 66. mit zerschiedenen namhaften
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Ambi, erheblichen Terni, und vielen Estra=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ti gehoben worden. Man gehet mit Still=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schweigen um alle andere auch beträchtli=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />che Gewinne, und meldet nur, daß der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sub Num. 14. in der Schuler=strassen an=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gestelte Collector einen Terno mit 640.,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />jener sub Num. 28. auf dem alten Fleisch=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />markt 9. deto, worunter einer mit 960.,
+                  </p>
+               
+               
+               <p id="p__75" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />einer von 608., und einen anderen pr. 412.,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wie nicht minder der sub Num. 31. auf dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Graben, auch einen mit 440., die Amts=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />collectur hingegen einen Estrato pr. 500. fl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />abzuführen haben.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Den 14. künftigen Monats Februarii
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wird die fernere Ziehung in der Kaiserl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Königl. Haupt=stadt Prag beschehen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />AVERTISSEMENT.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Da in der letzteren Post=tag beschehenen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Publication wegen deren Balen auf der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Mehl=gruben, in Betref des Entrée-geldes
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ein Verstoß unterloffen, so wird sothane Pu=
+                  </p>
+               
+               
+               <p id="p__74" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />blication hiemit, ihrem rechten Aufsatz nach
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in folgenden wiederholet:
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Nachdeme vom Aller=höchsten Ort denen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Mehl=gruben=interessenten Bal zu halten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />allergnädigst erlaubet, und anstatt Doñerstags
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wochentlich der Montag für den Hof= adel
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ernannt worden, so wird hiermit dem Pu=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />blico weiters zu wissen gemacht, daß der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Sonntag für Dicasterial=personen, Herr=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schafts=officiere, Wechsel=verwandte, und den
+                  </p>
+               
+               
+               <p id="p__82" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Handel=stand bestimmet seye, womit man künf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tigen Sonntag als den 28ten Januarii con=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tinuiren wird. Die Entree ist 8. Sieben=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zehner, und stehet einem jeden beyderley Ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schlechts frey, in eigener Kleidung, oder in
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Domino, jedoch ohne Caputzen und ohne Lar=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ven zu erscheinen. Da es aber auch dem übri=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gen Adel gefallen dörfte, sich auf der Mehl=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gruben zu divertiren, so hat man für Den=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />selben künftigen Dienstag, als den 30. hier=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zu angeordnet; und werden die Billets auf
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Mehl=gruben unter eines jeden respective
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Namen abzuholen seyn. Für die Entree
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wird ganz gleich, wie bey dem Hof=adel,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bezahlet.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Lista deren Verstorbenen zu Wien
+                  </p>
+               
+               
+               <p id="p__88" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in= und vor der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Den 23. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jn der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Joh. Scheidienst, gew. Burgerl. Pfaidler, in s. H.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in der Weihburg=gas., alt 59. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Hrn. Adam Weche, gew. Kais. Hartsch., s. F.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Francisea, im Druckeris. H. bey St. Ulrich. 69. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Franz Pirkner, Burgerl Mahl., s. K. The=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />res., im Lederis. H. auf der Wendelst., 5. v. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Jos. Schram, Burgerl Schuh=mach., s. W.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Anna, in s. H. in der Rossau, alt 24. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Joh. Michl, Burgerl. Tafel=deck., s. K. Franz,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in s. H. im Lerchenf., alt 2. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Joh. Hämpl, Burgerl. Schnür=mach., s. K.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Joh. beym grun. Kranz in der Josephst. 5. v. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Jos. Dewald, Schuh=mach., s. W. Cäcil., bey
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem gold. Kreutz bey Maria=hülf, alt 56. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Georg Hörman, Lehen=kutsch., s. W. Elisab.,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />im Zecker=macheris. H. auf der Landst., 64. J.
+                  </p>
+               
+               
+               <p id="p__83" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Jacob Steyrer, Schif=kn., s. W. Gertr., bey
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der nold. Arch. in der Leopoldst., alt 78.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Franz Mazner, Zimmer=ges., s. W. Barb.,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bey der gold. Kugel in der Josephst, alt 31. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Summa 10. Person. / darunter 3. Kind.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Den 24. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jn der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Der Wol=edel=gestr. Hr. Jgnatz Jos. Strobel, des
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jnneren Stadt=rahts, und K. K. Umgelds= und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Tätz=amts=administr, im Raht=H., alt 59. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Hrn. Joh. Lunz, Burgerl. Conduct=ansag., s.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />K. Joh., im Trienter=hof, alt 4. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Joh.
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_7">7</span>
+               
+               
+               <p id="p__92" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Joh. Adam Hebling, Burgerl. Bier=leut=geb, im
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Lochneris. H. in der Nagler=gas., alt 60. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Math. Holzinger, Portier, im alt=Liechtensteinis.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />H. in der Herren=gäs., alt 44. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Joh. Hoch, Burgerl. Strümpf=würk., s. K.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Joh., beym weis. Stern bey Maria=hülf, 4. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Joh Mich. Pinapfel, Burgerl. Sauer=kräutl., beyn
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />3. Has. in der Leopoldst., alt 43. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Fried. Hugel, s. K. Theres., in s. H. zu Erdb.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />alt 11. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Heinr. Besen, gew. Wald=forster, bey St. Jacob
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bey Maria=hülf, alt 97. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Franz Lachman, Lack., s. K. Anna, bey dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Schwarz=wald. bey St. Ulrich, alt 5. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Theres. Galionin, Wittwe, im Hof=satleris. H. zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gumpendorf, alt 85. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Rosal. Casparin, in St. Joh. Nep. Spit., 81. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Summa 11. Person. / darunter 4. Kind.
+                  </p>
+               
+               
+               <p id="p__90" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Den 25. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jn der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Franz Hummel, Burgerl. Schneid, s. K. Jgn.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />im Fortifications=H. auf der Schotten=bastey,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />alt 2. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Georg Bernd, Kutsch., in s. H. auf der Elend=bast.,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />alt 47. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wolf Piringer, Burgerl. Beutel=gesperz=mach., im
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Säckel=trageris. H. am Thury, alt 54. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Georg Völkle, Geig., s. W. Anna, in s. H. im
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Liechtenth., alt 50. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dem Simon Heiß, Lust=gart., s. K. Simon, im
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wenighoferis. Gart. in der Leopoldst., alt 7.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Mich. Jungdäubel, Schif=kn., im Taschneris. H. in
+                  </p>
+               
+               
+               <p id="p__97" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Leopoldst., alt 70 J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gertr. Wimmerin, led. M., beym rot. Apfel in dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Liechtenth., alt 40. J.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Summa 7. Person. darunter 2. Kind.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wir Officialis und Consistorium Passaviense
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in Wien, thun kund und zuwissen hiemit of=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fentlich: Nachdeme wir über die von dem Jo=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hann Michael Laberger als Dötterischen Testa-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ments-executore, wider den Johann Georg Tri=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fer Pfarrer zu Michaelhausen vorhin behobene,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und geführte Gerichtl. Sperr auf des Beklagten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in 366. Emer 746 und 747ger Gewächs beste=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bende zu Streitthofen befindliche Weine,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dann über derenselben vorgenommene Schätzung
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nunmehro gerwilliget haben, daß besagte Weine
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Meist=vietenden gegen baren Erlag verkauf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fet werden sollen. Als werden alle, und jede
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />welche solche Weine käuflich an sich zu bringen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gedenken, auf den 5. künftigen Monats Februarii
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vormittag um 9. Uhr zu Streithofen zu erschei=
+                  </p>
+               
+               
+               <p id="p__90" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nen, und bey unserem Commissario aldort sich
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />anzumelden haben. Gegeben Wien im Fürstl. Pas=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sauer=hof bey Unser Lieben Frauen auf der Stie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gen den 10. Jan. 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Nächst=künftigen Montag als den 29sten dieses
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Monats Jenner, werden in der Leopold=stadt im
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kaiser. Königl. Schif=amt im ersten Sock die in
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />weyl. Frauen Mariä Johannä le Fort du Plesty
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kaiserl. Königl. Schif=obrist=leutenants ruckge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bliebene Wittwe seel. Verlassenschaft gehörige
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Effecten, als etwas Silber, dann gold= und sil=
+                  </p>
+               
+               
+               <p id="p__104" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />berne auch Stock= und lange Perpendicul=uhren,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />kostbare Mahlereyen von vornehmsten Meistern,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />damascirt= und anderes Gewehr samt darzu ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hörigen Kasten, Ingenieur-zeug, musicalische Jn=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />strumenten, ein schöner Bucher=kasten samt darin
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />befindlichen Architectur- und Kupfer=büchern, al=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />lerhand Brocatel= Rasset= und andere Spallier,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dergleichen Sessel und Sophen, extra grosse
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Spiegl, und Luster, verschiedene kostbare Tisch,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Kästen, dann Beht=gewand, Zinn, Meßing
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Kupfer, wie auch allerhand anderes Haus=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gerät, dem Meistbittenden licitando gegen also=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gleich bar leistender Bezahlung verkauffet, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hiermit die nachfolgende Täge continuiret werden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Es dienet dem Publico zur Nachricht, daß
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den 5ten Febr. 2. c. in dem Hochfürstl. Erz=bi=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schöflichen Hof, verschiedene Theologische und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Historische Bücher, wie auch Kupfer=stiche von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />verschiedenen berühmten Meistern licitando sollen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />verkauffet werden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Der Catalogus ist in der Buch=handlung zum
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />goldenen Vließ auf der Hohen=brucken gratis zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bekommen.
+                  </p>
+               
+               
+               <p id="p__104" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Von der durch die Hochlöbl. N. Oe. drey obe=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />re Herren Herren Stände für das übbernom=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mene Vicedomische Gülten und Unterthanen auf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gestelten Verwaltung wegen, wirdet jedermännig=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />lich kund und zuwissen gemacht, welcher Gestal=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ten der Paul Purgerischen Curator ad lites Hr.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Doctor Allmayr, über die untern 13. Septembr
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bey dem diesseitig Löbl. Ständischen Judicio De-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />legato bewürkte, und den 3ten Octobris verlof=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />fenen 1758sten Jahrs fürgeweste würkliche Liciti-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rung deren denen Paul Purgerischen Conleuthen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zugehörig= von denenselben aber den Joseph Kaut=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />samer, Jacob Lang, und Andrä Furtmoser ee=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dirten Wein=gärten auf sein ferners gehorsamstes
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Anlangen alda, untern 10ten 1759. die noch=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />malige Licitation erhalten, zu dem Ende dann
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auch der 5te kommenden Monats Februarii Vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mittag um 9. Uhr zur Licitations-tagsatzung in
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Ständischen Verwaltung im Land=haus zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />erscheinen bestimmet worden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dan=
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_8">8</span>
+               
+               
+               <p id="p__203" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Danuenhero werden alle diejenige, welche nach
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />thuen hiemit jedermänniglich kund und zu wissen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />berührt Paul Purgerischen anhero dienstbaren
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />welcher gestalten des Caspar König, gewest=Bur=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Weingebürg, benanntlich laut Grundbuchs Fol.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gerlichen Zimmer=meistern alhier in Baaden, seel.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />6. ein Rachen im untern Greut zu Weydling,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zur Abstoßung der Passiv-schulden seine in der Vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wiederumen Fol. 7. ein Viertl daselbst. und Fol.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />stadt ligende Behausung samt dem darauf berech=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />11. auch ein Viertl aldort käuflich an sich zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tigten Burgerlichen Zimmer=meister=gewerb, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bringen gedenken, an obbemeldten Tag, Stund,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zu diesem Haus gehörigen 10. Pf. Wein=garts=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Ort entweders Persöulie oder durch genug=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />haus=sätz per Publicam licitationem dem plus
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sam Bevollmächtigte ad licitandum, tractandum,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />offerenti gegen baarer Bezahlung ex officio ver=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />&amp; concludendum alda zu erscheinen und sich an=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />kauft werden solle, zu welchem Ende wir eine
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zumelden haben. Actum Wien in Land=haus den
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Licitations=tagsatzung, und zwar auf den 10. künf=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />18ten Jan. 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tigen Monats Martii, auf alhiesigen Raht=haus
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Vormittag um 9. Uhr zu erscheinen bestimmet
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />EDI
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wer nun obgedachte Behausung samt
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />haben.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Von der N. Oe. Regierung wegen, wird mit
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />obermeldten
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zimmer=hand=werks=gerechtigkeit,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gegenwärtig=offenem Edict jedermänniglich so=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />käuflich an sich zu bringen Lust und Belieben tra=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wol An= als Abwesenden, denen daran gelegen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />get, derselbe hat sich an obermeldten Tag, Stund
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />kund und zu wissen gemacht. Es habe Regie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Ort einzufinden. Actum Stadt Baaden
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rung eine Nohtdurft zu seyn befunden über Weil.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den 17. Januarii 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Blasii Flechl, gewest=Kaiserl. Königl. Forst=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />knecht ruckgebliebene Verlassenschaft einen or=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Auf Verordnung einer Hochlöbl. N. Oe. Re=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dentlichen Concurs anzuordnen, und desselben
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gierung in Justitz=sachen werden nächst=kommen=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sammentliche sowol in= als ausser Land befindli=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />den 5.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Februarii in der sogenannten Waldzeil
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />che Glaubigere zu Anmeld= und Liquidirung ihrer
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />im Rathgebischen Hans im ersten Stock verschie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />an erst=bemeldeten Weil. Flechl, zu stellen ha=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dene Effecten: als Jubellen, Gold, Silber
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bender Sprüch und Forderungen einzuberuffen:
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Porcelan, Kleider, Wäsch, Spallier, Spie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zu welchem Ende denenselben der dritte Tag des
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gel, Bilder, Beht=gewand, Reis=wagen Vor=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />künftigen Monats Martii Nachmittag um
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mittag von 9. bis 12. Nachmittag von 3. bis
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Uhr zur gewöhnlichen Tag=satzung für die erst=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />6. Uhr plus offerenti verkauffet werden.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />andert= und dritte, auch all=endliche Frist
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />NB. Unter denen Jubellen befindet sich ein
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sub clausula præcclusi auberaumet wurden. Sol=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Stein, welcher 25. Grän schwer seyn solte.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />chemnach werden all= und jede, welche an ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />—-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dacht Flechlischen Verlassenschaft, ex quacun-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bey Franz Leopold Grund Burgerlichen Buch=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />que causa vel titulo Sprüch und Anforderungen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bindern alhier, ist in seinem Gewölb bey dem grossen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />haben, oder zu haben vermeinen, an obbestim=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Thor an der St. Stephaus=dom kirche zu verkauffen:
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ten Tag und Stund vor Regierung in der da=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regula S. Aurelii Augustini Episcopi Hyponensis
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />selbst zu solchem Ende offen haltenden Commis=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />&amp; Ecclesiæ Doctoris cum expositione super Re-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sions=stuben entweder selbst persönlich
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />oder
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gulam ejus M. Patriarchæ, à Venerabili servo Dei
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />durch hiezu genugsam gevollmächtigte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gewalt=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Alphonso ab Orosco, OrdrErem. S. Auguliini.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tragere also gewiß zu erscheinen, und ihre an
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Item ejusdem Venerabilis Alphonsi ab Orosco
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />solche Cridä=massa habende Anforderungen an=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Certamen amoris sancti, &amp; certamen bonum,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zumelden, auch zu Herstellung des erforderlich=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auf guten Schreib=papier, gedruckt 1758. in Fran=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rechtlichen Beweistum ihre Schuld= und Satz=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zösischen Bund pr. 1. fl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />brief, oder ansonst habende Liquidations=ur=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jtem Seraphische zu GOtt aufsteigende AAn=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />kunden, und rechtliche Behelf in beglaubten Ab=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dachts= slammen, das ist: drey und zwanzig klei=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schriften einzulegen haben; wie im widrigen der
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ne Tag=zeiten von dem Heil. Prancisco Seraphico
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Ausbleibende von gegenwärtiger Concurs=massa
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und seinen Ordens=heiligen, samt denen Litaneyen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gänzlich ausgeschlossen seye, und ihme diesfalls
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und einigen Gebettern, auf vielfältiges verlangen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />das ewige Stillschweigen auferleget; der nicht
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />abermal aufgelegt, und mit sieben neuen Tag=zeiten,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Liquidirende aber in der künftigen Claßification
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />samt denen Kupfern vermehrt, in schwarzen Le=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit seiner unerwiesenen Anforderung abgewiesen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der gebunden mit Gesperl 1. fl. 25. kr.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />werden solle. Wornach sich ein jeder zu richten,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />-
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und vor Schaden zu hüten wissen wird. So be=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bey Herrn Melchior Spötl, Burgerl. Spe=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />schehen, Wien den 10. Januarii 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />cerey=handels=mann auf dem Kohl=markt zum grü=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nen Fäßl, ist zu haben, ein besonders gut, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />EDICT.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Specialer Toeayer=wein in Putelien.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wir N. Stadt=Richter, und Raht der Kai=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />serl. Königl. und Landes=fürstl. Stadt Baaden,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />An=
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_9">9</span>
+               
+               
+               <p id="p__113" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Num. 8. Samstags=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />anhang 27. Januarii 1759.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />privilegirten Zeitungs=verlag und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gedruckt in dem Kaiserl. Königl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Buch=druckerey im neuen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Michaeler=haus mit von Ghelischen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Schriften.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Uebrigens
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ware mit Ende jetzt=verstri=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dreßden 12. Januarii.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />chenen Jahrs 1758. die Eintheilung deren
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jie denen Chur=sächsischen Landen von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Königl. Preußischen Trupen in denen Winter=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem König aus Preussen aufgelegte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />quartieren dieser Chur=sächsischen Landen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Recruten=lieferung von 12000. Mann,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />unter dem Haupt=commando Sr. Königl.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />welche bis den 20. dieses beysammen seyn
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hoheit des Prinzen Heinrich, und Generals
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sollen, setzet die Einwohnere in keine geringe
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Wedel folgende:
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Verlegenheit. Sowol der Geld=aufwand,
+                  </p>
+               
+               
+               <p id="p__103" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />als auch der Mangel anständiger Mannschaft
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />macht den Befolg dessen fast unmöglich. Jn=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dessen seynd dasiger Bürgerschaft den 9.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auf dem Raht=haus der Aufbringung hal=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ber Vorschläge gethan, und 106. Mann,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gleichwie vormals, auf die Handwerker re=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />partiret worden. Da der Thüringische
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kreiß die im verwichenen Jahr bewilligte
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Geld=summe noch nicht entrichtet, so seynd
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gestern dessen Deputirte allhier mit Ar=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />rest belegt worden. An denen Werkern
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />der Neustadt wird zwar die Arbeit noch fort=
+                  </p>
+               
+               
+               <p id="p__112" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gesetzt, allein sie seynd jetzo schon meisten=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />theils im Stande. Der Leichnam des zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Plauen verstorbenen General=majors von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Meyer ist von Plauen hieher gebracht, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />auf hiesigen Catholischen Kirch=hof zu
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Friedrichsstadt begraben worden. Es hat
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />derselbe vor seinem Absterben die Veror=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dnung gemacht, von seinen hinterlassenen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hinlänglichen Vermögen seine vormals ge=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />machte Schulden abzutragen. Der Ma=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gistrat und 20. Kauf=leute zu Leipzig seynd
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Vernehmen nach bey Wasser und Brod
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />abermalen im Arrest, weil sie die auferleg=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />te Summen nicht bezahlen. Eben gestern
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />kame von der K. K. Armee aus Böheim
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ein Trompeter mit Depeschen an den hie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sigen Commandanten an, welche vermutlich
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />die Abwechslung derer Kriegs=gefangenen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />betroffen haben.
+                  </p>
+               
+               
+               <p id="p__115" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Allhier in Dreßden 1. Bataillon Gre=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nadiers von dem Regiment Bornstedt, 3.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bataillons Fusiliers von Kalden, 2. deto
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von Golz, und 2. deto von Putkammer; un=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ter Commando deren Generalen von Fink
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Bredow.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Pirna 2. Bataillons Fusiliers von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Regiment Brandeiß, und 2. deto von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Junkheim, unter Commando des Generals
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Asseburg.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Dippoldswalde 3. Bakaillons Fusi=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />liers von dem Regiment Lestewitz.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Freyberg 2. Bataillons Fufiliers von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Regiment Hülsen, und 2. deto von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Bredow; unter Commando deren
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />jenera=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />len von Hülsen und Grabow.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Oedern 1. Bataillon Grenadiers von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Regiment Lubaht.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Chemnitz 2. Bataillons Fustliers von
+                  </p>
+               
+               
+               <p id="p__109" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Regiment Knobloch; 2. deto von Gra=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bow, und 2. Escadrons Hussaren; unter
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Commando des Generals Knobloch.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Liechtenstein 1. Bataillon Grenadiers
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von dem Regiment Billerbeck.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Zwickau 2. Bataillons Fusiliers von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />dem Regiment Fink. 2. deto von Haussen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und 1. Escadron Hussaren; unter Comman=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />do des Generals Jtzenblitz.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Reichenbach 2. Bataillons Fusiliers
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />von dem Regiment Salmur; unter Com=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mando des Generals Salmur ,
+                  </p>
+               <span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_10">10</span>
+               
+               
+               <p id="p__115" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Gera 2. Bataillons Fusiliers von dem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regiment Kurschel. 1. deto von Bellow.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />1. Bataillon Grenadiers vom Grenadier=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />regiment, und 1. Escadron Hussaren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Graitz 1. Bataillon Fusiliers vom
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regiment Hessen=cassel, und 1. Escadron
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hussaren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Burg 1. Bataillon Grenadiers vom
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Grenadier=regiment.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Neumarkt 1. Bataillon Fusiliers vom
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regiment Bellow, und 1. deto von Salmur.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Zehist das Frey=bataillon Wunsch,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />welches 1. Capitain mit 100. Mann nach
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Struppen detaschiret.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Groß= und Klein=seidlitz 4. Escadrons
+                  </p>
+               
+               
+               <p id="p__116" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hussaren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Tschopau das Frey=bataillon Monfou,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und 1. Escadron Hussaren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Borna 1. Escadron Hussaren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jn denen Dörfern zwischen Chemnitz und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Freyberg 10. Escadrons Dragoner von Mei=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nicke.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Plauen das Meyrische Frey=bataillon
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und 2. Escadrons Hussaren.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Jn denen Vorstädten zu Leipzig, Eulen=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />burg, Tauchen, Wollnitz, und Mockau 5.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Escadrous vom Leib=küraßier=regiment.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Merseburg, Scheiditz, Kratschau,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Hadebach, Striegsdorf, Targent, Gohren,
+                  </p>
+               
+               
+               <p id="p__118" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Dochau, Horburg und Morithal 5. Esca=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />drons von des Erb=prinzens von Preussen
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Regiment.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Weissenfels, Lutzan, Rippach, Groß,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Klein=gorschen, Gallitz, Selau, Zorbau=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Nelleschütz, Gerstewitz, Langendorf, Unter=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />greißlau, und Korselitz, 5. Escandrons von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />des Prinzens Friedrich Regiment.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Nauenburg, Teuchen, Osterfeld.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Stösen, Wettau, Grotta, Schönburg und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Gossenhan, 5. Escadrons von Horn.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Herzberg, Anneburg, Ubigau, Schlie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ben, und Elsterwerda 5. Escadrons von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Kromkau.
+                  </p>
+               
+               
+               <p id="p__123" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Oschatz, Strelen, Riesen, Dahlen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Willerswalde, Mauchatz, Borne, Bornitz,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und Kanitz, 5. Escadrons von Kyau.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Extra=besatzungen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Leipzig 1. Bataillon Grenadiers. 2.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />deto Fufiliers.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Torgau 2. Bataillons Fusiliers.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zu Wittenberg 1. Bataillon Fusiliers.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Summa 54. Escadrons, 6. Bataillons
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Grenadiers, und 41. Bataillons Fusiliers,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Von der Kaiserl. Königl. Landes=fürstl. N. Oe.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Repräsentation und Cammer wegen, wird hie=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mit all= und jeden durch gegenwärtig=offenes
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Edict kund und zu wissen gemacht: Es habe
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />hierorts die Maria Catharina Hofmannin, sub
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />præf. 3. verflossenen Monats mit mehreren de=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mütig angezeiget, wasmassen derselbe über ein
+                  </p>
+               
+               
+               <p id="p__120" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />bey gemeiner Stadt Wien Banco Haupt=cassa
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zu 5. pro Cento jährlich lauffenden Jnteresse an=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ligend befindliches Capital pr. 700. fl. die un=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tern 14. Decembris 1756. auf erdeuteter Hofman=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nin Namen ausgestellte Obligation vor kurzem
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />in Verstoß gerahten wäre. Damit also Vorer=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wehnte ungehindert alles emsigen Nachsuchens bis
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />nun nicht ausfindig gemachte Stadt Banco=ob=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ligation durch Affigirung eines gewöhnlichen Val=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />val=edicts der Ordnung nach amortisivet, und
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />darfür eine andere dergleichen ausgestellet werden
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />möchte; als hat dieselbe wegen dero Ausferti=
+                  </p>
+               
+               
+               <p id="p__134" class="yes-index">
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gung um die Auflag an seine Behörde gebetten,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gleichwie in solches der Supplicantin billiges An=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />langen dergestalten gewilliget worden, daß, wann
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />binnen einem Jahr, 6. Wochen, und 3. Tägen von
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Zeit der Affigirung dieses Edicts anzurechnen,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sich niemand zu obiger in Verstoß gerahtenen auf
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />vorgedachte Hofmannin lautende Stadt=Banco=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />sbligation de Dato 14. Decembris 1756. pr.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />700. fl. rechtlichen legitimiren, oder solche in
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Originali produciren wurde, sothane Obliga=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />tion alsdann für null und nichtig gehalten, ein=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />folglichen nach Verfliessung obanberaumten Ter=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />mins Eingangs gemeldeter Eigentumerin Maria
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />Catharina Hofmannin, eine neue derley Obli=
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />gation auf obberührte Summa ausgefertiget,
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />und zugestellet werden solle. Dahero hat man
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />ein solches jedermänniglich durch dieses offene Edict
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />zur nachrichtlichen Wissenschaft hiemit erinneren
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />wollen.
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />S
+                  <br  xmlns:local="http://dse-static.foo.bar"><br />uS
+                  </p>
+               </div>
+            
+            <p style="text-align:center;">
+               <div class="footnotes" id="note__4"><a name="fn1"><a href="#fna_1"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">1</span></a></a>Wiener Zeitung 1759-01-27</div>
+            </p>
+         </div>
+      </main>
+      <footer class="footer mt-auto py-3 bg-body-tertiary">
+         <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
+</html>
