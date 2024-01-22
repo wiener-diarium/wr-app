@@ -7,7 +7,7 @@
     xmlns:local="http://dse-static.foo.bar"
     version="2.0" exclude-result-prefixes="#all">
     
-    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="5.0" indent="yes" omit-xml-declaration="yes"/>
+    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
     
     
     <xsl:import href="./partials/shared.xsl"/>
