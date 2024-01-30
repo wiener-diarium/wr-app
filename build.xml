@@ -22,10 +22,10 @@
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
     </xslt>
-    <xslt in="${index}" out="${target}/toc.html" style="./xslt/toc.xsl">
+    <!-- <xslt in="${index}" out="${target}/toc.html" style="./xslt/toc.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
-    </xslt>
+    </xslt> -->
     <xslt in="${index}" out="${target}/search.html" style="./xslt/search.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
@@ -65,23 +65,6 @@
     <replace dir="${target}" value="">
         <include name="*.html"/>
         <replacetoken>xmlns:tei="http://www.tei-c.org/ns/1.0"</replacetoken>
-    </replace>
-    <replace dir="${target}" value="">
-        <include name="*.html"/>
-        <replacetoken>&lt;br &gt;</replacetoken>
-    </replace>
-    <replace dir="${target}" value="">
-        <include name="*.html"/>
-        <replacetoken>&lt;br&gt;</replacetoken>
-    </replace>
-    <replace dir="${target}" value="&lt;br /&gt;">
-        <include name="*.html"/>
-        <replacetoken>&lt;/br&gt;</replacetoken>
-    </replace>
-    
-    <replace dir="${target}" value="">
-        <include name="*.html"/>
-        <replacetoken>xmlns="http://www.w3.org/1999/xhtml"</replacetoken>
     </replace>
     
     <copy todir="${target}" flatten="true">

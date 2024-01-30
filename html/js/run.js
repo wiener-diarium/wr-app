@@ -3,80 +3,16 @@ var editor = new LoadEditor({
       title: "Text Annotations",
       variants: [
         {
-          opt: "ef",
+          opt: "br",
           opt_slider: "entities-features-slider",
-          title: "All",
+          title: "Zeilenumbrüche",
           color: "red",
-          html_class: "undefined",
+          html_class: "linebreak",
           css_class: "undefined",
           chg_citation: "citation-url",
           hide: {
-            hidden: false,
+            hidden: true,
             class: "undefined",
-          },
-          features: {
-            all: true,
-            class: "features-1",
-          },
-        },
-        {
-          opt: "prs",
-          color: "blue",
-          title: "Persons",
-          html_class: "persons",
-          css_class: "pers",
-          hide: {
-            hidden: false,
-            class: "persons .entity",
-          },
-          chg_citation: "citation-url",
-          features: {
-            all: false,
-            class: "features-1",
-          },
-        },
-        {
-          opt: "plc",
-          color: "green",
-          title: "Places",
-          html_class: "places",
-          css_class: "plc",
-          hide: {
-            hidden: false,
-            class: "places .entity",
-          },
-          chg_citation: "citation-url",
-          features: {
-            all: false,
-            class: "features-1",
-          },
-        },
-        {
-          opt: "org",
-          color: "yellow",
-          title: "Organizations",
-          html_class: "orgs",
-          css_class: "org",
-          hide: {
-            hidden: false,
-            class: "orgs .entity",
-          },
-          chg_citation: "citation-url",
-          features: {
-            all: false,
-            class: "features-1",
-          },
-        },
-        {
-          opt: "wrk",
-          color: "lila",
-          title: "Works",
-          html_class: "works",
-          css_class: "wrk",
-          chg_citation: "citation-url",
-          hide: {
-            hidden: false,
-            class: "wrk .entity",
           },
           features: {
             all: false,

@@ -7,7 +7,7 @@
     xmlns:local="http://dse-static.foo.bar"
     version="2.0" exclude-result-prefixes="#all">
     
-    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
+    <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
     
     
     <xsl:import href="./partials/shared.xsl"/>
@@ -36,7 +36,7 @@
     <xsl:template match="/">
 
     
-        <html class="h-100">
+        <html>
     
             <head>
                 <xsl:call-template name="html_head">
@@ -48,78 +48,41 @@
                     }
                 </style>
             </head>
-            <body class="d-flex flex-column h-100">
+            <body class="d-flex flex-column">
                 <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0">
                     <div class="container">
-
-
-                        <div class="row">
-                            <div class="col-md-2 col-lg-2 col-sm-12">
-                                <xsl:if test="ends-with($prev,'.html')">
-                                    <h1>
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:value-of select="$prev"/>
-                                            </xsl:attribute>
-                                            <i class="bi bi-chevron-left" title="zurück"/>
-                                        </a>
-                                    </h1>
-                                </xsl:if>
-                            </div>
-                            <div class="col-md-8 col-lg-8 col-sm-12">
-                                <h1 align="center">
-                                    <xsl:value-of select="$doc_title"/>
-                                </h1>
-                                <h3 align="center">
-                                    <a href="{$teiSource}">
-                                        <i class="bi bi-download" title="TEI/XML"/>
-                                    </a>
-                                </h3>
-                            </div>
-                            <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right">
-                                <xsl:if test="ends-with($next, '.html')">
-                                    <h1>
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:value-of select="$next"/>
-                                            </xsl:attribute>
-                                            <i class="bi bi-chevron-right" title="weiter"/>
-                                        </a>
-                                    </h1>
-                                </xsl:if>
-                            </div>
-                            <div id="editor-widget">
-                                <xsl:call-template name="annotation-options"></xsl:call-template>
-                            </div>
+                        <div id="editor-widget">
+                            <xsl:call-template name="annotation-options"></xsl:call-template>
                         </div>
-                        
-                            <xsl:apply-templates select=".//tei:body"></xsl:apply-templates>
-                        
-
-                        <p style="text-align:center;">
-                            <xsl:for-each select=".//tei:note[not(./tei:p)]">
-                                <div class="footnotes" id="{local:makeId(.)}">
-                                    <xsl:element name="a">
-                                        <xsl:attribute name="name">
-                                            <xsl:text>fn</xsl:text>
-                                            <xsl:number level="any" format="1" count="tei:note"/>
-                                        </xsl:attribute>
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:text>#fna_</xsl:text>
+                        <div class="title-page">
+                            <xsl:apply-templates select=".//tei:front"/>
+                        </div>
+                        <div class="page-content">
+                            <xsl:apply-templates select=".//tei:body"/>
+                            <p style="text-align:center;">
+                                <xsl:for-each select=".//tei:note[not(./tei:p)]">
+                                    <div class="footnotes" id="{local:makeId(.)}">
+                                        <xsl:element name="a">
+                                            <xsl:attribute name="name">
+                                                <xsl:text>fn</xsl:text>
                                                 <xsl:number level="any" format="1" count="tei:note"/>
                                             </xsl:attribute>
-                                            <span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">
-                                                <xsl:number level="any" format="1" count="tei:note"/>
-                                            </span>
-                                        </a>
-                                    </xsl:element>
-                                    <xsl:apply-templates/>
-                                </div>
-                            </xsl:for-each>
-                        </p>
-
+                                            <a>
+                                                <xsl:attribute name="href">
+                                                    <xsl:text>#fna_</xsl:text>
+                                                    <xsl:number level="any" format="1" count="tei:note"/>
+                                                </xsl:attribute>
+                                                <span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">
+                                                    <xsl:number level="any" format="1" count="tei:note"/>
+                                                </span>
+                                            </a>
+                                        </xsl:element>
+                                        <xsl:apply-templates/>
+                                    </div>
+                                </xsl:for-each>
+                            </p>
+                        </div>
                     </div>
                     <xsl:for-each select="//tei:back">
                         <div class="tei-back">
@@ -128,14 +91,52 @@
                     </xsl:for-each>
                 </main>
                 <xsl:call-template name="html_footer"/>
-                <script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script>
+                <script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
-                
-
                 <script type="text/javascript" src="js/osd_scroll.js"></script>
                 
             </body>
         </html>
+    </xsl:template>
+    
+    <xsl:template match="tei:titlePart">
+        <xsl:choose>
+            <xsl:when test="@type='count-date' or @type='num'">
+                <h3><xsl:apply-templates/></h3>
+            </xsl:when>
+            <xsl:when test="@type='main-title' or @type='main'">
+                <p><xsl:apply-templates/></p>
+            </xsl:when>
+            <xsl:when test="@type='imprint'">
+                <p class="italic"><xsl:apply-templates/></p>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:imprimatur">
+        <p><xsl:apply-templates/></p>
+    </xsl:template>
+    
+    <xsl:template match="tei:head">
+        <h5><xsl:apply-templates/></h5>
+    </xsl:template>
+    
+    <xsl:template match="tei:lb">
+        <br class="linebreak"/>
+    </xsl:template>
+    
+    <xsl:template match="tei:w">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:pc">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:ab">
+        <p id="{local:makeId(.)}" class="yes-index">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="tei:p">

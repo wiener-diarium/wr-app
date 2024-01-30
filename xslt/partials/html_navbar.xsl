@@ -27,7 +27,7 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link" href="toc.html">Editionseinheiten</a>
                             </li>
 
@@ -47,7 +47,7 @@
                                         <a class="dropdown-item" href="listbibl.html">Werke</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>-->
 
                             <li class="nav-item">
                                 <a title="Suche" class="nav-link" href="search.html">Suche</a>

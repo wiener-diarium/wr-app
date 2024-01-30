@@ -45,16 +45,14 @@
                             </thead>
                             <tbody>
                                 <xsl:for-each select="collection('../data/editions/present/?select=*.xml')//tei:TEI|collection('../data/editions/legacy/?select=*.xml')//tei:TEI">
-                                    <xsl:variable name="full_path">
-                                        <xsl:value-of select="concat(substring-after(.//tei:titleStmt/tei:title[@level='a'], 'Wiener Zeitung '), '.html')"/>
+                                    <xsl:variable name="file">
+                                        <xsl:value-of select="concat(replace(@xml:id, 'edoc_wd_', ''), '.html')"/>
                                     </xsl:variable>
                                     <tr>
                                         <td>
                                             <a>
                                                 <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="$full_path"
-                                                  />
+                                                    <xsl:value-of select="$file" />
                                                 </xsl:attribute>
                                                 <i class="bi bi-link-45deg"/>
                                             </a>
@@ -64,8 +62,7 @@
                                                 select=".//tei:titleStmt/tei:title[@level='a']/text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="$full_path"
-                                            />
+                                            <xsl:value-of select="$file" />
                                         </td>
                                     </tr>
                                 </xsl:for-each>

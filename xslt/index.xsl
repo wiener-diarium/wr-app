@@ -5,14 +5,16 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:local="http://dse-static.foo.bar"
-    version="2.0" exclude-result-prefixes="xsl tei xs local">
+    version="2.0" exclude-result-prefixes="#all">
     
-    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="yes" omit-xml-declaration="yes"/>
+    <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
     
 
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
+    <xsl:import href="partials/tabulator_dl_buttons.xsl"/>
+    <xsl:import href="partials/tabulator_js.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -29,13 +31,46 @@
             </head>            
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
-                <main class="flex-shrink-0">
+                <main>
                     <div class="container">
-                        <h1><xsl:value-of select="$project_short_title"/></h1>
-                        <h2><xsl:value-of select="$project_title"/></h2>
+                        <table class="table" id="myTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
+                                    <th scope="col" tabulator-headerFilter="input">Titel</th>
+                                    <th scope="col" tabulator-headerFilter="input">Dateinname</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <xsl:for-each select="collection('../data/editions/present/?select=*.xml')//tei:TEI|collection('../data/editions/legacy/?select=*.xml')//tei:TEI">
+                                    <xsl:variable name="file">
+                                        <xsl:value-of select="concat(replace(@xml:id, 'edoc_wd_', ''), '.html')"/>
+                                    </xsl:variable>
+                                    <tr>
+                                        <td>
+                                            <a>
+                                                <xsl:attribute name="href">
+                                                    <xsl:value-of select="$file" />
+                                                </xsl:attribute>
+                                                <i class="bi bi-link-45deg"/>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of
+                                                select=".//tei:titleStmt/tei:title[@level='a']/text()|.//tei:titleStmt/tei:title[@type='num']"/>
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                </xsl:for-each>
+                            </tbody>
+                        </table>
+                        <xsl:call-template name="tabulator_dl_buttons"/>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
+                <xsl:call-template name="tabulator_js"/>
             </body>
         </html>
     </xsl:template>
