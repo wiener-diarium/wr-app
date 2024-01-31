@@ -1,27 +1,28 @@
-<html  class="h-100">
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-title" content="Wienerisches Diarium" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="images/logo.png" />
-      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any" />
-      <link rel="profile" href="http://gmpg.org/xfn/11" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="Wienerisches Diarium">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="images/logo.png">
+      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any">
+      <link rel="profile" href="http://gmpg.org/xfn/11">
       <title>Wienerisches Diarium</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-      <link rel="stylesheet" href="css/style.css" type="text/css" />
-      <link rel="stylesheet" href="css/micro-editor.css" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/micro-editor.css" type="text/css">
       <style>
                     .navBarNavDropdown ul li:nth-child(2) {
                         display: none !important;
                     }
                 </style>
    </head>
-   <body class="d-flex flex-column h-100">
+   <body class="d-flex flex-column">
       <header>
          <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid"><a class="navbar-brand" href="index.html">wrd</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,14 +30,6 @@
                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a><ul class="dropdown-menu">
                            <li><a class="dropdown-item" href="about.html">Über das Projekt</a></li>
                            <li><a class="dropdown-item" href="imprint.html">Impressum</a></li>
-                        </ul>
-                     </li>
-                     <li class="nav-item"><a class="nav-link" href="toc.html">Editionseinheiten</a></li>
-                     <li class="nav-item dropdown disabled"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a><ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="listperson.html">Personen</a></li>
-                           <li><a class="dropdown-item" href="listplace.html">Orte</a></li>
-                           <li><a class="dropdown-item" href="listorg.html">Organisationen</a></li>
-                           <li><a class="dropdown-item" href="listbibl.html">Werke</a></li>
                         </ul>
                      </li>
                      <li class="nav-item"><a title="Suche" class="nav-link" href="search.html">Suche</a></li>
@@ -47,796 +40,832 @@
       </header>
       <main class="flex-shrink-0">
          <div class="container">
-            <div class="row">
-               <div class="col-md-2 col-lg-2 col-sm-12"></div>
-               <div class="col-md-8 col-lg-8 col-sm-12">
-                  <h1 align="center">Wienerisches Diarium</h1>
-                  <h3 align="center"><a href="edoc_wd_1715-07-13"><i class="bi bi-download" title="TEI/XML"></i></a></h3>
-               </div>
-               <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right"></div>
-               <div id="editor-widget">
-                  <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                           <full-size opt="fls"></full-size>
-                        </li>
-                        <li class="dropdown-item">
-                           <image-switch opt="es"></image-switch>
-                        </li>
-                        <li class="dropdown-item">
-                           <font-size opt="fs"></font-size>
-                        </li>
-                        <li class="dropdown-item">
-                           <font-family opt="ff"></font-family>
-                        </li>
-                        <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
-                           <annotation-slider opt="ef"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="prs"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="plc"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="wrk"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="org"></annotation-slider>
-                        </li>
-                     </ul>
-                  </div>
+            <div id="editor-widget">
+               <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
+                     <li class="dropdown-item">
+                        <full-size opt="fls"></full-size>
+                     </li>
+                     <li class="dropdown-item">
+                        <image-switch opt="es"></image-switch>
+                     </li>
+                     <li class="dropdown-item">
+                        <font-size opt="fs"></font-size>
+                     </li>
+                     <li class="dropdown-item">
+                        <font-family opt="ff"></font-family>
+                     </li>
+                     <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
+                        <annotation-slider opt="ef"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="prs"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="plc"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="wrk"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="org"></annotation-slider>
+                     </li>
+                  </ul>
                </div>
             </div>
-            			
-            <div id="div__275">
-               					
-               <div id="div__274">
-                  					
-                  <p id="p__166" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sWien vom 10. bis 12. July 1715.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />slJitwoch den 10. July. Heüt wre dihier, bey ten,
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> egierend=und Vorwiftibt=Kaiserlichen Hösen,rlezt=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> WVeoittbt=Kaiserichen Majestllt, S8i selmila und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Dero Puchleuchtigslesingsten CrHrlzogin, mslin, Nahl. nin 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der schönsten Galla und gewöhnliher Gilülswins ung bgaunzan 
-                     						r=<br  xmlns:local="http://dse-static.foo.bar"><br />den; Und hatten ich diesen Tan die Römnisch=dasserlich=unhe9.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />lische Majestäten samt Jhro Chufäustl. Dsrchlencht Tiier, nn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der Favorta: und Jhre Vewitlibt=MKaiserliche ajestlät, Glevnera 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Magdalena Theresia, nebst Dero Oirchleuchtigsten ErzHe.oi nen,
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />aus der Kaserlichen urg nach Schönbrunn erhpben, dan desen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aillerhöchstgedacht=lezt Verwitubt=Halserlicher Majestlär zu ero 
-                     						ah=<br  xmlns:local="http://dse-static.foo.bar"><br />menolag gllcgewnnschen auch sowohl Mitags lo Abends bey 
-                     						De=<br  xmlns:local="http://dse-static.foo.bar"><br />roselbensammentlichnntereiner licblichen Tasel nstegespeiset sesort 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />theils wicder nach der Maiserlchen Favorlta undthenlo nahder 
-                     						oaser=<br  xmlns:local="http://dse-static.foo.bar"><br />iche </p>
-                  					
-                  <p id="p__109" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Eben Heüte haben Jhre Römisch=Kasellich=und Cathelische 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Majesiätdiedurch weitere Erhöhung Derogehesen. Naht und Lando=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Haupimauns zu Görz Titl. Hen Johanin Cashpor Gtasen von 
-                     						Co=<br  xmlns:local="http://dse-static.foo.bar"><br />benzl erledigte Lands=HauptmnnStell zu gedauchtem Görz Oero 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auch geheimen Raht, Till. Herm ohaun Jeh Crasen von 
-                     						Wil=<br  xmlns:local="http://dse-static.foo.bar"><br />densteindc. in allermildester Ansehung sewohl saister geosen Wenunst,
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />als in Staats=und Justiz Sachenstatlinl en Ersahienheit und zualen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />derenvornehm=und ersprieslichen Tiensi.en, welhe llethöch acht=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Jhrer Rönmsch=Kaserlich=und Cathole hen Masesät und Dro DachDachlsnhlgsten= </p>
-               </div>
-               				</div>
-            			
-            <div id="div__440">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_2">2</span>
+            <div class="title-page">
+               			
+               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_1">1</span>
                				
-               <div id="div__435">
-                  					
-                  <p id="p__48" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />lsnhlgsten Erz=Haud auch den gemeinen en nicht allein seine 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Vor=nd Cltein und Verwandten, andeenench erselbst bereits bis 20.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Jnhe 8 alumier=MReziernngennd eheln. 1 ah tell 
-                     						ireü=<br  xmlns:local="http://dse-static.foo.bar"><br />gch n, iee llerzudein n eigen. </p>
-                  					
-                  <p id="p__75" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />istnbeygehenden Ediet zusehen; ie daß die 
-                     						Kaiser=<br  xmlns:local="http://dse-static.foo.bar"><br />lil. aut zuSsain vermög der ausserlihen Cenzral 
-                     						Jppal=<br  xmlns:local="http://dse-static.foo.bar"><br />to=ung dem Meistblethenden gegen gense ulnn Gelts und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />erseidliche uwgshasl in Veyachtung zuiberlasen beschlossen und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dishem ndeder hte nohslomniendes Monits luqust angesetzet 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />whiden um achmittuss um. Uhrl in alhiesigem Gemeinee Stadt=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Tahihaus vorderangeordner=aiselichen Minierial ano 
-                     						epura-<br  xmlns:local="http://dse-static.foo.bar"><br />tipls Conmision aldl licitanlim zuersiheinen. </p>
-                  					
-                  <p id="p__30" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Donnersiag, den 11. Oily. Heue waren Jhre Hochfürstliche 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Gnaden von DTietrichstein iecer von hier, mrelo der Pest nach 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nillsurg abgangen </p>
-                  					
-                  <p id="p__144" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />lng den 12. July. Heste Vornieiags haben Jhre 
-                     						Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />jeslt die Veritihte Kaiserin Eleonorn Maor ena Theresia samt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />D.chleuchtiest.n erzogunen in der uiechen des 
-                     						Kaerli=<br  xmlns:local="http://dse-static.foo.bar"><br />cheehan bey nna d. s. wegen der ulängst angesangen=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />N. a hen geylags Andacht dem Gotterdinmst des Oun. Bischof=<br  xmlns:local="http://dse-static.foo.bar"><br />sei l.ia0, Titl. Hern Jqnaz ele ovira. beyewohnetssodanwie=<br  xmlns:local="http://dse-static.foo.bar"><br />dir sn alserlihen nurg gelehret: daselbsten des bendy hre 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />fierend=Mabserlich=und Gahoische Majestäten, nebst Jhlo 
-                     						Ghur=<br  xmlns:local="http://dse-static.foo.bar"><br />fs.n Dhleucht zu iier Sich auh eingefunden, und 
-                     						beyaller=<br  xmlns:local="http://dse-static.foo.bar"><br />hi. hld. Vewitebt anserlihen ajesint amt den 
-                     						Durchlench=<br  xmlns:local="http://dse-static.foo.bar"><br />tgn Oersegnnen, zu Nacht gespeiset, darauf wieder den 
-                     						Ruci=<br  xmlns:local="http://dse-static.foo.bar"><br />iseegnach der atzerlichen Faorita genommen. </p>
-                  					
-                  <p id="p__72" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />lelem ware von dir zöniglich änischen loqnirung der 
-                     						Schwe=<br  xmlns:local="http://dse-static.foo.bar"><br />dis. en rstung Wismat beygehende Continatio iarii, von dem 28.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bio 30. Jrnund von der Königlich=Preüssisch=und Chur Sächsischen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Rrmeeand oernhernächst folgendes Giariun, vom 27. bis 30. Tito,
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dbier eingeloen; Drauo von demzüngst=gemeldten die versicheite 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Beslätgung usehen. </p>
-                  					
-                  <p id="p__80" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Auns Pelen venden5. July. Daß der Her Bischoff von 
-                     						Prze=<br  xmlns:local="http://dse-static.foo.bar"><br />iyh Cron=Uuter Cnzler, zu Warschan angelangt; als daselbsten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auch der H Grod Gnzler und der He Neiho eimes, nebst denmt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cion Feldhernuächstenserwartet würden; Welch=lehterer die 
-                     						besorg=<br  xmlns:local="http://dse-static.foo.bar"><br />icelluhe in Wolihmien meistens gestillerund die Vornehmste davon 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />shen wieder beftidiget haben solle; ZJu Krackan habeder Her=GeneGeneral= </p>
-               </div>
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />rat 
-               				</div>
-            			
-            <div id="div__437">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_3">3</span>
+               <h3>
+                  						<br class="linebreak">Num. 12. | 6.
+                  						<br class="linebreak">enr,gesM urin,
+                  						<br class="linebreak">Enlhaltendallehadjenigelwuas von Tog zu Cesn.
+                  						<br class="linebreak">in dieser Mesdenz=GtadtWsen enewürdigeo, und h 
+                  						<br class="linebreak">zugelragenz; Als auch, was dergleichen n hicyslch aellda eieg.n 
+                  						<br class="linebreak">sait enen Auhong jedermalige Verzei uust: istlnh deen tä lich a. =
+                  						<br class="linebreak">menden Zweyen diren n und vor dritat getaunssen ader: Dten 
+                  						<br class="linebreak">deren Verehlichten und Verdtenw deen versierhsaen Pesonen.
+                  						<br class="linebreak">Mit Jhrer Rönmisch Maiserlichen asestätallergnädigster eyheit,
+                  						<br class="linebreak">u sandenim roten gal. </h3>
                				
-               <div id="div__427">
-                  					
-                  <p id="p__61" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ral Sason ein sharses lletl sbur 30. Unreisser aällin, und 
-                     						velsieie=<br  xmlns:local="http://dse-static.foo.bar"><br />lassen; Jn den SJtädtl Pinshow hälen die Polaurtn n. d. hln 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nen Schanäzel gehabt; dabey bio 16. ar, dem laggetödeie 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vernnder worden; Von den Türkis hen 
-                     						Cränzenhneevcleeedl=<br  xmlns:local="http://dse-static.foo.bar"><br />len; BspwiederznChoem viel inische Fahuen asgekommen. </p>
-                  					
-                  <p id="p__55" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Kue,he n 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />naro auo Gardinmien: und veschicdene Schisse mit raid,el 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und andern Waaren beladen tlcllich weder eingesseglet; Jdantn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />lonila habr der Hete Gieneral Wallio die Spannishe ruppen, ausser 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dem aslellan und dessen dzutanten durch Teutscho Mannshast 
-                     						ablö=<br  xmlns:local="http://dse-static.foo.bar"><br />sen lassen. </p>
-                  					
-                  <p id="p__83" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nnd Rom von den 22. Juny. Taß der HerCardinal Anecn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />derstlich die Pauprkrch zu St. Peter nach dime den Herm Carinal 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Necsaioli, als Techant dey H.Colegium, zubesuchenangesangenz 
-                     						Son=<br  xmlns:local="http://dse-static.foo.bar"><br />stenwär auch der Oer Cardimal Gliriei aus seinem Wnterland wncder 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zuruiommen. De Soldaten welche auf den Galestten Oiense leisten,
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und im Mlerdes irchen=Staatd auf die Seeränberlreitzen sollen 
-                     						wä=<br  xmlns:local="http://dse-static.foo.bar"><br />ten aunf Ciriti vecclia fortgesendetworden. </p>
-                  					
-                  <p id="p__51" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />us Lioorno, von dem 21. Junp. Daß von alta, daselbsen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />die Pbflliche Galceren sücheingesunden, die Machricht kommen; Wie 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />daß nehimalen aldorten ein Barbarishe Ggleotta it35. Selvenein=<br  xmlns:local="http://dse-static.foo.bar"><br />gebracht auch mn Gifecht bio 90. Türken geödstwerden. </p>
-                  					
-                  <p id="p__67" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ano Genna von dem 22. Junp. Dast aldert ans 
-                     						Maliaderit=<br  xmlns:local="http://dse-static.foo.bar"><br />ker ncciaore zurucomen; demenoch mehrere mnach Haus 
-                     						zuch=<br  xmlns:local="http://dse-static.foo.bar"><br />ren, nächsteno solgen sollen: So wären auch 2. mit Engel. Floggen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ano diajinund andere ahrzegeausatalonieneingelangelzso 
-                     						mit=<br  xmlns:local="http://dse-static.foo.bar"><br />gebracht, desßman zu Barcelona nene Anstalten mschen wolle, aufge=<br  xmlns:local="http://dse-static.foo.bar"><br />dachte Jnsul ioozugehen. </p>
-                  					
-                  <p id="p__56" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Auo deailand, von dem 26. Juny. Daß alda der He Graf 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />cCatlo orn flündlicherwartetwerde, Den 25. itowätein dasiger 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hauptsiadedergewöhnliche ich Marltgchalten und draus vnl 
-                     						Pfer=<br  xmlns:local="http://dse-static.foo.bar"><br />de uno Rind Vieh gesehen wordenz e len mterselbigen die Seüch 
-                     						vl=<br  xmlns:local="http://dse-static.foo.bar"><br />lig aufgehöret. </p>
-                  					
-                  <p id="p__74" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nins Venedig von dem 20. Junh. Tastmas in dast ser 
-                     						Hauwf=<br  xmlns:local="http://dse-static.foo.bar"><br />kirch ein aleemeines Jubel Jahr so auf Mäbstlichennesehl nm an. Ca=<br  xmlns:local="http://dse-static.foo.bar"><br />tholishen inden gehalten weidensole üngstens üeekumwthae. m 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den Göttlichen Beystand wider die rlkishe Macht zueröt m 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />aus Smirnegekommen Französischen Schishabe migcbracht: Dosß die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Trkische See Arnada dermgen sich zu enelo besinden solle, on </p>
-               </div>
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />dan= 
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />= 
-               				</div>
-            			
-            <div id="div__455">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_4">4</span>
-               				
-               <div id="div__451">
-                  					
-                  <p id="p__450" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dannen das Türckischen mit=Schiff mit 110. Stucken in die Dardanel¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> / sthrecord; weilen daseiheaer gefallet So habe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und. der Edncnet / welcher auf die Erhaltung 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denen: und sich all A. her Täg durch soviel/ andere alt¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> dem. besagten wäre die ergangen; Daß der das¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alten nachdem er von der Ottomanischen /fort Gelt bekom¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nachzuleben / mit selbigen gegen rciminaLrschlret; und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />in Albanien hätten sich auch bis 1 Türcken zuamigezogen; Der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Capitaine deren Schissen soll in die andere Welt abzugehen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />wegen eine schlagen Kranckheit / in Gefahr gestanden seyn.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />das. tugall / von den. und. daß aldorten ein solche Hitze 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />turchgehend berühret werde; so die Früchten auff dem Feld verbren¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />solle 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Den. Spanmen von dem 12. und. Daß der Herzog von Anjou 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nachBürcellona gesendet / um mit den bereitliegenden 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und licher Mannschaft ein=für allemal das Vor¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />abgangen Friese die zuführen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nEitmmlen von dem 25. und. Daß Ihre Königliche 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />hütung Prinzen Wallis / und einer grossen Anzahl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und anderer Personen / den 24. Dito / zu llideparc 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ihr Dero. Regimenter zu Fuß der Maisterung zu Pferd abgewartet;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cahtyzugleih ein fast unbeschreibliche Menge Volk erschienen gewesenso 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />seiner die dieser / in so mit=und guadn König zusehen und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />indessen gedacht /Königl Majestät hätten dem am¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den guldenen von der Partey von Torris / die oder¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> Stein den Tour abgenommen / und selbe dem Comte de Der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />anfangen /endlichen das Königliche Regiment zu Pferd des Comte 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />de Petdrhooigen die Argcile; und das Königl. Dragoner Regiment 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />des Comte de Fegerl dem Land Cobham verliehen / dan sonsten ver¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />indeme Kriegs/ stellen ergeben; Den 22. dieses wäre der Gebts¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />beschriebenen zwar gefallen; dessen Anhang aber habe nichts 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />besündersgfengen; als daß selbiger an 2. Orten der Stadt des Hr¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Lenditen rürugofentlich gelesen / dan seinen Nahmen auf dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hut unter einem Buschen and getragene/ Weilen die von der Partey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von Totti durch die viele Belrassungen ihren Macht verlohren; noch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />anderer aber verlehren dörsten; an man mit Bech dligung ihrer 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Händen / wegen des hohen Verrahts / fortfahren werde; Als deshalben 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />schon der. Comte de allingbrockh für ihren ädelsführer erkant 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />worden; dessen vorsehniste Puncten hierbey zusehen; Nach welchem die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nicht den Comte dOuord und andere treffen solle. Aus </p>
-               </div>
-               				</div>
-            			
-            <div id="div__530">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_5">5</span>
-               				
-               <div id="div__518">
-                  					
-                  <p id="p__228" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und Frankreich / von den. in. Daß de einer diese¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />mit, Majestät 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hof angelanget / und Lista. stäten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Audienz; gehabt / auch die.. Rochus. ihr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />geführet; welcher / als Anjouinische höchster /) den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Haag gehen solle; Zu Pariß habe man an Verabund St. eines 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Baptist ein slatliches Fischer vor Tagen Rothal angezündet;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />welchen der Perstanisee Botshaster / und/ mit ihre/ viele tausend /er¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sonen zuigesehen; Gartner aber vers. liegend sehr solle sich Hielsen;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />immassen einig hölzerne stellen durch das Gewichter Leuthen einige¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />fallen / und dabey viele und geblieben; ingleichem wäre von St. Max¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />garetha die Nachricht /kommen; Daß aldorten den 4. dieses ein starles 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ungewilter / von 10. Uhr / Vormittags / bis 6. Uhr Abend gewesen;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Dehrend dessen das erstemal 4. Soldaten getödtet und 2. bis. heit:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />das andernial;3. Mann=und 3. Weiboersoncnztr End geniestn:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auch an einem Pferd die. aifeisen von den Flössen/ ohne seiner¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />shädigung / abgeschlagen: aber das deltteual Pferd getödtet: und das 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vierdtenma / von den Bley;. Schlösser eingeäsehert worden. </p>
-                  					
-                  <p id="p__67" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Und Holland / von dem 2. July. Daß der drbrinhve 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Lemberg als den Haag nach Rotterdam sich begeben / um von der der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nach Brüssel zusehen / und folgenden die vornehmsten Pläz von¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bat und Flandern besichtigen; den 9. in sche zu Chr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein Officier / so sich alda beeden wollen / ungefehr ertrsnken. </p>
-                  					
-                  <p id="p__70" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ans Brabant / von dem 2. July. Daß der Kaiserliche /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herr Graf von Königs / den 9. und aus dnkwepen über den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ostende sich verfügen / aus von dar serners / mit dem Herrn Gen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Lieutenant Cadogan / welcher sich / wegen wiedrigen Wind / dateaa 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />noch auß halten müssen / die ein nach Londen sortzusse hen¬. </p>
-                  					
-                  <p id="p__74" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Von dem Nieder=Rheinstrom / vom 4. July. Daß Ihre 
-                     						Chur¬=<br  xmlns:local="http://dse-static.foo.bar"><br />fürstl. Durchleucht zu Pfaltz von Bisseidorff nach dem Erst=Schloß Hand¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bach: der rin; und die Prinzessin von Stilzbach mit dem Herrn Gra¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sen von Hatzfeld / nach Sulzbach: und der Printz von Naziwill / samt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den Herrn Grafen von Wassenger / nach Holland abgangen. </p>
-                  					
-                  <p id="p__88" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Von dem Ober=Rheinstrom / vom 5. July. Daß die Frantzosen in den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Elsaß sich noch dan; still halten sollenevon dorten dieseriet wiedaß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />unlängstens / als den 5. Mayn / zu Strasburg / in dasigem Meister / ein 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vierährig=Eoangelischer Prediger / Nahmens Johann Sigmund Ne¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />stern / von Dresden gebürtig / die Catholische die eben=. anders /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nach vorhero offentlich gehaltener Predrg / welche nächstens in Ordre zu¬ </p>
-               </div>
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />)(3 
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />haben 
-               				</div>
-            			
-            <div id="div__445">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_6">6</span>
-               				
-               <div id="div__434">
-                  					
-                  <p id="p__50" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />abgeleget; derselbe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Paterna: die auch in der L¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sein. sich=und Hekrsscsen Sprach 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> verfahren. dann schen ein g lsireicheHetson seyn; Weswe¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sein der Chr. ins genommen: und nach dan/ in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> rothen geseglet worden. </p>
-                  					
-                  <p id="p__81" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />eine erhveitz / Enden 2. als. Daß verlauten wolle; als 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pfündige. Gesandten von den Catholischen Canonen nach dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dannen /haltet werden und dieseniderlafig zustellen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denSchna und. haden; weichen /nen die Ernenerung der Allanz 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />erlcsichtt den verlaute / daß unweit davon der Hertzog 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Den Sachen aneimsnen; der Uber ad die aber durch gedachtes Gen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nach S. sein bey 8. schlechte gereist. </p>
-                  					
-                  <p id="p__305" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Den dem Elbstrom / vom 8. July. Daß / vermög der Nachricht 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> erhalten und der Könglieh=Tämehe Befehl eingelangt /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> der Admiral Parthey ist=guten Kind und seiner Flotta in Sie 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gehen solle; noch Den /den and Schweden / wäre der Herr Graf von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.zu Perthol angekommen / und habe bereits bey den Herrn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von weissen Cassel / und der Herzog Carl Friderich Audienz 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herrn gdgtemtohm habe man der künden lassen / daß /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />höhung 8. vom Handert / allehedessen verbothene Waaren 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pefenctwerden möge; nebst deme wolle man grosse Der=wolle 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vertragen ingleichem die und seine Platten von 6. bis y. Rthlr. erhöhen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />herein zumachen / die Kriegs=Posten zubesteten; hoehgedachter 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />hingegen /dieses Vorhaben auß Fimland gegen die Posto¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> nen willen; allein solches wäre ihrem abgeschlagen worden;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein/ eserußyn; wan man neue suche / das Reich von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denen feindgubescmützen. Aus Pommern werde versichert /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.Engel undestcis zu Stralsund / ahrrens seines K¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> Leegard Schweden die Ersetzung des Schaden / wie¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Engellischen Schissen / und die Versicherung / daß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Stündigen nichtmehr geschehen möge / nichtwniger die Eindiehung 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Guldenen der Kapperey / mit Tetrehung begehret habe; von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />so Stralsund sey ein Französ von dem Marquis der Croifsi zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Haag/ alda der Herr Administrator sich wieder and eWolffebüttel 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />angefangen und nach Frankreich zu seinem König in höchster Eyl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />erüistAn Sachsen / von ina / werde berichtet / daß aldorten /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den 23. und / das Wetter und Wasser an Kirchen / Hälsern / Gärten /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Jahr / und Wieden grossen Schaden gefallen. </p>
-               </div>
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />10. A¬ 
-               				</div>
-            			
-            <div id="div__566">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_7">7</span>
-               				
-               <div id="div__27">
-                  					
-                  <p id="p__26" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den. ihr 1. der.ein besetzet ist=den herrliche 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />seiner.ihr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dem richtigen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Heit wird. </p>
-               </div>
-               				
-               <div id="div__12">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />angelangte Heß=werden / P in. </div>
-               				
-               <div id="div__67">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />1715 
-                  					
-                  <p id="p__59" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Kärntner. Thor. Pralat zu Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Zeit/ komt. log. in 
-                     						aber=<br  xmlns:local="http://dse-static.foo.bar"><br />der Hof.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />thcteThor. schon / Haupt=<br  xmlns:local="http://dse-static.foo.bar"><br />in in von.als. haltet / so 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von Berlin / log. bey seinem alt sten.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Kärntner Thor. Herr Peter Grgrerta / komt </p>
-                  					
-                  <p id="p__5" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dabey </p>
-               </div>
-               				
-               <div id="div__19">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den I Dito. 
-                  					
-                  <p id="p__10" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herren / nach /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />/ völlige </p>
-               </div>
-               				
-               <div id="div__44">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />ein 11. Dito 
-                  					
-                  <p id="p__22" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Degen Thurn. Herr Rittmeister /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von Irenerges Regiment / sein von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cataloaien S bewegen aller. </p>
-                  					
-                  <p id="p__14" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Lista derer Verehelichten im=und ver der Stadt. </p>
-               </div>
-               				
-               <div id="div__150">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />ein 2315 
-                  					
-                  <p id="p__141" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johannn r / Maurer / mit Catharina 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Regina Eisen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann tabrtel leischner Schreiber / mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Maria Anna Mibetim.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Jos. ih Branaseedler / afteiber / mit Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Magdalena Herr in.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann lephemer / ehender / mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Maria Theresia andern.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Matthias aber / Schneider / mit Mar,¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />reich Wegerin.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herr Johann seyn und Mavier / Kayserl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Perin. mit Besagter / mit Jagten Der.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bara Weisin 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Leopold Martin dann / mit Francisca 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Fischerin.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Martin delhlfer / Jager / mit Welburg 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Valentin.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann Schultz / Gelds / mit / mit Apollonia 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Arngtin / Wittib.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Leopold Herzog / Gardi=Soldat / Wittiber /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />mit Maria Agnes Humplin. </p>
-               </div>
-               				
-               <div id="div__78">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 15. Dito. 
-                  					
-                  <p id="p__65" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Matthias im / Würth / mit Maria Re¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />berca Maria.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Franz Dominicus Obrist / mit Elisabeth Bay¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dannen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann Häringer / Laggey mit Eva Per äntlin.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />HeitrfFfranzereni hat / Röm. Kayserl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Majest/ Hof Kriegs. B. ebalterey Mar¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Officier / mit Herr. Maria Rosalia 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />audtnerin. </p>
-               </div>
-               				
-               <div id="div__28">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den Dito. 
-                  					
-                  <p id="p__16" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Niclas Hilff / werde. Sachen/ in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bara Fleisch in. </p>
-               </div>
-               				
-               <div id="div__66">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den g. Dito. 
-                  					
-                  <p id="p__51" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herr Johann lagerung 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der. Barbara ¬gestern.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Reitknecht.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.hat.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />einige. Mar / mittels 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />weniger in.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ihr / Soldat / mit Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ursula sein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> ältester=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Paffenstatter / mit Anna 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />fahren. </p>
-               </div>
-               				
-               <div id="div__122">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />der / an. 
-                  					
-                  <p id="p__104" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sein. del / ausser / mit Anna Ma¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />rin K. len.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />/Peruquenmacher / mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Elisabeth Thoren.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> der Reich Stein /. nider / im Josepha 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Reich ein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herrn. hann Joseph besagter / Handelsmann /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alt in die Maria Magdalena alt.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />etliche in angezündet 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> Weilen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann. Nicht /aber /8 T¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Acrath: er di.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann; / Laggey / mit Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Sonntag ein 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Christoph in / Kutscher / mit und Mr¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ria kein. </p>
-                  					
-                  <p id="p__5" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Den </p>
-               </div>
-               				</div>
-            			
-            <div id="div__604">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_8">8</span>
-               				
-               <div id="div__36">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br /> 2.. 
-                  					
-                  <p id="p__31" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />f alt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.alt.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> Catha¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> hinein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />andern 
-                     						fich=<br  xmlns:local="http://dse-static.foo.bar"><br />ein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> der / mit Theresia 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Perin </p>
-               </div>
-               				
-               <div id="div__44">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />3. Dito. 
-                  					
-                  <p id="p__6" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nicht Ring / </p>
-                  					
-                  <p id="p__33" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />allrrin Elisabeth 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Perlin.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johann. lange / mit Barbara 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herr Rath den Fridshl / mit Jungst.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Anna Deicthe Angsilerin. </p>
-               </div>
-               				
-               <div id="div__57">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />ein. Dito. 
-                  					
-                  <p id="p__39" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Paul sich/ hungarischer / mit Maria dar¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bara ander in.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Johannesgassen / in Maria Bart¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der Kaiserin.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Georg.am/ Schuhmacher / mit Ther¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />resia Hoffmannin. </p>
-                  					
-                  <p id="p__12" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Verstorbenen in=und vor der Stadt. </p>
-               </div>
-               				
-               <div id="div__81">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />in 715. starb 
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />In der St 3. 
-                  					
-                  <p id="p__66" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> Herrn Johann Georg ben Biel /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />anderen. Kaiserl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />. Dem mepoldis.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />übrigen / sein Herr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> alt. und 1. halb.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Heil Cammer¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />jenseits. Haust in der untern 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />. nach. alt 3. J.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> in einen Hand / in der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alt 68. Jahr. </p>
-               </div>
-               				
-               <div id="div__76">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Stadt. 
-                  					
-                  <p id="p__68" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />am Spital¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> und 1. halb J.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> der /bey Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ff sein 3. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />St.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alt 2. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> über / in der 
-                     						Ro=<br  xmlns:local="http://dse-static.foo.bar"><br />an sein) ein alt 3. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />hier Mann zu len 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alt 40. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ineeseltstadt / alt 10. J. </p>
-               </div>
-               				
-               <div id="div__11">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />. Dito. </div>
-               				
-               <div id="div__99">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Stadt. 
-                  					
-                  <p id="p__32" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nacher Kaiserl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />er. di. Hauß / in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cartätschen sein Kind Franz Jo¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />heit 5. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Catharina Caspar Man / Kaiserl </p>
-                  					
-                  <p id="p__59" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />General bey Commssariat=Amts=Can¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />leisten Beneficiat Hall/ in Barbara¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gal / sein Kind Carl / alt 6. viertl. Jahr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein Jac Geißl / immer gesell / in Frau¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />cenetis. Hauß / am Rehlnatlt / sein. in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Eva / alt 2 Jahr. </p>
-               </div>
-               				
-               <div id="div__88">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Der der Stadt. 
-                  					
-                  <p id="p__75" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Dem Adolph Kopp / Seuchmacher / am 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Spitlberg; / sein Kind Befehls / alt 6.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />viertl Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Dem Lorenz Ritter Neues. und/ in der ihr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />eingerissen sein alt 7. viertl J.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Gnbrtel Baader / Sihiffnccht in der Leopold 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />stadt / alt 58. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Conrad Rederan /in Krancken=Haus / alt 40 J. </p>
-               </div>
-               				
-               <div id="div__20">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 12. Dito/ in der Stadt Niemandz </div>
-               				
-               <div id="div__135">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt aber 
-                  					
-                  <p id="p__120" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Titl Herr Ferdinand Draghn / der in /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Kaiserl. Majestät Sechazmaiter / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hof.=Cammer=Ratt in Schlesien / in sein 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dem alle / alt Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Georg Mittertrsser / Zillen sahepper / in de 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Leopoldstadt / alt 74. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Anton Weiß / Hächlmacher / am Liechtenthal 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alt 36. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Salome lamica / arme Wittib / auf des 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Landstrassen / alt 56. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Benedict Hersehberger / alt 96. Jahr / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Maria Haberlin / alt 68. Jahr / beeden 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ArmenHaus.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Regina Beitmaulin / im KranlenHanc / a 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />48. alt </p>
-               </div>
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />die 
-               				</div>
-            			
-            <div id="div__440">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_9">9</span>
-               				
-               <div id="div__163">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Edict /
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br /> die Perpachtung der mehrendem.
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Stein einen. 
-                  					
-                  <p id="p__148" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />DEmnach beschlossen werden die Kayserl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />möge Kaiserlichen Generalen tohidi.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gegen gewisse Summa Gelts / und erforderliche Caution in. Hang 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zuüberlaissen / und zu solchen Ende der.in Icstonmmndes Mons /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nachmittag / und 4. ihr / in allhiesigen gemeiner PP. der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />angeordnet. Kaiserlichen /Ministerial BancDepuftatin. Carl.¬.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />citaun zuerscheinen / angesebe t worden; alt wird ein solten 
-                     						jeder=<br  xmlns:local="http://dse-static.foo.bar"><br />man Wissenschaft durch dieses Edict kund und offendjr Haag;mit so 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein oder anderer diese Mauth in Bestand geinehimen gesonnen ware /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein solcher auß/ dorernenen Tag und Stund / alludit in Persona, oder per 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nitaruatracnndun coieIelenluim bey aller wld Banco¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Commission zuerscheinen / und gebührend sich anzumelden / wissen möge;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alten / den 5. July / 1715. </p>
-               </div>
-               				
-               <div id="div__261">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Continuatio Diarii. als der Königlichen=Dänischen 
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />/ loqüirug der Schwedischen Festung Wisnar /
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />von 30. und. 15 
-                  					
-                  <p id="p__38" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />En 128. und. Heute waren wird gegen. rina ferners angerucket; bey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />welcher rucken eben 3. Preussische Regimenter zu Pferd/ und 2. Bart 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Haillonen zu abgestossen. </p>
-                  					
-                  <p id="p__73" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 29. Dito. Der Herr Graf Spoanedk / welcher von Ihro Majestät /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />unserem König / in gelassen gelegenfeken / nach der (Stadt Posto abges¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />schicket worden / am Heute von dar wieder zur / und mit /me waren zu¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gleich Ihre Durchleucht / der Herzog von Mecklenbug / angelanget; Welche 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den mit Ihro Königlichen Majestät das Ntittagmal genommen. </p>
-                  					
-                  <p id="p__101" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 30. Dito. Heute müssen wie dahier noch Rasttag halten; weilen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />des Herrn Herzogen zu Meclenburg Hochfürstl. Durchl. sich nicht dahin bey¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />quemen wollen / vergedahte Stadt Rostock uns als gewisse Bedingussen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />cinzuraumen; Indessen langten viel Schwedische lberauffer bey uns auß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von denen man bereit daß sie bey Dag ateneine l Ghanzalf gederffen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und die Schwedische Truppen noch allda stünden / selbigen Paß auß das dessen¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />so zuverthlgen; Da miller weil unsere Flotta / bey Tagen sich geheget 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />haben solle. </p>
-                  					
-                  <p id="p__32" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />übrigens sollen zur Bloquirung der Stadt und Festung Wirsmar / von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />unserer Armee 12. Squadtonen / und 4. Bataillonen und von der Preussischen </p>
-               </div>
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />)(0( 
-               						<br  xmlns:local="http://dse-static.foo.bar"><br />alt ih 
-               				</div>
-            			
-            <div id="div__493">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_10">10</span>
-               				
-               <div id="div__64">
-                  					
-                  <p id="p__62" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />10. zu hohen / und 3. feinen; auch: und davon die Reuterey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vernehmen Den. den ztmaistern / Chattam Handel wie auch dem Herrn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.in P: den Herr. Verlust von dem Herrn Obristen Feld und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Brigitta: ganz. Corpo der von den Herrn General/ Leegard 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pfündige werde </p>
-               </div>
-               				
-               <div id="div__421">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Diarium der Königliche=Preussischen Armee als dem 
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Holtztrager bey P was / dem 27. bis 30. Franz. 1715. 
-                  					
-                  <p id="p__60" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />27. und. angelangte Kundschafft /daß die Schweden mit ei¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nen Teihrer Prince bey wollen durchfubehen / und ihren Marsch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />angehoben fortzusetzen. Vorhabens / war unser bey gedachten wollen stehen¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der hitzigen. Mann verstärktet werden; demnach die samment¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ihhngihrersisis de und Chur=S. dische Armee / </p>
-                  					
-                  <p id="p__27" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den:8. Dito / sey ittn den diser hgeameht / und den Marsch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />anderthalb Heil ben dannen nach Gen: </p>
-                  					
-                  <p id="p__18" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />/ ein 27. Dito aber bis Poselwalt gendinnc foairgalda Hielte dieselbe / </p>
-                  					
-                  <p id="p__148" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />50. Dito Theils der Sonntag halber / und Theils der grossen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denen=Tag Schwede/ sche Parteyen /dessen waren in der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />angreifen / und hatten gesuchet / wo möglich / als an Men¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /> einigen drey allen; Wie den berührle Parteyen auch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ermordet / welcher drey Meel von hier auf Postirung gestanden /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.Schritt alt /Kundschasst angangen gewesen / in der sehen auf 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pfündige einemgewissen General 10. Pferd / so auff/ der Iurra¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gefangenen hätten. Die in Cüstrin 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herbersteinische Gefangenen wan den Heut ander / ins 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nicht welche gegen so viel Ulnserige abgereißet werden sollen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Morgen wird die Armee wieder auffbrechen / und bis nach dem Sabel Paß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />einig nehmen / im einigen die Dähnis. Hr zu der Unserigen stossen. </p>
-                  					
-                  <p id="p__21" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />orrehinsße Flancken der Veschuldigung des Engellischen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />V/ ico de llinbroch. </p>
-                  					
-                  <p id="p__141" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Senat derer: htennddessen G. Heil dem Marquis Torcy 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denen Herrn Heninger offenbar.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.Ordre gegeben / mit dem Prinz Eugeni und andern AllUrten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />. hetten zu Fortstang der die zu nehmen; Zu gleichen Zeit aber 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nicht. samdt / sich wieder in eine Belagerung noch in ein Treffen einzulassen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denen ugetahn / und ihnen behätten gewesen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der Cron gewisses wie der von den Hollenberg verschasset.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denen. gefertiget sich von Gen und einige zuverstehen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />. Lager mit dem Als. unter gemacht: / wo der r. senden scher seyn möge¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />.Pferden Admiral einen; in dem Mittelländisihen Meer den Befehl geschickt / di¬ 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />aevante seeglen Französische Kaffartey Flotta nicht anzufangen. </p>
-               </div>
-               				</div>
-            		
-            <p style="text-align:center;"></p>
+               		</div>
+            <div class="page-content">
+               			
+               <div id="div__275">
+                  					
+                  <div id="div__274">
+                     					
+                     <p id="p__166" class="yes-index">
+                        						<br class="linebreak">sWien vom 10. bis 12. July 1715.
+                        						<br class="linebreak">slJitwoch den 10. July. Heüt wre dihier, bey ten,
+                        						<br class="linebreak"> egierend=und Vorwiftibt=Kaiserlichen Hösen,rlezt=
+                        						<br class="linebreak"> WVeoittbt=Kaiserichen Majestllt, S8i selmila und 
+                        						<br class="linebreak">Dero Puchleuchtigslesingsten CrHrlzogin, mslin, Nahl. nin 
+                        						<br class="linebreak">der schönsten Galla und gewöhnliher Gilülswins ung bgaunzan 
+                        						r=<br class="linebreak">den; Und hatten ich diesen Tan die Römnisch=dasserlich=unhe9.
+                        						<br class="linebreak">lische Majestäten samt Jhro Chufäustl. Dsrchlencht Tiier, nn 
+                        						<br class="linebreak">der Favorta: und Jhre Vewitlibt=MKaiserliche ajestlät, Glevnera 
+                        						<br class="linebreak">Magdalena Theresia, nebst Dero Oirchleuchtigsten ErzHe.oi nen,
+                        						<br class="linebreak">aus der Kaserlichen urg nach Schönbrunn erhpben, dan desen 
+                        						<br class="linebreak">Aillerhöchstgedacht=lezt Verwitubt=Halserlicher Majestlär zu ero 
+                        						ah=<br class="linebreak">menolag gllcgewnnschen auch sowohl Mitags lo Abends bey 
+                        						De=<br class="linebreak">roselbensammentlichnntereiner licblichen Tasel nstegespeiset sesort 
+                        						<br class="linebreak">theils wicder nach der Maiserlchen Favorlta undthenlo nahder 
+                        						oaser=<br class="linebreak">iche </p>
+                     					
+                     <p id="p__109" class="yes-index">
+                        						<br class="linebreak">Eben Heüte haben Jhre Römisch=Kasellich=und Cathelische 
+                        						<br class="linebreak">Majesiätdiedurch weitere Erhöhung Derogehesen. Naht und Lando=
+                        						<br class="linebreak">Haupimauns zu Görz Titl. Hen Johanin Cashpor Gtasen von 
+                        						Co=<br class="linebreak">benzl erledigte Lands=HauptmnnStell zu gedauchtem Görz Oero 
+                        						<br class="linebreak">auch geheimen Raht, Till. Herm ohaun Jeh Crasen von 
+                        						Wil=<br class="linebreak">densteindc. in allermildester Ansehung sewohl saister geosen Wenunst,
+                        						<br class="linebreak">als in Staats=und Justiz Sachenstatlinl en Ersahienheit und zualen 
+                        						<br class="linebreak">derenvornehm=und ersprieslichen Tiensi.en, welhe llethöch acht=
+                        						<br class="linebreak">Jhrer Rönmsch=Kaserlich=und Cathole hen Masesät und Dro DachDachlsnhlgsten= </p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__440">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_2">2</span>
+                  				
+                  <div id="div__435">
+                     					
+                     <p id="p__48" class="yes-index">
+                        						<br class="linebreak">lsnhlgsten Erz=Haud auch den gemeinen en nicht allein seine 
+                        						<br class="linebreak">Vor=nd Cltein und Verwandten, andeenench erselbst bereits bis 20.
+                        						<br class="linebreak">Jnhe 8 alumier=MReziernngennd eheln. 1 ah tell 
+                        						ireü=<br class="linebreak">gch n, iee llerzudein n eigen. </p>
+                     					
+                     <p id="p__75" class="yes-index">
+                        						<br class="linebreak">istnbeygehenden Ediet zusehen; ie daß die 
+                        						Kaiser=<br class="linebreak">lil. aut zuSsain vermög der ausserlihen Cenzral 
+                        						Jppal=<br class="linebreak">to=ung dem Meistblethenden gegen gense ulnn Gelts und 
+                        						<br class="linebreak">erseidliche uwgshasl in Veyachtung zuiberlasen beschlossen und 
+                        						<br class="linebreak">dishem ndeder hte nohslomniendes Monits luqust angesetzet 
+                        						<br class="linebreak">whiden um achmittuss um. Uhrl in alhiesigem Gemeinee Stadt=
+                        						<br class="linebreak">Tahihaus vorderangeordner=aiselichen Minierial ano 
+                        						epura-<br class="linebreak">tipls Conmision aldl licitanlim zuersiheinen. </p>
+                     					
+                     <p id="p__30" class="yes-index">
+                        						<br class="linebreak">Donnersiag, den 11. Oily. Heue waren Jhre Hochfürstliche 
+                        						<br class="linebreak">Gnaden von DTietrichstein iecer von hier, mrelo der Pest nach 
+                        						<br class="linebreak">Nillsurg abgangen </p>
+                     					
+                     <p id="p__144" class="yes-index">
+                        						<br class="linebreak">lng den 12. July. Heste Vornieiags haben Jhre 
+                        						Ma=<br class="linebreak">jeslt die Veritihte Kaiserin Eleonorn Maor ena Theresia samt 
+                        						<br class="linebreak">D.chleuchtiest.n erzogunen in der uiechen des 
+                        						Kaerli=<br class="linebreak">cheehan bey nna d. s. wegen der ulängst angesangen=
+                        						<br class="linebreak">N. a hen geylags Andacht dem Gotterdinmst des Oun. Bischof=<br class="linebreak">sei l.ia0, Titl. Hern Jqnaz ele ovira. beyewohnetssodanwie=<br class="linebreak">dir sn alserlihen nurg gelehret: daselbsten des bendy hre 
+                        						<br class="linebreak">fierend=Mabserlich=und Gahoische Majestäten, nebst Jhlo 
+                        						Ghur=<br class="linebreak">fs.n Dhleucht zu iier Sich auh eingefunden, und 
+                        						beyaller=<br class="linebreak">hi. hld. Vewitebt anserlihen ajesint amt den 
+                        						Durchlench=<br class="linebreak">tgn Oersegnnen, zu Nacht gespeiset, darauf wieder den 
+                        						Ruci=<br class="linebreak">iseegnach der atzerlichen Faorita genommen. </p>
+                     					
+                     <p id="p__72" class="yes-index">
+                        						<br class="linebreak">lelem ware von dir zöniglich änischen loqnirung der 
+                        						Schwe=<br class="linebreak">dis. en rstung Wismat beygehende Continatio iarii, von dem 28.
+                        						<br class="linebreak">bio 30. Jrnund von der Königlich=Preüssisch=und Chur Sächsischen 
+                        						<br class="linebreak">Rrmeeand oernhernächst folgendes Giariun, vom 27. bis 30. Tito,
+                        						<br class="linebreak">dbier eingeloen; Drauo von demzüngst=gemeldten die versicheite 
+                        						<br class="linebreak">Beslätgung usehen. </p>
+                     					
+                     <p id="p__80" class="yes-index">
+                        						<br class="linebreak">Auns Pelen venden5. July. Daß der Her Bischoff von 
+                        						Prze=<br class="linebreak">iyh Cron=Uuter Cnzler, zu Warschan angelangt; als daselbsten 
+                        						<br class="linebreak">auch der H Grod Gnzler und der He Neiho eimes, nebst denmt 
+                        						<br class="linebreak">Cion Feldhernuächstenserwartet würden; Welch=lehterer die 
+                        						besorg=<br class="linebreak">icelluhe in Wolihmien meistens gestillerund die Vornehmste davon 
+                        						<br class="linebreak">shen wieder beftidiget haben solle; ZJu Krackan habeder Her=GeneGeneral= </p>
+                  </div>
+                  						<br class="linebreak">rat 
+                  				</div>
+               			
+               <div id="div__437">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_3">3</span>
+                  				
+                  <div id="div__427">
+                     					
+                     <p id="p__61" class="yes-index">
+                        						<br class="linebreak">ral Sason ein sharses lletl sbur 30. Unreisser aällin, und 
+                        						velsieie=<br class="linebreak">lassen; Jn den SJtädtl Pinshow hälen die Polaurtn n. d. hln 
+                        						<br class="linebreak">nen Schanäzel gehabt; dabey bio 16. ar, dem laggetödeie 
+                        						<br class="linebreak">vernnder worden; Von den Türkis hen 
+                        						Cränzenhneevcleeedl=<br class="linebreak">len; BspwiederznChoem viel inische Fahuen asgekommen. </p>
+                     					
+                     <p id="p__55" class="yes-index">
+                        						<br class="linebreak">Kue,he n 
+                        						<br class="linebreak">naro auo Gardinmien: und veschicdene Schisse mit raid,el 
+                        						<br class="linebreak">und andern Waaren beladen tlcllich weder eingesseglet; Jdantn 
+                        						<br class="linebreak">lonila habr der Hete Gieneral Wallio die Spannishe ruppen, ausser 
+                        						<br class="linebreak">dem aslellan und dessen dzutanten durch Teutscho Mannshast 
+                        						ablö=<br class="linebreak">sen lassen. </p>
+                     					
+                     <p id="p__83" class="yes-index">
+                        						<br class="linebreak">Nnd Rom von den 22. Juny. Taß der HerCardinal Anecn 
+                        						<br class="linebreak">derstlich die Pauprkrch zu St. Peter nach dime den Herm Carinal 
+                        						<br class="linebreak">Necsaioli, als Techant dey H.Colegium, zubesuchenangesangenz 
+                        						Son=<br class="linebreak">stenwär auch der Oer Cardimal Gliriei aus seinem Wnterland wncder 
+                        						<br class="linebreak">zuruiommen. De Soldaten welche auf den Galestten Oiense leisten,
+                        						<br class="linebreak">und im Mlerdes irchen=Staatd auf die Seeränberlreitzen sollen 
+                        						wä=<br class="linebreak">ten aunf Ciriti vecclia fortgesendetworden. </p>
+                     					
+                     <p id="p__51" class="yes-index">
+                        						<br class="linebreak">us Lioorno, von dem 21. Junp. Daß von alta, daselbsen 
+                        						<br class="linebreak">die Pbflliche Galceren sücheingesunden, die Machricht kommen; Wie 
+                        						<br class="linebreak">daß nehimalen aldorten ein Barbarishe Ggleotta it35. Selvenein=<br class="linebreak">gebracht auch mn Gifecht bio 90. Türken geödstwerden. </p>
+                     					
+                     <p id="p__67" class="yes-index">
+                        						<br class="linebreak">Ano Genna von dem 22. Junp. Dast aldert ans 
+                        						Maliaderit=<br class="linebreak">ker ncciaore zurucomen; demenoch mehrere mnach Haus 
+                        						zuch=<br class="linebreak">ren, nächsteno solgen sollen: So wären auch 2. mit Engel. Floggen 
+                        						<br class="linebreak">ano diajinund andere ahrzegeausatalonieneingelangelzso 
+                        						mit=<br class="linebreak">gebracht, desßman zu Barcelona nene Anstalten mschen wolle, aufge=<br class="linebreak">dachte Jnsul ioozugehen. </p>
+                     					
+                     <p id="p__56" class="yes-index">
+                        						<br class="linebreak">Auo deailand, von dem 26. Juny. Daß alda der He Graf 
+                        						<br class="linebreak">cCatlo orn flündlicherwartetwerde, Den 25. itowätein dasiger 
+                        						<br class="linebreak">Hauptsiadedergewöhnliche ich Marltgchalten und draus vnl 
+                        						Pfer=<br class="linebreak">de uno Rind Vieh gesehen wordenz e len mterselbigen die Seüch 
+                        						vl=<br class="linebreak">lig aufgehöret. </p>
+                     					
+                     <p id="p__74" class="yes-index">
+                        						<br class="linebreak">Nins Venedig von dem 20. Junh. Tastmas in dast ser 
+                        						Hauwf=<br class="linebreak">kirch ein aleemeines Jubel Jahr so auf Mäbstlichennesehl nm an. Ca=<br class="linebreak">tholishen inden gehalten weidensole üngstens üeekumwthae. m 
+                        						<br class="linebreak">den Göttlichen Beystand wider die rlkishe Macht zueröt m 
+                        						<br class="linebreak">aus Smirnegekommen Französischen Schishabe migcbracht: Dosß die 
+                        						<br class="linebreak">Trkische See Arnada dermgen sich zu enelo besinden solle, on </p>
+                  </div>
+                  						<br class="linebreak">dan= 
+                  						<br class="linebreak">= 
+                  				</div>
+               			
+               <div id="div__455">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_4">4</span>
+                  				
+                  <div id="div__451">
+                     					
+                     <p id="p__450" class="yes-index">
+                        						<br class="linebreak">dannen das Türckischen mit=Schiff mit 110. Stucken in die Dardanel¬ 
+                        						<br class="linebreak"> / sthrecord; weilen daseiheaer gefallet So habe 
+                        						<br class="linebreak">und. der Edncnet / welcher auf die Erhaltung 
+                        						<br class="linebreak">denen: und sich all A. her Täg durch soviel/ andere alt¬ 
+                        						<br class="linebreak"> dem. besagten wäre die ergangen; Daß der das¬ 
+                        						<br class="linebreak">alten nachdem er von der Ottomanischen /fort Gelt bekom¬ 
+                        						<br class="linebreak">nachzuleben / mit selbigen gegen rciminaLrschlret; und 
+                        						<br class="linebreak">in Albanien hätten sich auch bis 1 Türcken zuamigezogen; Der 
+                        						<br class="linebreak">Capitaine deren Schissen soll in die andere Welt abzugehen /
+                        						<br class="linebreak">wegen eine schlagen Kranckheit / in Gefahr gestanden seyn.
+                        						<br class="linebreak">das. tugall / von den. und. daß aldorten ein solche Hitze 
+                        						<br class="linebreak">turchgehend berühret werde; so die Früchten auff dem Feld verbren¬ 
+                        						<br class="linebreak">solle 
+                        						<br class="linebreak">Den. Spanmen von dem 12. und. Daß der Herzog von Anjou 
+                        						<br class="linebreak">nachBürcellona gesendet / um mit den bereitliegenden 
+                        						<br class="linebreak">und licher Mannschaft ein=für allemal das Vor¬ 
+                        						<br class="linebreak">abgangen Friese die zuführen.
+                        						<br class="linebreak">nEitmmlen von dem 25. und. Daß Ihre Königliche 
+                        						<br class="linebreak">hütung Prinzen Wallis / und einer grossen Anzahl 
+                        						<br class="linebreak">und anderer Personen / den 24. Dito / zu llideparc 
+                        						<br class="linebreak">ihr Dero. Regimenter zu Fuß der Maisterung zu Pferd abgewartet;
+                        						<br class="linebreak">Cahtyzugleih ein fast unbeschreibliche Menge Volk erschienen gewesenso 
+                        						<br class="linebreak">seiner die dieser / in so mit=und guadn König zusehen und 
+                        						<br class="linebreak">indessen gedacht /Königl Majestät hätten dem am¬ 
+                        						<br class="linebreak">den guldenen von der Partey von Torris / die oder¬ 
+                        						<br class="linebreak"> Stein den Tour abgenommen / und selbe dem Comte de Der 
+                        						<br class="linebreak">anfangen /endlichen das Königliche Regiment zu Pferd des Comte 
+                        						<br class="linebreak">de Petdrhooigen die Argcile; und das Königl. Dragoner Regiment 
+                        						<br class="linebreak">des Comte de Fegerl dem Land Cobham verliehen / dan sonsten ver¬ 
+                        						<br class="linebreak">indeme Kriegs/ stellen ergeben; Den 22. dieses wäre der Gebts¬ 
+                        						<br class="linebreak">beschriebenen zwar gefallen; dessen Anhang aber habe nichts 
+                        						<br class="linebreak">besündersgfengen; als daß selbiger an 2. Orten der Stadt des Hr¬ 
+                        						<br class="linebreak">Lenditen rürugofentlich gelesen / dan seinen Nahmen auf dem 
+                        						<br class="linebreak">Hut unter einem Buschen and getragene/ Weilen die von der Partey 
+                        						<br class="linebreak">von Totti durch die viele Belrassungen ihren Macht verlohren; noch 
+                        						<br class="linebreak">anderer aber verlehren dörsten; an man mit Bech dligung ihrer 
+                        						<br class="linebreak">Händen / wegen des hohen Verrahts / fortfahren werde; Als deshalben 
+                        						<br class="linebreak">schon der. Comte de allingbrockh für ihren ädelsführer erkant 
+                        						<br class="linebreak">worden; dessen vorsehniste Puncten hierbey zusehen; Nach welchem die 
+                        						<br class="linebreak">Nicht den Comte dOuord und andere treffen solle. Aus </p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__530">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_5">5</span>
+                  				
+                  <div id="div__518">
+                     					
+                     <p id="p__228" class="yes-index">
+                        						<br class="linebreak">und Frankreich / von den. in. Daß de einer diese¬ 
+                        						<br class="linebreak">mit, Majestät 
+                        						<br class="linebreak">Hof angelanget / und Lista. stäten 
+                        						<br class="linebreak">Audienz; gehabt / auch die.. Rochus. ihr 
+                        						<br class="linebreak">geführet; welcher / als Anjouinische höchster /) den 
+                        						<br class="linebreak">Haag gehen solle; Zu Pariß habe man an Verabund St. eines 
+                        						<br class="linebreak">Baptist ein slatliches Fischer vor Tagen Rothal angezündet;
+                        						<br class="linebreak">welchen der Perstanisee Botshaster / und/ mit ihre/ viele tausend /er¬ 
+                        						<br class="linebreak">sonen zuigesehen; Gartner aber vers. liegend sehr solle sich Hielsen;
+                        						<br class="linebreak">immassen einig hölzerne stellen durch das Gewichter Leuthen einige¬ 
+                        						<br class="linebreak">fallen / und dabey viele und geblieben; ingleichem wäre von St. Max¬ 
+                        						<br class="linebreak">garetha die Nachricht /kommen; Daß aldorten den 4. dieses ein starles 
+                        						<br class="linebreak">Ungewilter / von 10. Uhr / Vormittags / bis 6. Uhr Abend gewesen;
+                        						<br class="linebreak">Dehrend dessen das erstemal 4. Soldaten getödtet und 2. bis. heit:
+                        						<br class="linebreak">das andernial;3. Mann=und 3. Weiboersoncnztr End geniestn:
+                        						<br class="linebreak">auch an einem Pferd die. aifeisen von den Flössen/ ohne seiner¬ 
+                        						<br class="linebreak">shädigung / abgeschlagen: aber das deltteual Pferd getödtet: und das 
+                        						<br class="linebreak">vierdtenma / von den Bley;. Schlösser eingeäsehert worden. </p>
+                     					
+                     <p id="p__67" class="yes-index">
+                        						<br class="linebreak">Und Holland / von dem 2. July. Daß der drbrinhve 
+                        						<br class="linebreak">Lemberg als den Haag nach Rotterdam sich begeben / um von der der 
+                        						<br class="linebreak">nach Brüssel zusehen / und folgenden die vornehmsten Pläz von¬ 
+                        						<br class="linebreak">bat und Flandern besichtigen; den 9. in sche zu Chr.
+                        						<br class="linebreak">ein Officier / so sich alda beeden wollen / ungefehr ertrsnken. </p>
+                     					
+                     <p id="p__70" class="yes-index">
+                        						<br class="linebreak">Ans Brabant / von dem 2. July. Daß der Kaiserliche /
+                        						<br class="linebreak">Herr Graf von Königs / den 9. und aus dnkwepen über den 
+                        						<br class="linebreak">Ostende sich verfügen / aus von dar serners / mit dem Herrn Gen 
+                        						<br class="linebreak">Lieutenant Cadogan / welcher sich / wegen wiedrigen Wind / dateaa 
+                        						<br class="linebreak">noch auß halten müssen / die ein nach Londen sortzusse hen¬. </p>
+                     					
+                     <p id="p__74" class="yes-index">
+                        						<br class="linebreak">Von dem Nieder=Rheinstrom / vom 4. July. Daß Ihre 
+                        						Chur¬=<br class="linebreak">fürstl. Durchleucht zu Pfaltz von Bisseidorff nach dem Erst=Schloß Hand¬ 
+                        						<br class="linebreak">bach: der rin; und die Prinzessin von Stilzbach mit dem Herrn Gra¬ 
+                        						<br class="linebreak">sen von Hatzfeld / nach Sulzbach: und der Printz von Naziwill / samt 
+                        						<br class="linebreak">den Herrn Grafen von Wassenger / nach Holland abgangen. </p>
+                     					
+                     <p id="p__88" class="yes-index">
+                        						<br class="linebreak">Von dem Ober=Rheinstrom / vom 5. July. Daß die Frantzosen in den 
+                        						<br class="linebreak">Elsaß sich noch dan; still halten sollenevon dorten dieseriet wiedaß 
+                        						<br class="linebreak">unlängstens / als den 5. Mayn / zu Strasburg / in dasigem Meister / ein 
+                        						<br class="linebreak">vierährig=Eoangelischer Prediger / Nahmens Johann Sigmund Ne¬ 
+                        						<br class="linebreak">stern / von Dresden gebürtig / die Catholische die eben=. anders /
+                        						<br class="linebreak">nach vorhero offentlich gehaltener Predrg / welche nächstens in Ordre zu¬ </p>
+                  </div>
+                  						<br class="linebreak">)(3 
+                  						<br class="linebreak">haben 
+                  				</div>
+               			
+               <div id="div__445">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_6">6</span>
+                  				
+                  <div id="div__434">
+                     					
+                     <p id="p__50" class="yes-index">
+                        						<br class="linebreak">abgeleget; derselbe 
+                        						<br class="linebreak">Paterna: die auch in der L¬ 
+                        						<br class="linebreak">sein. sich=und Hekrsscsen Sprach 
+                        						<br class="linebreak"> verfahren. dann schen ein g lsireicheHetson seyn; Weswe¬ 
+                        						<br class="linebreak">sein der Chr. ins genommen: und nach dan/ in 
+                        						<br class="linebreak"> rothen geseglet worden. </p>
+                     					
+                     <p id="p__81" class="yes-index">
+                        						<br class="linebreak">eine erhveitz / Enden 2. als. Daß verlauten wolle; als 
+                        						<br class="linebreak">Pfündige. Gesandten von den Catholischen Canonen nach dem 
+                        						<br class="linebreak">dannen /haltet werden und dieseniderlafig zustellen 
+                        						<br class="linebreak">denSchna und. haden; weichen /nen die Ernenerung der Allanz 
+                        						<br class="linebreak">erlcsichtt den verlaute / daß unweit davon der Hertzog 
+                        						<br class="linebreak">Den Sachen aneimsnen; der Uber ad die aber durch gedachtes Gen 
+                        						<br class="linebreak">nach S. sein bey 8. schlechte gereist. </p>
+                     					
+                     <p id="p__305" class="yes-index">
+                        						<br class="linebreak">Den dem Elbstrom / vom 8. July. Daß / vermög der Nachricht 
+                        						<br class="linebreak"> erhalten und der Könglieh=Tämehe Befehl eingelangt /
+                        						<br class="linebreak"> der Admiral Parthey ist=guten Kind und seiner Flotta in Sie 
+                        						<br class="linebreak">gehen solle; noch Den /den and Schweden / wäre der Herr Graf von 
+                        						<br class="linebreak">.zu Perthol angekommen / und habe bereits bey den Herrn 
+                        						<br class="linebreak">von weissen Cassel / und der Herzog Carl Friderich Audienz 
+                        						<br class="linebreak">Herrn gdgtemtohm habe man der künden lassen / daß /
+                        						<br class="linebreak">höhung 8. vom Handert / allehedessen verbothene Waaren 
+                        						<br class="linebreak">Pefenctwerden möge; nebst deme wolle man grosse Der=wolle 
+                        						<br class="linebreak">vertragen ingleichem die und seine Platten von 6. bis y. Rthlr. erhöhen /
+                        						<br class="linebreak">herein zumachen / die Kriegs=Posten zubesteten; hoehgedachter 
+                        						<br class="linebreak">hingegen /dieses Vorhaben auß Fimland gegen die Posto¬ 
+                        						<br class="linebreak"> nen willen; allein solches wäre ihrem abgeschlagen worden;
+                        						<br class="linebreak">ein/ eserußyn; wan man neue suche / das Reich von 
+                        						<br class="linebreak">denen feindgubescmützen. Aus Pommern werde versichert /
+                        						<br class="linebreak">.Engel undestcis zu Stralsund / ahrrens seines K¬ 
+                        						<br class="linebreak"> Leegard Schweden die Ersetzung des Schaden / wie¬ 
+                        						<br class="linebreak">Engellischen Schissen / und die Versicherung / daß 
+                        						<br class="linebreak">Stündigen nichtmehr geschehen möge / nichtwniger die Eindiehung 
+                        						<br class="linebreak">Guldenen der Kapperey / mit Tetrehung begehret habe; von 
+                        						<br class="linebreak">so Stralsund sey ein Französ von dem Marquis der Croifsi zu 
+                        						<br class="linebreak">Haag/ alda der Herr Administrator sich wieder and eWolffebüttel 
+                        						<br class="linebreak">angefangen und nach Frankreich zu seinem König in höchster Eyl 
+                        						<br class="linebreak">erüistAn Sachsen / von ina / werde berichtet / daß aldorten /
+                        						<br class="linebreak">den 23. und / das Wetter und Wasser an Kirchen / Hälsern / Gärten /
+                        						<br class="linebreak">Jahr / und Wieden grossen Schaden gefallen. </p>
+                  </div>
+                  						<br class="linebreak">10. A¬ 
+                  				</div>
+               			
+               <div id="div__566">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_7">7</span>
+                  				
+                  <div id="div__27">
+                     					
+                     <p id="p__26" class="yes-index">
+                        						<br class="linebreak">den. ihr 1. der.ein besetzet ist=den herrliche 
+                        						<br class="linebreak">seiner.ihr 
+                        						<br class="linebreak">dem richtigen 
+                        						<br class="linebreak">Heit wird. </p>
+                  </div>
+                  				
+                  <div id="div__12">
+                     					
+                     <h5>
+                        						<br class="linebreak">angelangte Heß=werden / P in. </h5>
+                  </div>
+                  				
+                  <div id="div__67">
+                     					
+                     <h5>
+                        						<br class="linebreak">1715 </h5>
+                     					
+                     <p id="p__59" class="yes-index">
+                        						<br class="linebreak">Kärntner. Thor. Pralat zu Maria 
+                        						<br class="linebreak">Zeit/ komt. log. in 
+                        						aber=<br class="linebreak">der Hof.
+                        						<br class="linebreak">thcteThor. schon / Haupt=<br class="linebreak">in in von.als. haltet / so 
+                        						<br class="linebreak">von Berlin / log. bey seinem alt sten.
+                        						<br class="linebreak">Kärntner Thor. Herr Peter Grgrerta / komt </p>
+                     					
+                     <p id="p__5" class="yes-index">
+                        						<br class="linebreak">dabey </p>
+                  </div>
+                  				
+                  <div id="div__19">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den I Dito. </h5>
+                     					
+                     <p id="p__10" class="yes-index">
+                        						<br class="linebreak">Herren / nach /
+                        						<br class="linebreak">/ völlige </p>
+                  </div>
+                  				
+                  <div id="div__44">
+                     					
+                     <h5>
+                        						<br class="linebreak">ein 11. Dito </h5>
+                     					
+                     <p id="p__22" class="yes-index">
+                        						<br class="linebreak">Degen Thurn. Herr Rittmeister /
+                        						<br class="linebreak">von Irenerges Regiment / sein von 
+                        						<br class="linebreak">Cataloaien S bewegen aller. </p>
+                     					
+                     <p id="p__14" class="yes-index">
+                        						<br class="linebreak">Lista derer Verehelichten im=und ver der Stadt. </p>
+                  </div>
+                  				
+                  <div id="div__150">
+                     					
+                     <h5>
+                        						<br class="linebreak">ein 2315 </h5>
+                     					
+                     <p id="p__141" class="yes-index">
+                        						<br class="linebreak">Johannn r / Maurer / mit Catharina 
+                        						<br class="linebreak">Regina Eisen.
+                        						<br class="linebreak">Johann tabrtel leischner Schreiber / mit 
+                        						<br class="linebreak">Maria Anna Mibetim.
+                        						<br class="linebreak">Jos. ih Branaseedler / afteiber / mit Maria 
+                        						<br class="linebreak">Magdalena Herr in.
+                        						<br class="linebreak">Johann lephemer / ehender / mit 
+                        						<br class="linebreak">Maria Theresia andern.
+                        						<br class="linebreak">Matthias aber / Schneider / mit Mar,¬ 
+                        						<br class="linebreak">reich Wegerin.
+                        						<br class="linebreak">Herr Johann seyn und Mavier / Kayserl.
+                        						<br class="linebreak">Perin. mit Besagter / mit Jagten Der.
+                        						<br class="linebreak">bara Weisin 
+                        						<br class="linebreak">Leopold Martin dann / mit Francisca 
+                        						<br class="linebreak">Fischerin.
+                        						<br class="linebreak">Martin delhlfer / Jager / mit Welburg 
+                        						<br class="linebreak">Valentin.
+                        						<br class="linebreak">Johann Schultz / Gelds / mit / mit Apollonia 
+                        						<br class="linebreak">Arngtin / Wittib.
+                        						<br class="linebreak">Leopold Herzog / Gardi=Soldat / Wittiber /
+                        						<br class="linebreak">mit Maria Agnes Humplin. </p>
+                  </div>
+                  				
+                  <div id="div__78">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 15. Dito. </h5>
+                     					
+                     <p id="p__65" class="yes-index">
+                        						<br class="linebreak">Matthias im / Würth / mit Maria Re¬ 
+                        						<br class="linebreak">berca Maria.
+                        						<br class="linebreak">Franz Dominicus Obrist / mit Elisabeth Bay¬ 
+                        						<br class="linebreak">dannen.
+                        						<br class="linebreak">Johann Häringer / Laggey mit Eva Per äntlin.
+                        						<br class="linebreak">HeitrfFfranzereni hat / Röm. Kayserl.
+                        						<br class="linebreak">Majest/ Hof Kriegs. B. ebalterey Mar¬ 
+                        						<br class="linebreak">Officier / mit Herr. Maria Rosalia 
+                        						<br class="linebreak">audtnerin. </p>
+                  </div>
+                  				
+                  <div id="div__28">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den Dito. </h5>
+                     					
+                     <p id="p__16" class="yes-index">
+                        						<br class="linebreak">Niclas Hilff / werde. Sachen/ in 
+                        						<br class="linebreak">bara Fleisch in. </p>
+                  </div>
+                  				
+                  <div id="div__66">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den g. Dito. </h5>
+                     					
+                     <p id="p__51" class="yes-index">
+                        						<br class="linebreak">Herr Johann lagerung 
+                        						<br class="linebreak">der. Barbara ¬gestern.
+                        						<br class="linebreak">Reitknecht.
+                        						<br class="linebreak">.hat.
+                        						<br class="linebreak">einige. Mar / mittels 
+                        						<br class="linebreak">weniger in.
+                        						<br class="linebreak">ihr / Soldat / mit Maria 
+                        						<br class="linebreak">Ursula sein.
+                        						<br class="linebreak"> ältester=
+                        						<br class="linebreak">Paffenstatter / mit Anna 
+                        						<br class="linebreak">fahren. </p>
+                  </div>
+                  				
+                  <div id="div__122">
+                     					
+                     <h5>
+                        						<br class="linebreak">der / an. </h5>
+                     					
+                     <p id="p__104" class="yes-index">
+                        						<br class="linebreak">sein. del / ausser / mit Anna Ma¬ 
+                        						<br class="linebreak">rin K. len.
+                        						<br class="linebreak">/Peruquenmacher / mit 
+                        						<br class="linebreak">Elisabeth Thoren.
+                        						<br class="linebreak"> der Reich Stein /. nider / im Josepha 
+                        						<br class="linebreak">Reich ein.
+                        						<br class="linebreak">Herrn. hann Joseph besagter / Handelsmann /
+                        						<br class="linebreak">alt in die Maria Magdalena alt.
+                        						<br class="linebreak">etliche in angezündet 
+                        						<br class="linebreak"> Weilen.
+                        						<br class="linebreak">Johann. Nicht /aber /8 T¬ 
+                        						<br class="linebreak">Acrath: er di.
+                        						<br class="linebreak">Johann; / Laggey / mit Maria 
+                        						<br class="linebreak">Sonntag ein 
+                        						<br class="linebreak">Christoph in / Kutscher / mit und Mr¬ 
+                        						<br class="linebreak">ria kein. </p>
+                     					
+                     <p id="p__5" class="yes-index">
+                        						<br class="linebreak">Den </p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__604">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_8">8</span>
+                  				
+                  <div id="div__36">
+                     					
+                     <h5>
+                        						<br class="linebreak"> 2.. </h5>
+                     					
+                     <p id="p__31" class="yes-index">
+                        						<br class="linebreak"> in 
+                        						<br class="linebreak">die 
+                        						<br class="linebreak">f alt 
+                        						<br class="linebreak">.alt.
+                        						<br class="linebreak"> Catha¬ 
+                        						<br class="linebreak"> hinein.
+                        						<br class="linebreak">andern 
+                        						fich=<br class="linebreak">ein.
+                        						<br class="linebreak"> der / mit Theresia 
+                        						<br class="linebreak">Perin </p>
+                  </div>
+                  				
+                  <div id="div__44">
+                     					
+                     <h5>
+                        						<br class="linebreak">3. Dito. </h5>
+                     					
+                     <p id="p__6" class="yes-index">
+                        						<br class="linebreak">nicht Ring / </p>
+                     					
+                     <p id="p__33" class="yes-index">
+                        						<br class="linebreak">allrrin Elisabeth 
+                        						<br class="linebreak">Perlin.
+                        						<br class="linebreak">Johann. lange / mit Barbara 
+                        						<br class="linebreak">sein.
+                        						<br class="linebreak">Herr Rath den Fridshl / mit Jungst.
+                        						<br class="linebreak">Anna Deicthe Angsilerin. </p>
+                  </div>
+                  				
+                  <div id="div__57">
+                     					
+                     <h5>
+                        						<br class="linebreak">ein. Dito. </h5>
+                     					
+                     <p id="p__39" class="yes-index">
+                        						<br class="linebreak">Paul sich/ hungarischer / mit Maria dar¬ 
+                        						<br class="linebreak">bara ander in.
+                        						<br class="linebreak">Johannesgassen / in Maria Bart¬ 
+                        						<br class="linebreak">der Kaiserin.
+                        						<br class="linebreak">Georg.am/ Schuhmacher / mit Ther¬ 
+                        						<br class="linebreak">resia Hoffmannin. </p>
+                     					
+                     <p id="p__12" class="yes-index">
+                        						<br class="linebreak">Verstorbenen in=und vor der Stadt. </p>
+                  </div>
+                  				
+                  <div id="div__81">
+                     					
+                     <h5>
+                        						<br class="linebreak">in 715. starb 
+                        						<br class="linebreak">In der St 3. </h5>
+                     					
+                     <p id="p__66" class="yes-index">
+                        						<br class="linebreak"> Herrn Johann Georg ben Biel /
+                        						<br class="linebreak">anderen. Kaiserl.
+                        						<br class="linebreak">.
+                        						<br class="linebreak">. Dem mepoldis.
+                        						<br class="linebreak">übrigen / sein Herr 
+                        						<br class="linebreak"> alt. und 1. halb.
+                        						<br class="linebreak">Heil Cammer¬ 
+                        						<br class="linebreak">jenseits. Haust in der untern 
+                        						<br class="linebreak">. nach. alt 3. J.
+                        						<br class="linebreak"> in einen Hand / in der 
+                        						<br class="linebreak">alt 68. Jahr. </p>
+                  </div>
+                  				
+                  <div id="div__76">
+                     					
+                     <h5>
+                        						<br class="linebreak">Stadt. </h5>
+                     					
+                     <p id="p__68" class="yes-index">
+                        						<br class="linebreak">am Spital¬ 
+                        						<br class="linebreak"> und 1. halb J.
+                        						<br class="linebreak"> der /bey Maria 
+                        						<br class="linebreak">ff sein 3. Jahr.
+                        						<br class="linebreak">St.
+                        						<br class="linebreak">alt 2. Jahr.
+                        						<br class="linebreak"> über / in der 
+                        						Ro=<br class="linebreak">an sein) ein alt 3. Jahr.
+                        						<br class="linebreak">hier Mann zu len 
+                        						<br class="linebreak">alt 40. Jahr.
+                        						<br class="linebreak">ineeseltstadt / alt 10. J. </p>
+                  </div>
+                  				
+                  <div id="div__11">
+                     					
+                     <h5>
+                        						<br class="linebreak">. Dito. </h5>
+                  </div>
+                  				
+                  <div id="div__99">
+                     					
+                     <h5>
+                        						<br class="linebreak">Stadt. </h5>
+                     					
+                     <p id="p__32" class="yes-index">
+                        						<br class="linebreak">nacher Kaiserl.
+                        						<br class="linebreak">er. di. Hauß / in 
+                        						<br class="linebreak">Cartätschen sein Kind Franz Jo¬ 
+                        						<br class="linebreak">heit 5. Jahr.
+                        						<br class="linebreak">Catharina Caspar Man / Kaiserl </p>
+                     					
+                     <p id="p__59" class="yes-index">
+                        						<br class="linebreak">General bey Commssariat=Amts=Can¬ 
+                        						<br class="linebreak">leisten Beneficiat Hall/ in Barbara¬ 
+                        						<br class="linebreak">gal / sein Kind Carl / alt 6. viertl. Jahr 
+                        						<br class="linebreak">ein Jac Geißl / immer gesell / in Frau¬ 
+                        						<br class="linebreak">cenetis. Hauß / am Rehlnatlt / sein. in 
+                        						<br class="linebreak">Eva / alt 2 Jahr. </p>
+                  </div>
+                  				
+                  <div id="div__88">
+                     					
+                     <h5>
+                        						<br class="linebreak">Der der Stadt. </h5>
+                     					
+                     <p id="p__75" class="yes-index">
+                        						<br class="linebreak">Dem Adolph Kopp / Seuchmacher / am 
+                        						<br class="linebreak">Spitlberg; / sein Kind Befehls / alt 6.
+                        						<br class="linebreak">viertl Jahr.
+                        						<br class="linebreak">Dem Lorenz Ritter Neues. und/ in der ihr.
+                        						<br class="linebreak">eingerissen sein alt 7. viertl J.
+                        						<br class="linebreak">Gnbrtel Baader / Sihiffnccht in der Leopold 
+                        						<br class="linebreak">stadt / alt 58. Jahr.
+                        						<br class="linebreak">Conrad Rederan /in Krancken=Haus / alt 40 J. </p>
+                  </div>
+                  				
+                  <div id="div__20">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 12. Dito/ in der Stadt Niemandz </h5>
+                  </div>
+                  				
+                  <div id="div__135">
+                     					
+                     <h5>
+                        						<br class="linebreak">Vor der Stadt aber </h5>
+                     					
+                     <p id="p__120" class="yes-index">
+                        						<br class="linebreak">Titl Herr Ferdinand Draghn / der in /
+                        						<br class="linebreak">Kaiserl. Majestät Sechazmaiter / und 
+                        						<br class="linebreak">Hof.=Cammer=Ratt in Schlesien / in sein 
+                        						<br class="linebreak">dem alle / alt Jahr.
+                        						<br class="linebreak">Georg Mittertrsser / Zillen sahepper / in de 
+                        						<br class="linebreak">Leopoldstadt / alt 74. Jahr.
+                        						<br class="linebreak">Anton Weiß / Hächlmacher / am Liechtenthal 
+                        						<br class="linebreak">alt 36. Jahr.
+                        						<br class="linebreak">Salome lamica / arme Wittib / auf des 
+                        						<br class="linebreak">Landstrassen / alt 56. Jahr.
+                        						<br class="linebreak">Benedict Hersehberger / alt 96. Jahr / und 
+                        						<br class="linebreak">Maria Haberlin / alt 68. Jahr / beeden 
+                        						<br class="linebreak">ArmenHaus.
+                        						<br class="linebreak">Regina Beitmaulin / im KranlenHanc / a 
+                        						<br class="linebreak">48. alt </p>
+                  </div>
+                  						<br class="linebreak">die 
+                  				</div>
+               			
+               <div id="div__440">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_9">9</span>
+                  				
+                  <div id="div__163">
+                     					
+                     <h5>
+                        						<br class="linebreak">Edict /
+                        						<br class="linebreak"> die Perpachtung der mehrendem.
+                        						<br class="linebreak">Stein einen. </h5>
+                     					
+                     <p id="p__148" class="yes-index">
+                        						<br class="linebreak">DEmnach beschlossen werden die Kayserl 
+                        						<br class="linebreak">möge Kaiserlichen Generalen tohidi.
+                        						<br class="linebreak">gegen gewisse Summa Gelts / und erforderliche Caution in. Hang 
+                        						<br class="linebreak">zuüberlaissen / und zu solchen Ende der.in Icstonmmndes Mons /
+                        						<br class="linebreak">Nachmittag / und 4. ihr / in allhiesigen gemeiner PP. der 
+                        						<br class="linebreak">angeordnet. Kaiserlichen /Ministerial BancDepuftatin. Carl.¬.
+                        						<br class="linebreak">citaun zuerscheinen / angesebe t worden; alt wird ein solten 
+                        						jeder=<br class="linebreak">man Wissenschaft durch dieses Edict kund und offendjr Haag;mit so 
+                        						<br class="linebreak">ein oder anderer diese Mauth in Bestand geinehimen gesonnen ware /
+                        						<br class="linebreak">ein solcher auß/ dorernenen Tag und Stund / alludit in Persona, oder per 
+                        						<br class="linebreak">nitaruatracnndun coieIelenluim bey aller wld Banco¬ 
+                        						<br class="linebreak">Commission zuerscheinen / und gebührend sich anzumelden / wissen möge;
+                        						<br class="linebreak">alten / den 5. July / 1715. </p>
+                  </div>
+                  				
+                  <div id="div__261">
+                     					
+                     <h5>
+                        						<br class="linebreak">Continuatio Diarii. als der Königlichen=Dänischen 
+                        						<br class="linebreak">/ loqüirug der Schwedischen Festung Wisnar /
+                        						<br class="linebreak">von 30. und. 15 </h5>
+                     					
+                     <p id="p__38" class="yes-index">
+                        						<br class="linebreak">En 128. und. Heute waren wird gegen. rina ferners angerucket; bey 
+                        						<br class="linebreak">welcher rucken eben 3. Preussische Regimenter zu Pferd/ und 2. Bart 
+                        						<br class="linebreak">Haillonen zu abgestossen. </p>
+                     					
+                     <p id="p__73" class="yes-index">
+                        						<br class="linebreak">Den 29. Dito. Der Herr Graf Spoanedk / welcher von Ihro Majestät /
+                        						<br class="linebreak">unserem König / in gelassen gelegenfeken / nach der (Stadt Posto abges¬ 
+                        						<br class="linebreak">schicket worden / am Heute von dar wieder zur / und mit /me waren zu¬ 
+                        						<br class="linebreak">gleich Ihre Durchleucht / der Herzog von Mecklenbug / angelanget; Welche 
+                        						<br class="linebreak">den mit Ihro Königlichen Majestät das Ntittagmal genommen. </p>
+                     					
+                     <p id="p__101" class="yes-index">
+                        						<br class="linebreak">Den 30. Dito. Heute müssen wie dahier noch Rasttag halten; weilen 
+                        						<br class="linebreak">des Herrn Herzogen zu Meclenburg Hochfürstl. Durchl. sich nicht dahin bey¬ 
+                        						<br class="linebreak">quemen wollen / vergedahte Stadt Rostock uns als gewisse Bedingussen 
+                        						<br class="linebreak">cinzuraumen; Indessen langten viel Schwedische lberauffer bey uns auß 
+                        						<br class="linebreak">von denen man bereit daß sie bey Dag ateneine l Ghanzalf gederffen /
+                        						<br class="linebreak">und die Schwedische Truppen noch allda stünden / selbigen Paß auß das dessen¬ 
+                        						<br class="linebreak">so zuverthlgen; Da miller weil unsere Flotta / bey Tagen sich geheget 
+                        						<br class="linebreak">haben solle. </p>
+                     					
+                     <p id="p__32" class="yes-index">
+                        						<br class="linebreak">übrigens sollen zur Bloquirung der Stadt und Festung Wirsmar / von 
+                        						<br class="linebreak">unserer Armee 12. Squadtonen / und 4. Bataillonen und von der Preussischen </p>
+                  </div>
+                  						<br class="linebreak">)(0( 
+                  						<br class="linebreak">alt ih 
+                  				</div>
+               			
+               <div id="div__493">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_10">10</span>
+                  				
+                  <div id="div__64">
+                     					
+                     <p id="p__62" class="yes-index">
+                        						<br class="linebreak">10. zu hohen / und 3. feinen; auch: und davon die Reuterey 
+                        						<br class="linebreak">vernehmen Den. den ztmaistern / Chattam Handel wie auch dem Herrn 
+                        						<br class="linebreak">.in P: den Herr. Verlust von dem Herrn Obristen Feld und 
+                        						<br class="linebreak">Brigitta: ganz. Corpo der von den Herrn General/ Leegard 
+                        						<br class="linebreak">Pfündige werde </p>
+                  </div>
+                  				
+                  <div id="div__421">
+                     					
+                     <h5>
+                        						<br class="linebreak">Diarium der Königliche=Preussischen Armee als dem 
+                        						<br class="linebreak">Holtztrager bey P was / dem 27. bis 30. Franz. 1715. </h5>
+                     					
+                     <p id="p__60" class="yes-index">
+                        						<br class="linebreak">27. und. angelangte Kundschafft /daß die Schweden mit ei¬ 
+                        						<br class="linebreak">nen Teihrer Prince bey wollen durchfubehen / und ihren Marsch 
+                        						<br class="linebreak">angehoben fortzusetzen. Vorhabens / war unser bey gedachten wollen stehen¬ 
+                        						<br class="linebreak">der hitzigen. Mann verstärktet werden; demnach die samment¬ 
+                        						<br class="linebreak">ihhngihrersisis de und Chur=S. dische Armee / </p>
+                     					
+                     <p id="p__27" class="yes-index">
+                        						<br class="linebreak">den:8. Dito / sey ittn den diser hgeameht / und den Marsch 
+                        						<br class="linebreak">anderthalb Heil ben dannen nach Gen: </p>
+                     					
+                     <p id="p__18" class="yes-index">
+                        						<br class="linebreak">/ ein 27. Dito aber bis Poselwalt gendinnc foairgalda Hielte dieselbe / </p>
+                     					
+                     <p id="p__148" class="yes-index">
+                        						<br class="linebreak">50. Dito Theils der Sonntag halber / und Theils der grossen 
+                        						<br class="linebreak">denen=Tag Schwede/ sche Parteyen /dessen waren in der 
+                        						<br class="linebreak">angreifen / und hatten gesuchet / wo möglich / als an Men¬ 
+                        						<br class="linebreak"> einigen drey allen; Wie den berührle Parteyen auch 
+                        						<br class="linebreak">ermordet / welcher drey Meel von hier auf Postirung gestanden /
+                        						<br class="linebreak">.Schritt alt /Kundschasst angangen gewesen / in der sehen auf 
+                        						<br class="linebreak">Pfündige einemgewissen General 10. Pferd / so auff/ der Iurra¬ 
+                        						<br class="linebreak">gefangenen hätten. Die in Cüstrin 
+                        						<br class="linebreak">Herbersteinische Gefangenen wan den Heut ander / ins 
+                        						<br class="linebreak">nicht welche gegen so viel Ulnserige abgereißet werden sollen.
+                        						<br class="linebreak">Morgen wird die Armee wieder auffbrechen / und bis nach dem Sabel Paß 
+                        						<br class="linebreak">einig nehmen / im einigen die Dähnis. Hr zu der Unserigen stossen. </p>
+                     					
+                     <p id="p__21" class="yes-index">
+                        						<br class="linebreak">orrehinsße Flancken der Veschuldigung des Engellischen 
+                        						<br class="linebreak">V/ ico de llinbroch. </p>
+                     					
+                     <p id="p__141" class="yes-index">
+                        						<br class="linebreak">Senat derer: htennddessen G. Heil dem Marquis Torcy 
+                        						<br class="linebreak">denen Herrn Heninger offenbar.
+                        						<br class="linebreak">.Ordre gegeben / mit dem Prinz Eugeni und andern AllUrten 
+                        						<br class="linebreak">. hetten zu Fortstang der die zu nehmen; Zu gleichen Zeit aber 
+                        						<br class="linebreak">nicht. samdt / sich wieder in eine Belagerung noch in ein Treffen einzulassen.
+                        						<br class="linebreak">denen ugetahn / und ihnen behätten gewesen.
+                        						<br class="linebreak">der Cron gewisses wie der von den Hollenberg verschasset.
+                        						<br class="linebreak">denen. gefertiget sich von Gen und einige zuverstehen.
+                        						<br class="linebreak">. Lager mit dem Als. unter gemacht: / wo der r. senden scher seyn möge¬ 
+                        						<br class="linebreak">.Pferden Admiral einen; in dem Mittelländisihen Meer den Befehl geschickt / di¬ 
+                        						<br class="linebreak">aevante seeglen Französische Kaffartey Flotta nicht anzufangen. </p>
+                  </div>
+                  				</div>
+               		
+               <p style="text-align:center;"></p>
+            </div>
          </div>
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
 </html>

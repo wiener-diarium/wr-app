@@ -1,27 +1,28 @@
-<html  class="h-100">
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-title" content="Wienerisches Diarium" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="images/logo.png" />
-      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any" />
-      <link rel="profile" href="http://gmpg.org/xfn/11" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="Wienerisches Diarium">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="images/logo.png">
+      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any">
+      <link rel="profile" href="http://gmpg.org/xfn/11">
       <title>Wienerisches Diarium</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-      <link rel="stylesheet" href="css/style.css" type="text/css" />
-      <link rel="stylesheet" href="css/micro-editor.css" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/micro-editor.css" type="text/css">
       <style>
                     .navBarNavDropdown ul li:nth-child(2) {
                         display: none !important;
                     }
                 </style>
    </head>
-   <body class="d-flex flex-column h-100">
+   <body class="d-flex flex-column">
       <header>
          <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid"><a class="navbar-brand" href="index.html">wrd</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,14 +30,6 @@
                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a><ul class="dropdown-menu">
                            <li><a class="dropdown-item" href="about.html">Über das Projekt</a></li>
                            <li><a class="dropdown-item" href="imprint.html">Impressum</a></li>
-                        </ul>
-                     </li>
-                     <li class="nav-item"><a class="nav-link" href="toc.html">Editionseinheiten</a></li>
-                     <li class="nav-item dropdown disabled"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a><ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="listperson.html">Personen</a></li>
-                           <li><a class="dropdown-item" href="listplace.html">Orte</a></li>
-                           <li><a class="dropdown-item" href="listorg.html">Organisationen</a></li>
-                           <li><a class="dropdown-item" href="listbibl.html">Werke</a></li>
                         </ul>
                      </li>
                      <li class="nav-item"><a title="Suche" class="nav-link" href="search.html">Suche</a></li>
@@ -47,1485 +40,1480 @@
       </header>
       <main class="flex-shrink-0">
          <div class="container">
-            <div class="row">
-               <div class="col-md-2 col-lg-2 col-sm-12"></div>
-               <div class="col-md-8 col-lg-8 col-sm-12">
-                  <h1 align="center">Wienerisches Diarium</h1>
-                  <h3 align="center"><a href="edoc_wd_1720-01-24"><i class="bi bi-download" title="TEI/XML"></i></a></h3>
-               </div>
-               <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right"></div>
-               <div id="editor-widget">
-                  <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                           <full-size opt="fls"></full-size>
-                        </li>
-                        <li class="dropdown-item">
-                           <image-switch opt="es"></image-switch>
-                        </li>
-                        <li class="dropdown-item">
-                           <font-size opt="fs"></font-size>
-                        </li>
-                        <li class="dropdown-item">
-                           <font-family opt="ff"></font-family>
-                        </li>
-                        <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
-                           <annotation-slider opt="ef"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="prs"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="plc"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="wrk"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="org"></annotation-slider>
-                        </li>
-                     </ul>
-                  </div>
+            <div id="editor-widget">
+               <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
+                     <li class="dropdown-item">
+                        <full-size opt="fls"></full-size>
+                     </li>
+                     <li class="dropdown-item">
+                        <image-switch opt="es"></image-switch>
+                     </li>
+                     <li class="dropdown-item">
+                        <font-size opt="fs"></font-size>
+                     </li>
+                     <li class="dropdown-item">
+                        <font-family opt="ff"></font-family>
+                     </li>
+                     <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
+                        <annotation-slider opt="ef"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="prs"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="plc"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="wrk"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="org"></annotation-slider>
+                     </li>
+                  </ul>
                </div>
             </div>
-            			
-            <div id="tei:div__5863">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_1">1</span>
-               				
-               <div id="tei:div__5862">
-                  					
-                  <p id="tei:p__6" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Num. 1720.
-                     </p>
-                  					
-                  <p id="tei:p__5" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     iarium.
-                     </p>
-                  					
-                  <p id="tei:p__64" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     in dieser Rendeng=Stadt Wien Denkwürdiges / und sich Neues 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     zugetragen; Als auch / was dergleichen nachrichtlich alda eingeloffen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     samt einem Anhang jedermaliger Verzeichnuß; Erstlich deren täglich alhier 
-                     						Ankom=<br  xmlns:local="http://dse-static.foo.bar"><br />menden: Zwaytens deren in=und vor der Stadt getauften Kindern: Drittens 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     derer Verehlichten / und Vierdtens deren verstorbenen Personen.
-                     </p>
-                  					
-                  <p id="tei:p__34" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Mit Jhrer Römisch=Kaiserlich=und Catholischen Majestät Freyheit /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Gedruckt in der Kaiserlichen Reichs=und Hof=Buchdruckerey /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Zufinden im roten Ygel.
-                     </p>
-                  					
-                  <p id="tei:p__18" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Wien / vom 24. bis 26. Jenner / 1720.
-                     </p>
-                  					
-                  <p id="tei:p__15" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Heute haben Sichsowohl die 
-                     Re
-                     Regierend
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__29" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     gierend=Romisch=Kaisetlich=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jh 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     hre Verwiktibt=Römisch=Kaiserliche 
-                     						Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />jestäten / als auch
-                     </p>
-                  					
-                  <p id="tei:p__15" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     elmina / zur Ader gelassen.
-                     </p>
-                  					
-                  <p id="tei:p__60" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dito wurd die in hiesiger Stadt und Vorstädten schon alhier 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     angeworben=neus Mannschaft gehöriger Orten vorgestellet / welche 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     mit denen bereits auf dem Land auch geworbenen / und nächster 
-                     						Ta=<br  xmlns:local="http://dse-static.foo.bar"><br />gen dahier erwarteten=Recruten nach beschehener Assentirung den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ben werden 
-                     						sollel=<br  xmlns:local="http://dse-static.foo.bar"><br />gimentern überg
-                     </p>
-                  					
-                  <p id="tei:p__208" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Donuerstag / den 25. Jenner. Heut / als um Fest=Pauli - Be=<br  xmlns:local="http://dse-static.foo.bar"><br />kehrung / haben Sich=Jhre Römisch=Kaiserlich=und Königlich=Ca=<br  xmlns:local="http://dse-static.foo.bar"><br />tholische Majestät mit einem grossen Gefolge Dero Ministern / und 
-                     						Ca=<br  xmlns:local="http://dse-static.foo.bar"><br />valieren / so alle wegen Höchst=Seeligstem Absterbon Weiland Jhrer 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Kuiserlichen Majestät / Eleonora Magdalena Theresia / in tiefester 
-                     						Trau=<br  xmlns:local="http://dse-static.foo.bar"><br />er erschienen / nach der Kaiserlichen Pfarikirche zu St. Michael derer 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     W. W. E. E. P. P. Congreg. Cler. Reg. S. Pauli, erhoben / und 
-                     						daselb=<br  xmlns:local="http://dse-static.foo.bar"><br />sten dem Gottes=Dienst abgewartet / welchen Jhre Hochwürden / Titl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Herr Michael Probst zu St. Pölten / Can. Reg. S. Augustini, verrichtet.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Freytag / den 26. Jenner. Heute / Nachmittag / haben abermal 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jhre Römisch=Kaiserlich=und Königlich=Cntholische Majestät sowohl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     den Jnheimisch=als Ausländischen Ministeren Audienz Allergnädigst 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ertheilet / und wegen Jhrer jüngstens abgelebt=Verwittibt=Kaiserlichen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Majestät / Gleonora Magdalena Theresia / die Condolenz empfangen;
-                     </p>
-                  
-                  					
-                  <p id="tei:p__77" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     0 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ohre Majestät / die Verwittibt=Römische Kaiserin / Amalia Wilhelmina /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     samt Dero Durchleuchtigsten Erz Herzogin / aber nach dem Ren=Weeg 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     zu den WW. EE. Closter=Frauen / von Maria=Heimsuchung genant /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Sich verfüget / und daselbsten etwas Sich verweilet / so dan wieder 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     nach der Kaiserlichen Burg gekehret.
-                     </p>
-                  					
-                  <p id="tei:p__48" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Eodem waren Jhre Eminenz / der Herr Cardinal Graf Althan /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Bischof zu Waitzen / mittels der Post / aus Hungarn / von dero 
-                     						Bi=<br  xmlns:local="http://dse-static.foo.bar"><br />schoflichen Residenz / dahier wieder angelanget.
-                     </p>
-                  					
-                  <p id="tei:p__62" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jtem ware Herr Obrist / Christian Friderich von Schmidburg /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     auf der Post von hier in das Reich abgangen / um daselbsten für Jhre 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Römisch=Kaiserlich=und Königlich=Catholische Majestät Recruten 
-                     						zu=<br  xmlns:local="http://dse-static.foo.bar"><br />werben / und selbe auf bestimte Zeit zuliefern.
-                     </p>
-                  					
-                  <p id="tei:p__132" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ferner wurde von Belgrad / aus Servien / mit Brieffen vom 10.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jenner berichtet / daß alda / nach eingeloffen=betrübter Nachricht 
-                     						we=<br  xmlns:local="http://dse-static.foo.bar"><br />gen Jhrer Weiland Verwittibt=Kaiserlichen Majestät / Eleonora 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Magdalena Theresia / gefährlicher Krankheit / auf Veranlassung des 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     aldort bestelt=Kaiserlichen Superioris, und Pfarters / A. R. P. Fran-<br  xmlns:local="http://dse-static.foo.bar"><br />cisci Xaverii Vogl / è S. J. in allen Kirchen vor ausgesezt=Allerheilig=<br  xmlns:local="http://dse-static.foo.bar"><br />stem Altar=Sacrament / für Allerhöchstgedacht=Jhre Majestät drey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Täg nacheinander mit grossem Zulauf und Eifer so wohl der Militz /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     als Burgerschaft ein Andacht sey angestellet worden 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     l.
-                     </p>
-                  					
-                  <p id="tei:p__135" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Mehr wurde mit Brieffen / von Dresden / aus Sachsen / von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     dem 19. Jenner gemeldet / wie daß die Durchleuchtigste Erz=Her=<br  xmlns:local="http://dse-static.foo.bar"><br />zogin / welche sich samt Dero Herrn Gemahl / des Königlichen 
-                     						Prin=<br  xmlns:local="http://dse-static.foo.bar"><br />zen Hoheit / in erwünschtem Wohlstand befinden / immerhin in der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Schloß=Capelle der Andacht abwarteten. Jhre Majestät / der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     König / würden aus Polen: und Jhre Majestät / die Königin /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Torgau mit nächstem in besagtem Dresden zuruckerwartet. Der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     auf der Vestung Königstein in Verhaft sitzende von Klettenberg hätte 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     durchzukommen gesuchet; Dabey er aber im Herunterlassen sich 
-                     						zer=<br  xmlns:local="http://dse-static.foo.bar"><br />fallen / folglichen nicht entwischen können.
-                     </p>
-                  					
-                  <p id="tei:p__117" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Polen / von dem 18 Jenner. Daß Jhre Königliche 
-                     						Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />jestät den 14. dieses den Churländischen Herren Abgesandten / dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Fürstlichen Haubtmann zu Windau / Buchholz / und dem geheimen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Cammer=Raht von Pote / zu Warschau Audienz ertheilet; Darin 
-                     						die=<br  xmlns:local="http://dse-static.foo.bar"><br />selbe ihr Anbringen so schrift=als mündlich vorgetragen hätten:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     daß nemlichen dasjenige / so bishero von einigen unzufrieden=Chur=<br  xmlns:local="http://dse-static.foo.bar"><br />ländischen Edelleuthen hin=und her ausgesprenget worden / ohne Grund:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     hingegen des Herzogs von Churland Gesuch auf Recht und 
-                     						Billig=<br  xmlns:local="http://dse-static.foo.bar"><br />keit
-                     </p>
-                  					
-                  <p id="tei:p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     keit gegründet seye; Zu erst gedachtem Warschau habe man den 11.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     dieses zu überlegen angefangen / wie endlichen die Verwirrung des 
-                     						Tri=<br  xmlns:local="http://dse-static.foo.bar"><br />bunals in Ordnung zu bringen / und dessen Verfassungen forthin zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     verbessern; Andern Tags / als den 12. Dito / hätte der Cron=Cammerherr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Regung gemacht: Jhre Königliche Majestät mögten der samtlichen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Republic ein gewissen Tractat zukommen lassen; Darauf jedoch nichts
-                     </p>
-                  					
-                  <p id="tei:p__118" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Livorno / von dem 5. Jenner. Daß ein in 4. Tägen aus 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Marsilien angekommenes Schif benachrichtiget / was Massen 
-                     						aldor=<br  xmlns:local="http://dse-static.foo.bar"><br />ten verschiedene Fahrzeuge mit Getraid für Spannien beladen worden;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ein anders von Archangel eingeloffenes Schif habe die Nachricht 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     gebracht / wie es daselbsten in Gesellschaft eines Engellischen Schiffes /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Tames genant / ein Holländisches Schif / die Galera del Pace, einge=<br  xmlns:local="http://dse-static.foo.bar"><br />frohren zuruckgelassen: Sonst hab ein Engellisches Schif / so von 
-                     						erst=<br  xmlns:local="http://dse-static.foo.bar"><br />besagtem Archangel abgeseeglet / auf den Britannischen Cüsten 
-                     Schif
-                     SchifAus
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__179" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Genua / von dem 6. Jenner. Daß ein von Alicante 
-                     						zu=<br  xmlns:local="http://dse-static.foo.bar"><br />ruckommen=Genuesisches Kaufmanns=Schif die Zeitung mitgebracht:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     wie daß auf den Spannischen Cüsten fünf Algierische Raub=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Schiffe sich befunden; Und noch ein anders von Tunis 
-                     						einge=<br  xmlns:local="http://dse-static.foo.bar"><br />loffenes habe berichtet / daß gleichfals daselbsten verschiedene 
-                     						Bre-<br  xmlns:local="http://dse-static.foo.bar"><br />gantinen / um auf die Christen zukreutzen / ausgeloffen wären. Mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     einer unlängstens von Marsilien heimgekehrten Feluck / welche den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Französischen Consul nach Livorno mitgeführet / habe man 
-                     						vernom=<br  xmlns:local="http://dse-static.foo.bar"><br />men / was Gestalten in dasigem Haden 6. Galeeren / zu Dienst der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Madamoiselle von Vallois, ausgerüstet würden. Die von Lisabon /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Cadix / Alicante, und Cartagena mit allerhand Kaufmannschaften 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     angekommene Schiffe hätten versichert / daß all=Kaiserlichen / Fran=<br  xmlns:local="http://dse-static.foo.bar"><br />zösischen / Engellischen und Holländischen mit Paß=Brieffen versehenen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ren nunmehro wieder erlaubet seye.
-                     </p>
-                  					
-                  <p id="tei:p__64" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Mailand / von dem 10. Jenner. Daß aldasiger Guverneur 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     im Gefolge dessen samtlichen Hofstatt in den grossen Rahts=Saal sich 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     erhoben; Alda derselbe verschieden=armen Gefangenen / und sonsten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     rwiesen.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     den </p>
-                  					
-                  <p id="tei:p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Spannien / von dem 25. December. Daß der Marchese 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Scotti, Minister des Herzogs von Parma, zu Madrit den 
-                     						Holländi=<br  xmlns:local="http://dse-static.foo.bar"><br />schen Gesandten / Herrn Colster / besuchet / und dabey denselben 
-                     						ver=<br  xmlns:local="http://dse-static.foo.bar"><br />sichert habe: wie daß der Herzog von Anjou für die Herren Staaten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     alle Hochatung trage; Der Hof zu Madrit / an welchem jüngstens 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     )( 2
-                     </p>
-                  					
-                  <p id="tei:p__95" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     der Geburtstag des Herzogs von Anjou / da dieser ins 37. ste Jahr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     getretten / gefeyert worden / habe den Befehl wiederholet / die Gränz=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Festungen best möglichst zu versehen. Sonst wolle verlauten / als 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     wan der König von Marocco die zerfallene Festungs=Werker von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Tanger wieder aufrichten: und immerfort im Haven selbiger Stadt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     20. Naub=Schiff 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     int
-                     </p>
-                  					
-                  <p id="tei:p__206" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Groß=Britannien / von dem 9. Jenner. Daß endlichen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     die 12. grosse Schiffe / welche die Französisch=Jndianische Compagnie 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     in Engelland bauen lassen / zu Stande gekommen / mit nächstem 
-                     						da=<br  xmlns:local="http://dse-static.foo.bar"><br />hin abzulauffen. Die Toscanische / Parmesische / und Genuesische 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ministers hätten bey Jhro Groß=Britannischen Majestät Andiens 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     gehabt / und darbey Jhrer Principalen Angelegenheiten bey 
-                     						bepor=<br  xmlns:local="http://dse-static.foo.bar"><br />stehender Friedens=Handlung mit Spannien aufs nachdrücklichste 
-                     						re=<br  xmlns:local="http://dse-static.foo.bar"><br />commandiret; Höchstgedacht=Jhrer Majestät hätte auch der aus 
-                     						Hol=<br  xmlns:local="http://dse-static.foo.bar"><br />land angekommene Marchase Visconti bereits seine Aufwartung 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />macht. Der Herzog von Vharton wär in das Hauß derer Pairs:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und der Ritter Decker / als Parlaments=Glied / ins Unter=Hauß 
-                     						ein=<br  xmlns:local="http://dse-static.foo.bar"><br />geführet worden. Mylond Fainfax / Catholischer Religion / seye ohne 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Erben gestorben: Sonstenzwäre der Admiral Norris nach Woolwich /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Chattam und Scherneß abgangen / die Ausrüstung derer 22.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Kriegsschiffen zubeschleunigen / um mit selbigen längstens gegen 
-                     						Aus=<br  xmlns:local="http://dse-static.foo.bar"><br />gang des Monats Hornungs wied
-                     </p>
-                  					
-                  <p id="tei:p__148" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Frankreich / von dem 12. Jenner. Daß / so bald der nacher 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Rom abgeschiekte Currier zuruckgekommen / der Herr Erz=Bischoff von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Rheims mit Genehmhaltung des Königs den Cardinals=Hut wohl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     annehmen dörfte; Die Cassa vom See=Weesen habe 4. Millio=<br  xmlns:local="http://dse-static.foo.bar"><br />nen überkommen / die ruckständige Schulden davon zubezahlen. Zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Pariß / auf der Strassen Quincampoix, hätte man etliche gefänglich 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     eingezogen / welche beum Aetien=Handel / so noch immerhin ein 
-                     						gros=<br  xmlns:local="http://dse-static.foo.bar"><br />sen Zulauf habe / sich falscher Schriften bedienet. Die Französische 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Academie habe den Herrn Abten du Bois, an statt des verstorbenen 
-                     						Ab=<br  xmlns:local="http://dse-static.foo.bar"><br />in Genest, zu deroselben M
-                     </p>
-                  					
-                  <p id="tei:p__125" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Versamlung wären sehr wichtige Gegen=Einwürfe gemachet worden /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     welch=allen aber der Herr Lavs mit ungemeiner Beredsumkeit begeanet 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     habe; Jn dieser Versamlung seye auch beschlossen worden / daß 
-                     						kunftig=<br  xmlns:local="http://dse-static.foo.bar"><br />hin kein Taback in Frankreich mehr: sondern an dessen Stelle Hauß 
-                     						an=<br  xmlns:local="http://dse-static.foo.bar"><br />gebauet werden salle / von melchem die Jndianische Compagnie um 38.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Livres den Centner bezahlen wolle; Jndessen sollen alle Tahacks=Auf=<br  xmlns:local="http://dse-static.foo.bar"><br />schläg abgeschaffet: und kein anderer / als aus den Colanien der 
-                     						Cum-<br  xmlns:local="http://dse-static.foo.bar"><br />pagnie einzuführen / erlaubet son.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus
-                     </p>
-                  					
-                  <p id="tei:p__87" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Holland / von dem 16. Jenner. Daß in lezt gehaltener 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Versamlung die Herren Staaten / unter anderen / auch den Schluß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     genommen / ein ansehenlichen Mann an den Groß=Czaarischen Hof /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     nacher Petersburg / abzusenden / um alda die Angelegenheiten der 
-                     						Re=<br  xmlns:local="http://dse-static.foo.bar"><br />er Kaufmanschaft / zubesorgen. Der Herr Graf
-                     </p>
-                  					
-                  <p id="tei:p__43" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Colliers hab aus Constantinopel berichtet / was Massen die 
-                     Ot
-                     Otpolis
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__108" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     polis ergehen lassen / alle Feindseeligkeiten wider die Holländische Schiffe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     einzustellen. Der Rahts=
-                     Præsideno
-                     Praesideno
-                      in Haag habe dem Fürsten Kurackin 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     zuverstehen gegeben / wie daß die Herren Staaten allerdings gerne 
-                     						se=<br  xmlns:local="http://dse-static.foo.bar"><br />hen würden / wan Jhre Groß=Czaarische Majestät mit Schweden in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Fried=und Freundschaft zuleben suchen mögten; Sonsten folge hierbey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     der Auszug des Schreiben / welches die Herren Stuaten jüngstens an 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     abgehen lassen.
-                     </p>
-                  					
-                  <p id="tei:p__117" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus Brabant / von dem 16. Jenner. Duß der Prinz de Ligne 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     zu Brüssel dem Marchese de Prie, welcher mit dem Herrn Bischoffen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Gent sich unlüngst unterredet gehabt / den 9. dieses ein herrliches 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Mittagmahl gegeben; Zu Ostende solle die aufgerichtet=Kaiserlich=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jndianische Compagnie noch immerfort beschäftiget seyn / nuch dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Beyspiel der Französlich=Jndianischen Compagnie / wie sie der Herr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Laus zu Pariß eingerichtet / in guten Stand zusetzen.
-                     </p>
-                  					
-                  <p id="tei:p__106" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Von dem Nieder=Rheinstrom / vom 18. Jenner. Duß die in dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Gülich=und Bergischen liegend=Chur=Pfältzische Regimenter 
-                     						recruti=<br  xmlns:local="http://dse-static.foo.bar"><br />ret würden / und hätten die Officiers Befehl erhalten / die 
-                     						Compa=<br  xmlns:local="http://dse-static.foo.bar"><br />gnien gegen Ausgang des Hornungs in völligem Stand zuhaben;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jndessen habe man auch angefangen zu Gülich das Magazin mit 
-                     						al=<br  xmlns:local="http://dse-static.foo.bar"><br />lem wohl zuversehen / nichtweniger seibige Festung wieder auszubessern.
-                     </p>
-                  					
-                  <p id="tei:p__107" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Von dem Maynstrom / vom 20. Jenner. Daß / zufolg der 
-                     						Nach=<br  xmlns:local="http://dse-static.foo.bar"><br />richt von Heydelberg / der Chur=Pfaltzische Gesandter / am 
-                     						Engelli=<br  xmlns:local="http://dse-static.foo.bar"><br />schen Hof / Herr von Schmidtman / welchey / als Jhre Groß=Britan=<br  xmlns:local="http://dse-static.foo.bar"><br />nische Majestät voriges Jahr von Londen nach Hannover gereiset /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     auch eine Reiß nach Heydelberg vorgenommen / von dar wiederum 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     nach besagtem Lonhen abgangen / um daselbsten die Angelegenheiten
-                     </p>
-                  					
-                  <p id="tei:p__104" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     us.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     w 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Aus der Schweitz / von dem 17. Jenner. Daß die Reformirte 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     " 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Cantonen / als Schiwrtz / Zürch / Bern / Gluris / Busel / Schafhausen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Appenzell / Genf / St. Gallen / und die Graubündner / auch einen Brief 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     an den Erzbischaffen von Canterbery nach Londen geschrirben / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ihre Religiol aufdas Beste ricdmmandiret.
-                     </p>
-                  					
-                  <p id="tei:p__39" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     )( 3
-                     </p>
-                  					
-                  <p id="tei:p__38" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     l.
-                     </p>
-                  					
-                  <p id="tei:p__444" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Von dem Elbstrom / vom 17. Jenner. Daß / zufolge Briefen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Petersburg / Seine Groß=Czaarische Majestät bey dero 
-                     						unläng=<br  xmlns:local="http://dse-static.foo.bar"><br />stens überfallenen Unpäslichkeit an all=unterhabende Provinzen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     des Reichs durch dero geheimen Raht ein=versiglete Verordnung /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     darnach sich jeder zurichten haben solte / bereits ergehen lassen; Die / so 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     die Reichs=Verwaltung hauptsächlich ausmachten / solten aus dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Herry Canzler / Grafen Galloffskin / Herrn Vice - Canzler / Baron 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Schafiroff / Herrn General=Admiral / Grafen Apraxim / Für=<br  xmlns:local="http://dse-static.foo.bar"><br />sten Menzikoff / Grafen Tolstoy / Fürsten Dolhorucki / und noch 2. an=<br  xmlns:local="http://dse-static.foo.bar"><br />deren Prinzen bestehen: alles aber / welches im geheimen Raht / oder 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     auch sonsten beschlossen würde / Deroselben Gemahlin nachmalens 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     vorgetragen werden; Der General Weyde solte die auf den Polnischen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Gränzen und die in Liefland stehende Armeen: Prinz Gagarin die 
-                     						Co=<br  xmlns:local="http://dse-static.foo.bar"><br />sacken und Russische Tartarn / und der General=Feld=Zeugmaister 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Burce die Völker in Finland commandiren / das gesamte See=Wesen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     aber dem Grafen Apraxim verbleiben; Was man noch sonsten 
-                     						vor=<br  xmlns:local="http://dse-static.foo.bar"><br />nehmen wolte / so solte man forderist auf die Vereinbarung des Wolga=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Stroms mit der See Ladoga / vermittels des abgestochenen Canals /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     bedacht seyn / desgleichen solle man Wiburg / Petersburg / Narva / Reval 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Kiow aufs beste versehen / mithin ganz Moscau im beharrlichen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Wohlstand erhalten. Aus Stockholm verlaute / daß der dort 
-                     						an=<br  xmlns:local="http://dse-static.foo.bar"><br />wesend=Groß=Britannische Minister stark darauf treibe / daß der Herr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Baron von Kniephausen die Schliesung des Tractats nicht bis zur 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Versamlung deren Reichs=Ständen aufschieben: sondern so fort zum 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ende befördern möge; Wegen überhandgenommener Armut des 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />meinen Manns würden fast in ganz Schweden sehr viele Raub=und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Mordtahten verübet. Aus Sachsen seye der Schwedische General 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Trautvetter unverrichter Sachen wieder nach Stockholm gekehret;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Desgleschen der Herr von Mardefeld auch wieder nach Petersburg 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Berlin abgangen / alda dem König die Juden ein überaus 
-                     						gros=<br  xmlns:local="http://dse-static.foo.bar"><br />sen Kerl zum Neu Jahr geschenket; Zu besagtem Berlin wäre das 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Urtl über den bekanten Clemens geschöpffet: und solches an ein 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />wissen Hof gesandt worden / nach dessen Zuruckerhaltung / man solches 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     vollziehen lassen werde.
-                     </p>
-                  					
-                  <p id="tei:p__48" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ankunft derer hoh=und niederen Stands=Personen.
-                     </p>
-                  					
-                  <p id="tei:p__42" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 25.
-                     </p>
-                  					
-                  <p id="tei:p__93" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Karntner=Thor. Herr Graf Wallis / Ge=Jhre Eminenz / Herr Cardinal / Graf von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     neral=Wachtmaisier / komt von Temes=Althan / komen von Waitzen / log. in der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     war / log. im wilden Mann.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Weihburggaß / im Mollartischen Hauß.
-                     </p>
-                  
-                  
-                  					
-                  <p id="tei:p__47" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Lista derer Getauften /
-                     </p>
-                  					
-                  <p id="tei:p__96" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 22. October / 1719.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Joh. Georg Reichwein / und Anna 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Cathar. s. Ehefr ihr T. Ana Mar. Cathar.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Johann Georg Schönbrunner / Roß=<br  xmlns:local="http://dse-static.foo.bar"><br />handler / und Magdalena sein. Ehew.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ia Theresia.
-                     </p>
-                  					
-                  <p id="tei:p__66" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Johann Georg Neller / Haußmaister /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Anna Maria sein. Ehew. ihr T.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Cordula.
-                     </p>
-                  					
-                  <p id="tei:p__60" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Lorenz Schmid / Schneider / und 
-                     						Bar=<br  xmlns:local="http://dse-static.foo.bar"><br />ihr T. Eva.
-                     </p>
-                  					
-                  <p id="tei:p__78" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Martin Freündt / Laggey / und 
-                     						There=<br  xmlns:local="http://dse-static.foo.bar"><br />sia sein. Ehew. ihr T. Theresia Elisabeth.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     m Mayer / und Anna Maria sein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     D
-                     </p>
-                  					
-                  <p id="tei:p__51" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     r Thomas.
-                     </p>
-                  					
-                  <p id="tei:p__137" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Friderich Pitsch / und Elisabeth 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     sein. Ehew. ihr T. Eva Maria.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Andre Wagleiner / Kais. Kutscher / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Cathar. s. Ehew. ihr T Rosina Theresia.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Andre Spizel / Kutscher / und Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Magdal. s. Ehew. ihr S. Kilian Franz.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Jacob Wagner / Kaiserl. Bla=<br  xmlns:local="http://dse-static.foo.bar"><br />chenknecht / und Elisabeth sein. Ehew.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     egori.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     n G
-                     </p>
-                  					
-                  <p id="tei:p__69" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Andreas Kütler / Kaiserl. Kutscher /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Maria sein. Ehew. ihr S. Leopold
-                     </p>
-                  					
-                  <p id="tei:p__76" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem MichaelUlmer / Schneider / und 
-                     						There=<br  xmlns:local="http://dse-static.foo.bar"><br />sia sein. Ehew. ihr T. Maria Ursula.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     n 23. Dito.
-                     </p>
-                  					
-                  <p id="tei:p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem MatthiasPollhaim / Würth / und 
-                     						Ca=<br  xmlns:local="http://dse-static.foo.bar"><br />tharina sein. Ehew. ihr S. Joh. Adam.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Sebastian Globisser / Bier=Versilbe=<br  xmlns:local="http://dse-static.foo.bar"><br />rer / und Maria Elisabeth sein. Ehew.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     na Theresia.
-                     </p>
-                  					
-                  <p id="tei:p__137" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Johann Jacob Hofmann / Schneider /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Anna Maria Christina sein. Ehew.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ihr S. Johann Georg Adam.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Bernhard Pallschophecky / und Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Magdalena s. Ehew. ihr T. Anna Cathar.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Simon Perger / Zimmermann / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Margaretha s. Ehew. ihr S. Joh. Georg.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Thomas Hofmann / Holzscheiber /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Regina sein. Ehew. ihr S. Matthi=<br  xmlns:local="http://dse-static.foo.bar"><br />as
-                     </p>
-                  					
-                  <p id="tei:p__62" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Lorenz Scheig / Laggey / und Judith
-                     </p>
-                  					
-                  <p id="tei:p__62" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     in=und vor der Stadt.
-                     </p>
-                  					
-                  <p id="tei:p__65" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     w. ihr T. Paulina Susanna Cathar.
-                     </p>
-                  					
-                  <p id="tei:p__65" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ach / gew. 
-                     Sollicita
-                     Sollicitator
-                      -
-                     </p>
-                  					
-                  <p id="tei:p__99" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     tor, und Maria s. Ehew. ihr T. Mar. Barb.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn Joh. Joseph Hellmann / Kaiserl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Arsenal=Amtschreiber / und Francisca s.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ihr S. Ferdinand Lorenz.
-                     </p>
-                  					
-                  <p id="tei:p__65" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ndenes Kind / Johann Carl.
-                     </p>
-                  					
-                  <p id="tei:p__87" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Gestatner=Schneider / und 
-                     						Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />ria s. Ehew. ihr T. Maria Magdalena.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 24. Dito.
-                     </p>
-                  					
-                  <p id="tei:p__155" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Samuel Franz Richard / beeder 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Rechten Doct. und Anna Sophia sein.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Hausfr. ihr T. Maria Sabina Theresia.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Michael Pitermann / Maurer / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Theresia s. Ehew. ihr S. Franz Leopold.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Matthias Praunauer / Laggey / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Barbara sein. Ehew. ihr S. Johann 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Georg Judas Thaddeus.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Matthias Klein / Kais. Hartschier / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Maria Antonia sein. Ehew. ihr S.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     n Michael.
-                     </p>
-                  					
-                  <p id="tei:p__122" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Joh. Adam Baumaister / Kaiserl.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Hof=Canzleydiener / und Maria Eva s.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ehefr. ihr S. Joh. Georg Thaddeus.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joseph Färbinger / und Maria 
-                     						There=<br  xmlns:local="http://dse-static.foo.bar"><br />sia s. Ehew ihr T. Maria Elisab. Susana.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     cobSchröck / und Anna Maria sein.
-                     </p>
-                  					
-                  <p id="tei:p__72" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     v. ihr T. Maria Theresia Monica.
-                     </p>
-                  					
-                  <p id="tei:p__73" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     seph Götz / Beck / und Theresia sein.
-                     </p>
-                  					
-                  <p id="tei:p__106" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ehew. ihr T. Maria Eva Barbara.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joseph Karlinger / Maurer / und 
-                     						Ursu=<br  xmlns:local="http://dse-static.foo.bar"><br />la sein. Ehew. ihr T. Anna Elisabeth.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Joh. Baptist Grety / und Cathar. sein.
-                     </p>
-                  					
-                  <p id="tei:p__92" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ehew. ihr T. Magdalena Laurenzia.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joseph Stäg / Tagwerker / und Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ehew. ihr T. Anna Juliana.
-                     </p>
-                  					
-                  <p id="tei:p__90" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Georg Ostertag / Hausmaister /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Maria Anna sein. Ehew. ihr S.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     nas Jeremias.
-                     </p>
-                  					
-                  <p id="tei:p__89" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Thomas Martin Rothauer / Tag=<br  xmlns:local="http://dse-static.foo.bar"><br />werker / und Maria Anna sein. Ehew.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     S Simon Paul.
-                     </p>
-                  					
-                  <p id="tei:p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Matthias Strobel / Schuster / uno 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ursula s. Ehew. ihr T. Maria Theresia.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     den 25. Dito.
-                     </p>
-                  					
-                  <p id="tei:p__83" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Titl. Hrn. Franz Jos. von Popowitz /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und
-                     </p>
-                  					
-                  <p id="tei:p__90" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Maria Christina s. Fr. G. ihr T. Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />ria Annä Josepha Chris.
-                     </p>
-                  					
-                  <p id="tei:p__102" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Leopold von Freündsperg / des 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     H. R. R. Ritter / und Maria Agnes /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     s. Hausfr. ihr T. Anna
-                     </p>
-                  					
-                  <p id="tei:p__103" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Peter Paul Kölbl / Kaiserl. Ban=<br  xmlns:local="http://dse-static.foo.bar"><br />calitäts Officier / und Maria Barbara 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     8 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     franz von Pan 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     s. Ehefr ihr S.
-                     </p>
-                  					
-                  <p id="tei:p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Marcus Melano / Laggey / und 
-                     						Mar=<br  xmlns:local="http://dse-static.foo.bar"><br />garetha s. Ehew. ihr S. Joh. 3
-                     </p>
-                  					
-                  <p id="tei:p__97" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Oecker / Garde=Soldat / und 
-                     						Ca=<br  xmlns:local="http://dse-static.foo.bar"><br />tharina s. Ehew. ihr S. Anton Fer
-                     </p>
-                  					
-                  <p id="tei:p__95" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Gregori Heizberg / Garde=Söldat /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Elisab. s. Ehew 
-                     ihr
-                     ihrDem
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__101" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Adam Klim / Bierleuthgeb / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Elisabeth sein. Ehew. ihr S. Johann 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Carl Peter Joseph.
-                     </p>
-                  					
-                  <p id="tei:p__98" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Christoph Wenger / Schreiber / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Theresia s. Ehew. ihr S. 
-                     C
-                     CDem
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__97" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem JosephChristoph Raschof / Tagwerker /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Eva sein. Ehew. ihr T. Eleonora.
-                     </p>
-                  					
-                  <p id="tei:p__85" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 26. Dito.
-                     </p>
-                  					
-                  <p id="tei:p__109" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Titl. Herrn Franz Valerian / Grafen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Podstazky / Freyherrn von Prosinovitz /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     der R. Kais. Majestät Cammerern / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     =C
-                     </p>
-                  					
-                  <p id="tei:p__123" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Verwittibt. Kaiserl. Majestät / Amalia 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Wilhelmina Cammerern / und dessen Fr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Gemahlin / Titl. Frau Maria Theresia /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     gebohrner Gräfin von Lichtenstein / dero 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Hr. S. Franz Carl Joseph. Cri
-                     </p>
-                  					
-                  <p id="tei:p__106" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Michael Stummer / Schuster /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Maria Theresia sein Ehew. ihr S.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Franz Carl Thaddeus.
-                     </p>
-                  					
-                  <p id="tei:p__107" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Anton Peter Mitterlechner / Flasch=<br  xmlns:local="http://dse-static.foo.bar"><br />ner / und Maria Catharina sein. Ehew.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ihr S. Carl Balt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     </p>
-                  					
-                  <p id="tei:p__111" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Jacob Anton Rizardi / Handels=<br  xmlns:local="http://dse-static.foo.bar"><br />mann / und Eva Maria s. Ehefr. ihr T.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Maria Anna Theresia.
-                     </p>
-                  					
-                  <p id="tei:p__107" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Herrn Johann Wolfgang Heymerl /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Anna Sophia sein. Ehefr. ihr S.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ohann Carl W
-                     </p>
-                  					
-                  <p id="tei:p__111" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Niclas Droschler / Laggey / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Anna Barbara sein. Ehew. ihr S.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Johann Jacob Simon.
-                     </p>
-                  					
-                  <p id="tei:p__108" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Christian Lindner / Laggey / und 
-                     						Su=<br  xmlns:local="http://dse-static.foo.bar"><br />sanna s. Ehew. ihr S. Christian Barthlme.
-                     </p>
-                  					
-                  <p id="tei:p__109" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Matthias Klein / Schuster / und Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     sein. Ehew. ihr S. Anton 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Franz.
-                     </p>
-                  					
-                  <p id="tei:p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 27. Dito
-                     </p>
-                  					
-                  <p id="tei:p__115" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     m 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Matthias Huber / Katscher / und Mar 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     s. Ehew. ihr S. Leop. 
-                     Andre
-                     AndreDem
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__116" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Georg Kerschner / Jäger und 
-                     						Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />ria sein. Ehew. ihr S. Jgnaz Andreas 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Simon Judas Thadb
-                     </p>
-                  					
-                  <p id="tei:p__109" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Stephann Kinner / Flecksieder / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     J 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Fancisca s. Ehewhr T.
-                     </p>
-                  					
-                  <p id="tei:p__114" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Wohnk Koch / und Dorothe s.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ehew. ihr T. 
-                     Ma
-                     MaDem
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__113" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Caspar Steinecker / Peruckenma=<br  xmlns:local="http://dse-static.foo.bar"><br />m 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     cher / und Ther. s. E
-                     </p>
-                  					
-                  <p id="tei:p__114" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Georg Bortisch / Gartner / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Elisabeth s. Ehew. ihr S.
-                     </p>
-                  					
-                  <p id="tei:p__113" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Anton Krauß / Schuster / und Regina 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     sein. Ehew. ihr S.
-                     </p>
-                  					
-                  <p id="tei:p__118" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Matthias Fischer / Kutscher / und 
-                     						Mag=<br  xmlns:local="http://dse-static.foo.bar"><br />dalena s. Ehew. ihr T. Rosina Elisabeth.
-                     </p>
-                  					
-                  <p id="tei:p__104" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     28. J
-                     </p>
-                  					
-                  <p id="tei:p__123" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Ferdinand Radl / Leinwadband=<br  xmlns:local="http://dse-static.foo.bar"><br />ler / und Anna Regina sein. Ehefr. ihr 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     T. Maria Elisabeth
-                     </p>
-                  					
-                  <p id="tei:p__107" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Simon Reintahler /
-                     </p>
-                  					
-                  <p id="tei:p__106" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     cher / und Ep
-                     </p>
-                  					
-                  <p id="tei:p__127" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Johann Gomi / Koch / und Catharina 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     sein. Ehew. ihr Zwilling / Anna 
-                     						Catha=<br  xmlns:local="http://dse-static.foo.bar"><br />ring / und Maria.
-                     </p>
-                  					
-                  <p id="tei:p__124" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Gregori Heüßler / Grenadierer / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Susanna s. Ehew. ihr T. Maria Rosalia 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Rosine
-                     </p>
-                  					
-                  <p id="tei:p__131" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Johann Adam Margretner / Laggey /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Maria Barbara sein. Ehew. ihr T.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Maria Elisabeth=
-                     C
-                     CDem
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__124" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Jacob Freismuth / und Eva 
-                     						Cä=<br  xmlns:local="http://dse-static.foo.bar"><br />tharina s. Ehew. ihr S.
-                     </p>
-                  					
-                  <p id="tei:p__123" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Gregori Hold / Becker / und Justina 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     s. Ehew. ihr S.
-                     </p>
-                  					
-                  <p id="tei:p__127" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Jacob Völker / Würth / und Anna 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Maria s. Ehew. ihr S 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     phMatthias.
-                     </p>
-                  					
-                  <p id="tei:p__113" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 29. T
-                     </p>
-                  					
-                  <p id="tei:p__147" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Titl. Herrn Johann Wilhelm von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Prockhausen / Kais. Hof=Kriegs=Rahts=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Secretario, und Maria Antonia s. Fr. G.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ihr Hr. S. Maria
-                     </p>
-                  					
-                  <p id="tei:p__130" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Balthasar Jderspurger / Beck / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Elisabeth s. Ehew. ihr T. Elisabeth Cathar.
-                     </p>
-                  					
-                  <p id="tei:p__113" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem
-                     </p>
-                  					
-                  <p id="tei:p__157" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Joh. Niclas Reder / und Anna Stadt=und Land=Berichts=Beysitzer / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Maria sein. Eheweihr S. Ludwig Gabriel Maria Clara Leopoldina sein. Hausfr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Francisca Josepha.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     hr T.
-                     </p>
-                  					
-                  <p id="tei:p__168" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Wagner / Tagwerker / und Mag=Dem Hrn. Philipp Kramer / Eisenhandler /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     dalena sein. Ehew ihr Zwilling / Johann, und Mar. Cathar. s. Ehefr ihr T. An. Barb.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Fridl / Glaser / und Maria Eva
-                     </p>
-                  					
-                  <p id="tei:p__167" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Urban Achinger / Reutknecht / und Ve=sein. Ehew. ihr S. Johann Georg.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ronica sein. Ehew ihr S. Johann Georg Dem Joh. Michael Dietix / Kutscher / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Maria Anna sein. Ehew. ihr T. Anna 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     n.
-                     </p>
-                  					
-                  <p id="tei:p__122" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     sohanna.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ha=Barbara
-                     </p>
-                  					
-                  <p id="tei:p__223" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     rina sein. Ehew. ihr T. Anna Theresia. Dem Christoph Feistlin / und Maria Justina 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Stephan Teschmann / und Susanna sein. Ehew. ihr T. Maria Eva.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     s. Ehew. ihr T. Maria Apollonia Barb. Dem Thomas Schleunhuber / und Marga=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Jacob Perch / Schmid / und Cunigun=retha s. Ehew ihr S. Michael Wolfgang.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     da s. Ehew. ihr S. JacobLeopold Benedict. Dem Thomas Lehrner / Kutscher / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     / sanna s. Ehew. ihr T. Maria Elisabeth.
-                     </p>
-                  					
-                  <p id="tei:p__161" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     und Barb. s. Ehew. ihr T. Theresia Elisab. Dem Augustin Mesner / Laggey / und Maria 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     barde=Soldat / und Ma=sein. Ehew. ihr T. Maria Justina Ther.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     D.
-                     </p>
-                  					
-                  <p id="tei:p__125" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     1. Dito.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den
-                     </p>
-                  					
-                  <p id="tei:p__175" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Thomas Hochförer / Laggey / und Sa=Dem Niclas Schenk / Tischler / und Helena 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     tharina sein. Ehew. ihr S. Peter Georg. s. Ehew. ihr S. Wolfgang Joh. Joseph.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Joh. Schmid / Würth / und Maria 
-                     Ca
-                     CaDem
-                     =
-                     </p>
-                  					
-                  <p id="tei:p__142" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Hrn. Joh. Baptist Vianini / Kaiserl. tharina s. Ehew. ihr S. Peter Joseph.
-                     </p>
-                  					
-                  <p id="tei:p__133" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Lista derer Verstorbenen / in=und vor der Stadt.
-                     </p>
-                  					
-                  <p id="tei:p__140" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 25. Dito / in der Stadt.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     720. starb.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 24
-                     </p>
-                  					
-                  <p id="tei:p__143" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Christian Blessel / alt 7. J. im Burger=Spitt.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     1 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     tadt
-                     </p>
-                  					
-                  <p id="tei:p__168" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Titl. Herr Franz Anton / des H. R. R. Graf Ein unbekanter Mann / im Beschau=Hauß /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Walsegg / Herr der Herrschaften Pott=alt bey 50. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Vor der Stadt.
-                     </p>
-                  					
-                  <p id="tei:p__168" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Schodtwien und Velicka / der R. Kaiserl. Catharina Gleissin / Wittib / zu Matzel=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Majestät würklich=geheimer und Finan=storf / alt 52. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Den 26. Dito / in der Stadt.
-                     </p>
-                  					
-                  <p id="tei:p__162" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Der Eva Küpferlingin / Wittib / im tiefen Dem Caspar Neiß / Kirchensamler bey St.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     ria Anna / alt 22. J. Peter / im Schneiderischen Hauß / sein 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Graben /
-                     </p>
-                  					
-                  <p id="tei:p__138" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     W. Maria / alt 44.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jahr.
-                     </p>
-                  					
-                  <p id="tei:p__160" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Peter Stroty / Tanzmaister / am Spitl=Barthlme Kropf / Trager / im 
-                     						Heissensteini=<br  xmlns:local="http://dse-static.foo.bar"><br />nton / alt fiebendhalb Jahr. schen Hauß / alt 60. Jahr.
-                     </p>
-                  					
-                  <p id="tei:p__134" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Vor der Stadt.
-                     </p>
-                  					
-                  <p id="tei:p__170" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     cher / am Thury / s. K. Christian / alt 3. J. Dem Hrn. Ferdinand Seidliz / in der 
-                     						Joseph=<br  xmlns:local="http://dse-static.foo.bar"><br />lisabeth / alt 30. Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     eph=<br  xmlns:local="http://dse-static.foo.bar"><br />stadt 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ce
-                     </p>
-                  					
-                  <p id="tei:p__141" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Dem Franz Menter / Schneider / am Thury /
-                     </p>
-                  					
-                  <p id="tei:p__135" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jahr.
-                     </p>
-                  					
-                  <p id="tei:p__160" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     tenthal / s. K. Martin / alt 5. V. Jahr. Magdalena Stoissin / Wittib / am Neu=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     H.
-                     </p>
-                  					
-                  <p id="tei:p__196" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     7 /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Müllner alt 38. J. Jacob Kampferstich / Peter Schmid / auf der Wieden / alt 33. J.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     alt 50. J. und Maria Hörmanin / alt 37. August. N. Zimmergesell / im Liechtenthal /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     alt 3.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jahr.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Jahr / im Kranken=Hauß.
-                     </p>
-                  					
-                  <p id="tei:p__139" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     )( )(
-                     </p>
-                  
-                  					
-                  <p id="tei:p__155" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Die Verren Staaten deren 
-                     						verei=<br  xmlns:local="http://dse-static.foo.bar"><br />nigten Niederlanden an den Werzogen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     von Anjou abgehen lassen.
-                     </p>
-                  					
-                  <p id="tei:p__138" class="yes-index"></p>
-                  					
-                  <p id="tei:p__252" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     0. 0 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     J Je nun zum öftern geäusserte Zuneigung beharrlicher Freund=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ed schaft erfreuet uns über die Massen; Wir wünschen nur / daß wir dieselbe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     beybehalten mögen; Welches dan durch die endliche Herstellung des Frieden am 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     füglichsten wird beschehen können; Das geschöpfte Vertrauen / welches Euer 
-                     						Maje=<br  xmlns:local="http://dse-static.foo.bar"><br />stät zu uns hegen / lasset hoffen / daß unsere Vorstellung und tragendes Verhoffen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     nicht vergebens seyn werden; Dan daß der jetzige Krieg mit der Zeit so vieles 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Unheil und Empörung verursachen könne / als die daran Theilnehmende durch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     das lezte Kriegs=Feuer erlitten / ist unschwer zuerachten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     v
-                     </p>
-                  					
-                  <p id="tei:p__296" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     gen / ersehen wir fast kein zulänglicheres und schleunigeres Mittel / als wan dieselbe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     sich wolten gefallen lassen / die unumgängliche Bedingnussen des Frieden auch 
-                     						an=<br  xmlns:local="http://dse-static.foo.bar"><br />zunehmen / welche deroselben in dem längst bekant=vierfachen Bunde vorgetragen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     worden. Jhre Römisch=Kaiserliche Majestät / wie ingleichem der Herzog von 
-                     						Sa=<br  xmlns:local="http://dse-static.foo.bar"><br />doyen haben ja für gut befunden, denselben anzunehmen; Wir wollen uns ein 
-                     						Glei=<br  xmlns:local="http://dse-static.foo.bar"><br />ches zu deroselben versichern; Wir hätten es uns für ein grosse Ehr gehalten / wan 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     unser Fleiß und Eifer so viel im Vermögen gehabt / als derselbe wohlgemeint gewesen;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Anerwogen Zeit und Weilohn einzige Würkung verflossen / so haben wir noch einmal 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     den Versuch tuhn wollen / um bey denen Bunds=Genossen aufs neu ein 
-                     						vierdtel=<br  xmlns:local="http://dse-static.foo.bar"><br />jährige Frist auszuwürken; Da inzwischen Euer Majestät abermalige Gelegenheit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     winnen mögten / ein geneigten Schluß zum Frieden;
-                     </p>
-                  					
-                  <p id="tei:p__254" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Sire. Wir bitten um dero sehr theuren Freundschaft willen / so dieselbe zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     unser Republic tragen / sie wollen sich endlich doch bereden lassen / und in die 
-                     						Bünd=<br  xmlns:local="http://dse-static.foo.bar"><br />nuß / die zu dem Frieden und allgemeiner Ruhe dienlich / willigen; Wir versehen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     uns dessen von dero grossen Klugheit / und sonderbaren Gelassenheit / womittels 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     dieselbe den Fried dem Krieg: und die Ruhe der Unruhe vorzuziehen wissen;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Ein friedsammer Schluß wird dem Nachruhm ein weit herrlichern Glanz ertheilen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     als ein allzulangwirriger Krieg / wan er auch gleich glücklicher / als bishero 
-                     						gesche=<br  xmlns:local="http://dse-static.foo.bar"><br />ben / ins künftige solte fortgeführet werden.
-                     </p>
-                  					
-                  <p id="tei:p__247" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Solchemnach leben wir noch der guten Hofnung / dieselbe werden dero 
-                     						Gedan=<br  xmlns:local="http://dse-static.foo.bar"><br />ken zum Frieden wenden; Widrigenfals wurden wir uns nicht länger enthalten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     dörfen / wider Vermuhten mit in den vierfachen Bund zutretten; So jedoch uns 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     nicht wenig schmerzen und kränken solte; Jm übrigen so protestiren wir 
-                     						aufrich=<br  xmlns:local="http://dse-static.foo.bar"><br />tigst: daß wir nach nichts mehr so trachten / als nach der Wiederherstellung und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Erhaltung des Frieden und algemeinen Ruhestandes; Auch werden wir jederzeit.
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />
-                     Sorge tragen / dero beharrliche Freundschaft zuerhalten / mithin die deroselben 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />bührende Hochachtung niemalen ausser Acht zusetzen.
-                     </p>
-                  </div>
-               				</div>
-            		
-            <p style="text-align:center;"></p>
+            <div class="title-page"></div>
+            <div class="page-content">
+               			
+               <div id="tei:div__5863">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_1">1</span>
+                  				
+                  <div id="tei:div__5862">
+                     					
+                     <p id="tei:p__6" class="yes-index">
+                        						<br class="linebreak">
+                        Num. 1720.
+                        </p>
+                     					
+                     <p id="tei:p__5" class="yes-index">
+                        						<br class="linebreak">
+                        iarium.
+                        </p>
+                     					
+                     <p id="tei:p__64" class="yes-index">
+                        						<br class="linebreak">
+                        in dieser Rendeng=Stadt Wien Denkwürdiges / und sich Neues 
+                        						<br class="linebreak">
+                        zugetragen; Als auch / was dergleichen nachrichtlich alda eingeloffen /
+                        						<br class="linebreak">
+                        samt einem Anhang jedermaliger Verzeichnuß; Erstlich deren täglich alhier 
+                        						Ankom=<br class="linebreak">menden: Zwaytens deren in=und vor der Stadt getauften Kindern: Drittens 
+                        						<br class="linebreak">
+                        derer Verehlichten / und Vierdtens deren verstorbenen Personen.
+                        </p>
+                     					
+                     <p id="tei:p__34" class="yes-index">
+                        						<br class="linebreak">
+                        Mit Jhrer Römisch=Kaiserlich=und Catholischen Majestät Freyheit /
+                        						<br class="linebreak">
+                        Gedruckt in der Kaiserlichen Reichs=und Hof=Buchdruckerey /
+                        						<br class="linebreak">
+                        Zufinden im roten Ygel.
+                        </p>
+                     					
+                     <p id="tei:p__18" class="yes-index">
+                        						<br class="linebreak">
+                        Wien / vom 24. bis 26. Jenner / 1720.
+                        </p>
+                     					
+                     <p id="tei:p__15" class="yes-index">
+                        						<br class="linebreak">
+                        Heute haben Sichsowohl die 
+                        Re
+                        Regierend
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__29" class="yes-index">
+                        						<br class="linebreak">
+                        gierend=Romisch=Kaisetlich=
+                        						<br class="linebreak">
+                        Jh 
+                        						<br class="linebreak">
+                        hre Verwiktibt=Römisch=Kaiserliche 
+                        						Ma=<br class="linebreak">jestäten / als auch
+                        </p>
+                     					
+                     <p id="tei:p__15" class="yes-index">
+                        						<br class="linebreak">
+                        elmina / zur Ader gelassen.
+                        </p>
+                     					
+                     <p id="tei:p__60" class="yes-index">
+                        						<br class="linebreak">
+                        Dito wurd die in hiesiger Stadt und Vorstädten schon alhier 
+                        						<br class="linebreak">
+                        angeworben=neus Mannschaft gehöriger Orten vorgestellet / welche 
+                        						<br class="linebreak">
+                        mit denen bereits auf dem Land auch geworbenen / und nächster 
+                        						Ta=<br class="linebreak">gen dahier erwarteten=Recruten nach beschehener Assentirung den 
+                        						<br class="linebreak">
+                        ben werden 
+                        						sollel=<br class="linebreak">gimentern überg
+                        </p>
+                     					
+                     <p id="tei:p__208" class="yes-index">
+                        						<br class="linebreak">
+                        Donuerstag / den 25. Jenner. Heut / als um Fest=Pauli - Be=<br class="linebreak">kehrung / haben Sich=Jhre Römisch=Kaiserlich=und Königlich=Ca=<br class="linebreak">tholische Majestät mit einem grossen Gefolge Dero Ministern / und 
+                        						Ca=<br class="linebreak">valieren / so alle wegen Höchst=Seeligstem Absterbon Weiland Jhrer 
+                        						<br class="linebreak">
+                        Kuiserlichen Majestät / Eleonora Magdalena Theresia / in tiefester 
+                        						Trau=<br class="linebreak">er erschienen / nach der Kaiserlichen Pfarikirche zu St. Michael derer 
+                        						<br class="linebreak">
+                        W. W. E. E. P. P. Congreg. Cler. Reg. S. Pauli, erhoben / und 
+                        						daselb=<br class="linebreak">sten dem Gottes=Dienst abgewartet / welchen Jhre Hochwürden / Titl.
+                        						<br class="linebreak">
+                        Herr Michael Probst zu St. Pölten / Can. Reg. S. Augustini, verrichtet.
+                        						<br class="linebreak">
+                        Freytag / den 26. Jenner. Heute / Nachmittag / haben abermal 
+                        						<br class="linebreak">
+                        Jhre Römisch=Kaiserlich=und Königlich=Cntholische Majestät sowohl 
+                        						<br class="linebreak">
+                        den Jnheimisch=als Ausländischen Ministeren Audienz Allergnädigst 
+                        						<br class="linebreak">
+                        ertheilet / und wegen Jhrer jüngstens abgelebt=Verwittibt=Kaiserlichen 
+                        						<br class="linebreak">
+                        Majestät / Gleonora Magdalena Theresia / die Condolenz empfangen;
+                        </p>
+                     
+                     					
+                     <p id="tei:p__77" class="yes-index">
+                        						<br class="linebreak">
+                        0 
+                        						<br class="linebreak">
+                        Ohre Majestät / die Verwittibt=Römische Kaiserin / Amalia Wilhelmina /
+                        						<br class="linebreak">
+                        samt Dero Durchleuchtigsten Erz Herzogin / aber nach dem Ren=Weeg 
+                        						<br class="linebreak">
+                        zu den WW. EE. Closter=Frauen / von Maria=Heimsuchung genant /
+                        						<br class="linebreak">
+                        Sich verfüget / und daselbsten etwas Sich verweilet / so dan wieder 
+                        						<br class="linebreak">
+                        nach der Kaiserlichen Burg gekehret.
+                        </p>
+                     					
+                     <p id="tei:p__48" class="yes-index">
+                        						<br class="linebreak">
+                        Eodem waren Jhre Eminenz / der Herr Cardinal Graf Althan /
+                        						<br class="linebreak">
+                        Bischof zu Waitzen / mittels der Post / aus Hungarn / von dero 
+                        						Bi=<br class="linebreak">schoflichen Residenz / dahier wieder angelanget.
+                        </p>
+                     					
+                     <p id="tei:p__62" class="yes-index">
+                        						<br class="linebreak">
+                        Jtem ware Herr Obrist / Christian Friderich von Schmidburg /
+                        						<br class="linebreak">
+                        auf der Post von hier in das Reich abgangen / um daselbsten für Jhre 
+                        						<br class="linebreak">
+                        Römisch=Kaiserlich=und Königlich=Catholische Majestät Recruten 
+                        						zu=<br class="linebreak">werben / und selbe auf bestimte Zeit zuliefern.
+                        </p>
+                     					
+                     <p id="tei:p__132" class="yes-index">
+                        						<br class="linebreak">
+                        Ferner wurde von Belgrad / aus Servien / mit Brieffen vom 10.
+                        						<br class="linebreak">
+                        Jenner berichtet / daß alda / nach eingeloffen=betrübter Nachricht 
+                        						we=<br class="linebreak">gen Jhrer Weiland Verwittibt=Kaiserlichen Majestät / Eleonora 
+                        						<br class="linebreak">
+                        Magdalena Theresia / gefährlicher Krankheit / auf Veranlassung des 
+                        						<br class="linebreak">
+                        aldort bestelt=Kaiserlichen Superioris, und Pfarters / A. R. P. Fran-<br class="linebreak">cisci Xaverii Vogl / è S. J. in allen Kirchen vor ausgesezt=Allerheilig=<br class="linebreak">stem Altar=Sacrament / für Allerhöchstgedacht=Jhre Majestät drey 
+                        						<br class="linebreak">
+                        Täg nacheinander mit grossem Zulauf und Eifer so wohl der Militz /
+                        						<br class="linebreak">
+                        als Burgerschaft ein Andacht sey angestellet worden 
+                        						<br class="linebreak">
+                        l.
+                        </p>
+                     					
+                     <p id="tei:p__135" class="yes-index">
+                        						<br class="linebreak">
+                        Mehr wurde mit Brieffen / von Dresden / aus Sachsen / von 
+                        						<br class="linebreak">
+                        dem 19. Jenner gemeldet / wie daß die Durchleuchtigste Erz=Her=<br class="linebreak">zogin / welche sich samt Dero Herrn Gemahl / des Königlichen 
+                        						Prin=<br class="linebreak">zen Hoheit / in erwünschtem Wohlstand befinden / immerhin in der 
+                        						<br class="linebreak">
+                        Schloß=Capelle der Andacht abwarteten. Jhre Majestät / der 
+                        						<br class="linebreak">
+                        König / würden aus Polen: und Jhre Majestät / die Königin /
+                        						<br class="linebreak">
+                        von Torgau mit nächstem in besagtem Dresden zuruckerwartet. Der 
+                        						<br class="linebreak">
+                        auf der Vestung Königstein in Verhaft sitzende von Klettenberg hätte 
+                        						<br class="linebreak">
+                        durchzukommen gesuchet; Dabey er aber im Herunterlassen sich 
+                        						zer=<br class="linebreak">fallen / folglichen nicht entwischen können.
+                        </p>
+                     					
+                     <p id="tei:p__117" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Polen / von dem 18 Jenner. Daß Jhre Königliche 
+                        						Ma=<br class="linebreak">jestät den 14. dieses den Churländischen Herren Abgesandten / dem 
+                        						<br class="linebreak">
+                        Fürstlichen Haubtmann zu Windau / Buchholz / und dem geheimen 
+                        						<br class="linebreak">
+                        Cammer=Raht von Pote / zu Warschau Audienz ertheilet; Darin 
+                        						die=<br class="linebreak">selbe ihr Anbringen so schrift=als mündlich vorgetragen hätten:
+                        						<br class="linebreak">
+                        daß nemlichen dasjenige / so bishero von einigen unzufrieden=Chur=<br class="linebreak">ländischen Edelleuthen hin=und her ausgesprenget worden / ohne Grund:
+                        						<br class="linebreak">
+                        hingegen des Herzogs von Churland Gesuch auf Recht und 
+                        						Billig=<br class="linebreak">keit
+                        </p>
+                     					
+                     <p id="tei:p__94" class="yes-index">
+                        						<br class="linebreak">
+                        keit gegründet seye; Zu erst gedachtem Warschau habe man den 11.
+                        						<br class="linebreak">
+                        dieses zu überlegen angefangen / wie endlichen die Verwirrung des 
+                        						Tri=<br class="linebreak">bunals in Ordnung zu bringen / und dessen Verfassungen forthin zu 
+                        						<br class="linebreak">
+                        verbessern; Andern Tags / als den 12. Dito / hätte der Cron=Cammerherr 
+                        						<br class="linebreak">
+                        Regung gemacht: Jhre Königliche Majestät mögten der samtlichen 
+                        						<br class="linebreak">
+                        Republic ein gewissen Tractat zukommen lassen; Darauf jedoch nichts
+                        </p>
+                     					
+                     <p id="tei:p__118" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Livorno / von dem 5. Jenner. Daß ein in 4. Tägen aus 
+                        						<br class="linebreak">
+                        Marsilien angekommenes Schif benachrichtiget / was Massen 
+                        						aldor=<br class="linebreak">ten verschiedene Fahrzeuge mit Getraid für Spannien beladen worden;
+                        						<br class="linebreak">
+                        Ein anders von Archangel eingeloffenes Schif habe die Nachricht 
+                        						<br class="linebreak">
+                        gebracht / wie es daselbsten in Gesellschaft eines Engellischen Schiffes /
+                        						<br class="linebreak">
+                        Tames genant / ein Holländisches Schif / die Galera del Pace, einge=<br class="linebreak">frohren zuruckgelassen: Sonst hab ein Engellisches Schif / so von 
+                        						erst=<br class="linebreak">besagtem Archangel abgeseeglet / auf den Britannischen Cüsten 
+                        Schif
+                        SchifAus
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__179" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Genua / von dem 6. Jenner. Daß ein von Alicante 
+                        						zu=<br class="linebreak">ruckommen=Genuesisches Kaufmanns=Schif die Zeitung mitgebracht:
+                        						<br class="linebreak">
+                        wie daß auf den Spannischen Cüsten fünf Algierische Raub=
+                        						<br class="linebreak">
+                        Schiffe sich befunden; Und noch ein anders von Tunis 
+                        						einge=<br class="linebreak">loffenes habe berichtet / daß gleichfals daselbsten verschiedene 
+                        						Bre-<br class="linebreak">gantinen / um auf die Christen zukreutzen / ausgeloffen wären. Mit 
+                        						<br class="linebreak">
+                        einer unlängstens von Marsilien heimgekehrten Feluck / welche den 
+                        						<br class="linebreak">
+                        Französischen Consul nach Livorno mitgeführet / habe man 
+                        						vernom=<br class="linebreak">men / was Gestalten in dasigem Haden 6. Galeeren / zu Dienst der 
+                        						<br class="linebreak">
+                        Madamoiselle von Vallois, ausgerüstet würden. Die von Lisabon /
+                        						<br class="linebreak">
+                        Cadix / Alicante, und Cartagena mit allerhand Kaufmannschaften 
+                        						<br class="linebreak">
+                        angekommene Schiffe hätten versichert / daß all=Kaiserlichen / Fran=<br class="linebreak">zösischen / Engellischen und Holländischen mit Paß=Brieffen versehenen 
+                        						<br class="linebreak">
+                        ren nunmehro wieder erlaubet seye.
+                        </p>
+                     					
+                     <p id="tei:p__64" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Mailand / von dem 10. Jenner. Daß aldasiger Guverneur 
+                        						<br class="linebreak">
+                        im Gefolge dessen samtlichen Hofstatt in den grossen Rahts=Saal sich 
+                        						<br class="linebreak">
+                        erhoben; Alda derselbe verschieden=armen Gefangenen / und sonsten 
+                        						<br class="linebreak">
+                        rwiesen.
+                        						<br class="linebreak">
+                        den </p>
+                     					
+                     <p id="tei:p__94" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Spannien / von dem 25. December. Daß der Marchese 
+                        						<br class="linebreak">
+                        Scotti, Minister des Herzogs von Parma, zu Madrit den 
+                        						Holländi=<br class="linebreak">schen Gesandten / Herrn Colster / besuchet / und dabey denselben 
+                        						ver=<br class="linebreak">sichert habe: wie daß der Herzog von Anjou für die Herren Staaten 
+                        						<br class="linebreak">
+                        alle Hochatung trage; Der Hof zu Madrit / an welchem jüngstens 
+                        						<br class="linebreak">
+                        						<br class="linebreak">
+                        der 
+                        						<br class="linebreak">
+                        )( 2
+                        </p>
+                     					
+                     <p id="tei:p__95" class="yes-index">
+                        						<br class="linebreak">
+                        der Geburtstag des Herzogs von Anjou / da dieser ins 37. ste Jahr 
+                        						<br class="linebreak">
+                        getretten / gefeyert worden / habe den Befehl wiederholet / die Gränz=
+                        						<br class="linebreak">
+                        Festungen best möglichst zu versehen. Sonst wolle verlauten / als 
+                        						<br class="linebreak">
+                        wan der König von Marocco die zerfallene Festungs=Werker von 
+                        						<br class="linebreak">
+                        Tanger wieder aufrichten: und immerfort im Haven selbiger Stadt 
+                        						<br class="linebreak">
+                        20. Naub=Schiff 
+                        						<br class="linebreak">
+                        int
+                        </p>
+                     					
+                     <p id="tei:p__206" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Groß=Britannien / von dem 9. Jenner. Daß endlichen 
+                        						<br class="linebreak">
+                        die 12. grosse Schiffe / welche die Französisch=Jndianische Compagnie 
+                        						<br class="linebreak">
+                        in Engelland bauen lassen / zu Stande gekommen / mit nächstem 
+                        						da=<br class="linebreak">hin abzulauffen. Die Toscanische / Parmesische / und Genuesische 
+                        						<br class="linebreak">
+                        Ministers hätten bey Jhro Groß=Britannischen Majestät Andiens 
+                        						<br class="linebreak">
+                        gehabt / und darbey Jhrer Principalen Angelegenheiten bey 
+                        						bepor=<br class="linebreak">stehender Friedens=Handlung mit Spannien aufs nachdrücklichste 
+                        						re=<br class="linebreak">commandiret; Höchstgedacht=Jhrer Majestät hätte auch der aus 
+                        						Hol=<br class="linebreak">land angekommene Marchase Visconti bereits seine Aufwartung 
+                        						ge=<br class="linebreak">macht. Der Herzog von Vharton wär in das Hauß derer Pairs:
+                        						<br class="linebreak">
+                        und der Ritter Decker / als Parlaments=Glied / ins Unter=Hauß 
+                        						ein=<br class="linebreak">geführet worden. Mylond Fainfax / Catholischer Religion / seye ohne 
+                        						<br class="linebreak">
+                        Erben gestorben: Sonstenzwäre der Admiral Norris nach Woolwich /
+                        						<br class="linebreak">
+                        Chattam und Scherneß abgangen / die Ausrüstung derer 22.
+                        						<br class="linebreak">
+                        Kriegsschiffen zubeschleunigen / um mit selbigen längstens gegen 
+                        						Aus=<br class="linebreak">gang des Monats Hornungs wied
+                        </p>
+                     					
+                     <p id="tei:p__148" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Frankreich / von dem 12. Jenner. Daß / so bald der nacher 
+                        						<br class="linebreak">
+                        Rom abgeschiekte Currier zuruckgekommen / der Herr Erz=Bischoff von 
+                        						<br class="linebreak">
+                        Rheims mit Genehmhaltung des Königs den Cardinals=Hut wohl 
+                        						<br class="linebreak">
+                        annehmen dörfte; Die Cassa vom See=Weesen habe 4. Millio=<br class="linebreak">nen überkommen / die ruckständige Schulden davon zubezahlen. Zu 
+                        						<br class="linebreak">
+                        Pariß / auf der Strassen Quincampoix, hätte man etliche gefänglich 
+                        						<br class="linebreak">
+                        eingezogen / welche beum Aetien=Handel / so noch immerhin ein 
+                        						gros=<br class="linebreak">sen Zulauf habe / sich falscher Schriften bedienet. Die Französische 
+                        						<br class="linebreak">
+                        Academie habe den Herrn Abten du Bois, an statt des verstorbenen 
+                        						Ab=<br class="linebreak">in Genest, zu deroselben M
+                        </p>
+                     					
+                     <p id="tei:p__125" class="yes-index">
+                        						<br class="linebreak">
+                        Versamlung wären sehr wichtige Gegen=Einwürfe gemachet worden /
+                        						<br class="linebreak">
+                        welch=allen aber der Herr Lavs mit ungemeiner Beredsumkeit begeanet 
+                        						<br class="linebreak">
+                        habe; Jn dieser Versamlung seye auch beschlossen worden / daß 
+                        						kunftig=<br class="linebreak">hin kein Taback in Frankreich mehr: sondern an dessen Stelle Hauß 
+                        						an=<br class="linebreak">gebauet werden salle / von melchem die Jndianische Compagnie um 38.
+                        						<br class="linebreak">
+                        Livres den Centner bezahlen wolle; Jndessen sollen alle Tahacks=Auf=<br class="linebreak">schläg abgeschaffet: und kein anderer / als aus den Colanien der 
+                        						Cum-<br class="linebreak">pagnie einzuführen / erlaubet son.
+                        						<br class="linebreak">
+                        Aus
+                        </p>
+                     					
+                     <p id="tei:p__87" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Holland / von dem 16. Jenner. Daß in lezt gehaltener 
+                        						<br class="linebreak">
+                        Versamlung die Herren Staaten / unter anderen / auch den Schluß 
+                        						<br class="linebreak">
+                        genommen / ein ansehenlichen Mann an den Groß=Czaarischen Hof /
+                        						<br class="linebreak">
+                        nacher Petersburg / abzusenden / um alda die Angelegenheiten der 
+                        						Re=<br class="linebreak">er Kaufmanschaft / zubesorgen. Der Herr Graf
+                        </p>
+                     					
+                     <p id="tei:p__43" class="yes-index">
+                        						<br class="linebreak">
+                        von Colliers hab aus Constantinopel berichtet / was Massen die 
+                        Ot
+                        Otpolis
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__108" class="yes-index">
+                        						<br class="linebreak">
+                        polis ergehen lassen / alle Feindseeligkeiten wider die Holländische Schiffe 
+                        						<br class="linebreak">
+                        einzustellen. Der Rahts=
+                        Præsideno
+                        Praesideno
+                         in Haag habe dem Fürsten Kurackin 
+                        						<br class="linebreak">
+                        zuverstehen gegeben / wie daß die Herren Staaten allerdings gerne 
+                        						se=<br class="linebreak">hen würden / wan Jhre Groß=Czaarische Majestät mit Schweden in 
+                        						<br class="linebreak">
+                        Fried=und Freundschaft zuleben suchen mögten; Sonsten folge hierbey 
+                        						<br class="linebreak">
+                        der Auszug des Schreiben / welches die Herren Stuaten jüngstens an 
+                        						<br class="linebreak">
+                        abgehen lassen.
+                        </p>
+                     					
+                     <p id="tei:p__117" class="yes-index">
+                        						<br class="linebreak">
+                        Aus Brabant / von dem 16. Jenner. Duß der Prinz de Ligne 
+                        						<br class="linebreak">
+                        zu Brüssel dem Marchese de Prie, welcher mit dem Herrn Bischoffen 
+                        						<br class="linebreak">
+                        von Gent sich unlüngst unterredet gehabt / den 9. dieses ein herrliches 
+                        						<br class="linebreak">
+                        Mittagmahl gegeben; Zu Ostende solle die aufgerichtet=Kaiserlich=
+                        						<br class="linebreak">
+                        Jndianische Compagnie noch immerfort beschäftiget seyn / nuch dem 
+                        						<br class="linebreak">
+                        Beyspiel der Französlich=Jndianischen Compagnie / wie sie der Herr 
+                        						<br class="linebreak">
+                        Laus zu Pariß eingerichtet / in guten Stand zusetzen.
+                        </p>
+                     					
+                     <p id="tei:p__106" class="yes-index">
+                        						<br class="linebreak">
+                        Von dem Nieder=Rheinstrom / vom 18. Jenner. Duß die in dem 
+                        						<br class="linebreak">
+                        Gülich=und Bergischen liegend=Chur=Pfältzische Regimenter 
+                        						recruti=<br class="linebreak">ret würden / und hätten die Officiers Befehl erhalten / die 
+                        						Compa=<br class="linebreak">gnien gegen Ausgang des Hornungs in völligem Stand zuhaben;
+                        						<br class="linebreak">
+                        Jndessen habe man auch angefangen zu Gülich das Magazin mit 
+                        						al=<br class="linebreak">lem wohl zuversehen / nichtweniger seibige Festung wieder auszubessern.
+                        </p>
+                     					
+                     <p id="tei:p__107" class="yes-index">
+                        						<br class="linebreak">
+                        Von dem Maynstrom / vom 20. Jenner. Daß / zufolg der 
+                        						Nach=<br class="linebreak">richt von Heydelberg / der Chur=Pfaltzische Gesandter / am 
+                        						Engelli=<br class="linebreak">schen Hof / Herr von Schmidtman / welchey / als Jhre Groß=Britan=<br class="linebreak">nische Majestät voriges Jahr von Londen nach Hannover gereiset /
+                        						<br class="linebreak">
+                        auch eine Reiß nach Heydelberg vorgenommen / von dar wiederum 
+                        						<br class="linebreak">
+                        nach besagtem Lonhen abgangen / um daselbsten die Angelegenheiten
+                        </p>
+                     					
+                     <p id="tei:p__104" class="yes-index">
+                        						<br class="linebreak">
+                        us.
+                        						<br class="linebreak">
+                        w 
+                        						<br class="linebreak">
+                        Aus der Schweitz / von dem 17. Jenner. Daß die Reformirte 
+                        						<br class="linebreak">
+                        " 
+                        						<br class="linebreak">
+                        Cantonen / als Schiwrtz / Zürch / Bern / Gluris / Busel / Schafhausen /
+                        						<br class="linebreak">
+                        Appenzell / Genf / St. Gallen / und die Graubündner / auch einen Brief 
+                        						<br class="linebreak">
+                        an den Erzbischaffen von Canterbery nach Londen geschrirben / und 
+                        						<br class="linebreak">
+                        ihre Religiol aufdas Beste ricdmmandiret.
+                        </p>
+                     					
+                     <p id="tei:p__39" class="yes-index">
+                        						<br class="linebreak">
+                        Von 
+                        						<br class="linebreak">
+                        )( 3
+                        </p>
+                     					
+                     <p id="tei:p__38" class="yes-index">
+                        						<br class="linebreak">
+                        l.
+                        </p>
+                     					
+                     <p id="tei:p__444" class="yes-index">
+                        						<br class="linebreak">
+                        Von dem Elbstrom / vom 17. Jenner. Daß / zufolge Briefen 
+                        						<br class="linebreak">
+                        von Petersburg / Seine Groß=Czaarische Majestät bey dero 
+                        						unläng=<br class="linebreak">stens überfallenen Unpäslichkeit an all=unterhabende Provinzen 
+                        						<br class="linebreak">
+                        des Reichs durch dero geheimen Raht ein=versiglete Verordnung /
+                        						<br class="linebreak">
+                        darnach sich jeder zurichten haben solte / bereits ergehen lassen; Die / so 
+                        						<br class="linebreak">
+                        die Reichs=Verwaltung hauptsächlich ausmachten / solten aus dem 
+                        						<br class="linebreak">
+                        Herry Canzler / Grafen Galloffskin / Herrn Vice - Canzler / Baron 
+                        						<br class="linebreak">
+                        Schafiroff / Herrn General=Admiral / Grafen Apraxim / Für=<br class="linebreak">sten Menzikoff / Grafen Tolstoy / Fürsten Dolhorucki / und noch 2. an=<br class="linebreak">deren Prinzen bestehen: alles aber / welches im geheimen Raht / oder 
+                        						<br class="linebreak">
+                        auch sonsten beschlossen würde / Deroselben Gemahlin nachmalens 
+                        						<br class="linebreak">
+                        vorgetragen werden; Der General Weyde solte die auf den Polnischen 
+                        						<br class="linebreak">
+                        Gränzen und die in Liefland stehende Armeen: Prinz Gagarin die 
+                        						Co=<br class="linebreak">sacken und Russische Tartarn / und der General=Feld=Zeugmaister 
+                        						<br class="linebreak">
+                        Burce die Völker in Finland commandiren / das gesamte See=Wesen 
+                        						<br class="linebreak">
+                        aber dem Grafen Apraxim verbleiben; Was man noch sonsten 
+                        						vor=<br class="linebreak">nehmen wolte / so solte man forderist auf die Vereinbarung des Wolga=
+                        						<br class="linebreak">
+                        Stroms mit der See Ladoga / vermittels des abgestochenen Canals /
+                        						<br class="linebreak">
+                        bedacht seyn / desgleichen solle man Wiburg / Petersburg / Narva / Reval 
+                        						<br class="linebreak">
+                        und Kiow aufs beste versehen / mithin ganz Moscau im beharrlichen 
+                        						<br class="linebreak">
+                        Wohlstand erhalten. Aus Stockholm verlaute / daß der dort 
+                        						an=<br class="linebreak">wesend=Groß=Britannische Minister stark darauf treibe / daß der Herr 
+                        						<br class="linebreak">
+                        Baron von Kniephausen die Schliesung des Tractats nicht bis zur 
+                        						<br class="linebreak">
+                        Versamlung deren Reichs=Ständen aufschieben: sondern so fort zum 
+                        						<br class="linebreak">
+                        Ende befördern möge; Wegen überhandgenommener Armut des 
+                        						ge=<br class="linebreak">meinen Manns würden fast in ganz Schweden sehr viele Raub=und 
+                        						<br class="linebreak">
+                        Mordtahten verübet. Aus Sachsen seye der Schwedische General 
+                        						<br class="linebreak">
+                        Trautvetter unverrichter Sachen wieder nach Stockholm gekehret;
+                        						<br class="linebreak">
+                        Desgleschen der Herr von Mardefeld auch wieder nach Petersburg 
+                        						<br class="linebreak">
+                        von Berlin abgangen / alda dem König die Juden ein überaus 
+                        						gros=<br class="linebreak">sen Kerl zum Neu Jahr geschenket; Zu besagtem Berlin wäre das 
+                        						<br class="linebreak">
+                        Urtl über den bekanten Clemens geschöpffet: und solches an ein 
+                        						ge=<br class="linebreak">wissen Hof gesandt worden / nach dessen Zuruckerhaltung / man solches 
+                        						<br class="linebreak">
+                        vollziehen lassen werde.
+                        </p>
+                     					
+                     <p id="tei:p__48" class="yes-index">
+                        						<br class="linebreak">
+                        Ankunft derer hoh=und niederen Stands=Personen.
+                        </p>
+                     					
+                     <p id="tei:p__42" class="yes-index">
+                        						<br class="linebreak">
+                        Den 25.
+                        </p>
+                     					
+                     <p id="tei:p__93" class="yes-index">
+                        						<br class="linebreak">
+                        Karntner=Thor. Herr Graf Wallis / Ge=Jhre Eminenz / Herr Cardinal / Graf von 
+                        						<br class="linebreak">
+                        neral=Wachtmaisier / komt von Temes=Althan / komen von Waitzen / log. in der 
+                        						<br class="linebreak">
+                        war / log. im wilden Mann.
+                        						<br class="linebreak">
+                        Weihburggaß / im Mollartischen Hauß.
+                        </p>
+                     
+                     
+                     					
+                     <p id="tei:p__47" class="yes-index">
+                        						<br class="linebreak">
+                        Lista derer Getauften /
+                        </p>
+                     					
+                     <p id="tei:p__96" class="yes-index">
+                        						<br class="linebreak">
+                        Den 22. October / 1719.
+                        						<br class="linebreak">
+                        Dem Hrn. Joh. Georg Reichwein / und Anna 
+                        						<br class="linebreak">
+                        Cathar. s. Ehefr ihr T. Ana Mar. Cathar.
+                        						<br class="linebreak">
+                        Dem Johann Georg Schönbrunner / Roß=<br class="linebreak">handler / und Magdalena sein. Ehew.
+                        						<br class="linebreak">
+                        ia Theresia.
+                        </p>
+                     					
+                     <p id="tei:p__66" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Johann Georg Neller / Haußmaister /
+                        						<br class="linebreak">
+                        und Anna Maria sein. Ehew. ihr T.
+                        						<br class="linebreak">
+                        Cordula.
+                        </p>
+                     					
+                     <p id="tei:p__60" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Lorenz Schmid / Schneider / und 
+                        						Bar=<br class="linebreak">ihr T. Eva.
+                        </p>
+                     					
+                     <p id="tei:p__78" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Martin Freündt / Laggey / und 
+                        						There=<br class="linebreak">sia sein. Ehew. ihr T. Theresia Elisabeth.
+                        						<br class="linebreak">
+                        m Mayer / und Anna Maria sein.
+                        						<br class="linebreak">
+                        D
+                        </p>
+                     					
+                     <p id="tei:p__51" class="yes-index">
+                        						<br class="linebreak">
+                        r Thomas.
+                        </p>
+                     					
+                     <p id="tei:p__137" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Friderich Pitsch / und Elisabeth 
+                        						<br class="linebreak">
+                        sein. Ehew. ihr T. Eva Maria.
+                        						<br class="linebreak">
+                        Dem Andre Wagleiner / Kais. Kutscher / und 
+                        						<br class="linebreak">
+                        Cathar. s. Ehew. ihr T Rosina Theresia.
+                        						<br class="linebreak">
+                        Dem Andre Spizel / Kutscher / und Maria 
+                        						<br class="linebreak">
+                        Magdal. s. Ehew. ihr S. Kilian Franz.
+                        						<br class="linebreak">
+                        Dem Joh. Jacob Wagner / Kaiserl. Bla=<br class="linebreak">chenknecht / und Elisabeth sein. Ehew.
+                        						<br class="linebreak">
+                        egori.
+                        						<br class="linebreak">
+                        n G
+                        </p>
+                     					
+                     <p id="tei:p__69" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Andreas Kütler / Kaiserl. Kutscher /
+                        						<br class="linebreak">
+                        und Maria sein. Ehew. ihr S. Leopold
+                        </p>
+                     					
+                     <p id="tei:p__76" class="yes-index">
+                        						<br class="linebreak">
+                        Dem MichaelUlmer / Schneider / und 
+                        						There=<br class="linebreak">sia sein. Ehew. ihr T. Maria Ursula.
+                        						<br class="linebreak">
+                        n 23. Dito.
+                        </p>
+                     					
+                     <p id="tei:p__94" class="yes-index">
+                        						<br class="linebreak">
+                        Dem MatthiasPollhaim / Würth / und 
+                        						Ca=<br class="linebreak">tharina sein. Ehew. ihr S. Joh. Adam.
+                        						<br class="linebreak">
+                        Dem Sebastian Globisser / Bier=Versilbe=<br class="linebreak">rer / und Maria Elisabeth sein. Ehew.
+                        						<br class="linebreak">
+                        na Theresia.
+                        </p>
+                     					
+                     <p id="tei:p__137" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Johann Jacob Hofmann / Schneider /
+                        						<br class="linebreak">
+                        und Anna Maria Christina sein. Ehew.
+                        						<br class="linebreak">
+                        ihr S. Johann Georg Adam.
+                        						<br class="linebreak">
+                        Dem Bernhard Pallschophecky / und Maria 
+                        						<br class="linebreak">
+                        Magdalena s. Ehew. ihr T. Anna Cathar.
+                        						<br class="linebreak">
+                        Dem Simon Perger / Zimmermann / und 
+                        						<br class="linebreak">
+                        Margaretha s. Ehew. ihr S. Joh. Georg.
+                        						<br class="linebreak">
+                        Dem Thomas Hofmann / Holzscheiber /
+                        						<br class="linebreak">
+                        und Regina sein. Ehew. ihr S. Matthi=<br class="linebreak">as
+                        </p>
+                     					
+                     <p id="tei:p__62" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Lorenz Scheig / Laggey / und Judith
+                        </p>
+                     					
+                     <p id="tei:p__62" class="yes-index">
+                        						<br class="linebreak">
+                        in=und vor der Stadt.
+                        </p>
+                     					
+                     <p id="tei:p__65" class="yes-index">
+                        						<br class="linebreak">
+                        w. ihr T. Paulina Susanna Cathar.
+                        </p>
+                     					
+                     <p id="tei:p__65" class="yes-index">
+                        						<br class="linebreak">
+                        ach / gew. 
+                        Sollicita
+                        Sollicitator
+                         -
+                        </p>
+                     					
+                     <p id="tei:p__99" class="yes-index">
+                        						<br class="linebreak">
+                        tor, und Maria s. Ehew. ihr T. Mar. Barb.
+                        						<br class="linebreak">
+                        Dem Hrn Joh. Joseph Hellmann / Kaiserl.
+                        						<br class="linebreak">
+                        Arsenal=Amtschreiber / und Francisca s.
+                        						<br class="linebreak">
+                        ihr S. Ferdinand Lorenz.
+                        </p>
+                     					
+                     <p id="tei:p__65" class="yes-index">
+                        						<br class="linebreak">
+                        ndenes Kind / Johann Carl.
+                        </p>
+                     					
+                     <p id="tei:p__87" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Gestatner=Schneider / und 
+                        						Ma=<br class="linebreak">ria s. Ehew. ihr T. Maria Magdalena.
+                        						<br class="linebreak">
+                        Den 24. Dito.
+                        </p>
+                     					
+                     <p id="tei:p__155" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Samuel Franz Richard / beeder 
+                        						<br class="linebreak">
+                        Rechten Doct. und Anna Sophia sein.
+                        						<br class="linebreak">
+                        Hausfr. ihr T. Maria Sabina Theresia.
+                        						<br class="linebreak">
+                        Dem Michael Pitermann / Maurer / und 
+                        						<br class="linebreak">
+                        Theresia s. Ehew. ihr S. Franz Leopold.
+                        						<br class="linebreak">
+                        Dem Matthias Praunauer / Laggey / und 
+                        						<br class="linebreak">
+                        Barbara sein. Ehew. ihr S. Johann 
+                        						<br class="linebreak">
+                        Georg Judas Thaddeus.
+                        						<br class="linebreak">
+                        Dem Matthias Klein / Kais. Hartschier / und 
+                        						<br class="linebreak">
+                        Maria Antonia sein. Ehew. ihr S.
+                        						<br class="linebreak">
+                        n Michael.
+                        </p>
+                     					
+                     <p id="tei:p__122" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Joh. Adam Baumaister / Kaiserl.
+                        						<br class="linebreak">
+                        Hof=Canzleydiener / und Maria Eva s.
+                        						<br class="linebreak">
+                        Ehefr. ihr S. Joh. Georg Thaddeus.
+                        						<br class="linebreak">
+                        Dem Joseph Färbinger / und Maria 
+                        						There=<br class="linebreak">sia s. Ehew ihr T. Maria Elisab. Susana.
+                        						<br class="linebreak">
+                        cobSchröck / und Anna Maria sein.
+                        </p>
+                     					
+                     <p id="tei:p__72" class="yes-index">
+                        						<br class="linebreak">
+                        v. ihr T. Maria Theresia Monica.
+                        </p>
+                     					
+                     <p id="tei:p__73" class="yes-index">
+                        						<br class="linebreak">
+                        seph Götz / Beck / und Theresia sein.
+                        </p>
+                     					
+                     <p id="tei:p__106" class="yes-index">
+                        						<br class="linebreak">
+                        Ehew. ihr T. Maria Eva Barbara.
+                        						<br class="linebreak">
+                        Dem Joseph Karlinger / Maurer / und 
+                        						Ursu=<br class="linebreak">la sein. Ehew. ihr T. Anna Elisabeth.
+                        						<br class="linebreak">
+                        Joh. Baptist Grety / und Cathar. sein.
+                        </p>
+                     					
+                     <p id="tei:p__92" class="yes-index">
+                        						<br class="linebreak">
+                        Ehew. ihr T. Magdalena Laurenzia.
+                        						<br class="linebreak">
+                        Dem Joseph Stäg / Tagwerker / und Maria 
+                        						<br class="linebreak">
+                        Ehew. ihr T. Anna Juliana.
+                        </p>
+                     					
+                     <p id="tei:p__90" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Georg Ostertag / Hausmaister /
+                        						<br class="linebreak">
+                        und Maria Anna sein. Ehew. ihr S.
+                        						<br class="linebreak">
+                        nas Jeremias.
+                        </p>
+                     					
+                     <p id="tei:p__89" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Thomas Martin Rothauer / Tag=<br class="linebreak">werker / und Maria Anna sein. Ehew.
+                        						<br class="linebreak">
+                        S Simon Paul.
+                        </p>
+                     					
+                     <p id="tei:p__94" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Matthias Strobel / Schuster / uno 
+                        						<br class="linebreak">
+                        Ursula s. Ehew. ihr T. Maria Theresia.
+                        						<br class="linebreak">
+                        den 25. Dito.
+                        </p>
+                     					
+                     <p id="tei:p__83" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Titl. Hrn. Franz Jos. von Popowitz /
+                        						<br class="linebreak">
+                        und
+                        </p>
+                     					
+                     <p id="tei:p__90" class="yes-index">
+                        						<br class="linebreak">
+                        und Maria Christina s. Fr. G. ihr T. Ma=<br class="linebreak">ria Annä Josepha Chris.
+                        </p>
+                     					
+                     <p id="tei:p__102" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Leopold von Freündsperg / des 
+                        						<br class="linebreak">
+                        H. R. R. Ritter / und Maria Agnes /
+                        						<br class="linebreak">
+                        s. Hausfr. ihr T. Anna
+                        </p>
+                     					
+                     <p id="tei:p__103" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Peter Paul Kölbl / Kaiserl. Ban=<br class="linebreak">calitäts Officier / und Maria Barbara 
+                        						<br class="linebreak">
+                        8 
+                        						<br class="linebreak">
+                        franz von Pan 
+                        						<br class="linebreak">
+                        s. Ehefr ihr S.
+                        </p>
+                     					
+                     <p id="tei:p__94" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Marcus Melano / Laggey / und 
+                        						Mar=<br class="linebreak">garetha s. Ehew. ihr S. Joh. 3
+                        </p>
+                     					
+                     <p id="tei:p__97" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Oecker / Garde=Soldat / und 
+                        						Ca=<br class="linebreak">tharina s. Ehew. ihr S. Anton Fer
+                        </p>
+                     					
+                     <p id="tei:p__95" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Gregori Heizberg / Garde=Söldat /
+                        						<br class="linebreak">
+                        und Elisab. s. Ehew 
+                        ihr
+                        ihrDem
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__101" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Adam Klim / Bierleuthgeb / und 
+                        						<br class="linebreak">
+                        Elisabeth sein. Ehew. ihr S. Johann 
+                        						<br class="linebreak">
+                        Carl Peter Joseph.
+                        </p>
+                     					
+                     <p id="tei:p__98" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Christoph Wenger / Schreiber / und 
+                        						<br class="linebreak">
+                        Theresia s. Ehew. ihr S. 
+                        C
+                        CDem
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__97" class="yes-index">
+                        						<br class="linebreak">
+                        Dem JosephChristoph Raschof / Tagwerker /
+                        						<br class="linebreak">
+                        und Eva sein. Ehew. ihr T. Eleonora.
+                        </p>
+                     					
+                     <p id="tei:p__85" class="yes-index">
+                        						<br class="linebreak">
+                        Den 26. Dito.
+                        </p>
+                     					
+                     <p id="tei:p__109" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Titl. Herrn Franz Valerian / Grafen 
+                        						<br class="linebreak">
+                        Podstazky / Freyherrn von Prosinovitz /
+                        						<br class="linebreak">
+                        der R. Kais. Majestät Cammerern / und 
+                        						<br class="linebreak">
+                        =C
+                        </p>
+                     					
+                     <p id="tei:p__123" class="yes-index">
+                        						<br class="linebreak">
+                        Verwittibt. Kaiserl. Majestät / Amalia 
+                        						<br class="linebreak">
+                        Wilhelmina Cammerern / und dessen Fr.
+                        						<br class="linebreak">
+                        Gemahlin / Titl. Frau Maria Theresia /
+                        						<br class="linebreak">
+                        gebohrner Gräfin von Lichtenstein / dero 
+                        						<br class="linebreak">
+                        Hr. S. Franz Carl Joseph. Cri
+                        </p>
+                     					
+                     <p id="tei:p__106" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Michael Stummer / Schuster /
+                        						<br class="linebreak">
+                        und Maria Theresia sein Ehew. ihr S.
+                        						<br class="linebreak">
+                        Franz Carl Thaddeus.
+                        </p>
+                     					
+                     <p id="tei:p__107" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Anton Peter Mitterlechner / Flasch=<br class="linebreak">ner / und Maria Catharina sein. Ehew.
+                        						<br class="linebreak">
+                        ihr S. Carl Balt 
+                        						<br class="linebreak">
+                        </p>
+                     					
+                     <p id="tei:p__111" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Jacob Anton Rizardi / Handels=<br class="linebreak">mann / und Eva Maria s. Ehefr. ihr T.
+                        						<br class="linebreak">
+                        Maria Anna Theresia.
+                        </p>
+                     					
+                     <p id="tei:p__107" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Herrn Johann Wolfgang Heymerl /
+                        						<br class="linebreak">
+                        und Anna Sophia sein. Ehefr. ihr S.
+                        						<br class="linebreak">
+                        ohann Carl W
+                        </p>
+                     					
+                     <p id="tei:p__111" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Niclas Droschler / Laggey / und 
+                        						<br class="linebreak">
+                        Anna Barbara sein. Ehew. ihr S.
+                        						<br class="linebreak">
+                        Johann Jacob Simon.
+                        </p>
+                     					
+                     <p id="tei:p__108" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Christian Lindner / Laggey / und 
+                        						Su=<br class="linebreak">sanna s. Ehew. ihr S. Christian Barthlme.
+                        </p>
+                     					
+                     <p id="tei:p__109" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Matthias Klein / Schuster / und Maria 
+                        						<br class="linebreak">
+                        sein. Ehew. ihr S. Anton 
+                        						<br class="linebreak">
+                        Franz.
+                        </p>
+                     					
+                     <p id="tei:p__94" class="yes-index">
+                        						<br class="linebreak">
+                        Den 27. Dito
+                        </p>
+                     					
+                     <p id="tei:p__115" class="yes-index">
+                        						<br class="linebreak">
+                        m 
+                        						<br class="linebreak">
+                        Dem Matthias Huber / Katscher / und Mar 
+                        						<br class="linebreak">
+                        s. Ehew. ihr S. Leop. 
+                        Andre
+                        AndreDem
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__116" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Georg Kerschner / Jäger und 
+                        						Ma=<br class="linebreak">ria sein. Ehew. ihr S. Jgnaz Andreas 
+                        						<br class="linebreak">
+                        Simon Judas Thadb
+                        </p>
+                     					
+                     <p id="tei:p__109" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Stephann Kinner / Flecksieder / und 
+                        						<br class="linebreak">
+                        J 
+                        						<br class="linebreak">
+                        Fancisca s. Ehewhr T.
+                        </p>
+                     					
+                     <p id="tei:p__114" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Wohnk Koch / und Dorothe s.
+                        						<br class="linebreak">
+                        Ehew. ihr T. 
+                        Ma
+                        MaDem
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__113" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Caspar Steinecker / Peruckenma=<br class="linebreak">m 
+                        						<br class="linebreak">
+                        cher / und Ther. s. E
+                        </p>
+                     					
+                     <p id="tei:p__114" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Georg Bortisch / Gartner / und 
+                        						<br class="linebreak">
+                        Elisabeth s. Ehew. ihr S.
+                        </p>
+                     					
+                     <p id="tei:p__113" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Anton Krauß / Schuster / und Regina 
+                        						<br class="linebreak">
+                        sein. Ehew. ihr S.
+                        </p>
+                     					
+                     <p id="tei:p__118" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Matthias Fischer / Kutscher / und 
+                        						Mag=<br class="linebreak">dalena s. Ehew. ihr T. Rosina Elisabeth.
+                        </p>
+                     					
+                     <p id="tei:p__104" class="yes-index">
+                        						<br class="linebreak">
+                        Den 
+                        						<br class="linebreak">
+                        28. J
+                        </p>
+                     					
+                     <p id="tei:p__123" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Ferdinand Radl / Leinwadband=<br class="linebreak">ler / und Anna Regina sein. Ehefr. ihr 
+                        						<br class="linebreak">
+                        T. Maria Elisabeth
+                        </p>
+                     					
+                     <p id="tei:p__107" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Simon Reintahler /
+                        </p>
+                     					
+                     <p id="tei:p__106" class="yes-index">
+                        						<br class="linebreak">
+                        cher / und Ep
+                        </p>
+                     					
+                     <p id="tei:p__127" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Johann Gomi / Koch / und Catharina 
+                        						<br class="linebreak">
+                        sein. Ehew. ihr Zwilling / Anna 
+                        						Catha=<br class="linebreak">ring / und Maria.
+                        </p>
+                     					
+                     <p id="tei:p__124" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Gregori Heüßler / Grenadierer / und 
+                        						<br class="linebreak">
+                        Susanna s. Ehew. ihr T. Maria Rosalia 
+                        						<br class="linebreak">
+                        Rosine
+                        </p>
+                     					
+                     <p id="tei:p__131" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Johann Adam Margretner / Laggey /
+                        						<br class="linebreak">
+                        und Maria Barbara sein. Ehew. ihr T.
+                        						<br class="linebreak">
+                        Maria Elisabeth=
+                        C
+                        CDem
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__124" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Jacob Freismuth / und Eva 
+                        						Cä=<br class="linebreak">tharina s. Ehew. ihr S.
+                        </p>
+                     					
+                     <p id="tei:p__123" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Gregori Hold / Becker / und Justina 
+                        						<br class="linebreak">
+                        s. Ehew. ihr S.
+                        </p>
+                     					
+                     <p id="tei:p__127" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Jacob Völker / Würth / und Anna 
+                        						<br class="linebreak">
+                        Maria s. Ehew. ihr S 
+                        						<br class="linebreak">
+                        phMatthias.
+                        </p>
+                     					
+                     <p id="tei:p__113" class="yes-index">
+                        						<br class="linebreak">
+                        Den 29. T
+                        </p>
+                     					
+                     <p id="tei:p__147" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Titl. Herrn Johann Wilhelm von 
+                        						<br class="linebreak">
+                        Prockhausen / Kais. Hof=Kriegs=Rahts=
+                        						<br class="linebreak">
+                        Secretario, und Maria Antonia s. Fr. G.
+                        						<br class="linebreak">
+                        ihr Hr. S. Maria
+                        </p>
+                     					
+                     <p id="tei:p__130" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Balthasar Jderspurger / Beck / und 
+                        						<br class="linebreak">
+                        Elisabeth s. Ehew. ihr T. Elisabeth Cathar.
+                        </p>
+                     					
+                     <p id="tei:p__113" class="yes-index">
+                        						<br class="linebreak">
+                        Dem
+                        </p>
+                     					
+                     <p id="tei:p__157" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Joh. Niclas Reder / und Anna Stadt=und Land=Berichts=Beysitzer / und 
+                        						<br class="linebreak">
+                        Maria sein. Eheweihr S. Ludwig Gabriel Maria Clara Leopoldina sein. Hausfr.
+                        						<br class="linebreak">
+                        Francisca Josepha.
+                        						<br class="linebreak">
+                        hr T.
+                        </p>
+                     					
+                     <p id="tei:p__168" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Joh. Wagner / Tagwerker / und Mag=Dem Hrn. Philipp Kramer / Eisenhandler /
+                        						<br class="linebreak">
+                        dalena sein. Ehew ihr Zwilling / Johann, und Mar. Cathar. s. Ehefr ihr T. An. Barb.
+                        						<br class="linebreak">
+                        Dem Joh. Fridl / Glaser / und Maria Eva
+                        </p>
+                     					
+                     <p id="tei:p__167" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Urban Achinger / Reutknecht / und Ve=sein. Ehew. ihr S. Johann Georg.
+                        						<br class="linebreak">
+                        ronica sein. Ehew ihr S. Johann Georg Dem Joh. Michael Dietix / Kutscher / und 
+                        						<br class="linebreak">
+                        Maria Anna sein. Ehew. ihr T. Anna 
+                        						<br class="linebreak">
+                        n.
+                        </p>
+                     					
+                     <p id="tei:p__122" class="yes-index">
+                        						<br class="linebreak">
+                        sohanna.
+                        						<br class="linebreak">
+                        ha=Barbara
+                        </p>
+                     					
+                     <p id="tei:p__223" class="yes-index">
+                        						<br class="linebreak">
+                        rina sein. Ehew. ihr T. Anna Theresia. Dem Christoph Feistlin / und Maria Justina 
+                        						<br class="linebreak">
+                        Dem Stephan Teschmann / und Susanna sein. Ehew. ihr T. Maria Eva.
+                        						<br class="linebreak">
+                        s. Ehew. ihr T. Maria Apollonia Barb. Dem Thomas Schleunhuber / und Marga=
+                        						<br class="linebreak">
+                        Dem Jacob Perch / Schmid / und Cunigun=retha s. Ehew ihr S. Michael Wolfgang.
+                        						<br class="linebreak">
+                        da s. Ehew. ihr S. JacobLeopold Benedict. Dem Thomas Lehrner / Kutscher / und 
+                        						<br class="linebreak">
+                        / sanna s. Ehew. ihr T. Maria Elisabeth.
+                        </p>
+                     					
+                     <p id="tei:p__161" class="yes-index">
+                        						<br class="linebreak">
+                        und Barb. s. Ehew. ihr T. Theresia Elisab. Dem Augustin Mesner / Laggey / und Maria 
+                        						<br class="linebreak">
+                        barde=Soldat / und Ma=sein. Ehew. ihr T. Maria Justina Ther.
+                        						<br class="linebreak">
+                        D.
+                        </p>
+                     					
+                     <p id="tei:p__125" class="yes-index">
+                        						<br class="linebreak">
+                        1. Dito.
+                        						<br class="linebreak">
+                        Den
+                        </p>
+                     					
+                     <p id="tei:p__175" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Thomas Hochförer / Laggey / und Sa=Dem Niclas Schenk / Tischler / und Helena 
+                        						<br class="linebreak">
+                        tharina sein. Ehew. ihr S. Peter Georg. s. Ehew. ihr S. Wolfgang Joh. Joseph.
+                        						<br class="linebreak">
+                        Dem Joh. Schmid / Würth / und Maria 
+                        Ca
+                        CaDem
+                        =
+                        </p>
+                     					
+                     <p id="tei:p__142" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Hrn. Joh. Baptist Vianini / Kaiserl. tharina s. Ehew. ihr S. Peter Joseph.
+                        </p>
+                     					
+                     <p id="tei:p__133" class="yes-index">
+                        						<br class="linebreak">
+                        Lista derer Verstorbenen / in=und vor der Stadt.
+                        </p>
+                     					
+                     <p id="tei:p__140" class="yes-index">
+                        						<br class="linebreak">
+                        Den 25. Dito / in der Stadt.
+                        						<br class="linebreak">
+                        720. starb.
+                        						<br class="linebreak">
+                        Den 24
+                        </p>
+                     					
+                     <p id="tei:p__143" class="yes-index">
+                        						<br class="linebreak">
+                        Christian Blessel / alt 7. J. im Burger=Spitt.
+                        						<br class="linebreak">
+                        1 
+                        						<br class="linebreak">
+                        der 
+                        						<br class="linebreak">
+                        tadt
+                        </p>
+                     					
+                     <p id="tei:p__168" class="yes-index">
+                        						<br class="linebreak">
+                        Titl. Herr Franz Anton / des H. R. R. Graf Ein unbekanter Mann / im Beschau=Hauß /
+                        						<br class="linebreak">
+                        von Walsegg / Herr der Herrschaften Pott=alt bey 50. Jahr.
+                        						<br class="linebreak">
+                        Vor der Stadt.
+                        </p>
+                     					
+                     <p id="tei:p__168" class="yes-index">
+                        						<br class="linebreak">
+                        Schodtwien und Velicka / der R. Kaiserl. Catharina Gleissin / Wittib / zu Matzel=
+                        						<br class="linebreak">
+                        Majestät würklich=geheimer und Finan=storf / alt 52. Jahr.
+                        						<br class="linebreak">
+                        Den 26. Dito / in der Stadt.
+                        </p>
+                     					
+                     <p id="tei:p__162" class="yes-index">
+                        						<br class="linebreak">
+                        Der Eva Küpferlingin / Wittib / im tiefen Dem Caspar Neiß / Kirchensamler bey St.
+                        						<br class="linebreak">
+                        ria Anna / alt 22. J. Peter / im Schneiderischen Hauß / sein 
+                        						<br class="linebreak">
+                        Graben /
+                        </p>
+                     					
+                     <p id="tei:p__138" class="yes-index">
+                        						<br class="linebreak">
+                        W. Maria / alt 44.
+                        						<br class="linebreak">
+                        Jahr.
+                        </p>
+                     					
+                     <p id="tei:p__160" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Peter Stroty / Tanzmaister / am Spitl=Barthlme Kropf / Trager / im 
+                        						Heissensteini=<br class="linebreak">nton / alt fiebendhalb Jahr. schen Hauß / alt 60. Jahr.
+                        </p>
+                     					
+                     <p id="tei:p__134" class="yes-index">
+                        						<br class="linebreak">
+                        Vor der Stadt.
+                        </p>
+                     					
+                     <p id="tei:p__170" class="yes-index">
+                        						<br class="linebreak">
+                        cher / am Thury / s. K. Christian / alt 3. J. Dem Hrn. Ferdinand Seidliz / in der 
+                        						Joseph=<br class="linebreak">lisabeth / alt 30. Jahr.
+                        						<br class="linebreak">
+                        eph=<br class="linebreak">stadt 
+                        						<br class="linebreak">
+                        Ce
+                        </p>
+                     					
+                     <p id="tei:p__141" class="yes-index">
+                        						<br class="linebreak">
+                        Dem Franz Menter / Schneider / am Thury /
+                        </p>
+                     					
+                     <p id="tei:p__135" class="yes-index">
+                        						<br class="linebreak">
+                        Jahr.
+                        </p>
+                     					
+                     <p id="tei:p__160" class="yes-index">
+                        						<br class="linebreak">
+                        tenthal / s. K. Martin / alt 5. V. Jahr. Magdalena Stoissin / Wittib / am Neu=
+                        						<br class="linebreak">
+                        H.
+                        </p>
+                     					
+                     <p id="tei:p__196" class="yes-index">
+                        						<br class="linebreak">
+                        7 /
+                        						<br class="linebreak">
+                        Müllner alt 38. J. Jacob Kampferstich / Peter Schmid / auf der Wieden / alt 33. J.
+                        						<br class="linebreak">
+                        alt 50. J. und Maria Hörmanin / alt 37. August. N. Zimmergesell / im Liechtenthal /
+                        						<br class="linebreak">
+                        alt 3.
+                        						<br class="linebreak">
+                        Jahr.
+                        						<br class="linebreak">
+                        Jahr / im Kranken=Hauß.
+                        </p>
+                     					
+                     <p id="tei:p__139" class="yes-index">
+                        						<br class="linebreak">
+                        						<br class="linebreak">
+                        )( )(
+                        </p>
+                     
+                     					
+                     <p id="tei:p__155" class="yes-index">
+                        						<br class="linebreak">
+                        Die Verren Staaten deren 
+                        						verei=<br class="linebreak">nigten Niederlanden an den Werzogen 
+                        						<br class="linebreak">
+                        von Anjou abgehen lassen.
+                        </p>
+                     					
+                     <p id="tei:p__138" class="yes-index"></p>
+                     					
+                     <p id="tei:p__252" class="yes-index">
+                        						<br class="linebreak">
+                        0. 0 
+                        						<br class="linebreak">
+                        J Je nun zum öftern geäusserte Zuneigung beharrlicher Freund=
+                        						<br class="linebreak">
+                        Ed schaft erfreuet uns über die Massen; Wir wünschen nur / daß wir dieselbe 
+                        						<br class="linebreak">
+                        beybehalten mögen; Welches dan durch die endliche Herstellung des Frieden am 
+                        						<br class="linebreak">
+                        füglichsten wird beschehen können; Das geschöpfte Vertrauen / welches Euer 
+                        						Maje=<br class="linebreak">stät zu uns hegen / lasset hoffen / daß unsere Vorstellung und tragendes Verhoffen 
+                        						<br class="linebreak">
+                        nicht vergebens seyn werden; Dan daß der jetzige Krieg mit der Zeit so vieles 
+                        						<br class="linebreak">
+                        Unheil und Empörung verursachen könne / als die daran Theilnehmende durch 
+                        						<br class="linebreak">
+                        das lezte Kriegs=Feuer erlitten / ist unschwer zuerachten 
+                        						<br class="linebreak">
+                        v
+                        </p>
+                     					
+                     <p id="tei:p__296" class="yes-index">
+                        						<br class="linebreak">
+                        gen / ersehen wir fast kein zulänglicheres und schleunigeres Mittel / als wan dieselbe 
+                        						<br class="linebreak">
+                        sich wolten gefallen lassen / die unumgängliche Bedingnussen des Frieden auch 
+                        						an=<br class="linebreak">zunehmen / welche deroselben in dem längst bekant=vierfachen Bunde vorgetragen 
+                        						<br class="linebreak">
+                        worden. Jhre Römisch=Kaiserliche Majestät / wie ingleichem der Herzog von 
+                        						Sa=<br class="linebreak">doyen haben ja für gut befunden, denselben anzunehmen; Wir wollen uns ein 
+                        						Glei=<br class="linebreak">ches zu deroselben versichern; Wir hätten es uns für ein grosse Ehr gehalten / wan 
+                        						<br class="linebreak">
+                        unser Fleiß und Eifer so viel im Vermögen gehabt / als derselbe wohlgemeint gewesen;
+                        						<br class="linebreak">
+                        Anerwogen Zeit und Weilohn einzige Würkung verflossen / so haben wir noch einmal 
+                        						<br class="linebreak">
+                        den Versuch tuhn wollen / um bey denen Bunds=Genossen aufs neu ein 
+                        						vierdtel=<br class="linebreak">jährige Frist auszuwürken; Da inzwischen Euer Majestät abermalige Gelegenheit 
+                        						<br class="linebreak">
+                        winnen mögten / ein geneigten Schluß zum Frieden;
+                        </p>
+                     					
+                     <p id="tei:p__254" class="yes-index">
+                        						<br class="linebreak">
+                        Sire. Wir bitten um dero sehr theuren Freundschaft willen / so dieselbe zu 
+                        						<br class="linebreak">
+                        unser Republic tragen / sie wollen sich endlich doch bereden lassen / und in die 
+                        						Bünd=<br class="linebreak">nuß / die zu dem Frieden und allgemeiner Ruhe dienlich / willigen; Wir versehen 
+                        						<br class="linebreak">
+                        uns dessen von dero grossen Klugheit / und sonderbaren Gelassenheit / womittels 
+                        						<br class="linebreak">
+                        dieselbe den Fried dem Krieg: und die Ruhe der Unruhe vorzuziehen wissen;
+                        						<br class="linebreak">
+                        Ein friedsammer Schluß wird dem Nachruhm ein weit herrlichern Glanz ertheilen /
+                        						<br class="linebreak">
+                        als ein allzulangwirriger Krieg / wan er auch gleich glücklicher / als bishero 
+                        						gesche=<br class="linebreak">ben / ins künftige solte fortgeführet werden.
+                        </p>
+                     					
+                     <p id="tei:p__247" class="yes-index">
+                        						<br class="linebreak">
+                        Solchemnach leben wir noch der guten Hofnung / dieselbe werden dero 
+                        						Gedan=<br class="linebreak">ken zum Frieden wenden; Widrigenfals wurden wir uns nicht länger enthalten 
+                        						<br class="linebreak">
+                        dörfen / wider Vermuhten mit in den vierfachen Bund zutretten; So jedoch uns 
+                        						<br class="linebreak">
+                        nicht wenig schmerzen und kränken solte; Jm übrigen so protestiren wir 
+                        						aufrich=<br class="linebreak">tigst: daß wir nach nichts mehr so trachten / als nach der Wiederherstellung und 
+                        						<br class="linebreak">
+                        Erhaltung des Frieden und algemeinen Ruhestandes; Auch werden wir jederzeit.
+                        						<br class="linebreak">
+                        Sorge tragen / dero beharrliche Freundschaft zuerhalten / mithin die deroselben 
+                        						ge=<br class="linebreak">bührende Hochachtung niemalen ausser Acht zusetzen.
+                        </p>
+                     </div>
+                  				</div>
+               		
+               <p style="text-align:center;"></p>
+            </div>
          </div>
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
 </html>

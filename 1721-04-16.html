@@ -1,27 +1,28 @@
-<html  class="h-100">
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-title" content="Wienerisches Diarium" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="images/logo.png" />
-      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any" />
-      <link rel="profile" href="http://gmpg.org/xfn/11" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="Wienerisches Diarium">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="images/logo.png">
+      <link rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any">
+      <link rel="profile" href="http://gmpg.org/xfn/11">
       <title>Wienerisches Diarium</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-      <link rel="stylesheet" href="css/style.css" type="text/css" />
-      <link rel="stylesheet" href="css/micro-editor.css" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/micro-editor.css" type="text/css">
       <style>
                     .navBarNavDropdown ul li:nth-child(2) {
                         display: none !important;
                     }
                 </style>
    </head>
-   <body class="d-flex flex-column h-100">
+   <body class="d-flex flex-column">
       <header>
          <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid"><a class="navbar-brand" href="index.html">wrd</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,14 +30,6 @@
                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a><ul class="dropdown-menu">
                            <li><a class="dropdown-item" href="about.html">Über das Projekt</a></li>
                            <li><a class="dropdown-item" href="imprint.html">Impressum</a></li>
-                        </ul>
-                     </li>
-                     <li class="nav-item"><a class="nav-link" href="toc.html">Editionseinheiten</a></li>
-                     <li class="nav-item dropdown disabled"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a><ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="listperson.html">Personen</a></li>
-                           <li><a class="dropdown-item" href="listplace.html">Orte</a></li>
-                           <li><a class="dropdown-item" href="listorg.html">Organisationen</a></li>
-                           <li><a class="dropdown-item" href="listbibl.html">Werke</a></li>
                         </ul>
                      </li>
                      <li class="nav-item"><a title="Suche" class="nav-link" href="search.html">Suche</a></li>
@@ -47,832 +40,863 @@
       </header>
       <main class="flex-shrink-0">
          <div class="container">
-            <div class="row">
-               <div class="col-md-2 col-lg-2 col-sm-12"></div>
-               <div class="col-md-8 col-lg-8 col-sm-12">
-                  <h1 align="center">Wienerisches Diarium</h1>
-                  <h3 align="center"><a href="edoc_wd_1721-04-16"><i class="bi bi-download" title="TEI/XML"></i></a></h3>
-               </div>
-               <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right"></div>
-               <div id="editor-widget">
-                  <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
-                        <li class="dropdown-item">
-                           <full-size opt="fls"></full-size>
-                        </li>
-                        <li class="dropdown-item">
-                           <image-switch opt="es"></image-switch>
-                        </li>
-                        <li class="dropdown-item">
-                           <font-size opt="fs"></font-size>
-                        </li>
-                        <li class="dropdown-item">
-                           <font-family opt="ff"></font-family>
-                        </li>
-                        <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
-                           <annotation-slider opt="ef"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="prs"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="plc"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="wrk"></annotation-slider>
-                        </li>
-                        <li class="dropdown-item">
-                           <annotation-slider opt="org"></annotation-slider>
-                        </li>
-                     </ul>
-                  </div>
+            <div id="editor-widget">
+               <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
+                     <li class="dropdown-item">
+                        <full-size opt="fls"></full-size>
+                     </li>
+                     <li class="dropdown-item">
+                        <image-switch opt="es"></image-switch>
+                     </li>
+                     <li class="dropdown-item">
+                        <font-size opt="fs"></font-size>
+                     </li>
+                     <li class="dropdown-item">
+                        <font-family opt="ff"></font-family>
+                     </li>
+                     <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
+                        <annotation-slider opt="ef"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="prs"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="plc"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="wrk"></annotation-slider>
+                     </li>
+                     <li class="dropdown-item">
+                        <annotation-slider opt="org"></annotation-slider>
+                     </li>
+                  </ul>
                </div>
             </div>
-            			
-            <div id="div__312">
-               					
-               <div id="div__309">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Wien / vom 16. bis 18. April / 1721.
-                  					
-                  <p id="p__126" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />MJtwoch / den 16. April. Jhre Glorwürdigst=Regierend=Rö=<br  xmlns:local="http://dse-static.foo.bar"><br />misch=Kaiserlich=und Königlich=Catholische Majestät haben 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />jüngstens den Titl. Herrn Georg Sigmund Hechensteiner /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Churfürstlichen Regiments=Raht zu Straubing / in Bayern / in 
-                     						An=<br  xmlns:local="http://dse-static.foo.bar"><br />sehung deren ihm beywohnend=guten Gemüts=Gaben / und so wohl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Väterlich=als eigen=erworbenen Verdiensten / samt seinen 
-                     						<span  xmlns:local="http://dse-static.foo.bar">Descen-<br />den</span>ten / in des Heil. Römischen Reichs Adel=Stand / mit dem 
-                     						Adeli=<br  xmlns:local="http://dse-static.foo.bar"><br />chen Prädicat von Hechensteiner / erhoben / auch ihme dieser Tagen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />darüber das gewöhnliche <span  xmlns:local="http://dse-static.foo.bar">Diploma</span> aus Dero Löblich=Kaiserlich=ge=<br  xmlns:local="http://dse-static.foo.bar"><br />heimen Reichs=Hof=Canzley ausfertigen lassen.</p>
-                  					
-                  <p id="p__61" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Sonsten folget hierbey die <span  xmlns:local="http://dse-static.foo.bar">Continuati</span>on des Berichts / was 
-                     						seit=<br  xmlns:local="http://dse-static.foo.bar"><br />her nach der Begräbnuß Pabst Clemens / des Eilften / und dan 
-                     						vor=<br  xmlns:local="http://dse-static.foo.bar"><br />wie auch bey dem Eintrit des <span  xmlns:local="http://dse-static.foo.bar">S. Collegii</span> in das <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> zu Rom 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vom 30. bis den 31. März dieses laufenden Jahrs / sich merkwürdig 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zugetragen.</p>
-                  					
-                  <p id="p__114" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Donnerstag / den 17. April. Heute / Vormittag / ist Jhrer 
-                     						Rö=<br  xmlns:local="http://dse-static.foo.bar"><br />misch=Kaiserlich=und Catholischen Majestät wirklicher Cammerer/
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hof=Cammer=Raht / und etlicher Cameral=Haubt=Commissionen 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />wester <span  xmlns:local="http://dse-static.foo.bar">PræsesPraeses</span>, Titl. Herr Philipp / des Heil. Römischen Reichs Graf 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von Ursin und Rosenberg / ꝛc. in das durch Jhrer Römisch=Kaiser=<br  xmlns:local="http://dse-static.foo.bar"><br />lich=und Catholischen Majestät gerechtest=Kaiserliche Waffen 
-                     						erober=<br  xmlns:local="http://dse-static.foo.bar"><br />te Königreich Servien nacher Belgrad zu Wasser abgereiset / um 
-                     						al=<br  xmlns:local="http://dse-static.foo.bar"><br />dort / als erster Raht / den Besiz zunehmen / und zugleich / nebst dasigen</p>
-               </div>
-               				</div>
-            			
-            <div id="div__458">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_2">2</span>
+            <div class="title-page">
+               			
+               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_1">1</span>
                				
-               <div id="div__456">
-                  					
-                  <p id="p__72" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Kaiserlichen <span  xmlns:local="http://dse-static.foo.bar">Guvernato</span>rn / wie auch <span  xmlns:local="http://dse-static.foo.bar">Administrato</span>rn / Jhro 
-                     						Hoch=<br  xmlns:local="http://dse-static.foo.bar"><br />fürstlichen Durchleucht / Prinzen Alexander / Herzogen zu Würtemberg /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Allerhöchst=gedacht=Jhrer Römisch=Kaiserlich=und Königlich=Catho=<br  xmlns:local="http://dse-static.foo.bar"><br />lischen Majestät wirklich=geheimen Raht / und Feld=Marschallen ꝛc. ein=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und anders / das Cameral=Weesen betreflich / einzurichten / und in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />guten Stand zubringen.</p>
-                  					
-                  <p id="p__62" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Freytag / den 18. April. Die Kaiserliche Werbungen haben so 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />wohl dahier / als anderwärts noch grossen Zulauf; Wie dan auch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Heut einige Schiffe mit etlich hundert Mann neugeworbener Leuthen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />aus dem Reich dahier angelanget / um ferners nach dem Königreich 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hungarn zu den aldort befindlich=gehörigen Regimenteren geführet 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zuwerden.</p>
-                  					
-                  <p id="p__141" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Dito wurde mit Brieffen / vom 14. April / aus Dresden 
-                     						berich=<br  xmlns:local="http://dse-static.foo.bar"><br />tet / wie daß man daselbsten von der glücklichen Ankunft Jhrer 
-                     						Kö=<br  xmlns:local="http://dse-static.foo.bar"><br />niglich=Polnischen Majestät / und Churfürstlichen Durchleucht zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Sachsen in Warschau die Nachricht erhalten / für welch=höchste 
-                     						Ma=<br  xmlns:local="http://dse-static.foo.bar"><br />jestät in den Kirchen zu besagtem Dresden das gewöhnliche Gebeht 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nach der Predig wieder angefangen worden; Jhre Hoheit / der 
-                     						König=<br  xmlns:local="http://dse-static.foo.bar"><br />liche Chur=Prinz / erlustigten sich entzwischen in der Torgauischen und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />anderen Gegenden mit der Auerhahn=Pfaltz / und langten zu Dresden 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />jedesmalen wieder an; Daselbsten sie dan und dero Frau Gemahlin /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />die Durchleuchtigste Erz=Herzogin / Maria Josepha / auch öfters 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der Andacht in der Catholischen Schloß=Capell offentlich 
-                     						abwar=<br  xmlns:local="http://dse-static.foo.bar"><br />teten.</p>
-                  					
-                  <p id="p__122" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus Polen / von dem 11. April. Daß der Herr <span  xmlns:local="http://dse-static.foo.bar">Dobros,</span> als 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Königlicher Gesandter / nacher Londen von Warschau abgangen; Al=<br  xmlns:local="http://dse-static.foo.bar"><br />da nächstens das <span  xmlns:local="http://dse-static.foo.bar">Senatûs=Consilium</span> seinen Anfang nehmen solle; Jn=<br  xmlns:local="http://dse-static.foo.bar"><br />zwischen wären viele Relations=Land=Täge nach und nach 
-                     						ange=<br  xmlns:local="http://dse-static.foo.bar"><br />fangen / auch wieder geendet worden; Wie sonsten aus Preussen habe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />verlauten wollen / so hätten die aldorten befindlich=Königlich=Preus=<br  xmlns:local="http://dse-static.foo.bar"><br />sische Truppen die Ordre bekommen / um unter Königsberg sich 
-                     						zu=<br  xmlns:local="http://dse-static.foo.bar"><br />sammen zuziehen / und zur Musterung sich bereit zuhalten; Als 
-                     						wel=<br  xmlns:local="http://dse-static.foo.bar"><br />che nächstens Jhre Königliche Majestät in höchster Person 
-                     						vorzuneh=<br  xmlns:local="http://dse-static.foo.bar"><br />men beschlossen hätten.</p>
-                  					
-                  <p id="p__66" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus Spannien / von dem 18. März. Daß der Engellische Obrist 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Stanhoppe / welchem der Hof zu Madrit wegen Absterben desselben 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herrn Bruders / gewesten Staats Secretari zu Londen / ein 
-                     						Condo=<br  xmlns:local="http://dse-static.foo.bar"><br />lenz=Compliment machen lassen / abermalen zu besagtem Madrit mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den Königlichen Ministern ein lange Unterredung gehalten / und dardarauf=</p>
-                  					
-                  <p id="p__7" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auf</p>
-               </div>
-               				</div>
-            			
-            <div id="div__499">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_3">3</span>
+               <h3>
+                  						<br class="linebreak"><span  xmlns:local="http://dse-static.foo.bar">Num. 1848.</span></h3>
+               <p>
+                  						<br class="linebreak">Wienerisches <span  xmlns:local="http://dse-static.foo.bar">Diarium</span></p>
+               <p>
+                  						<br class="linebreak">Mit Jhrer Römisch=Kaiserlich=und Catholischen Majestät Freyheit /
+                  						<br class="linebreak">Gedruckt in der Kaiserlichen Reichs=und Hof=Buchdruckerey /</p>
                				
-               <div id="div__495">
+               		</div>
+            <div class="page-content">
+               			
+               <div id="div__312">
                   					
-                  <p id="p__189" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auf mit dem Ausschlag derselben einen Currier nach Londen 
-                     						fortge=<br  xmlns:local="http://dse-static.foo.bar"><br />schicket; Bey dessen Zuruckunft sich äuseren dörfte / ob erwehnter Obrist 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zu Madrit zuverbleiben: oder nach Engelland zukehren habe; Des=<br  xmlns:local="http://dse-static.foo.bar"><br />gleichen woll auch von dem Französischen Minister / <span  xmlns:local="http://dse-static.foo.bar">Marquis de 
-                        						Mau=<br />levrier Langeron</span> verlauten / als wan er auch wieder bald von Madrit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />abgehen solte; Welcher / vermög gehabten Ordre / dem <span  xmlns:local="http://dse-static.foo.bar">Prencipe de
-                        						<br />Cellamare,</span> daß er Grand von Spannien der ersten Claß worden / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />wohl wegen des Madritischen Hofs der künftigen Crönung des 
-                     						Kö=<br  xmlns:local="http://dse-static.foo.bar"><br />nigs in Frankreich beywohnen dörfte / glückwünschen müssen; Oefters 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gemeldter Hof hab inzwischen einen Currier nach Pariß und 
-                     						Camme=<br  xmlns:local="http://dse-static.foo.bar"><br />rich gesendet / mit der Verrichtung / ein=für alle mal auf die Eröfnung 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der dasigen Friedens=Handlung zutreiben / oder in entstehenden Fall 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den zu End gehenden Waffen=Stillstand wieder auf ein gewisse Zeit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zuverlängern; Ubrigens würden in all=Spannischen Provinzen die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Werbungen zu Wasser und Land mit solchem Eifer fortgesetzet / daß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nicht zubeschreiben.</p>
-                  					
-                  <p id="p__304" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus Groß=Britannien / vom 4. April. Daß der Obrist <span  xmlns:local="http://dse-static.foo.bar">Churchil</span> 
-                     						wie=<br  xmlns:local="http://dse-static.foo.bar"><br />der aus Wien den 3. dieses mit Jhrer Kaiserl. Majestät Entschliesung /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />die Auslieferung des zu Antwerpen gefangen=sitzenden Herrn Roberts 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Knight betreflich / zu Londen angekommen seye; Alda der Herr <span  xmlns:local="http://dse-static.foo.bar">Walpole</span>,
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />an statt des verstorbenen Craggs / (welcher des unlängst auch mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Tod abgangen=Groß=Britannischen Staats=Secretari Vater 
-                     						gewe=<br  xmlns:local="http://dse-static.foo.bar"><br />sen / und aus lauter Schröcken gestorben / als man ihm bedeuten lassen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sich wegen der Sud=Compagnie vor Gericht zustellen) zum General=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Post=Maister von Engelland ernent: der <span  xmlns:local="http://dse-static.foo.bar">Duc de Rutland,</span> und der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /><span  xmlns:local="http://dse-static.foo.bar">Lord Clinton</span> aber mit gewöhnlichen Ceremonien in das Ober=Hauß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />des Parlements eingeführet worden / um darin ihren Sitz zunehmen;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Welches Parlement noch immer beschäftiget / die Sachen wegen der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Süd=Compagnie wieder in andern Stand zubringen; Sonsten wär 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />abermal aus Jrrland von ein=und anderem Anhang des Prätendenten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein Gerücht erschollen / so man aber der Zeit für ungegründet halten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Jnzwischen wolle verlauten / daß in der Ebene bey <span  xmlns:local="http://dse-static.foo.bar">Onslow</span> all=im 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Königreich befindliche Truppen im bevorstehenden Sommer sich 
-                     						ver=<br  xmlns:local="http://dse-static.foo.bar"><br />samlen: und daselbsten ein Lager schlagen sollen; Ubrigens werde mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der nach der Ost=See bestimten Squadra noch unaufhörlich geeilet /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />welche in 21. Schiffen von der Linie / 4. Fregatten / 2. Branderen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und 2. Bombardier=Gallioten bestehen: und erwehnte Squadra / so 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bald nur immer möglich / nach dem Ost=See abgehen solle / um in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Zeiten mit einer andern sich vereinigen zukönnen.</p>
-                  					
-                  <p id="p__4" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus</p>
-               </div>
-               				</div>
-            			
-            <div id="div__492">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_4">4</span>
-               				
-               <div id="div__488">
-                  					
-                  <p id="p__303" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus Frankreich / von dem 4. April. Daß Jhre Königliche 
-                     						Ho=<br  xmlns:local="http://dse-static.foo.bar"><br />heit / der Herzog von <span  xmlns:local="http://dse-static.foo.bar">Orleans</span>, Regent von Frankreich / mit dem 
-                     						Kai=<br  xmlns:local="http://dse-static.foo.bar"><br />serlichen Minister / Herrn Baron von Pentenrieder / und 
-                     						Engellisch=<br  xmlns:local="http://dse-static.foo.bar"><br />auserordendtlichen Gesandten / Herrn Ritter <span  xmlns:local="http://dse-static.foo.bar">Sutton</span>, (bey deme 
-                     						jüng=<br  xmlns:local="http://dse-static.foo.bar"><br />stens der Ottomannische Botschafter / aus habender Bekantschaft von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Constantinopel / wie auch der Friedens=Handlung zu Possarowitz her /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />seine Besuchung getahn) wegen deren Hindernussen / so die Friedens=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Handlung zu Cammerich bishero noch aufgehalten / ein lange 
-                     						Unter=<br  xmlns:local="http://dse-static.foo.bar"><br />redung / welcher auch der Herr Erz=Bischoff von Cammerich 
-                     						beygewoh=<br  xmlns:local="http://dse-static.foo.bar"><br />net / gepflogen hätten / um Mittel zufinden / diese Hindernüssen /so 
-                     						Span=<br  xmlns:local="http://dse-static.foo.bar"><br />nien und Engelland verursachen sollen / aus dem Weeg zuraumen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />damit nur einsmals erwehnte Friedens=Handlung ihren Fortgang 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />haben möge; Sonsten seye der Herr Cardinal <span  xmlns:local="http://dse-static.foo.bar">de Bissy</span> von Pariß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />nacher Rom / dahin ein Curier mit wichtigen Briefschaften an den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hrn. Cardinal <span  xmlns:local="http://dse-static.foo.bar">de Rohan</span> auch abgefertiget worden /jüngstens abgereiset;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Deme die Herren Cärdinäl / <span  xmlns:local="http://dse-static.foo.bar">de Mailly</span> und <span  xmlns:local="http://dse-static.foo.bar">Polignac</span>, nächstens folgen:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Die Herren Cardinäl / <span  xmlns:local="http://dse-static.foo.bar">de Gesvres</span> und <span  xmlns:local="http://dse-static.foo.bar">Noailles</span>, aber zu Pariß 
-                     						verblei=<br  xmlns:local="http://dse-static.foo.bar"><br />ben würden; Der leztere habe beschlossen / denen Ordens=Geistlichen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />keine Weyhe mehr zuertheilen / deren Obern / oder dero Clöster dem 
-                     						Apelli=<br  xmlns:local="http://dse-static.foo.bar"><br />renden Theil wider die <span  xmlns:local="http://dse-static.foo.bar">Constitution Unigenitus</span> anhängig seyen / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />das wär auch die Ursach gewesen / daß der <span  xmlns:local="http://dse-static.foo.bar">Abbè de Fleury</span> bey dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />König nicht mehr Beicht=Vater geblieben / dessen Stell inzwischen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />weilen der Herr <span  xmlns:local="http://dse-static.foo.bar">Abbè de Vivans</span> zu Rom sich aufhalte ein <span  xmlns:local="http://dse-static.foo.bar">Pater S. J.</span>
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />wieder versehen solle.</p>
-                  					
-                  <p id="p__130" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus Holland von dem 8. April. Daß die Generalen / Graf von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Hompesch / und Baron von Friesheim / in dem Haag angelanget /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />hingegen von dannen der <span  xmlns:local="http://dse-static.foo.bar">Fiscal</span> von Brabant / Herr <span  xmlns:local="http://dse-static.foo.bar">Nenny</span>, wieder nach 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Brüssel abgangen / dahin auch nächstens der Herr Resident Pesters 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />kehren solle; Jn besagtem Haag sollen obgedachte Generals mit den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herren von der Regierung: und die Engellisch=wie auch Preussische 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ministern mit dem Präsident von der Versamlung einige 
-                     						Unterredun=<br  xmlns:local="http://dse-static.foo.bar"><br />gen gepflogen haben; Sonsten seye der Her Schwarzenberg zum 
-                     						Obri=<br  xmlns:local="http://dse-static.foo.bar"><br />sten von dem Regiment des Prinzen von Oranien an Plaz des Herrn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /><span  xmlns:local="http://dse-static.foo.bar">de Rochebrune</span>; so die Obriste=Stell aufgegeben / jüngstens ernent 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />worden.</p>
-                  					
-                  <p id="p__55" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus Brabant von dem 8. April. Daß der Herr Cardinal und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Erz=Bischof zu Mechlen in dasiger Haubt=Kirche für den jüngst=ver=<br  xmlns:local="http://dse-static.foo.bar"><br />storbenen Pabst die Leichbesingnuß auf das feyerlichste halten lassen;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Zu Brüssel seye kürzlich der Sohn des zu Antwerpen auf dasigen</p>
-                  					
-                  <p id="p__5" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ca</p>
-               </div>
-               				</div>
-            			
-            <div id="div__487">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_5">5</span>
-               				
-               <div id="div__482">
-                  					
-                  <p id="p__36" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Castell gefangen sitzenden Herrn Robert Knight, angekommen / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />habe die Ständ von Brabant durch ein Memorial ersuchet / seinen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />V<abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">ate</abbr>r das Recht der Zuflucht=Stadt doch geniesen zulassen.</p>
-                  					
-                  <p id="p__76" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Von dem Nieder=Rheinstrom / vom 10. April. Daß von Jhro 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Churfürstlichen Durchleucht zu Pfaltz der Herr Graf von Schaesberg 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zum Guverneur=General deren Herzogtümeren / Gülich und Berge /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und der Herr geheime Raht Brosy zum Vice-Canzler / an statt des 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />verstorbenen Herrn von Hetterman / ernent worden/ Zu Cöllen habe 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />man den Herrn Niclas von Groet zum Burgermaister erwählet.</p>
-                  					
-                  <p id="p__352" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Von dem Maynstrom vom 12. April. Daß / um die Fränkische 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Landen von den in Frankreich und Polen eingerissen=ansteckend=gefähr=<br  xmlns:local="http://dse-static.foo.bar"><br />lichen Krankheiten zu bewahren / ein Hochlöbliches in der Reichs=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Stadt Nürnberg versamlet=algemein=Fränkisches Creyß=Convent 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />den ernstlichen Schluß gefast / und sich dahin vereiniget: daß in besagt=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Fränkischen Landen weder Personen / noch Waaren durchgelassen 
-                     						wer=<br  xmlns:local="http://dse-static.foo.bar"><br />den sollen; Wan sie nicht mit glaubhaften von Ort zu Ort 
-                     						unter=<br  xmlns:local="http://dse-static.foo.bar"><br />schriebenen Pässen / Fehden und Zeugnussen bescheinigen und dartuhn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />können / daß sie von gesunden und unverdächtigen Oertern 
-                     						herkom=<br  xmlns:local="http://dse-static.foo.bar"><br />men / auch / was die Waaren betreffe / sie an dergleichen unverdächtigen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Oertern verfertiget / gewachsen / oder gepacket seyen / zu dem End alle 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Stücke deren Waaren in denen Pässen eigentlich beschrieben seyn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sollen; Widrigesfals man dergleichen Personen und Waaren 
-                     						abwei=<br  xmlns:local="http://dse-static.foo.bar"><br />sen: zuruckbehalten: auch die leztere gar / gestalteter Dingen nach /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />verbrennen lassen werde; Gleichwie man eben in dem Fränkischen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Creyß kein aus Polen kommende Juden passiren lasse; Als werde 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />solches auch auf all=vagirende Bettel=Juden verstanden / welche 
-                     						an=<br  xmlns:local="http://dse-static.foo.bar"><br />fänglich auf den Gränzen mit wohl empfindlichen Schlägen 
-                     						abgetrie=<br  xmlns:local="http://dse-static.foo.bar"><br />ben: nachgehends aber / wan sie sich eines Weegs durchzuschleichen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />unterstehen würden / mit schwerer Leibs=Straf angesehen werden 
-                     						sol=<br  xmlns:local="http://dse-static.foo.bar"><br />ten: Dergleichen scharfen Befehl auch Jhre Hochfürstl. Gnaden zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Würzburg / zu Erhaltung dero Hochstift und Landen des Herzogtum 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zu Franken /ergehen lassen / daß nemlichen wegen der in Frankreich 
-                     						grassi=<br  xmlns:local="http://dse-static.foo.bar"><br />renden Pest / weder Personen / Vieh / noch Waaren / von dorten / noch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auch aus Savoyen / und Piemont / oder Graubinden / Schweitz / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Lothringen / noch anderen sonsten gegen Teutschland ligenden / und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />denenselben Unterschleif gebenden Länderen / ingleichem auch aus 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Polen nichts bey Leib=und Lebens=Straf / und Verbrennung deren 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Waaren passiret werden solle.</p>
-                  					
-                  <p id="p__18" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Aus der Schweitz / von dem 8. April. Daß von dem Magistrat</p>
-                  					
-                  <p id="p__7" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />)( 3</p>
-                  					
-                  <p id="p__7" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zu</p>
-               </div>
-               				</div>
-            			
-            <div id="div__545">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_6">6</span>
-               				
-               <div id="div__285">
-                  					
-                  <p id="p__94" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zu Zürch / auf Vernehmen / wie Jhre Churfürstliche Durchleucht zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pfaltz / wegen der in Frankreich grassirenden Pest / die Güter deren 
-                     						Zür=<br  xmlns:local="http://dse-static.foo.bar"><br />chischen Kaufleuthen / so nach Frankfurt gehen wollen / nahe bey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pforzheim anhalten: und von den Wägen abwerfen lassen / der <span  xmlns:local="http://dse-static.foo.bar">
-                        						Sub-<br />stitutus</span> Hottinger mit einem Brief an Jhre Churfürstliche Durchleucht 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zu Pfaltz nach Manheim abgeschicket worden / um Deroselben 
-                     						vorzu=<br  xmlns:local="http://dse-static.foo.bar"><br />stellen / daß ja die Pest nicht in der Schweitz wäre / und in Frankreich 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />solche gar aufhören solle.</p>
-                  					
-                  <p id="p__190" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Von dem Elbstrom / vom 12. April. Daß / zufolg der Nachricht 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />von Petersburg / die Czaarische Gevolmächtigte nach Nystadt / in 
-                     						Fin=<br  xmlns:local="http://dse-static.foo.bar"><br />land / zu der aldort angestelten Friedens=Unterredung abgangen; Zu 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Stockholm wär indessen der Prinz Georg von Hessen=Cassel mit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />wichtigsten <span  xmlns:local="http://dse-static.foo.bar">Commissio</span>nen angekommen / und im Königlichen. Schloß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />eingekehret; Von Koppenhagen aber werde berichtet / daß Jhre 
-                     						Kö=<br  xmlns:local="http://dse-static.foo.bar"><br />niglich=Dänische Majestät entschlossen / sobald die Beysetzung der 
-                     						Kö=<br  xmlns:local="http://dse-static.foo.bar"><br />nigin Leichnam zu Rotschild geschehen sey / eine Reiß nach Jütland und 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Holstein vorzunehmen / um aller Orten Dero Truppen zubesichtigen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und durch die Musterung gehen zulassen; Und würden übrigens 
-                     						da=<br  xmlns:local="http://dse-static.foo.bar"><br />selbsten solche Anstalten gemacht / als wan ein neuer Krieg vor der Thür 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />wäre; Wie von Berlin die Nachricht kommen / so hätten Jhre 
-                     						Kö=<br  xmlns:local="http://dse-static.foo.bar"><br />niglich=Preussische Majestät zu Potsdam die alda liegende Cron=Ba=<br  xmlns:local="http://dse-static.foo.bar"><br />taillon in Waffen sich üben lassen; Darüber aber sich etwas 
-                     						unpäs=<br  xmlns:local="http://dse-static.foo.bar"><br />lich befunden / daß man deroselben zur Ader lassen müssen.</p>
-               </div>
-               				
-               <div id="div__13">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Ankunft deren hoh=und niederen Stands=Personen.</div>
-               				
-               <div id="div__133">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 16. April / 1721.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Stuben=Thor. Herr Baron Rosenwald /
-                     						<br />Cornet / von des Prinzen Emanuel von 
-                     						<br />Savoyen Regiment / komt gestern Abend 
-                     						<br />aus Hungarn / log. auf der Meelgrub.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Karntner=Thor. Herr Graf Anton von 
-                     						<br />Thurn / komt gestern Abend aus Rom /
-                     						<br />log. beym Herrn Grafen von 
-                     						Diet=<br />richstein.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Herr Graf von Windischgräz / Reichs=Hof=
-                     						<br />Rahts=Präsident / komt vom Guht /
-                     						<br />log. in seinem Hauß.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Herr Baron Plötner komt von Raab / log.
-                     						<br />im goldenen Greiffen.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Principe von <span>Villafranca,</span> komt aus 
-                     						Si=<br />cilien / log. in 7. Säulen.</li>
-               </div>
-               				
-               <div id="div__32">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 17. Dito.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Herr <span>Urisari,</span> Haubtmann vom 
-                     						Bonnevalli=<br />schen Regiment / komt von Brüssel / log.
-                     						<br />im Sonnauischen Hauß.</li>
-               </div>
-               				
-               <div id="div__89">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 18. Dito.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Roten=Thurn. Fürst Anton von 
-                     						Liech=<br />tenstein / Kaiserlicher Obrist=Hofmai=<br />ster / komt von Feldspurg / log. in seinem 
-                     						<br />Hauß.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Herr Graf von Sinzendorf / Oe. Obrist=
-                     						<br />Hof=Canzler / komt von Sellowitz /
-                     						<br />log. im Teutschen Hauß.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Herr Baron <span>Acton,</span> General=Wachtmai=<br />ster / komt aus Hungarn / log. im Wilden 
-                     						<br />Mann.</li>
-               </div>
-               				</div>
-            			
-            <div id="div__765">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_7">7</span>
-               				
-               <div id="div__13">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Lista deren Getauften / in=und vor der Stadt.</div>
-               				
-               <div id="div__53">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 19. März / 1721.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Reichard Strumpf / Zingieser / und 
-                     						<br />Maria Anna sein. Ehew. ihr T. Maria 
-                     						<br />Elisabeth.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Dominicus Strasser / Schuster / und 
-                     						<br />Ursula sein. Ehew ihr S. Leopold Joseph 
-                     						<br />Mathias.</li>
-               </div>
-               				
-               <div id="div__141">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 20. Dito.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Herrn Simon Rauf / und Maria 
-                     						<br />Anna sein. Ehefr. ihr S. Franz Joachim.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Hrn. Christian Pickard / Fändrich /
-                     						<br />und Anna Maria sein. Ehew. ihr T.
-                     						<br />Maria Josepha.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Stephan Nidericher / und CæciliaCaecilia s.
-                     						<br />Ehew. ihr T. Maria Elisabeth Catharina.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Franz Carl Kastelli / und Johanna 
-                     						<br />Theresia s. Ehew. ihr T. Elisab. Josepha.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Mathias Wöstel / Tafeldecker / und 
-                     						<br />Maria Anna sein. Ehew. ihr T. Catha=<br />rina Anna.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Gottfried Agster/ Garde=Soldat /
-                     						<br />und Catharina sein. Ehew. ihr S. Jo=<br />seph Johann.</li>
-               </div>
-               				
-               <div id="div__224">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 21. Dito.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Herrn Johann Michael Wolfgang 
-                     						<br />Truckmüller, Kaiserl. Banco=Gesöll=
-                     						<br />Einnehmern / und Maria Elisabeth sein.
-                     						<br />Hausfr. ihr S. Joh Carl Anton Benedict.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Herrn Mathias Huber, Kaiserl. Rait=
-                     						<br />Officier / und Anna Maria sein. Ehefr.
-                     						<br />ihr T. Maria Josepha Christina.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Hrn. Franz Anton von 
-                     						Stasling=<br />hauß / und Rosalia sein. Ehefr. ihr T.
-                     						<br />Maria Theresia Judith Helena.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Ferdinand Lang / und Barbara sein.
-                     						<br />Ehew. ihr T. Anna Rosalia.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Christoph Bonzner / und 
-                     						Ma=<br />ria Catharina s. Ehefr. ihr S. Joachim 
-                     						<br />Johann Jacob.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Krahammer / und Anna 
-                     						<br />Maria sein. Ehew. ihr S. Johann 
-                     						<br />Benedict.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Joseph Schneider / Bierabtrager /
-                     						<br />und Anna Maria sein. Ehew. ihr T.
-                     						<br />Anna Rosina.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Ferdinand Mann / Musicant / und 
-                     						<br />Juliana s. Ehew. ihr T. Anna Catharina.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Reß / abgedankten 
-                     						Solda=<br />ten / und Sophia sein. Ehew. ihr T.
-                     						<br />Catharina Barbara.</li>
-               </div>
-               				
-               <div id="div__108">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 22. <abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">D</abbr>ito.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Hrn. Wilibald Perl / und Rosalia 
-                     						<br />sein. Ehew. ihr S. Joseph Franz.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br /> Dem Paul Ortner / und Catharina sein.
-                     						<br />Ehew. ihr S. Johann Georg Mathias.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Georg Kelli / und Regina 
-                     						<br />sein. Ehew. ihr S. Franz Georg.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Georg Krabich / Schnürmacher /
-                     						<br />und Barbara sein. Ehew. ihr S. Franz.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Andre Grabler / Zimmerman und 
-                     						<br />Theresia s. Ehew. ihr S. Clement Georg.</li>
-               </div>
-               				
-               <div id="div__146">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 23. Dito.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Georg Schlachthammer /
-                     						<br />und Margareth sein. Ehew. ihr S. To=<br />bias Ferdinand.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Mathias Knitl / und Catharina sein.
-                     						<br />Ehew. ihr T. Anna Eleonora.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Hrn. Johann Adam Wenger / Orga=<br />nist bey St. Michael / und Catharina 
-                     						<br />sein. Ehefr. ihr T. Catharina Leopoldina.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Caspar Anton Krug / Lederzurichter /
-                     						<br />und Maria Elisabeth sein. Ehew. ihr T.
-                     						<br />Maria Theresia</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Lorenz Strasmayer / Schifknecht /
-                     						<br />und Johanna sein. Ehew. ihr S. Jo=<br />hann Georg Bernhard.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Andre Kramer / Kutscher / und Eva 
-                     						<br />sein. Ehew. ihr T. Anna Christina.</li>
-               </div>
-               				
-               <div id="div__19">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Lista deren Verstorbenen / in=und vor der Stadt.</div>
-               				
-               <div id="div__17">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 16. April / 1721. starb</div>
-               				
-               <div id="div__80">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />In der Stadt.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Der Titl. Frau Maria Antonia / Verwittib=<br />ten Gräfin Palfi von Erdöd / gebohrnen</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Gräfin Souches / ꝛc. ihr Frl. T. Maria 
-                     						<br />Josepha / alt 9. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Berger / Zimmergesell / beyn 
-                     						<br />3. weisen Lilien / am alten Kienmarkt /
-                     						<br />sein W. Christina / alt 63. Jahr.</li>
-               </div>
-               				</div>
-            			
-            <div id="div__909">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_8">8</span>
-               				
-               <div id="div__17">
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Adam gewester Reutknecht /in Beschau=
-                     						<br />Hauß / alt 30. Jahr.</li>
-               </div>
-               				
-               <div id="div__238">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Frau Anna Maria Michlin / Wittib / in 
-                     						<br />der Roßau / alt 63. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Johann Georg Schaller / Burger und 
-                     						Ge=<br />main=Richter / in der Josephstadt / alt 
-                     						<br />66. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Der Eva Schwingerin / Wittib / auf der 
-                     						<br />Wieden / ihr K. Rosina / alt 8. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Anton Wolf Schuster / auserm Klagbaum /
-                     						<br />alt 35. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Georg Rumpler/ Garde=Corporal / beym 
-                     						<br />Lerchenfelder Linien=Thor alt 7<abbr title="unclear">9</abbr>. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Joseph Daller / Schuster / am Neubau /
-                     						<br />alt 41. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Urban Neylinger / Zimmergesell / in der 
-                     						<br />Leopoldstadt / alt 45. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />N. N. unbekannter Jäger / vorm Schanzel /
-                     						<br />alt bey 60. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Michael Mild / Kutscher / in der Kotgaß /
-                     						<br />alt 43. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Catharina Rotbeckin / Wittib im 
-                     						Lerchen=<br />feld / alt 30. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Anna Kraglin / ausserm Neubau / alt 57. J.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Ursula Wagnerin / alt 30. J. Helena 
-                     						<br />Pfluckin / alt 31. J. Maria 
-                     						Mosgaz=<br />kin / alt 24. J. und Maria <abbr title="unclear">Hupeyrin</abbr> /
-                     						<br />alt 79. Jahr / im Kranken=Hauß.</li>
-               </div>
-               				
-               <div id="div__98">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 17. Dito / in der Stadt.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br /><span>A. R. D.</span> Franz Carl Klug von Grienberg /
-                     						<br />weltlicher Priester / bey der schönen 
-                     						La=<br />tern / beym Heil. Creutzer=hof alt 68. J. </li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Titl. Frau Anna Elisabeth von Mayditsch /
-                     						<br />Wittib /in ihrem Hauß / in der 
-                     						Wilplin=<br />gerstraß / alt 59. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Augustin Karnegge / Schuster / im 
-                     						Mar=<br />tinischen Hauß / in der Wallerstraß /
-                     						<br />alt 58. Jahr.</li>
-               </div>
-               				
-               <div id="div__182">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Werner / Goldarbeiter / bey 
-                     						<br />Maria=Hülf sein Ehew. Anna /alt 28. J.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Johann Michael Fischer / Schneider / in 
-                     						<br />der Leopoldstadt / alt 39. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Franz Hiniz / Goldschmid / am 
-                     						Neu=<br />stift / sein K. Johann / alt 8. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Franz Celesdin / Peruckenmacher /
-                     						<br />bey Maria=Hülf / s. K. Anna / alt 7. V. J. </li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Ursula Jamhauserin / alt 70. Jahr / Regina 
-                     						<br />Rosengärberin / alt 85. Jahr / Elisabeth 
-                     						<br />Schneterin / alt 80. Jahr / und Ger 
-                     						<br />traud Bollowartin / alt 78. Jahr / im 
-                     						<br />Armen=Hauß.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Johann Schmid / alt 33. Jahr / Joseph 
-                     						<br />Borman / alt 27. Jahr / Anna Stibin /
-                     						<br />alt 58. Jahr / und Elisabeth Hauserin 
-                     						<br />alt 45. Jahr / im Kranken=Hauß.</li>
-               </div>
-               				
-               <div id="div__135">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Den 18. Dito / in der Stadt.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br /><span>A. R. P.</span> Reymund Angerer / <span>Ord. S. Domi-<br />nici</span>, im Prediger=Closter / alt 63. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Herr Peter Ernst Adam / Hauß=Verwal=<br />ter / im Fürst=Schwarzenbergischen 
-                     						<br />Hauß /am neuen Markt / alt 76. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Gabriel Hein / Riemergesell / im 
-                     						Riemeri=<br />schen Hauß / in der Klugerstraß / alt 40. J.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Blasy Strareiter / Tagwerker / im <span>Doct.</span>
-                     						<br />Lazenhof / alt 40. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Agnes Authoferin / alt 88. J. und 
-                     						Catha=<br />rina Kemeterin / alt 77. Jahr / im 
-                     						Bur=<br />ger=Spittal</li>
-               </div>
-               				
-               <div id="div__250">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Vor der Stadt.
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dominicus Engel / Feld=Trompeter / zu 
-                     						<br />Matzelstorf / alt 24. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Andre Herman / Zuckerbacker / bey St.
-                     						<br />Ulrich / alt 87. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Der Anna Kugelmannin / Wittib / zu 
-                     						Erd=<br />berg / ihr K. Michael / alt 3. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Maria Birnbacherin / Wittib / im 
-                     						Liech=<br />tenthal / alt 53. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Der Maria Ecklin / Wittib / untern 
-                     						Fel=<br />bern / ihr K. Juliana / alt 6. V. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Johann Gabelier / Vorreuter / in der 
-                     						<br />Leopoldstadt / s. K. Anna / alt 5. V. J.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Dem Joseph Grassel Zillenschopper / in der 
-                     						<br />Leopoldstadt / sein K. Anna / alt 1. J.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Andre Neupauer / Tagwerker / im 
-                     						Lerchen=<br />feld / alt 50. Jahr.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Franz Anton Walner / alt 35. Jahr / und 
-                     						<br />Jgnaz Schwarz, / alt 28. Jahr / beyn 
-                     						<br />B. B. in der Leopoldstadt.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Elisabeth Berlin / alt 50. Jahr / und 
-                     						Ja=<br />cob Kaiser / alt 56. Jahr / im Armen=
-                     						<br />Hauß.</li>
-                  <li  xmlns:local="http://dse-static.foo.bar">
-                     						<br />Michael Wagner / alt 30. J. und Sabina 
-                     						<br />Erlingerin / alt 50. Jahr in Kranken=
-                     						<br />Hauß.</li>
-               </div>
-               				</div>
-            			
-            <div id="div__702">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_9">9</span>
-               				
-               <div id="div__692">
-                  					
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />Continuation des Berichts dessen / was nach der Begräbnuß 
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />P<abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">ab</abbr>st Clemens / des Eilften / und dan vor=wie auch bey dem Eintrit 
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />des <span  xmlns:local="http://dse-static.foo.bar">S. Collegii</span> in das<span  xmlns:local="http://dse-static.foo.bar"> Conclave</span> zu Rom / vom 30. bis 31. März / sich 
-                  						<br  xmlns:local="http://dse-static.foo.bar"><br />merkwürdig zugetragen.
-                  					
-                  <p id="p__117" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />SOntag / den 30. März. Heut ware die dreytägig=hochfeyerlich=<br  xmlns:local="http://dse-static.foo.bar"><br />gehaltene Leichbesingnuß in der Haubt=Kirche zu St. Peter beschlossen: hin=<br  xmlns:local="http://dse-static.foo.bar"><br />gegen durch ein Decret / welches der Herr Cardinal <span  xmlns:local="http://dse-static.foo.bar">Paracciani</span>, als <span  xmlns:local="http://dse-static.foo.bar">Vicarius 
-                        						Gene-<br />ralis,</span> ergehen lassen / gebotten worden / daß alle Geistliche / sowohl<span  xmlns:local="http://dse-static.foo.bar"> Seculares,</span> als 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /><span  xmlns:local="http://dse-static.foo.bar">Regulares,</span> die Leichbesingnuß gleichfals für den verstorbenen Pabst / Clemens den 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Eilften / begehen: dan alle in der Stadt Rom befindliche Priester ein H. Meß für 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ihn lesen: auch all=Christ=glaubig=Catholische / beederley Geschlechts / denselben in 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ihr Gebeht einschließen solten.</p>
-                  					
-                  <p id="p__65" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nichtweniger wurde der Befehl / zufolg deren Heil. Satzungen / ertheilet / daß 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />man bey jeder H. Meß künftighin die Collect für Erwählung eines Pabsts behten:
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auch in allen Kirchen das Hochwürdigste Sacrament aussetzen: und all=Christ=<br  xmlns:local="http://dse-static.foo.bar"><br />glaubig=Catholische Christen ermahnen solle / deshalben ebenmässig ihr andächtiges 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Gebeht zu GOtt zuschicken;</p>
-                  					
-                  <p id="p__161" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Dan hat auch der Herr <span  xmlns:local="http://dse-static.foo.bar">Gouernatore Falconieri</span> all=bisherige Spiel / sie mögen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Namen haben / wie sie wollen / nach dem üblichen Gebrauch / wan der Päbstl. Stul sich 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />leer befinde / unter scharfer Straf untersagen: ingleichem bey dem Bann und 
-                     						Ga=<br  xmlns:local="http://dse-static.foo.bar"><br />leeren (auf welche 46. Gefangene aus dem Castell <span  xmlns:local="http://dse-static.foo.bar">S. Angelo</span> nach <span  xmlns:local="http://dse-static.foo.bar">Civita vecchia</span> 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />führet worden) ja bey Lebens=Straf verbiehten lassen / daß man sich all=übler 
-                     						Gesprä=<br  xmlns:local="http://dse-static.foo.bar"><br />chen / Verunglimpfungen / Schmäschriften / und Pasquillen enthalten solle / damit 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />alles in Ruh seyn möge; Welche zuerhalten / auch Jhre Palläst zu bewahren / die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Herren Cardinäl=und andere Ministern / die Fürsten=wie auch die vornehmste des 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Adels / und sonderlich der <span  xmlns:local="http://dse-static.foo.bar">Prencipi Chigi,</span> Marschall von dem <span  xmlns:local="http://dse-static.foo.bar">Conclave,</span> vieles Volk 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />annehmen: und dasselbe mit Gewehr versehen lassen.</p>
-                  					
-                  <p id="p__178" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Die Herren Cardinäl deren drey Orden / als deren Herren Bischöffen / Priestern /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und Diaconen / hatten der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa di Piombino</span> bedeuten lassen: Wan sie ihre 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />mit der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa Ruspoli</span> habende Stritsache / so daher entstanden / daß ihre Kutscher 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />zusammen gefahren und keiner weichen wollen / nicht vor dem Eingang des <span  xmlns:local="http://dse-static.foo.bar">Conclave</span>
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />gütlich beylegen würde; So wolten die berührte Herren Cardinäl solches selber /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />aber zu der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa di Piombino</span> schlechter Vergnügung / tuhn lassen; Dahero 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dieselbe / um nichts Widriges zuerwarten / durch den Herrn <span  xmlns:local="http://dse-static.foo.bar">Marchese del Bufalo</span>
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa Ruspoli</span> ein Compliment machen: und ihr zugleich hinterbringen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />lassen / daß die <span  xmlns:local="http://dse-static.foo.bar">Prencipessa di Piombino</span>, sobald sie vernommen / wie ihre 
-                     						Bedien=<br  xmlns:local="http://dse-static.foo.bar"><br />ten den Respect gegen jene vergessen / dieselbe sogleich aus ihren Diensten 
-                     						abschaf=<br  xmlns:local="http://dse-static.foo.bar"><br />fen lassen; Darauf von der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa Ruspoli</span> wieder mittels eines schönen 
-                     						Com=<br  xmlns:local="http://dse-static.foo.bar"><br />pliments geantwortet: mithin aller bisherige Verdruß / und die Sequestration 
-                     						auf=<br  xmlns:local="http://dse-static.foo.bar"><br />gehoben worden.</p>
-                  					
-                  <p id="p__98" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Ubrigens hat auch Heute das Capitul bey <span  xmlns:local="http://dse-static.foo.bar">S. Maria Maggiore,</span> (U. L. F. der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Grösseren) nach überwunden=verschiedenen Widerwärtigkeiten / die dasselbe von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der Zeit / da es nemlichen den 24. November verwichenes Jahrs unter den 
-                     						Kaiser=<br  xmlns:local="http://dse-static.foo.bar"><br />lich=Oesterreichischen Schutz sich begeben / bis daher ausstehen müssen / nach 
-                     						abge=<br  xmlns:local="http://dse-static.foo.bar"><br />legt=Spannisch=Anjouinischen Wappen / das Kaiserlich=Oesterreichische / mit Jhrer 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Kaiserlich=und Catholischen Majestät Bildnuß / bey hellem Tag davor aufgemacht.</p>
-                  					
-                  <p id="p__42" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Montag / den 31. Dito. Heute / Vormittag / hatte das <span  xmlns:local="http://dse-static.foo.bar">S. Collegium</span> bey 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />St. Peter in dasiger Chor=Capelle sich wieder versamlet / und der Herr <span  xmlns:local="http://dse-static.foo.bar">Decanus</span>,</p>
-               </div>
-               				</div>
-            			
-            <div id="div__756">
-               					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_10">10</span>
-               				
-               <div id="div__746">
-                  					
-                  <p id="p__251" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cardinal <span  xmlns:local="http://dse-static.foo.bar">Tanara</span>, das Amt der H. Meß vom H. Geist gesungen: <span  xmlns:local="http://dse-static.foo.bar">Monsignor Mari,</span>
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Bischof von <span  xmlns:local="http://dse-static.foo.bar">Aleria,</span> aber in seinem Rochet und roten Vesper=Mantel / mit der Jnful 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auf dem Haubt / a<abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">m</abbr> Ende des Altars zur Seiten des Evangeliums auf einer über 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />die drey Stafel gesetzten Canzel ein sehr gelehrt=und geistreiche Predig über die Wahl 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />eines neuen Pabsten mit rühmlichem Eifer und Herzhaftigkeit / jedoch auch 
-                     						wohlan=<br  xmlns:local="http://dse-static.foo.bar"><br />ständigen Sitsamkeit löblichst gehalten / hiernächst die Päbstliche Herren 
-                     						Mu=<br  xmlns:local="http://dse-static.foo.bar"><br />canten das Gesang: <span  xmlns:local="http://dse-static.foo.bar">Veni Creator Spiritus &amp;c.</span> gesungen; Nach welchem die 
-                     						Her=<br  xmlns:local="http://dse-static.foo.bar"><br />ren Cardinäl Paar=Weiß / und nach der Ordnung / als erstlichen die Herren 
-                     						Bi=<br  xmlns:local="http://dse-static.foo.bar"><br />schöffe / dan die Priestere / und leztens die <span  xmlns:local="http://dse-static.foo.bar">Diaco</span>nen / mit Vorhertragung des 
-                     						Creu=<br  xmlns:local="http://dse-static.foo.bar"><br />tzes nach dem <span  xmlns:local="http://dse-static.foo.bar">Conclave,</span> und zufordrist in die Paulinische Capelle sich begeben 
-                     						hat=<br  xmlns:local="http://dse-static.foo.bar"><br />ten; Daselbsten / als man in solcher Ordnung angelangt ware / wurden zu erst die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Päbstl. Bullen und Satzungen / wegen der Wahl eines neuen Pabsts und 
-                     						Nichtver=<br  xmlns:local="http://dse-static.foo.bar"><br />äuserung der Kirchen=Gühter / vorgelesen / und dieselbe hierauf von den Herren 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cardinälen beschworen / dan diese Cermonien mittels einer wohlgefasten Red über 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />die Weiß der Erwählung eines neuen Pabsts von dem <span  xmlns:local="http://dse-static.foo.bar">Decano S. Collegii,</span> Herrn 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Cardinal <span  xmlns:local="http://dse-static.foo.bar">Tanara,</span> geschlossen; Hiernächst jeder deren Cardinälen sich in seine Zell 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />verfüget hatte;</p>
-                  					
-                  <p id="p__203" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Des Nachmittags aber hatte der <span  xmlns:local="http://dse-static.foo.bar">Prencipe Chigi,</span> Marschall der Heil. Kirche=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und Beschützer des <span  xmlns:local="http://dse-static.foo.bar">Conclave,</span> mit dreyen Kutschen / dero Pferden kostbare Quasten 
-                     						ge=<br  xmlns:local="http://dse-static.foo.bar"><br />habt, aus seinem Pallast nach besagtem <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> sich erhoben / deme dessen 
-                     						Obri=<br  xmlns:local="http://dse-static.foo.bar"><br />ster / Cavalier <span  xmlns:local="http://dse-static.foo.bar">Androsilla,</span> zu Pferd / erstlich mit 200. Mann / in purpurfarber 
-                     						Munti=<br  xmlns:local="http://dse-static.foo.bar"><br />rung / und dan drey Compagnien anderer Soldaten nach dem <span  xmlns:local="http://dse-static.foo.bar">Vatican</span> um die 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Wacht in dem <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> zuhalten / gefolget; Wie dan bey der Pforte desselben 
-                     						er=<br  xmlns:local="http://dse-static.foo.bar"><br />wehnter <span  xmlns:local="http://dse-static.foo.bar">Prencipe,</span> dessen Volk / ohne die ander=alte Miliz in dem Plaz / darinnen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />und davor einquartirt liget / so Tag / als Nacht sich befinden muß; Desgleichen auch 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />der <span  xmlns:local="http://dse-static.foo.bar">Monsignor Ruspoli</span> mit seiner Trabanten=Garde gute Wacht zur Sicherheit der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Vorstadt St. Peter halten lasset: Welche des Nachts von allen Seiten des 
-                     						Ca=<br  xmlns:local="http://dse-static.foo.bar"><br />stels geschlossen / und mit Ketten durchzogen werde; Massen auch alles aldorten 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />so wohl / als in der Stadt Rom selbsten mit Wacht versehen / und so Tag / als 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Nacht die Soldaten / und bewafnete Leuthe patrolliren müssen.</p>
-                  					
-                  <p id="p__201" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Und weilen in einer zuvor gehaltenen Congregation der Herr Cardinal <span  xmlns:local="http://dse-static.foo.bar">
-                        						Acqua-<br />viva</span> (in dessen Abwesenheit und Befindung im <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> desselben Spannischen 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Pallast der <span  xmlns:local="http://dse-static.foo.bar">P. Ascanio,</span> ein Dominicaner / immittels bezogen; Als welcher von dem 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Madritischen Hof bestellet worden / dessen Angelegenheiten zubeobachten; Wie dan 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />auch derselbe von des Cardinal <span  xmlns:local="http://dse-static.foo.bar">Aquaviva</span> Leuthen bedienet wird) wegen 
-                     						Vorschü=<br  xmlns:local="http://dse-static.foo.bar"><br />tzung seiner Unpäslichkeit von dem <span  xmlns:local="http://dse-static.foo.bar">S. Collegio</span> den dritten<span  xmlns:local="http://dse-static.foo.bar">Conclavi</span>sten erhalten;
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />So haben Jhre Eminenz / der Herr Cardinal Althan / als Kaiserlicher Minister /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />ein Gleiches begehret / welches aber mit 14. Verneinungs=gegen 12. Bejahungs=
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Stimmen versaget worden; Da aber Jhre Eminenz mit vielen Exempeln klar 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />vorgestellet / gewöhnlich zuseyn / daß nicht allein die Herren Cardinal=Ministern /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sondern auch die über den Gebürgen befindliche Herren Cardinäl so oft / als sie 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />verlangt / den dritten <span  xmlns:local="http://dse-static.foo.bar">Conclavi</span>sten bekommen hätten; Als hat Jhro Eminenz / der 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dritte <span  xmlns:local="http://dse-static.foo.bar">Conclavi</span>st auch zugestanden werden müssen; Welches jedoch einige Cardinal von 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />dergleichen Begehren abgehalten hat /damit es ihnen nicht abgeschlagenwerden möge.</p>
-                  					
-                  <p id="p__96" class="yes-index">
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />Sonsten hat Heut / Abends / aus Frankreich der Herr Cardinal de <span  xmlns:local="http://dse-static.foo.bar">Rohan,</span>
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />welchen einer von dem Französischen Minister / Herrn <span  xmlns:local="http://dse-static.foo.bar">l’Affiteau,</span> entgegen 
-                     						geschick=<br  xmlns:local="http://dse-static.foo.bar"><br />ter Currier/ mit der Nachricht von des Pabsten Tod zu Trient angetroffen / dahier 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />sich eingefunden / und ist in dem bestelten Pallast von Hohen=Embs eingekehrt; Als 
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br />bis dahin selben die ihm ein Stuckweegs aus Rom von denen Herren Cardinälen /
-                     						<br  xmlns:local="http://dse-static.foo.bar"><br /><span  xmlns:local="http://dse-static.foo.bar">Aquaviva</span> und <span  xmlns:local="http://dse-static.foo.bar">Ottoboni,</span> zugeschickte Kutschen / jede mit 6. Pferden / begleitet hatten.</p>
-               </div>
-               				</div>
-            		
-            <p style="text-align:center;"></p>
+                  <div id="div__309">
+                     					
+                     <h5>
+                        						<br class="linebreak">Wien / vom 16. bis 18. April / 1721.</h5>
+                     					
+                     <p id="p__126" class="yes-index">
+                        						<br class="linebreak">MJtwoch / den 16. April. Jhre Glorwürdigst=Regierend=Rö=<br class="linebreak">misch=Kaiserlich=und Königlich=Catholische Majestät haben 
+                        						<br class="linebreak">jüngstens den Titl. Herrn Georg Sigmund Hechensteiner /
+                        						<br class="linebreak">Churfürstlichen Regiments=Raht zu Straubing / in Bayern / in 
+                        						An=<br class="linebreak">sehung deren ihm beywohnend=guten Gemüts=Gaben / und so wohl 
+                        						<br class="linebreak">Väterlich=als eigen=erworbenen Verdiensten / samt seinen 
+                        						<span  xmlns:local="http://dse-static.foo.bar">Descen-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">den</span>ten / in des Heil. Römischen Reichs Adel=Stand / mit dem 
+                        						Adeli=<br class="linebreak">chen Prädicat von Hechensteiner / erhoben / auch ihme dieser Tagen 
+                        						<br class="linebreak">darüber das gewöhnliche <span  xmlns:local="http://dse-static.foo.bar">Diploma</span> aus Dero Löblich=Kaiserlich=ge=<br class="linebreak">heimen Reichs=Hof=Canzley ausfertigen lassen.</p>
+                     					
+                     <p id="p__61" class="yes-index">
+                        						<br class="linebreak">Sonsten folget hierbey die <span  xmlns:local="http://dse-static.foo.bar">Continuati</span>on des Berichts / was 
+                        						seit=<br class="linebreak">her nach der Begräbnuß Pabst Clemens / des Eilften / und dan 
+                        						vor=<br class="linebreak">wie auch bey dem Eintrit des <span  xmlns:local="http://dse-static.foo.bar">S. Collegii</span> in das <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> zu Rom 
+                        						<br class="linebreak">vom 30. bis den 31. März dieses laufenden Jahrs / sich merkwürdig 
+                        						<br class="linebreak">zugetragen.</p>
+                     					
+                     <p id="p__114" class="yes-index">
+                        						<br class="linebreak">Donnerstag / den 17. April. Heute / Vormittag / ist Jhrer 
+                        						Rö=<br class="linebreak">misch=Kaiserlich=und Catholischen Majestät wirklicher Cammerer/
+                        						<br class="linebreak">Hof=Cammer=Raht / und etlicher Cameral=Haubt=Commissionen 
+                        						ge=<br class="linebreak">wester <span  xmlns:local="http://dse-static.foo.bar">PræsesPraeses</span>, Titl. Herr Philipp / des Heil. Römischen Reichs Graf 
+                        						<br class="linebreak">von Ursin und Rosenberg / ꝛc. in das durch Jhrer Römisch=Kaiser=<br class="linebreak">lich=und Catholischen Majestät gerechtest=Kaiserliche Waffen 
+                        						erober=<br class="linebreak">te Königreich Servien nacher Belgrad zu Wasser abgereiset / um 
+                        						al=<br class="linebreak">dort / als erster Raht / den Besiz zunehmen / und zugleich / nebst dasigen</p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__458">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_2">2</span>
+                  				
+                  <div id="div__456">
+                     					
+                     <p id="p__72" class="yes-index">
+                        						<br class="linebreak">Kaiserlichen <span  xmlns:local="http://dse-static.foo.bar">Guvernato</span>rn / wie auch <span  xmlns:local="http://dse-static.foo.bar">Administrato</span>rn / Jhro 
+                        						Hoch=<br class="linebreak">fürstlichen Durchleucht / Prinzen Alexander / Herzogen zu Würtemberg /
+                        						<br class="linebreak">Allerhöchst=gedacht=Jhrer Römisch=Kaiserlich=und Königlich=Catho=<br class="linebreak">lischen Majestät wirklich=geheimen Raht / und Feld=Marschallen ꝛc. ein=
+                        						<br class="linebreak">und anders / das Cameral=Weesen betreflich / einzurichten / und in 
+                        						<br class="linebreak">guten Stand zubringen.</p>
+                     					
+                     <p id="p__62" class="yes-index">
+                        						<br class="linebreak">Freytag / den 18. April. Die Kaiserliche Werbungen haben so 
+                        						<br class="linebreak">wohl dahier / als anderwärts noch grossen Zulauf; Wie dan auch 
+                        						<br class="linebreak">Heut einige Schiffe mit etlich hundert Mann neugeworbener Leuthen 
+                        						<br class="linebreak">aus dem Reich dahier angelanget / um ferners nach dem Königreich 
+                        						<br class="linebreak">Hungarn zu den aldort befindlich=gehörigen Regimenteren geführet 
+                        						<br class="linebreak">zuwerden.</p>
+                     					
+                     <p id="p__141" class="yes-index">
+                        						<br class="linebreak">Dito wurde mit Brieffen / vom 14. April / aus Dresden 
+                        						berich=<br class="linebreak">tet / wie daß man daselbsten von der glücklichen Ankunft Jhrer 
+                        						Kö=<br class="linebreak">niglich=Polnischen Majestät / und Churfürstlichen Durchleucht zu 
+                        						<br class="linebreak">Sachsen in Warschau die Nachricht erhalten / für welch=höchste 
+                        						Ma=<br class="linebreak">jestät in den Kirchen zu besagtem Dresden das gewöhnliche Gebeht 
+                        						<br class="linebreak">nach der Predig wieder angefangen worden; Jhre Hoheit / der 
+                        						König=<br class="linebreak">liche Chur=Prinz / erlustigten sich entzwischen in der Torgauischen und 
+                        						<br class="linebreak">anderen Gegenden mit der Auerhahn=Pfaltz / und langten zu Dresden 
+                        						<br class="linebreak">jedesmalen wieder an; Daselbsten sie dan und dero Frau Gemahlin /
+                        						<br class="linebreak">die Durchleuchtigste Erz=Herzogin / Maria Josepha / auch öfters 
+                        						<br class="linebreak">der Andacht in der Catholischen Schloß=Capell offentlich 
+                        						abwar=<br class="linebreak">teten.</p>
+                     					
+                     <p id="p__122" class="yes-index">
+                        						<br class="linebreak">Aus Polen / von dem 11. April. Daß der Herr <span  xmlns:local="http://dse-static.foo.bar">Dobros,</span> als 
+                        						<br class="linebreak">Königlicher Gesandter / nacher Londen von Warschau abgangen; Al=<br class="linebreak">da nächstens das <span  xmlns:local="http://dse-static.foo.bar">Senatûs=Consilium</span> seinen Anfang nehmen solle; Jn=<br class="linebreak">zwischen wären viele Relations=Land=Täge nach und nach 
+                        						ange=<br class="linebreak">fangen / auch wieder geendet worden; Wie sonsten aus Preussen habe 
+                        						<br class="linebreak">verlauten wollen / so hätten die aldorten befindlich=Königlich=Preus=<br class="linebreak">sische Truppen die Ordre bekommen / um unter Königsberg sich 
+                        						zu=<br class="linebreak">sammen zuziehen / und zur Musterung sich bereit zuhalten; Als 
+                        						wel=<br class="linebreak">che nächstens Jhre Königliche Majestät in höchster Person 
+                        						vorzuneh=<br class="linebreak">men beschlossen hätten.</p>
+                     					
+                     <p id="p__66" class="yes-index">
+                        						<br class="linebreak">Aus Spannien / von dem 18. März. Daß der Engellische Obrist 
+                        						<br class="linebreak">Stanhoppe / welchem der Hof zu Madrit wegen Absterben desselben 
+                        						<br class="linebreak">Herrn Bruders / gewesten Staats Secretari zu Londen / ein 
+                        						Condo=<br class="linebreak">lenz=Compliment machen lassen / abermalen zu besagtem Madrit mit 
+                        						<br class="linebreak">den Königlichen Ministern ein lange Unterredung gehalten / und dardarauf=</p>
+                     					
+                     <p id="p__7" class="yes-index">
+                        						<br class="linebreak">auf</p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__499">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_3">3</span>
+                  				
+                  <div id="div__495">
+                     					
+                     <p id="p__189" class="yes-index">
+                        						<br class="linebreak">auf mit dem Ausschlag derselben einen Currier nach Londen 
+                        						fortge=<br class="linebreak">schicket; Bey dessen Zuruckunft sich äuseren dörfte / ob erwehnter Obrist 
+                        						<br class="linebreak">zu Madrit zuverbleiben: oder nach Engelland zukehren habe; Des=<br class="linebreak">gleichen woll auch von dem Französischen Minister / <span  xmlns:local="http://dse-static.foo.bar">Marquis de 
+                           						Mau=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">levrier Langeron</span> verlauten / als wan er auch wieder bald von Madrit 
+                        						<br class="linebreak">abgehen solte; Welcher / vermög gehabten Ordre / dem <span  xmlns:local="http://dse-static.foo.bar">Prencipe de
+                           						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cellamare,</span> daß er Grand von Spannien der ersten Claß worden / und 
+                        						<br class="linebreak">wohl wegen des Madritischen Hofs der künftigen Crönung des 
+                        						Kö=<br class="linebreak">nigs in Frankreich beywohnen dörfte / glückwünschen müssen; Oefters 
+                        						<br class="linebreak">gemeldter Hof hab inzwischen einen Currier nach Pariß und 
+                        						Camme=<br class="linebreak">rich gesendet / mit der Verrichtung / ein=für alle mal auf die Eröfnung 
+                        						<br class="linebreak">der dasigen Friedens=Handlung zutreiben / oder in entstehenden Fall 
+                        						<br class="linebreak">den zu End gehenden Waffen=Stillstand wieder auf ein gewisse Zeit 
+                        						<br class="linebreak">zuverlängern; Ubrigens würden in all=Spannischen Provinzen die 
+                        						<br class="linebreak">Werbungen zu Wasser und Land mit solchem Eifer fortgesetzet / daß 
+                        						<br class="linebreak">nicht zubeschreiben.</p>
+                     					
+                     <p id="p__304" class="yes-index">
+                        						<br class="linebreak">Aus Groß=Britannien / vom 4. April. Daß der Obrist <span  xmlns:local="http://dse-static.foo.bar">Churchil</span> 
+                        						wie=<br class="linebreak">der aus Wien den 3. dieses mit Jhrer Kaiserl. Majestät Entschliesung /
+                        						<br class="linebreak">die Auslieferung des zu Antwerpen gefangen=sitzenden Herrn Roberts 
+                        						<br class="linebreak">Knight betreflich / zu Londen angekommen seye; Alda der Herr <span  xmlns:local="http://dse-static.foo.bar">Walpole</span>,
+                        						<br class="linebreak">an statt des verstorbenen Craggs / (welcher des unlängst auch mit 
+                        						<br class="linebreak">Tod abgangen=Groß=Britannischen Staats=Secretari Vater 
+                        						gewe=<br class="linebreak">sen / und aus lauter Schröcken gestorben / als man ihm bedeuten lassen /
+                        						<br class="linebreak">sich wegen der Sud=Compagnie vor Gericht zustellen) zum General=
+                        						<br class="linebreak">Post=Maister von Engelland ernent: der <span  xmlns:local="http://dse-static.foo.bar">Duc de Rutland,</span> und der 
+                        						<br class="linebreak"><span  xmlns:local="http://dse-static.foo.bar">Lord Clinton</span> aber mit gewöhnlichen Ceremonien in das Ober=Hauß 
+                        						<br class="linebreak">des Parlements eingeführet worden / um darin ihren Sitz zunehmen;
+                        						<br class="linebreak">Welches Parlement noch immer beschäftiget / die Sachen wegen der 
+                        						<br class="linebreak">Süd=Compagnie wieder in andern Stand zubringen; Sonsten wär 
+                        						<br class="linebreak">abermal aus Jrrland von ein=und anderem Anhang des Prätendenten 
+                        						<br class="linebreak">ein Gerücht erschollen / so man aber der Zeit für ungegründet halten 
+                        						<br class="linebreak">Jnzwischen wolle verlauten / daß in der Ebene bey <span  xmlns:local="http://dse-static.foo.bar">Onslow</span> all=im 
+                        						<br class="linebreak">Königreich befindliche Truppen im bevorstehenden Sommer sich 
+                        						ver=<br class="linebreak">samlen: und daselbsten ein Lager schlagen sollen; Ubrigens werde mit 
+                        						<br class="linebreak">der nach der Ost=See bestimten Squadra noch unaufhörlich geeilet /
+                        						<br class="linebreak">welche in 21. Schiffen von der Linie / 4. Fregatten / 2. Branderen /
+                        						<br class="linebreak">und 2. Bombardier=Gallioten bestehen: und erwehnte Squadra / so 
+                        						<br class="linebreak">bald nur immer möglich / nach dem Ost=See abgehen solle / um in 
+                        						<br class="linebreak">Zeiten mit einer andern sich vereinigen zukönnen.</p>
+                     					
+                     <p id="p__4" class="yes-index">
+                        						<br class="linebreak">Aus</p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__492">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_4">4</span>
+                  				
+                  <div id="div__488">
+                     					
+                     <p id="p__303" class="yes-index">
+                        						<br class="linebreak">Aus Frankreich / von dem 4. April. Daß Jhre Königliche 
+                        						Ho=<br class="linebreak">heit / der Herzog von <span  xmlns:local="http://dse-static.foo.bar">Orleans</span>, Regent von Frankreich / mit dem 
+                        						Kai=<br class="linebreak">serlichen Minister / Herrn Baron von Pentenrieder / und 
+                        						Engellisch=<br class="linebreak">auserordendtlichen Gesandten / Herrn Ritter <span  xmlns:local="http://dse-static.foo.bar">Sutton</span>, (bey deme 
+                        						jüng=<br class="linebreak">stens der Ottomannische Botschafter / aus habender Bekantschaft von 
+                        						<br class="linebreak">Constantinopel / wie auch der Friedens=Handlung zu Possarowitz her /
+                        						<br class="linebreak">seine Besuchung getahn) wegen deren Hindernussen / so die Friedens=
+                        						<br class="linebreak">Handlung zu Cammerich bishero noch aufgehalten / ein lange 
+                        						Unter=<br class="linebreak">redung / welcher auch der Herr Erz=Bischoff von Cammerich 
+                        						beygewoh=<br class="linebreak">net / gepflogen hätten / um Mittel zufinden / diese Hindernüssen /so 
+                        						Span=<br class="linebreak">nien und Engelland verursachen sollen / aus dem Weeg zuraumen /
+                        						<br class="linebreak">damit nur einsmals erwehnte Friedens=Handlung ihren Fortgang 
+                        						<br class="linebreak">haben möge; Sonsten seye der Herr Cardinal <span  xmlns:local="http://dse-static.foo.bar">de Bissy</span> von Pariß 
+                        						<br class="linebreak">nacher Rom / dahin ein Curier mit wichtigen Briefschaften an den 
+                        						<br class="linebreak">Hrn. Cardinal <span  xmlns:local="http://dse-static.foo.bar">de Rohan</span> auch abgefertiget worden /jüngstens abgereiset;
+                        						<br class="linebreak">Deme die Herren Cärdinäl / <span  xmlns:local="http://dse-static.foo.bar">de Mailly</span> und <span  xmlns:local="http://dse-static.foo.bar">Polignac</span>, nächstens folgen:
+                        						<br class="linebreak">Die Herren Cardinäl / <span  xmlns:local="http://dse-static.foo.bar">de Gesvres</span> und <span  xmlns:local="http://dse-static.foo.bar">Noailles</span>, aber zu Pariß 
+                        						verblei=<br class="linebreak">ben würden; Der leztere habe beschlossen / denen Ordens=Geistlichen 
+                        						<br class="linebreak">keine Weyhe mehr zuertheilen / deren Obern / oder dero Clöster dem 
+                        						Apelli=<br class="linebreak">renden Theil wider die <span  xmlns:local="http://dse-static.foo.bar">Constitution Unigenitus</span> anhängig seyen / und 
+                        						<br class="linebreak">das wär auch die Ursach gewesen / daß der <span  xmlns:local="http://dse-static.foo.bar">Abbè de Fleury</span> bey dem 
+                        						<br class="linebreak">König nicht mehr Beicht=Vater geblieben / dessen Stell inzwischen /
+                        						<br class="linebreak">weilen der Herr <span  xmlns:local="http://dse-static.foo.bar">Abbè de Vivans</span> zu Rom sich aufhalte ein <span  xmlns:local="http://dse-static.foo.bar">Pater S. J.</span>
+                        						<br class="linebreak">wieder versehen solle.</p>
+                     					
+                     <p id="p__130" class="yes-index">
+                        						<br class="linebreak">Aus Holland von dem 8. April. Daß die Generalen / Graf von 
+                        						<br class="linebreak">Hompesch / und Baron von Friesheim / in dem Haag angelanget /
+                        						<br class="linebreak">hingegen von dannen der <span  xmlns:local="http://dse-static.foo.bar">Fiscal</span> von Brabant / Herr <span  xmlns:local="http://dse-static.foo.bar">Nenny</span>, wieder nach 
+                        						<br class="linebreak">Brüssel abgangen / dahin auch nächstens der Herr Resident Pesters 
+                        						<br class="linebreak">kehren solle; Jn besagtem Haag sollen obgedachte Generals mit den 
+                        						<br class="linebreak">Herren von der Regierung: und die Engellisch=wie auch Preussische 
+                        						<br class="linebreak">Ministern mit dem Präsident von der Versamlung einige 
+                        						Unterredun=<br class="linebreak">gen gepflogen haben; Sonsten seye der Her Schwarzenberg zum 
+                        						Obri=<br class="linebreak">sten von dem Regiment des Prinzen von Oranien an Plaz des Herrn 
+                        						<br class="linebreak"><span  xmlns:local="http://dse-static.foo.bar">de Rochebrune</span>; so die Obriste=Stell aufgegeben / jüngstens ernent 
+                        						<br class="linebreak">worden.</p>
+                     					
+                     <p id="p__55" class="yes-index">
+                        						<br class="linebreak">Aus Brabant von dem 8. April. Daß der Herr Cardinal und 
+                        						<br class="linebreak">Erz=Bischof zu Mechlen in dasiger Haubt=Kirche für den jüngst=ver=<br class="linebreak">storbenen Pabst die Leichbesingnuß auf das feyerlichste halten lassen;
+                        						<br class="linebreak">Zu Brüssel seye kürzlich der Sohn des zu Antwerpen auf dasigen</p>
+                     					
+                     <p id="p__5" class="yes-index">
+                        						<br class="linebreak">Ca</p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__487">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_5">5</span>
+                  				
+                  <div id="div__482">
+                     					
+                     <p id="p__36" class="yes-index">
+                        						<br class="linebreak">Castell gefangen sitzenden Herrn Robert Knight, angekommen / und 
+                        						<br class="linebreak">habe die Ständ von Brabant durch ein Memorial ersuchet / seinen 
+                        						<br class="linebreak">V<abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">ate</abbr>r das Recht der Zuflucht=Stadt doch geniesen zulassen.</p>
+                     					
+                     <p id="p__76" class="yes-index">
+                        						<br class="linebreak">Von dem Nieder=Rheinstrom / vom 10. April. Daß von Jhro 
+                        						<br class="linebreak">Churfürstlichen Durchleucht zu Pfaltz der Herr Graf von Schaesberg 
+                        						<br class="linebreak">zum Guverneur=General deren Herzogtümeren / Gülich und Berge /
+                        						<br class="linebreak">und der Herr geheime Raht Brosy zum Vice-Canzler / an statt des 
+                        						<br class="linebreak">verstorbenen Herrn von Hetterman / ernent worden/ Zu Cöllen habe 
+                        						<br class="linebreak">man den Herrn Niclas von Groet zum Burgermaister erwählet.</p>
+                     					
+                     <p id="p__352" class="yes-index">
+                        						<br class="linebreak">Von dem Maynstrom vom 12. April. Daß / um die Fränkische 
+                        						<br class="linebreak">Landen von den in Frankreich und Polen eingerissen=ansteckend=gefähr=<br class="linebreak">lichen Krankheiten zu bewahren / ein Hochlöbliches in der Reichs=
+                        						<br class="linebreak">Stadt Nürnberg versamlet=algemein=Fränkisches Creyß=Convent 
+                        						<br class="linebreak">den ernstlichen Schluß gefast / und sich dahin vereiniget: daß in besagt=
+                        						<br class="linebreak">Fränkischen Landen weder Personen / noch Waaren durchgelassen 
+                        						wer=<br class="linebreak">den sollen; Wan sie nicht mit glaubhaften von Ort zu Ort 
+                        						unter=<br class="linebreak">schriebenen Pässen / Fehden und Zeugnussen bescheinigen und dartuhn 
+                        						<br class="linebreak">können / daß sie von gesunden und unverdächtigen Oertern 
+                        						herkom=<br class="linebreak">men / auch / was die Waaren betreffe / sie an dergleichen unverdächtigen 
+                        						<br class="linebreak">Oertern verfertiget / gewachsen / oder gepacket seyen / zu dem End alle 
+                        						<br class="linebreak">Stücke deren Waaren in denen Pässen eigentlich beschrieben seyn 
+                        						<br class="linebreak">sollen; Widrigesfals man dergleichen Personen und Waaren 
+                        						abwei=<br class="linebreak">sen: zuruckbehalten: auch die leztere gar / gestalteter Dingen nach /
+                        						<br class="linebreak">verbrennen lassen werde; Gleichwie man eben in dem Fränkischen 
+                        						<br class="linebreak">Creyß kein aus Polen kommende Juden passiren lasse; Als werde 
+                        						<br class="linebreak">solches auch auf all=vagirende Bettel=Juden verstanden / welche 
+                        						an=<br class="linebreak">fänglich auf den Gränzen mit wohl empfindlichen Schlägen 
+                        						abgetrie=<br class="linebreak">ben: nachgehends aber / wan sie sich eines Weegs durchzuschleichen 
+                        						<br class="linebreak">unterstehen würden / mit schwerer Leibs=Straf angesehen werden 
+                        						sol=<br class="linebreak">ten: Dergleichen scharfen Befehl auch Jhre Hochfürstl. Gnaden zu 
+                        						<br class="linebreak">Würzburg / zu Erhaltung dero Hochstift und Landen des Herzogtum 
+                        						<br class="linebreak">zu Franken /ergehen lassen / daß nemlichen wegen der in Frankreich 
+                        						grassi=<br class="linebreak">renden Pest / weder Personen / Vieh / noch Waaren / von dorten / noch 
+                        						<br class="linebreak">auch aus Savoyen / und Piemont / oder Graubinden / Schweitz / und 
+                        						<br class="linebreak">Lothringen / noch anderen sonsten gegen Teutschland ligenden / und 
+                        						<br class="linebreak">denenselben Unterschleif gebenden Länderen / ingleichem auch aus 
+                        						<br class="linebreak">Polen nichts bey Leib=und Lebens=Straf / und Verbrennung deren 
+                        						<br class="linebreak">Waaren passiret werden solle.</p>
+                     					
+                     <p id="p__18" class="yes-index">
+                        						<br class="linebreak">Aus der Schweitz / von dem 8. April. Daß von dem Magistrat</p>
+                     					
+                     <p id="p__7" class="yes-index">
+                        						<br class="linebreak">)( 3</p>
+                     					
+                     <p id="p__7" class="yes-index">
+                        						<br class="linebreak">zu</p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__545">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_6">6</span>
+                  				
+                  <div id="div__285">
+                     					
+                     <p id="p__94" class="yes-index">
+                        						<br class="linebreak">zu Zürch / auf Vernehmen / wie Jhre Churfürstliche Durchleucht zu 
+                        						<br class="linebreak">Pfaltz / wegen der in Frankreich grassirenden Pest / die Güter deren 
+                        						Zür=<br class="linebreak">chischen Kaufleuthen / so nach Frankfurt gehen wollen / nahe bey 
+                        						<br class="linebreak">Pforzheim anhalten: und von den Wägen abwerfen lassen / der <span  xmlns:local="http://dse-static.foo.bar">
+                           						Sub-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stitutus</span> Hottinger mit einem Brief an Jhre Churfürstliche Durchleucht 
+                        						<br class="linebreak">zu Pfaltz nach Manheim abgeschicket worden / um Deroselben 
+                        						vorzu=<br class="linebreak">stellen / daß ja die Pest nicht in der Schweitz wäre / und in Frankreich 
+                        						<br class="linebreak">solche gar aufhören solle.</p>
+                     					
+                     <p id="p__190" class="yes-index">
+                        						<br class="linebreak">Von dem Elbstrom / vom 12. April. Daß / zufolg der Nachricht 
+                        						<br class="linebreak">von Petersburg / die Czaarische Gevolmächtigte nach Nystadt / in 
+                        						Fin=<br class="linebreak">land / zu der aldort angestelten Friedens=Unterredung abgangen; Zu 
+                        						<br class="linebreak">Stockholm wär indessen der Prinz Georg von Hessen=Cassel mit 
+                        						<br class="linebreak">wichtigsten <span  xmlns:local="http://dse-static.foo.bar">Commissio</span>nen angekommen / und im Königlichen. Schloß 
+                        						<br class="linebreak">eingekehret; Von Koppenhagen aber werde berichtet / daß Jhre 
+                        						Kö=<br class="linebreak">niglich=Dänische Majestät entschlossen / sobald die Beysetzung der 
+                        						Kö=<br class="linebreak">nigin Leichnam zu Rotschild geschehen sey / eine Reiß nach Jütland und 
+                        						<br class="linebreak">Holstein vorzunehmen / um aller Orten Dero Truppen zubesichtigen /
+                        						<br class="linebreak">und durch die Musterung gehen zulassen; Und würden übrigens 
+                        						da=<br class="linebreak">selbsten solche Anstalten gemacht / als wan ein neuer Krieg vor der Thür 
+                        						<br class="linebreak">wäre; Wie von Berlin die Nachricht kommen / so hätten Jhre 
+                        						Kö=<br class="linebreak">niglich=Preussische Majestät zu Potsdam die alda liegende Cron=Ba=<br class="linebreak">taillon in Waffen sich üben lassen; Darüber aber sich etwas 
+                        						unpäs=<br class="linebreak">lich befunden / daß man deroselben zur Ader lassen müssen.</p>
+                  </div>
+                  				
+                  <div id="div__13">
+                     					
+                     <h5>
+                        						<br class="linebreak">Ankunft deren hoh=und niederen Stands=Personen.</h5>
+                  </div>
+                  				
+                  <div id="div__133">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 16. April / 1721.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stuben=Thor. Herr Baron Rosenwald /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cornet / von des Prinzen Emanuel von 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Savoyen Regiment / komt gestern Abend 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">aus Hungarn / log. auf der Meelgrub.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Karntner=Thor. Herr Graf Anton von 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thurn / komt gestern Abend aus Rom /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">log. beym Herrn Grafen von 
+                        						Diet=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">richstein.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Graf von Windischgräz / Reichs=Hof=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rahts=Präsident / komt vom Guht /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">log. in seinem Hauß.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Baron Plötner komt von Raab / log.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im goldenen Greiffen.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Principe von <span>Villafranca,</span> komt aus 
+                        						Si=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">cilien / log. in 7. Säulen.</li>
+                  </div>
+                  				
+                  <div id="div__32">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 17. Dito.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr <span>Urisari,</span> Haubtmann vom 
+                        						Bonnevalli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">schen Regiment / komt von Brüssel / log.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Sonnauischen Hauß.</li>
+                  </div>
+                  				
+                  <div id="div__89">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 18. Dito.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Roten=Thurn. Fürst Anton von 
+                        						Liech=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tenstein / Kaiserlicher Obrist=Hofmai=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ster / komt von Feldspurg / log. in seinem 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Graf von Sinzendorf / Oe. Obrist=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hof=Canzler / komt von Sellowitz /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">log. im Teutschen Hauß.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Baron <span>Acton,</span> General=Wachtmai=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ster / komt aus Hungarn / log. im Wilden 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Mann.</li>
+                  </div>
+                  				</div>
+               			
+               <div id="div__765">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_7">7</span>
+                  				
+                  <div id="div__13">
+                     					
+                     <h5>
+                        						<br class="linebreak">Lista deren Getauften / in=und vor der Stadt.</h5>
+                  </div>
+                  				
+                  <div id="div__53">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 19. März / 1721.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Reichard Strumpf / Zingieser / und 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Anna sein. Ehew. ihr T. Maria 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Elisabeth.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Dominicus Strasser / Schuster / und 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ursula sein. Ehew ihr S. Leopold Joseph 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Mathias.</li>
+                  </div>
+                  				
+                  <div id="div__141">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 20. Dito.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Simon Rauf / und Maria 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna sein. Ehefr. ihr S. Franz Joachim.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Hrn. Christian Pickard / Fändrich /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Anna Maria sein. Ehew. ihr T.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Josepha.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Stephan Nidericher / und CæciliaCaecilia s.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Elisabeth Catharina.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Carl Kastelli / und Johanna 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Theresia s. Ehew. ihr T. Elisab. Josepha.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Mathias Wöstel / Tafeldecker / und 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Anna sein. Ehew. ihr T. Catha=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">rina Anna.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Gottfried Agster/ Garde=Soldat /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Catharina sein. Ehew. ihr S. Jo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">seph Johann.</li>
+                  </div>
+                  				
+                  <div id="div__224">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 21. Dito.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Michael Wolfgang 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Truckmüller, Kaiserl. Banco=Gesöll=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Einnehmern / und Maria Elisabeth sein.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hausfr. ihr S. Joh Carl Anton Benedict.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Mathias Huber, Kaiserl. Rait=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Officier / und Anna Maria sein. Ehefr.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ihr T. Maria Josepha Christina.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Hrn. Franz Anton von 
+                        						Stasling=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">hauß / und Rosalia sein. Ehefr. ihr T.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Theresia Judith Helena.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Ferdinand Lang / und Barbara sein.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Anna Rosalia.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Christoph Bonzner / und 
+                        						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria Catharina s. Ehefr. ihr S. Joachim 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Jacob.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Krahammer / und Anna 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria sein. Ehew. ihr S. Johann 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Benedict.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Joseph Schneider / Bierabtrager /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Anna Maria sein. Ehew. ihr T.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna Rosina.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Ferdinand Mann / Musicant / und 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Juliana s. Ehew. ihr T. Anna Catharina.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Reß / abgedankten 
+                        						Solda=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ten / und Sophia sein. Ehew. ihr T.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Catharina Barbara.</li>
+                  </div>
+                  				
+                  <div id="div__108">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 22. <abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">D</abbr>ito.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Hrn. Wilibald Perl / und Rosalia 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr S. Joseph Franz.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak"> Dem Paul Ortner / und Catharina sein.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr S. Johann Georg Mathias.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Kelli / und Regina 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr S. Franz Georg.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Georg Krabich / Schnürmacher /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Barbara sein. Ehew. ihr S. Franz.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Grabler / Zimmerman und 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Theresia s. Ehew. ihr S. Clement Georg.</li>
+                  </div>
+                  				
+                  <div id="div__146">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 23. Dito.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Schlachthammer /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Margareth sein. Ehew. ihr S. To=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">bias Ferdinand.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Mathias Knitl / und Catharina sein.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Anna Eleonora.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Hrn. Johann Adam Wenger / Orga=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nist bey St. Michael / und Catharina 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehefr. ihr T. Catharina Leopoldina.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Caspar Anton Krug / Lederzurichter /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Maria Elisabeth sein. Ehew. ihr T.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Theresia</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Lorenz Strasmayer / Schifknecht /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Johanna sein. Ehew. ihr S. Jo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">hann Georg Bernhard.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Kramer / Kutscher / und Eva 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr T. Anna Christina.</li>
+                  </div>
+                  				
+                  <div id="div__19">
+                     					
+                     <h5>
+                        						<br class="linebreak">Lista deren Verstorbenen / in=und vor der Stadt.</h5>
+                  </div>
+                  				
+                  <div id="div__17">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 16. April / 1721. starb</h5>
+                  </div>
+                  				
+                  <div id="div__80">
+                     					
+                     <h5>
+                        						<br class="linebreak">In der Stadt.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Titl. Frau Maria Antonia / Verwittib=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ten Gräfin Palfi von Erdöd / gebohrnen</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Gräfin Souches / ꝛc. ihr Frl. T. Maria 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Josepha / alt 9. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Berger / Zimmergesell / beyn 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">3. weisen Lilien / am alten Kienmarkt /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein W. Christina / alt 63. Jahr.</li>
+                  </div>
+                  				</div>
+               			
+               <div id="div__909">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_8">8</span>
+                  				
+                  <div id="div__17">
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Adam gewester Reutknecht /in Beschau=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß / alt 30. Jahr.</li>
+                  </div>
+                  				
+                  <div id="div__238">
+                     					
+                     <h5>
+                        						<br class="linebreak">Vor der Stadt.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Frau Anna Maria Michlin / Wittib / in 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der Roßau / alt 63. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Georg Schaller / Burger und 
+                        						Ge=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">main=Richter / in der Josephstadt / alt 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">66. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Eva Schwingerin / Wittib / auf der 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Wieden / ihr K. Rosina / alt 8. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anton Wolf Schuster / auserm Klagbaum /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 35. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Rumpler/ Garde=Corporal / beym 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Lerchenfelder Linien=Thor alt 7<abbr title="unclear">9</abbr>. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joseph Daller / Schuster / am Neubau /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 41. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Urban Neylinger / Zimmergesell / in der 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Leopoldstadt / alt 45. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">N. N. unbekannter Jäger / vorm Schanzel /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt bey 60. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Michael Mild / Kutscher / in der Kotgaß /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 43. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Catharina Rotbeckin / Wittib im 
+                        						Lerchen=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">feld / alt 30. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna Kraglin / ausserm Neubau / alt 57. J.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ursula Wagnerin / alt 30. J. Helena 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Pfluckin / alt 31. J. Maria 
+                        						Mosgaz=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">kin / alt 24. J. und Maria <abbr title="unclear">Hupeyrin</abbr> /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 79. Jahr / im Kranken=Hauß.</li>
+                  </div>
+                  				
+                  <div id="div__98">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 17. Dito / in der Stadt.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak"><span>A. R. D.</span> Franz Carl Klug von Grienberg /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">weltlicher Priester / bey der schönen 
+                        						La=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tern / beym Heil. Creutzer=hof alt 68. J. </li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Titl. Frau Anna Elisabeth von Mayditsch /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Wittib /in ihrem Hauß / in der 
+                        						Wilplin=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gerstraß / alt 59. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Augustin Karnegge / Schuster / im 
+                        						Mar=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tinischen Hauß / in der Wallerstraß /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 58. Jahr.</li>
+                  </div>
+                  				
+                  <div id="div__182">
+                     					
+                     <h5>
+                        						<br class="linebreak">Vor der Stadt.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Werner / Goldarbeiter / bey 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria=Hülf sein Ehew. Anna /alt 28. J.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Michael Fischer / Schneider / in 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der Leopoldstadt / alt 39. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Hiniz / Goldschmid / am 
+                        						Neu=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stift / sein K. Johann / alt 8. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Celesdin / Peruckenmacher /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">bey Maria=Hülf / s. K. Anna / alt 7. V. J. </li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ursula Jamhauserin / alt 70. Jahr / Regina 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rosengärberin / alt 85. Jahr / Elisabeth 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Schneterin / alt 80. Jahr / und Ger 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">traud Bollowartin / alt 78. Jahr / im 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Armen=Hauß.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Schmid / alt 33. Jahr / Joseph 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Borman / alt 27. Jahr / Anna Stibin /
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 58. Jahr / und Elisabeth Hauserin 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 45. Jahr / im Kranken=Hauß.</li>
+                  </div>
+                  				
+                  <div id="div__135">
+                     					
+                     <h5>
+                        						<br class="linebreak">Den 18. Dito / in der Stadt.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak"><span>A. R. P.</span> Reymund Angerer / <span>Ord. S. Domi-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nici</span>, im Prediger=Closter / alt 63. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Peter Ernst Adam / Hauß=Verwal=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ter / im Fürst=Schwarzenbergischen 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß /am neuen Markt / alt 76. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Gabriel Hein / Riemergesell / im 
+                        						Riemeri=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">schen Hauß / in der Klugerstraß / alt 40. J.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Blasy Strareiter / Tagwerker / im <span>Doct.</span>
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Lazenhof / alt 40. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Agnes Authoferin / alt 88. J. und 
+                        						Catha=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">rina Kemeterin / alt 77. Jahr / im 
+                        						Bur=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ger=Spittal</li>
+                  </div>
+                  				
+                  <div id="div__250">
+                     					
+                     <h5>
+                        						<br class="linebreak">Vor der Stadt.</h5>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dominicus Engel / Feld=Trompeter / zu 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matzelstorf / alt 24. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Andre Herman / Zuckerbacker / bey St.
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ulrich / alt 87. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Anna Kugelmannin / Wittib / zu 
+                        						Erd=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">berg / ihr K. Michael / alt 3. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Birnbacherin / Wittib / im 
+                        						Liech=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tenthal / alt 53. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Maria Ecklin / Wittib / untern 
+                        						Fel=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">bern / ihr K. Juliana / alt 6. V. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Gabelier / Vorreuter / in der 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Leopoldstadt / s. K. Anna / alt 5. V. J.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Joseph Grassel Zillenschopper / in der 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Leopoldstadt / sein K. Anna / alt 1. J.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Andre Neupauer / Tagwerker / im 
+                        						Lerchen=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">feld / alt 50. Jahr.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Franz Anton Walner / alt 35. Jahr / und 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jgnaz Schwarz, / alt 28. Jahr / beyn 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">B. B. in der Leopoldstadt.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Elisabeth Berlin / alt 50. Jahr / und 
+                        						Ja=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">cob Kaiser / alt 56. Jahr / im Armen=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß.</li>
+                     <li  xmlns:local="http://dse-static.foo.bar">
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Michael Wagner / alt 30. J. und Sabina 
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Erlingerin / alt 50. Jahr in Kranken=
+                        						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß.</li>
+                  </div>
+                  				</div>
+               			
+               <div id="div__702">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_9">9</span>
+                  				
+                  <div id="div__692">
+                     					
+                     <h5>
+                        						<br class="linebreak">Continuation des Berichts dessen / was nach der Begräbnuß 
+                        						<br class="linebreak">P<abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">ab</abbr>st Clemens / des Eilften / und dan vor=wie auch bey dem Eintrit 
+                        						<br class="linebreak">des <span  xmlns:local="http://dse-static.foo.bar">S. Collegii</span> in das<span  xmlns:local="http://dse-static.foo.bar"> Conclave</span> zu Rom / vom 30. bis 31. März / sich 
+                        						<br class="linebreak">merkwürdig zugetragen.</h5>
+                     					
+                     <p id="p__117" class="yes-index">
+                        						<br class="linebreak">SOntag / den 30. März. Heut ware die dreytägig=hochfeyerlich=<br class="linebreak">gehaltene Leichbesingnuß in der Haubt=Kirche zu St. Peter beschlossen: hin=<br class="linebreak">gegen durch ein Decret / welches der Herr Cardinal <span  xmlns:local="http://dse-static.foo.bar">Paracciani</span>, als <span  xmlns:local="http://dse-static.foo.bar">Vicarius 
+                           						Gene-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ralis,</span> ergehen lassen / gebotten worden / daß alle Geistliche / sowohl<span  xmlns:local="http://dse-static.foo.bar"> Seculares,</span> als 
+                        						<br class="linebreak"><span  xmlns:local="http://dse-static.foo.bar">Regulares,</span> die Leichbesingnuß gleichfals für den verstorbenen Pabst / Clemens den 
+                        						<br class="linebreak">Eilften / begehen: dan alle in der Stadt Rom befindliche Priester ein H. Meß für 
+                        						<br class="linebreak">ihn lesen: auch all=Christ=glaubig=Catholische / beederley Geschlechts / denselben in 
+                        						<br class="linebreak">ihr Gebeht einschließen solten.</p>
+                     					
+                     <p id="p__65" class="yes-index">
+                        						<br class="linebreak">Nichtweniger wurde der Befehl / zufolg deren Heil. Satzungen / ertheilet / daß 
+                        						<br class="linebreak">man bey jeder H. Meß künftighin die Collect für Erwählung eines Pabsts behten:
+                        						<br class="linebreak">auch in allen Kirchen das Hochwürdigste Sacrament aussetzen: und all=Christ=<br class="linebreak">glaubig=Catholische Christen ermahnen solle / deshalben ebenmässig ihr andächtiges 
+                        						<br class="linebreak">Gebeht zu GOtt zuschicken;</p>
+                     					
+                     <p id="p__161" class="yes-index">
+                        						<br class="linebreak">Dan hat auch der Herr <span  xmlns:local="http://dse-static.foo.bar">Gouernatore Falconieri</span> all=bisherige Spiel / sie mögen 
+                        						<br class="linebreak">Namen haben / wie sie wollen / nach dem üblichen Gebrauch / wan der Päbstl. Stul sich 
+                        						<br class="linebreak">leer befinde / unter scharfer Straf untersagen: ingleichem bey dem Bann und 
+                        						Ga=<br class="linebreak">leeren (auf welche 46. Gefangene aus dem Castell <span  xmlns:local="http://dse-static.foo.bar">S. Angelo</span> nach <span  xmlns:local="http://dse-static.foo.bar">Civita vecchia</span> 
+                        						ge=<br class="linebreak">führet worden) ja bey Lebens=Straf verbiehten lassen / daß man sich all=übler 
+                        						Gesprä=<br class="linebreak">chen / Verunglimpfungen / Schmäschriften / und Pasquillen enthalten solle / damit 
+                        						<br class="linebreak">alles in Ruh seyn möge; Welche zuerhalten / auch Jhre Palläst zu bewahren / die 
+                        						<br class="linebreak">Herren Cardinäl=und andere Ministern / die Fürsten=wie auch die vornehmste des 
+                        						<br class="linebreak">Adels / und sonderlich der <span  xmlns:local="http://dse-static.foo.bar">Prencipi Chigi,</span> Marschall von dem <span  xmlns:local="http://dse-static.foo.bar">Conclave,</span> vieles Volk 
+                        						<br class="linebreak">annehmen: und dasselbe mit Gewehr versehen lassen.</p>
+                     					
+                     <p id="p__178" class="yes-index">
+                        						<br class="linebreak">Die Herren Cardinäl deren drey Orden / als deren Herren Bischöffen / Priestern /
+                        						<br class="linebreak">und Diaconen / hatten der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa di Piombino</span> bedeuten lassen: Wan sie ihre 
+                        						<br class="linebreak">mit der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa Ruspoli</span> habende Stritsache / so daher entstanden / daß ihre Kutscher 
+                        						<br class="linebreak">zusammen gefahren und keiner weichen wollen / nicht vor dem Eingang des <span  xmlns:local="http://dse-static.foo.bar">Conclave</span>
+                        						<br class="linebreak">gütlich beylegen würde; So wolten die berührte Herren Cardinäl solches selber /
+                        						<br class="linebreak">aber zu der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa di Piombino</span> schlechter Vergnügung / tuhn lassen; Dahero 
+                        						<br class="linebreak">dieselbe / um nichts Widriges zuerwarten / durch den Herrn <span  xmlns:local="http://dse-static.foo.bar">Marchese del Bufalo</span>
+                        						<br class="linebreak">der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa Ruspoli</span> ein Compliment machen: und ihr zugleich hinterbringen 
+                        						<br class="linebreak">lassen / daß die <span  xmlns:local="http://dse-static.foo.bar">Prencipessa di Piombino</span>, sobald sie vernommen / wie ihre 
+                        						Bedien=<br class="linebreak">ten den Respect gegen jene vergessen / dieselbe sogleich aus ihren Diensten 
+                        						abschaf=<br class="linebreak">fen lassen; Darauf von der <span  xmlns:local="http://dse-static.foo.bar">Prencipessa Ruspoli</span> wieder mittels eines schönen 
+                        						Com=<br class="linebreak">pliments geantwortet: mithin aller bisherige Verdruß / und die Sequestration 
+                        						auf=<br class="linebreak">gehoben worden.</p>
+                     					
+                     <p id="p__98" class="yes-index">
+                        						<br class="linebreak">Ubrigens hat auch Heute das Capitul bey <span  xmlns:local="http://dse-static.foo.bar">S. Maria Maggiore,</span> (U. L. F. der 
+                        						<br class="linebreak">Grösseren) nach überwunden=verschiedenen Widerwärtigkeiten / die dasselbe von 
+                        						<br class="linebreak">der Zeit / da es nemlichen den 24. November verwichenes Jahrs unter den 
+                        						Kaiser=<br class="linebreak">lich=Oesterreichischen Schutz sich begeben / bis daher ausstehen müssen / nach 
+                        						abge=<br class="linebreak">legt=Spannisch=Anjouinischen Wappen / das Kaiserlich=Oesterreichische / mit Jhrer 
+                        						<br class="linebreak">Kaiserlich=und Catholischen Majestät Bildnuß / bey hellem Tag davor aufgemacht.</p>
+                     					
+                     <p id="p__42" class="yes-index">
+                        						<br class="linebreak">Montag / den 31. Dito. Heute / Vormittag / hatte das <span  xmlns:local="http://dse-static.foo.bar">S. Collegium</span> bey 
+                        						<br class="linebreak">St. Peter in dasiger Chor=Capelle sich wieder versamlet / und der Herr <span  xmlns:local="http://dse-static.foo.bar">Decanus</span>,</p>
+                  </div>
+                  				</div>
+               			
+               <div id="div__756">
+                  					<span  xmlns:local="http://dse-static.foo.bar" class="anchor-pb"></span><span  xmlns:local="http://dse-static.foo.bar" class="pb" source="#facs_10">10</span>
+                  				
+                  <div id="div__746">
+                     					
+                     <p id="p__251" class="yes-index">
+                        						<br class="linebreak">Cardinal <span  xmlns:local="http://dse-static.foo.bar">Tanara</span>, das Amt der H. Meß vom H. Geist gesungen: <span  xmlns:local="http://dse-static.foo.bar">Monsignor Mari,</span>
+                        						<br class="linebreak">Bischof von <span  xmlns:local="http://dse-static.foo.bar">Aleria,</span> aber in seinem Rochet und roten Vesper=Mantel / mit der Jnful 
+                        						<br class="linebreak">auf dem Haubt / a<abbr  xmlns:local="http://dse-static.foo.bar" title="unclear">m</abbr> Ende des Altars zur Seiten des Evangeliums auf einer über 
+                        						<br class="linebreak">die drey Stafel gesetzten Canzel ein sehr gelehrt=und geistreiche Predig über die Wahl 
+                        						<br class="linebreak">eines neuen Pabsten mit rühmlichem Eifer und Herzhaftigkeit / jedoch auch 
+                        						wohlan=<br class="linebreak">ständigen Sitsamkeit löblichst gehalten / hiernächst die Päbstliche Herren 
+                        						Mu=<br class="linebreak">canten das Gesang: <span  xmlns:local="http://dse-static.foo.bar">Veni Creator Spiritus &amp;c.</span> gesungen; Nach welchem die 
+                        						Her=<br class="linebreak">ren Cardinäl Paar=Weiß / und nach der Ordnung / als erstlichen die Herren 
+                        						Bi=<br class="linebreak">schöffe / dan die Priestere / und leztens die <span  xmlns:local="http://dse-static.foo.bar">Diaco</span>nen / mit Vorhertragung des 
+                        						Creu=<br class="linebreak">tzes nach dem <span  xmlns:local="http://dse-static.foo.bar">Conclave,</span> und zufordrist in die Paulinische Capelle sich begeben 
+                        						hat=<br class="linebreak">ten; Daselbsten / als man in solcher Ordnung angelangt ware / wurden zu erst die 
+                        						<br class="linebreak">Päbstl. Bullen und Satzungen / wegen der Wahl eines neuen Pabsts und 
+                        						Nichtver=<br class="linebreak">äuserung der Kirchen=Gühter / vorgelesen / und dieselbe hierauf von den Herren 
+                        						<br class="linebreak">Cardinälen beschworen / dan diese Cermonien mittels einer wohlgefasten Red über 
+                        						<br class="linebreak">die Weiß der Erwählung eines neuen Pabsts von dem <span  xmlns:local="http://dse-static.foo.bar">Decano S. Collegii,</span> Herrn 
+                        						<br class="linebreak">Cardinal <span  xmlns:local="http://dse-static.foo.bar">Tanara,</span> geschlossen; Hiernächst jeder deren Cardinälen sich in seine Zell 
+                        						<br class="linebreak">verfüget hatte;</p>
+                     					
+                     <p id="p__203" class="yes-index">
+                        						<br class="linebreak">Des Nachmittags aber hatte der <span  xmlns:local="http://dse-static.foo.bar">Prencipe Chigi,</span> Marschall der Heil. Kirche=
+                        						<br class="linebreak">und Beschützer des <span  xmlns:local="http://dse-static.foo.bar">Conclave,</span> mit dreyen Kutschen / dero Pferden kostbare Quasten 
+                        						ge=<br class="linebreak">habt, aus seinem Pallast nach besagtem <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> sich erhoben / deme dessen 
+                        						Obri=<br class="linebreak">ster / Cavalier <span  xmlns:local="http://dse-static.foo.bar">Androsilla,</span> zu Pferd / erstlich mit 200. Mann / in purpurfarber 
+                        						Munti=<br class="linebreak">rung / und dan drey Compagnien anderer Soldaten nach dem <span  xmlns:local="http://dse-static.foo.bar">Vatican</span> um die 
+                        						<br class="linebreak">Wacht in dem <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> zuhalten / gefolget; Wie dan bey der Pforte desselben 
+                        						er=<br class="linebreak">wehnter <span  xmlns:local="http://dse-static.foo.bar">Prencipe,</span> dessen Volk / ohne die ander=alte Miliz in dem Plaz / darinnen 
+                        						<br class="linebreak">und davor einquartirt liget / so Tag / als Nacht sich befinden muß; Desgleichen auch 
+                        						<br class="linebreak">der <span  xmlns:local="http://dse-static.foo.bar">Monsignor Ruspoli</span> mit seiner Trabanten=Garde gute Wacht zur Sicherheit der 
+                        						<br class="linebreak">Vorstadt St. Peter halten lasset: Welche des Nachts von allen Seiten des 
+                        						Ca=<br class="linebreak">stels geschlossen / und mit Ketten durchzogen werde; Massen auch alles aldorten 
+                        						<br class="linebreak">so wohl / als in der Stadt Rom selbsten mit Wacht versehen / und so Tag / als 
+                        						<br class="linebreak">Nacht die Soldaten / und bewafnete Leuthe patrolliren müssen.</p>
+                     					
+                     <p id="p__201" class="yes-index">
+                        						<br class="linebreak">Und weilen in einer zuvor gehaltenen Congregation der Herr Cardinal <span  xmlns:local="http://dse-static.foo.bar">
+                           						Acqua-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">viva</span> (in dessen Abwesenheit und Befindung im <span  xmlns:local="http://dse-static.foo.bar">Conclave</span> desselben Spannischen 
+                        						<br class="linebreak">Pallast der <span  xmlns:local="http://dse-static.foo.bar">P. Ascanio,</span> ein Dominicaner / immittels bezogen; Als welcher von dem 
+                        						<br class="linebreak">Madritischen Hof bestellet worden / dessen Angelegenheiten zubeobachten; Wie dan 
+                        						<br class="linebreak">auch derselbe von des Cardinal <span  xmlns:local="http://dse-static.foo.bar">Aquaviva</span> Leuthen bedienet wird) wegen 
+                        						Vorschü=<br class="linebreak">tzung seiner Unpäslichkeit von dem <span  xmlns:local="http://dse-static.foo.bar">S. Collegio</span> den dritten<span  xmlns:local="http://dse-static.foo.bar">Conclavi</span>sten erhalten;
+                        						<br class="linebreak">So haben Jhre Eminenz / der Herr Cardinal Althan / als Kaiserlicher Minister /
+                        						<br class="linebreak">ein Gleiches begehret / welches aber mit 14. Verneinungs=gegen 12. Bejahungs=
+                        						<br class="linebreak">Stimmen versaget worden; Da aber Jhre Eminenz mit vielen Exempeln klar 
+                        						<br class="linebreak">vorgestellet / gewöhnlich zuseyn / daß nicht allein die Herren Cardinal=Ministern /
+                        						<br class="linebreak">sondern auch die über den Gebürgen befindliche Herren Cardinäl so oft / als sie 
+                        						<br class="linebreak">verlangt / den dritten <span  xmlns:local="http://dse-static.foo.bar">Conclavi</span>sten bekommen hätten; Als hat Jhro Eminenz / der 
+                        						<br class="linebreak">dritte <span  xmlns:local="http://dse-static.foo.bar">Conclavi</span>st auch zugestanden werden müssen; Welches jedoch einige Cardinal von 
+                        						<br class="linebreak">dergleichen Begehren abgehalten hat /damit es ihnen nicht abgeschlagenwerden möge.</p>
+                     					
+                     <p id="p__96" class="yes-index">
+                        						<br class="linebreak">Sonsten hat Heut / Abends / aus Frankreich der Herr Cardinal de <span  xmlns:local="http://dse-static.foo.bar">Rohan,</span>
+                        						<br class="linebreak">welchen einer von dem Französischen Minister / Herrn <span  xmlns:local="http://dse-static.foo.bar">l’Affiteau,</span> entgegen 
+                        						geschick=<br class="linebreak">ter Currier/ mit der Nachricht von des Pabsten Tod zu Trient angetroffen / dahier 
+                        						<br class="linebreak">sich eingefunden / und ist in dem bestelten Pallast von Hohen=Embs eingekehrt; Als 
+                        						<br class="linebreak">bis dahin selben die ihm ein Stuckweegs aus Rom von denen Herren Cardinälen /
+                        						<br class="linebreak"><span  xmlns:local="http://dse-static.foo.bar">Aquaviva</span> und <span  xmlns:local="http://dse-static.foo.bar">Ottoboni,</span> zugeschickte Kutschen / jede mit 6. Pferden / begleitet hatten.</p>
+                  </div>
+                  				</div>
+               		
+               <p style="text-align:center;"></p>
+            </div>
          </div>
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.2.6/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script></body>
 </html>
