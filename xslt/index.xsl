@@ -38,13 +38,14 @@
                                 <tr>
                                     <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
                                     <th scope="col" tabulator-headerFilter="input">Titel</th>
+                                    <th scope="col" tabulator-headerFilter="input">Sammlung</th>
                                     <th scope="col" tabulator-headerFilter="input">Dateinname</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <xsl:for-each select="collection('../data/editions/present/?select=*.xml')//tei:TEI|collection('../data/editions/legacy/?select=*.xml')//tei:TEI">
                                     <xsl:variable name="file">
-                                        <xsl:value-of select="concat(replace(@xml:id, 'edoc_wd_', ''), '.html')"/>
+                                        <xsl:value-of select="concat(replace(@xml:id, '.xml', ''), '.html')"/>
                                     </xsl:variable>
                                     <tr>
                                         <td>
@@ -60,7 +61,17 @@
                                                 select=".//tei:titleStmt/tei:title[@level='a']/text()|.//tei:titleStmt/tei:title[@type='num']"/>
                                         </td>
                                         <td>
-                                            
+                                            <xsl:choose>
+                                                <xsl:when test=".//tei:titleStmt/tei:title[@type='num']/text()">
+                                                    legacy
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    present
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="@xml:id"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>

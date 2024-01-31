@@ -21,21 +21,26 @@
                 <li class="dropdown-item">
                     <full-size opt="fls"></full-size>
                 </li>
+                <!--
                 <li class="dropdown-item">
                     <image-switch opt="es"></image-switch>
                 </li>
+                -->
                 <li class="dropdown-item">
                     <font-size opt="fs"></font-size>
                 </li>
                 <li class="dropdown-item">
                     <font-family opt="ff"></font-family>
                 </li>
+                <!--
                 <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
                     <annotation-slider opt="ef"></annotation-slider>
                 </li>
+                -->
                 <li class="dropdown-item">
-                    <annotation-slider opt="prs"></annotation-slider>
+                    <annotation-slider opt="br"></annotation-slider>
                 </li>
+                <!--
                 <li class="dropdown-item">
                     <annotation-slider opt="plc"></annotation-slider>
                 </li>
@@ -45,6 +50,7 @@
                 <li class="dropdown-item">
                     <annotation-slider opt="org"></annotation-slider>
                 </li>
+                -->
             </ul>                                                    
         </div>
         

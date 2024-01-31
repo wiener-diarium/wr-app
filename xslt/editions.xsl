@@ -42,11 +42,6 @@
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
-                <style>
-                    .navBarNavDropdown ul li:nth-child(2) {
-                        display: none !important;
-                    }
-                </style>
             </head>
             <body class="d-flex flex-column">
                 <xsl:call-template name="nav_bar"/>
@@ -60,7 +55,7 @@
                         </div>
                         <div class="page-content">
                             <xsl:apply-templates select=".//tei:body"/>
-                            <p style="text-align:center;">
+                            <p id="{local:makeId(.)}" style="text-align:center;">
                                 <xsl:for-each select=".//tei:note[not(./tei:p)]">
                                     <div class="footnotes" id="{local:makeId(.)}">
                                         <xsl:element name="a">
@@ -93,35 +88,52 @@
                 <xsl:call-template name="html_footer"/>
                 <script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
-                <script type="text/javascript" src="js/osd_scroll.js"></script>
+                <!--<script type="text/javascript" src="js/osd_scroll.js"></script>-->
                 
             </body>
         </html>
     </xsl:template>
     
+    <xsl:template match="//text()[parent::tei:p[ancestor::tei:body]]">
+        <xsl:choose>
+            <xsl:when test="following-sibling::tei:*[1]/@break='no'">
+                <xsl:value-of select="replace(., '\s+$', '')"/>
+            </xsl:when>
+            <xsl:when test="matches(., '=$', 'm')">
+                <xsl:value-of select="replace(., '\s+$', '')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template match="tei:titlePart">
         <xsl:choose>
-            <xsl:when test="@type='count-date' or @type='num'">
-                <h3><xsl:apply-templates/></h3>
+            <xsl:when test="@type='count-date-normalized' or @type='num'">
+                <h4 id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></h4>
             </xsl:when>
             <xsl:when test="@type='main-title' or @type='main'">
-                <p><xsl:apply-templates/></p>
+                <h1 id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></h1>
             </xsl:when>
             <xsl:when test="@type='imprint'">
-                <p class="italic"><xsl:apply-templates/></p>
+                <p id="{local:makeId(.)}" class="yes-index italic"><xsl:apply-templates/></p>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:imprimatur">
-        <p><xsl:apply-templates/></p>
+        <p id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></p>
     </xsl:template>
     
     <xsl:template match="tei:head">
-        <h5><xsl:apply-templates/></h5>
+        <h5 id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></h5>
     </xsl:template>
     
     <xsl:template match="tei:lb">
+        <xsl:if test="@break">
+            <span class="linebreak"><xsl:text>=</xsl:text></span>
+        </xsl:if>
         <br class="linebreak"/>
     </xsl:template>
     
@@ -134,9 +146,39 @@
     </xsl:template>
     
     <xsl:template match="tei:ab">
-        <p id="{local:makeId(.)}" class="yes-index">
-            <xsl:apply-templates/>
-        </p>
+        <xsl:choose>
+            <xsl:when test="@type='list'">
+                <ul>
+                    <xsl:for-each-group select="*" group-starting-with="tei:lb">
+                        <li class="yes-index"
+                            data-zone="{current-group()/self::tei:lb/@facs}"
+                            data-num="{current-group()/self::tei:lb/@n}">
+                            <xsl:value-of select="current-group()/self::text()"/>
+                        </li>
+                    </xsl:for-each-group>
+                </ul>
+            </xsl:when>
+            <xsl:when test="@type='catch-word'">
+                <p id="{local:makeId(.)}" class="yes-index catch-word">
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:when>
+            <xsl:when test="@type='imprint' and not(contains(@facs, 'facs_1_'))">
+                <p id="{local:makeId(.)}" class="italic yes-index catch-word">
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:when>
+            <xsl:when test="@type='count-date' and not(contains(@facs, 'facs_1_'))">
+                <h4 id="{local:makeId(.)}" class="yes-index count-date">
+                    <xsl:apply-templates/>
+                </h4>
+            </xsl:when>
+            <xsl:otherwise>
+                <p id="{local:makeId(.)}" class="yes-index">
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:p">

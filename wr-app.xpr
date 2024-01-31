@@ -6,8 +6,42 @@
             <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>additional.frameworks.directories</String>
+                        <String-array>
+                            <String>${pd}/framework</String>
+                        </String-array>
+                    </entry>
+                    <entry>
+                        <String>frameworks.directory.url.with.editor.variables</String>
+                        <String>file:/home/daniel/Documents/ERC-TibSchol/TEI-curation/framework</String>
+                    </entry>
+                    <entry>
+                        <String>key.editor.document.type.custom.locations.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>data/editions/present/1756-01-03.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>editions</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>data/meta/about.xml</String>
@@ -559,7 +593,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>toc</String>
+                                    <String>search</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -577,7 +611,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/toc.xsl</String>
+                                    <String>${pdu}/xslt/search.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -595,10 +629,10 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/html/toc.html</String>
+                                    <String>${pd}/html/search.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -642,7 +676,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>search</String>
+                                    <String>toc</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -660,7 +694,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslt/search.xsl</String>
+                                    <String>${pdu}/xslt/toc.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -678,10 +712,10 @@
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/html/search.html</String>
+                                    <String>${pd}/html/toc.html</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
