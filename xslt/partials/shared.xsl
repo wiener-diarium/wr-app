@@ -15,9 +15,11 @@
     </xsl:function>
     
     <xsl:template match="tei:pb">
+        <xsl:variable name="graphic-id" select="data(substring-after(@facs, '#'))"/>
+        <xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>
         <div class="grid-item grid-item--width2">
             <span class="anchor-pb"></span>
-            <span class="pb lightgrey" source="{@facs}">[<xsl:value-of select="./@n"/>]</span>
+            <span class="pb lightgrey" source="{$graphic-url}">[<xsl:value-of select="./@n"/>]</span>
         </div>
     </xsl:template>
     <xsl:template match="tei:unclear">

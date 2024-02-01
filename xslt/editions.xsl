@@ -53,7 +53,7 @@
                         <div class="page-content">
                             <!--<xsl:apply-templates select=".//tei:body"/>-->
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 section px-4">
                                     <div class="title-page py-4">
                                         <xsl:apply-templates select=".//tei:front"/>
                                     </div>
@@ -66,8 +66,15 @@
                                         </xsl:for-each>
                                     </xsl:for-each-group>
                                 </div>
-                                <div class="col-md-6">
-                                    
+                                <div class="col-md-6 facsimiles">
+                                    <div id="viewer-1" class="sticky">
+                                        <!--<div id="spinner_1" class="text-center">
+                                            <div class="loader"></div>
+                                        </div>-->
+                                        <div id="container_facs_1" style="padding:.5em;margin-top:2em;">
+                                            <!-- image container accessed by OSD script -->                               
+                                        </div>  
+                                    </div>
                                 </div>
                             </div>
                             <p id="{local:makeId(.)}" style="text-align:center;">
@@ -102,8 +109,9 @@
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
-                <!--<script type="text/javascript" src="js/osd_scroll.js"></script>-->
+                <script type="text/javascript" src="js/osd_scroll.js"></script>
                 <script type="text/javascript" src="js/masonry.js"></script>
                 
             </body>
