@@ -45,13 +45,13 @@
                             <tbody>
                                 <xsl:for-each select="collection('../data/editions/present/?select=*.xml')//tei:TEI|collection('../data/editions/legacy/?select=*.xml')//tei:TEI">
                                     <xsl:variable name="file">
-                                        <xsl:value-of select="concat(replace(@xml:id, '.xml', ''), '.html')"/>
+                                        <xsl:value-of select="replace(replace(@xml:id, '.xml', '.html'), 'edoc_wd_', '')"/>
                                     </xsl:variable>
                                     <tr>
                                         <td>
                                             <a>
                                                 <xsl:attribute name="href">
-                                                    <xsl:value-of select="replace($file, 'edoc_wd_', '')" />
+                                                    <xsl:value-of select="$file" />
                                                 </xsl:attribute>
                                                 <i class="bi bi-link-45deg"/>
                                             </a>
@@ -71,7 +71,7 @@
                                             </xsl:choose>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="@xml:id"/>
+                                            <xsl:value-of select="$file"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
