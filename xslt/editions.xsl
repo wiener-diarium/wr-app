@@ -46,15 +46,30 @@
             <body class="d-flex flex-column">
                 <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0">
-                    <div class="container">
+                    <div class="container" style="max-width: 100%;">
                         <div id="editor-widget">
                             <xsl:call-template name="annotation-options"></xsl:call-template>
                         </div>
-                        <div class="title-page">
-                            <xsl:apply-templates select=".//tei:front"/>
-                        </div>
                         <div class="page-content">
-                            <xsl:apply-templates select=".//tei:body"/>
+                            <!--<xsl:apply-templates select=".//tei:body"/>-->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="title-page py-4">
+                                        <xsl:apply-templates select=".//tei:front"/>
+                                    </div>
+                                    <xsl:for-each-group select=".//tei:body" group-starting-with="tei:pb">
+                                        <xsl:for-each select="current-group()">
+                                            <div class="grid">
+                                                <div class="grid-sizer"></div>
+                                                <xsl:apply-templates/>
+                                            </div>
+                                        </xsl:for-each>
+                                    </xsl:for-each-group>
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                </div>
+                            </div>
                             <p id="{local:makeId(.)}" style="text-align:center;">
                                 <xsl:for-each select=".//tei:note[not(./tei:p)]">
                                     <div class="footnotes" id="{local:makeId(.)}">
@@ -89,12 +104,15 @@
                 <script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
                 <!--<script type="text/javascript" src="js/osd_scroll.js"></script>-->
+                <script type="text/javascript" src="js/masonry.js"></script>
                 
             </body>
         </html>
     </xsl:template>
     
-    <xsl:template match="//text()[parent::tei:p[ancestor::tei:body]]">
+    <xsl:template match="//text()[parent::tei:p[ancestor::tei:body]]|
+                        //text()[parent::tei:ab[ancestor::tei:body]]|
+                        //text()[parent::tei:head[ancestor::tei:body]]">
         <xsl:choose>
             <xsl:when test="following-sibling::tei:*[1]/@break='no'">
                 <xsl:value-of select="replace(., '\s+$', '')"/>
@@ -111,23 +129,24 @@
     <xsl:template match="tei:titlePart">
         <xsl:choose>
             <xsl:when test="@type='count-date-normalized' or @type='num'">
-                <h4 id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></h4>
+                <h5 id="{local:makeId(.)}" class="yes-index text-center py-2"><xsl:apply-templates/></h5>
             </xsl:when>
             <xsl:when test="@type='main-title' or @type='main'">
-                <h1 id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></h1>
+                <h4 id="{local:makeId(.)}" class="yes-index text-center py-2"><xsl:apply-templates/></h4>
             </xsl:when>
             <xsl:when test="@type='imprint'">
-                <p id="{local:makeId(.)}" class="yes-index italic"><xsl:apply-templates/></p>
+                <p id="{local:makeId(.)}" class="yes-index italic text-center py-2"><xsl:apply-templates/></p>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
     
     <xsl:template match="tei:imprimatur">
-        <p id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></p>
+        <p id="{local:makeId(.)}" class="grid-item yes-index"><xsl:apply-templates/></p>
     </xsl:template>
     
     <xsl:template match="tei:head">
-        <h5 id="{local:makeId(.)}" class="yes-index"><xsl:apply-templates/></h5>
+        
+        
     </xsl:template>
     
     <xsl:template match="tei:lb">
@@ -146,49 +165,88 @@
     </xsl:template>
     
     <xsl:template match="tei:ab">
+        
         <xsl:choose>
             <xsl:when test="@type='list'">
+                <div id="{local:makeId(.)}" class="grid-item">
                 <ul>
-                    <xsl:for-each-group select="*" group-starting-with="tei:lb">
+                    <xsl:for-each-group select="node()" group-starting-with="tei:lb">
+                        <xsl:if test="position() > 1">
                         <li class="yes-index"
                             data-zone="{current-group()/self::tei:lb/@facs}"
                             data-num="{current-group()/self::tei:lb/@n}">
                             <xsl:value-of select="current-group()/self::text()"/>
                         </li>
+                        </xsl:if>
                     </xsl:for-each-group>
                 </ul>
+                </div>
             </xsl:when>
             <xsl:when test="@type='catch-word'">
-                <p id="{local:makeId(.)}" class="yes-index catch-word">
+                <div id="{local:makeId(.)}" class="grid-item grid-item--width2 text-end">
+                <span id="{local:makeId(.)}" class="yes-index catch-word">
                     <xsl:apply-templates/>
-                </p>
+                </span>
+                </div>
             </xsl:when>
             <xsl:when test="@type='imprint' and not(contains(@facs, 'facs_1_'))">
-                <p id="{local:makeId(.)}" class="italic yes-index catch-word">
+                <div id="{local:makeId(.)}" class="grid-item">
+                <span id="{local:makeId(.)}" class="italic yes-index catch-word">
                     <xsl:apply-templates/>
-                </p>
+                </span>
+                </div>
             </xsl:when>
             <xsl:when test="@type='count-date' and not(contains(@facs, 'facs_1_'))">
+                <div id="{local:makeId(.)}" class="grid-item">
                 <h4 id="{local:makeId(.)}" class="yes-index count-date">
                     <xsl:apply-templates/>
                 </h4>
+                </div>
             </xsl:when>
             <xsl:otherwise>
-                <p id="{local:makeId(.)}" class="yes-index">
+                <div id="{local:makeId(.)}" class="grid-item">
+                <span id="{local:makeId(.)}" class="yes-index">
                     <xsl:apply-templates/>
-                </p>
+                </span>
+                </div>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:p">
-        <p id="{local:makeId(.)}" class="yes-index">
-            <xsl:apply-templates/>
-        </p>
-    </xsl:template>
-    <xsl:template match="tei:div">
-        <div id="{local:makeId(.)}">
-            <xsl:apply-templates/>
+        <div class="grid-item">
+            <xsl:if test="preceding-sibling::*[1]/name() = 'head'">
+                <xsl:for-each select="preceding-sibling::*[1]">
+                    <h5 id="{local:makeId(.)}" class="yes-index text-center">
+                    <xsl:apply-templates/>
+                    </h5>
+                </xsl:for-each>
+            </xsl:if>
+            <p id="{local:makeId(.)}" class="yes-index">
+                <xsl:apply-templates/>
+                <!--<xsl:if test="following-sibling::tei:p[@prev]">
+                    <xsl:if test="following-sibling::*[1]/name() = 'pb'">
+                        <xsl:for-each select="following-sibling::*[1]">
+                            <span class="anchor-pb"></span>
+                            <span class="pb lightgrey" source="{@facs}">[<xsl:value-of select="./@n"/>]</span>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:for-each select="following-sibling::tei:p[@prev]">
+                        <xsl:apply-templates/>
+                    </xsl:for-each>
+                </xsl:if>-->
+            </p>
         </div>
-    </xsl:template>  
+    </xsl:template>
+    
+    <!--<xsl:template match="tei:p[@prev]"/>-->
+    
+    <!--<xsl:template match="tei:pb[following-sibling::tei:p[@prev]]"/>-->
+    
+<!--    <xsl:template match="tei:div">
+        <!-\-<div id="{local:makeId(.)}">
+            <xsl:apply-templates/>
+        </div>-\->
+        <xsl:apply-templates/>
+    </xsl:template>  -->
 </xsl:stylesheet>

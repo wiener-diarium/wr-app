@@ -15,8 +15,10 @@
     </xsl:function>
     
     <xsl:template match="tei:pb">
-        <span class="anchor-pb"></span>
-        <span class="pb lightgrey" source="{@facs}">[<xsl:value-of select="./@n"/>]</span>
+        <div class="grid-item grid-item--width2">
+            <span class="anchor-pb"></span>
+            <span class="pb lightgrey" source="{@facs}">[<xsl:value-of select="./@n"/>]</span>
+        </div>
     </xsl:template>
     <xsl:template match="tei:unclear">
         <abbr title="unclear"><xsl:apply-templates/></abbr>

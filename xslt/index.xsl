@@ -51,7 +51,7 @@
                                         <td>
                                             <a>
                                                 <xsl:attribute name="href">
-                                                    <xsl:value-of select="$file" />
+                                                    <xsl:value-of select="replace($file, 'edoc_wd_', '')" />
                                                 </xsl:attribute>
                                                 <i class="bi bi-link-45deg"/>
                                             </a>
