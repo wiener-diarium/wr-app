@@ -8,10 +8,10 @@ var editor = new LoadEditor({
           title: "Zeilenumbrüche",
           color: "red",
           html_class: "linebreak",
-          css_class: "undefined",
+          css_class: "linebreak-on",
           chg_citation: "citation-url",
           hide: {
-            hidden: true,
+            hidden: false,
             class: "linebreak",
           },
           features: {
