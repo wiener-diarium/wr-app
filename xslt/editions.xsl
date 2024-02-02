@@ -55,12 +55,14 @@
                             <div class="row">
                                 <div class="col-md-6 section px-4">
                                     <div class="title-page py-4">
+                                        <p><a href="?br=on&amp;fs=18">Zeilenumbrüche anzeigen</a></p>
+                                        <p><a href="?br=off&amp;fs=default">Zeilenumbrüche ausblenden</a></p>
                                         <xsl:apply-templates select=".//tei:front"/>
                                     </div>
                                     <xsl:for-each-group select=".//tei:body" group-starting-with="tei:pb">
                                         <xsl:for-each select="current-group()">
                                             <div class="grid">
-                                                <div class="grid-sizer"></div>
+                                                <!--<div class="grid-sizer"></div>-->
                                                 <xsl:apply-templates/>
                                             </div>
                                         </xsl:for-each>
@@ -110,9 +112,10 @@
                 <xsl:call-template name="html_footer"/>
                 <script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
+                <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
                 <script type="text/javascript" src="js/osd_scroll.js"></script>
-                <script type="text/javascript" src="js/masonry.js"></script>
+                <script type="text/javascript" src="js/isotope-app-detail.js"></script>
                 
             </body>
         </html>
