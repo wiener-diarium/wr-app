@@ -6,7 +6,7 @@ var editor = new LoadEditor({
           opt: "br",
           opt_slider: "entities-features-slider",
           title: "Zeilenumbrüche",
-          color: "red",
+          color: "undefined",
           html_class: "linebreak",
           css_class: "linebreak-on",
           chg_citation: "citation-url",
