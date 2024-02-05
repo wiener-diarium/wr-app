@@ -49,9 +49,14 @@
                     <div class="container" style="max-width: 100%;">
                         <div class="page-content">
                             <!--<xsl:apply-templates select=".//tei:body"/>-->
-                            <div class="row">
+                            <div class="row my-4">
                                 <div class="col-md-6 section px-4">
                                     <div id="editor-widget">
+                                        <label>
+                                            <a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16"><path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg>
+                                            </a>
+                                        </label>
                                         <ul class="list-group">
                                             <li class="list-group-item">
                                                 <full-size opt="fls"></full-size>
@@ -70,9 +75,9 @@
                                     <div class="title-page py-4">
                                         <xsl:apply-templates select=".//tei:front"/>
                                     </div>
-                                    <xsl:for-each-group select=".//tei:body/tei:div" group-starting-with="tei:pb">
+                                    <xsl:for-each-group select=".//tei:body[tei:div[@type='article']]|.//tei:body/tei:div[@type='page']" group-starting-with="tei:pb">
                                         <xsl:for-each select="current-group()">
-                                            <div class="grid">
+                                            <div class="grid {if(position() = last()) then('margin-end') else()}">
                                                 <!--<div class="grid-sizer"></div>-->
                                                 <xsl:apply-templates/>
                                             </div>
@@ -84,7 +89,7 @@
                                         <!--<div id="spinner_1" class="text-center">
                                             <div class="loader"></div>
                                         </div>-->
-                                        <div id="container_facs_1" style="padding:.5em;margin-top:2em;">
+                                        <div id="container_facs_1">
                                             <!-- image container accessed by OSD script -->                               
                                         </div>  
                                     </div>
@@ -163,13 +168,28 @@
     </xsl:template>
     
     <xsl:template match="tei:imprimatur">
-        <p id="{local:makeId(.)}" class="grid-item yes-index"><xsl:apply-templates/></p>
+        <div id="{local:makeId(.)}" class="grid-item">
+            <p id="{local:makeId(.)}" class="grid-item yes-index"><xsl:apply-templates/></p>
+        </div>
     </xsl:template>
     
-    <xsl:template match="tei:head">
-        
-        
+    <xsl:template match="tei:head[parent::tei:div[@type='page']]">
+        <div id="{local:makeId(.)}" class="grid-item">
+            <h5 id="{local:makeId(.)}" class="yes-index text-center">
+                <xsl:apply-templates/>
+            </h5>
+        </div>
     </xsl:template>
+    
+    <xsl:template match="tei:head[parent::tei:div[not(@type)] and not(following-sibling::tei:*)]">
+        <div id="{local:makeId(.)}" class="grid-item">
+            <h5 id="{local:makeId(.)}" class="yes-index text-center">
+                <xsl:apply-templates/>
+            </h5>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:head"/>
     
     <xsl:template match="tei:lb">
         <xsl:if test="@break">
@@ -184,6 +204,28 @@
     
     <xsl:template match="tei:pc">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:fw[@type='catch']">
+        <div id="{local:makeId(.)}" class="grid-item grid-item--width2 text-end">
+            <span id="{local:makeId(.)}" class="yes-index catch-word">
+                <xsl:apply-templates/>
+            </span>
+        </div>
+    </xsl:template>
+    <xsl:template match="tei:fw[@type='sig']">
+        <div id="{local:makeId(.)}" class="grid-item grid-item--width2 text-center">
+            <span id="{local:makeId(.)}" class="yes-index catch-word">
+                <xsl:apply-templates/>
+            </span>
+        </div>
+    </xsl:template>
+    <xsl:template match="tei:fw[@type='pageNum']">
+        <div id="{local:makeId(.)}" class="grid-item grid-item--width2 text-center">
+            <span id="{local:makeId(.)}" class="yes-index catch-word">
+                <xsl:apply-templates/>
+            </span>
+        </div>
     </xsl:template>
     
     <xsl:template match="tei:ab">

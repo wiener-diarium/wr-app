@@ -28,16 +28,16 @@
                 <xsl:variable name="img-dir-day" select="tokenize($date, '-')[3]"/>
                 <xsl:variable name="img-dir-yearx" select="concat(substring($img-dir-year, 1, 3), 'x')"/>
                 <xsl:variable name="graphic-url" select="concat($img-url, $img-dir-yearx, '/', $img-dir-year, '/', $img-dir-month, '/', $img-dir1, '/', $img-1, '/full/full/0/default.jpg')"/>
-                <div class="grid-item grid-item--width2">
+                <div class="grid-item grid-item--width2 my-4">
                     <span class="anchor-pb"></span>
-                    <span class="pb lightgrey" source="{$graphic-url}">[<xsl:value-of select="./@n"/>]</span>
+                    <span class="pb lightgrey" source="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
                 </div>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>
-                <div class="grid-item grid-item--width2">
+                <div class="grid-item grid-item--width2 my-4">
                     <span class="anchor-pb"></span>
-                    <span class="pb lightgrey" source="{$graphic-url}">[<xsl:value-of select="./@n"/>]</span>
+                    <span class="pb lightgrey" source="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
                 </div>
             </xsl:otherwise>
         </xsl:choose>
@@ -80,14 +80,23 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="tei:list[@type='unordered']">
-        <xsl:choose>
-            <xsl:when test="ancestor::tei:body">
-                <ul class="yes-index">
-                    <xsl:apply-templates/>
-                </ul>
-            </xsl:when>
-        </xsl:choose>
+    <xsl:template match="tei:list">
+        <div class="grid-item">
+            <xsl:choose>
+                <xsl:when test="ancestor::tei:body">
+                    <xsl:if test="preceding-sibling::*[1]/name() = 'head'">
+                        <xsl:for-each select="preceding-sibling::*[1]">
+                            <h5 id="{local:makeId(.)}" class="yes-index text-center">
+                                <xsl:apply-templates/>
+                            </h5>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <ul class="yes-index">
+                        <xsl:apply-templates/>
+                    </ul>
+                </xsl:when>
+            </xsl:choose>
+        </div>
     </xsl:template>
     <xsl:template match="tei:item">
         <xsl:choose>
@@ -139,14 +148,16 @@
     </xsl:template>
     
     <xsl:template match="tei:table">
-        <xsl:element name="table">
-            <xsl:attribute name="class">
-                <xsl:text>table table-bordered table-striped table-condensed table-hover</xsl:text>
-            </xsl:attribute>
-            <xsl:element name="tbody">
-                <xsl:apply-templates/>
+        <div class="grid-item">
+            <xsl:element name="table">
+                <xsl:attribute name="class">
+                    <xsl:text>table table-bordered table-striped table-condensed table-hover</xsl:text>
+                </xsl:attribute>
+                <xsl:element name="tbody">
+                    <xsl:apply-templates/>
+                </xsl:element>
             </xsl:element>
-        </xsl:element>
+        </div>
     </xsl:template>
     <xsl:template match="tei:row">
         <xsl:element name="tr">
