@@ -47,16 +47,27 @@
                 <xsl:call-template name="nav_bar"/>
                 <main class="flex-shrink-0">
                     <div class="container" style="max-width: 100%;">
-                        <div id="editor-widget">
-                            <xsl:call-template name="annotation-options"></xsl:call-template>
-                        </div>
                         <div class="page-content">
                             <!--<xsl:apply-templates select=".//tei:body"/>-->
                             <div class="row">
                                 <div class="col-md-6 section px-4">
+                                    <div id="editor-widget">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <full-size opt="fls"></full-size>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <font-size opt="fs"></font-size>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <font-family opt="ff"></font-family>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <annotation-slider opt="br"></annotation-slider>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div class="title-page py-4">
-                                        <p><a href="?br=on&amp;fs=18">Zeilenumbrüche anzeigen</a></p>
-                                        <p><a href="?br=off&amp;fs=default">Zeilenumbrüche ausblenden</a></p>
                                         <xsl:apply-templates select=".//tei:front"/>
                                     </div>
                                     <xsl:for-each-group select=".//tei:body/tei:div" group-starting-with="tei:pb">

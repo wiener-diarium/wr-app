@@ -19,6 +19,7 @@ imagesLoaded( grid, function() {
     },
     sortBy: 'data'
   });
+
   var filterFns = {
     decate1: function() {
       var date = this.getAttribute('data-date');
@@ -71,14 +72,20 @@ imagesLoaded( grid, function() {
       return date > new Date('1789-12-31') && date < new Date('1799-12-31');
     }
   }
+
   document.getElementById("grid-select-year")
   .addEventListener('change', function() {
     var filterValue = this.value;
     iso.arrange({ filter: filterValue });
   });
+
   var buttons = document.getElementById("filter-button-group1");
   buttons.childNodes.forEach(function(button) {
     button.addEventListener('click', function() {
+      buttons.childNodes.forEach(function(button) {
+        button.classList.remove('active');
+      });
+      this.classList.add('active');
       var filterValue = this.getAttribute('data-filter');
       if (filterValue.includes("decate")) {
         filterValue = filterFns[filterValue]
@@ -88,4 +95,5 @@ imagesLoaded( grid, function() {
       iso.arrange({ filter: filterValue });
     });
   });
+
 });

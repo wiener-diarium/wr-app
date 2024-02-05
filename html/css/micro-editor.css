@@ -71,10 +71,10 @@ input:checked+.i-slider:before {
 /* accumulated element number next to slider */
 .slider-number::after {
   content: "(" attr(data) ")";
-  color: #444;
+  color: #fff;
   display: block;
   width: 50px;
-  margin-left: 3em;
+  margin-left: 4em;
 }
 
 .bi-pencil-square {
@@ -194,7 +194,7 @@ input:checked+.i-slider:before {
 
 .nav-link.btn.active {
   background-color: #88dbdf !important;
-}
+}s
 
 .nav-link.btn {
   background-color: transparent !important;
@@ -204,10 +204,42 @@ input:checked+.i-slider:before {
   background-color: transparent !important;
 }
 
-
+/* 
 #editor-widget {
   position: fixed;
-  right: 5%;
   max-width: 100px;
   z-index: 1;
+} */
+
+#editor-widget {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.list-group {
+  display: flex;
+  border: none;
+  border-radius: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #36a4aa;
+  border-radius: .35rem;
+  padding: .1em;
+}
+
+.font-select {
+  font-size: 14px;
+  border-radius: .35rem;
+  vertical-align: middle;
+}
+
+.list-group .list-group-item {
+  border: none;
+  display: inline;
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+  margin: 0;
 }
