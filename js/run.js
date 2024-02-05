@@ -49,7 +49,7 @@ var editor = new LoadEditor({
         },
       ],
       active_class: "active",
-      html_class: "form-select",
+      html_class: "font-select",
     },
     fs: {
       name: "Create full size mode",
@@ -89,7 +89,7 @@ var editor = new LoadEditor({
         },
       ],
       active_class: "active",
-      html_class: "form-select",
+      html_class: "font-select",
     },
     /*is: {
       name: "Facsimiles On/Off",
