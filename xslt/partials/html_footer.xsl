@@ -6,7 +6,7 @@
     exclude-result-prefixes="#all"
     version="2.0">
     <xsl:template match="/" name="html_footer">
-        <footer class="footer mt-auto py-3 bg-body-tertiary">
+        <footer class="footer mt-auto py-3 bg-body-tertiary" style="margin-top: auto;">
             <div class="float-end me-3">
                 <a href="{$github_url}"><i class="bi bi-github"></i></a>
             </div>

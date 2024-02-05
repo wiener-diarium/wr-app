@@ -1,11 +1,5 @@
-var msnry = new Isotope( '.grid', {
-  // options
-  itemSelector: '.grid-item',
-
-});
-
-// element argument can be a selector string
-//   for an individual element
-// var msnry = new Masonry( '.grid', {
+// var msnry = new Isotope( '.grid', {
 //   // options
+//   itemSelector: '.grid-item',
+
 // });

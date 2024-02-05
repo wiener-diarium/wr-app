@@ -4,7 +4,7 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:local="http://dse-static.foo.bar"
-    exclude-result-prefixes="xs"
+    exclude-result-prefixes="#all"
     version="2.0">
     <xsl:function name="local:makeId" as="xs:string">
         <xsl:param name="currentNode" as="node()"/>
@@ -16,11 +16,31 @@
     
     <xsl:template match="tei:pb">
         <xsl:variable name="graphic-id" select="data(substring-after(@facs, '#'))"/>
-        <xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>
-        <div class="grid-item grid-item--width2">
-            <span class="anchor-pb"></span>
-            <span class="pb lightgrey" source="{$graphic-url}">[<xsl:value-of select="./@n"/>]</span>
-        </div>
+        <xsl:choose>
+            <xsl:when test="starts-with(ancestor::tei:TEI/@xml:id, 'edoc_wd_')">
+                <xsl:variable name="date" select="substring-after(ancestor::tei:TEI/@xml:id, 'edoc_wd_')"/>
+                <xsl:variable name="img-url" select="'https://diarium-images.acdh-dev.oeaw.ac.at/'"/>
+                <xsl:variable name="img-fn" select="substring-after(ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[1]/@url, 'anno:')"/>
+                <xsl:variable name="img-1" select="replace(replace(tokenize($img-fn, '_')[last()], '.jpg', ''), '.png', '')"/>
+                <xsl:variable name="img-dir1" select="tokenize($img-1, '-')[1]"/>
+                <xsl:variable name="img-dir-year" select="tokenize($date, '-')[1]"/>
+                <xsl:variable name="img-dir-month" select="tokenize($date, '-')[2]"/>
+                <xsl:variable name="img-dir-day" select="tokenize($date, '-')[3]"/>
+                <xsl:variable name="img-dir-yearx" select="concat(substring($img-dir-year, 1, 3), 'x')"/>
+                <xsl:variable name="graphic-url" select="concat($img-url, $img-dir-yearx, '/', $img-dir-year, '/', $img-dir-month, '/', $img-dir1, '/', $img-1, '/full/full/0/default.jpg')"/>
+                <div class="grid-item grid-item--width2">
+                    <span class="anchor-pb"></span>
+                    <span class="pb lightgrey" source="{$graphic-url}">[<xsl:value-of select="./@n"/>]</span>
+                </div>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>
+                <div class="grid-item grid-item--width2">
+                    <span class="anchor-pb"></span>
+                    <span class="pb lightgrey" source="{$graphic-url}">[<xsl:value-of select="./@n"/>]</span>
+                </div>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:unclear">
         <abbr title="unclear"><xsl:apply-templates/></abbr>

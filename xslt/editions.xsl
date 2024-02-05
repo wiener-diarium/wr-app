@@ -59,7 +59,7 @@
                                         <p><a href="?br=off&amp;fs=default">Zeilenumbrüche ausblenden</a></p>
                                         <xsl:apply-templates select=".//tei:front"/>
                                     </div>
-                                    <xsl:for-each-group select=".//tei:body" group-starting-with="tei:pb">
+                                    <xsl:for-each-group select=".//tei:body/tei:div" group-starting-with="tei:pb">
                                         <xsl:for-each select="current-group()">
                                             <div class="grid">
                                                 <!--<div class="grid-sizer"></div>-->
