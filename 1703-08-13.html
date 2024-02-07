@@ -35,451 +35,450 @@
       <main class="flex-shrink-0">
          <div class="container" style="max-width: 100%;">
             <div class="page-content">
-               <div class="row my-4">
-                  <div class="col-md-6 section px-4 .yes-index">
-                     <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
-                                 <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                                 <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
-                           <li class="list-group-item">
-                              <full-size opt="fls"></full-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-size opt="fs"></font-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-family opt="ff"></font-family>
-                           </li>
-                           <li class="list-group-item">
-                              <annotation-slider opt="br"></annotation-slider>
-                           </li>
-                        </ul>
+               <div class="row my-4 transcript active">
+                  <div class="col-md-6 text px-4 .yes-index">
+                     <div class="section">
+                        <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
+                              <li class="list-group-item">
+                                 <font-size opt="fs"></font-size>
+                              </li>
+                              <li class="list-group-item">
+                                 <font-family opt="ff"></font-family>
+                              </li>
+                              <li class="list-group-item">
+                                 <annotation-slider opt="br"></annotation-slider>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="sticky row bg-white" style="top: 1em!important;">
+                           <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
+                              <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
+                           <div id="mark-scroll" class="fade-lang col-md-2"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
+                           </div>
+                        </div>
+                        <div class="title-page py-4" id="#top_page">
+                           			
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-000/full/full/0/default.jpg">-----[1]-----</span></div>
+                           				
+                           					
+                           <h5 id="titlePart__6" class="yes-index text-center py-2"> 
+                              		<br class="linebreak"><span>Num.</span> 2. </h5>
+                           					
+                           <h4 id="titlePart__6" class="yes-index text-center py-2"> 
+                              		<br class="linebreak">Wiennerisches <span>Diarium</span>, </h4>
+                           					
+                           				
+                           				
+                           <div id="imprimatur__14" class="grid-item">
+                              <p id="imprimatur__14" class="grid-item yes-index"> 
+                                 		<br class="linebreak">Mit Jhro Römischen Käyserlichen Majestät allergnä=<br class="linebreak">digsten <span>Privilegio.</span> </p>
+                           </div>
+                           			
+                           		</div>
+                        <div class="grid ">
+                           				
+                           				
+                           					
+                           <div id="head__5" class="grid-item">
+                              <h5 id="head__5" class="yes-index text-center"> 
+                                 						<br class="linebreak"><span>Continuatio Diarij.</span> </h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__13" class="yes-index text-center">
+                                 						<br class="linebreak">Auß Wienn von 8. biß 11. <span>Augusti</span> 1703. </h5>
+                              <p id="p__169" class="yes-index"> 
+                                 		<br class="linebreak">DEn 8. <span>dito</span> hat man / daß die Land=Militz / welche hin und wieder 
+                                 		<br class="linebreak">in Oesterreich auffgebotten worden / theils zu Stockerau / theils 
+                                 		<br class="linebreak">anderwerts ihren vorgesetzten <span>Officiers</span> diser Tagen übergeben 
+                                 			<br class="linebreak">worden / umb sie in denen Waffen zu <span>exerci</span>ren. Wie verlautet / seynd 
+                                 			<br class="linebreak">2. Käyserl. in O. O. stehende Regimenter beordert / ihren <span>March</span> schlei=<br class="linebreak">nig gegen Hungarn herabzunehmen / umb denen Rebellen / nebst den all=<br class="linebreak">da schon befindliche Völckern <span>resisti</span>ren zuhelffen / und die Feinde zu dämpf=<br class="linebreak">fen / welche sich immer verstärcken / weiter umb sich greiffend zimblich Zu=<br class="linebreak">lauff haben / weilen der Ragotzi ihnen alle Freyheit verspricht; <span>Kalo</span> ha=<br class="linebreak">ben sie schon <span>emporti</span>ret / allwo die meiste <span>Mousquetiers</span> zu ihnen gangen /
+                                 			<br class="linebreak">der Lieutenant aber nach <span>Tokay</span> <span>convoy</span>ret worden; die Posten gegen
+                                 			<span>Zat-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mar</span> und Sibenbürgen seynd alle schon gesperrt / womit sie nicht weiter ge= </p>
+                           </div>
+                           				
+                           <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word"> 
+                                 		<br class="linebreak">hen </span></div>
+                           			</div>
+                        <div class="grid ">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-001/full/full/0/default.jpg">-----[2]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <p id="p__182" class="yes-index"> 
+                                 		<br class="linebreak">hen können. Gestern ist ein <span>Courier</span> von der <span>Armée</span> auß Jtalien
+                                 					<span>arri-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">vi</span>rt / mit Bericht / daß die Frantzosen bey seiner Abreyß den Tyrolischen 
+                                 		<br class="linebreak">Paß <span>Riva</span> zu beschiessen angefangen / und obwohlen deß Feindes dahin 
+                                 		<br class="linebreak"><span>March</span> leicht mit Steinern hätte verhindert werden können / so wären doch 
+                                 		<br class="linebreak">deren Grafen von <span>Arco</span> Bauern alle durchgangen. Herr General <span>Solari</span> 
+                                 					<br class="linebreak">und <span>Vaubonne</span> hätten sich bey <span>Roveredo</span> <span>conjungi</span>rt / und werden suchen 
+                                 		<br class="linebreak">den Feind auff alle Weiß Abbruch zu thun. <span>Bersello</span> hat sich auß höch=<br class="linebreak">ster Hungers=Noth ergeben müssen / in 500. Krancke haben die Feinde 
+                                 		<br class="linebreak">zu unserer <span>Armée</span> geliffert / in 900. Gesunde aber zu Kriegs=Gefangene 
+                                 		<br class="linebreak">gemacht / weilen die Unsrigen die <span>Ruptur</span> deß <span>Cartels</span> nicht gewust / und 
+                                 		<br class="linebreak">also mit schändlicher Hinterlist zuruck angehalten worden. Herr Graf 
+                                 					<br class="linebreak"><span>Guido</span> von Stahrenberg ist <span>resolvi</span>rt / wofern die Frantzosen weiter in Ty=<br class="linebreak">roll eindringen solten / ein <span>Detachement</span> von 8000. Mann ihme auff den 
+                                 		<br class="linebreak">Rucken nachzusenden. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__122" class="yes-index"> 
+                                 			<br class="linebreak"><span>Eodem</span> <span>dito</span> <span>celebri</span>rten Jhre beede Käyserliche Majestäten sambt Jh=<br class="linebreak">ro Hochheit dem Ertz=Hertzogen Carl / und der Durchleüchtigsten jun=<br class="linebreak">gen Herrschafft das Fest <span>Mariæ-</span>Schnee genannt (welches vergange=<br class="linebreak">nen Sonntag gefallen ware) in dem Königl. Jungfrauen=Closter zu den 
+                                 		<br class="linebreak">Engeln genannt / deß Ordens der H. <span>Claræ</span>, mit einem hohen Ambt /
+                                 		<br class="linebreak">und nach eingenommenen Mittagmahl daselbsten mit einer <span>Vesper</span> und 
+                                 		<br class="linebreak"><span>Litaney;</span> Die beyde Königl. Majest. aber hielten dero Andacht bey
+                                 			<span>Ma-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">riæ-</span>Hietzing / und speiseten nachdem zu Schönbrunn in dero Königlichen 
+                                 			<br class="linebreak">Pallast / deß Abends aber <span>reverti</span>rten dieselbe wieder in die Käyserl.
+                                 			<span>Fa-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">vorita.</span>
+                                 		</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__198" class="yes-index"> 
+                                 		<br class="linebreak">Auß dem Käyserl. Feld=Lager von Haußheimb von 1. <span>Aug</span> hat man /
+                                 						<br class="linebreak">daß sich eine Parthey Husaren biß nahe an Lauingen <span>hazardi</span>rt / und hat 
+                                 		<br class="linebreak">8. Frantzosen gefangen bekommen / wie auch mit der Vorwacht dapffer 
+                                 						<br class="linebreak"><span>chargi</span>rt / dises verursachte dem Feind einen solchen <span>Allarm</span> / daß er auß 
+                                 						<br class="linebreak">Stucken gar auff sie feüerten. Unsere <span>Redou</span>ten seynd nunmehro in ih=<br class="linebreak">ren <span>Perfection-</span>Stand / und glaubet man / daß solche das Würtenbergi=<br class="linebreak">sche Land genugsam bedecken / mit der übrigen <span>Armée</span> aber die Donau
+                                 						<span>pas-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">si</span>ren / und die Frantzosen allda angreiffen werden. Der Herr Marggraf 
+                                 		<br class="linebreak">von Bareyth stehet mit seiner <span>Armée</span> noch bey uns / und seynd wir der 
+                                 		<br class="linebreak">Königlich=Preüssischen und Pfältzischen Völcker in 14000. Mann ohn=<br class="linebreak">gefehr bestehend auch noch den 3. oder 4. dises gewärtig. Gestern Vor=<br class="linebreak">mittag ist zwischen denen Käyserlichen Trouppen unterm Herrn General 
+                                 						<br class="linebreak"><span>de la Tour</span> bey Wenderdingen / und denen hinauff <span>commandir</span>ten Frantzö=<br class="linebreak">sischen <span>Detachement</span> eine etlich=stündige <span>Rencontre</span> vorbey gangen / wor= </p>
+                           </div>
+                           				
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
+                                 		<br class="linebreak">bey </span></div>
+                           			</div>
+                        <div class="grid ">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-002/full/full/0/default.jpg">-----[3]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <p id="p__169" class="yes-index"> 
+                                 		<br class="linebreak">bey die Letztere den Kürtzern gezogen / wie dann gar viel Wägen mit
+                                 					<span>Bles-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sir</span>ten nacher Ulm geführet worden / und soll darbey sich der <span>Commen-</span> 
+                                 		<br class="linebreak"><span>dant</span> zu Ulm selbsten befinden. Hingegen hat man von München / daß 
+                                 		<br class="linebreak">vergangenen Freytag der Herr Graf von <span>Arco,</span> welcher todter auß Ty=<br class="linebreak">roll dahin gebracht / allda begraben worden. Der Herr Graf <span>Veritá,</span> 
+                                 		<br class="linebreak">sey sambt 2. Hatschiren auch erschlagen worden / welche Grafen Se. Chur=<br class="linebreak">fürstl. Durchl. sehr bedauren; andern Tags / als den 28. dito / seyn 300.
+                                 		<br class="linebreak">Blessirte zu besagtem München ankommen / welche gar <span>miserabel</span> gestal=<br class="linebreak">tet / und erbärmlich anzusehen gewesen / es waren zwar einige Frantzosen 
+                                 		<br class="linebreak">darunter / die meisten aber vom Leib=Regiment. Hingegen erwartet man 
+                                 					<br class="linebreak">Jhro Churfürstl. Durchl. welche dero Trouppen bey Seefeld <span>posti</span>ret / und 
+                                 		<br class="linebreak">auß Tyroll zuruck beordert / stündlich in München. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__26" class="yes-index"> 
+                                 			<br class="linebreak">Den 9. <span>dito</span> <span>divertir</span>ten sich Jhre beede Käyserl. und Königl. Majest.
+                                 		<br class="linebreak">mit einer Lust=Jagd. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__243" class="yes-index"> 
+                                 		<br class="linebreak"><span>Eodem</span> brachte der auß Tyrol gekommene <span>Courier,</span> daß / ob zwar der 
+                                 			<br class="linebreak"><span>Duc de Vendôme</span> schier biß auff Trient jenseiths der Etsch <span>avanci</span>ret /
+                                 		<br class="linebreak">beede Generalen <span>Vaubonne</span> und <span>Solari</span> mit ihren Trouppen sich also
+                                 			<span>po-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stir</span>et / daß er bey ihnen ohnmöglich durchbrechen könne / und wann das 
+                                 		<br class="linebreak"><span>Detachement</span> von etlichen Regimentern / so Jhr <span>Excellenz</span> Herr <span>Guido</span> 
+                                 		<br class="linebreak">Graff von Stahrenberg Willens ist an sie abzuschicken / ankommen solte /
+                                 		<br class="linebreak">dem Feind gesambter Hand auff dem Rucken nachzugehen / und ihme ei=<br class="linebreak">nes zuversetzen Willens wären; Herr General Heister stünde mit seiner 
+                                 		<br class="linebreak">Mannschafft auff dem Brenner umb den Bäyrischen / wann solche wider 
+                                 		<br class="linebreak">hinauff kommen wolten / den Weeg hinab zu weisen; So seye auch der 
+                                 		<br class="linebreak">Churfürst in Bäyern / welcher etliche Tag zu München gewesen seyn soll /
+                                 		<br class="linebreak">bey sein noch übrigen Trouppen zu Seefeld wieder angelangt / und lasse 
+                                 		<br class="linebreak">allda sich wacker einschantzen / habe auch von dorten rings umb ein Stund 
+                                 		<br class="linebreak">weit Wachten außstellen lassen: die Bauren hingegen / so wieder in 2.
+                                 		<br class="linebreak">Scharmützel zusammen biß 600. Bäyern niedergemacht / halten Kopff=<br class="linebreak">stein noch umbringt / und sollen eine starcke Parthey davon nach dem Paß 
+                                 		<br class="linebreak">Ehrenberg gegangen seyn / umb die Vestung zuüberrumpeln / oder auff 
+                                 		<br class="linebreak">der Bäyeris. Seiten also einzuschliessen / daß niemand von dorten hinein 
+                                 		<br class="linebreak">noch außkommen möge. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__49" class="yes-index"> 
+                                 		<br class="linebreak"><span>Eod:</span> kam sichere Nachricht auß Ober=Hungarn / daß Hr. Obrist=Wacht=<br class="linebreak">meister Becker abermahl auff em Parthey Rebellen / und Räuber gestos=<br class="linebreak">sen / 1000. davon getödtet / und den Rest in die Flucht gejaget. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__64" class="yes-index"> 
+                                 			<br class="linebreak"><span>Eodem</span> <span>dito</span> wird auß dem Elsaß vom 28. <span>Julij</span> berichtet / daß die Fran=<br class="linebreak">tzösische <span>Armée</span> nächst den Rhein <span>repassi</span>ren werde: Unter dem gemeinen 
+                                 		<br class="linebreak">Mann ist zwar die Rede / daß die Frantzosen Landau noch belagern wer=<br class="linebreak">den / allein es ist gar keine gründliche <span>Apparentz</span> darzu. Einige aber wol= </p>
+                           </div>
+                           				
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
+                                 		<br class="linebreak">len </span></div>
+                           			</div>
+                        <div class="grid ">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-003/full/full/0/default.jpg">-----[4]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <p id="p__49" class="yes-index"> 
+                                 					<br class="linebreak">len daß die Frantzosen <span>Mine</span> machen zur <span>Succuri</span>rung deß <span>Villars,</span> den 
+                                 					<br class="linebreak">Kniebiß zu <span>passi</span>ren / dahero so gleich veranstaltet worden / die Pässe und 
+                                 					<br class="linebreak">Thäler daselbst durch die auffgebottene Bauren und einige <span>regulir</span>te 
+                                 		<br class="linebreak">Trouppen best=möglichst zu verwahren. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__77" class="yes-index"> 
+                                 		<br class="linebreak"><span>Eodem</span> <span>dito</span> kommt vom 29. Julij auß Cölln / daß ohne die 2. Regi=<br class="linebreak">menter zu Pferd und Dragoner / so von dem General von Hochkirchen 
+                                 		<br class="linebreak">auffgerichtet werden sollen / werden Seine Churfürstl. Durchl. zu Pfaltz 
+                                 		<br class="linebreak">noch einige Regimenter zu Fuß werben lassen; Der Bischoff von Mün=<br class="linebreak">ster hat auch noch ein neües Regiment Land=Militz unter dem Obristen 
+                                 			<br class="linebreak">Zimmer <span>formi</span>ren lassen. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__74" class="yes-index"> 
+                                 		<br class="linebreak">Auß Franckreich hat man mit letztern Brieffen durch die Schweitz vom 
+                                 				<br class="linebreak">25. <span>Julij</span> daß die Sevenner in <span>Vivarez</span> eingefallen / umb mit denen in Lan=<br class="linebreak">guedoc sich zu <span>conjungi</span>ren / welche auch würcklich in einem guten Stand 
+                                 		<br class="linebreak">seynd. Daß Zürch und Beern die angräntzende Oerther am Boden=See 
+                                 		<br class="linebreak">in <span>Proteƈtion</span> genommen / thut sich der Frantzösische <span>Ambassadeur</span> starck 
+                                 		<br class="linebreak">darwider setzen. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__132" class="yes-index"> 
+                                 		<br class="linebreak">Berliner Brieff vom 30. <span>Julij</span> geben / daß Se. Königl. Majest. sich von 
+                                 		<br class="linebreak">Oranienburg nacher Schönhausen begeben / aber nur etliche Tage allda 
+                                 		<br class="linebreak">verweilen / und weiter nach denen Mecklenburgischen Gräntzen abreißen 
+                                 			<br class="linebreak">werden / daselbst sich zu <span>diverti</span>ren. Mit Seiner Königl Hoheit dem Herrn 
+                                 			<br class="linebreak">Cron=Printzen / hat es sich nunmehr wieder gantz gebessert. Auß Poh=<br class="linebreak">len hat man nun die Versicherung / daß man daselbst möglichste Anstal=<br class="linebreak">ten mache / sich den <span>Progre</span>ssen der Schwedischen Waffen zuwidersetzen.
+                                 		<br class="linebreak">Jngleichem Seine Königliche Majestät zu Preussen / wegen Elbingen zu 
+                                 			<br class="linebreak"><span>contenti</span>ren / auch mit selbiger / dem König in Dännemarck / und dem 
+                                 		<br class="linebreak">Czaar in Moscau <span>Alliantz</span> zuschliessen. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__167" class="yes-index"> 
+                                 		<br class="linebreak">Auß dem Hollsteinischen vom 26. <span>Julij</span> Jhro Hochfürstliche Durchl.
+                                 		<br class="linebreak">deß Herrn Bischoffs zu Eutin Reichs=<span>Contingent,</span> wie auch deß Herrn 
+                                 		<br class="linebreak">Obristen von Osten Hollsteinische Dragoner=Regiment / so alle wol
+                                 			<span>mon-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ti</span>rt und brave Leüthe / sind den 19. <span>hujus</span> auß den Eutinischen auffgebro=<br class="linebreak">chen / und haben zu Schwartau ihr <span>Rendevous</span> gehalten / daselbst sie ins=<br class="linebreak">gesambt von Jhrer Durchl. dem Hern Bischoffen gemustert / hernach=<br class="linebreak">mals seynd selbe den 20. dito Trembs=Mühle vorbey / und den Marsch 
+                                 		<br class="linebreak">ferner nach dem Obern=Rhein beschleünigen müssen. Beynebens ist 
+                                 		<br class="linebreak">ohnweit Tündern ein Gesund=Brunnen vor 3. Wochen entsprungen /
+                                 			<br class="linebreak">woran schon einige / so lahmgewesen / <span>curi</span>rt worden / es reißen dahin unter=<br class="linebreak">schiedliche mangelhaffte Leüte / GOtt gebe glückliche <span>Continuation;</span> 
+                                 		<br class="linebreak">Man sagt daß der Brunnen von einem Mägdel soll gefunden seyn / wel= </p>
+                           </div>
+                           				
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
+                                 		<br class="linebreak">che </span></div>
+                           			</div>
+                        <div class="grid ">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-004/full/full/0/default.jpg">-----[5]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <p id="p__112" class="yes-index"> 
+                                 		<br class="linebreak">che / weil sie böse Füsse gehabt / sich darinn gewaschen / da dann ihre Beine /
+                                 		<br class="linebreak">so theils verlahmet / wieder gesund / sie aber blind worden / und da sie 
+                                 		<br class="linebreak">solches den Leuthen zu verstehen gegeben / hat sie sich wieder darinn gewa=<br class="linebreak">schen / auch ihr Gesicht wieder bekommenen. Der Herr General Ellen=<br class="linebreak">brech hat von Jhrer Königl. Majest. in Dännemarck 2. Regimenter zu 
+                                 		<br class="linebreak">Pferd und 1. zu Fuß zu werben / <span>Patenta</span> erhalten. Seine Majestät werden 
+                                 		<br class="linebreak">als heut zu Rendsburg vermuthet / umb alldort über die stehende Troup=<br class="linebreak">pen die <span>Revue</span> zuhalten. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__116" class="yes-index"> 
+                                 		<br class="linebreak">Den 10. Begaben sich beede Käyserl. und Königl. Mayt. wie auch 
+                                 			<br class="linebreak">Jhro Hochheit der Ertz=Hertzog Carl / sambt der Durchleuchtigsten Jun=<br class="linebreak">gen Herrschafft nach dem Jungfrauen=Closter / deß Ordens der <span>reguli</span>r-<br class="linebreak">ten Chor=Frauen deß Heil. <span>Augustini</span> bey St. Lorentz / und <span>celebri</span>rten all=<br class="linebreak">da das Fest letzt=besagten Heiligen / vormittag mit einem hohen Ambt /
+                                 		<br class="linebreak">welches Jhro Hochfürstl. Gnaden der Bischoff von Wienn hielte / und 
+                                 		<br class="linebreak">nach eingenommenem Mittagmahl daselbsten / mit einer <span>Vesper</span> und
+                                 			<span>Li-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">taney,</span> deß Abends aber begaben dieselbe sich wieder in dero <span>Favorita.</span> </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__217" class="yes-index"> 
+                                 				<br class="linebreak"><span>Eodem</span> <span>dito.</span> Hat man auß Londen / von 20. <span>Julij,</span> daß auß Jrr=<br class="linebreak">land verschidene Regimenter nach Portugal sollen <span>transporti</span>rt wer=<br class="linebreak">den / zu welchem Ende den 21. ein <span>Courier</span> nach Jrrland <span>depechir</span>et / sol=<br class="linebreak">ches zu befördern. Der Graff Galloway wird ehest nach Holland <abbr title="unclear">gehen</abbr> /
+                                 		<br class="linebreak">von dannen derselbe mit einem offentlichen <span>Character</span> seine Reise nach 
+                                 		<br class="linebreak">Savoyen fortsetzen wird. Unsere Moscowitische Flotte / ist auff die 
+                                 		<br class="linebreak">Zeitung / daß vill Frantzösische Schiffe in die Nord=See kreutzen / zu 
+                                 		<br class="linebreak"><span>Kirkordie,</span> mit den <span>Convoyers</span> eingelauffen. Die <span>Officiers</span> von denen 
+                                 		<br class="linebreak">Zoll=Häusern / haben zu Kent 600. Packen Leinwand / so unlängst auß 
+                                 				<br class="linebreak">Franckreich gekommen / und 60000. Pfund Sterlings werth geschä=<br class="linebreak">tzet werden / <span>arrestir</span>et. Die Königin hat anbefohlen / daß dises Jahr 
+                                 		<br class="linebreak">200000. Pfund Sterlings auß der <span>Civilen=Rolle</span> zu Fortsetzung deß 
+                                 		<br class="linebreak">Kriegs angewend werden sollen. Beynebens wird von Edenburg 
+                                 		<br class="linebreak">von 14. Julij berichtet / daß das Parlament verordnet / das Buch 
+                                 		<br class="linebreak"><span>Anglo=Scotia</span> betitelt / zu Londen herauß gegeben / und lästerliche <span>Refle-</span> 
+                                 		<br class="linebreak"><span>xiones</span> über dise <span>Nation</span> begreiffet / durch den Hencker zuverbrennen. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__87" class="yes-index"> 
+                                 		<br class="linebreak">Auß dem Haag vom 27. <span>Julij.</span> Meldet man / von der grossen
+                                 			<span>Ar-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mée,</span> daß selbige die Frantzosen nicht zum schlagen bringen könne /
+                                 		<br class="linebreak">welche aber grossen Mangel an <span>Fourage</span> leydet / und sich in die Linien 
+                                 		<br class="linebreak">gezogen / als glaubt man / daß ehesten unsere <span>Armée</span> die Feinde in 
+                                 		<br class="linebreak">ihren Lager angreiffen werde / weilen wir biß 80000. Mann starck 
+                                 		<br class="linebreak">seyn. Laut Lissabonischer Brieffen / waren daselbst vill praffe Haupt= </p>
+                           </div>
+                           				
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
+                                 		<br class="linebreak"><span>Officier</span> </span></div>
+                           			</div>
+                        <div class="grid ">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-005/full/full/0/default.jpg">-----[6]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <p id="p__225" class="yes-index"> 
+                                 					<br class="linebreak"><span>Officier</span> auß <span>Gallicien</span> bey dem <span>Admirant</span> von <span>Castili</span>en ankommen /
+                                 		<br class="linebreak">welche die Versicherung gethan / daß in Kurtzem mehr folgen würden /
+                                 		<br class="linebreak">sintemahlen die Herrschafft der Frantzosen nicht länger erdulden kön=<br class="linebreak">ten. Jhr Majestät die Königin von Engeland haben 30. <span>Protestan</span>-<br class="linebreak">ten / einem jeden 100. <span>Guineen</span> gegeben / damit nach Genff zu reisen /
+                                 					<br class="linebreak">umb von dannen solches Geld denen Sevennern zu bringen / damit sol=<br class="linebreak">che eine <span>Subsistence</span> haben mögen / mit dem Versprechen / daß bald grös=<br class="linebreak">sere Summen folgen / auch die <span>combinir</span>te Flotte ihnen das Benöthig=<br class="linebreak">te bringen sollte. Man glaubet / daß die Festung Geldern wohl ehe=<br class="linebreak">sten <span>bombardi</span>ret werden dürffte / weil zu Wesel alle Anstalten darzu 
+                                 		<br class="linebreak">fertig seynd / und nur noch einige Constabler und Bombardirer von 
+                                 		<br class="linebreak"><span>Berlin</span> erwartet werden. Hingegen glaubt man / daß der Rit=<br class="linebreak">ter Schovel mit seiner grossen <span>Esquadre</span> Kriegs=Schiffen seinen 
+                                 		<br class="linebreak">Lauff nach Portugal und dem Mittelländischen Meer wird fortgesetzt 
+                                 		<br class="linebreak">haben. Beynebens wird auch anhero berichtet / daß die
+                                 					<span>Malconten-</span><br class="linebreak">ten 5. Frantzösische Königl. Regimenter sollen geschlagen haben / mit=<br class="linebreak">hin die völlige Ernd in ihre <span>Retirade</span> zu bringen Zeit gewonnen hätten /
+                                 		<br class="linebreak">welches aber mehr <span>Confirmation</span> braucht. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__73" class="yes-index"> 
+                                 			<br class="linebreak">Auß Pohlen vom 15. <span>Julij</span> wird <span>confirmi</span>ret / daß die Schweden 
+                                 		<br class="linebreak">vor Thoren mit ihren Miniren unglücklich gewesen / und sollen ihren 
+                                 		<br class="linebreak">Schaden auff vill 1000. Reichs=Thaller / ohne die verfallene Mann=<br class="linebreak">schafft schätzen / als deren sie schon in 1500. daselbst sollen haben sitzen 
+                                 		<br class="linebreak">lassen / und deren noch täglich zu 5. biß 7. Mann sterben. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__79" class="yes-index"> 
+                                 		<br class="linebreak">Man hat durch Brieffe auß Pariß von 20. <span>Julij,</span> daß der Printz 
+                                 		<br class="linebreak"><span>de Conti</span> nach Spanien gehen soll / umb die Trouppen zu
+                                 			<span>comman-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">di</span>ren / welche auß Franckreich in 10000. Mann starck dahin
+                                 			<span>marchi-</span><br class="linebreak">ren sollen. Auch hat der König <span>Ordre</span> gegeben noch 30. Regimenter 
+                                 		<br class="linebreak">zu Fuß / und 20. zu Pferdt zuwerben / und darmit wider Portugall 
+                                 			<br class="linebreak">zu <span>agi</span>ren. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__131" class="yes-index"> 
+                                 				<br class="linebreak"><span>Eodem</span> kamm ein Schreiben von 1. und 2. <span>Augusti</span> auß Ulm <span>dati</span>rt /
+                                 		<br class="linebreak">den eygentlichen Verlauff der letztgehabten <span>Action</span> mit den Frantzosen be=<br class="linebreak">treffend. Montags Abends zwischen 9. und 10. Uhr seynd bey 1000. Mann 
+                                 		<br class="linebreak">Frantzosen / so wohl <span>lnfanterie</span> als <span>Cavallerie</span> schnell auß der Statt
+                                 				<span>com-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mandi</span>rt worden / worzu die bey Rheinheimb / Pfull / und Offenhausen 
+                                 				<br class="linebreak"><span>campi</span>rende bey 4. biß 5000. Frantzosen gestossen / ihren <span>March</span> über die 
+                                 		<br class="linebreak">zwischen hier / und Wiplingen geschlagene Schiff=Brucken genommen /
+                                 		<br class="linebreak">die bey Echingen / Munterklingen / und Riedlingen ligende Käyserl. Völ=<br class="linebreak">cker auffzuheben / es haben aber vermuthlich die Käyserl. Nachricht dar= </p>
+                           </div>
+                           				
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
+                                 		<br class="linebreak">von </span></div>
+                           			</div>
+                        <div class="grid ">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-006/full/full/0/default.jpg">-----[7]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <p id="p__253" class="yes-index"> 
+                                 		<br class="linebreak">von bekommen / ehe sie dahin angelanget / in <span>Postur</span> gestanden / weilen 
+                                 		<br class="linebreak">aber selbige ziemblich weit auß einander gelegen / als haben sie die
+                                 					<span>Infante-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">rie</span> nicht zu Handen bringen können / dahero sie anfänglich zimblichen 
+                                 		<br class="linebreak">Schaden gelitten / aber sich dannech so dapffer gehalten / daß sie die Frantzo=<br class="linebreak">sen in die Flucht gebracht / und ihrer selbst eygener Aussag nach bey 1200.
+                                 		<br class="linebreak">erleget; Gestern Abends kammen nur einige Trouppen über gedachte 
+                                 		<br class="linebreak">Brucken / biß dahin von sie verfolget / wider an / und wehrete der <span>March</span> 
+                                 		<br class="linebreak">biß 2. Uhr gegen Tags / da dann 15. Wägen mit Blessirten hereinge=<br class="linebreak">bracht / ohne was in das Lager bey Offenhausen geführet worden / dar=<br class="linebreak">von heüt 180. in das so genannte Seelhauß herein kommen sollen / man 
+                                 		<br class="linebreak">hat aller Orthen / insonderheit in die vornehme Häuser geschickt / umb 
+                                 					<br class="linebreak">alte Leinwath / die Verwundte hiermit zuverbinden / auffzubringen / al=<br class="linebreak">le Würthshäuser seynd mit dergleichen <span>Offici</span>ren beleget / deren etliche 
+                                 					<br class="linebreak">heüt gestorben / sie manglen an 130. <span>Officir</span>s so todt und blessiret / darun=<br class="linebreak">ter 4. vornehme gezehlet werden. Gestern fruhe umb 9. Uhr seye der An=<br class="linebreak">griff geschehen / und biß gegen Abend gewehret / es können die Frantzo=<br class="linebreak">sen der Teütschen Dapfferkeit nicht genug rühmen / und sagen selber alle 
+                                 					<span>Of-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ficiers</span> / daß sie bey dergleichen <span>Action</span> niemahlen gewesen. </p>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__306" class="yes-index"> 
+                                 		<br class="linebreak">Ein anders auß Ulm vom 2. <span>dito.</span> Berichte daß auff allhiesigen 
+                                 		<br class="linebreak">Münster kein ander Wacht nicht ist / als die Frantzosen / mißtrauisch / und 
+                                 		<br class="linebreak">wann einige Käyserl. Trouppen sich dann und wann sehen lassen / sich förch=<br class="linebreak">ten / daß die alte Wacht ihnen keinen treuen <span>Raport</span> ertheilen möchte / dann 
+                                 		<br class="linebreak">was die besetzte Thör betrifft / so seynd alle Haupt=Posten von denen 
+                                 		<br class="linebreak">Bäyeris. verwahret / ausser unter dem Gänß=Thor seynd Frantzosen / doch 
+                                 		<br class="linebreak">gleich daran und in dem Zeughauß wider Bäyern; Das scharffe Treffen 
+                                 		<br class="linebreak">welches verschienen Tagen bey Ehingen und Munterklingen zwischen 
+                                 			<br class="linebreak">denen Käyserl. und Frantzosen vorgegangen / wird täglich <span>remarquabl</span>er /
+                                 		<br class="linebreak">es solle dergleichen <span>Action</span> in vielen Jahren nicht geschehen seyn / wie es 
+                                 			<br class="linebreak">dann <span>Officiers</span> <span>attestir</span>en / daß als hitzig und verzweiffelt niemalen gefoch=<br class="linebreak">ten worden. Die Anzahl der Todten und Blessirten an Seiten der Fran=<br class="linebreak">tzosen solle sich auff 1200. und der Käyserl. auff 900. erstrecken / man kan 
+                                 			<br class="linebreak">nicht glauben in was <span>miserabl</span>en Stand die Blessirten anhero gelieffert 
+                                 		<br class="linebreak">worden seynd / mancher hat genug an einer Schrammen / aber dise haben 
+                                 		<br class="linebreak">6. 10. biß 12. Stich; Ein Frantzösischer grosser Herr ist auch gebliben /
+                                 		<br class="linebreak"><span>item</span> etliche Obristen / und bey 200. <span>Officiers,</span> von Käyserlichen wird ein 
+                                 		<br class="linebreak">Printz von Hauß Lüneburg gemüsset / welcher mit andern in die Donau 
+                                 		<br class="linebreak">gesprenget / und darin ertruncken / kein Theil hat dem andern Quartier gege=<br class="linebreak">ben; Der Käyserl. <span>General de la Tour</span> ware schon umbringet und gleich=<br class="linebreak">samb gefangen / aber sonderbarer Weise durchkommen / und höret man 
+                                 		<br class="linebreak">stündlich Wunder / wie verbittert und hitzig alles zugegangen. </p>
+                           </div>
+                           			</div>
+                        <div class="grid margin-end">
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-007/full/full/0/default.jpg">-----[8]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <h5 id="head__17" class="yes-index text-center"> 
+                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Lista 
+                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Deren / von Hohen und Niedrigen Standts=Persoh=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nen Ankunfft. </h5>
+                              <ul class="yes-index">
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kärner=Thor / den 9. Aug. Herr Schnell / kombt als Courier auß 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Tyroll / log. im wilden Mann. </li>
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stuben=Thor / Ein Käyserl. Courier kombt auß Jtalien / log.
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Post=Ambt. </li>
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rothenturn / Ein Käyserl. Courier kombt auß den Haag / log.
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Post=Ambt. </li>
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kärnerthor den 10. Aug. Ein Cavallier <span>Louis d'Nordwig,</span> und 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ein Lieut. vom Lothringis. Regiment / kommen auß Jtalien / log. im 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">wilden Mann. </li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <p id="p__55" class="yes-index"> 
+                                 		<br class="linebreak"><span>NB.</span> Der im vorigen <span>Diario</span> den 4. Aug. angekommene Dähnische Herr Gesandte 
+                                 		<br class="linebreak">heist nicht Herr von Weinberg / sondern Herr von Weyhberg. <span>ltem</span> der den 5. Aug.
+                                 		<br class="linebreak">gekommene Lieut. Tromp auß Dännemarck / ware der Herr General=Lieut. Tromp. </p>
+                           </div>
+                           				
+                           <div id="head__20" class="grid-item">
+                              <h5 id="head__20" class="yes-index text-center"> 
+                                 		<br class="linebreak">Was vom 8. Augusti biß den 11. <span>ejusdem</span> vor 
+                                 		<br class="linebreak">und in der Stadt gestorben. </h5>
+                           </div>
+                           				
+                           <div class="grid-item">
+                              <h5 id="head__11" class="yes-index text-center"> 
+                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 8. Aug. starb in der Stadt </h5>
+                              <ul class="yes-index">
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Sauerzapff / ein Wein=<span>Commissarius</span> im Trienter=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hoff / sein Weib Rosina / ist an innerlicher Fäullung beschaut / alt 37.
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jahr. </li>
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Daupy / ein Lagey im Gräfl. Walsteinischen Hauß in 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der Herrn Gassen / ist an der Lungelsucht beschaut / alt 48. Jahr. </li>
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jacob Mundus / ein Student im Waldmeisters Hauß auff der 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Widen ist am hitzigen Fieber beschaut alt / 20. Jahr. </li>
+                              </ul>
+                           </div>
+                           				
+                           <div class="grid-item">
+                              <h5 id="head__9" class="yes-index text-center"> 
+                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 9 starb vor der Stadt. </h5>
+                              <ul class="yes-index">
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Christoph Hammer / Quardi=Soldaten im Hechlerischen 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß am Neüstifft sein Weib Anna / ist an der Lungelsucht beschaut /
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 55. Jahr. </li>
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Die Elisabeth Brandstetterin / ein lediges Mensch beym gul=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">denen Pelican bey St. Ulrich / ist an der Lungen=Cathar beschaut /
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 48. Jahr </li>
+                              </ul>
+                           </div>
+                           				
+                           <div class="grid-item">
+                              <h5 id="head__10" class="yes-index text-center"> 
+                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 10. starb vor der Stadt. </h5>
+                              <ul class="yes-index">
+                                 	
+                                 <li> 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andreas Schonauer Käys. N. Oe. Regierungs Cantzeley=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Verwandter im Brunnmeisteris. Hauß auff der Laimbgruben sein 
+                                    		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kind Frantz / ist an der Fraiß beschaut / alt ½. Jahr. </li>
+                              </ul>
+                           </div>
+                           			</div>
                      </div>
-                     <div class="sticky row bg-white" style="top: 1em!important;">
-                        <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
-                           <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
-                        <div id="mark-scroll" class="fade-lang col-md-2 my-4"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
-                        </div>
-                     </div>
-                     <div class="title-page py-4" id="#top_page">
-                        			
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-000/full/full/0/default.jpg">-----[1]-----</span></div>
-                        				
-                        					
-                        <h5 id="titlePart__6" class="yes-index text-center py-2"> 
-                           		<br class="linebreak"><span>Num.</span> 2. </h5>
-                        					
-                        <h4 id="titlePart__6" class="yes-index text-center py-2"> 
-                           		<br class="linebreak">Wiennerisches <span>Diarium</span>, </h4>
-                        					
-                        				
-                        				
-                        <div id="imprimatur__14" class="grid-item">
-                           <p id="imprimatur__14" class="grid-item yes-index"> 
-                              		<br class="linebreak">Mit Jhro Römischen Käyserlichen Majestät allergnä=<br class="linebreak">digsten <span>Privilegio.</span> </p>
-                        </div>
-                        			
-                        		</div>
-                     <div class="grid ">
-                        				
-                        				
-                        					
-                        <div id="head__5" class="grid-item">
-                           <h5 id="head__5" class="yes-index text-center"> 
-                              						<br class="linebreak"><span>Continuatio Diarij.</span> </h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__13" class="yes-index text-center">
-                              						<br class="linebreak">Auß Wienn von 8. biß 11. <span>Augusti</span> 1703. </h5>
-                           <p id="p__169" class="yes-index"> 
-                              		<br class="linebreak">DEn 8. <span>dito</span> hat man / daß die Land=Militz / welche hin und wieder 
-                              		<br class="linebreak">in Oesterreich auffgebotten worden / theils zu Stockerau / theils 
-                              		<br class="linebreak">anderwerts ihren vorgesetzten <span>Officiers</span> diser Tagen übergeben 
-                              			<br class="linebreak">worden / umb sie in denen Waffen zu <span>exerci</span>ren. Wie verlautet / seynd 
-                              			<br class="linebreak">2. Käyserl. in O. O. stehende Regimenter beordert / ihren <span>March</span> schlei=<br class="linebreak">nig gegen Hungarn herabzunehmen / umb denen Rebellen / nebst den all=<br class="linebreak">da schon befindliche Völckern <span>resisti</span>ren zuhelffen / und die Feinde zu dämpf=<br class="linebreak">fen / welche sich immer verstärcken / weiter umb sich greiffend zimblich Zu=<br class="linebreak">lauff haben / weilen der Ragotzi ihnen alle Freyheit verspricht; <span>Kalo</span> ha=<br class="linebreak">ben sie schon <span>emporti</span>ret / allwo die meiste <span>Mousquetiers</span> zu ihnen gangen /
-                              			<br class="linebreak">der Lieutenant aber nach <span>Tokay</span> <span>convoy</span>ret worden; die Posten gegen
-                              			<span>Zat-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mar</span> und Sibenbürgen seynd alle schon gesperrt / womit sie nicht weiter ge= </p>
-                        </div>
-                        				
-                        <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word"> 
-                              		<br class="linebreak">hen </span></div>
-                        			</div>
-                     <div class="grid ">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-001/full/full/0/default.jpg">-----[2]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <p id="p__182" class="yes-index"> 
-                              		<br class="linebreak">hen können. Gestern ist ein <span>Courier</span> von der <span>Armée</span> auß Jtalien
-                              					<span>arri-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">vi</span>rt / mit Bericht / daß die Frantzosen bey seiner Abreyß den Tyrolischen 
-                              		<br class="linebreak">Paß <span>Riva</span> zu beschiessen angefangen / und obwohlen deß Feindes dahin 
-                              		<br class="linebreak"><span>March</span> leicht mit Steinern hätte verhindert werden können / so wären doch 
-                              		<br class="linebreak">deren Grafen von <span>Arco</span> Bauern alle durchgangen. Herr General <span>Solari</span> 
-                              					<br class="linebreak">und <span>Vaubonne</span> hätten sich bey <span>Roveredo</span> <span>conjungi</span>rt / und werden suchen 
-                              		<br class="linebreak">den Feind auff alle Weiß Abbruch zu thun. <span>Bersello</span> hat sich auß höch=<br class="linebreak">ster Hungers=Noth ergeben müssen / in 500. Krancke haben die Feinde 
-                              		<br class="linebreak">zu unserer <span>Armée</span> geliffert / in 900. Gesunde aber zu Kriegs=Gefangene 
-                              		<br class="linebreak">gemacht / weilen die Unsrigen die <span>Ruptur</span> deß <span>Cartels</span> nicht gewust / und 
-                              		<br class="linebreak">also mit schändlicher Hinterlist zuruck angehalten worden. Herr Graf 
-                              					<br class="linebreak"><span>Guido</span> von Stahrenberg ist <span>resolvi</span>rt / wofern die Frantzosen weiter in Ty=<br class="linebreak">roll eindringen solten / ein <span>Detachement</span> von 8000. Mann ihme auff den 
-                              		<br class="linebreak">Rucken nachzusenden. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__122" class="yes-index"> 
-                              			<br class="linebreak"><span>Eodem</span> <span>dito</span> <span>celebri</span>rten Jhre beede Käyserliche Majestäten sambt Jh=<br class="linebreak">ro Hochheit dem Ertz=Hertzogen Carl / und der Durchleüchtigsten jun=<br class="linebreak">gen Herrschafft das Fest <span>Mariæ-</span>Schnee genannt (welches vergange=<br class="linebreak">nen Sonntag gefallen ware) in dem Königl. Jungfrauen=Closter zu den 
-                              		<br class="linebreak">Engeln genannt / deß Ordens der H. <span>Claræ</span>, mit einem hohen Ambt /
-                              		<br class="linebreak">und nach eingenommenen Mittagmahl daselbsten mit einer <span>Vesper</span> und 
-                              		<br class="linebreak"><span>Litaney;</span> Die beyde Königl. Majest. aber hielten dero Andacht bey
-                              			<span>Ma-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">riæ-</span>Hietzing / und speiseten nachdem zu Schönbrunn in dero Königlichen 
-                              			<br class="linebreak">Pallast / deß Abends aber <span>reverti</span>rten dieselbe wieder in die Käyserl.
-                              			<span>Fa-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">vorita.</span>
-                              		</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__198" class="yes-index"> 
-                              		<br class="linebreak">Auß dem Käyserl. Feld=Lager von Haußheimb von 1. <span>Aug</span> hat man /
-                              						<br class="linebreak">daß sich eine Parthey Husaren biß nahe an Lauingen <span>hazardi</span>rt / und hat 
-                              		<br class="linebreak">8. Frantzosen gefangen bekommen / wie auch mit der Vorwacht dapffer 
-                              						<br class="linebreak"><span>chargi</span>rt / dises verursachte dem Feind einen solchen <span>Allarm</span> / daß er auß 
-                              						<br class="linebreak">Stucken gar auff sie feüerten. Unsere <span>Redou</span>ten seynd nunmehro in ih=<br class="linebreak">ren <span>Perfection-</span>Stand / und glaubet man / daß solche das Würtenbergi=<br class="linebreak">sche Land genugsam bedecken / mit der übrigen <span>Armée</span> aber die Donau
-                              						<span>pas-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">si</span>ren / und die Frantzosen allda angreiffen werden. Der Herr Marggraf 
-                              		<br class="linebreak">von Bareyth stehet mit seiner <span>Armée</span> noch bey uns / und seynd wir der 
-                              		<br class="linebreak">Königlich=Preüssischen und Pfältzischen Völcker in 14000. Mann ohn=<br class="linebreak">gefehr bestehend auch noch den 3. oder 4. dises gewärtig. Gestern Vor=<br class="linebreak">mittag ist zwischen denen Käyserlichen Trouppen unterm Herrn General 
-                              						<br class="linebreak"><span>de la Tour</span> bey Wenderdingen / und denen hinauff <span>commandir</span>ten Frantzö=<br class="linebreak">sischen <span>Detachement</span> eine etlich=stündige <span>Rencontre</span> vorbey gangen / wor= </p>
-                        </div>
-                        				
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
-                              		<br class="linebreak">bey </span></div>
-                        			</div>
-                     <div class="grid ">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-002/full/full/0/default.jpg">-----[3]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <p id="p__169" class="yes-index"> 
-                              		<br class="linebreak">bey die Letztere den Kürtzern gezogen / wie dann gar viel Wägen mit
-                              					<span>Bles-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sir</span>ten nacher Ulm geführet worden / und soll darbey sich der <span>Commen-</span> 
-                              		<br class="linebreak"><span>dant</span> zu Ulm selbsten befinden. Hingegen hat man von München / daß 
-                              		<br class="linebreak">vergangenen Freytag der Herr Graf von <span>Arco,</span> welcher todter auß Ty=<br class="linebreak">roll dahin gebracht / allda begraben worden. Der Herr Graf <span>Veritá,</span> 
-                              		<br class="linebreak">sey sambt 2. Hatschiren auch erschlagen worden / welche Grafen Se. Chur=<br class="linebreak">fürstl. Durchl. sehr bedauren; andern Tags / als den 28. dito / seyn 300.
-                              		<br class="linebreak">Blessirte zu besagtem München ankommen / welche gar <span>miserabel</span> gestal=<br class="linebreak">tet / und erbärmlich anzusehen gewesen / es waren zwar einige Frantzosen 
-                              		<br class="linebreak">darunter / die meisten aber vom Leib=Regiment. Hingegen erwartet man 
-                              					<br class="linebreak">Jhro Churfürstl. Durchl. welche dero Trouppen bey Seefeld <span>posti</span>ret / und 
-                              		<br class="linebreak">auß Tyroll zuruck beordert / stündlich in München. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__26" class="yes-index"> 
-                              			<br class="linebreak">Den 9. <span>dito</span> <span>divertir</span>ten sich Jhre beede Käyserl. und Königl. Majest.
-                              		<br class="linebreak">mit einer Lust=Jagd. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__243" class="yes-index"> 
-                              		<br class="linebreak"><span>Eodem</span> brachte der auß Tyrol gekommene <span>Courier,</span> daß / ob zwar der 
-                              			<br class="linebreak"><span>Duc de Vendôme</span> schier biß auff Trient jenseiths der Etsch <span>avanci</span>ret /
-                              		<br class="linebreak">beede Generalen <span>Vaubonne</span> und <span>Solari</span> mit ihren Trouppen sich also
-                              			<span>po-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stir</span>et / daß er bey ihnen ohnmöglich durchbrechen könne / und wann das 
-                              		<br class="linebreak"><span>Detachement</span> von etlichen Regimentern / so Jhr <span>Excellenz</span> Herr <span>Guido</span> 
-                              		<br class="linebreak">Graff von Stahrenberg Willens ist an sie abzuschicken / ankommen solte /
-                              		<br class="linebreak">dem Feind gesambter Hand auff dem Rucken nachzugehen / und ihme ei=<br class="linebreak">nes zuversetzen Willens wären; Herr General Heister stünde mit seiner 
-                              		<br class="linebreak">Mannschafft auff dem Brenner umb den Bäyrischen / wann solche wider 
-                              		<br class="linebreak">hinauff kommen wolten / den Weeg hinab zu weisen; So seye auch der 
-                              		<br class="linebreak">Churfürst in Bäyern / welcher etliche Tag zu München gewesen seyn soll /
-                              		<br class="linebreak">bey sein noch übrigen Trouppen zu Seefeld wieder angelangt / und lasse 
-                              		<br class="linebreak">allda sich wacker einschantzen / habe auch von dorten rings umb ein Stund 
-                              		<br class="linebreak">weit Wachten außstellen lassen: die Bauren hingegen / so wieder in 2.
-                              		<br class="linebreak">Scharmützel zusammen biß 600. Bäyern niedergemacht / halten Kopff=<br class="linebreak">stein noch umbringt / und sollen eine starcke Parthey davon nach dem Paß 
-                              		<br class="linebreak">Ehrenberg gegangen seyn / umb die Vestung zuüberrumpeln / oder auff 
-                              		<br class="linebreak">der Bäyeris. Seiten also einzuschliessen / daß niemand von dorten hinein 
-                              		<br class="linebreak">noch außkommen möge. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__49" class="yes-index"> 
-                              		<br class="linebreak"><span>Eod:</span> kam sichere Nachricht auß Ober=Hungarn / daß Hr. Obrist=Wacht=<br class="linebreak">meister Becker abermahl auff em Parthey Rebellen / und Räuber gestos=<br class="linebreak">sen / 1000. davon getödtet / und den Rest in die Flucht gejaget. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__64" class="yes-index"> 
-                              			<br class="linebreak"><span>Eodem</span> <span>dito</span> wird auß dem Elsaß vom 28. <span>Julij</span> berichtet / daß die Fran=<br class="linebreak">tzösische <span>Armée</span> nächst den Rhein <span>repassi</span>ren werde: Unter dem gemeinen 
-                              		<br class="linebreak">Mann ist zwar die Rede / daß die Frantzosen Landau noch belagern wer=<br class="linebreak">den / allein es ist gar keine gründliche <span>Apparentz</span> darzu. Einige aber wol= </p>
-                        </div>
-                        				
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
-                              		<br class="linebreak">len </span></div>
-                        			</div>
-                     <div class="grid ">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-003/full/full/0/default.jpg">-----[4]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <p id="p__49" class="yes-index"> 
-                              					<br class="linebreak">len daß die Frantzosen <span>Mine</span> machen zur <span>Succuri</span>rung deß <span>Villars,</span> den 
-                              					<br class="linebreak">Kniebiß zu <span>passi</span>ren / dahero so gleich veranstaltet worden / die Pässe und 
-                              					<br class="linebreak">Thäler daselbst durch die auffgebottene Bauren und einige <span>regulir</span>te 
-                              		<br class="linebreak">Trouppen best=möglichst zu verwahren. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__77" class="yes-index"> 
-                              		<br class="linebreak"><span>Eodem</span> <span>dito</span> kommt vom 29. Julij auß Cölln / daß ohne die 2. Regi=<br class="linebreak">menter zu Pferd und Dragoner / so von dem General von Hochkirchen 
-                              		<br class="linebreak">auffgerichtet werden sollen / werden Seine Churfürstl. Durchl. zu Pfaltz 
-                              		<br class="linebreak">noch einige Regimenter zu Fuß werben lassen; Der Bischoff von Mün=<br class="linebreak">ster hat auch noch ein neües Regiment Land=Militz unter dem Obristen 
-                              			<br class="linebreak">Zimmer <span>formi</span>ren lassen. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__74" class="yes-index"> 
-                              		<br class="linebreak">Auß Franckreich hat man mit letztern Brieffen durch die Schweitz vom 
-                              				<br class="linebreak">25. <span>Julij</span> daß die Sevenner in <span>Vivarez</span> eingefallen / umb mit denen in Lan=<br class="linebreak">guedoc sich zu <span>conjungi</span>ren / welche auch würcklich in einem guten Stand 
-                              		<br class="linebreak">seynd. Daß Zürch und Beern die angräntzende Oerther am Boden=See 
-                              		<br class="linebreak">in <span>Proteƈtion</span> genommen / thut sich der Frantzösische <span>Ambassadeur</span> starck 
-                              		<br class="linebreak">darwider setzen. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__132" class="yes-index"> 
-                              		<br class="linebreak">Berliner Brieff vom 30. <span>Julij</span> geben / daß Se. Königl. Majest. sich von 
-                              		<br class="linebreak">Oranienburg nacher Schönhausen begeben / aber nur etliche Tage allda 
-                              		<br class="linebreak">verweilen / und weiter nach denen Mecklenburgischen Gräntzen abreißen 
-                              			<br class="linebreak">werden / daselbst sich zu <span>diverti</span>ren. Mit Seiner Königl Hoheit dem Herrn 
-                              			<br class="linebreak">Cron=Printzen / hat es sich nunmehr wieder gantz gebessert. Auß Poh=<br class="linebreak">len hat man nun die Versicherung / daß man daselbst möglichste Anstal=<br class="linebreak">ten mache / sich den <span>Progre</span>ssen der Schwedischen Waffen zuwidersetzen.
-                              		<br class="linebreak">Jngleichem Seine Königliche Majestät zu Preussen / wegen Elbingen zu 
-                              			<br class="linebreak"><span>contenti</span>ren / auch mit selbiger / dem König in Dännemarck / und dem 
-                              		<br class="linebreak">Czaar in Moscau <span>Alliantz</span> zuschliessen. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__167" class="yes-index"> 
-                              		<br class="linebreak">Auß dem Hollsteinischen vom 26. <span>Julij</span> Jhro Hochfürstliche Durchl.
-                              		<br class="linebreak">deß Herrn Bischoffs zu Eutin Reichs=<span>Contingent,</span> wie auch deß Herrn 
-                              		<br class="linebreak">Obristen von Osten Hollsteinische Dragoner=Regiment / so alle wol
-                              			<span>mon-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ti</span>rt und brave Leüthe / sind den 19. <span>hujus</span> auß den Eutinischen auffgebro=<br class="linebreak">chen / und haben zu Schwartau ihr <span>Rendevous</span> gehalten / daselbst sie ins=<br class="linebreak">gesambt von Jhrer Durchl. dem Hern Bischoffen gemustert / hernach=<br class="linebreak">mals seynd selbe den 20. dito Trembs=Mühle vorbey / und den Marsch 
-                              		<br class="linebreak">ferner nach dem Obern=Rhein beschleünigen müssen. Beynebens ist 
-                              		<br class="linebreak">ohnweit Tündern ein Gesund=Brunnen vor 3. Wochen entsprungen /
-                              			<br class="linebreak">woran schon einige / so lahmgewesen / <span>curi</span>rt worden / es reißen dahin unter=<br class="linebreak">schiedliche mangelhaffte Leüte / GOtt gebe glückliche <span>Continuation;</span> 
-                              		<br class="linebreak">Man sagt daß der Brunnen von einem Mägdel soll gefunden seyn / wel= </p>
-                        </div>
-                        				
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
-                              		<br class="linebreak">che </span></div>
-                        			</div>
-                     <div class="grid ">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-004/full/full/0/default.jpg">-----[5]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <p id="p__112" class="yes-index"> 
-                              		<br class="linebreak">che / weil sie böse Füsse gehabt / sich darinn gewaschen / da dann ihre Beine /
-                              		<br class="linebreak">so theils verlahmet / wieder gesund / sie aber blind worden / und da sie 
-                              		<br class="linebreak">solches den Leuthen zu verstehen gegeben / hat sie sich wieder darinn gewa=<br class="linebreak">schen / auch ihr Gesicht wieder bekommenen. Der Herr General Ellen=<br class="linebreak">brech hat von Jhrer Königl. Majest. in Dännemarck 2. Regimenter zu 
-                              		<br class="linebreak">Pferd und 1. zu Fuß zu werben / <span>Patenta</span> erhalten. Seine Majestät werden 
-                              		<br class="linebreak">als heut zu Rendsburg vermuthet / umb alldort über die stehende Troup=<br class="linebreak">pen die <span>Revue</span> zuhalten. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__116" class="yes-index"> 
-                              		<br class="linebreak">Den 10. Begaben sich beede Käyserl. und Königl. Mayt. wie auch 
-                              			<br class="linebreak">Jhro Hochheit der Ertz=Hertzog Carl / sambt der Durchleuchtigsten Jun=<br class="linebreak">gen Herrschafft nach dem Jungfrauen=Closter / deß Ordens der <span>reguli</span>r-<br class="linebreak">ten Chor=Frauen deß Heil. <span>Augustini</span> bey St. Lorentz / und <span>celebri</span>rten all=<br class="linebreak">da das Fest letzt=besagten Heiligen / vormittag mit einem hohen Ambt /
-                              		<br class="linebreak">welches Jhro Hochfürstl. Gnaden der Bischoff von Wienn hielte / und 
-                              		<br class="linebreak">nach eingenommenem Mittagmahl daselbsten / mit einer <span>Vesper</span> und
-                              			<span>Li-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">taney,</span> deß Abends aber begaben dieselbe sich wieder in dero <span>Favorita.</span> </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__217" class="yes-index"> 
-                              				<br class="linebreak"><span>Eodem</span> <span>dito.</span> Hat man auß Londen / von 20. <span>Julij,</span> daß auß Jrr=<br class="linebreak">land verschidene Regimenter nach Portugal sollen <span>transporti</span>rt wer=<br class="linebreak">den / zu welchem Ende den 21. ein <span>Courier</span> nach Jrrland <span>depechir</span>et / sol=<br class="linebreak">ches zu befördern. Der Graff Galloway wird ehest nach Holland <abbr title="unclear">gehen</abbr> /
-                              		<br class="linebreak">von dannen derselbe mit einem offentlichen <span>Character</span> seine Reise nach 
-                              		<br class="linebreak">Savoyen fortsetzen wird. Unsere Moscowitische Flotte / ist auff die 
-                              		<br class="linebreak">Zeitung / daß vill Frantzösische Schiffe in die Nord=See kreutzen / zu 
-                              		<br class="linebreak"><span>Kirkordie,</span> mit den <span>Convoyers</span> eingelauffen. Die <span>Officiers</span> von denen 
-                              		<br class="linebreak">Zoll=Häusern / haben zu Kent 600. Packen Leinwand / so unlängst auß 
-                              				<br class="linebreak">Franckreich gekommen / und 60000. Pfund Sterlings werth geschä=<br class="linebreak">tzet werden / <span>arrestir</span>et. Die Königin hat anbefohlen / daß dises Jahr 
-                              		<br class="linebreak">200000. Pfund Sterlings auß der <span>Civilen=Rolle</span> zu Fortsetzung deß 
-                              		<br class="linebreak">Kriegs angewend werden sollen. Beynebens wird von Edenburg 
-                              		<br class="linebreak">von 14. Julij berichtet / daß das Parlament verordnet / das Buch 
-                              		<br class="linebreak"><span>Anglo=Scotia</span> betitelt / zu Londen herauß gegeben / und lästerliche <span>Refle-</span> 
-                              		<br class="linebreak"><span>xiones</span> über dise <span>Nation</span> begreiffet / durch den Hencker zuverbrennen. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__87" class="yes-index"> 
-                              		<br class="linebreak">Auß dem Haag vom 27. <span>Julij.</span> Meldet man / von der grossen
-                              			<span>Ar-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mée,</span> daß selbige die Frantzosen nicht zum schlagen bringen könne /
-                              		<br class="linebreak">welche aber grossen Mangel an <span>Fourage</span> leydet / und sich in die Linien 
-                              		<br class="linebreak">gezogen / als glaubt man / daß ehesten unsere <span>Armée</span> die Feinde in 
-                              		<br class="linebreak">ihren Lager angreiffen werde / weilen wir biß 80000. Mann starck 
-                              		<br class="linebreak">seyn. Laut Lissabonischer Brieffen / waren daselbst vill praffe Haupt= </p>
-                        </div>
-                        				
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
-                              		<br class="linebreak"><span>Officier</span> </span></div>
-                        			</div>
-                     <div class="grid ">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-005/full/full/0/default.jpg">-----[6]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <p id="p__225" class="yes-index"> 
-                              					<br class="linebreak"><span>Officier</span> auß <span>Gallicien</span> bey dem <span>Admirant</span> von <span>Castili</span>en ankommen /
-                              		<br class="linebreak">welche die Versicherung gethan / daß in Kurtzem mehr folgen würden /
-                              		<br class="linebreak">sintemahlen die Herrschafft der Frantzosen nicht länger erdulden kön=<br class="linebreak">ten. Jhr Majestät die Königin von Engeland haben 30. <span>Protestan</span>-<br class="linebreak">ten / einem jeden 100. <span>Guineen</span> gegeben / damit nach Genff zu reisen /
-                              					<br class="linebreak">umb von dannen solches Geld denen Sevennern zu bringen / damit sol=<br class="linebreak">che eine <span>Subsistence</span> haben mögen / mit dem Versprechen / daß bald grös=<br class="linebreak">sere Summen folgen / auch die <span>combinir</span>te Flotte ihnen das Benöthig=<br class="linebreak">te bringen sollte. Man glaubet / daß die Festung Geldern wohl ehe=<br class="linebreak">sten <span>bombardi</span>ret werden dürffte / weil zu Wesel alle Anstalten darzu 
-                              		<br class="linebreak">fertig seynd / und nur noch einige Constabler und Bombardirer von 
-                              		<br class="linebreak"><span>Berlin</span> erwartet werden. Hingegen glaubt man / daß der Rit=<br class="linebreak">ter Schovel mit seiner grossen <span>Esquadre</span> Kriegs=Schiffen seinen 
-                              		<br class="linebreak">Lauff nach Portugal und dem Mittelländischen Meer wird fortgesetzt 
-                              		<br class="linebreak">haben. Beynebens wird auch anhero berichtet / daß die
-                              					<span>Malconten-</span><br class="linebreak">ten 5. Frantzösische Königl. Regimenter sollen geschlagen haben / mit=<br class="linebreak">hin die völlige Ernd in ihre <span>Retirade</span> zu bringen Zeit gewonnen hätten /
-                              		<br class="linebreak">welches aber mehr <span>Confirmation</span> braucht. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__73" class="yes-index"> 
-                              			<br class="linebreak">Auß Pohlen vom 15. <span>Julij</span> wird <span>confirmi</span>ret / daß die Schweden 
-                              		<br class="linebreak">vor Thoren mit ihren Miniren unglücklich gewesen / und sollen ihren 
-                              		<br class="linebreak">Schaden auff vill 1000. Reichs=Thaller / ohne die verfallene Mann=<br class="linebreak">schafft schätzen / als deren sie schon in 1500. daselbst sollen haben sitzen 
-                              		<br class="linebreak">lassen / und deren noch täglich zu 5. biß 7. Mann sterben. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__79" class="yes-index"> 
-                              		<br class="linebreak">Man hat durch Brieffe auß Pariß von 20. <span>Julij,</span> daß der Printz 
-                              		<br class="linebreak"><span>de Conti</span> nach Spanien gehen soll / umb die Trouppen zu
-                              			<span>comman-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">di</span>ren / welche auß Franckreich in 10000. Mann starck dahin
-                              			<span>marchi-</span><br class="linebreak">ren sollen. Auch hat der König <span>Ordre</span> gegeben noch 30. Regimenter 
-                              		<br class="linebreak">zu Fuß / und 20. zu Pferdt zuwerben / und darmit wider Portugall 
-                              			<br class="linebreak">zu <span>agi</span>ren. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__131" class="yes-index"> 
-                              				<br class="linebreak"><span>Eodem</span> kamm ein Schreiben von 1. und 2. <span>Augusti</span> auß Ulm <span>dati</span>rt /
-                              		<br class="linebreak">den eygentlichen Verlauff der letztgehabten <span>Action</span> mit den Frantzosen be=<br class="linebreak">treffend. Montags Abends zwischen 9. und 10. Uhr seynd bey 1000. Mann 
-                              		<br class="linebreak">Frantzosen / so wohl <span>lnfanterie</span> als <span>Cavallerie</span> schnell auß der Statt
-                              				<span>com-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mandi</span>rt worden / worzu die bey Rheinheimb / Pfull / und Offenhausen 
-                              				<br class="linebreak"><span>campi</span>rende bey 4. biß 5000. Frantzosen gestossen / ihren <span>March</span> über die 
-                              		<br class="linebreak">zwischen hier / und Wiplingen geschlagene Schiff=Brucken genommen /
-                              		<br class="linebreak">die bey Echingen / Munterklingen / und Riedlingen ligende Käyserl. Völ=<br class="linebreak">cker auffzuheben / es haben aber vermuthlich die Käyserl. Nachricht dar= </p>
-                        </div>
-                        				
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word"> 
-                              		<br class="linebreak">von </span></div>
-                        			</div>
-                     <div class="grid ">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-006/full/full/0/default.jpg">-----[7]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <p id="p__253" class="yes-index"> 
-                              		<br class="linebreak">von bekommen / ehe sie dahin angelanget / in <span>Postur</span> gestanden / weilen 
-                              		<br class="linebreak">aber selbige ziemblich weit auß einander gelegen / als haben sie die
-                              					<span>Infante-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">rie</span> nicht zu Handen bringen können / dahero sie anfänglich zimblichen 
-                              		<br class="linebreak">Schaden gelitten / aber sich dannech so dapffer gehalten / daß sie die Frantzo=<br class="linebreak">sen in die Flucht gebracht / und ihrer selbst eygener Aussag nach bey 1200.
-                              		<br class="linebreak">erleget; Gestern Abends kammen nur einige Trouppen über gedachte 
-                              		<br class="linebreak">Brucken / biß dahin von sie verfolget / wider an / und wehrete der <span>March</span> 
-                              		<br class="linebreak">biß 2. Uhr gegen Tags / da dann 15. Wägen mit Blessirten hereinge=<br class="linebreak">bracht / ohne was in das Lager bey Offenhausen geführet worden / dar=<br class="linebreak">von heüt 180. in das so genannte Seelhauß herein kommen sollen / man 
-                              		<br class="linebreak">hat aller Orthen / insonderheit in die vornehme Häuser geschickt / umb 
-                              					<br class="linebreak">alte Leinwath / die Verwundte hiermit zuverbinden / auffzubringen / al=<br class="linebreak">le Würthshäuser seynd mit dergleichen <span>Offici</span>ren beleget / deren etliche 
-                              					<br class="linebreak">heüt gestorben / sie manglen an 130. <span>Officir</span>s so todt und blessiret / darun=<br class="linebreak">ter 4. vornehme gezehlet werden. Gestern fruhe umb 9. Uhr seye der An=<br class="linebreak">griff geschehen / und biß gegen Abend gewehret / es können die Frantzo=<br class="linebreak">sen der Teütschen Dapfferkeit nicht genug rühmen / und sagen selber alle 
-                              					<span>Of-<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ficiers</span> / daß sie bey dergleichen <span>Action</span> niemahlen gewesen. </p>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__306" class="yes-index"> 
-                              		<br class="linebreak">Ein anders auß Ulm vom 2. <span>dito.</span> Berichte daß auff allhiesigen 
-                              		<br class="linebreak">Münster kein ander Wacht nicht ist / als die Frantzosen / mißtrauisch / und 
-                              		<br class="linebreak">wann einige Käyserl. Trouppen sich dann und wann sehen lassen / sich förch=<br class="linebreak">ten / daß die alte Wacht ihnen keinen treuen <span>Raport</span> ertheilen möchte / dann 
-                              		<br class="linebreak">was die besetzte Thör betrifft / so seynd alle Haupt=Posten von denen 
-                              		<br class="linebreak">Bäyeris. verwahret / ausser unter dem Gänß=Thor seynd Frantzosen / doch 
-                              		<br class="linebreak">gleich daran und in dem Zeughauß wider Bäyern; Das scharffe Treffen 
-                              		<br class="linebreak">welches verschienen Tagen bey Ehingen und Munterklingen zwischen 
-                              			<br class="linebreak">denen Käyserl. und Frantzosen vorgegangen / wird täglich <span>remarquabl</span>er /
-                              		<br class="linebreak">es solle dergleichen <span>Action</span> in vielen Jahren nicht geschehen seyn / wie es 
-                              			<br class="linebreak">dann <span>Officiers</span> <span>attestir</span>en / daß als hitzig und verzweiffelt niemalen gefoch=<br class="linebreak">ten worden. Die Anzahl der Todten und Blessirten an Seiten der Fran=<br class="linebreak">tzosen solle sich auff 1200. und der Käyserl. auff 900. erstrecken / man kan 
-                              			<br class="linebreak">nicht glauben in was <span>miserabl</span>en Stand die Blessirten anhero gelieffert 
-                              		<br class="linebreak">worden seynd / mancher hat genug an einer Schrammen / aber dise haben 
-                              		<br class="linebreak">6. 10. biß 12. Stich; Ein Frantzösischer grosser Herr ist auch gebliben /
-                              		<br class="linebreak"><span>item</span> etliche Obristen / und bey 200. <span>Officiers,</span> von Käyserlichen wird ein 
-                              		<br class="linebreak">Printz von Hauß Lüneburg gemüsset / welcher mit andern in die Donau 
-                              		<br class="linebreak">gesprenget / und darin ertruncken / kein Theil hat dem andern Quartier gege=<br class="linebreak">ben; Der Käyserl. <span>General de la Tour</span> ware schon umbringet und gleich=<br class="linebreak">samb gefangen / aber sonderbarer Weise durchkommen / und höret man 
-                              		<br class="linebreak">stündlich Wunder / wie verbittert und hitzig alles zugegangen. </p>
-                        </div>
-                        			</div>
-                     <div class="grid margin-end">
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1703/08/17030813/17030813-007/full/full/0/default.jpg">-----[8]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <h5 id="head__17" class="yes-index text-center"> 
-                              		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Lista 
-                              		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Deren / von Hohen und Niedrigen Standts=Persoh=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nen Ankunfft. </h5>
-                           <ul class="yes-index">
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kärner=Thor / den 9. Aug. Herr Schnell / kombt als Courier auß 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Tyroll / log. im wilden Mann. </li>
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stuben=Thor / Ein Käyserl. Courier kombt auß Jtalien / log.
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Post=Ambt. </li>
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rothenturn / Ein Käyserl. Courier kombt auß den Haag / log.
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Post=Ambt. </li>
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kärnerthor den 10. Aug. Ein Cavallier <span>Louis d'Nordwig,</span> und 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ein Lieut. vom Lothringis. Regiment / kommen auß Jtalien / log. im 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">wilden Mann. </li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <p id="p__55" class="yes-index"> 
-                              		<br class="linebreak"><span>NB.</span> Der im vorigen <span>Diario</span> den 4. Aug. angekommene Dähnische Herr Gesandte 
-                              		<br class="linebreak">heist nicht Herr von Weinberg / sondern Herr von Weyhberg. <span>ltem</span> der den 5. Aug.
-                              		<br class="linebreak">gekommene Lieut. Tromp auß Dännemarck / ware der Herr General=Lieut. Tromp. </p>
-                        </div>
-                        				
-                        <div id="head__20" class="grid-item">
-                           <h5 id="head__20" class="yes-index text-center"> 
-                              		<br class="linebreak">Was vom 8. Augusti biß den 11. <span>ejusdem</span> vor 
-                              		<br class="linebreak">und in der Stadt gestorben. </h5>
-                        </div>
-                        				
-                        <div class="grid-item">
-                           <h5 id="head__11" class="yes-index text-center"> 
-                              		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 8. Aug. starb in der Stadt </h5>
-                           <ul class="yes-index">
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Sauerzapff / ein Wein=<span>Commissarius</span> im Trienter=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hoff / sein Weib Rosina / ist an innerlicher Fäullung beschaut / alt 37.
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jahr. </li>
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Daupy / ein Lagey im Gräfl. Walsteinischen Hauß in 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der Herrn Gassen / ist an der Lungelsucht beschaut / alt 48. Jahr. </li>
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jacob Mundus / ein Student im Waldmeisters Hauß auff der 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Widen ist am hitzigen Fieber beschaut alt / 20. Jahr. </li>
-                           </ul>
-                        </div>
-                        				
-                        <div class="grid-item">
-                           <h5 id="head__9" class="yes-index text-center"> 
-                              		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 9 starb vor der Stadt. </h5>
-                           <ul class="yes-index">
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Christoph Hammer / Quardi=Soldaten im Hechlerischen 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hauß am Neüstifft sein Weib Anna / ist an der Lungelsucht beschaut /
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 55. Jahr. </li>
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Die Elisabeth Brandstetterin / ein lediges Mensch beym gul=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">denen Pelican bey St. Ulrich / ist an der Lungen=Cathar beschaut /
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 48. Jahr </li>
-                           </ul>
-                        </div>
-                        				
-                        <div class="grid-item">
-                           <h5 id="head__10" class="yes-index text-center"> 
-                              		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 10. starb vor der Stadt. </h5>
-                           <ul class="yes-index">
-                              	
-                              <li> 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andreas Schonauer Käys. N. Oe. Regierungs Cantzeley=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Verwandter im Brunnmeisteris. Hauß auff der Laimbgruben sein 
-                                 		<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kind Frantz / ist an der Fraiß beschaut / alt ½. Jahr. </li>
-                           </ul>
-                        </div>
-                        			</div>
                   </div>
                   <div class="col-md-6 facsimiles">
                      <div id="viewer-1" class="sticky">
@@ -493,5 +492,5 @@
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary" style="margin-top: auto;">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
 </html>

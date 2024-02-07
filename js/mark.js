@@ -38,10 +38,14 @@ function jumpTo(trigger) {
 function performMarkUrl() {
   // Determine selected options
   var options = {
+    accrossElements: true,
     done: function() {
       results = input[0].querySelectorAll("mark");
       currentIndex = 0;
       jumpTo(true);
+      setTimeout(() => {
+        resultDiv.innerHTML = "Hits: " + results.length;
+      }, 500);
     }
   };
   [].forEach.call(optionInputs, function (opt) {
@@ -56,6 +60,7 @@ function performMarkUrl() {
   } else if (urlParam.get("mark") == "default") {
     // no action needed
   } else {
+    btns.classList.remove("fade-lang");
     var params = urlParam.get("mark");
     markInstance.unmark({
       done: function () {

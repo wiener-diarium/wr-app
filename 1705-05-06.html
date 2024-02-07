@@ -35,895 +35,894 @@
       <main class="flex-shrink-0">
          <div class="container" style="max-width: 100%;">
             <div class="page-content">
-               <div class="row my-4">
-                  <div class="col-md-6 section px-4 .yes-index">
-                     <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
-                                 <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                                 <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
-                           <li class="list-group-item">
-                              <full-size opt="fls"></full-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-size opt="fs"></font-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-family opt="ff"></font-family>
-                           </li>
-                           <li class="list-group-item">
-                              <annotation-slider opt="br"></annotation-slider>
-                           </li>
-                        </ul>
+               <div class="row my-4 transcript active">
+                  <div class="col-md-6 text px-4 .yes-index">
+                     <div class="section">
+                        <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
+                              <li class="list-group-item">
+                                 <font-size opt="fs"></font-size>
+                              </li>
+                              <li class="list-group-item">
+                                 <font-family opt="ff"></font-family>
+                              </li>
+                              <li class="list-group-item">
+                                 <annotation-slider opt="br"></annotation-slider>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="sticky row bg-white" style="top: 1em!important;">
+                           <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
+                              <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
+                           <div id="mark-scroll" class="fade-lang col-md-2"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
+                           </div>
+                        </div>
+                        <div class="title-page py-4" id="#top_page">
+                           			
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-000/full/full/0/default.jpg">-----[1]-----</span></div>
+                           				
+                           <h5 id="titlePart__5" class="yes-index text-center py-2">
+                              						<br class="linebreak"><span>Num.</span> 184.</h5>
+                           <h4 id="titlePart__5" class="yes-index text-center py-2">
+                              						<br class="linebreak">Wiennerisches <span>DIARIUM</span>,</h4>
+                           <div id="imprimatur__12" class="grid-item">
+                              <p id="imprimatur__12" class="grid-item yes-index">
+                                 						<br class="linebreak">Mit Jhrer Römisch=Käyserlichen Majestät allergnädigstem <span>Privilegio</span>.</p>
+                           </div>
+                           				
+                           		</div>
+                        <div class="grid ">
+                           					
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__13" class="yes-index text-center">
+                                 						<br class="linebreak">Wienn / vom 6. biß 8. May / 1705.</h5>
+                              <p id="p__193" class="yes-index">
+                                 						<br class="linebreak">MJttwoch den 6. May. Nachdeme / wie jüngst gedacht / auß 
+                                 						Göttli=<br class="linebreak">cher Verhängnuß / Jhre Kayserl. Majest. LEOPOLD dieses 
+                                 						Nah=<br class="linebreak">mens der Erste / Glorwürdigster Gedächtnuß / Weyland unser 
+                                 						<br class="linebreak">allergnädigster Lands=Fürst und Herr / gestern auß dieser Zeitlichkeit zu 
+                                 						un=<br class="linebreak">beschreiblichem Leyd=Weesen des gantzen Kayserlichen Hofs und aller 
+                                 						De=<br class="linebreak">ro treuen Vasallen und Unterthanen abgegangen; Als wurde heute 
+                                 						Des=<br class="linebreak">sen verblichener Leichnamb / in Anwesenheit Jhrer Hochfürstl. Gnaden von 
+                                 						<br class="linebreak">Fundi und Grafen zu Mansfeld / wie auch des Kays. Obrist=Kuchel=Meistern 
+                                 						<br class="linebreak">(Titl) Herrn Grafen von Mollarth und beeder Kayserlichen Camer=Herren /
+                                 						<br class="linebreak">nemblich (Titl) Herrn Grafen von Kollonitsch und (Titl) Herrn Grafen von 
+                                 						<br class="linebreak"><span>Castelbarco</span>, wie auch zweyer Cammer=Dienern / Herrn <span>de Biel</span> und Herrn 
+                                 						<br class="linebreak"><span>d'Ubens</span>, von denen 6. neulich schon bemeldten Kays. Herren Leib=<span>Medicis</span> und 
+                                 						<br class="linebreak">3. Leib=Barbiern / als Herrn Zeidlern / Herrn Fuchs und Herrn Jaues geöffnet /
+                                 						<br class="linebreak">und sodann gewöhnlicher massen einbalsamirt.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__66" class="yes-index">
+                                 						<br class="linebreak">Sonsten hat der gestern auß Bayrn von Landshut dahier 
+                                 						angekomme=<br class="linebreak">ne Currier unter andern mitgebracht / wie nemblich er auff seiner Anhero=Reiß 
+                                 						<br class="linebreak">vernommen / daß eine Anzahl Bayrische Bauern sich zusammen rottirt / und 
+                                 						<br class="linebreak">des Nachts bey 100. Kayserl. Reuter in ihren Quartieren mit Prüglen und 
+                                 						<br class="linebreak">Kolben unchristlicher Weiß zu todt geschlagen haben sollen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__109" class="yes-index">
+                                 						<br class="linebreak">Donnerstag den 7. May. Heute wurden allhier Jhre verstorbene 
+                                 						Kay=<br class="linebreak">serl. Majest. in der Ritter Stuben offentlich zu sehen außgesetzet / und wird 3.
+                                 						<br class="linebreak">Tag lang darmit angehalten werden; deme zu folg gedachte Ritter=Stuben /
+                                 						<br class="linebreak">gleichwie die andere Zimmer / schwartz überzogen worden. Jhre Kays. Maj.
+                                 						<br class="linebreak">ligen in einem Spanischen schwartzen Mantel=Kleyd / mit einer <span>Peruque</span> und 
+                                 						<br class="linebreak">Hut auff dem Haupt / wie auch einem Degen an der Seiten / unter einem 
+                                 						<br class="linebreak">schwartz=Sammeten Himmel / auff einem drey Staffel hohen mit guldenguldenund=</p>
+                           </div>
+                           <div id="fw__4" class="grid-item grid-item--width2 text-center"><span id="fw__4" class="yes-index catch-word">
+                                 						<br class="linebreak">)(</span></div>
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word">
+                                 						<br class="linebreak">und</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-001/full/full/0/default.jpg">-----[2]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__206" class="yes-index">
+                                 						<br class="linebreak">und silbernem Stuck überzogenen <span>ParadeParadeBeth-</span>Beth / umb und umb mit vielen 
+                                 						<br class="linebreak">auff silbernen Leuchtern brennenden weissen Wachs=Kertzen; bey denen 
+                                 						<br class="linebreak">Füssen stehet ein schönes silbernes Crucifix / und nicht weit darvon auff der 
+                                 						<br class="linebreak">Rechten ruhet auff einem guldenen Küssen die Kayserl. Cron / Apffel und 
+                                 						<br class="linebreak">Scepter mit dem güldenen Fluß / zur lincken Seiten aber ligt auff einem 
+                                 						<br class="linebreak">anderen guldenen Küssen die Ungarische und Böhmische Cron; bey dem <span>PaParade-</span>
+                                 						<br class="linebreak"><span>rade-</span>Beth befinden sich 4. Käyserl. Cammer=Herren und Cammer=Diener / mit 
+                                 						<br class="linebreak">langen schwartzen Mänteln wie auch 4. Geistliche von der Käyserl. Hof=Kirchen 
+                                 						<br class="linebreak">deren W. W. E. E. <span>P. P. Augustin</span>. Barfüssern / nicht weniger die gewöhnliche 
+                                 						<br class="linebreak">Kayserl. Leib=Wacht von Hartschiren und Trabanten / welche erstere von 
+                                 						<br class="linebreak">Stund zu Stund abwechseln. Der Zulauff so wohl von denen Grossen / als 
+                                 						<br class="linebreak">Kleinen / umb den Weyland Allergnädigsten Käyser und Mildesten Lands=
+                                 						<br class="linebreak">Fürsten zum letztenmahl zu sehen / wie auch das darüber bezeugte Hertzenleyd 
+                                 						<br class="linebreak">ist so groß / daß es nicht zu beschreiben.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__45" class="yes-index">
+                                 						<br class="linebreak">Sonsten seynd verschiedene Curriers und <span>Staffett</span>en mit der <span>Notification</span>
+                                 						<br class="linebreak">des Todtfalls allerhöchst besagter Jhrer Kayserl. Majest. <span>LEOPOLDI</span> an 
+                                 						<br class="linebreak">verschiedene Chur=und Fürsten des Reichs / wie auch an die außwertige <span>PoPotenzen-</span>
+                                 						<br class="linebreak"><span>tenzen</span> abgangen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__67" class="yes-index">
+                                 						<br class="linebreak"><span>Eodem</span> wurde von Jhrer Majestät dem Römischen Kayser mit einem 
+                                 						<br class="linebreak">eigenen Hand=Brieffl und 100000. Gulden Wechsel=Brieffen nacher 
+                                 						Jta=<br class="linebreak">lien zu dem allda <span>commandi</span>renden Kayserl. General=Feld=Marschallen /
+                                 						<br class="linebreak">Jhro Hochfürstl. Durchl. Printzen <span>Eugenium</span> von Savoyen / der Kayserliche 
+                                 						<br class="linebreak">Hof=Kriegs=Rath / HErr von <span>Pozzo</span> abgeschickt.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__54" class="yes-index">
+                                 						<br class="linebreak">Freytag den 8. May. Heute wurde auff allergnädigste Kayserl. Ver=<br class="linebreak">ordnung zum ersten mahl mit allen Glocken so wohl in als vor der Stadt von 
+                                 						<br class="linebreak">12. biß 1. Uhr Mittags / vor Jhre jüngst verschiebene Kayserl. Majestät zu 
+                                 						<br class="linebreak">läuten angefangen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__197" class="yes-index">
+                                 						<br class="linebreak"><span>Dito</span> vernahme man auß Ungarn / daß der Hr. General Nehm mit etilch 
+                                 						<br class="linebreak">1000. Raitzen die Donau <span>passi</span>ret umb gegen die Rebellen auff allen Fall <span>agi-</span> 
+                                 						<br class="linebreak">ren zu können; gedachte Rebellen sollen noch immerhin an ihrer zu Pax 
+                                 						neu=<br class="linebreak">angelegten Schantze fleissig fortfahren / und selbige mit 6000. Mann / so 
+                                 						al=<br class="linebreak">le Teutsch gekleydet / besetzter halten / vorgebend / daß der Beretzeny / wo=<br class="linebreak">fern nicht bald Fried würde / einen gewissen Anschlag ins Werck zu setzen 
+                                 						Wil=<br class="linebreak">lens wäre / weßwegen derselbe schon würcklich einige Mannschafft versamblen 
+                                 						<br class="linebreak">auch diese mit nöthigem Geschütz versehen lassen. Von Raab verlaute / daß 
+                                 						<br class="linebreak">die Rebellen auff dasiger Seiten begünten wieder herüber zu setzen / und 2 
+                                 						Par=<br class="linebreak">theyen / als eine nach Fünffkirchen / die andere nach Kapuswar und 
+                                 						Simon=<br class="linebreak">thorna marschiret; uber das liessen sie zwischen Comorren und Gran viele 
+                                 						<br class="linebreak">Schiff zusammen führen; in dem Raaber Wald hielten dieselbe sich auch noch 
+                                 						<br class="linebreak">starck auff / von dannen sie des Nachts zu 20. und 30. in die Dörffer schleichen /</p>
+                           </div>
+                           <div id="fw__4" class="grid-item grid-item--width2 text-end"><span id="fw__4" class="yes-index catch-word">
+                                 						<br class="linebreak">und</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-002/full/full/0/default.jpg">-----[3]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__19" class="yes-index">
+                                 						<br class="linebreak">und / was sie alldorten bey den armen Leuten noch antreffen könten / mitneh=<br class="linebreak">men thäten.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__197" class="yes-index">
+                                 						<br class="linebreak">Auß Pohlen vom 30. April. Daß jüngstens von der Königl. Hof=<br class="linebreak">statt zu Brzee ein Abgeschickter zu Warschau mitgebracht habe / wie 
+                                 						nemb=<br class="linebreak">lich eine grosse Moscowitische Macht mit ehestem allda zu stehen kommen 
+                                 						<br class="linebreak">werde / von dero 6000. Mann würcklich bey Grodno vorbeygegangen; und 
+                                 						<br class="linebreak">wolten Jhre Czaarische Majestät ehestens in Litthauen sich einfinden. Von 
+                                 						<br class="linebreak">Opotaw gienge der Ruff / daß alldorten 7. Pohlnische Fahnen des 
+                                 						Castel=<br class="linebreak">lans von Poluniez von denen Schweden des Nachts umbringt und theils 
+                                 						<br class="linebreak">verbrennt / theils sonsten niedergemacht worden; hingegen hätten des 
+                                 						Ogins=<br class="linebreak">ky Truppen eine Schwedische Parthey zu Pferd / so von denen 
+                                 						Churländi=<br class="linebreak">schen Gräntzen nacher Samogithien gehen / und allda <span>Contribution</span> 
+                                 						eintrei=<br class="linebreak">ben sollen / angetroffen / und sie auch also bezahlet / daß wenig darvon 
+                                 						kom=<br class="linebreak">men. Jhre Majest. der König von Schweden befinde sich noch zu Rawitz / all 
+                                 						<br class="linebreak">wo jüngsten ein Theil vom Magazin eingefallen / und etliche Leuth 
+                                 						erschla=<br class="linebreak">gen / der Neu=Erwählte aber zu Reusch; der Herr General Steinbock solle 
+                                 						<br class="linebreak">zu Elbingen kranck ligen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__206" class="yes-index">
+                                 						<br class="linebreak">Auß Rom vom 18. April. Daß die heilige Oster=Fest von Jhrer 
+                                 						Hei=<br class="linebreak">ligkeit mit aller Andacht eyfferichst begangen worden. Auß <span>Neapoli</span> reiseten 
+                                 						<br class="linebreak">sehr viele Frantzösische <span>Officiers</span> durch Rom zu dem <span>Gran Prior di Vendôme</span>,
+                                 						<br class="linebreak">denen die Soldaten über Meer folgen solten. Zu <span>Neptuno</span> wären die 
+                                 						Nea=<br class="linebreak">politanische Galeeren mit Volck nach Lombardien seeglend a<abbr title="unclear">n</abbr>kommen: wel=<br class="linebreak">che zu sehen / der <span>Cardinal Janson</span> von <span>Albano</span> abgegangen. Man solle 
+                                 						vie=<br class="linebreak">le Frantzösische Uberlauffer / wie vorgegeben wird / zusammen gebracht haben 
+                                 						<br class="linebreak">welche zu <span>Civita Vecchia</span> eingeschifft werden. Ein jüngst angelangt=Fran=<br class="linebreak">tzösischer <span>Officier</span>, Nahmens <span>Fourbin</span>, und ein Verwandter des Cardinals 
+                                 						<br class="linebreak">dieses Nahmens / solle diß Jahr 5. Schiff in dem Adriatischen Meer <span>comcommandiren-</span>
+                                 						<br class="linebreak"><span>mandi</span>ren. Der Kayserliche Herr Bottschaffter habe sich Gesundheits 
+                                 						hal=<br class="linebreak">ber auffs Land begeben. Der <span>Cardinal Legar</span> zu <span>Ferrara</span> habe dem 
+                                 						Kayser=<br class="linebreak">lichen <span>Commendan</span>ten wegen scharpff=gehaltener <span>Disciplin</span> an seinen 
+                                 						unterha=<br class="linebreak">benden Truppen / weil diese nichts unfügliches verübet / höflichen Danck 
+                                 						ab=<br class="linebreak">statten lassen / da hingegen die Frantzösische Soldaten allen Muthwillen 
+                                 						ge=<br class="linebreak">trieben.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__109" class="yes-index">
+                                 						<br class="linebreak">Auß Venedig vom 28. April. Daß der Hr. Gen. <span>Batté</span> sich noch mit 300.
+                                 						<br class="linebreak">Kayserlichen Pferden zu <span>Boara</span> in dem Polesinischen an der Etsch auffhielte:
+                                 						<br class="linebreak">allein das Land=Volck alldort stünde in Waffen / dahin 3. <span>Compagni</span>en zu 
+                                 						<br class="linebreak">Pferd auß <span>Rouigo</span> der alldasige Venetianische Befelchshaber abgehen 
+                                 						las=<br class="linebreak">sen. Selbigen Lands Jnwohner hätten den 17. dito von dem Fluß 
+                                 						Gar=<br class="linebreak">zon die Frantzosen abgetrieben / und die Brucken / so diese allda gebauet / abge=<br class="linebreak">worffen. Zu <span>Palazuolo</span> an dem <span>Oglio</span> verschantzten sie sich sehr / wie dann</p>
+                           </div>
+                           <div id="fw__5" class="grid-item grid-item--width2 text-center"><span id="fw__5" class="yes-index catch-word">
+                                 						<br class="linebreak">)( </span></div>
+                           <div id="fw__5" class="grid-item grid-item--width2 text-center"><span id="fw__5" class="yes-index catch-word">
+                                 						<br class="linebreak">2</span></div>
+                           <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
+                                 						<br class="linebreak">al=</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-003/full/full/0/default.jpg">-----[4]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__77" class="yes-index">
+                                 						<br class="linebreak">alles eben gemacht / und die Wercker außgemauret werden solten. Gegen 
+                                 						<br class="linebreak">ob=bemeldtem <span>Polesella</span> streifften immer Kayserliche Partheyen; diese hätten 
+                                 						<br class="linebreak">ein Schiff auff dem <span>Pô</span>, worauff der <span>Abbate Boselli</span> nebst 4. vornehmen 
+                                 						Fran=<br class="linebreak">tzösischen <span>Officiers</span> gewesen / abfahren gesehen / und bey Außsteigung 
+                                 						bemeld=<br class="linebreak">te Reysende auffgehoben. Die Frantzosen thäten 3. Meylen disseits der 
+                                 						<br class="linebreak">Brucken <span>di Lago Scuro</span> biß jenseits <span>dal Bondeno</span> ligen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__425" class="yes-index">
+                                 						<br class="linebreak">Auß Genua vom 20. April. Daß allda die <span>Felucca</span>, welche der nach 
+                                 						<br class="linebreak">Pariß gehende <span>Capitan Gio Battista Germano</span> nach <span>Toulon</span> überbracht / wie=<br class="linebreak">der in 3. Tagen zuruck eingeloffen / mit Bericht / daß 7. Frantzösische Kriegs=
+                                 						<br class="linebreak">Schiff auß erst gemeldtem Port zwar auß: aber auff erhaltene Kundschafft 
+                                 						<br class="linebreak">von der Engel=und Holländischen Flotta / wieder in selben Hafen 
+                                 						eingesee=<br class="linebreak">gelt; Bey der Jnsul <span>d'Eres</span> habe gedachte <span>Felucca</span> das Schiff <span>S. Giovanni</span>
+                                 						<br class="linebreak"><span>Battista</span>, so mit vielen Baarschafften für dasige <span>Republica</span> kommen solte / hin=<br class="linebreak">terlassen / weil selbes von 4. Englischen zu <span>Livorno</span> vorhin gewesenen / und 
+                                 						<br class="linebreak">jetzo in dem Meer=Busem <span>d'Alberga</span> ankehrenden Schiffen gewahrnet 
+                                 						wor=<br class="linebreak">den / worüber die jenige / so bey solchen Baarschafften Antheil haben / sehr 
+                                 						<br class="linebreak">in Sorgen stünden. Der Herr <span>General Montecuculi</span>, welcher sich allda 
+                                 						be=<br class="linebreak">finde / unterrede sich immer mit den Kayserl. und Englischen Herren 
+                                 						Gesand=<br class="linebreak">ten. Einige auß <span>Livorno</span> in drey Tagen eingelangte Fahrzeuge meldeten / daß 
+                                 						<br class="linebreak">der Frantzösische <span>Caper Dehe</span>, welcher dasiger <span>Republique</span> etliche Schiff / nach 
+                                 						<br class="linebreak">jüngst des <span>Lanfranco</span> seines abgenommenen / ohne Mast / und sonst von 2. En=<br class="linebreak">glischen Schiffen bey <span>Cadix</span> übel zugerichtet wäre / zu <span>To<abbr title="unclear">u</abbr>lon</span> angelangt. Von 
+                                 						<br class="linebreak">dem letzteren Orth wolle verlauten / daß die Gallionen nacher Jndien 
+                                 						<br class="linebreak">nicht außlauffen dörfften. Der <span>Admiral Lacke</span> hätte nebst 1000. Mann nach 
+                                 						<br class="linebreak">des <span>Pointy</span> Unglück / viel Mund=und Kriegs=Vorrath zu <span>Gibraltar</span> 
+                                 						außge=<br class="linebreak">schiffet / mit dem Beysatz / daß die Portugesen <span>Marvan</span>, so die Frantzosen 
+                                 						<br class="linebreak">voriges Jahr eingenommen / ihnen anjetzo wieder abgenommen haben sollen.
+                                 						<br class="linebreak">Ubrigens wolle bestättiget werden / daß die Stadt <span>Nizza</span> und <span>Villa Franca</span>
+                                 						<br class="linebreak">zwar über / das <span>Cittadell</span> von <span>Nizza</span> aber mit 40. Canonen und 20. Mör=<br class="linebreak">sern scharff beschossen werde: die Frantzosen hätten von 8. Schiffen Lebens=
+                                 						<br class="linebreak">Mittel und anders nebst 1000. Mann ins Lager empfangen. Die <span>Camisards</span>
+                                 						<br class="linebreak">liessen sich wieder starck verspühren / dahero der <span>Feuillade</span> 2. Regimenter nach 
+                                 						<br class="linebreak"><span>Languedoc</span> schicken müsse. So wären bereits 4. Englische Schiff mit denen 
+                                 						<br class="linebreak"><span>Corsarn</span> von <span>Oneglia</span> nächst selbigen Küsten / umb 200. Soldaten in <span>Nizza</span> zu 
+                                 						<br class="linebreak">werffen / weil die Stadt aber in der Frantzosen Gewalt / als wollen jene ihre 
+                                 						<br class="linebreak">Kauffardey=Schiff nach <span>Capocorso</span> begleiten.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__60" class="yes-index">
+                                 						<br class="linebreak">Auß Mayland vom 22. April. Daß viel 1000. Mann von dar und in 
+                                 						<br class="linebreak">Sicherheit geflohen / weilen man alles zu Kriegs=Dienst zwingen wollen;
+                                 						<br class="linebreak">wormit kund gemacht worden / daß man fürohin nicht mit Gewalt / sondern 
+                                 						<br class="linebreak">freywillig werben solle. Der <span>Vendôme</span> habe 4. Regimenter auß Piemont</p>
+                           </div>
+                           <div id="fw__4" class="grid-item grid-item--width2 text-end"><span id="fw__4" class="yes-index catch-word">
+                                 						<br class="linebreak">gegen</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-004/full/full/0/default.jpg">-----[5]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__221" class="yes-index">
+                                 						<br class="linebreak">gegen <span>Mirandola</span> beordret: der <span>Duc de Tursis</span> verlange einige Verdammte 
+                                 						<br class="linebreak">auff die Galeeren / weil aber alle zu Soldaten gemacht worden / werde man 
+                                 						<br class="linebreak">ihn darmit nicht versehen können. Der Span. General <span>Las Torres</span> seye nebst 
+                                 						<br class="linebreak">anderen <span>Officiers</span> zu Mayland von Verua angelanget: am letzteren Orth 
+                                 						<br class="linebreak">seye man grosse Gräben zu machen beschäfftiget / worinn die Toden begraben 
+                                 						<br class="linebreak">werden / umb den unleydentlichen Gestanck zu vertreiben; die Schantz=Ar=<br class="linebreak">beiter sollen gegen <span>Gieradada</span> selbe Linien zu verfertigen / abgegangen seyn.
+                                 						<br class="linebreak">man hätte <span>Vercelli</span> zu schlaiffen den Anfeng gemacht / welches auch zu Verua 
+                                 						<br class="linebreak">geschehen solle / allwo indessen 300. Mann zu Fuß zur Besatzung ligeten;
+                                 						<br class="linebreak">die übrige Truppen rasteten noch auß / zu denen auß Franckreich täglich Volck 
+                                 						<br class="linebreak">über Pignarol / welchen Orth der Feind bevestigen wolle / anlangete. Der 
+                                 						<br class="linebreak">Hertzog von Mantua / so diese <span>Campagne</span>, gleichwie vor einem Jahr / als <span>GeGeneralissimus-</span>
+                                 						<br class="linebreak"><span>neralissimus</span> beeder Cronen <span>Arméen</span> schrifftlich <span>commandi</span>ren solle / hätte 
+                                 						ei=<br class="linebreak">nen Vorschlag / Turin zu belageren / wie dann hierzu der berühmte <span>Ingenieur</span>
+                                 						<br class="linebreak"><span>Vauban</span> in Jtalien erwartet würde. Der <span>Vendôme</span> wäre zu <span>Cassale</span>. Jn=<br class="linebreak">dessen durchstreifften die Kayserl. das <span>Montferat</span> mit guten Beuthen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__95" class="yes-index">
+                                 						<br class="linebreak">Auß <span>Brescia</span> vom 23. April. Daß beede Herren Gebrüder <span>di VendôVendôme-</span>
+                                 						<br class="linebreak"><span>me</span>, nebst dem <span>Gubernator</span> von Mayland alldorten zum Kriegs=Rath 
+                                 						er=<br class="linebreak">wartet würden. Der Herr General <span>Langalerie</span> habe anzeigen lassen / daß 
+                                 						<br class="linebreak">es ihme an Futterey mangelte. Es sollen 6000. Frantzosen noch in selbiger 
+                                 						<br class="linebreak">Provintz bleiben / hingegen sollen die Kayserliche durch <span>Val di Sabbia</span> im 
+                                 						An=<br class="linebreak">zug nach <span>Gavardo</span> begriffen seyn / und wären 6. <span>Cuirassier-Compagni</span>en nach 
+                                 						<br class="linebreak">bemeldtem <span>Brescia</span> geschicket worden.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__95" class="yes-index">
+                                 						<br class="linebreak">Auß Spanien vom 9. April. Daß zu Madrit eine grosse Summa von 
+                                 						<br class="linebreak">dem auß America nacher <span>Cadix</span> gebrachten Geld ankommen seye / mit der 
+                                 						<br class="linebreak">Nachricht / daß der <span>Pointy</span> von <span>Marbella</span> nacher <span>Mallaga</span>, umb allda curirt 
+                                 						<br class="linebreak">zu werden / sich führen lassen. Jn Spanien seye wegen des unglücklichen 
+                                 						<br class="linebreak">See=Streichs und Auffhebung der Belagerung Gibraltar / wie auch 
+                                 						An=<br class="linebreak">marschirung deren <span>Alliirt</span>en unter denen Frantzösisch=Gesinnten grosse 
+                                 						Ver=<br class="linebreak">stellung / und thäten sich dieselbe wegen Anländung sehr förchten.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__149" class="yes-index">
+                                 						<br class="linebreak">Auß Engelland vom 21. April. Daß man zu Londen / ohnerachtet man 
+                                 						<br class="linebreak">wegen des <span>Admiral Lake</span> glücklichen Streich und Ankunfft zu Gibraltar / von 
+                                 						<br class="linebreak">Lisabon / wohin abermahlen 5. Kriegs=Schiffe den 18. dieses von Helena 
+                                 						abge=<br class="linebreak">seegelt / keine eigentliche Nachricht erhalten / grosses Freuden=Fest gehalten /
+                                 						<br class="linebreak">die Stuck gelöset / die Glocken gelaütet / die Standarten außgesteckt mithin 
+                                 						<br class="linebreak">alle erdenckliche Freuden bezeuget habe; und über das beschlossen worden /
+                                 						<br class="linebreak">die grosse <span>Flotta</span>, welche nunmehro schier fertig mit noch 10. Kriegs=Schiffen 
+                                 						<br class="linebreak">zu vermehren / umb dem Feind mit selbiger überlegen zu seyn. Der 
+                                 						Venetia=<br class="linebreak">nische Gesandte <span>Mr. Mocenigo</span>, welcher seine Abschieds=<span>Audienz</span> jüngstens 
+                                 						<br class="linebreak">gehabt / und von Jhrer Majestät mit dem Ritters=Titul / und deme zu folg</p>
+                           </div>
+                           <div id="fw__4" class="grid-item grid-item--width2 text-center"><span id="fw__4" class="yes-index catch-word">
+                                 						<br class="linebreak">):(</span></div>
+                           <div id="fw__5" class="grid-item grid-item--width2 text-center"><span id="fw__5" class="yes-index catch-word">
+                                 						<br class="linebreak">3</span></div>
+                           <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
+                                 						<br class="linebreak">mit</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-005/full/full/0/default.jpg">-----[6]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__68" class="yes-index">
+                                 						<br class="linebreak"><abbr title="unclear">m</abbr>i<abbr title="unclear">t</abbr> einem kostbahren Degen beschenckt worden / mache sich reißfertig wieder 
+                                 						<br class="linebreak"><abbr title="unclear">v</abbr>on dannen abzugehen. Das Parlament seye nun voneinander geschieden /
+                                 						<br class="linebreak">und s<abbr title="unclear">o</abbr>lle mit nächstem wieder ein anders beruffen werden; man muthmasse /
+                                 						<br class="linebreak">daß das Paquet=Bott wegen der See=Schlacht abermahlen / wie vor einem 
+                                 						<br class="linebreak">Jahr geschehen / von den Frantzosen auffgefangen seyn müste.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__110" class="yes-index">
+                                 						<br class="linebreak">Auß dem Haag vom 28. April. Daß der <span>Milord Duc de Marlboroug</span>,
+                                 						<br class="linebreak">weilen der von Jhme nacher Engelland mit dem abgefassten Schluß wegen 
+                                 						<br class="linebreak">vorhabender <span>Campagne</span> abgeschickte Currier alldorten wieder angekommen /
+                                 						<br class="linebreak">nunmehro seine <span>Bagage</span> nach dem Reich abgeschickt habe / des Willens / mit 
+                                 						<br class="linebreak">ehestem dahin zu folgen / zu dem Ende alle Dähn=Lüneburg=und Hessische 
+                                 						<br class="linebreak">Truppen nach der Mosel ihren Marsch zu beschleunigen beordret worden;
+                                 						<br class="linebreak">so habe man auch an alle fertig stehende Kriegs=Schiff / von der ersten Linie /
+                                 						<br class="linebreak">den Befehl ergehen lassen / ohnverzüglich in See zu lauffen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__75" class="yes-index">
+                                 						<br class="linebreak">Vom Nider=Rhein=Strohm vom 30. April. Daß die jüngst zu Cölln 
+                                 						<br class="linebreak">angelangte mit allerhand Proviant und <span>Munition</span> beladene Schiff den 29. die=<br class="linebreak">ses nacher Coblentz in Begleitung einer starcken Mannschafft abgefahren / und 
+                                 						<br class="linebreak">erwarte man zu gedachtem Cölln täglich noch 30. dergleichen Schiffe mit 
+                                 						Ge=<br class="linebreak">schütz und andern Kriegs=Geräthschafften / welche auß Holland alldorten 
+                                 						an=<br class="linebreak">kommen sollen.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__306" class="yes-index">
+                                 						<br class="linebreak">Von dem Mosel=Strohm vom 27. April. Daß jüngstens <span>Mr.</span> Rhein 
+                                 						<br class="linebreak">Obrister von der Vestung Ehrenbreitstein zu Coblentz / allwo man auff dasiger 
+                                 						<br class="linebreak">fliegenden Brucken ein verdächtige Manns=Persohn / so sich in Weibs=Kley=<br class="linebreak">dern auß der Stadt <span>practicir</span>et an Händ und Füß geschlossen gefangen 
+                                 						einge=<br class="linebreak">bracht / gestorben. Zu Trier und in der Nachbarschafft langten täglich 
+                                 						Re=<br class="linebreak">gimenter zu Fuß und Pferd an / auch wären den 25. dieses die Herren 
+                                 						Gene=<br class="linebreak">ralen Ochsenstein und Erbach benebens vielen andern Officieren alldorten 
+                                 						an=<br class="linebreak">gekommen / und seye man anjetzo beschäfftiget die blecherne <span>Pontons</span> gegen die 
+                                 						<br class="linebreak">Contzer=Bruck hinauff zu führen und die Stücke auff denen Werckern an den 
+                                 						<br class="linebreak">Linien zu pflantzen. Der <span>Duc de Villars</span> seye unverrichter Sach mit Verlust 
+                                 						<br class="linebreak">ohngefehr 100. Tod=und <span>Blessirt</span>en / wie auch über 400. Mann / so 
+                                 						durchgan=<br class="linebreak">gen / zwischen Saarlouis und Metz wieder angekommen / gantz 
+                                 						mißver=<br class="linebreak">gnügt über den Schwedischen Herrn Grafen von Ochsenstern zu Zweybruck /
+                                 						<br class="linebreak">umb willen er ihme <span>Villars</span> die im Schloß gebliebene krancke Soldaten nicht 
+                                 						ab=<br class="linebreak">folgen lassen / vermeldend / daß er keine Soldaten von dem Römischen Reich 
+                                 						<br class="linebreak">an die Frantzosen zu verschencken Macht hätte. Die Frantzosen machten noch 
+                                 						<br class="linebreak">allerhand Marschen; wie dann erst kürtzlich wieder 2. Regimenter zu Fuß und 
+                                 						<br class="linebreak">1. zu Pferd von Diedenhofen nacher Bassendorff / allwo ein fliegendes Lager 
+                                 						<br class="linebreak">unter dem <span>Mr. de Curcelle</span> stehe / abgegangen; und hätten sie ein gantzes 
+                                 						Spa=<br class="linebreak">nisches Regiment zu Pferd von <span>Arlon</span> ins Niderland zuruckgeschickt / umb <span>rerecroutir-</span><span>croutir</span>en zu lassen / weilen alle die Pferde davon <span>crepir</span>et / und viele Mann</p>
+                           </div>
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word">
+                                 						<br class="linebreak">schafft=</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-006/full/full/0/default.jpg">-----[7]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__50" class="yes-index">
+                                 						<br class="linebreak">schafft durchgegangen. So wären auch alle die Truppen welche jüngstens 
+                                 						<br class="linebreak">hinter <span>Marché</span> gestanden wieder nacher Niderland / auff <span>Ordre</span> des 
+                                 						Churfür=<br class="linebreak">sten auß Bayern / der kürtzlich mit seinem Herrn Brudern dem Churfürsten 
+                                 						<br class="linebreak">von Cölln und <span>Villeroy</span> zu Namur gewesen / zu marschiren beordret.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__115" class="yes-index">
+                                 						<br class="linebreak">Von dem Obern=Rhein=Strohm vom 2. May. Daß der Herr General 
+                                 						<br class="linebreak">von Thüngen zu Philippsburg wieder angelangt / und erwarte man mit 
+                                 						ehi=<br class="linebreak">stem Jhrer Hochfürstl. Durchl. des Käyserl. General=Lieutenants Hrn. Lud=<br class="linebreak">wig Marg=Grafen zu Baaden / umb der <span>Campagne</span> am Obern=Rhein einen 
+                                 						<br class="linebreak">Anfang zu machen / immassen alle Truppen im Marsch begriffen / und ein 
+                                 						zim=<br class="linebreak">liches <span>Corpo</span> daselbsten beyeinander stehen solle. Die Frantzosen machten sich 
+                                 						<br class="linebreak">wegen dieses so frühen Feldzugs grosses Nachdencken / und thäten sich im 
+                                 						El=<br class="linebreak">saß sehr förchten wegen deren <span>Alliirt</span>en grossen Anstalten.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__338" class="yes-index">
+                                 						<br class="linebreak">Auß der Schweitz vom 28. April. Daß man alldorten Nachricht habe /
+                                 						<br class="linebreak">als wäre der König in Franckreich mit der Entschuldigung des <span>Pointy</span> und 
+                                 						<br class="linebreak">des <span>Maréchal de Thessé</span> nicht allerdings zufrieden / indem der Erstere dem 
+                                 						<br class="linebreak">Letzteren / jener aber des <span>Duc d'Anjou</span> seinem Befehl alle Schuld 
+                                 						zugeschrie=<br class="linebreak">ben / daß von 17. Kriegs=Schiffen nur 8. zuruck kommen / und die Belagerung 
+                                 						<br class="linebreak">vor Gibraltar mit Hinterlassung vieles Geschützes / und Verlust so vieler 
+                                 						<br class="linebreak">Millionen Gelds / wie auch etlicher 1000. Soldaten auffgehoben werden 
+                                 						<br class="linebreak">müssen; über dieses gebe gedachter <span>Thessé</span> vor / daß der <span>Villadarias</span> auch 
+                                 						<br class="linebreak">grosse Ursach daran seye / mit dem Trost / daß er indessen den <span>Mr. de Thoui</span> mit 
+                                 						<br class="linebreak">5000. Mann an dem Eingang des Gebürgs stehen lassen / umb die 
+                                 						Garni=<br class="linebreak">son zu Gibraltar von dem Heraußstreiffen abzuhalten / benebens der 
+                                 						Ersu=<br class="linebreak">chung / doch ohne Verzug etlich und 20000. Mann auß Franckreich in 
+                                 						Spa=<br class="linebreak">nien zu senden / um<abbr title="unclear">b</abbr> denen <span>Alliir</span>ten gewachsen zu seyn / widrigen Falls eine 
+                                 						<br class="linebreak">unglückliche <span>Campagne</span> alldorten zu beförchten seye / indeme das Spanische 
+                                 						<br class="linebreak">Volck gar schlechten Lust zum Krieg hätte / und alles sehr schwürig worden /
+                                 						<br class="linebreak">weilen kundbar / daß der <span>Duc d'Anjou</span> an statt des vorgegebenen <span>ChoccoChoccolate-</span>
+                                 						<br class="linebreak"><span>late</span> in denen jüngst nach Franckreich überschickten 300. Kästlein allen Schatz 
+                                 						<br class="linebreak">und Geschmuck von der Cron Spanien dahin gesendet habe. Weßwegen 
+                                 						<br class="linebreak">der <span>Duc de Feuillade Ordre</span> haben solle / das Schloß Nizza <span>bloqui</span>rt zu halten /
+                                 						<br class="linebreak">und / so bald möglich / etlich 1000. Mann nacher Spanien zu senden / wie dann 
+                                 						<br class="linebreak">auch der Graf von <span>Thoulose</span> auffs längst umb Mitten des May mit der 
+                                 						<br class="linebreak">Flotta dahin seeglen solle / umb das beförchtende Anländen deren <span>Alliir</span>ten 
+                                 						<br class="linebreak">in Catalonien zu verhindern / immassen man deßwegen zu Pariß sowohl / als 
+                                 						<br class="linebreak">zu Madrit bekümmert seye.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__51" class="yes-index">
+                                 						<br class="linebreak">Auß Dennemarck vom 20. April. Daß von Holland die Handlung 
+                                 						<br class="linebreak">nach Franckreich wieder eröffnet worden / mache unter dasigen Handels=
+                                 						<br class="linebreak">Leuthen grosse Verstellung / massen durch dieses die Nordische Handlungen 
+                                 						<br class="linebreak">etwas nedergelegt. Auß Schweden habe man Nachricht / daß nunmehro</p>
+                           </div>
+                           <div id="fw__4" class="grid-item grid-item--width2 text-end"><span id="fw__4" class="yes-index catch-word">
+                                 						<br class="linebreak">die</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-007/full/full/0/default.jpg">-----[8]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__81" class="yes-index">
+                                 						<br class="linebreak">die überschiffende Mannschafft zu Roß und Fuß sambt denen Recruten 
+                                 						<br class="linebreak">zum Auffbruch fertig seye / umb nach denen angewiesenen Seehäfen sich 
+                                 						zu=<br class="linebreak">begeben; allein es bezeuge dieselbe schlechten Lust auß dem Reich in ein Land 
+                                 						<br class="linebreak">zu gehen / da ihre Vätter / Brüder und Cammeraden in viel 1000. Mann 
+                                 						<br class="linebreak">innerhalb 3. Jahren umbkommen / auch sich einbilden / daß es ihnen nicht 
+                                 						<br class="linebreak">besser ergehen / und schwerlich wieder zuruck kommen werden.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__120" class="yes-index">
+                                 						<br class="linebreak">Auß Braunschweig vom 26. April. Daß daselbsten in einer kurtzen 
+                                 						<br class="linebreak">Zeit unterschiedliche Unfälle sich erreichet: indeme ein Zimmer Gesell zu todt 
+                                 						<br class="linebreak">sich gefallen / ein Student hingegen auß Verzweifflung mit umbgehabten 
+                                 						De=<br class="linebreak">gen und Mantel sich versäuffet / und ein Soldaten=Müllner / umb willen er 
+                                 						<br class="linebreak">gefänglich eingezogen / daß man so viel Sand im <span>CommissCommissMehl-</span>Mehl gefunden /
+                                 						<br class="linebreak">in der Gefängnuß / sich in die Kehl geschnitten / aber von dem Regiments=
+                                 						<br class="linebreak">Feldscherer die durchgeschnittene Kehl so künstlich angenähet / und der 
+                                 						Müll=<br class="linebreak">ner an dieser dergestalt <span>curi</span>rt worden / daß er in kurtzem mit selbiger 
+                                 						ge=<br class="linebreak">henckt werden könne.</p>
+                           </div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__4" class="yes-index text-center">
+                                 						<br class="linebreak">Hohe Geburt.</h5>
+                              <p id="p__260" class="yes-index">
+                                 						<br class="linebreak">Den 2. May hat des (Titl) Herrn Frantz Georg Engel von und zu Wagrain /
+                                 						<br class="linebreak">Freyherrn / Herrn deren Herrschafften Seisenburg / Pöttenbach / Millbach und Velß /
+                                 						<br class="linebreak">der Römisch Käyserl. Majestät würcklichen Cammerern / Rath und Ni. Oe. Land=Rechts=
+                                 						<br class="linebreak">Beysitzern / Frau Gemahlin / (Titl) Frau Anna Margaretha / gebohrne und vermählte 
+                                 						<br class="linebreak">Englin von Wagrain / Freyin / einen jungen Herrn glücklich zur Welt gebracht / welcher 
+                                 						<br class="linebreak">den 6ten dito getaufft / und ihme die Nahmen <span>Francis<abbr title="unclear">c</abbr>us Carolus Julius Sigismundus</span> 
+                                 						ge=<br class="linebreak">geben worden. Dessen hohe Pathen waren gewesen (Titl) Herr Carl Maximilian des H.
+                                 						<br class="linebreak">Römis. Reichs Graf von Thurn und <span>Valesasina &amp; c.</span> der Römis. Kayserl. Majest. Camme=<br class="linebreak">rer / würcklicher geheimer Rath / und Jhrer Majest. der Verwittibten Kayserin Obrister=Hof=<br class="linebreak">meister (Titl) Herr <span>Julius Fridericus</span> des Heil. Römis. Reichs Graf <span>Buceleni &amp; c.</span> der 
+                                 						Rö=<br class="linebreak">mis. Käyserl. Majest. Cammerer / geheimer und <span>ConferenzConferenzRath-</span>Rath / wie auch Obrister=ge=<br class="linebreak">heimer Hof=Cantzler. (Titl) Herr Frantz Ludwig Herr zu Polhaimb und Wartenburg /
+                                 						<br class="linebreak">Freyherr / der Römis. Käyserl. Majest. Cammerer und Ni. Oe. Land=Rechts=Beysitzer /
+                                 						<br class="linebreak">sambt dessen Frau Gemahlin (Titl) Frauen <span>Sophia Elisabetha Theresia</span>, einer gebohrnen 
+                                 						<br class="linebreak">Englin von Wagrair / Freyin.</p>
+                           </div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__4" class="yes-index text-center">
+                                 						<br class="linebreak">Hohe Vermählung.</h5>
+                              <p id="p__174" class="yes-index">
+                                 						<br class="linebreak">Den 4. May wurde allhier vermählet (Titl) Herr Johann Leopold des Heil. Rö=<br class="linebreak">mis. Reichs Graf von Herberstein / Freyherr auff Neuberg und Guetenhaag / Herr auff 
+                                 						<br class="linebreak">Lanckowitz / Wangen / Metzdorff / Groß=Priesse / Bockschütz / Schnelldorff und Hartlieb;
+                                 						<br class="linebreak">Erb=Cammerer und Erb=Truckses in Cärnten; der Römis. Käys. Majestät Cammerer und 
+                                 						<br class="linebreak">würcklicher geheimer Rath ꝛc. wie auch Hof=Cammer=Rath in Schelsien / Wittiber / mit 
+                                 						<br class="linebreak">der Fräule Maria Rosalia (Titl) Herrn Johann Quintin Jörger / des Heil. R. Reichs 
+                                 						<br class="linebreak">Grafen von Tollet ꝛc. Weyland Rittern des guldenen Fluß / Käyserl. Cammerern / würck=<br class="linebreak">lichen geheimen und <span>ConferenzConferenzRath-</span>Rath / wie auch Statthaltern des Regi ments der Ni.
+                                 						<br class="linebreak">Oe. / Landen und (Titl) Frauen MariæMariae RosaliæRosaliae / einer gebohrnen Gräfin von Losenstein /
+                                 						<br class="linebreak">beeder hochseeligen Andenckens / hinterlassenen Fräule Tochter.</p>
+                           </div>
+                           <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
+                                 						<br class="linebreak">Ho=</span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_9"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-008/full/full/0/default.jpg">-----[9]-----</span></div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br class="linebreak">Hoher Tods=Fall.</h5>
+                              <p id="p__64" class="yes-index">
+                                 						<br class="linebreak">Den 6. May verschiede allhier in dem 9. Monath des Alters Fräule Anna 
+                                 						Leopoldi=<br class="linebreak">na / zu grossem Leyd=Weesen ihres Herrn Vatters (Titl) Herrn Johann Wolffgang 
+                                 						<br class="linebreak">Grafen von Franckenberg und Ludwigsdorff / der Römis. Käyserl. Majest. Cammerern /
+                                 						<br class="linebreak">geheimen Rath / und <span>ViceViceCantzlern-</span>Cantzlern des Königreichs Böheim.</p>
+                           </div>
+                           				
+                           					
+                           <div id="head__10" class="grid-item">
+                              <h5 id="head__10" class="yes-index text-center">
+                                 						<br class="linebreak">Ankunfft deren hohen und niedrigen Stands=Persohnen.</h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. May 1705.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cärnter=Thor. Herr Johannes <span>Saponny</span>,
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">kombt von Rom / logirt beym Herrn 
+                                    						Gra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">fen von Welß an der Pastey.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 7. dito.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rothen=Thurn. Herr Johann Gregori von 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thalberg / Hr. Joseph von Zergollern und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Simon <span>Gionima,</span> kommen von 
+                                    						Läy=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">bach / logiren im wilden Mann.</li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cärnter=Thor. Herr Haubtman Hoffer /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">kombt von Preßburg / geht zum Herrn 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">General Heyster.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Graf Wündischgrätz / kombt von 
+                                    						sei=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nem Gut / logirt in seinem Hauß.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div id="head__10" class="grid-item">
+                              <h5 id="head__10" class="yes-index text-center">
+                                 						<br class="linebreak">Abreyß deren hohen und niederen Standts=Personen.</h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. May 1705.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr von Wetzstein Hof=Kriegs=Rath=<span>Secre-</span>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak"><span>tarius</span>, nach Burckersdorff.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Graf <span>Souches</span>, nach Langen=Entzers=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dorff.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Johann <span>Polange</span>, Currier / nach 
+                                    						Lan=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gen=Entzersdorff.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Anton <span>Montagne</span>, nach Burckersdorff.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein Venetianischer Currier / nach Venedig. </li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein Chur=Phältzis. Currier / nach Düsseldorff.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Georg Meeckl / Stadt=Schreiber zu 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Steyer / nach Steyer.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Gö<abbr title="unclear">ss</abbr>inger / nach der Armee in Ungarn.</li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 7. dito.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 8. dito.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Ober Kriegs=<span>Commissarius</span> von Löbenau /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nach Bayern.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Hasselman Currier / nach dem Haag.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div id="head__11" class="grid-item">
+                              <h5 id="head__11" class="yes-index text-center">
+                                 						<br class="linebreak">Lista aller Verehlichten in=und vor der Stadt.</h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 3. April 1705.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Caspar Schneider / ein Reut=Knecht / mit 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Thomin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Kapler / ein Taffeldecker / mit 
+                                    						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria Elisabeth Geyerin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Anton Schells / ein Käßstecher / mit 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Sabina Barbara Ströblin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Stampel / ein Nadler / mit 
+                                    						Cathari=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">na Fuchsin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Severin Leonhard / ein Schuester / mit 
+                                    						Su=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sanna Rosina Rebhandlin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Langbauer / ein Holtzleger / mit 
+                                    						Eli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sabeth Hoffmanin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Caspar Römer / Kayserl. Reichs=Hof=
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Raths=<span>Actuarius</span>, mit Frauen Maria 
+                                    						Lei=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nixin Wittib.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Schrotz / ein Bier=Abtrager / mit Herr Anton Joseph Veigl / ein Feldscherer /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Juliana Eßlin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Letner/ein Häring=Niderlags=Knecht /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mit Maria Auerin.</li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Treffler / ein Obstler / mit 
+                                    						Margare=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tha Feiglin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hanß Georg Leibnfrost / ein Jäger mit 
+                                    						Eli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sabeth Mayrhofferin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Veit Hueber / ein <abbr title="unclear">H</abbr>auer / mit Regina 
+                                    						Fel=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">lingerin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Johann Kellner / Wittiber / mit 
+                                    						Jung=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">frau Barbara Felberin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Jacob Zapff / Burgerl. Handelsman /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Wittiber / mit Jungfrau Maria Josepha 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Judith Oberbeyerin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Friderich <abbr title="unclear">Le</abbr>r / ein Fuehr<abbr title="unclear">=</abbr> / mit Eva 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Renauerin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Samuel Leblanc / Königl. <span>Chien. Courrant-</span>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jäger / mit Maria Polixena Francisca 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Käpplin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Anton Joseph Veigl / ein Feldscherer /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mit Anna Maria Landspergerin Wittib.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Fridrich Kern / ein Guardi Soldat / mit 
+                                    						An=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">na Maria Wagnerin.</li>
+                              </ul>
+                           </div>
+                           <div id="fw__14" class="grid-item grid-item--width2 text-center"><span id="fw__14" class="yes-index catch-word">
+                                 						<br class="linebreak">(:<abbr title="unclear">o</abbr>:)</span></div>
+                           <div id="fw__13" class="grid-item grid-item--width2 text-end"><span id="fw__13" class="yes-index catch-word">
+                                 						<br class="linebreak">Herr</span></div>
+                           				</div>
+                        <div class="grid margin-end">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_10"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-009/full/full/0/default.jpg">-----[10]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Simon Ruthnick / ein Guardi. Soldat / mit 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Magdalena Tiedlin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Frantz Anton Bomer / ein Kauffmans=Die=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ner / mit Theresia Broxmayrin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Georg Bendl / ein Schuester 
+                                    						Wit=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tiber / mit Barbara Fuxin Wittib.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 4. dito.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Adam Heyfelder / ein Tischler / mit Maria 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara Wincklerin.</li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Georg Heintz / ein Herrn=Diener /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mit Theresia Heorschin.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 5. dito.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Sculden, Königl. Trabant / mit 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Margareth Strenbergerin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joseph Joachim Hochleuthner / Burgerl.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Schnurmacher / mit Maria Theresia 
+                                    						Tren=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gerin.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Ulrich Widman / ein Träxler / mit 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Anna Gräfin.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div id="head__10" class="grid-item">
+                              <h5 id="head__10" class="yes-index text-center">
+                                 						<br class="linebreak">Lista aller Verstorbenen in und vor der Stadt.</h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__8" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. May 1705. starb</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Bogner / einem Hos=Befreyten 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Tischler im Fellauer. Hauß im Tieffen 
+                                    						Gra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ben / sein Weib Anna / alt 28. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Hädter / ein Mauer=Gesell im 
+                                    						Häckli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">schen Hauß am Neuenmarckt / alt 68. J.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Bruner / einem Königl. Tra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">banten beym schwartzen Rößl am 
+                                    						Spitl=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">berg / sein. Kind Anna / alt 1. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Martin Reyser / ein Schreiber im Sperl=
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Würths Hauß bey St. Ulrich / alt 31. J.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Thoma Paxfriderich / einem 
+                                    						Progat=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">macher beyn 3. Rosen in der Leopold=
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stadt / sein Kind Martin / alt 3. Viertl 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Christian Strobl / einem Rumor=Sol=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">daten beym rothen Rößl am Neustifft /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Kind Maria / alt 5. Jahr.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 7. dito.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Colperth / einem 
+                                    						Ritt=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">meister / beym schaben Rößl am Rothen=
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thurn / sein Kind Frantz / alt 1. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Aigenbauer / einem Burgerl.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Leinwathhandler im Porischen Hauß 
+                                    						un=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tern Tuchladen / sein Kind Anna / alt 1.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Viertl Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Marian Pfeiffer / ein Taffeldecker / im 
+                                    						Mon=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tecuculischen Hauß in der Obern 
+                                    						Schen=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ckenstraß / alt 55. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Frau Maria Elisabeth von Pentz / Wit=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tib im Oellerischen Hauß in der Leopold=
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stadt / ihr Söhnl Johann Carl Petecker /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 7. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Goldman / Kayserl. Hätschier=
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Trompeter in seinem Hauß auff der Land=</li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">straß / sein Tochter Anna / alt 17. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Abraham Essenauer / einem Burger 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">in seinem Hauß in der Unger=Gassen / sein 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kind Eva / alt 2. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Auger / einem Tagwercker 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Goldschmidischen Hauß am Neubau /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein Weib Justina / alt 45. Jahr.</li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 8. dito.</h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jungfrau Maria Regina Langin / im 
+                                    						Traut=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sohnischen Hauß in der Obern=Schencken=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">straß / alt 55. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Simon Nistler / Burgl. Schuhmacher 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">in seinem Hauß im Schulter=Gäßl / sein 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kind Theresia / alt 2. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Balthasar Letsch / ein Schreiber im Daübl 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hof in der Anna Gassen / alt 39. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Däungl / ein Mauer=Gesell im 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Reschgallischen Hauß im Pallgäßl / alt 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">44. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Bayer / Kayserl. Zeug=Schreiber 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">zu Caschau / beym weissen Rößl in der 
+                                    						Leo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">pold=Stadt / alt 32. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Philipp Schlöglhoffer / einem Kayserl.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Reut=Knecht im Rablischen Hauß untern 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Weißgärbern / sein Kind Lorentz / alt 6.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Viertl Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ruprech Ambslgraber / Guardi Soldat /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">beyn 3 Pommerantzen am Neustifft / alt 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">42. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Nicola Hädl / einem Schuhmacher 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">beyn 3. Hüten bey St. Ulrich / sein Weib 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Catharina / alt 67. Jahr.</li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Michael Zanner / ein Bier=Abtrager beym 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">guldenen Stiffel in der Leopold=Stadt /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 44. Jahr.</li>
+                              </ul>
+                           </div>
+                           				</div>
                      </div>
-                     <div class="sticky row bg-white" style="top: 1em!important;">
-                        <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
-                           <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
-                        <div id="mark-scroll" class="fade-lang col-md-2 my-4"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
-                        </div>
-                     </div>
-                     <div class="title-page py-4" id="#top_page">
-                        			
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-000/full/full/0/default.jpg">-----[1]-----</span></div>
-                        				
-                        <h5 id="titlePart__5" class="yes-index text-center py-2">
-                           						<br class="linebreak"><span>Num.</span> 184.</h5>
-                        <h4 id="titlePart__5" class="yes-index text-center py-2">
-                           						<br class="linebreak">Wiennerisches <span>DIARIUM</span>,</h4>
-                        <div id="imprimatur__12" class="grid-item">
-                           <p id="imprimatur__12" class="grid-item yes-index">
-                              						<br class="linebreak">Mit Jhrer Römisch=Käyserlichen Majestät allergnädigstem <span>Privilegio</span>.</p>
-                        </div>
-                        				
-                        		</div>
-                     <div class="grid ">
-                        					
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__13" class="yes-index text-center">
-                              						<br class="linebreak">Wienn / vom 6. biß 8. May / 1705.</h5>
-                           <p id="p__193" class="yes-index">
-                              						<br class="linebreak">MJttwoch den 6. May. Nachdeme / wie jüngst gedacht / auß 
-                              						Göttli=<br class="linebreak">cher Verhängnuß / Jhre Kayserl. Majest. LEOPOLD dieses 
-                              						Nah=<br class="linebreak">mens der Erste / Glorwürdigster Gedächtnuß / Weyland unser 
-                              						<br class="linebreak">allergnädigster Lands=Fürst und Herr / gestern auß dieser Zeitlichkeit zu 
-                              						un=<br class="linebreak">beschreiblichem Leyd=Weesen des gantzen Kayserlichen Hofs und aller 
-                              						De=<br class="linebreak">ro treuen Vasallen und Unterthanen abgegangen; Als wurde heute 
-                              						Des=<br class="linebreak">sen verblichener Leichnamb / in Anwesenheit Jhrer Hochfürstl. Gnaden von 
-                              						<br class="linebreak">Fundi und Grafen zu Mansfeld / wie auch des Kays. Obrist=Kuchel=Meistern 
-                              						<br class="linebreak">(Titl) Herrn Grafen von Mollarth und beeder Kayserlichen Camer=Herren /
-                              						<br class="linebreak">nemblich (Titl) Herrn Grafen von Kollonitsch und (Titl) Herrn Grafen von 
-                              						<br class="linebreak"><span>Castelbarco</span>, wie auch zweyer Cammer=Dienern / Herrn <span>de Biel</span> und Herrn 
-                              						<br class="linebreak"><span>d'Ubens</span>, von denen 6. neulich schon bemeldten Kays. Herren Leib=<span>Medicis</span> und 
-                              						<br class="linebreak">3. Leib=Barbiern / als Herrn Zeidlern / Herrn Fuchs und Herrn Jaues geöffnet /
-                              						<br class="linebreak">und sodann gewöhnlicher massen einbalsamirt.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__66" class="yes-index">
-                              						<br class="linebreak">Sonsten hat der gestern auß Bayrn von Landshut dahier 
-                              						angekomme=<br class="linebreak">ne Currier unter andern mitgebracht / wie nemblich er auff seiner Anhero=Reiß 
-                              						<br class="linebreak">vernommen / daß eine Anzahl Bayrische Bauern sich zusammen rottirt / und 
-                              						<br class="linebreak">des Nachts bey 100. Kayserl. Reuter in ihren Quartieren mit Prüglen und 
-                              						<br class="linebreak">Kolben unchristlicher Weiß zu todt geschlagen haben sollen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__109" class="yes-index">
-                              						<br class="linebreak">Donnerstag den 7. May. Heute wurden allhier Jhre verstorbene 
-                              						Kay=<br class="linebreak">serl. Majest. in der Ritter Stuben offentlich zu sehen außgesetzet / und wird 3.
-                              						<br class="linebreak">Tag lang darmit angehalten werden; deme zu folg gedachte Ritter=Stuben /
-                              						<br class="linebreak">gleichwie die andere Zimmer / schwartz überzogen worden. Jhre Kays. Maj.
-                              						<br class="linebreak">ligen in einem Spanischen schwartzen Mantel=Kleyd / mit einer <span>Peruque</span> und 
-                              						<br class="linebreak">Hut auff dem Haupt / wie auch einem Degen an der Seiten / unter einem 
-                              						<br class="linebreak">schwartz=Sammeten Himmel / auff einem drey Staffel hohen mit guldenguldenund=</p>
-                        </div>
-                        <div id="fw__4" class="grid-item grid-item--width2 text-center"><span id="fw__4" class="yes-index catch-word">
-                              						<br class="linebreak">)(</span></div>
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word">
-                              						<br class="linebreak">und</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-001/full/full/0/default.jpg">-----[2]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__206" class="yes-index">
-                              						<br class="linebreak">und silbernem Stuck überzogenen <span>ParadeParadeBeth-</span>Beth / umb und umb mit vielen 
-                              						<br class="linebreak">auff silbernen Leuchtern brennenden weissen Wachs=Kertzen; bey denen 
-                              						<br class="linebreak">Füssen stehet ein schönes silbernes Crucifix / und nicht weit darvon auff der 
-                              						<br class="linebreak">Rechten ruhet auff einem guldenen Küssen die Kayserl. Cron / Apffel und 
-                              						<br class="linebreak">Scepter mit dem güldenen Fluß / zur lincken Seiten aber ligt auff einem 
-                              						<br class="linebreak">anderen guldenen Küssen die Ungarische und Böhmische Cron; bey dem <span>PaParade-</span>
-                              						<br class="linebreak"><span>rade-</span>Beth befinden sich 4. Käyserl. Cammer=Herren und Cammer=Diener / mit 
-                              						<br class="linebreak">langen schwartzen Mänteln wie auch 4. Geistliche von der Käyserl. Hof=Kirchen 
-                              						<br class="linebreak">deren W. W. E. E. <span>P. P. Augustin</span>. Barfüssern / nicht weniger die gewöhnliche 
-                              						<br class="linebreak">Kayserl. Leib=Wacht von Hartschiren und Trabanten / welche erstere von 
-                              						<br class="linebreak">Stund zu Stund abwechseln. Der Zulauff so wohl von denen Grossen / als 
-                              						<br class="linebreak">Kleinen / umb den Weyland Allergnädigsten Käyser und Mildesten Lands=
-                              						<br class="linebreak">Fürsten zum letztenmahl zu sehen / wie auch das darüber bezeugte Hertzenleyd 
-                              						<br class="linebreak">ist so groß / daß es nicht zu beschreiben.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__45" class="yes-index">
-                              						<br class="linebreak">Sonsten seynd verschiedene Curriers und <span>Staffett</span>en mit der <span>Notification</span>
-                              						<br class="linebreak">des Todtfalls allerhöchst besagter Jhrer Kayserl. Majest. <span>LEOPOLDI</span> an 
-                              						<br class="linebreak">verschiedene Chur=und Fürsten des Reichs / wie auch an die außwertige <span>PoPotenzen-</span>
-                              						<br class="linebreak"><span>tenzen</span> abgangen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__67" class="yes-index">
-                              						<br class="linebreak"><span>Eodem</span> wurde von Jhrer Majestät dem Römischen Kayser mit einem 
-                              						<br class="linebreak">eigenen Hand=Brieffl und 100000. Gulden Wechsel=Brieffen nacher 
-                              						Jta=<br class="linebreak">lien zu dem allda <span>commandi</span>renden Kayserl. General=Feld=Marschallen /
-                              						<br class="linebreak">Jhro Hochfürstl. Durchl. Printzen <span>Eugenium</span> von Savoyen / der Kayserliche 
-                              						<br class="linebreak">Hof=Kriegs=Rath / HErr von <span>Pozzo</span> abgeschickt.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__54" class="yes-index">
-                              						<br class="linebreak">Freytag den 8. May. Heute wurde auff allergnädigste Kayserl. Ver=<br class="linebreak">ordnung zum ersten mahl mit allen Glocken so wohl in als vor der Stadt von 
-                              						<br class="linebreak">12. biß 1. Uhr Mittags / vor Jhre jüngst verschiebene Kayserl. Majestät zu 
-                              						<br class="linebreak">läuten angefangen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__197" class="yes-index">
-                              						<br class="linebreak"><span>Dito</span> vernahme man auß Ungarn / daß der Hr. General Nehm mit etilch 
-                              						<br class="linebreak">1000. Raitzen die Donau <span>passi</span>ret umb gegen die Rebellen auff allen Fall <span>agi-</span> 
-                              						<br class="linebreak">ren zu können; gedachte Rebellen sollen noch immerhin an ihrer zu Pax 
-                              						neu=<br class="linebreak">angelegten Schantze fleissig fortfahren / und selbige mit 6000. Mann / so 
-                              						al=<br class="linebreak">le Teutsch gekleydet / besetzter halten / vorgebend / daß der Beretzeny / wo=<br class="linebreak">fern nicht bald Fried würde / einen gewissen Anschlag ins Werck zu setzen 
-                              						Wil=<br class="linebreak">lens wäre / weßwegen derselbe schon würcklich einige Mannschafft versamblen 
-                              						<br class="linebreak">auch diese mit nöthigem Geschütz versehen lassen. Von Raab verlaute / daß 
-                              						<br class="linebreak">die Rebellen auff dasiger Seiten begünten wieder herüber zu setzen / und 2 
-                              						Par=<br class="linebreak">theyen / als eine nach Fünffkirchen / die andere nach Kapuswar und 
-                              						Simon=<br class="linebreak">thorna marschiret; uber das liessen sie zwischen Comorren und Gran viele 
-                              						<br class="linebreak">Schiff zusammen führen; in dem Raaber Wald hielten dieselbe sich auch noch 
-                              						<br class="linebreak">starck auff / von dannen sie des Nachts zu 20. und 30. in die Dörffer schleichen /</p>
-                        </div>
-                        <div id="fw__4" class="grid-item grid-item--width2 text-end"><span id="fw__4" class="yes-index catch-word">
-                              						<br class="linebreak">und</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-002/full/full/0/default.jpg">-----[3]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__19" class="yes-index">
-                              						<br class="linebreak">und / was sie alldorten bey den armen Leuten noch antreffen könten / mitneh=<br class="linebreak">men thäten.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__197" class="yes-index">
-                              						<br class="linebreak">Auß Pohlen vom 30. April. Daß jüngstens von der Königl. Hof=<br class="linebreak">statt zu Brzee ein Abgeschickter zu Warschau mitgebracht habe / wie 
-                              						nemb=<br class="linebreak">lich eine grosse Moscowitische Macht mit ehestem allda zu stehen kommen 
-                              						<br class="linebreak">werde / von dero 6000. Mann würcklich bey Grodno vorbeygegangen; und 
-                              						<br class="linebreak">wolten Jhre Czaarische Majestät ehestens in Litthauen sich einfinden. Von 
-                              						<br class="linebreak">Opotaw gienge der Ruff / daß alldorten 7. Pohlnische Fahnen des 
-                              						Castel=<br class="linebreak">lans von Poluniez von denen Schweden des Nachts umbringt und theils 
-                              						<br class="linebreak">verbrennt / theils sonsten niedergemacht worden; hingegen hätten des 
-                              						Ogins=<br class="linebreak">ky Truppen eine Schwedische Parthey zu Pferd / so von denen 
-                              						Churländi=<br class="linebreak">schen Gräntzen nacher Samogithien gehen / und allda <span>Contribution</span> 
-                              						eintrei=<br class="linebreak">ben sollen / angetroffen / und sie auch also bezahlet / daß wenig darvon 
-                              						kom=<br class="linebreak">men. Jhre Majest. der König von Schweden befinde sich noch zu Rawitz / all 
-                              						<br class="linebreak">wo jüngsten ein Theil vom Magazin eingefallen / und etliche Leuth 
-                              						erschla=<br class="linebreak">gen / der Neu=Erwählte aber zu Reusch; der Herr General Steinbock solle 
-                              						<br class="linebreak">zu Elbingen kranck ligen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__206" class="yes-index">
-                              						<br class="linebreak">Auß Rom vom 18. April. Daß die heilige Oster=Fest von Jhrer 
-                              						Hei=<br class="linebreak">ligkeit mit aller Andacht eyfferichst begangen worden. Auß <span>Neapoli</span> reiseten 
-                              						<br class="linebreak">sehr viele Frantzösische <span>Officiers</span> durch Rom zu dem <span>Gran Prior di Vendôme</span>,
-                              						<br class="linebreak">denen die Soldaten über Meer folgen solten. Zu <span>Neptuno</span> wären die 
-                              						Nea=<br class="linebreak">politanische Galeeren mit Volck nach Lombardien seeglend a<abbr title="unclear">n</abbr>kommen: wel=<br class="linebreak">che zu sehen / der <span>Cardinal Janson</span> von <span>Albano</span> abgegangen. Man solle 
-                              						vie=<br class="linebreak">le Frantzösische Uberlauffer / wie vorgegeben wird / zusammen gebracht haben 
-                              						<br class="linebreak">welche zu <span>Civita Vecchia</span> eingeschifft werden. Ein jüngst angelangt=Fran=<br class="linebreak">tzösischer <span>Officier</span>, Nahmens <span>Fourbin</span>, und ein Verwandter des Cardinals 
-                              						<br class="linebreak">dieses Nahmens / solle diß Jahr 5. Schiff in dem Adriatischen Meer <span>comcommandiren-</span>
-                              						<br class="linebreak"><span>mandi</span>ren. Der Kayserliche Herr Bottschaffter habe sich Gesundheits 
-                              						hal=<br class="linebreak">ber auffs Land begeben. Der <span>Cardinal Legar</span> zu <span>Ferrara</span> habe dem 
-                              						Kayser=<br class="linebreak">lichen <span>Commendan</span>ten wegen scharpff=gehaltener <span>Disciplin</span> an seinen 
-                              						unterha=<br class="linebreak">benden Truppen / weil diese nichts unfügliches verübet / höflichen Danck 
-                              						ab=<br class="linebreak">statten lassen / da hingegen die Frantzösische Soldaten allen Muthwillen 
-                              						ge=<br class="linebreak">trieben.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__109" class="yes-index">
-                              						<br class="linebreak">Auß Venedig vom 28. April. Daß der Hr. Gen. <span>Batté</span> sich noch mit 300.
-                              						<br class="linebreak">Kayserlichen Pferden zu <span>Boara</span> in dem Polesinischen an der Etsch auffhielte:
-                              						<br class="linebreak">allein das Land=Volck alldort stünde in Waffen / dahin 3. <span>Compagni</span>en zu 
-                              						<br class="linebreak">Pferd auß <span>Rouigo</span> der alldasige Venetianische Befelchshaber abgehen 
-                              						las=<br class="linebreak">sen. Selbigen Lands Jnwohner hätten den 17. dito von dem Fluß 
-                              						Gar=<br class="linebreak">zon die Frantzosen abgetrieben / und die Brucken / so diese allda gebauet / abge=<br class="linebreak">worffen. Zu <span>Palazuolo</span> an dem <span>Oglio</span> verschantzten sie sich sehr / wie dann</p>
-                        </div>
-                        <div id="fw__5" class="grid-item grid-item--width2 text-center"><span id="fw__5" class="yes-index catch-word">
-                              						<br class="linebreak">)( </span></div>
-                        <div id="fw__5" class="grid-item grid-item--width2 text-center"><span id="fw__5" class="yes-index catch-word">
-                              						<br class="linebreak">2</span></div>
-                        <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
-                              						<br class="linebreak">al=</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-003/full/full/0/default.jpg">-----[4]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__77" class="yes-index">
-                              						<br class="linebreak">alles eben gemacht / und die Wercker außgemauret werden solten. Gegen 
-                              						<br class="linebreak">ob=bemeldtem <span>Polesella</span> streifften immer Kayserliche Partheyen; diese hätten 
-                              						<br class="linebreak">ein Schiff auff dem <span>Pô</span>, worauff der <span>Abbate Boselli</span> nebst 4. vornehmen 
-                              						Fran=<br class="linebreak">tzösischen <span>Officiers</span> gewesen / abfahren gesehen / und bey Außsteigung 
-                              						bemeld=<br class="linebreak">te Reysende auffgehoben. Die Frantzosen thäten 3. Meylen disseits der 
-                              						<br class="linebreak">Brucken <span>di Lago Scuro</span> biß jenseits <span>dal Bondeno</span> ligen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__425" class="yes-index">
-                              						<br class="linebreak">Auß Genua vom 20. April. Daß allda die <span>Felucca</span>, welche der nach 
-                              						<br class="linebreak">Pariß gehende <span>Capitan Gio Battista Germano</span> nach <span>Toulon</span> überbracht / wie=<br class="linebreak">der in 3. Tagen zuruck eingeloffen / mit Bericht / daß 7. Frantzösische Kriegs=
-                              						<br class="linebreak">Schiff auß erst gemeldtem Port zwar auß: aber auff erhaltene Kundschafft 
-                              						<br class="linebreak">von der Engel=und Holländischen Flotta / wieder in selben Hafen 
-                              						eingesee=<br class="linebreak">gelt; Bey der Jnsul <span>d'Eres</span> habe gedachte <span>Felucca</span> das Schiff <span>S. Giovanni</span>
-                              						<br class="linebreak"><span>Battista</span>, so mit vielen Baarschafften für dasige <span>Republica</span> kommen solte / hin=<br class="linebreak">terlassen / weil selbes von 4. Englischen zu <span>Livorno</span> vorhin gewesenen / und 
-                              						<br class="linebreak">jetzo in dem Meer=Busem <span>d'Alberga</span> ankehrenden Schiffen gewahrnet 
-                              						wor=<br class="linebreak">den / worüber die jenige / so bey solchen Baarschafften Antheil haben / sehr 
-                              						<br class="linebreak">in Sorgen stünden. Der Herr <span>General Montecuculi</span>, welcher sich allda 
-                              						be=<br class="linebreak">finde / unterrede sich immer mit den Kayserl. und Englischen Herren 
-                              						Gesand=<br class="linebreak">ten. Einige auß <span>Livorno</span> in drey Tagen eingelangte Fahrzeuge meldeten / daß 
-                              						<br class="linebreak">der Frantzösische <span>Caper Dehe</span>, welcher dasiger <span>Republique</span> etliche Schiff / nach 
-                              						<br class="linebreak">jüngst des <span>Lanfranco</span> seines abgenommenen / ohne Mast / und sonst von 2. En=<br class="linebreak">glischen Schiffen bey <span>Cadix</span> übel zugerichtet wäre / zu <span>To<abbr title="unclear">u</abbr>lon</span> angelangt. Von 
-                              						<br class="linebreak">dem letzteren Orth wolle verlauten / daß die Gallionen nacher Jndien 
-                              						<br class="linebreak">nicht außlauffen dörfften. Der <span>Admiral Lacke</span> hätte nebst 1000. Mann nach 
-                              						<br class="linebreak">des <span>Pointy</span> Unglück / viel Mund=und Kriegs=Vorrath zu <span>Gibraltar</span> 
-                              						außge=<br class="linebreak">schiffet / mit dem Beysatz / daß die Portugesen <span>Marvan</span>, so die Frantzosen 
-                              						<br class="linebreak">voriges Jahr eingenommen / ihnen anjetzo wieder abgenommen haben sollen.
-                              						<br class="linebreak">Ubrigens wolle bestättiget werden / daß die Stadt <span>Nizza</span> und <span>Villa Franca</span>
-                              						<br class="linebreak">zwar über / das <span>Cittadell</span> von <span>Nizza</span> aber mit 40. Canonen und 20. Mör=<br class="linebreak">sern scharff beschossen werde: die Frantzosen hätten von 8. Schiffen Lebens=
-                              						<br class="linebreak">Mittel und anders nebst 1000. Mann ins Lager empfangen. Die <span>Camisards</span>
-                              						<br class="linebreak">liessen sich wieder starck verspühren / dahero der <span>Feuillade</span> 2. Regimenter nach 
-                              						<br class="linebreak"><span>Languedoc</span> schicken müsse. So wären bereits 4. Englische Schiff mit denen 
-                              						<br class="linebreak"><span>Corsarn</span> von <span>Oneglia</span> nächst selbigen Küsten / umb 200. Soldaten in <span>Nizza</span> zu 
-                              						<br class="linebreak">werffen / weil die Stadt aber in der Frantzosen Gewalt / als wollen jene ihre 
-                              						<br class="linebreak">Kauffardey=Schiff nach <span>Capocorso</span> begleiten.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__60" class="yes-index">
-                              						<br class="linebreak">Auß Mayland vom 22. April. Daß viel 1000. Mann von dar und in 
-                              						<br class="linebreak">Sicherheit geflohen / weilen man alles zu Kriegs=Dienst zwingen wollen;
-                              						<br class="linebreak">wormit kund gemacht worden / daß man fürohin nicht mit Gewalt / sondern 
-                              						<br class="linebreak">freywillig werben solle. Der <span>Vendôme</span> habe 4. Regimenter auß Piemont</p>
-                        </div>
-                        <div id="fw__4" class="grid-item grid-item--width2 text-end"><span id="fw__4" class="yes-index catch-word">
-                              						<br class="linebreak">gegen</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-004/full/full/0/default.jpg">-----[5]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__221" class="yes-index">
-                              						<br class="linebreak">gegen <span>Mirandola</span> beordret: der <span>Duc de Tursis</span> verlange einige Verdammte 
-                              						<br class="linebreak">auff die Galeeren / weil aber alle zu Soldaten gemacht worden / werde man 
-                              						<br class="linebreak">ihn darmit nicht versehen können. Der Span. General <span>Las Torres</span> seye nebst 
-                              						<br class="linebreak">anderen <span>Officiers</span> zu Mayland von Verua angelanget: am letzteren Orth 
-                              						<br class="linebreak">seye man grosse Gräben zu machen beschäfftiget / worinn die Toden begraben 
-                              						<br class="linebreak">werden / umb den unleydentlichen Gestanck zu vertreiben; die Schantz=Ar=<br class="linebreak">beiter sollen gegen <span>Gieradada</span> selbe Linien zu verfertigen / abgegangen seyn.
-                              						<br class="linebreak">man hätte <span>Vercelli</span> zu schlaiffen den Anfeng gemacht / welches auch zu Verua 
-                              						<br class="linebreak">geschehen solle / allwo indessen 300. Mann zu Fuß zur Besatzung ligeten;
-                              						<br class="linebreak">die übrige Truppen rasteten noch auß / zu denen auß Franckreich täglich Volck 
-                              						<br class="linebreak">über Pignarol / welchen Orth der Feind bevestigen wolle / anlangete. Der 
-                              						<br class="linebreak">Hertzog von Mantua / so diese <span>Campagne</span>, gleichwie vor einem Jahr / als <span>GeGeneralissimus-</span>
-                              						<br class="linebreak"><span>neralissimus</span> beeder Cronen <span>Arméen</span> schrifftlich <span>commandi</span>ren solle / hätte 
-                              						ei=<br class="linebreak">nen Vorschlag / Turin zu belageren / wie dann hierzu der berühmte <span>Ingenieur</span>
-                              						<br class="linebreak"><span>Vauban</span> in Jtalien erwartet würde. Der <span>Vendôme</span> wäre zu <span>Cassale</span>. Jn=<br class="linebreak">dessen durchstreifften die Kayserl. das <span>Montferat</span> mit guten Beuthen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__95" class="yes-index">
-                              						<br class="linebreak">Auß <span>Brescia</span> vom 23. April. Daß beede Herren Gebrüder <span>di VendôVendôme-</span>
-                              						<br class="linebreak"><span>me</span>, nebst dem <span>Gubernator</span> von Mayland alldorten zum Kriegs=Rath 
-                              						er=<br class="linebreak">wartet würden. Der Herr General <span>Langalerie</span> habe anzeigen lassen / daß 
-                              						<br class="linebreak">es ihme an Futterey mangelte. Es sollen 6000. Frantzosen noch in selbiger 
-                              						<br class="linebreak">Provintz bleiben / hingegen sollen die Kayserliche durch <span>Val di Sabbia</span> im 
-                              						An=<br class="linebreak">zug nach <span>Gavardo</span> begriffen seyn / und wären 6. <span>Cuirassier-Compagni</span>en nach 
-                              						<br class="linebreak">bemeldtem <span>Brescia</span> geschicket worden.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__95" class="yes-index">
-                              						<br class="linebreak">Auß Spanien vom 9. April. Daß zu Madrit eine grosse Summa von 
-                              						<br class="linebreak">dem auß America nacher <span>Cadix</span> gebrachten Geld ankommen seye / mit der 
-                              						<br class="linebreak">Nachricht / daß der <span>Pointy</span> von <span>Marbella</span> nacher <span>Mallaga</span>, umb allda curirt 
-                              						<br class="linebreak">zu werden / sich führen lassen. Jn Spanien seye wegen des unglücklichen 
-                              						<br class="linebreak">See=Streichs und Auffhebung der Belagerung Gibraltar / wie auch 
-                              						An=<br class="linebreak">marschirung deren <span>Alliirt</span>en unter denen Frantzösisch=Gesinnten grosse 
-                              						Ver=<br class="linebreak">stellung / und thäten sich dieselbe wegen Anländung sehr förchten.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__149" class="yes-index">
-                              						<br class="linebreak">Auß Engelland vom 21. April. Daß man zu Londen / ohnerachtet man 
-                              						<br class="linebreak">wegen des <span>Admiral Lake</span> glücklichen Streich und Ankunfft zu Gibraltar / von 
-                              						<br class="linebreak">Lisabon / wohin abermahlen 5. Kriegs=Schiffe den 18. dieses von Helena 
-                              						abge=<br class="linebreak">seegelt / keine eigentliche Nachricht erhalten / grosses Freuden=Fest gehalten /
-                              						<br class="linebreak">die Stuck gelöset / die Glocken gelaütet / die Standarten außgesteckt mithin 
-                              						<br class="linebreak">alle erdenckliche Freuden bezeuget habe; und über das beschlossen worden /
-                              						<br class="linebreak">die grosse <span>Flotta</span>, welche nunmehro schier fertig mit noch 10. Kriegs=Schiffen 
-                              						<br class="linebreak">zu vermehren / umb dem Feind mit selbiger überlegen zu seyn. Der 
-                              						Venetia=<br class="linebreak">nische Gesandte <span>Mr. Mocenigo</span>, welcher seine Abschieds=<span>Audienz</span> jüngstens 
-                              						<br class="linebreak">gehabt / und von Jhrer Majestät mit dem Ritters=Titul / und deme zu folg</p>
-                        </div>
-                        <div id="fw__4" class="grid-item grid-item--width2 text-center"><span id="fw__4" class="yes-index catch-word">
-                              						<br class="linebreak">):(</span></div>
-                        <div id="fw__5" class="grid-item grid-item--width2 text-center"><span id="fw__5" class="yes-index catch-word">
-                              						<br class="linebreak">3</span></div>
-                        <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
-                              						<br class="linebreak">mit</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-005/full/full/0/default.jpg">-----[6]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__68" class="yes-index">
-                              						<br class="linebreak"><abbr title="unclear">m</abbr>i<abbr title="unclear">t</abbr> einem kostbahren Degen beschenckt worden / mache sich reißfertig wieder 
-                              						<br class="linebreak"><abbr title="unclear">v</abbr>on dannen abzugehen. Das Parlament seye nun voneinander geschieden /
-                              						<br class="linebreak">und s<abbr title="unclear">o</abbr>lle mit nächstem wieder ein anders beruffen werden; man muthmasse /
-                              						<br class="linebreak">daß das Paquet=Bott wegen der See=Schlacht abermahlen / wie vor einem 
-                              						<br class="linebreak">Jahr geschehen / von den Frantzosen auffgefangen seyn müste.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__110" class="yes-index">
-                              						<br class="linebreak">Auß dem Haag vom 28. April. Daß der <span>Milord Duc de Marlboroug</span>,
-                              						<br class="linebreak">weilen der von Jhme nacher Engelland mit dem abgefassten Schluß wegen 
-                              						<br class="linebreak">vorhabender <span>Campagne</span> abgeschickte Currier alldorten wieder angekommen /
-                              						<br class="linebreak">nunmehro seine <span>Bagage</span> nach dem Reich abgeschickt habe / des Willens / mit 
-                              						<br class="linebreak">ehestem dahin zu folgen / zu dem Ende alle Dähn=Lüneburg=und Hessische 
-                              						<br class="linebreak">Truppen nach der Mosel ihren Marsch zu beschleunigen beordret worden;
-                              						<br class="linebreak">so habe man auch an alle fertig stehende Kriegs=Schiff / von der ersten Linie /
-                              						<br class="linebreak">den Befehl ergehen lassen / ohnverzüglich in See zu lauffen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__75" class="yes-index">
-                              						<br class="linebreak">Vom Nider=Rhein=Strohm vom 30. April. Daß die jüngst zu Cölln 
-                              						<br class="linebreak">angelangte mit allerhand Proviant und <span>Munition</span> beladene Schiff den 29. die=<br class="linebreak">ses nacher Coblentz in Begleitung einer starcken Mannschafft abgefahren / und 
-                              						<br class="linebreak">erwarte man zu gedachtem Cölln täglich noch 30. dergleichen Schiffe mit 
-                              						Ge=<br class="linebreak">schütz und andern Kriegs=Geräthschafften / welche auß Holland alldorten 
-                              						an=<br class="linebreak">kommen sollen.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__306" class="yes-index">
-                              						<br class="linebreak">Von dem Mosel=Strohm vom 27. April. Daß jüngstens <span>Mr.</span> Rhein 
-                              						<br class="linebreak">Obrister von der Vestung Ehrenbreitstein zu Coblentz / allwo man auff dasiger 
-                              						<br class="linebreak">fliegenden Brucken ein verdächtige Manns=Persohn / so sich in Weibs=Kley=<br class="linebreak">dern auß der Stadt <span>practicir</span>et an Händ und Füß geschlossen gefangen 
-                              						einge=<br class="linebreak">bracht / gestorben. Zu Trier und in der Nachbarschafft langten täglich 
-                              						Re=<br class="linebreak">gimenter zu Fuß und Pferd an / auch wären den 25. dieses die Herren 
-                              						Gene=<br class="linebreak">ralen Ochsenstein und Erbach benebens vielen andern Officieren alldorten 
-                              						an=<br class="linebreak">gekommen / und seye man anjetzo beschäfftiget die blecherne <span>Pontons</span> gegen die 
-                              						<br class="linebreak">Contzer=Bruck hinauff zu führen und die Stücke auff denen Werckern an den 
-                              						<br class="linebreak">Linien zu pflantzen. Der <span>Duc de Villars</span> seye unverrichter Sach mit Verlust 
-                              						<br class="linebreak">ohngefehr 100. Tod=und <span>Blessirt</span>en / wie auch über 400. Mann / so 
-                              						durchgan=<br class="linebreak">gen / zwischen Saarlouis und Metz wieder angekommen / gantz 
-                              						mißver=<br class="linebreak">gnügt über den Schwedischen Herrn Grafen von Ochsenstern zu Zweybruck /
-                              						<br class="linebreak">umb willen er ihme <span>Villars</span> die im Schloß gebliebene krancke Soldaten nicht 
-                              						ab=<br class="linebreak">folgen lassen / vermeldend / daß er keine Soldaten von dem Römischen Reich 
-                              						<br class="linebreak">an die Frantzosen zu verschencken Macht hätte. Die Frantzosen machten noch 
-                              						<br class="linebreak">allerhand Marschen; wie dann erst kürtzlich wieder 2. Regimenter zu Fuß und 
-                              						<br class="linebreak">1. zu Pferd von Diedenhofen nacher Bassendorff / allwo ein fliegendes Lager 
-                              						<br class="linebreak">unter dem <span>Mr. de Curcelle</span> stehe / abgegangen; und hätten sie ein gantzes 
-                              						Spa=<br class="linebreak">nisches Regiment zu Pferd von <span>Arlon</span> ins Niderland zuruckgeschickt / umb <span>rerecroutir-</span><span>croutir</span>en zu lassen / weilen alle die Pferde davon <span>crepir</span>et / und viele Mann</p>
-                        </div>
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word">
-                              						<br class="linebreak">schafft=</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-006/full/full/0/default.jpg">-----[7]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__50" class="yes-index">
-                              						<br class="linebreak">schafft durchgegangen. So wären auch alle die Truppen welche jüngstens 
-                              						<br class="linebreak">hinter <span>Marché</span> gestanden wieder nacher Niderland / auff <span>Ordre</span> des 
-                              						Churfür=<br class="linebreak">sten auß Bayern / der kürtzlich mit seinem Herrn Brudern dem Churfürsten 
-                              						<br class="linebreak">von Cölln und <span>Villeroy</span> zu Namur gewesen / zu marschiren beordret.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__115" class="yes-index">
-                              						<br class="linebreak">Von dem Obern=Rhein=Strohm vom 2. May. Daß der Herr General 
-                              						<br class="linebreak">von Thüngen zu Philippsburg wieder angelangt / und erwarte man mit 
-                              						ehi=<br class="linebreak">stem Jhrer Hochfürstl. Durchl. des Käyserl. General=Lieutenants Hrn. Lud=<br class="linebreak">wig Marg=Grafen zu Baaden / umb der <span>Campagne</span> am Obern=Rhein einen 
-                              						<br class="linebreak">Anfang zu machen / immassen alle Truppen im Marsch begriffen / und ein 
-                              						zim=<br class="linebreak">liches <span>Corpo</span> daselbsten beyeinander stehen solle. Die Frantzosen machten sich 
-                              						<br class="linebreak">wegen dieses so frühen Feldzugs grosses Nachdencken / und thäten sich im 
-                              						El=<br class="linebreak">saß sehr förchten wegen deren <span>Alliirt</span>en grossen Anstalten.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__338" class="yes-index">
-                              						<br class="linebreak">Auß der Schweitz vom 28. April. Daß man alldorten Nachricht habe /
-                              						<br class="linebreak">als wäre der König in Franckreich mit der Entschuldigung des <span>Pointy</span> und 
-                              						<br class="linebreak">des <span>Maréchal de Thessé</span> nicht allerdings zufrieden / indem der Erstere dem 
-                              						<br class="linebreak">Letzteren / jener aber des <span>Duc d'Anjou</span> seinem Befehl alle Schuld 
-                              						zugeschrie=<br class="linebreak">ben / daß von 17. Kriegs=Schiffen nur 8. zuruck kommen / und die Belagerung 
-                              						<br class="linebreak">vor Gibraltar mit Hinterlassung vieles Geschützes / und Verlust so vieler 
-                              						<br class="linebreak">Millionen Gelds / wie auch etlicher 1000. Soldaten auffgehoben werden 
-                              						<br class="linebreak">müssen; über dieses gebe gedachter <span>Thessé</span> vor / daß der <span>Villadarias</span> auch 
-                              						<br class="linebreak">grosse Ursach daran seye / mit dem Trost / daß er indessen den <span>Mr. de Thoui</span> mit 
-                              						<br class="linebreak">5000. Mann an dem Eingang des Gebürgs stehen lassen / umb die 
-                              						Garni=<br class="linebreak">son zu Gibraltar von dem Heraußstreiffen abzuhalten / benebens der 
-                              						Ersu=<br class="linebreak">chung / doch ohne Verzug etlich und 20000. Mann auß Franckreich in 
-                              						Spa=<br class="linebreak">nien zu senden / um<abbr title="unclear">b</abbr> denen <span>Alliir</span>ten gewachsen zu seyn / widrigen Falls eine 
-                              						<br class="linebreak">unglückliche <span>Campagne</span> alldorten zu beförchten seye / indeme das Spanische 
-                              						<br class="linebreak">Volck gar schlechten Lust zum Krieg hätte / und alles sehr schwürig worden /
-                              						<br class="linebreak">weilen kundbar / daß der <span>Duc d'Anjou</span> an statt des vorgegebenen <span>ChoccoChoccolate-</span>
-                              						<br class="linebreak"><span>late</span> in denen jüngst nach Franckreich überschickten 300. Kästlein allen Schatz 
-                              						<br class="linebreak">und Geschmuck von der Cron Spanien dahin gesendet habe. Weßwegen 
-                              						<br class="linebreak">der <span>Duc de Feuillade Ordre</span> haben solle / das Schloß Nizza <span>bloqui</span>rt zu halten /
-                              						<br class="linebreak">und / so bald möglich / etlich 1000. Mann nacher Spanien zu senden / wie dann 
-                              						<br class="linebreak">auch der Graf von <span>Thoulose</span> auffs längst umb Mitten des May mit der 
-                              						<br class="linebreak">Flotta dahin seeglen solle / umb das beförchtende Anländen deren <span>Alliir</span>ten 
-                              						<br class="linebreak">in Catalonien zu verhindern / immassen man deßwegen zu Pariß sowohl / als 
-                              						<br class="linebreak">zu Madrit bekümmert seye.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__51" class="yes-index">
-                              						<br class="linebreak">Auß Dennemarck vom 20. April. Daß von Holland die Handlung 
-                              						<br class="linebreak">nach Franckreich wieder eröffnet worden / mache unter dasigen Handels=
-                              						<br class="linebreak">Leuthen grosse Verstellung / massen durch dieses die Nordische Handlungen 
-                              						<br class="linebreak">etwas nedergelegt. Auß Schweden habe man Nachricht / daß nunmehro</p>
-                        </div>
-                        <div id="fw__4" class="grid-item grid-item--width2 text-end"><span id="fw__4" class="yes-index catch-word">
-                              						<br class="linebreak">die</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-007/full/full/0/default.jpg">-----[8]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__81" class="yes-index">
-                              						<br class="linebreak">die überschiffende Mannschafft zu Roß und Fuß sambt denen Recruten 
-                              						<br class="linebreak">zum Auffbruch fertig seye / umb nach denen angewiesenen Seehäfen sich 
-                              						zu=<br class="linebreak">begeben; allein es bezeuge dieselbe schlechten Lust auß dem Reich in ein Land 
-                              						<br class="linebreak">zu gehen / da ihre Vätter / Brüder und Cammeraden in viel 1000. Mann 
-                              						<br class="linebreak">innerhalb 3. Jahren umbkommen / auch sich einbilden / daß es ihnen nicht 
-                              						<br class="linebreak">besser ergehen / und schwerlich wieder zuruck kommen werden.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__120" class="yes-index">
-                              						<br class="linebreak">Auß Braunschweig vom 26. April. Daß daselbsten in einer kurtzen 
-                              						<br class="linebreak">Zeit unterschiedliche Unfälle sich erreichet: indeme ein Zimmer Gesell zu todt 
-                              						<br class="linebreak">sich gefallen / ein Student hingegen auß Verzweifflung mit umbgehabten 
-                              						De=<br class="linebreak">gen und Mantel sich versäuffet / und ein Soldaten=Müllner / umb willen er 
-                              						<br class="linebreak">gefänglich eingezogen / daß man so viel Sand im <span>CommissCommissMehl-</span>Mehl gefunden /
-                              						<br class="linebreak">in der Gefängnuß / sich in die Kehl geschnitten / aber von dem Regiments=
-                              						<br class="linebreak">Feldscherer die durchgeschnittene Kehl so künstlich angenähet / und der 
-                              						Müll=<br class="linebreak">ner an dieser dergestalt <span>curi</span>rt worden / daß er in kurtzem mit selbiger 
-                              						ge=<br class="linebreak">henckt werden könne.</p>
-                        </div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__4" class="yes-index text-center">
-                              						<br class="linebreak">Hohe Geburt.</h5>
-                           <p id="p__260" class="yes-index">
-                              						<br class="linebreak">Den 2. May hat des (Titl) Herrn Frantz Georg Engel von und zu Wagrain /
-                              						<br class="linebreak">Freyherrn / Herrn deren Herrschafften Seisenburg / Pöttenbach / Millbach und Velß /
-                              						<br class="linebreak">der Römisch Käyserl. Majestät würcklichen Cammerern / Rath und Ni. Oe. Land=Rechts=
-                              						<br class="linebreak">Beysitzern / Frau Gemahlin / (Titl) Frau Anna Margaretha / gebohrne und vermählte 
-                              						<br class="linebreak">Englin von Wagrain / Freyin / einen jungen Herrn glücklich zur Welt gebracht / welcher 
-                              						<br class="linebreak">den 6ten dito getaufft / und ihme die Nahmen <span>Francis<abbr title="unclear">c</abbr>us Carolus Julius Sigismundus</span> 
-                              						ge=<br class="linebreak">geben worden. Dessen hohe Pathen waren gewesen (Titl) Herr Carl Maximilian des H.
-                              						<br class="linebreak">Römis. Reichs Graf von Thurn und <span>Valesasina &amp; c.</span> der Römis. Kayserl. Majest. Camme=<br class="linebreak">rer / würcklicher geheimer Rath / und Jhrer Majest. der Verwittibten Kayserin Obrister=Hof=<br class="linebreak">meister (Titl) Herr <span>Julius Fridericus</span> des Heil. Römis. Reichs Graf <span>Buceleni &amp; c.</span> der 
-                              						Rö=<br class="linebreak">mis. Käyserl. Majest. Cammerer / geheimer und <span>ConferenzConferenzRath-</span>Rath / wie auch Obrister=ge=<br class="linebreak">heimer Hof=Cantzler. (Titl) Herr Frantz Ludwig Herr zu Polhaimb und Wartenburg /
-                              						<br class="linebreak">Freyherr / der Römis. Käyserl. Majest. Cammerer und Ni. Oe. Land=Rechts=Beysitzer /
-                              						<br class="linebreak">sambt dessen Frau Gemahlin (Titl) Frauen <span>Sophia Elisabetha Theresia</span>, einer gebohrnen 
-                              						<br class="linebreak">Englin von Wagrair / Freyin.</p>
-                        </div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__4" class="yes-index text-center">
-                              						<br class="linebreak">Hohe Vermählung.</h5>
-                           <p id="p__174" class="yes-index">
-                              						<br class="linebreak">Den 4. May wurde allhier vermählet (Titl) Herr Johann Leopold des Heil. Rö=<br class="linebreak">mis. Reichs Graf von Herberstein / Freyherr auff Neuberg und Guetenhaag / Herr auff 
-                              						<br class="linebreak">Lanckowitz / Wangen / Metzdorff / Groß=Priesse / Bockschütz / Schnelldorff und Hartlieb;
-                              						<br class="linebreak">Erb=Cammerer und Erb=Truckses in Cärnten; der Römis. Käys. Majestät Cammerer und 
-                              						<br class="linebreak">würcklicher geheimer Rath ꝛc. wie auch Hof=Cammer=Rath in Schelsien / Wittiber / mit 
-                              						<br class="linebreak">der Fräule Maria Rosalia (Titl) Herrn Johann Quintin Jörger / des Heil. R. Reichs 
-                              						<br class="linebreak">Grafen von Tollet ꝛc. Weyland Rittern des guldenen Fluß / Käyserl. Cammerern / würck=<br class="linebreak">lichen geheimen und <span>ConferenzConferenzRath-</span>Rath / wie auch Statthaltern des Regi ments der Ni.
-                              						<br class="linebreak">Oe. / Landen und (Titl) Frauen MariæMariae RosaliæRosaliae / einer gebohrnen Gräfin von Losenstein /
-                              						<br class="linebreak">beeder hochseeligen Andenckens / hinterlassenen Fräule Tochter.</p>
-                        </div>
-                        <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
-                              						<br class="linebreak">Ho=</span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_9"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-008/full/full/0/default.jpg">-----[9]-----</span></div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br class="linebreak">Hoher Tods=Fall.</h5>
-                           <p id="p__64" class="yes-index">
-                              						<br class="linebreak">Den 6. May verschiede allhier in dem 9. Monath des Alters Fräule Anna 
-                              						Leopoldi=<br class="linebreak">na / zu grossem Leyd=Weesen ihres Herrn Vatters (Titl) Herrn Johann Wolffgang 
-                              						<br class="linebreak">Grafen von Franckenberg und Ludwigsdorff / der Römis. Käyserl. Majest. Cammerern /
-                              						<br class="linebreak">geheimen Rath / und <span>ViceViceCantzlern-</span>Cantzlern des Königreichs Böheim.</p>
-                        </div>
-                        				
-                        					
-                        <div id="head__10" class="grid-item">
-                           <h5 id="head__10" class="yes-index text-center">
-                              						<br class="linebreak">Ankunfft deren hohen und niedrigen Stands=Persohnen.</h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. May 1705.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cärnter=Thor. Herr Johannes <span>Saponny</span>,
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">kombt von Rom / logirt beym Herrn 
-                                 						Gra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">fen von Welß an der Pastey.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 7. dito.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rothen=Thurn. Herr Johann Gregori von 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thalberg / Hr. Joseph von Zergollern und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Simon <span>Gionima,</span> kommen von 
-                                 						Läy=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">bach / logiren im wilden Mann.</li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cärnter=Thor. Herr Haubtman Hoffer /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">kombt von Preßburg / geht zum Herrn 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">General Heyster.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Graf Wündischgrätz / kombt von 
-                                 						sei=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nem Gut / logirt in seinem Hauß.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div id="head__10" class="grid-item">
-                           <h5 id="head__10" class="yes-index text-center">
-                              						<br class="linebreak">Abreyß deren hohen und niederen Standts=Personen.</h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. May 1705.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr von Wetzstein Hof=Kriegs=Rath=<span>Secre-</span>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak"><span>tarius</span>, nach Burckersdorff.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Graf <span>Souches</span>, nach Langen=Entzers=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dorff.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Johann <span>Polange</span>, Currier / nach 
-                                 						Lan=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gen=Entzersdorff.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Anton <span>Montagne</span>, nach Burckersdorff.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein Venetianischer Currier / nach Venedig. </li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein Chur=Phältzis. Currier / nach Düsseldorff.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Georg Meeckl / Stadt=Schreiber zu 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Steyer / nach Steyer.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Gö<abbr title="unclear">ss</abbr>inger / nach der Armee in Ungarn.</li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 7. dito.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 8. dito.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Ober Kriegs=<span>Commissarius</span> von Löbenau /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nach Bayern.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Hasselman Currier / nach dem Haag.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div id="head__11" class="grid-item">
-                           <h5 id="head__11" class="yes-index text-center">
-                              						<br class="linebreak">Lista aller Verehlichten in=und vor der Stadt.</h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 3. April 1705.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Caspar Schneider / ein Reut=Knecht / mit 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Thomin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Kapler / ein Taffeldecker / mit 
-                                 						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria Elisabeth Geyerin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Anton Schells / ein Käßstecher / mit 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Sabina Barbara Ströblin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Stampel / ein Nadler / mit 
-                                 						Cathari=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">na Fuchsin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Severin Leonhard / ein Schuester / mit 
-                                 						Su=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sanna Rosina Rebhandlin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Langbauer / ein Holtzleger / mit 
-                                 						Eli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sabeth Hoffmanin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Caspar Römer / Kayserl. Reichs=Hof=
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Raths=<span>Actuarius</span>, mit Frauen Maria 
-                                 						Lei=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nixin Wittib.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Schrotz / ein Bier=Abtrager / mit Herr Anton Joseph Veigl / ein Feldscherer /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Juliana Eßlin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Letner/ein Häring=Niderlags=Knecht /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mit Maria Auerin.</li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Treffler / ein Obstler / mit 
-                                 						Margare=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tha Feiglin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hanß Georg Leibnfrost / ein Jäger mit 
-                                 						Eli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sabeth Mayrhofferin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Veit Hueber / ein <abbr title="unclear">H</abbr>auer / mit Regina 
-                                 						Fel=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">lingerin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Johann Kellner / Wittiber / mit 
-                                 						Jung=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">frau Barbara Felberin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Jacob Zapff / Burgerl. Handelsman /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Wittiber / mit Jungfrau Maria Josepha 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Judith Oberbeyerin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Friderich <abbr title="unclear">Le</abbr>r / ein Fuehr<abbr title="unclear">=</abbr> / mit Eva 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Renauerin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Samuel Leblanc / Königl. <span>Chien. Courrant-</span>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jäger / mit Maria Polixena Francisca 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Käpplin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Anton Joseph Veigl / ein Feldscherer /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mit Anna Maria Landspergerin Wittib.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Fridrich Kern / ein Guardi Soldat / mit 
-                                 						An=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">na Maria Wagnerin.</li>
-                           </ul>
-                        </div>
-                        <div id="fw__14" class="grid-item grid-item--width2 text-center"><span id="fw__14" class="yes-index catch-word">
-                              						<br class="linebreak">(:<abbr title="unclear">o</abbr>:)</span></div>
-                        <div id="fw__13" class="grid-item grid-item--width2 text-end"><span id="fw__13" class="yes-index catch-word">
-                              						<br class="linebreak">Herr</span></div>
-                        				</div>
-                     <div class="grid margin-end">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_10"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/170x/1705/05/17050506/17050506-009/full/full/0/default.jpg">-----[10]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Simon Ruthnick / ein Guardi. Soldat / mit 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Magdalena Tiedlin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Frantz Anton Bomer / ein Kauffmans=Die=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ner / mit Theresia Broxmayrin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Georg Bendl / ein Schuester 
-                                 						Wit=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tiber / mit Barbara Fuxin Wittib.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 4. dito.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Adam Heyfelder / ein Tischler / mit Maria 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara Wincklerin.</li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Georg Heintz / ein Herrn=Diener /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">mit Theresia Heorschin.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 5. dito.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Sculden, Königl. Trabant / mit 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Margareth Strenbergerin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joseph Joachim Hochleuthner / Burgerl.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Schnurmacher / mit Maria Theresia 
-                                 						Tren=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gerin.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Ulrich Widman / ein Träxler / mit 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Anna Gräfin.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div id="head__10" class="grid-item">
-                           <h5 id="head__10" class="yes-index text-center">
-                              						<br class="linebreak">Lista aller Verstorbenen in und vor der Stadt.</h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__8" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. May 1705. starb</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Bogner / einem Hos=Befreyten 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Tischler im Fellauer. Hauß im Tieffen 
-                                 						Gra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ben / sein Weib Anna / alt 28. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Hädter / ein Mauer=Gesell im 
-                                 						Häckli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">schen Hauß am Neuenmarckt / alt 68. J.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Bruner / einem Königl. Tra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">banten beym schwartzen Rößl am 
-                                 						Spitl=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">berg / sein. Kind Anna / alt 1. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Martin Reyser / ein Schreiber im Sperl=
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Würths Hauß bey St. Ulrich / alt 31. J.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Thoma Paxfriderich / einem 
-                                 						Progat=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">macher beyn 3. Rosen in der Leopold=
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stadt / sein Kind Martin / alt 3. Viertl 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Christian Strobl / einem Rumor=Sol=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">daten beym rothen Rößl am Neustifft /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Kind Maria / alt 5. Jahr.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 7. dito.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Colperth / einem 
-                                 						Ritt=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">meister / beym schaben Rößl am Rothen=
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thurn / sein Kind Frantz / alt 1. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Aigenbauer / einem Burgerl.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Leinwathhandler im Porischen Hauß 
-                                 						un=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tern Tuchladen / sein Kind Anna / alt 1.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Viertl Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Marian Pfeiffer / ein Taffeldecker / im 
-                                 						Mon=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tecuculischen Hauß in der Obern 
-                                 						Schen=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ckenstraß / alt 55. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Frau Maria Elisabeth von Pentz / Wit=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tib im Oellerischen Hauß in der Leopold=
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stadt / ihr Söhnl Johann Carl Petecker /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 7. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Goldman / Kayserl. Hätschier=
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Trompeter in seinem Hauß auff der Land=</li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">straß / sein Tochter Anna / alt 17. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Abraham Essenauer / einem Burger 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">in seinem Hauß in der Unger=Gassen / sein 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kind Eva / alt 2. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Auger / einem Tagwercker 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Goldschmidischen Hauß am Neubau /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein Weib Justina / alt 45. Jahr.</li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 8. dito.</h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jungfrau Maria Regina Langin / im 
-                                 						Traut=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sohnischen Hauß in der Obern=Schencken=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">straß / alt 55. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Simon Nistler / Burgl. Schuhmacher 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">in seinem Hauß im Schulter=Gäßl / sein 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kind Theresia / alt 2. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Balthasar Letsch / ein Schreiber im Daübl 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Hof in der Anna Gassen / alt 39. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Däungl / ein Mauer=Gesell im 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Reschgallischen Hauß im Pallgäßl / alt 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">44. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Bayer / Kayserl. Zeug=Schreiber 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">zu Caschau / beym weissen Rößl in der 
-                                 						Leo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">pold=Stadt / alt 32. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Philipp Schlöglhoffer / einem Kayserl.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Reut=Knecht im Rablischen Hauß untern 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Weißgärbern / sein Kind Lorentz / alt 6.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Viertl Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ruprech Ambslgraber / Guardi Soldat /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">beyn 3 Pommerantzen am Neustifft / alt 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">42. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Nicola Hädl / einem Schuhmacher 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">beyn 3. Hüten bey St. Ulrich / sein Weib 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Catharina / alt 67. Jahr.</li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Michael Zanner / ein Bier=Abtrager beym 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">guldenen Stiffel in der Leopold=Stadt /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 44. Jahr.</li>
-                           </ul>
-                        </div>
-                        				</div>
                   </div>
                   <div class="col-md-6 facsimiles">
                      <div id="viewer-1" class="sticky">
@@ -937,5 +936,5 @@
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary" style="margin-top: auto;">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
 </html>

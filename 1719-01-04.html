@@ -35,958 +35,957 @@
       <main class="flex-shrink-0">
          <div class="container" style="max-width: 100%;">
             <div class="page-content">
-               <div class="row my-4">
-                  <div class="col-md-6 section px-4 .yes-index">
-                     <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
-                                 <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                                 <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
-                           <li class="list-group-item">
-                              <full-size opt="fls"></full-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-size opt="fs"></font-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-family opt="ff"></font-family>
-                           </li>
-                           <li class="list-group-item">
-                              <annotation-slider opt="br"></annotation-slider>
-                           </li>
-                        </ul>
+               <div class="row my-4 transcript active">
+                  <div class="col-md-6 text px-4 .yes-index">
+                     <div class="section">
+                        <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
+                              <li class="list-group-item">
+                                 <font-size opt="fs"></font-size>
+                              </li>
+                              <li class="list-group-item">
+                                 <font-family opt="ff"></font-family>
+                              </li>
+                              <li class="list-group-item">
+                                 <annotation-slider opt="br"></annotation-slider>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="sticky row bg-white" style="top: 1em!important;">
+                           <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
+                              <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
+                           <div id="mark-scroll" class="fade-lang col-md-2"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
+                           </div>
+                        </div>
+                        <div class="title-page py-4" id="#top_page">
+                           			
+                           				
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-000/full/full/0/default.jpg">-----[1]-----</span></div>
+                           				
+                           					
+                           <h5 id="titlePart__6" class="yes-index text-center py-2">
+                              						<br class="linebreak">Num. 1610. </h5>
+                           					
+                           					
+                           				
+                           <div id="imprimatur__26" class="grid-item">
+                              <p id="imprimatur__26" class="grid-item yes-index">
+                                 					<br class="linebreak">Mit Jhrer Römisch=Kaiserlich=und Catholischen Majestät Freyheit /
+                                 					<br class="linebreak">Getruckt in der Kaiserlichen Reichs=Hof=Buchtruckerey / </p>
+                           </div>	
+                           				
+                           			
+                           		</div>
+                        <div class="grid ">
+                           				
+                           					
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__14" class="yes-index text-center">
+                                 						<br class="linebreak">Wien vom 4. bis 6. Jenner / 1719. </h5>
+                              <p id="p__286" class="yes-index">
+                                 						<br class="linebreak">MJttwoch / den 4. Jenner. Heute vernahme man aus 
+                                 						Hun=<br class="linebreak">garn / wie daß / nachdem Jhre Eminenz / der Herr Cardinal 
+                                 						<br class="linebreak"><span>Csáky</span>, wie lezthin gemeldet worden / von Fünffkirchen 
+                                 						zu=<br class="linebreak">ruck in dero Erz Bischoflichen Residenz <span>Colocsa</span> glücklich angelanget /
+                                 						<br class="linebreak">dieselbe nach wenig Tägen / mit dero Cavaliers und Bedienten / die 
+                                 						<br class="linebreak">Reiß nach Temeswar auch vorgenommen hätten; Alda sie dan den 
+                                 						<br class="linebreak">18. December von dasigem Herrn Commandanten / Grafen von 
+                                 						<br class="linebreak">Wallis / auch anderen Kaiserlichen Herren Officieren aufs höflichst 
+                                 						<br class="linebreak">empfangen: und nach dem Quartier des Herrn Generals des 
+                                 						Te=<br class="linebreak">meswarer Bannats / Grafen von Mercy / begleitet: wie auch davor 
+                                 						<br class="linebreak">zu dero Leibwacht ein ganze Grenadier=Compagnie vom Löblich=Hei=<br class="linebreak">sterischen Regiment gestellet worden; Den folgenden Tag darauf nach 
+                                 						<br class="linebreak">dem zuvor in der Kirche derer WW. EE. <span>PP. S. J.</span> verrichteten 
+                                 						Got=<br class="linebreak">tesdienst / hab es Jhrer Eminenz beliebet / das vom Weiland <span>
+                                    						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">thia Corvino</span>, König in Hungarn / erbaute / und 165 Jahr unter 
+                                 						<br class="linebreak">der Türkischen Dienstbarkeit gestandene Schloß und Festung / dan 
+                                 						<br class="linebreak">den Ort / wo vor einigen Jahren die Siegreich=Kaiserliche Armee 
+                                 						ge=<br class="linebreak">standen / und diesen höchstwichtigen Plaz bezwungen / in Augenschein 
+                                 						<br class="linebreak">zunehmen / unter Begleitung des oberwehnt=dasigen Herrn 
+                                 						Com=<br class="linebreak">mandanten / Grafen von Wallis / von welchem Jhre Eminenz/ wie 
+                                 						<br class="linebreak">auch ander=vornehme Kaiserliche Herren Officierer zu Mittag 
+                                 						herr=<br class="linebreak">lich tractiret: und mit annehmlichster Tafel=Music ergötzet worden;
+                                 						<br class="linebreak">Den Nachmittag aber wären sie Spatzieren gefahren / und hätten </p>
+                           </div>
+                           				
+                           <div id="fw__4" class="grid-item grid-item--width2 text-center"><span id="fw__4" class="yes-index catch-word">
+                                 						<br class="linebreak">)( </span></div>
+                           <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word">
+                                 						<br class="linebreak">in </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-001/full/full/0/default.jpg">-----[2]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__306" class="yes-index">
+                                 						<br class="linebreak">in dortiger Revier eine an dem Fluß <span>Wege</span> auf ein ganz 
+                                 						besonder=<br class="linebreak">künstliche Weiß erbaute Mühl besehen / dan / weilen Jhre Eminenz 
+                                 						<br class="linebreak">das Heil. Weinacht=Fest in dero Erz=Bischoflichen Residenz <span>Colocsa</span>
+                                 						<br class="linebreak">begehen wolten / dero Ruckreyß den 20. Dito auf der Post wieder 
+                                 						<br class="linebreak">angetretten / und / nachdeme sie die <span>Marosch</span> bey <span>Csanad</span>, und die <span>Theis</span>
+                                 						<br class="linebreak">bey dem Dorff <span>Tap</span> passiret / wären sie den 21. zu <span>Szegedin</span>, wo 
+                                 						die=<br class="linebreak">selbe ebenfals von dasigem Herrn Commandanten / Grafen von 
+                                 						Her=<br class="linebreak">berstein / bewillkommet worden / glücklich angelanget; Den 22. aber 
+                                 						<br class="linebreak">ferners dero Reiß durch <span>Szabazka</span>, einem zu dero Erz=Bistum 
+                                 						gehö=<br class="linebreak">rigen Ort / fortgesetzet / da sie gewöhnlicher massen die Visitation in 
+                                 						<br class="linebreak">dasiger Pfarr=Kirche verrichtet / und den 23. gegen Abend zu 
+                                 						<br class="linebreak"> angekommen; Daselbsten folgendes Tags die Congregation des 
+                                 						<br class="linebreak">Löbl. Bacser Comitats gehalten worden / immittels ihre Eminenz 
+                                 						<br class="linebreak">ein kleine Reiß nach <span>Szökesd</span> vorgenommen / um allda auch die 
+                                 						Vi=<br class="linebreak">sitation zuvollbringen / sofort wären dieselbe zuruck auf <span>Baja</span>, und / nach 
+                                 						<br class="linebreak">vollendter Congregation / auch gemacht=sehr nuzlicher Verordnung 
+                                 						<br class="linebreak">sowohl im Politisch=als Würthschaftlichen Wesen / folgends gar nach 
+                                 						<br class="linebreak">dero oftgemeldten Erz=Bischoflichen Residenz <span>Colocsa</span> gekehret; Al=<br class="linebreak">dorten sie dan den Vorabend vor den Heil. Weinacht=Feyertagen /
+                                 						<br class="linebreak">nachdeme sie vom 27. October / als an welchem dieselbe von Presburg 
+                                 						<br class="linebreak">aufgebrochen / bis hiehin zwey hundert / und mehr Hungarische 
+                                 						Mei=<br class="linebreak">len in dero C<abbr title="unclear">ir</abbr>cular=Reiß gemacht / dabey das gemeine Volk aller 
+                                 						<br class="linebreak">Orten durch dero hohe Gegenwart und gnädiges Zusprechen 
+                                 						un=<br class="linebreak">glaublich consoliret / glücklich und gesund wieder eingetroffen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__75" class="yes-index">
+                                 						<br class="linebreak">Donnerstag / den 5. Jenner. Heute / Vormittags / haben Sich 
+                                 						<br class="linebreak">Jhre Römisch=Kaiserlich=und Catholische Majestät mit Jagen 
+                                 						belu=<br class="linebreak">stiget / und des Nachmittags in der Kaiserlichen Hof=Capelle dem 
+                                 						<br class="linebreak">Gottesdienst mit den Ritteren des goldenen Vlieses / in Begleitung 
+                                 						<br class="linebreak">des Päbstlichen Herrn Nuntius / <span>Monsignor Spinola</span>, und 
+                                 						Venetia=<br class="linebreak">nischen Botschafters / Titl. Herrn Cavalier Grimani / abgewartet. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__97" class="yes-index">
+                                 						<br class="linebreak">Dito ware mit einer Staffeta die Nachricht aus Praag kommen /
+                                 						<br class="linebreak">wie nemlichen Titl. Herr Wenzel Norbert Octavian Kinsky / des 
+                                 						<br class="linebreak">Heilig=Römischen Reichs Graf von Chinitz / und Tettau / Ritter des 
+                                 						<br class="linebreak">goldenen Vlieses / Jhrer Römisch=Kaiserlich=und Königlich=Catho=<br class="linebreak">lischen Majestät würklich=geheimer Raht / und des Königlichen Hofs in 
+                                 						<br class="linebreak">Böheim Erb=Obrist=Hofmaister / im 77. Jahr dessen rühmlichen 
+                                 						Al=<br class="linebreak">ters / zu gedachtem Praag den 3. dieses in GOttseelig entschlafen seye. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__34" class="yes-index">
+                                 						<br class="linebreak">Freytag / den 6. Jenner. Heut ware bey den gesamt=Regie=<br class="linebreak">rend=und Verwittibt=Kaiserlichen Höfen Jhrer Majestät / der VerVerwittibt= </p>
+                           </div>
+                           <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
+                                 						<br class="linebreak">wit= </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-002/full/full/0/default.jpg">-----[3]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__135" class="yes-index">
+                                 						<br class="linebreak">wittibt=Römischen Kaiserin / auch zu Hungarn und Böhelm 
+                                 						Köni=<br class="linebreak">gin / Eleonora Magdalena Theresia / Jhrer Glorwürdigst=Regierend=
+                                 						<br class="linebreak">Römisch=Kaiserlich=und Catholischen Majestät geehrtesten Frau 
+                                 						<br class="linebreak">Mutter / Glorreichster Geburts=Tag in prächtigster Galla / und mit 
+                                 						<br class="linebreak">den gewöhnlichen Glückwünschungen begangen worden; Wie dan 
+                                 						<br class="linebreak">auch desgleichen Jhre Hoheit / der Königlich=Polnisch=und Chur=
+                                 						<br class="linebreak">Sächsische Erb=Prinz getahn; Und haben bey Allerhöchstgedacht=
+                                 						<br class="linebreak">Verwittibt=Kaiserlichen Majestät die Regierend=Kaiserlich=und 
+                                 						Ca=<br class="linebreak">tholische Majestäten / wie auch Jhre lezt=Verwittibt=Römisch=Kai=<br class="linebreak">serliche Majestät / Amalia Wilhelmina / samt den allseitig=Durchleuch=<br class="linebreak">tigsten Erz=Herzoginnen / sowohl zu Mittag / als Abends gespeiset. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__181" class="yes-index">
+                                 						<br class="linebreak">Eben Heute / Nachmittag / ist von den Glorwürdigst Regierend=
+                                 						<br class="linebreak">Kaiserlich=und Catholischen Majestäten in Dero Cammer=Capelle 
+                                 						<br class="linebreak">des Titl. Herrn Johann Albrecht von St. Julian / des Heilig=Rö=<br class="linebreak">mischen Reichs Grafen zu Walsee / Herrn der Herrschaften Hof an 
+                                 						<br class="linebreak">der March / und Vesten Stapffenreit / Kaiserlich=würklichen 
+                                 						Camme=<br class="linebreak">rern und Obristen=Hof=Falken=Maistern / und dessen Gräfl. Frau 
+                                 						Ge=<br class="linebreak">mahlin / Titl. Frau Maria Antonia / gebohrner Herrin von 
+                                 						Stuben=<br class="linebreak">berg / Herr Söhnl aus der Heil. Tauf gehoben: und ihme die 
+                                 						Na=<br class="linebreak">men: <span>Carolus Christianus Casparus Melchior Balthasar</span>, gegeben 
+                                 						wor=<br class="linebreak">den; Dabey die Ceremonien Jhre Hochfürstliche Gnaden / des 
+                                 						Hei=<br class="linebreak">lig=Römischen Reichs Fürst und Bischoff zu Wien / Titl. Herr 
+                                 						Sig=<br class="linebreak">mund / Graf von Kollonitsch / in Assistirung des Kaiserlichen Hof=
+                                 						<br class="linebreak">und Burg=Pfarrers / Jhrer Hochwürden / Herrn Jacob Anton 
+                                 						Stan=<br class="linebreak">cheri / verrichtet haben. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__80" class="yes-index">
+                                 						<br class="linebreak">Aus Polen / von dem 30. December. Daß man zu Warschau 
+                                 						<br class="linebreak">die Nachricht habe / wie nemlichen die Moscowitter / welche 
+                                 						unläng=<br class="linebreak">stens nach Schwerin den Marsch genommen / ihr daselbst vorm Jahr 
+                                 						<br class="linebreak">vergrabenes Proviant wieder aufgraben: und denselben bis unter 
+                                 						<br class="linebreak">Danzig führen lassen / dazu die umliegende Dörffer 100 Wägen 
+                                 						ver=<br class="linebreak">schaffen müssen; Wie sonsten verlaute / solten die Tartarn noch im 
+                                 						<br class="linebreak">Feld stehen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__56" class="yes-index">
+                                 						<br class="linebreak">Aus Livorno / von dem 16. December. Daß / vermög eines 
+                                 						<br class="linebreak">von <span>Porto Maone</span> gekommenen Schiffs / die Nachricht kommen / wie 
+                                 						<br class="linebreak">daß von dar 5. Engelländische Kriegsschiffe ausgeloffen / um bey 
+                                 						<br class="linebreak"> zu andern zustossen / und folglichen gegen die feindliche 
+                                 						<br class="linebreak">Schiffe zukreutzen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__32" class="yes-index">
+                                 						<br class="linebreak">Aus Portugall / von dem 2. December. Daß zu Lisabon den 30.
+                                 						<br class="linebreak">verflossenes Monats Novembers die Flotta von der <span>Baya des todos</span> </p>
+                           </div>
+                           <div id="fw__6" class="grid-item grid-item--width2 text-center"><span id="fw__6" class="yes-index catch-word">
+                                 						<br class="linebreak">)( 2 </span></div>
+                           <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
+                                 						<br class="linebreak"><span>los</span> </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-003/full/full/0/default.jpg">-----[4]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__46" class="yes-index">
+                                 						<br class="linebreak"><span>los Santos</span> glücklich angelanget seye / und ein reiche Ladung / so in 
+                                 						<br class="linebreak">6000 Kisten mit Zucker / und 18000 Rollen Taback / dan andern 
+                                 						<br class="linebreak">Waaren / wie auch vielem Gold und Silber / und 80000 <span>Cruzades</span> 
+                                 						be=<br class="linebreak">standen seye. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__116" class="yes-index">
+                                 						<br class="linebreak">Aus Spannien / von dem 7. December. Daß von Madrit 
+                                 						ver=<br class="linebreak">sichert werde / wie der Herzog von Anjon nicht allein von einem 
+                                 						Fie=<br class="linebreak">ber einen Anstoß bekommen / sondern gar mit der Wassersucht behaft 
+                                 						<br class="linebreak">seye; Jndessen aber solle der Cardinal Alberoni doch noch nicht feyren /
+                                 						<br class="linebreak">sondern die Kriegs=Anstalten / und absonderlich die Bauung derer 
+                                 						<br class="linebreak">neuen Kriegs=und anderer Schiffen zu Wiederaufrichtung einer 
+                                 						<br class="linebreak">Flotta in all. Spannischen Häfen beschleunigen lassen; Wie dan 
+                                 						<br class="linebreak">erst kürzlich 2. Fregatten und 40. neugebaute Transportschiffe mit 1900 
+                                 						<br class="linebreak">Recruten und vielen Matrosen von Corunna nach Cadix abfahren 
+                                 						<br class="linebreak">müssen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__286" class="yes-index">
+                                 						<br class="linebreak">Aus Groß=Britannien / von dem 20. December. Daß zu 
+                                 						Lon=<br class="linebreak">den der Herr Obrist=Stanhoppe / gewest=ausserordentlicher Gesandter 
+                                 						<br class="linebreak">am Anjouinischen Hof / von Madrit über Pariß sich wieder eingefunden:
+                                 						<br class="linebreak">und von dieser lezten Stadt sogleich einige Particularitäten von des 
+                                 						<br class="linebreak">Anjouinschen Botschafters / <span>Prencipe de Cellamare</span>, Conspiration 
+                                 						mit=<br class="linebreak">gebracht habe; Desgleichen sey auch der Herr Admiral Laval mit 2 
+                                 						<br class="linebreak">Kriegs=Schiffen und einem Brander aus dem Mitteländischen Meer 
+                                 						<br class="linebreak">zu Spithead ankommen; Dahingegen Jhre Groß=Britannische 
+                                 						Ma=<br class="linebreak">jestät den Befehl ertheilet / daß alle Officiers / derer Regimenter in 
+                                 						<br class="linebreak">Minorica / oder zu Gibraltar sich befinden / ohne Verzug nach ihren 
+                                 						<br class="linebreak">Posten abgehen sollen; Wie dan auch schon verschiedene Transport=
+                                 						<br class="linebreak">Schiffe mit Recruten für die Besatzung zu Gibraltar und Porto 
+                                 						<br class="linebreak">Maone aus der Tems gerucket; Dan sey ebenfals der Königliche 
+                                 						Be=<br class="linebreak">fehl ergangen / daß all=Engellische Kriegs=und andere Schiffe 
+                                 						Re=<br class="linebreak">pressalien gegen all=Spannische Schiffe / Waaren / und Untertahnen 
+                                 						<br class="linebreak">auf alle Weiß und Manier nehmen sollen; Dahero schon 
+                                 						verschieden=<br class="linebreak">reiche Kaufleuthe ein grosse Zahl Kapper=Schiffen ausrüsten liesen /
+                                 						<br class="linebreak">um auf die Spannische aus Jndien kommende Schiffe damit 
+                                 						zukreu=<br class="linebreak">tzen; Und weilen der Herr Abt <span>du Bois</span> zu Pariß den Herrn <span>Comte
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">de Srairs</span>, Engellischen Minister / Namens des Herzogen von 
+                                 						Or=<br class="linebreak">leans / Regenten von Frankreich / versichert / in der ersten Woche des 
+                                 						<br class="linebreak">neuen Jahrs den Krieg dem Herzogen von Anjou anzukünden; Als 
+                                 						<br class="linebreak">solle solches ebenfals zu gleicher Zeit in Londen geschehen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__32" class="yes-index">
+                                 						<br class="linebreak">Aus Frankreich / von dem 23. December. Daß der Cardinal 
+                                 						<br class="linebreak"><span>de Noailles</span>; und viel andere vornehme Personen sich nach dem KöKöniglichen= </p>
+                           </div>
+                           <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
+                                 						<br class="linebreak">nigli= </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-004/full/full/0/default.jpg">-----[5]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__101" class="yes-index">
+                                 						<br class="linebreak">niglichen Pallast begeben / und daselbsten dem Herzogen von <span>Orleans</span>,
+                                 						<br class="linebreak">Regenten von Frankreich / wegen so glücklicher Entdeckung der 
+                                 						ab=<br class="linebreak">scheulichen Conspiration des Anjouinischen Botschafters / <span>Prencipe de
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cellamare</span>, (davon hierbey der Bericht zusehen) Glück gewunschen /
+                                 						<br class="linebreak">auch all=ihre Dienste deshalben angebotten; Sonsten solle zu Pariß 
+                                 						<br class="linebreak">die Nachricht eingeloffen seyn / daß zu Jspahan / in Persien / der vor 
+                                 						<br class="linebreak">etlich Jahren zu Pariß gewest=Persianische Gesandter enthauptet 
+                                 						<br class="linebreak">worden seye / weilen er seine von Pariß entführte <span>Maîtresse</span> sehr übel 
+                                 						<br class="linebreak">gehalten habe. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__96" class="yes-index">
+                                 						<br class="linebreak">Aus Holland / von dem 27. December. Daß der Kaiserliche 
+                                 						<br class="linebreak">Minister / Herr <span>Marches de Priè</span>, in dem Haag seine Bagage wieder 
+                                 						<br class="linebreak">einpacken: und nach Brüssel zurückschicken lassen; Mit dem 
+                                 						Vorha=<br class="linebreak">ben / nächstens dahin zufolgen; Sonsten seye dasiger Orten des Nachts 
+                                 						<br class="linebreak">zwischen dem 21. und 22. ein unvermuhtet=starker Sturmwind 
+                                 						ent=<br class="linebreak">standen / dadurch wieder / wie vorm Jahr / ein grosser Schad auf den 
+                                 						<br class="linebreak">Holländischen Küsten an Schiffen / wie auch auf dem Land geschehen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__66" class="yes-index">
+                                 						<br class="linebreak">Aus Flandern / von dem 26. December. Daß alle dasiger 
+                                 						<br class="linebreak">Orten befindliche Guverneurs den Befehl vom Königlich=Französi=<br class="linebreak">schen Hof empfangen / daß dieselbe 10000 Wägen in gewisser Zeit 
+                                 						<br class="linebreak">stellen sollen / um die nöhtige Kriegs=und Lebens=Mitlen / wie auch 
+                                 						<br class="linebreak">Artillerie=Weesen nach den Magazinen / und ferners abzuführen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__44" class="yes-index">
+                                 						<br class="linebreak">Aus Brabant/ von dem 27. December. Daß zu Gent zwischen 
+                                 						<br class="linebreak">dasiger Burgerschaft und den Vehlischen Dragonern einiger Aufstand 
+                                 						<br class="linebreak">sich ereignet; Welcher jedoch wieder in Zeiten mit allerseits 
+                                 						Zufrie=<br class="linebreak">denheit gestillet worden. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__111" class="yes-index">
+                                 						<br class="linebreak">Von dem Nieder=Rheinstrom / von 29. December. Daß die 
+                                 						<br class="linebreak">Chur=Cöllnische Völker / so bey der Execution in Hessen gewesen / zu 
+                                 						<br class="linebreak">Andernach / und in anderen Oertern des Erz=Stifts Cöllen wieder 
+                                 						<br class="linebreak">eingezogen; Desgleichen auch die Chur=Pfältzische Truppen von 
+                                 						ge=<br class="linebreak">dachter Execution in ihre Landen wieder eingerucket; Wie ingleichem 
+                                 						<br class="linebreak">der Herr Obrister von Violet zu Düsseldorff angekommen / und 
+                                 						da=<br class="linebreak">sige Commandanten=Stell angetretten; Den 24. Dito seye des Heil.
+                                 						<br class="linebreak">Römischen Reichs Fürst / und Bischoff zu Münster und Paderborn 
+                                 						<br class="linebreak">gestorben. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__50" class="yes-index">
+                                 						<br class="linebreak">Von dem Maynstrom / vom 31. December. Daß unlängstens 
+                                 						<br class="linebreak">das Kaiserliche Regiment zu Fuß des Prinzen Ludwig von 
+                                 						Würtem=<br class="linebreak">berg an verschiedenen Orten den Rhein passiret / um ferners nach den 
+                                 						<br class="linebreak">Kaiserlich=Oesterreichischen Niederlanden sich zubegeben. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__22" class="yes-index">
+                                 						<br class="linebreak">Aus der Schweitz / von dem 27. December. Daß noch immer aus </p>
+                           </div>
+                           <div id="fw__6" class="grid-item grid-item--width2 text-center"><span id="fw__6" class="yes-index catch-word">
+                                 						<br class="linebreak">)( 3 </span></div>
+                           <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
+                                 						<br class="linebreak">Sa= </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-005/full/full/0/default.jpg">-----[6]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__37" class="yes-index">
+                                 						<br class="linebreak">Savoyen versichert werde / wie die Truppen dieses Herzogen mit 10 
+                                 						<br class="linebreak">Regimentern theils zu Fuß / und theils zu Pferd vermehret: auch zu 
+                                 						<br class="linebreak">bestimter Zeit auf die Beine gebracht werden sollen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__319" class="yes-index">
+                                 						<br class="linebreak">Von dem Elbstrom / vom 30. December. Daß / zufolg der 
+                                 						Nach=<br class="linebreak">richt aus Norwegen / von Friderichstadt / die Schweden mit 3000 
+                                 						<br class="linebreak">Mann die Bürgerschanz dreymal gestürmet hätten / wären aber 
+                                 						alle=<br class="linebreak">mal wieder abgewiesen worden; Dabey sie 400 Gemeine Tod 
+                                 						lie=<br class="linebreak">gen lassen / die Officiers aber / samt den Verwundten / mit sich 
+                                 						genom=<br class="linebreak">men hätten; Und Dänischer Seiten wären 43 Mann getödet: und 
+                                 						<br class="linebreak">32 verwundet worden; An die Stadt Drontheim habe der 
+                                 						Schwe=<br class="linebreak">dische General Ahrenfeld auch angesetzet / wär aber ebenfals wieder 
+                                 						<br class="linebreak">unverichteter Sachen abgetrieben worden; Nichtweniger habe der 
+                                 						<br class="linebreak">Dänische Commandeur Paulsen 14 Flöse / Brigantinen / und 
+                                 						an=<br class="linebreak">dere Fahrzeuge von der Schwedischen Flotilla ruiniret; Und der 
+                                 						<br class="linebreak">Vice=Admiral Rosenpalm liege mit seiner Squadra bey der Jnsul 
+                                 						<br class="linebreak">Magoe / um zuverhindern / daß den Schweden keine Munition / noch 
+                                 						<br class="linebreak">Proviant zukommen möge; Wie dan die Uberläufer / derer täglich 
+                                 						<br class="linebreak">bey den Dänen ankommen / versichert / daran grosser Mangel zuseyn /
+                                 						<br class="linebreak">und hätten sie in 5 bis 6 Tägen kaum 3 Pfund Brod und ein 
+                                 						hal=<br class="linebreak">ben Löffel voll Salz bekommen; Um auch den Dänischen Bauren 
+                                 						<br class="linebreak">ein grössern Muht zumachen / so wäre durchgehends verkündet 
+                                 						wor=<br class="linebreak">den / daß ihnen alles / was sie von den Schweden / es sey an Leuthen /
+                                 						<br class="linebreak">Kleidern / Pferd und Gelt / erbeuten würden / als Eigentum 
+                                 						verblei=<br class="linebreak">ben solte. Wie von Berlin verlaute / wäre von dorten eine 
+                                 						vorneh=<br class="linebreak">me Dama gefänglich hinweg: und nach der Vestung Spandau 
+                                 						ge=<br class="linebreak">führet worden; Desgleichen habe man auch einer anderen Dama aus 
+                                 						<br class="linebreak">Königlichem Befehl bedeuten lassen / sich von gedachtem Berlin 
+                                 						hin=<br class="linebreak">weg zubegeben; deren Verbrechen solle seyn / daß etwas von ihnen 
+                                 						<br class="linebreak">herauskommen. </p>
+                           </div>
+                           				
+                           					
+                           					
+                           <div id="head__12" class="grid-item">
+                              <h5 id="head__12" class="yes-index text-center">
+                                 						<br class="linebreak">Ankunft derer Hoh=und Niederen Stands Personen. </h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__9" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 4. Jenner / 1719. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stuben=Thor. Herr Capitan Ambach /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">von Chur=Sächsischen / komt / als 
+                                    						Cur=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">rier / von Warschau / log. bey der Anten. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 5. Dito. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Baron von Schönbeck / komt von 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Breßlau / log. im Radl. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Karntner=Thor. Herr Joseph / Graf 
+                                    						Kö=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nigl / kom von Praag / log. im 
+                                    						gol=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">denen Pfauen. </li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Wenzel von Renau / Rittmaister 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">vom Hamiltonischen Regiment / komt 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">aus Hungarn / log. im Matschacker=Hof. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Carl / Baron <span>de Galesi</span>, komt aus 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dem Haag / log. beym Hn. Cammer=Raht 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Salvay. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. Dito. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Lieutenant Lindemann vom 
+                                    						Ra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">butinischen Regiment / komt von Ofen /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">log. im goldenen Greiffen. </li>
+                              </ul>
+                           </div>
+                           <div id="fw__9" class="grid-item grid-item--width2 text-end"><span id="fw__9" class="yes-index catch-word">
+                                 						<br class="linebreak">Lista </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-006/full/full/0/default.jpg">-----[7]-----</span></div>
+                           				
+                           					
+                           <div id="head__12" class="grid-item">
+                              <h5 id="head__12" class="yes-index text-center">
+                                 						<br class="linebreak">Lista derer Getauften in=und vor der Stadt. </h5>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__9" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 24. November / 1718. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Michael Eisenhuber / und Maria 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr T. Maria Catharina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Zuderbeuth / Hutmacher /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Regina sein. Ehew. ihr S. Matt=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">hias Thomas. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 25. Dito. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Samuel Franz Richard / <span>U.
+                                       						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">J. D.</span> und Anna Sophia sein. Haußfr.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ihr S Abraham Carl Joseph. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein gefundenes Kind / Franz Anton. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Wollgruber / und Maria 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr S. Benedict Johann </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Gerhard van der Mühl / und 
+                                    						Ca=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tharina sein. Ehew. ihr T. Catharina 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Theresia. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Philipp Gofried Geck / und 
+                                    						Chri=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stina sein. Ehew. ihr T. Catharina 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Theresia. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Veit Otter / und Susanna sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Catharina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Franz Adranzky / und Anna 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria sein. Ehefr. ihr S. Johann 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thomas Andre. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Christoph Knie / Schnei=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der / und Anna Maria sein. Ehew.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ihr S. Johann Christoph. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Rheinhold / Tisch=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ler / und Maria sein. Ehew. ihr S.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Franz. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 26. Dito. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Caspar Joseph Pollin / Han=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">delsmann / und Anna Martha sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Haußfr. ihr S. Johann Conrad Georg 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Franz Xaveri. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Georg Neuhauser / und Anna 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Sophia s. Ehefr. ihr T. Anna Catharina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Thaller / Gartner /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Maria s. Ehew. ihr T. Anna Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Schaffner / Schneider / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Anna sein. Ehew. ihr S. Jo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">seph Benedict Conrad. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jgnatz Aigenbach / Schneider / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Theresia sein. Ehew. ihr S.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anton Christoph Joseph. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Wolfgang Lienhard / Reut= </li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">knecht / und Anna sein. Ehew. ihr T.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Antonia. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein armes Kind / Anna Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Richter / und Francisca sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Anna. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Popperger / und Maria 
+                                    						Mag=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dalena s. Ehew. ihr T. Helena Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Jacob Schlapfer / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Magdalena sein. Ehew. ihr 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">T. Maria Elisabeth Margareth. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Augustin Grauß /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kauffmann von Postbau / und Anna 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Sabina Catharina sein. Ehefr. ihr S.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Augustin Jgnatius. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Joseph Kraftmahr / und Theresia 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr T. Barbara Rosina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Aschinger / und Eva sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr S. Joseph Johann. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Bügel / Schuster /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Agatha s. Ehew. ihr S. Christoph. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 27. Dito. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Denm Herrn Adrian Johann von Rechemb /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Margareth sein. Haußfr. ihr S.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joachim Carl. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Mauser / Kutscher / und 
+                                    						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria sein. Ehew. ihr S. Johann Andre. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Henrich Wölz / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Eva Rosina sein. Ehefr. ihr T Anna 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Christina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Caspar Fragner / Schneider / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna Maria sein. Ehew. ihr S. Jo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">hann Franz. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein armes Kind / Catharina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Henrich Peyer / Falkner / und 
+                                    						Ro=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sina sein. Ehew. ihr T. Eva Catharina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Mohrl / und Maria sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Christina Elisabeth. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Mattel / Kutscher / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Catharina sein. Ehew. ihr S. Joseph 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Michael. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Philipp Aigner / Tagwerker / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Susanna sein. Ehew. ihr T. Theresia 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Magdalena. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Michael Fuchß / Husa<abbr title="unclear">r</abbr> /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Maria Regina sein. Ehew. ihr 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">T. Maria Anna Theresia. </li>
+                              </ul>
+                           </div>
+                           <div id="fw__9" class="grid-item grid-item--width2 text-end"><span id="fw__9" class="yes-index catch-word">
+                                 						<br class="linebreak">Dem </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-007/full/full/0/default.jpg">-----[8]-----</span></div>
+                           				
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Thomas Höfer / und Susanna sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Magdalena Eva 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Wenzel Joseph Hartulan / und 
+                                    						Mar=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gareth sein. Ehew. ihr T. Anna Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Wolfgang Seidl / und Eva 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rosina sein. Ehefr. ihr T. Eva Rosina. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Simon Schriffel / und Ursula sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr S. Johann Augustin. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Christoph Hardinger / und Eleo= </li>
+                              </ul>
+                           </div>
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nora s. Ehew. ihr S. Johann Egydius. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 28. Dito. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Franz Guilielm Kunert / Han=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">delsmann / und Anna Jacobina sein.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehefr. ihr T Anna Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Clement / Würth / und 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara sein. Ehew. ihr T. Elisabeth 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Georg Sperber / und Maria 
+                                    						Eli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sabeth sein. Ehew. ihr S. Andre. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           					
+                           <div id="head__13" class="grid-item">
+                              <h5 id="head__13" class="yes-index text-center">
+                                 						<br class="linebreak">Lista derer Verstorbenen in=und vor der Stadt. </h5>
+                           </div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__10" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 4. Jenner / 1719. starb </h5>
+                              <ul class="yes-index">
+                                 						
+                                 						
+                                 <li>
+                                    							<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matthias Haldrich / Roßknecht / im 
+                                    							Liech=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tensteinischen Hauß / in der Hrn. Gassen /
+                                    							<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 24 Jahr. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Vor der Stadt. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Conrad / Bierversilberer / bey 
+                                    						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria=Hülf / alt 70 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Martin Meßlinger / Kutscher / zu 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">klein Margarethen / sein W. Justina /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 28 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rosalia Schlechtlin / alt 60 J. Agnes 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Gerhartin / alt 75 J. im Kranken=Hauß. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__11" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 5. Dito / in der Stadt. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Titl. Herrn Lorenz Michael Dizent 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">von Felsenthal / des Heil. Röm. Reichs 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rittern / und N. O. Landmann / der 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Röm. Kaiserl. und Catholischen 
+                                    						Maje=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stät Hof=Cammer Raht / sein Frau 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Gemahlin Anna Christina / gebohrne 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">von Herbst / im Gavrianischen Hauß / in 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der oberen Breunerstrassen / alt 49 J. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Fr. Maria Josepha Sauerin / beym 
+                                    						gol=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">denen Adler / auf der alten 
+                                    						Burger=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">musterung / alt 30 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Joseph Leotar / Koch / im 
+                                    						Mauer=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">maisterischen Hauß / in der 
+                                    						Schuler=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">strassen / sein K. Joseph / alt 7 Jahr. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Vor der Stadt. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Rosenkranz / Musicus / im 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Lerchenfeld / sein W. Helena / alt 43 J. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Sebastian Pumber / Fleischhacker /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Contuma<abbr title="unclear">t</abbr>z / sein W. Anna alt 26 J. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Paul Habeck / Maurergesell / auf 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der Widen / sein K. Simon / alt 1 J. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Paul Schreiber / Hauer / zu Nickels= </li>
+                              </ul>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dorf / sein W. Catharina / alt 55 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Launerin / armes Weib / welche 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gestern Nachts in die Währinger=Linie 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gefallen / und erfroren / alda vom 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kais. Stadt=Gericht beschaut worden /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 30 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Catharina Roßnerin / L. M. bey St.
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ulrich / ihr K. Maria / alt 5 V. Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joachim Pret / alt 30. J. Philipp 
+                                    						Scho=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ber / alt 20. Jahr / im Kranken=Hauß. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__11" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. Dito / in der Stadt. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Franz Neuhofer / Buchtruckergesell / im 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Wagnerischen Hauß / am Salzgries /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 54. Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Georg Werthecker / Gardi=Schlis=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">selwachter / in seinem Hauß / unterm 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">roten Thurn / sein K. Johanna / alt 5. J. </li>
+                              </ul>
+                           </div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__6" class="yes-index text-center">
+                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Vor der Stadt. </h5>
+                              <ul class="yes-index">
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jacob Festenberger / Beck / im 
+                                    						Lichten=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">thal / alt 70 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Beringer / Drachßler / auf der 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Windmühl / sein S. Franz / alt 10 J. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matthias Jungmann / Hafner / am 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thury / alt 60 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Simon Geiger / Laggey / an der Wien /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 52 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Elisabeth Eisenknöpfin / Wittib / in der 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Favorita / alt 63 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Schwarzhut / Fleischhackerknecht /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">untern Weißgärbern / alt 52 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Stephan Kopf / Kutscher / vorm 
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Schotten=Thor / sein K. Maria / alt 3 J. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna Huberin / Wittib / im Lerchenfeld /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 80 Jahr. </li>
+                                 <li>
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matthias Fischel / in der Leopoldstadt /
+                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 44 Jahr. </li>
+                              </ul>
+                           </div>
+                           <div id="fw__13" class="grid-item grid-item--width2 text-end"><span id="fw__13" class="yes-index catch-word">
+                                 						<br class="linebreak">Be </span></div>
+                           				</div>
+                        <div class="grid ">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_9"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-008/full/full/0/default.jpg">-----[9]-----</span></div>
+                           				
+                           					
+                           <div id="head__3" class="grid-item">
+                              <h5 id="head__3" class="yes-index text-center">
+                                 						<br class="linebreak">Bericht </h5>
+                           </div>
+                           				
+                           					
+                           					
+                           <div class="grid-item">
+                              <h5 id="head__22" class="yes-index text-center">
+                                 						<br class="linebreak">Von der entdeckten Conspiration des am
+                                 						Fran=<br class="linebreak">zösischen Hof gewest=Anjouinischen Botschafters /
+                                 						<br class="linebreak"><span>Prencipe de Cellamare</span>. </h5>
+                              <p id="p__234" class="yes-index">
+                                 						<br class="linebreak">NAchdeme der <span>Prencipe de Cellamare</span> die schon gemeldt=beyde Brieffe /
+                                 						<br class="linebreak">samt denen noch nicht bekanten Beylagen / dem Abt Portocarero / welcher nicht 
+                                 						<br class="linebreak">älter als 18 Jahr seyn soll / übergeben / weil dieser nebst dem Sohn des Marquis 
+                                 						<br class="linebreak">von Monteleone nach Madrit reisen wollen / und diese beyd=junge Herren / als sie 
+                                 						<br class="linebreak">2 Meil von Pariß kommen / im Wasser umgeworffen worden / habe der eine dem 
+                                 						<br class="linebreak">Postillion / ehe es geschehen / zugeruffen: Er mögte sich ja vorsehen / daß sein 
+                                 						<br class="linebreak">Reiß=Truhe nicht naß würde / weil er nicht 1000 <span>Louis d’ Or</span> nehmen wolte / daß 
+                                 						<br class="linebreak">die Scripturen / welche in derselben wären / verdürben; So seyen darauf in dem 
+                                 						<br class="linebreak">nahe gelegenen Dorffe die Pferde gewechselt worden / der Postillion aber wär in 
+                                 						<br class="linebreak">dem vollen Galop nach Pariß zurück geritten / um einem von den vornehmsten 
+                                 						Mi=<br class="linebreak">nistern diese Begebenheit zuerzehlen / welcher darauf dem Regenten davon 
+                                 						Nach=<br class="linebreak">richt ertheilet / daher sowohl Se. Königliche Hoheit aus diesen / als andern 
+                                 						Anzei=<br class="linebreak">gungen geschlossen / daß etwas unter der Hand seyn müsse / und desfals dem 
+                                 						Gu=<br class="linebreak">verneur von Poitiers / einem Ort / so 80 Meilen von Pariß / einen Currier zugeschickt 
+                                 						<br class="linebreak">hätte / mit der Ordre / diese beyde junge Herren zuarrestiren. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__73" class="yes-index">
+                                 						<br class="linebreak">Da nun hierauf der <span>Prencipe de Cellamare</span> diese Arrestirung vernommen / und 
+                                 						<br class="linebreak">daß man seine Brieffe / welche er durch diese beyde nach Madrit gesand / eröfnet / hab 
+                                 						<br class="linebreak">er sich den 9. December zu dem Regenten verfüget / um darüber zuklagen / allein Se.
+                                 						<br class="linebreak">Königliche Hoheit verwiesen ihn an den Herrn Le Blanc / zu dem er sich so fort 
+                                 						<br class="linebreak">begeben; </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__145" class="yes-index">
+                                 						<br class="linebreak">Der Herr Abt du Bois fande sich zugleicher Zeit alda ein / und man gab dazumal 
+                                 						<br class="linebreak">dem Botschafter zuverstehen / daß der Hof bereits ein geraume Zeit von einer 
+                                 						<br class="linebreak">unerhörten Conspiration / so gegen dem Staat geschmiedet würde / Nachricht habe /
+                                 						<br class="linebreak">und dahero genöhtiget sey / auf die bequemste Weise diesem Unheil vorzukommen /
+                                 						<br class="linebreak">wobey man zugleich mit all=ersinnlichster Höflichkeit dem Botschafter 
+                                 						zuverste=<br class="linebreak">hen gab / daß er seine Kutsche wegschicken / und mit der von dem Herrn Le Blanc 
+                                 						<br class="linebreak">nach seinem Hauß zuruck fahren mögte / wogegen er sich Anfangs mit grosser Wuht 
+                                 						<br class="linebreak">sezte / aber endlich darein willigte; Als er nun dahin kam / war sein Hauß 
+                                 						<br class="linebreak">mit Wachten besezt / und man versiegelte alsobald in Beyseyn seiner all=daselbst 
+                                 						be=<br class="linebreak">findliche Scripturen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__125" class="yes-index">
+                                 						<br class="linebreak">Den 12. Dito darauf geschahe die Aufsiegelung der Schrifften mit eben dergleichen 
+                                 						<br class="linebreak">Solennitäten / wie zuvor / und nachdem der Herr Abt du Bois und der Herr Le Blanc 
+                                 						<br class="linebreak">die Scripturen examinirt / numerirte der Botschafter dieselbe / und ließ sie in 
+                                 						<br class="linebreak">3 Kisten packen / welche wiederum versiegelt / und in das Geheime Rahts=Ar=<br class="linebreak">chiv gebracht wurden / alwo sie bleiben sollen / bis der Herzog von Anjou jemand 
+                                 						<br class="linebreak">schickt / um dieselbige in seinem Namen zubegehren; Als dieses geschehen /
+                                 						<br class="linebreak">wurde die Wacht aus des Botschafters Hause wiederum abgeführt / und der 
+                                 						<br class="linebreak">würkliche Cammer=Junker / Monsieur Lisbois / blieb bey dem Botschafter / um </p>
+                           </div>
+                           <div id="fw__7" class="grid-item grid-item--width2 text-center"><span id="fw__7" class="yes-index catch-word">
+                                 						<br class="linebreak">)( )( </span></div>
+                           <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
+                                 						<br class="linebreak">den </span></div>
+                           				</div>
+                        <div class="grid margin-end">
+                           					
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_10"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-009/full/full/0/default.jpg">-----[10]-----</span></div>
+                           				
+                           					
+                           <div class="grid-item">
+                              <p id="p__22" class="yes-index">
+                                 						<br class="linebreak">denselben an die Gränzen zubegleiten / wie dan auch selbiger den 14. darauf von 
+                                 						Pa=<br class="linebreak">riß abgereiset. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__97" class="yes-index">
+                                 						<br class="linebreak">Zufolge dem allgemeinen Gerüchte / haben die von der Spannischen Partey 
+                                 						<br class="linebreak">den 1. Hornung ein Laager von 50000. Mann / nebst einer hinlänglichen Kriegs=
+                                 						<br class="linebreak">Cassa / die dazu gehörige Nohtwendigkeiten zubezahlen / bereit haben wollen / sie 
+                                 						<br class="linebreak">sollen auch willens gewesen seyn / dahin zutrachten / um die Parlamenter auf ihre 
+                                 						<br class="linebreak">Seite zubringen / den Regenten und seinen Sohn / den Herzog von Chartres / gefangen 
+                                 						<br class="linebreak">zunehmen / des Königs Garde zuüberfallen / und sich Jhrer Majestät / des Königs / Per=<br class="linebreak">son zuversichern. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__157" class="yes-index">
+                                 						<br class="linebreak">Soviel die Wechsler zuerkennen geben / habe der Spannische Botschafter seit 
+                                 						<br class="linebreak">5. bis 6. Monaten in Wechsel mehr als 2. Milionen und 500000. Livres 
+                                 						empfan=<br class="linebreak">gen / und will man versichern / daß die Zahl der Conspiranten sehr groß seye; Ei=<br class="linebreak">nige sagen / daß nur ein Herzog darunter begriffen / die andern sprechen drey / und 
+                                 						<br class="linebreak">mehr als 60 vornehme Herren. Der Graf Dedi und Herr von Magny / Jntro=<br class="linebreak">ducteur derer Botschaftern / haben sich durch die Flucht salviret / des leztern 
+                                 						Se=<br class="linebreak">cretarius aber / der Abt Brigand / war in die Bastille gesezt / Herr von St. Genie 
+                                 						<br class="linebreak">aber wiederum freygelassen / weil ein Mißverstand bey den Namen gewesen.
+                                 						<br class="linebreak">Sonsten vernimmet man / daß der <span>Prencipe de Cellamare</span> zu Blois bleiben soll / bis 
+                                 						<br class="linebreak">man zuvor von Madrit wird Brieffe haben. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__70" class="yes-index">
+                                 						<br class="linebreak">Don Fernando / dessen Secretarius / und die vornehmste Bedienten von der 
+                                 						<br class="linebreak">Botschaft sollen noch einige Zeit zu Pariß bleiben / und meinen etliche zuwissen /
+                                 						<br class="linebreak">daß dieselbe mit dem <span>Prencipe de Cellamare</span> nach Holland gehen sollen / weil 
+                                 						die=<br class="linebreak">ser als Spannischer Botschafter daselbst sich aufhalten wird; Dieser Minister 
+                                 						<br class="linebreak">habe bey seiner Abreise nicht die geringste Schulden gelassen. </p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__139" class="yes-index">
+                                 						<br class="linebreak">Den 15. Dito hat man einen Teutschen / welcher sich vor einen Grafen von 
+                                 						<br class="linebreak">Schlichtz ausgiebt / den Brigadier Sandrasky / einen abgedankten Obrist=Lieute=<br class="linebreak">nant / Monsieur Rousse / auch noch zwey Hungarische Officiers von des Ragoczi 
+                                 						<br class="linebreak">Anhang arrestiret; Eben diesen Tag examinirte der Herr Le Blanc in der Bastille 
+                                 						<br class="linebreak">den Abt Brigand / (oder wie ihn andere nennen / Brigaud) von welchem man sagt /
+                                 						<br class="linebreak">daß er die beyde Manifesten / wovon bereits in den publicirten Brieffen Meldung 
+                                 						<br class="linebreak">geschehen / gemacht habe / ingleichem die Antwort / so vor einiger Zeit auf die 
+                                 						<br class="linebreak">Briffe von Filz Moritz heraus kommen; Man will auch / daß die Conspiranten 
+                                 						<br class="linebreak">ihre meist=heimliche Zusammkünften bey dem Jntroducteur Magny gehabt hätten.</p>
+                           </div>
+                           					
+                           <div class="grid-item">
+                              <p id="p__37" class="yes-index">
+                                 						<br class="linebreak">Von Beauvais vernimt man / daß daselbst ein Buchdrucker arrestiret worden /
+                                 						<br class="linebreak">als er eben im Begriff gewesen / ein Manifest von der 
+                                 						Spannisch=<br class="linebreak">gesinnten Partey zutrucken. </p>
+                           </div>
+                           					
+                           				
+                           				</div>
                      </div>
-                     <div class="sticky row bg-white" style="top: 1em!important;">
-                        <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
-                           <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
-                        <div id="mark-scroll" class="fade-lang col-md-2 my-4"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
-                        </div>
-                     </div>
-                     <div class="title-page py-4" id="#top_page">
-                        			
-                        				
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-000/full/full/0/default.jpg">-----[1]-----</span></div>
-                        				
-                        					
-                        <h5 id="titlePart__6" class="yes-index text-center py-2">
-                           						<br class="linebreak">Num. 1610. </h5>
-                        					
-                        					
-                        				
-                        <div id="imprimatur__26" class="grid-item">
-                           <p id="imprimatur__26" class="grid-item yes-index">
-                              					<br class="linebreak">Mit Jhrer Römisch=Kaiserlich=und Catholischen Majestät Freyheit /
-                              					<br class="linebreak">Getruckt in der Kaiserlichen Reichs=Hof=Buchtruckerey / </p>
-                        </div>	
-                        				
-                        			
-                        		</div>
-                     <div class="grid ">
-                        				
-                        					
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__14" class="yes-index text-center">
-                              						<br class="linebreak">Wien vom 4. bis 6. Jenner / 1719. </h5>
-                           <p id="p__286" class="yes-index">
-                              						<br class="linebreak">MJttwoch / den 4. Jenner. Heute vernahme man aus 
-                              						Hun=<br class="linebreak">garn / wie daß / nachdem Jhre Eminenz / der Herr Cardinal 
-                              						<br class="linebreak"><span>Csáky</span>, wie lezthin gemeldet worden / von Fünffkirchen 
-                              						zu=<br class="linebreak">ruck in dero Erz Bischoflichen Residenz <span>Colocsa</span> glücklich angelanget /
-                              						<br class="linebreak">dieselbe nach wenig Tägen / mit dero Cavaliers und Bedienten / die 
-                              						<br class="linebreak">Reiß nach Temeswar auch vorgenommen hätten; Alda sie dan den 
-                              						<br class="linebreak">18. December von dasigem Herrn Commandanten / Grafen von 
-                              						<br class="linebreak">Wallis / auch anderen Kaiserlichen Herren Officieren aufs höflichst 
-                              						<br class="linebreak">empfangen: und nach dem Quartier des Herrn Generals des 
-                              						Te=<br class="linebreak">meswarer Bannats / Grafen von Mercy / begleitet: wie auch davor 
-                              						<br class="linebreak">zu dero Leibwacht ein ganze Grenadier=Compagnie vom Löblich=Hei=<br class="linebreak">sterischen Regiment gestellet worden; Den folgenden Tag darauf nach 
-                              						<br class="linebreak">dem zuvor in der Kirche derer WW. EE. <span>PP. S. J.</span> verrichteten 
-                              						Got=<br class="linebreak">tesdienst / hab es Jhrer Eminenz beliebet / das vom Weiland <span>
-                                 						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">thia Corvino</span>, König in Hungarn / erbaute / und 165 Jahr unter 
-                              						<br class="linebreak">der Türkischen Dienstbarkeit gestandene Schloß und Festung / dan 
-                              						<br class="linebreak">den Ort / wo vor einigen Jahren die Siegreich=Kaiserliche Armee 
-                              						ge=<br class="linebreak">standen / und diesen höchstwichtigen Plaz bezwungen / in Augenschein 
-                              						<br class="linebreak">zunehmen / unter Begleitung des oberwehnt=dasigen Herrn 
-                              						Com=<br class="linebreak">mandanten / Grafen von Wallis / von welchem Jhre Eminenz/ wie 
-                              						<br class="linebreak">auch ander=vornehme Kaiserliche Herren Officierer zu Mittag 
-                              						herr=<br class="linebreak">lich tractiret: und mit annehmlichster Tafel=Music ergötzet worden;
-                              						<br class="linebreak">Den Nachmittag aber wären sie Spatzieren gefahren / und hätten </p>
-                        </div>
-                        				
-                        <div id="fw__4" class="grid-item grid-item--width2 text-center"><span id="fw__4" class="yes-index catch-word">
-                              						<br class="linebreak">)( </span></div>
-                        <div id="fw__5" class="grid-item grid-item--width2 text-end"><span id="fw__5" class="yes-index catch-word">
-                              						<br class="linebreak">in </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-001/full/full/0/default.jpg">-----[2]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__306" class="yes-index">
-                              						<br class="linebreak">in dortiger Revier eine an dem Fluß <span>Wege</span> auf ein ganz 
-                              						besonder=<br class="linebreak">künstliche Weiß erbaute Mühl besehen / dan / weilen Jhre Eminenz 
-                              						<br class="linebreak">das Heil. Weinacht=Fest in dero Erz=Bischoflichen Residenz <span>Colocsa</span>
-                              						<br class="linebreak">begehen wolten / dero Ruckreyß den 20. Dito auf der Post wieder 
-                              						<br class="linebreak">angetretten / und / nachdeme sie die <span>Marosch</span> bey <span>Csanad</span>, und die <span>Theis</span>
-                              						<br class="linebreak">bey dem Dorff <span>Tap</span> passiret / wären sie den 21. zu <span>Szegedin</span>, wo 
-                              						die=<br class="linebreak">selbe ebenfals von dasigem Herrn Commandanten / Grafen von 
-                              						Her=<br class="linebreak">berstein / bewillkommet worden / glücklich angelanget; Den 22. aber 
-                              						<br class="linebreak">ferners dero Reiß durch <span>Szabazka</span>, einem zu dero Erz=Bistum 
-                              						gehö=<br class="linebreak">rigen Ort / fortgesetzet / da sie gewöhnlicher massen die Visitation in 
-                              						<br class="linebreak">dasiger Pfarr=Kirche verrichtet / und den 23. gegen Abend zu 
-                              						<br class="linebreak"> angekommen; Daselbsten folgendes Tags die Congregation des 
-                              						<br class="linebreak">Löbl. Bacser Comitats gehalten worden / immittels ihre Eminenz 
-                              						<br class="linebreak">ein kleine Reiß nach <span>Szökesd</span> vorgenommen / um allda auch die 
-                              						Vi=<br class="linebreak">sitation zuvollbringen / sofort wären dieselbe zuruck auf <span>Baja</span>, und / nach 
-                              						<br class="linebreak">vollendter Congregation / auch gemacht=sehr nuzlicher Verordnung 
-                              						<br class="linebreak">sowohl im Politisch=als Würthschaftlichen Wesen / folgends gar nach 
-                              						<br class="linebreak">dero oftgemeldten Erz=Bischoflichen Residenz <span>Colocsa</span> gekehret; Al=<br class="linebreak">dorten sie dan den Vorabend vor den Heil. Weinacht=Feyertagen /
-                              						<br class="linebreak">nachdeme sie vom 27. October / als an welchem dieselbe von Presburg 
-                              						<br class="linebreak">aufgebrochen / bis hiehin zwey hundert / und mehr Hungarische 
-                              						Mei=<br class="linebreak">len in dero C<abbr title="unclear">ir</abbr>cular=Reiß gemacht / dabey das gemeine Volk aller 
-                              						<br class="linebreak">Orten durch dero hohe Gegenwart und gnädiges Zusprechen 
-                              						un=<br class="linebreak">glaublich consoliret / glücklich und gesund wieder eingetroffen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__75" class="yes-index">
-                              						<br class="linebreak">Donnerstag / den 5. Jenner. Heute / Vormittags / haben Sich 
-                              						<br class="linebreak">Jhre Römisch=Kaiserlich=und Catholische Majestät mit Jagen 
-                              						belu=<br class="linebreak">stiget / und des Nachmittags in der Kaiserlichen Hof=Capelle dem 
-                              						<br class="linebreak">Gottesdienst mit den Ritteren des goldenen Vlieses / in Begleitung 
-                              						<br class="linebreak">des Päbstlichen Herrn Nuntius / <span>Monsignor Spinola</span>, und 
-                              						Venetia=<br class="linebreak">nischen Botschafters / Titl. Herrn Cavalier Grimani / abgewartet. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__97" class="yes-index">
-                              						<br class="linebreak">Dito ware mit einer Staffeta die Nachricht aus Praag kommen /
-                              						<br class="linebreak">wie nemlichen Titl. Herr Wenzel Norbert Octavian Kinsky / des 
-                              						<br class="linebreak">Heilig=Römischen Reichs Graf von Chinitz / und Tettau / Ritter des 
-                              						<br class="linebreak">goldenen Vlieses / Jhrer Römisch=Kaiserlich=und Königlich=Catho=<br class="linebreak">lischen Majestät würklich=geheimer Raht / und des Königlichen Hofs in 
-                              						<br class="linebreak">Böheim Erb=Obrist=Hofmaister / im 77. Jahr dessen rühmlichen 
-                              						Al=<br class="linebreak">ters / zu gedachtem Praag den 3. dieses in GOttseelig entschlafen seye. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__34" class="yes-index">
-                              						<br class="linebreak">Freytag / den 6. Jenner. Heut ware bey den gesamt=Regie=<br class="linebreak">rend=und Verwittibt=Kaiserlichen Höfen Jhrer Majestät / der VerVerwittibt= </p>
-                        </div>
-                        <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
-                              						<br class="linebreak">wit= </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-002/full/full/0/default.jpg">-----[3]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__135" class="yes-index">
-                              						<br class="linebreak">wittibt=Römischen Kaiserin / auch zu Hungarn und Böhelm 
-                              						Köni=<br class="linebreak">gin / Eleonora Magdalena Theresia / Jhrer Glorwürdigst=Regierend=
-                              						<br class="linebreak">Römisch=Kaiserlich=und Catholischen Majestät geehrtesten Frau 
-                              						<br class="linebreak">Mutter / Glorreichster Geburts=Tag in prächtigster Galla / und mit 
-                              						<br class="linebreak">den gewöhnlichen Glückwünschungen begangen worden; Wie dan 
-                              						<br class="linebreak">auch desgleichen Jhre Hoheit / der Königlich=Polnisch=und Chur=
-                              						<br class="linebreak">Sächsische Erb=Prinz getahn; Und haben bey Allerhöchstgedacht=
-                              						<br class="linebreak">Verwittibt=Kaiserlichen Majestät die Regierend=Kaiserlich=und 
-                              						Ca=<br class="linebreak">tholische Majestäten / wie auch Jhre lezt=Verwittibt=Römisch=Kai=<br class="linebreak">serliche Majestät / Amalia Wilhelmina / samt den allseitig=Durchleuch=<br class="linebreak">tigsten Erz=Herzoginnen / sowohl zu Mittag / als Abends gespeiset. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__181" class="yes-index">
-                              						<br class="linebreak">Eben Heute / Nachmittag / ist von den Glorwürdigst Regierend=
-                              						<br class="linebreak">Kaiserlich=und Catholischen Majestäten in Dero Cammer=Capelle 
-                              						<br class="linebreak">des Titl. Herrn Johann Albrecht von St. Julian / des Heilig=Rö=<br class="linebreak">mischen Reichs Grafen zu Walsee / Herrn der Herrschaften Hof an 
-                              						<br class="linebreak">der March / und Vesten Stapffenreit / Kaiserlich=würklichen 
-                              						Camme=<br class="linebreak">rern und Obristen=Hof=Falken=Maistern / und dessen Gräfl. Frau 
-                              						Ge=<br class="linebreak">mahlin / Titl. Frau Maria Antonia / gebohrner Herrin von 
-                              						Stuben=<br class="linebreak">berg / Herr Söhnl aus der Heil. Tauf gehoben: und ihme die 
-                              						Na=<br class="linebreak">men: <span>Carolus Christianus Casparus Melchior Balthasar</span>, gegeben 
-                              						wor=<br class="linebreak">den; Dabey die Ceremonien Jhre Hochfürstliche Gnaden / des 
-                              						Hei=<br class="linebreak">lig=Römischen Reichs Fürst und Bischoff zu Wien / Titl. Herr 
-                              						Sig=<br class="linebreak">mund / Graf von Kollonitsch / in Assistirung des Kaiserlichen Hof=
-                              						<br class="linebreak">und Burg=Pfarrers / Jhrer Hochwürden / Herrn Jacob Anton 
-                              						Stan=<br class="linebreak">cheri / verrichtet haben. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__80" class="yes-index">
-                              						<br class="linebreak">Aus Polen / von dem 30. December. Daß man zu Warschau 
-                              						<br class="linebreak">die Nachricht habe / wie nemlichen die Moscowitter / welche 
-                              						unläng=<br class="linebreak">stens nach Schwerin den Marsch genommen / ihr daselbst vorm Jahr 
-                              						<br class="linebreak">vergrabenes Proviant wieder aufgraben: und denselben bis unter 
-                              						<br class="linebreak">Danzig führen lassen / dazu die umliegende Dörffer 100 Wägen 
-                              						ver=<br class="linebreak">schaffen müssen; Wie sonsten verlaute / solten die Tartarn noch im 
-                              						<br class="linebreak">Feld stehen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__56" class="yes-index">
-                              						<br class="linebreak">Aus Livorno / von dem 16. December. Daß / vermög eines 
-                              						<br class="linebreak">von <span>Porto Maone</span> gekommenen Schiffs / die Nachricht kommen / wie 
-                              						<br class="linebreak">daß von dar 5. Engelländische Kriegsschiffe ausgeloffen / um bey 
-                              						<br class="linebreak"> zu andern zustossen / und folglichen gegen die feindliche 
-                              						<br class="linebreak">Schiffe zukreutzen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__32" class="yes-index">
-                              						<br class="linebreak">Aus Portugall / von dem 2. December. Daß zu Lisabon den 30.
-                              						<br class="linebreak">verflossenes Monats Novembers die Flotta von der <span>Baya des todos</span> </p>
-                        </div>
-                        <div id="fw__6" class="grid-item grid-item--width2 text-center"><span id="fw__6" class="yes-index catch-word">
-                              						<br class="linebreak">)( 2 </span></div>
-                        <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
-                              						<br class="linebreak"><span>los</span> </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-003/full/full/0/default.jpg">-----[4]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__46" class="yes-index">
-                              						<br class="linebreak"><span>los Santos</span> glücklich angelanget seye / und ein reiche Ladung / so in 
-                              						<br class="linebreak">6000 Kisten mit Zucker / und 18000 Rollen Taback / dan andern 
-                              						<br class="linebreak">Waaren / wie auch vielem Gold und Silber / und 80000 <span>Cruzades</span> 
-                              						be=<br class="linebreak">standen seye. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__116" class="yes-index">
-                              						<br class="linebreak">Aus Spannien / von dem 7. December. Daß von Madrit 
-                              						ver=<br class="linebreak">sichert werde / wie der Herzog von Anjon nicht allein von einem 
-                              						Fie=<br class="linebreak">ber einen Anstoß bekommen / sondern gar mit der Wassersucht behaft 
-                              						<br class="linebreak">seye; Jndessen aber solle der Cardinal Alberoni doch noch nicht feyren /
-                              						<br class="linebreak">sondern die Kriegs=Anstalten / und absonderlich die Bauung derer 
-                              						<br class="linebreak">neuen Kriegs=und anderer Schiffen zu Wiederaufrichtung einer 
-                              						<br class="linebreak">Flotta in all. Spannischen Häfen beschleunigen lassen; Wie dan 
-                              						<br class="linebreak">erst kürzlich 2. Fregatten und 40. neugebaute Transportschiffe mit 1900 
-                              						<br class="linebreak">Recruten und vielen Matrosen von Corunna nach Cadix abfahren 
-                              						<br class="linebreak">müssen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__286" class="yes-index">
-                              						<br class="linebreak">Aus Groß=Britannien / von dem 20. December. Daß zu 
-                              						Lon=<br class="linebreak">den der Herr Obrist=Stanhoppe / gewest=ausserordentlicher Gesandter 
-                              						<br class="linebreak">am Anjouinischen Hof / von Madrit über Pariß sich wieder eingefunden:
-                              						<br class="linebreak">und von dieser lezten Stadt sogleich einige Particularitäten von des 
-                              						<br class="linebreak">Anjouinschen Botschafters / <span>Prencipe de Cellamare</span>, Conspiration 
-                              						mit=<br class="linebreak">gebracht habe; Desgleichen sey auch der Herr Admiral Laval mit 2 
-                              						<br class="linebreak">Kriegs=Schiffen und einem Brander aus dem Mitteländischen Meer 
-                              						<br class="linebreak">zu Spithead ankommen; Dahingegen Jhre Groß=Britannische 
-                              						Ma=<br class="linebreak">jestät den Befehl ertheilet / daß alle Officiers / derer Regimenter in 
-                              						<br class="linebreak">Minorica / oder zu Gibraltar sich befinden / ohne Verzug nach ihren 
-                              						<br class="linebreak">Posten abgehen sollen; Wie dan auch schon verschiedene Transport=
-                              						<br class="linebreak">Schiffe mit Recruten für die Besatzung zu Gibraltar und Porto 
-                              						<br class="linebreak">Maone aus der Tems gerucket; Dan sey ebenfals der Königliche 
-                              						Be=<br class="linebreak">fehl ergangen / daß all=Engellische Kriegs=und andere Schiffe 
-                              						Re=<br class="linebreak">pressalien gegen all=Spannische Schiffe / Waaren / und Untertahnen 
-                              						<br class="linebreak">auf alle Weiß und Manier nehmen sollen; Dahero schon 
-                              						verschieden=<br class="linebreak">reiche Kaufleuthe ein grosse Zahl Kapper=Schiffen ausrüsten liesen /
-                              						<br class="linebreak">um auf die Spannische aus Jndien kommende Schiffe damit 
-                              						zukreu=<br class="linebreak">tzen; Und weilen der Herr Abt <span>du Bois</span> zu Pariß den Herrn <span>Comte
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">de Srairs</span>, Engellischen Minister / Namens des Herzogen von 
-                              						Or=<br class="linebreak">leans / Regenten von Frankreich / versichert / in der ersten Woche des 
-                              						<br class="linebreak">neuen Jahrs den Krieg dem Herzogen von Anjou anzukünden; Als 
-                              						<br class="linebreak">solle solches ebenfals zu gleicher Zeit in Londen geschehen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__32" class="yes-index">
-                              						<br class="linebreak">Aus Frankreich / von dem 23. December. Daß der Cardinal 
-                              						<br class="linebreak"><span>de Noailles</span>; und viel andere vornehme Personen sich nach dem KöKöniglichen= </p>
-                        </div>
-                        <div id="fw__6" class="grid-item grid-item--width2 text-end"><span id="fw__6" class="yes-index catch-word">
-                              						<br class="linebreak">nigli= </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-004/full/full/0/default.jpg">-----[5]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__101" class="yes-index">
-                              						<br class="linebreak">niglichen Pallast begeben / und daselbsten dem Herzogen von <span>Orleans</span>,
-                              						<br class="linebreak">Regenten von Frankreich / wegen so glücklicher Entdeckung der 
-                              						ab=<br class="linebreak">scheulichen Conspiration des Anjouinischen Botschafters / <span>Prencipe de
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Cellamare</span>, (davon hierbey der Bericht zusehen) Glück gewunschen /
-                              						<br class="linebreak">auch all=ihre Dienste deshalben angebotten; Sonsten solle zu Pariß 
-                              						<br class="linebreak">die Nachricht eingeloffen seyn / daß zu Jspahan / in Persien / der vor 
-                              						<br class="linebreak">etlich Jahren zu Pariß gewest=Persianische Gesandter enthauptet 
-                              						<br class="linebreak">worden seye / weilen er seine von Pariß entführte <span>Maîtresse</span> sehr übel 
-                              						<br class="linebreak">gehalten habe. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__96" class="yes-index">
-                              						<br class="linebreak">Aus Holland / von dem 27. December. Daß der Kaiserliche 
-                              						<br class="linebreak">Minister / Herr <span>Marches de Priè</span>, in dem Haag seine Bagage wieder 
-                              						<br class="linebreak">einpacken: und nach Brüssel zurückschicken lassen; Mit dem 
-                              						Vorha=<br class="linebreak">ben / nächstens dahin zufolgen; Sonsten seye dasiger Orten des Nachts 
-                              						<br class="linebreak">zwischen dem 21. und 22. ein unvermuhtet=starker Sturmwind 
-                              						ent=<br class="linebreak">standen / dadurch wieder / wie vorm Jahr / ein grosser Schad auf den 
-                              						<br class="linebreak">Holländischen Küsten an Schiffen / wie auch auf dem Land geschehen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__66" class="yes-index">
-                              						<br class="linebreak">Aus Flandern / von dem 26. December. Daß alle dasiger 
-                              						<br class="linebreak">Orten befindliche Guverneurs den Befehl vom Königlich=Französi=<br class="linebreak">schen Hof empfangen / daß dieselbe 10000 Wägen in gewisser Zeit 
-                              						<br class="linebreak">stellen sollen / um die nöhtige Kriegs=und Lebens=Mitlen / wie auch 
-                              						<br class="linebreak">Artillerie=Weesen nach den Magazinen / und ferners abzuführen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__44" class="yes-index">
-                              						<br class="linebreak">Aus Brabant/ von dem 27. December. Daß zu Gent zwischen 
-                              						<br class="linebreak">dasiger Burgerschaft und den Vehlischen Dragonern einiger Aufstand 
-                              						<br class="linebreak">sich ereignet; Welcher jedoch wieder in Zeiten mit allerseits 
-                              						Zufrie=<br class="linebreak">denheit gestillet worden. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__111" class="yes-index">
-                              						<br class="linebreak">Von dem Nieder=Rheinstrom / von 29. December. Daß die 
-                              						<br class="linebreak">Chur=Cöllnische Völker / so bey der Execution in Hessen gewesen / zu 
-                              						<br class="linebreak">Andernach / und in anderen Oertern des Erz=Stifts Cöllen wieder 
-                              						<br class="linebreak">eingezogen; Desgleichen auch die Chur=Pfältzische Truppen von 
-                              						ge=<br class="linebreak">dachter Execution in ihre Landen wieder eingerucket; Wie ingleichem 
-                              						<br class="linebreak">der Herr Obrister von Violet zu Düsseldorff angekommen / und 
-                              						da=<br class="linebreak">sige Commandanten=Stell angetretten; Den 24. Dito seye des Heil.
-                              						<br class="linebreak">Römischen Reichs Fürst / und Bischoff zu Münster und Paderborn 
-                              						<br class="linebreak">gestorben. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__50" class="yes-index">
-                              						<br class="linebreak">Von dem Maynstrom / vom 31. December. Daß unlängstens 
-                              						<br class="linebreak">das Kaiserliche Regiment zu Fuß des Prinzen Ludwig von 
-                              						Würtem=<br class="linebreak">berg an verschiedenen Orten den Rhein passiret / um ferners nach den 
-                              						<br class="linebreak">Kaiserlich=Oesterreichischen Niederlanden sich zubegeben. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__22" class="yes-index">
-                              						<br class="linebreak">Aus der Schweitz / von dem 27. December. Daß noch immer aus </p>
-                        </div>
-                        <div id="fw__6" class="grid-item grid-item--width2 text-center"><span id="fw__6" class="yes-index catch-word">
-                              						<br class="linebreak">)( 3 </span></div>
-                        <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
-                              						<br class="linebreak">Sa= </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-005/full/full/0/default.jpg">-----[6]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__37" class="yes-index">
-                              						<br class="linebreak">Savoyen versichert werde / wie die Truppen dieses Herzogen mit 10 
-                              						<br class="linebreak">Regimentern theils zu Fuß / und theils zu Pferd vermehret: auch zu 
-                              						<br class="linebreak">bestimter Zeit auf die Beine gebracht werden sollen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__319" class="yes-index">
-                              						<br class="linebreak">Von dem Elbstrom / vom 30. December. Daß / zufolg der 
-                              						Nach=<br class="linebreak">richt aus Norwegen / von Friderichstadt / die Schweden mit 3000 
-                              						<br class="linebreak">Mann die Bürgerschanz dreymal gestürmet hätten / wären aber 
-                              						alle=<br class="linebreak">mal wieder abgewiesen worden; Dabey sie 400 Gemeine Tod 
-                              						lie=<br class="linebreak">gen lassen / die Officiers aber / samt den Verwundten / mit sich 
-                              						genom=<br class="linebreak">men hätten; Und Dänischer Seiten wären 43 Mann getödet: und 
-                              						<br class="linebreak">32 verwundet worden; An die Stadt Drontheim habe der 
-                              						Schwe=<br class="linebreak">dische General Ahrenfeld auch angesetzet / wär aber ebenfals wieder 
-                              						<br class="linebreak">unverichteter Sachen abgetrieben worden; Nichtweniger habe der 
-                              						<br class="linebreak">Dänische Commandeur Paulsen 14 Flöse / Brigantinen / und 
-                              						an=<br class="linebreak">dere Fahrzeuge von der Schwedischen Flotilla ruiniret; Und der 
-                              						<br class="linebreak">Vice=Admiral Rosenpalm liege mit seiner Squadra bey der Jnsul 
-                              						<br class="linebreak">Magoe / um zuverhindern / daß den Schweden keine Munition / noch 
-                              						<br class="linebreak">Proviant zukommen möge; Wie dan die Uberläufer / derer täglich 
-                              						<br class="linebreak">bey den Dänen ankommen / versichert / daran grosser Mangel zuseyn /
-                              						<br class="linebreak">und hätten sie in 5 bis 6 Tägen kaum 3 Pfund Brod und ein 
-                              						hal=<br class="linebreak">ben Löffel voll Salz bekommen; Um auch den Dänischen Bauren 
-                              						<br class="linebreak">ein grössern Muht zumachen / so wäre durchgehends verkündet 
-                              						wor=<br class="linebreak">den / daß ihnen alles / was sie von den Schweden / es sey an Leuthen /
-                              						<br class="linebreak">Kleidern / Pferd und Gelt / erbeuten würden / als Eigentum 
-                              						verblei=<br class="linebreak">ben solte. Wie von Berlin verlaute / wäre von dorten eine 
-                              						vorneh=<br class="linebreak">me Dama gefänglich hinweg: und nach der Vestung Spandau 
-                              						ge=<br class="linebreak">führet worden; Desgleichen habe man auch einer anderen Dama aus 
-                              						<br class="linebreak">Königlichem Befehl bedeuten lassen / sich von gedachtem Berlin 
-                              						hin=<br class="linebreak">weg zubegeben; deren Verbrechen solle seyn / daß etwas von ihnen 
-                              						<br class="linebreak">herauskommen. </p>
-                        </div>
-                        				
-                        					
-                        					
-                        <div id="head__12" class="grid-item">
-                           <h5 id="head__12" class="yes-index text-center">
-                              						<br class="linebreak">Ankunft derer Hoh=und Niederen Stands Personen. </h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__9" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 4. Jenner / 1719. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Stuben=Thor. Herr Capitan Ambach /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">von Chur=Sächsischen / komt / als 
-                                 						Cur=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">rier / von Warschau / log. bey der Anten. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 5. Dito. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Baron von Schönbeck / komt von 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Breßlau / log. im Radl. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Karntner=Thor. Herr Joseph / Graf 
-                                 						Kö=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nigl / kom von Praag / log. im 
-                                 						gol=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">denen Pfauen. </li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Wenzel von Renau / Rittmaister 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">vom Hamiltonischen Regiment / komt 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">aus Hungarn / log. im Matschacker=Hof. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Carl / Baron <span>de Galesi</span>, komt aus 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dem Haag / log. beym Hn. Cammer=Raht 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Salvay. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. Dito. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Herr Lieutenant Lindemann vom 
-                                 						Ra=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">butinischen Regiment / komt von Ofen /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">log. im goldenen Greiffen. </li>
-                           </ul>
-                        </div>
-                        <div id="fw__9" class="grid-item grid-item--width2 text-end"><span id="fw__9" class="yes-index catch-word">
-                              						<br class="linebreak">Lista </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-006/full/full/0/default.jpg">-----[7]-----</span></div>
-                        				
-                        					
-                        <div id="head__12" class="grid-item">
-                           <h5 id="head__12" class="yes-index text-center">
-                              						<br class="linebreak">Lista derer Getauften in=und vor der Stadt. </h5>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__9" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 24. November / 1718. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Michael Eisenhuber / und Maria 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr T. Maria Catharina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Zuderbeuth / Hutmacher /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Regina sein. Ehew. ihr S. Matt=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">hias Thomas. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 25. Dito. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Samuel Franz Richard / <span>U.
-                                    						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">J. D.</span> und Anna Sophia sein. Haußfr.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ihr S Abraham Carl Joseph. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein gefundenes Kind / Franz Anton. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Wollgruber / und Maria 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr S. Benedict Johann </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Gerhard van der Mühl / und 
-                                 						Ca=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tharina sein. Ehew. ihr T. Catharina 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Theresia. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Philipp Gofried Geck / und 
-                                 						Chri=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stina sein. Ehew. ihr T. Catharina 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Theresia. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Veit Otter / und Susanna sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Catharina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Franz Adranzky / und Anna 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria sein. Ehefr. ihr S. Johann 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thomas Andre. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Christoph Knie / Schnei=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der / und Anna Maria sein. Ehew.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ihr S. Johann Christoph. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Rheinhold / Tisch=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ler / und Maria sein. Ehew. ihr S.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Franz. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 26. Dito. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Caspar Joseph Pollin / Han=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">delsmann / und Anna Martha sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Haußfr. ihr S. Johann Conrad Georg 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Franz Xaveri. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Georg Neuhauser / und Anna 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Sophia s. Ehefr. ihr T. Anna Catharina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Thaller / Gartner /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Maria s. Ehew. ihr T. Anna Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Schaffner / Schneider / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Anna sein. Ehew. ihr S. Jo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">seph Benedict Conrad. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jgnatz Aigenbach / Schneider / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Theresia sein. Ehew. ihr S.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anton Christoph Joseph. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Wolfgang Lienhard / Reut= </li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">knecht / und Anna sein. Ehew. ihr T.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Antonia. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein armes Kind / Anna Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Richter / und Francisca sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Anna. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Franz Popperger / und Maria 
-                                 						Mag=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dalena s. Ehew. ihr T. Helena Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Jacob Schlapfer / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Magdalena sein. Ehew. ihr 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">T. Maria Elisabeth Margareth. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Augustin Grauß /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kauffmann von Postbau / und Anna 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Sabina Catharina sein. Ehefr. ihr S.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Augustin Jgnatius. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Joseph Kraftmahr / und Theresia 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sein. Ehew. ihr T. Barbara Rosina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Jacob Aschinger / und Eva sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr S. Joseph Johann. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Georg Bügel / Schuster /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Agatha s. Ehew. ihr S. Christoph. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 27. Dito. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Denm Herrn Adrian Johann von Rechemb /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Margareth sein. Haußfr. ihr S.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joachim Carl. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Mauser / Kutscher / und 
-                                 						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria sein. Ehew. ihr S. Johann Andre. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Johann Henrich Wölz / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Eva Rosina sein. Ehefr. ihr T Anna 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Christina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Caspar Fragner / Schneider / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna Maria sein. Ehew. ihr S. Jo=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">hann Franz. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ein armes Kind / Catharina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Henrich Peyer / Falkner / und 
-                                 						Ro=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sina sein. Ehew. ihr T. Eva Catharina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Mohrl / und Maria sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Christina Elisabeth. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Mattel / Kutscher / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Catharina sein. Ehew. ihr S. Joseph 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Johann Michael. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Philipp Aigner / Tagwerker / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Susanna sein. Ehew. ihr T. Theresia 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Magdalena. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Johann Michael Fuchß / Husa<abbr title="unclear">r</abbr> /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">und Maria Regina sein. Ehew. ihr 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">T. Maria Anna Theresia. </li>
-                           </ul>
-                        </div>
-                        <div id="fw__9" class="grid-item grid-item--width2 text-end"><span id="fw__9" class="yes-index catch-word">
-                              						<br class="linebreak">Dem </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-007/full/full/0/default.jpg">-----[8]-----</span></div>
-                        				
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Thomas Höfer / und Susanna sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr T. Maria Magdalena Eva 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Wenzel Joseph Hartulan / und 
-                                 						Mar=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gareth sein. Ehew. ihr T. Anna Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Wolfgang Seidl / und Eva 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rosina sein. Ehefr. ihr T. Eva Rosina. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Simon Schriffel / und Ursula sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehew. ihr S. Johann Augustin. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Christoph Hardinger / und Eleo= </li>
-                           </ul>
-                        </div>
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">nora s. Ehew. ihr S. Johann Egydius. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 28. Dito. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Herrn Franz Guilielm Kunert / Han=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">delsmann / und Anna Jacobina sein.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ehefr. ihr T Anna Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Matthias Clement / Würth / und 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara sein. Ehew. ihr T. Elisabeth 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Barbara. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Georg Sperber / und Maria 
-                                 						Eli=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">sabeth sein. Ehew. ihr S. Andre. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        					
-                        <div id="head__13" class="grid-item">
-                           <h5 id="head__13" class="yes-index text-center">
-                              						<br class="linebreak">Lista derer Verstorbenen in=und vor der Stadt. </h5>
-                        </div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__10" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 4. Jenner / 1719. starb </h5>
-                           <ul class="yes-index">
-                              						
-                              						
-                              <li>
-                                 							<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matthias Haldrich / Roßknecht / im 
-                                 							Liech=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">tensteinischen Hauß / in der Hrn. Gassen /
-                                 							<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 24 Jahr. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Vor der Stadt. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Conrad / Bierversilberer / bey 
-                                 						Ma=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ria=Hülf / alt 70 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Martin Meßlinger / Kutscher / zu 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">klein Margarethen / sein W. Justina /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 28 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rosalia Schlechtlin / alt 60 J. Agnes 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Gerhartin / alt 75 J. im Kranken=Hauß. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__11" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 5. Dito / in der Stadt. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Titl. Herrn Lorenz Michael Dizent 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">von Felsenthal / des Heil. Röm. Reichs 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Rittern / und N. O. Landmann / der 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Röm. Kaiserl. und Catholischen 
-                                 						Maje=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">stät Hof=Cammer Raht / sein Frau 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Gemahlin Anna Christina / gebohrne 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">von Herbst / im Gavrianischen Hauß / in 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der oberen Breunerstrassen / alt 49 J. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Fr. Maria Josepha Sauerin / beym 
-                                 						gol=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">denen Adler / auf der alten 
-                                 						Burger=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">musterung / alt 30 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Joseph Leotar / Koch / im 
-                                 						Mauer=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">maisterischen Hauß / in der 
-                                 						Schuler=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">strassen / sein K. Joseph / alt 7 Jahr. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Vor der Stadt. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Rosenkranz / Musicus / im 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Lerchenfeld / sein W. Helena / alt 43 J. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Sebastian Pumber / Fleischhacker /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">im Contuma<abbr title="unclear">t</abbr>z / sein W. Anna alt 26 J. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Paul Habeck / Maurergesell / auf 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">der Widen / sein K. Simon / alt 1 J. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Paul Schreiber / Hauer / zu Nickels= </li>
-                           </ul>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">dorf / sein W. Catharina / alt 55 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Maria Launerin / armes Weib / welche 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gestern Nachts in die Währinger=Linie 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">gefallen / und erfroren / alda vom 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Kais. Stadt=Gericht beschaut worden /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 30 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Der Catharina Roßnerin / L. M. bey St.
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Ulrich / ihr K. Maria / alt 5 V. Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Joachim Pret / alt 30. J. Philipp 
-                                 						Scho=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">ber / alt 20. Jahr / im Kranken=Hauß. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__11" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Den 6. Dito / in der Stadt. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Franz Neuhofer / Buchtruckergesell / im 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Wagnerischen Hauß / am Salzgries /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 54. Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Georg Werthecker / Gardi=Schlis=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">selwachter / in seinem Hauß / unterm 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">roten Thurn / sein K. Johanna / alt 5. J. </li>
-                           </ul>
-                        </div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__6" class="yes-index text-center">
-                              						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Vor der Stadt. </h5>
-                           <ul class="yes-index">
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Jacob Festenberger / Beck / im 
-                                 						Lichten=<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">thal / alt 70 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Andre Beringer / Drachßler / auf der 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Windmühl / sein S. Franz / alt 10 J. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matthias Jungmann / Hafner / am 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Thury / alt 60 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Simon Geiger / Laggey / an der Wien /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 52 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Elisabeth Eisenknöpfin / Wittib / in der 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Favorita / alt 63 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Georg Schwarzhut / Fleischhackerknecht /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">untern Weißgärbern / alt 52 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Dem Stephan Kopf / Kutscher / vorm 
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Schotten=Thor / sein K. Maria / alt 3 J. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Anna Huberin / Wittib / im Lerchenfeld /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 80 Jahr. </li>
-                              <li>
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">Matthias Fischel / in der Leopoldstadt /
-                                 						<br xmlns="http://www.w3.org/1999/xhtml" class="linebreak">alt 44 Jahr. </li>
-                           </ul>
-                        </div>
-                        <div id="fw__13" class="grid-item grid-item--width2 text-end"><span id="fw__13" class="yes-index catch-word">
-                              						<br class="linebreak">Be </span></div>
-                        				</div>
-                     <div class="grid ">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_9"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-008/full/full/0/default.jpg">-----[9]-----</span></div>
-                        				
-                        					
-                        <div id="head__3" class="grid-item">
-                           <h5 id="head__3" class="yes-index text-center">
-                              						<br class="linebreak">Bericht </h5>
-                        </div>
-                        				
-                        					
-                        					
-                        <div class="grid-item">
-                           <h5 id="head__22" class="yes-index text-center">
-                              						<br class="linebreak">Von der entdeckten Conspiration des am
-                              						Fran=<br class="linebreak">zösischen Hof gewest=Anjouinischen Botschafters /
-                              						<br class="linebreak"><span>Prencipe de Cellamare</span>. </h5>
-                           <p id="p__234" class="yes-index">
-                              						<br class="linebreak">NAchdeme der <span>Prencipe de Cellamare</span> die schon gemeldt=beyde Brieffe /
-                              						<br class="linebreak">samt denen noch nicht bekanten Beylagen / dem Abt Portocarero / welcher nicht 
-                              						<br class="linebreak">älter als 18 Jahr seyn soll / übergeben / weil dieser nebst dem Sohn des Marquis 
-                              						<br class="linebreak">von Monteleone nach Madrit reisen wollen / und diese beyd=junge Herren / als sie 
-                              						<br class="linebreak">2 Meil von Pariß kommen / im Wasser umgeworffen worden / habe der eine dem 
-                              						<br class="linebreak">Postillion / ehe es geschehen / zugeruffen: Er mögte sich ja vorsehen / daß sein 
-                              						<br class="linebreak">Reiß=Truhe nicht naß würde / weil er nicht 1000 <span>Louis d’ Or</span> nehmen wolte / daß 
-                              						<br class="linebreak">die Scripturen / welche in derselben wären / verdürben; So seyen darauf in dem 
-                              						<br class="linebreak">nahe gelegenen Dorffe die Pferde gewechselt worden / der Postillion aber wär in 
-                              						<br class="linebreak">dem vollen Galop nach Pariß zurück geritten / um einem von den vornehmsten 
-                              						Mi=<br class="linebreak">nistern diese Begebenheit zuerzehlen / welcher darauf dem Regenten davon 
-                              						Nach=<br class="linebreak">richt ertheilet / daher sowohl Se. Königliche Hoheit aus diesen / als andern 
-                              						Anzei=<br class="linebreak">gungen geschlossen / daß etwas unter der Hand seyn müsse / und desfals dem 
-                              						Gu=<br class="linebreak">verneur von Poitiers / einem Ort / so 80 Meilen von Pariß / einen Currier zugeschickt 
-                              						<br class="linebreak">hätte / mit der Ordre / diese beyde junge Herren zuarrestiren. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__73" class="yes-index">
-                              						<br class="linebreak">Da nun hierauf der <span>Prencipe de Cellamare</span> diese Arrestirung vernommen / und 
-                              						<br class="linebreak">daß man seine Brieffe / welche er durch diese beyde nach Madrit gesand / eröfnet / hab 
-                              						<br class="linebreak">er sich den 9. December zu dem Regenten verfüget / um darüber zuklagen / allein Se.
-                              						<br class="linebreak">Königliche Hoheit verwiesen ihn an den Herrn Le Blanc / zu dem er sich so fort 
-                              						<br class="linebreak">begeben; </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__145" class="yes-index">
-                              						<br class="linebreak">Der Herr Abt du Bois fande sich zugleicher Zeit alda ein / und man gab dazumal 
-                              						<br class="linebreak">dem Botschafter zuverstehen / daß der Hof bereits ein geraume Zeit von einer 
-                              						<br class="linebreak">unerhörten Conspiration / so gegen dem Staat geschmiedet würde / Nachricht habe /
-                              						<br class="linebreak">und dahero genöhtiget sey / auf die bequemste Weise diesem Unheil vorzukommen /
-                              						<br class="linebreak">wobey man zugleich mit all=ersinnlichster Höflichkeit dem Botschafter 
-                              						zuverste=<br class="linebreak">hen gab / daß er seine Kutsche wegschicken / und mit der von dem Herrn Le Blanc 
-                              						<br class="linebreak">nach seinem Hauß zuruck fahren mögte / wogegen er sich Anfangs mit grosser Wuht 
-                              						<br class="linebreak">sezte / aber endlich darein willigte; Als er nun dahin kam / war sein Hauß 
-                              						<br class="linebreak">mit Wachten besezt / und man versiegelte alsobald in Beyseyn seiner all=daselbst 
-                              						be=<br class="linebreak">findliche Scripturen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__125" class="yes-index">
-                              						<br class="linebreak">Den 12. Dito darauf geschahe die Aufsiegelung der Schrifften mit eben dergleichen 
-                              						<br class="linebreak">Solennitäten / wie zuvor / und nachdem der Herr Abt du Bois und der Herr Le Blanc 
-                              						<br class="linebreak">die Scripturen examinirt / numerirte der Botschafter dieselbe / und ließ sie in 
-                              						<br class="linebreak">3 Kisten packen / welche wiederum versiegelt / und in das Geheime Rahts=Ar=<br class="linebreak">chiv gebracht wurden / alwo sie bleiben sollen / bis der Herzog von Anjou jemand 
-                              						<br class="linebreak">schickt / um dieselbige in seinem Namen zubegehren; Als dieses geschehen /
-                              						<br class="linebreak">wurde die Wacht aus des Botschafters Hause wiederum abgeführt / und der 
-                              						<br class="linebreak">würkliche Cammer=Junker / Monsieur Lisbois / blieb bey dem Botschafter / um </p>
-                        </div>
-                        <div id="fw__7" class="grid-item grid-item--width2 text-center"><span id="fw__7" class="yes-index catch-word">
-                              						<br class="linebreak">)( )( </span></div>
-                        <div id="fw__7" class="grid-item grid-item--width2 text-end"><span id="fw__7" class="yes-index catch-word">
-                              						<br class="linebreak">den </span></div>
-                        				</div>
-                     <div class="grid margin-end">
-                        					
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_10"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://diarium-images.acdh-dev.oeaw.ac.at/171x/1719/01/17190104/17190104-009/full/full/0/default.jpg">-----[10]-----</span></div>
-                        				
-                        					
-                        <div class="grid-item">
-                           <p id="p__22" class="yes-index">
-                              						<br class="linebreak">denselben an die Gränzen zubegleiten / wie dan auch selbiger den 14. darauf von 
-                              						Pa=<br class="linebreak">riß abgereiset. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__97" class="yes-index">
-                              						<br class="linebreak">Zufolge dem allgemeinen Gerüchte / haben die von der Spannischen Partey 
-                              						<br class="linebreak">den 1. Hornung ein Laager von 50000. Mann / nebst einer hinlänglichen Kriegs=
-                              						<br class="linebreak">Cassa / die dazu gehörige Nohtwendigkeiten zubezahlen / bereit haben wollen / sie 
-                              						<br class="linebreak">sollen auch willens gewesen seyn / dahin zutrachten / um die Parlamenter auf ihre 
-                              						<br class="linebreak">Seite zubringen / den Regenten und seinen Sohn / den Herzog von Chartres / gefangen 
-                              						<br class="linebreak">zunehmen / des Königs Garde zuüberfallen / und sich Jhrer Majestät / des Königs / Per=<br class="linebreak">son zuversichern. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__157" class="yes-index">
-                              						<br class="linebreak">Soviel die Wechsler zuerkennen geben / habe der Spannische Botschafter seit 
-                              						<br class="linebreak">5. bis 6. Monaten in Wechsel mehr als 2. Milionen und 500000. Livres 
-                              						empfan=<br class="linebreak">gen / und will man versichern / daß die Zahl der Conspiranten sehr groß seye; Ei=<br class="linebreak">nige sagen / daß nur ein Herzog darunter begriffen / die andern sprechen drey / und 
-                              						<br class="linebreak">mehr als 60 vornehme Herren. Der Graf Dedi und Herr von Magny / Jntro=<br class="linebreak">ducteur derer Botschaftern / haben sich durch die Flucht salviret / des leztern 
-                              						Se=<br class="linebreak">cretarius aber / der Abt Brigand / war in die Bastille gesezt / Herr von St. Genie 
-                              						<br class="linebreak">aber wiederum freygelassen / weil ein Mißverstand bey den Namen gewesen.
-                              						<br class="linebreak">Sonsten vernimmet man / daß der <span>Prencipe de Cellamare</span> zu Blois bleiben soll / bis 
-                              						<br class="linebreak">man zuvor von Madrit wird Brieffe haben. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__70" class="yes-index">
-                              						<br class="linebreak">Don Fernando / dessen Secretarius / und die vornehmste Bedienten von der 
-                              						<br class="linebreak">Botschaft sollen noch einige Zeit zu Pariß bleiben / und meinen etliche zuwissen /
-                              						<br class="linebreak">daß dieselbe mit dem <span>Prencipe de Cellamare</span> nach Holland gehen sollen / weil 
-                              						die=<br class="linebreak">ser als Spannischer Botschafter daselbst sich aufhalten wird; Dieser Minister 
-                              						<br class="linebreak">habe bey seiner Abreise nicht die geringste Schulden gelassen. </p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__139" class="yes-index">
-                              						<br class="linebreak">Den 15. Dito hat man einen Teutschen / welcher sich vor einen Grafen von 
-                              						<br class="linebreak">Schlichtz ausgiebt / den Brigadier Sandrasky / einen abgedankten Obrist=Lieute=<br class="linebreak">nant / Monsieur Rousse / auch noch zwey Hungarische Officiers von des Ragoczi 
-                              						<br class="linebreak">Anhang arrestiret; Eben diesen Tag examinirte der Herr Le Blanc in der Bastille 
-                              						<br class="linebreak">den Abt Brigand / (oder wie ihn andere nennen / Brigaud) von welchem man sagt /
-                              						<br class="linebreak">daß er die beyde Manifesten / wovon bereits in den publicirten Brieffen Meldung 
-                              						<br class="linebreak">geschehen / gemacht habe / ingleichem die Antwort / so vor einiger Zeit auf die 
-                              						<br class="linebreak">Briffe von Filz Moritz heraus kommen; Man will auch / daß die Conspiranten 
-                              						<br class="linebreak">ihre meist=heimliche Zusammkünften bey dem Jntroducteur Magny gehabt hätten.</p>
-                        </div>
-                        					
-                        <div class="grid-item">
-                           <p id="p__37" class="yes-index">
-                              						<br class="linebreak">Von Beauvais vernimt man / daß daselbst ein Buchdrucker arrestiret worden /
-                              						<br class="linebreak">als er eben im Begriff gewesen / ein Manifest von der 
-                              						Spannisch=<br class="linebreak">gesinnten Partey zutrucken. </p>
-                        </div>
-                        					
-                        				
-                        				</div>
                   </div>
                   <div class="col-md-6 facsimiles">
                      <div id="viewer-1" class="sticky">
@@ -1000,5 +999,5 @@
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary" style="margin-top: auto;">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
 </html>

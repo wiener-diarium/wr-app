@@ -35,1027 +35,1026 @@
       <main class="flex-shrink-0">
          <div class="container" style="max-width: 100%;">
             <div class="page-content">
-               <div class="row my-4">
-                  <div class="col-md-6 section px-4 .yes-index">
-                     <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
-                                 <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                                 <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
-                           <li class="list-group-item">
-                              <full-size opt="fls"></full-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-size opt="fs"></font-size>
-                           </li>
-                           <li class="list-group-item">
-                              <font-family opt="ff"></font-family>
-                           </li>
-                           <li class="list-group-item">
-                              <annotation-slider opt="br"></annotation-slider>
-                           </li>
-                        </ul>
+               <div class="row my-4 transcript active">
+                  <div class="col-md-6 text px-4 .yes-index">
+                     <div class="section">
+                        <div id="editor-widget"><label><a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                                    <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg></a></label><label class="fade px-2" id="show-on-scroll"><a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"></path></svg></a></label><ul class="list-group">
+                              <li class="list-group-item">
+                                 <font-size opt="fs"></font-size>
+                              </li>
+                              <li class="list-group-item">
+                                 <font-family opt="ff"></font-family>
+                              </li>
+                              <li class="list-group-item">
+                                 <annotation-slider opt="br"></annotation-slider>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="sticky row bg-white" style="top: 1em!important;">
+                           <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
+                              <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
+                           <div id="mark-scroll" class="fade-lang col-md-2"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
+                           </div>
+                        </div>
+                        <div class="title-page py-4" id="#top_page">
+                           
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|1|99.9|0">-----[1]-----</span></div>
+                           
+                           
+                           <h5 id="titlePart__1" class="yes-index text-center py-2">den 17. Aprilis. 56. Num. 17 Samsta 31.</h5>
+                           
+                           <h4 id="titlePart__4" class="yes-index text-center py-2">
+                              <br class="linebreak">Wienerisches
+                              <br class="linebreak">DIARIUM
+                              </h4>
+                           
+                           <p id="titlePart__5" class="yes-index italic text-center py-2">
+                              <br class="linebreak">Gedruckt in der Kaiserl. Königl. privilegirten Zeitungsbuch
+                              <span class="linebreak">=</span><br class="linebreak">druckerey im neuen Michaeler=haus mit von Ghelischen Schriften.
+                              </p>
+                           
+                           
+                           </div>
+                        <div class="grid margin-end">
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__3" class="yes-index text-center">
+                                 <br class="linebreak">Aus Spanien.
+                                 <br class="linebreak">Madrid 8. Mart.</h5>
+                              <p id="p__14" class="yes-index">
+                                 <br class="linebreak">Eine Maj. der König haben das Gou<span class="linebreak">=</span><br class="linebreak">vernement des Schlosses St. Christo<span class="linebreak">=</span><br class="linebreak">Se) phel zu Badajoz / dem Don Antonio
+                                 <br class="linebreak">de la Riva Agnero, Obrist wachtmeister des
+                                 <br class="linebreak">Regiments von Estremadura conferiret. Am
+                                 <br class="linebreak">Sonntag ist alhier der Marquis von Cla<span class="linebreak">=</span><br class="linebreak">ramonte, Vicomte v Mendinueta, Rit<span class="linebreak">=</span><br class="linebreak">ter vom Groß=kreutz des Maltheser=ordens,
+                                 <br class="linebreak">vor diesem Bottschafter dieses Ordens am
+                                 <br class="linebreak">hiesigen Königl. Hof honoraire Generalleu<span class="linebreak">=</span><br class="linebreak">tenant deren Königl. Armeen rc. in einem
+                                 <br class="linebreak">Alter von 69. Jahren mit Tod abgegangen.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Venedig 13. Martii.</h5>
+                              <p id="p__15" class="yes-index">
+                                 <br class="linebreak">Durch unseren alhier angelandeten Schif<span class="linebreak">=</span><br class="linebreak">capitan Adorno, vernimmet man, daß
+                                 <br class="linebreak">den 13. vorigen Monats in der Nacht ein
+                                 <br class="linebreak">starkes Erd=beben auf der Jnsul Corfu
+                                 <br class="linebreak">verspühret worden, welches etliche Minu<span class="linebreak">=</span><br class="linebreak">ten gedauret, doch aber keinen besonderen
+                                 <br class="linebreak">Schaden verursachet; es ist auch auf unse<span class="linebreak">=</span><br class="linebreak">ren festen Land, sonderlich in der Stadt
+                                 <br class="linebreak">Feltre, und dasiger Gegend, und den 25.
+                                 <br class="linebreak">vörigen Monats zu Bassano ein dergleichen
+                                 <br class="linebreak">starker Erdstoß erfolget, daß sich die Jnn<span class="linebreak">=</span><br class="linebreak">wohner mehresten Theils auf das Feld ge<span class="linebreak">=</span><br class="linebreak">flüchter.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Neapel 16. Martii.</h5>
+                              <p id="p__7" class="yes-index">
+                                 <br class="linebreak">Unsere 6. bewafnete Bebequen seynd
+                                 <br class="linebreak">von hier unter Segel gegangen, wider die
+                                 <br class="linebreak">barbarische Ste=räuber zu kreutzen. Unter
+                                 <br class="linebreak">anderen vielen seltsamen alten Sachen, wel<span class="linebreak">=</span><br class="linebreak">che mehrmalen zu Excolano gefunden wor</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__9" class="yes-index"><span class="linebreak">=</span><br class="linebreak">den, befindet sich auch eine silberne Son<span class="linebreak">=</span><br class="linebreak">nenuhr von unvergleichlicher arbeit. Ver<span class="linebreak">=</span><br class="linebreak">schiedene dieser Tagen alhier angekommene
+                                 <br class="linebreak">Fahrzeuge berichten, daß auch zu Maltha
+                                 <br class="linebreak">2. Erdbeben verspühret worden, welche je<span class="linebreak">=</span><br class="linebreak">doch keinen Schaden verursachet.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Rom 20. Martii.</h5>
+                              <p id="p__13" class="yes-index">
+                                 <br class="linebreak">Se. Päbstl. Heil. haben von Trient die
+                                 <br class="linebreak">Nachricht erhalten, daß der Dommherr Al<span class="linebreak">=</span><br class="linebreak">berti durch die mehrere Stimmen zum neu<span class="linebreak">=</span><br class="linebreak">en Coadjutor des dasigen Bistums erwäh<span class="linebreak">=</span><br class="linebreak">let worden. Nachdeme das Bistum von
+                                 <br class="linebreak">Belluno in dem Venetianischen Staat durch
+                                 <br class="linebreak">den Todes=fall des Monsig. Giacomo Costa
+                                 <br class="linebreak">in Erledigung gekommen, so ist selbes dem
+                                 <br class="linebreak">dermaligen Bischof von Capo d'Jstria Mon<span class="linebreak">=</span><br class="linebreak">sig. Giovanni Baptist Sandi von Sr. Päbst<span class="linebreak">=</span><br class="linebreak">lichen Heiligkeit ertheilet worden.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Venedig 20. Martii.</h5>
+                              <p id="p__7" class="yes-index">
+                                 <br class="linebreak">Man hat Nachricht, daß den 2 dieses
+                                 <br class="linebreak">auch in der Gegend des Lago di Garda
+                                 <br class="linebreak">2. Erd=beben mit besonderen Umständen von
+                                 <br class="linebreak">denen man aber nichts gewisses erfahren,
+                                 <br class="linebreak">verspühret worden.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Genua 20. Martii.</h5>
+                              <p id="p__12" class="yes-index">
+                                 <br class="linebreak">Montag kame ein hier ländisches Fahrzeug
+                                 <br class="linebreak">mit verschiedenen Waaren von Porto Ec<span class="linebreak">=</span><br class="linebreak">cola hier an, dessen Patron berichtet, daß
+                                 <br class="linebreak">den 10. dieses 6. Neapolitanische Sciabec<span class="linebreak">=</span><br class="linebreak">quen zu Longone eingeloffen, welche wider
+                                 <br class="linebreak">die Seeeräuber herum zu kreutzen Befehl ha<span class="linebreak">=</span><br class="linebreak">ben. Vorgestern kame eine Maonische Tax<span class="linebreak">=</span><br class="linebreak">tana von Tunis durch welche mann ver<span class="linebreak">=</span><br class="linebreak">nommen, daß in dasigen Hafen keine Raub<span class="linebreak">=</span><br class="linebreak">schif ausgerüstet, wol aber ein Lager für</p>
+                           </div>
+                           
+                           <div id="ab__4" class="grid-item grid-item--width2 text-end"><span id="ab__4" class="yes-index catch-word">
+                                 <br class="linebreak">die
+                                 </span></div>
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|2|99.9|0">-----[2]-----</span></div>
+                           
+                           <div class="grid-item">
+                              <p id="p__13" class="yes-index">
+                                 <br class="linebreak">die in dasiger Gegend befindliche Truppen
+                                 <br class="linebreak">aufgeschlagen, und befestiget würde, inde<span class="linebreak">=</span><br class="linebreak">me die Nachricht alda eingeloffen, daß die
+                                 <br class="linebreak">Algierer in Begrief stünden mit vieler Mann<span class="linebreak">=</span><br class="linebreak">schaft alda anzurucken, und den alten Bey
+                                 <br class="linebreak">wiederum einzusetzen, welcher seine Zuflucht
+                                 <br class="linebreak">nach Algier genommen, nachd me er von
+                                 <br class="linebreak">dem jetzigen Bey verjaget worden.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__4" class="yes-index text-center">
+                                 <br class="linebreak">Der Berg Vesuvius hat dieser Tagen mehr
+                                 <br class="linebreak">als jemalen Aschen und Feuer ausgeworfen.
+                                 <br class="linebreak">Rom 27. Mart.</h5>
+                              <p id="p__9" class="yes-index">
+                                 <br class="linebreak">Montag kame der Herzog von Lanti aus
+                                 <br class="linebreak">Florenz hier an, von wannen er seine Ruck<span class="linebreak">=</span><br class="linebreak">reis nach Neapel fortsetzen wird. Von Nea<span class="linebreak">=</span><br class="linebreak">pel ist die Nachricht eingeloffen, daß der
+                                 <br class="linebreak">Bischof von Mileto Monsig. Filomarino,
+                                 <br class="linebreak">und der Bischof von Calvi Monsig. Fregia<span class="linebreak">=</span><br class="linebreak">ni beyde mit Tod abgegangen.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__3" class="yes-index text-center">
+                                 <br class="linebreak">Aus Groß=Brittannien.
+                                 <br class="linebreak">Londen 26. Martii.</h5>
+                              <p id="p__30" class="yes-index">
+                                 <br class="linebreak">Es haben Jhro Großbrittannische Maje<span class="linebreak">=</span><br class="linebreak">stät, in einem Staatsraht den Schluß gefas<span class="linebreak">=</span><br class="linebreak">set, daß mann den Maroccanischen Abge<span class="linebreak">=</span><br class="linebreak">sandten, der zu Plymouth angelanget, mit
+                                 <br class="linebreak">seiner Suite und Bagage aus Land bringen
+                                 <br class="linebreak">soll. Man hat diesen Minister mit aller sei<span class="linebreak">=</span><br class="linebreak">nem Character anhängigen Würde empfan<span class="linebreak">=</span><br class="linebreak">gen, und wird derselbe in kurzem in hiesiger
+                                 <br class="linebreak">Stadt anlangen. Man versichert, dieser
+                                 <br class="linebreak">Minister seye deswegen nach England geschi<span class="linebreak">=</span><br class="linebreak">cket worden, damit er seinen Herrn, den Kai<span class="linebreak">=</span><br class="linebreak">ser von Marocco, wegen der Unbilligkeit,
+                                 <br class="linebreak">entschuldigen möge, die sein Sohn an etli<span class="linebreak">=</span><br class="linebreak">chen Engländern hätte lassen ausüben, die
+                                 <br class="linebreak">sich zu Fetz und Tetuan aufgehalten. Es hat
+                                 <br class="linebreak">dieser Maroccanische Minister auch Ordre,
+                                 <br class="linebreak">den Frieden und die Freundschaft mit En<span class="linebreak">=</span><br class="linebreak">gland zu erneuern. Der Lord Digby, Par<span class="linebreak">=</span><br class="linebreak">laments=glird, wegen der Stadt Wells, hat
+                                 <br class="linebreak">zum Dienst des Königs, ein completes Re<span class="linebreak">=</span><br class="linebreak">giment angeworben, dieses bestehet aus lau<span class="linebreak">=</span><br class="linebreak">ter Freywilligen. Der Lord Rommey hat
+                                 <br class="linebreak">gleichfalls 150. Mann angeworben, und Herr
+                                 <br class="linebreak">Johann Friederich Baronet, hat 60. Mann
+                                 <br class="linebreak">zur Reuterey geliefert. Nachdem auch das
+                                 <br class="linebreak">Regiment des Obristen Campel, ist vollzählig
+                                 <br class="linebreak">worden, so hat er seine Reise nach Saltsbu<span class="linebreak">=</span><br class="linebreak">ry angetretten, wo sich dieses Regiment be</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__16" class="yes-index"><span class="linebreak">=</span><br class="linebreak">findet. Der Capitan Vernon, so das Kriegs<span class="linebreak">=</span><br class="linebreak">schief, la Cyme, commandiret, hat die bey<span class="linebreak">=</span><br class="linebreak">de Französisch Schiff,e Gabriel und l'Hiran<span class="linebreak">=</span><br class="linebreak">delle hinweggenommen, und im Haven zu
+                                 <br class="linebreak">Plymouth aufgebracht, das ebste kommt von
+                                 <br class="linebreak">Nantes und hat nach Rochefort segeln wollen,
+                                 <br class="linebreak">und das andere kommt von Bourdeaux, das
+                                 <br class="linebreak">Kriegs=schief l'Auguste, unter Commando
+                                 <br class="linebreak">des Capitan Willes, ist zu Spithead aus Ca<span class="linebreak">=</span><br class="linebreak">dix angelanget, und hat ansehnliche Sum<span class="linebreak">=</span><br class="linebreak">men an baarem Geld, in Piastres bestehend,
+                                 <br class="linebreak">auf Rechnung für unsere Kaufleute mitge<span class="linebreak">=</span><br class="linebreak">bracht.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__7" class="yes-index text-center">
+                                 <br class="linebreak">Addresse, welche die zur Beför=<span class="linebreak">=</span><br class="linebreak">derung des Acker=baues und der
+                                 <br class="linebreak">Fabricken errichtete Gesellschaft
+                                 <br class="linebreak">zu Breconshire dem König von
+                                 <br class="linebreak">England überreicht.
+                                 <br class="linebreak">Gnädigster Monarch!</h5>
+                              <p id="p__32" class="yes-index">
+                                 <br class="linebreak">Wir, als unterthänige und getreue Un<span class="linebreak">=</span><br class="linebreak">terthanen Eur. Majestät, die wir wegen
+                                 <br class="linebreak">der Vätterlichen Gnfalt, welche Diesel<span class="linebreak">=</span><br class="linebreak">ben ohne Aufhörent das Heyl Dero Kö<span class="linebreak">=</span><br class="linebreak">nigreiche bezeigen, mit der grösten Erkännt<span class="linebreak">=</span><br class="linebreak">lichkeit durchdrungen seynd, wir bitten ganz
+                                 <br class="linebreak">gehorsamst um Erlaubniß, Eur. Majestät
+                                 <br class="linebreak">vorzustellen, wie sehr uns die Klugheit ge<span class="linebreak">=</span><br class="linebreak">rühret hat, welche Sie in denen mutigen
+                                 <br class="linebreak">Maaßregeln gezeiget, die sie zur Behaup<span class="linebreak">=</span><br class="linebreak">tung Dero billigen und gegründeten Gericht<span class="linebreak">=</span><br class="linebreak">samen in America nehmen, so wie in denen
+                                 <br class="linebreak">verschiedenen Tractaten, so Dieselben nach
+                                 <br class="linebreak">und nach geschlossen, und auch in denen
+                                 <br class="linebreak">Merkmalen der Menschen=liebe und Huld,
+                                 <br class="linebreak">welche die unglücksteligen Einwohner von
+                                 <br class="linebreak">Lisabon erfahren. Sachen, welche, wann
+                                 <br class="linebreak">man sie zu denen übrigen grossen Eigenschaft
+                                 <br class="linebreak">ten füget, die den Character Eur. Maje<span class="linebreak">=</span><br class="linebreak">stät bilden, nicht wenig zur Vermehrung
+                                 <br class="linebreak">des Ruhmes Jhro Regierung beytragen wer<span class="linebreak">=</span><br class="linebreak">den, und zum Anwuchs der Neigung für
+                                 <br class="linebreak">Dero Person und regiment in dem Herzen
+                                 <br class="linebreak">eines jeden Jhrer Unterthanen, so, wie zur
+                                 <br class="linebreak">Unterdrückung des Ubermutes, und der un<span class="linebreak">=</span><br class="linebreak">gerechten Eingriffe einer herrch=süchtigen
+                                 <br class="linebreak">Macht, welche neidisch auf Dero Grösse
+                                 <br class="linebreak">und Wolfart ist. Da wir in gegenwärti<span class="linebreak">=</span><br class="linebreak">gen critischen Umständen mit einem Einfall
+                                 <br class="linebreak">bedrohet werden, und da es eine Pflicht,</p>
+                           </div>
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|3|99.9|0">-----[3]-----</span></div>
+                           
+                           <div class="grid-item">
+                              <p id="p__40" class="yes-index">
+                                 <br class="linebreak">deren getreuen Untertanen Eur. Majestät
+                                 <br class="linebreak">ist, für Dero Vertheitigung zu wachen,
+                                 <br class="linebreak">so, wie für die Erhaltung der Erb=folge in
+                                 <br class="linebreak">Dero Durchleuchtigsten Familie, so hoffen
+                                 <br class="linebreak">wir, durch unsre Handlungen darzuthun,
+                                 <br class="linebreak">wie dankbar wir für die Ansehnliche Vor<span class="linebreak">=</span><br class="linebreak">theile seynd, welche uns die Weisheit und
+                                 <br class="linebreak">Billigkeit Dero Regierung verschaffet, und
+                                 <br class="linebreak">wofür wir uns erbieten, eine vollständige
+                                 <br class="linebreak">Compagnie leichte Reuterey zu werben, die
+                                 <br class="linebreak">jederzeit bereit stehen soll, auf unsre Kosten
+                                 <br class="linebreak">allenthalben hin zu marschiren, wo es Eur.
+                                 <br class="linebreak">Majestät für gut befinden, unter dem Com<span class="linebreak">=</span><br class="linebreak">mando erfahrner Officiers, wie Dieselbe
+                                 <br class="linebreak">wählen werden; Und im Fall, gnädigster
+                                 <br class="linebreak">König dieser Beweis unserer aufrichtigen
+                                 <br class="linebreak">Zuneigung für Eur. Majestät, und Dero
+                                 <br class="linebreak">Durchleuchtigsten Familie nicht Dero Bey<span class="linebreak">=</span><br class="linebreak">fall erhalten sollte, so seynd wir bereit,
+                                 <br class="linebreak">unser Leben und Vermögen auf alle Art auf<span class="linebreak">=</span><br class="linebreak">zuopfern, wie es Eur. Majestät uns nur
+                                 <br class="linebreak">befehlen werden. Da das Heil und Wol<span class="linebreak">=</span><br class="linebreak">ergehen dieser Nation hauptsächlich auf die
+                                 <br class="linebreak">Dauer des glückseeligen Standes gegründet
+                                 <br class="linebreak">ist, in welchem wir uns durch den Einfluß
+                                 <br class="linebreak">der Weisheit und Gerechtigkeit Eur. Maje<span class="linebreak">=</span><br class="linebreak">stät würklich befinden, so bitten wir den
+                                 <br class="linebreak">grossen und höchsten Geber alles Guten, daß
+                                 <br class="linebreak">Er Dero Königl. Person erhalte, daß Er
+                                 <br class="linebreak">alle Maaß regeli, zu welchen Sie Dero Ey<span class="linebreak">=</span><br class="linebreak">fer für das gemeine Wol verbindet, gelin<span class="linebreak">=</span><br class="linebreak">gen lasse, und sie mit Ehre kröne, so, daß
+                                 <br class="linebreak">die gegenwärtige Crisis, als eine dererjeni<span class="linebreak">=</span><br class="linebreak">gen angesehen werden möge, welche die Ge<span class="linebreak">=</span><br class="linebreak">schichte Großbrittannens am besten ver<span class="linebreak">=</span><br class="linebreak">herrlichen kann.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">London 28. Mart.</h5>
+                              <p id="p__13" class="yes-index">
+                                 <br class="linebreak">Der König hat erkläret: Daß er gegen
+                                 <br class="linebreak">die Mitte des künftigen Monats den Pal<span class="linebreak">=</span><br class="linebreak">last St. James verlassen, und den Pallast
+                                 <br class="linebreak">von Kensington beziehen wolle. Von Lisa<span class="linebreak">=</span><br class="linebreak">von vernimt man: Daß auf die Vorstellun<span class="linebreak">=</span><br class="linebreak">gen unsers Ministers der Engländischen Na<span class="linebreak">=</span><br class="linebreak">tion der neue Zoll von 4. pro Cent erlassen
+                                 <br class="linebreak">orden, und daß nunmehro die übrige Ge<span class="linebreak">=</span><br class="linebreak">sandte und Ministers darauf dringen, für
+                                 <br class="linebreak">die Schiffe ihrer Nationen gleiches Recht
+                                 <br class="linebreak">zu geniessen.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__3" class="yes-index text-center">
+                                 <br class="linebreak">Aus Frankreich.
+                                 <br class="linebreak">Douvres 18. Mart.</h5>
+                              <p id="p__18" class="yes-index">
+                                 <br class="linebreak">Man hat auf unserm Pacquet=boot das
+                                 <br class="linebreak">nach Calais gehet, einen verdächtigen Pas<span class="linebreak">=</span><br class="linebreak">sagier angehalten, und als seine Sachen
+                                 <br class="linebreak">durchsuchet worden, hat man in einem Beu<span class="linebreak">=</span><br class="linebreak">tel 130. Briefe gefunden, so an verschie<span class="linebreak">=</span><br class="linebreak">dene Particuliers zu Boulogne, Dünkirchen,
+                                 <br class="linebreak">Havre de Grace rc. addreßirt seynd. Diese Brie<span class="linebreak">=</span><br class="linebreak">fe hat man dem Staats=secretario überschicket,
+                                 <br class="linebreak">der Passagier aber wird hier annoch bis auf an<span class="linebreak">=</span><br class="linebreak">derweite Ordre gefangen gehalten. Mit einem
+                                 <br class="linebreak">Spanischen Schif, so gestern hier angelanget,
+                                 <br class="linebreak">vernimmt man, daß am Mittwoch Abends
+                                 <br class="linebreak">4. Fregatten, jede von 30. Canonen und 12.
+                                 <br class="linebreak">Transport=schiffen mit Truppen von Havre
+                                 <br class="linebreak">de Grace unter Segel gegangen wären, und
+                                 <br class="linebreak">ihren Weg gegen America gerichtet hätten.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Lyon 20. Martii.</h5>
+                              <p id="p__15" class="yes-index">
+                                 <br class="linebreak">Gestern langte der Marschall, Herzog von
+                                 <br class="linebreak">Richelieu, in hiesiger Stadt an, und zwar
+                                 <br class="linebreak">in Begleitung vieler Generalspersonen. Die<span class="linebreak">=</span><br class="linebreak">sen Morgen reiseten sie sammentlich weiter
+                                 <br class="linebreak">nach der Provence ab. Jhre Durchreise hat
+                                 <br class="linebreak">Anlaß zu allerhand G.spräche gegeben, wel<span class="linebreak">=</span><br class="linebreak">che grosse Unternehmungen, die der Hof be<span class="linebreak">=</span><br class="linebreak">schlossen haben soll, zum Grunde haben. Per<span class="linebreak">=</span><br class="linebreak">sonen, die mehr als andere von Staatsge<span class="linebreak">=</span><br class="linebreak">heimnussen wissen wollen, sagen offentlich:
+                                 <br class="linebreak">daß die Touloner=flotte die Jnsel Minorca
+                                 <br class="linebreak">und Port Mahon, die Brester hingegen die
+                                 <br class="linebreak">Jnseln Jerfey und Gerasey angreiffen werde.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Toulon 22. Mart.</h5>
+                              <p id="p__18" class="yes-index">
+                                 <br class="linebreak">Von denen 15000. Mann, welche Be<span class="linebreak">=</span><br class="linebreak">fehl haben sich auf die Provencer=küste von
+                                 <br class="linebreak">Marseille an, bis Antibes zu begeben, tref<span class="linebreak">=</span><br class="linebreak">fen täglich einige in ihren angewiesenen
+                                 <br class="linebreak">Quartieren ein, wie man dann beständig
+                                 <br class="linebreak">von einer sehr grossen Einschiffung spricht.
+                                 <br class="linebreak">Ubrigens, vernimmt man die Nach<span class="linebreak">=</span><br class="linebreak">richt, daß das für den König gemietete
+                                 <br class="linebreak">Schif die Königin Johanna, welches Por<span class="linebreak">=</span><br class="linebreak">cellan nach Brest bringen wollen, auf dem
+                                 <br class="linebreak">Cap St. Martin ungefähr 45. Meilen von
+                                 <br class="linebreak">Alicante unglücklicher Weise untergegangen,
+                                 <br class="linebreak">so daß das Schif und die ganze Ladung
+                                 <br class="linebreak">verloren, und der Capitan Mallard St.
+                                 <br class="linebreak">Clement von Bourdtaux mit 5. Personen
+                                 <br class="linebreak">von seiner Mannschaft ertrunken ist.</p>
+                           </div>
+                           
+                           <div id="ab__4" class="grid-item grid-item--width2 text-end"><span id="ab__4" class="yes-index catch-word">
+                                 <br class="linebreak">Pa
+                                 </span></div>
+                           
+                           
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|4|99.9|0">-----[4]-----</span></div>
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__3" class="yes-index text-center">
+                                 <br class="linebreak">Paris 26. Mart.</h5>
+                              <p id="p__15" class="yes-index">
+                                 <br class="linebreak">Diejenige Personen, welche an denen Noht
+                                 <br class="linebreak">wendigkeiten für die Reiterey arbeiten, seynd
+                                 <br class="linebreak">unaufhörlich Tag und Nacht damit beschäf<span class="linebreak">=</span><br class="linebreak">tiget. Der König hat den Schluß gefasset,
+                                 <br class="linebreak">in eigener Person verschiedene See=häfen an
+                                 <br class="linebreak">dem grossen Welt=meer, und unter ande
+                                 <br class="linebreak">ren den zu Orient in Augenschein zu neh
+                                 <br class="linebreak">men, und ist die Abreise des Königs auf
+                                 <br class="linebreak">den 22. künftigen Monats festgesetzet, da<span class="linebreak">=</span><br class="linebreak">hero dann auch die neue Kleidung dero Leib<span class="linebreak">=</span><br class="linebreak">wache ein Monat ehender als der Befehl
+                                 <br class="linebreak">gegeben worden, fertig seyn muß.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__3" class="yes-index text-center">
+                                 <br class="linebreak">Aus Niederland.
+                                 <br class="linebreak">Antwerpen 2. April.</h5>
+                              <p id="p__13" class="yes-index">
+                                 <br class="linebreak">Zu Dinant, einer an der Maas Südwärts
+                                 <br class="linebreak">der Stadt Namur gelegenen Vestung, ist vor
+                                 <br class="linebreak">einigen Tagen in dasigem Spitale eine unver<span class="linebreak">=</span><br class="linebreak">heuratete Frauens=person, Namens Maria
+                                 <br class="linebreak">Nausenne, verstorben, welche ein Alter von
+                                 <br class="linebreak">125. Jahren 11. Monat und 6. Tagen er<span class="linebreak">=</span><br class="linebreak">reicht hat. Als man sie etliche Wochen vor
+                                 <br class="linebreak">ihrem Tode gefragt: wie sie dann vor diesem
+                                 <br class="linebreak">gelebt? hat sie geantwortet: sie habe sich
+                                 <br class="linebreak">jederzeit vor Ubermäßigkeit, vor allen Zorn
+                                 <br class="linebreak">und vor schwere Sorgen gehüttet.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Aus Schweden.</h5>
+                              <p id="p__23" class="yes-index">
+                                 <br class="linebreak">Seit der Zeit daß der König beständig
+                                 <br class="linebreak">wieder in hiesiger Königl. Residenz Dero
+                                 <br class="linebreak">Aufenthalt gehabt, hat derselbe geruhet,
+                                 <br class="linebreak">täglich denen Deliberationen in dem Königl.
+                                 <br class="linebreak">Seilat beyzuwohnen. Die Geschäfte deren
+                                 <br class="linebreak">Reichsständen werden in dem secreten Aus<span class="linebreak">=</span><br class="linebreak">schusse denen übrigen Deputationen und in
+                                 <br class="linebreak">der Commißion derselben täglich fortgesetzet.
+                                 <br class="linebreak">Diejenigen Schriften welche bey dem Ein<span class="linebreak">=</span><br class="linebreak">gang dieses Reichstages wegen der Bewerk<span class="linebreak">=</span><br class="linebreak">stelligung deren Fundamental=gesätzen dieses
+                                 <br class="linebreak">Reichs an hohen Orten seynd aufgesetzet
+                                 <br class="linebreak">worden, sollen dem sichern Verlaut nach
+                                 <br class="linebreak">nunmehro zur Druckerey überliefert worden
+                                 <br class="linebreak">seyn; um auf Befehl deren Reichs=ständen
+                                 <br class="linebreak">abgedruckt zu werden. Man wird daher ehe<span class="linebreak">=</span><br class="linebreak">stens davon ein mehrers vermelden können.
+                                 <br class="linebreak">Von Helsingborg ist berichtet worden, daß
+                                 <br class="linebreak">die beyden Kriegsschiffe Upland und Sü<span class="linebreak">=</span><br class="linebreak">dermannland, welche in dem vorigen Jahr
+                                 <br class="linebreak">an denen Africanischen Küsten gekreutzet ha</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__6" class="yes-index"><span class="linebreak">=</span><br class="linebreak">ben, am 10. hujus den Sund paßiret, und
+                                 <br class="linebreak">darauf die Ruckreise weiter nach Carls<span class="linebreak">=</span><br class="linebreak">crona fortgesetzet hätten.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">Wienden 17. April 1756.</h5>
+                              <p id="p__12" class="yes-index">
+                                 <br class="linebreak">MJttwoch den 14. April Vormittags<span class="linebreak">=</span><br class="linebreak">d.
+                                 <br class="linebreak">haben Se. Majestät der Kaiser dem
+                                 <br class="linebreak">Passion=amt, und Vesper in der Hof=J
+                                 <br class="linebreak">Majestät die Kaiserin aber, mit Jhren Kö<span class="linebreak">=</span><br class="linebreak">nigl. Hoheiten denen Durchleuchtigsten älte<span class="linebreak">=</span><br class="linebreak">ren Jungen Herrschaften dem ordinari GOt<span class="linebreak">=</span><br class="linebreak">tes=dienst in der Kammer=Nachmittags abet
+                                 <br class="linebreak">der ersten Pumpermetten in der Hofkapel<span class="linebreak">=</span><br class="linebreak">len offentlich beygewohnet.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__29" class="yes-index">
+                                 <br class="linebreak">Am Grünen=donnerstag, den 15. April,
+                                 <br class="linebreak">Fruhe um 8. Uhr, haben Beede Kaiserl.
+                                 <br class="linebreak">Majestäten, mit Jhren Königlichen Ho<span class="linebreak">=</span><br class="linebreak">heiten denen Durchleuchtigsten Erz=herzogen
+                                 <br class="linebreak">Joseph und Carl, wie auch Jhren Königl.
+                                 <br class="linebreak">Hoheiten denen durchleuchtigsten Erzherzo<span class="linebreak">=</span><br class="linebreak">ginen Maria Anna, und Maria Christina
+                                 <br class="linebreak">über den bedeckten langen Gang zu denen
+                                 <br class="linebreak">WW. EE. PP. Augustinern Sich begeben, und
+                                 <br class="linebreak">alda der Heil. Commuionmeß (worun<span class="linebreak">=</span><br class="linebreak">ter Allerhöchst=dieselbe, und Jhre Königl.
+                                 <br class="linebreak">Hoheiten, dann die Hofdames, die Her<span class="linebreak">=</span><br class="linebreak">ren geheime Rähte und Kammerer, ihrem
+                                 <br class="linebreak">Rang nach, letztlichen die Kaiserl. Königl.
+                                 <br class="linebreak">Truchsessen, und Edel=knaben communiciret,
+                                 <br class="linebreak">dann der Predig=hohen Amt, und allen
+                                 <br class="linebreak">übrigen Geistlichen Ceremonien abgewartet;
+                                 <br class="linebreak">Hierauf nach Zuruck=kehrung in die Burg,
+                                 <br class="linebreak">haben Se. Majestät der Kaiser 12. armen
+                                 <br class="linebreak">Männern die Füsse gewaschen, welches
+                                 <br class="linebreak">von Jhrer Majestät der Kaiserin an 12
+                                 <br class="linebreak">armen Weibern geschehen, (von welchen
+                                 <br class="linebreak">Beeden die Specification im beygehenden
+                                 <br class="linebreak">Anhang zu ersehen ist; Nachmittags haben die
+                                 <br class="linebreak">Allerhöchste Herrschaften der zweyten Pum<span class="linebreak">=</span><br class="linebreak">per=metten in der Hof=kapellen beygewohnet.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__14" class="yes-index">
+                                 <br class="linebreak">AmChar=freytag den 16 April, Fruhe nach
+                                 <br class="linebreak">8. Uhr haben Beede Kaiserl Majestäten,
+                                 <br class="linebreak">mit höchstbesagten Jhren Königl. Hehel<span class="linebreak">=</span><br class="linebreak">ten über den langen Gang, zu denen WW. EE.
+                                 <br class="linebreak">PP. Augustinern anwiederum Sich begeben,
+                                 <br class="linebreak">und alda der Passion=predigt, wie auch dem
+                                 <br class="linebreak">übrigen an diesem Tag gewöhnlichen GOt<span class="linebreak">=</span><br class="linebreak">tes=dienst, auch schließlichen gegen 12 Uhr
+                                 <br class="linebreak">der Proctßion mit dem Hochwürdigsten Al<span class="linebreak">=</span><br class="linebreak">tars=sacrament zu dem Heil. Grab mit auff</p>
+                           </div>
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|5|99.9|0">-----[5]-----</span></div>
+                           
+                           <div class="grid-item">
+                              <p id="p__9" class="yes-index">
+                                 <br class="linebreak">erbäulichster Andacht; dann Nachmittags
+                                 <br class="linebreak">um halb 6. Uhr in der Hof=kapellen der
+                                 <br class="linebreak">letzten Pumper=metten ab=gewartet.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__31" class="yes-index">
+                                 <br class="linebreak">Ubrigens ist vergangenen Sonntags den
+                                 <br class="linebreak">11ten dieses der Päpstl. Currier Franchini
+                                 <br class="linebreak">von Rom hier angelangt, welcher Seiner
+                                 <br class="linebreak">Hoch=fürstl. Gnaden dem allhiesigen Herrn
+                                 <br class="linebreak">Erzbischoffen (Titl.) Herrn Johann Jo<span class="linebreak">=</span><br class="linebreak">seph des Heil. Röm. Reichs Fürsten, und
+                                 <br class="linebreak">Grafen Trauthsen zu Falkenstein, rc. die er<span class="linebreak">=</span><br class="linebreak">freuliche Nachricht gebracht, daß Hochdie<span class="linebreak">=</span><br class="linebreak">selbe in dem von Seiner Päpstl. Heiligkeit
+                                 <br class="linebreak">den 5. dieses gehaltenen Consistorio zu der
+                                 <br class="linebreak">Heiligen Römischen Kirchen Cardinalen er<span class="linebreak">=</span><br class="linebreak">wählet worden seyen; wo zugleich Seine
+                                 <br class="linebreak">Hoch=fürstliche Eminenz das rote Häubel
+                                 <br class="linebreak">als das erste Zeichen dero hohen Würde durch
+                                 <br class="linebreak">eben diesen Currier von Rom erhalten ha<span class="linebreak">=</span><br class="linebreak">ben; und zumalen erdeuteter Currier auch
+                                 <br class="linebreak">eine gleiche Nachricht und rotes Häubel an
+                                 <br class="linebreak">an Se. Hochfürstl. Gnaden (Titl.) Hrn.
+                                 <br class="linebreak">Franz Conrad Casimir Jgnatz des Heil.
+                                 <br class="linebreak">Röm. Reichs Fürsten und Bischoffen zu Con<span class="linebreak">=</span><br class="linebreak">stanz zu überbringen gehabt, als ist dersel<span class="linebreak">=</span><br class="linebreak">be gleich darauf ohne Aufenthalt von hier
+                                 <br class="linebreak">nacher Constanz weiters abgereiset.
+                                 <br class="linebreak">Nächst=kommenden Donnerstag als den</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__16" class="yes-index">
+                                 <br class="linebreak">22. gegenwärtigen Monats April wird die
+                                 <br class="linebreak">Ziehung der Kaiserl. Königl. privilegirten
+                                 <br class="linebreak">Lotterie in der Königl. Hauptstadt Prag ge<span class="linebreak">=</span><br class="linebreak">wöhnlicher massen vorgenommen, und denen
+                                 <br class="linebreak">angestellten Collectoren hierauf nachrichtlich
+                                 <br class="linebreak">mitgegeben, daß an dieselbe wegen Bey<span class="linebreak">=</span><br class="linebreak">bringung der gesammten Schlüsse das erfor<span class="linebreak">=</span><br class="linebreak">derliche erlassen werden wird.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div id="ab__11" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_1" data-num="N001">Der Wol=ehrw. in GOtt Gelstl. Hr. Ant. Comelli,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_2" data-num="N002">Peitl. Priester, im Fürst=Schwarzembergisch. H.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_3" data-num="N003">am neuen Markt, alt 64. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_4" data-num="N004">Franz Lenz, Hausmeist., im Bild=hauerisch. H. in
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_5" data-num="N005">der Nagler=gas., alt 38. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_6" data-num="N006">Dem Adem Riemer, Lack., s. K. Apol., im Dople
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_7" data-num="N007">ckll. H. in der Klugerstr., alt 6. v. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_8" data-num="N008">Drm Lorenz Greillmayr, Maurern, s. K. Sabina,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_9" data-num="N009">bey der Holderstand. auf der Seilerst., alt 4. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div id="ab__3" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756695_tl_1" data-num="N001">dem schwarz. Eleph. bey Maria=hülf, alt 7. v. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__4" class="yes-index">
+                                 <br class="linebreak">Dem Hrn. Joh. Sebast. Fantini, s. K. Elisab., bey</p>
+                           </div>
+                           
+                           <div id="ab__14" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_1" data-num="N001">Dem Joh. Mart. Fllesser, Burgerl. Handels=m.,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_2" data-num="N002">s. K. Justina, in s. H bey St. Ulrich, alt 1. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_3" data-num="N003">Dem Franz Bauer, Schuhmach., s. K. Mag
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_4" data-num="N004">dal., im Lucatellis. H. zu Gumpendorf, alt 1. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_5" data-num="N005">Dem Jos. Mayr, Lack., s. K. Jos., bey der gold.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_6" data-num="N006">Hand am Spitalberg, alt 2. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_7" data-num="N007">Dem acob Schneller, Portiern, s. K. Anna, im
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_8" data-num="N008">Spiegel=macherls. H. am Spitalberg, alt 6. v. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_9" data-num="N009">Peter Eder, Maurer, deym grün. Baum zu Mätz
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_10" data-num="N010">leinstorf, alt 72. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div id="ab__8" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_1" data-num="N001">Die Ehrw. Lay=schwest. Anna Elisab. Mailbäckin,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_2" data-num="N002">im Kloster bey St. Nicola, alt 55. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_3" data-num="N003">Franz Has, Academie=mahl., im Gretisch. H. am
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_4" data-num="N004">Salz=gr., alt 26. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_5" data-num="N005">Andre Goldknopf, Lack., im Winkleris. H. in bey
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_6" data-num="N006">Römerstr., alt 58. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div id="ab__21" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_1" data-num="N001">Dem Pet. la Francone, Barrometer=mach., s. K.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_2" data-num="N002">Cathar., bey St. Anna in der Josephst., 8. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_3" data-num="N003">Veit Schrimpf, Hof=befr. Schuh=mach., bey denen
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_4" data-num="N004">3. Hüt. bey St. Ulrich, alt 59. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_5" data-num="N005">Sebast. Balleitner, Tischl., im Ruelandis. H. auf
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_6" data-num="N006">der Landstr., alt 58. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_7" data-num="N007">Tohias Thalhammer, Schnallen=mach., bey dem
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_8" data-num="N008">gold. Kreutz bey Maria=hülf, alt 48. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_9" data-num="N009">Der Anna Aprin, Wittwe, ihr K. Fried., bey dem
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_10" data-num="N010">gold. Anker am Neubau, alt 1. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_11" data-num="N011">Georg Betz, Schneid., beym schwarz. Thor in der
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_12" data-num="N012">Rossau, alt 58. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_13" data-num="N013">Jacob Blumenstorfer, Zimmerges., bey der H. Drey
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_14" data-num="N014">faltigk. oberm Neustift, alt 30. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_15" data-num="N015">Regina Edlin, in St. Joh. Nep. Spit., alt 44. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_16" data-num="N016">Paul Gutjahr, Zimmer=ges., beym bl. Pfauen im
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_17" data-num="N017">Liechienth., alt 26. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_18" data-num="N018">Dem Math. Wölfel, Tagw., s. K. Joh., bey dem
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_19" data-num="N019">gold. Kreutz im Liechtenth., alt 3. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div id="ab__11" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_1" data-num="N001">Der Hoch=edel=geb. Jn. Ant. v. Zeberg, AA. LL.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_2" data-num="N002">Phil. &amp; Med. Doct. K. K. Raht, und Leibmedl
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_3" data-num="N003">cus, im Andleris. H. in der oderen Breunerstr.,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_4" data-num="N004">alt 77. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_5" data-num="N005">Dem Paul Schwaiger, Burgerl. Schneid., s. W.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_6" data-num="N006">Elisab., im Zinzendorfis. H. in der Herren=gas.,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_7" data-num="N007">alt 36. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_8" data-num="N008">Joh. Raisberger, Lack., im Finkis. H. untern Tuch
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_9" data-num="N009">laub., alt 26. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div id="ab__6" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_1" data-num="N001">Hr. Joh. Jacob Köck, K. K. L. M. Gerichtscanzel
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_2" data-num="N002">list, beym rot. H. an der Wien, alt 45. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_3" data-num="N003">Cathar. hötlerin, led. Standes, bey denen 3. Ku
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_4" data-num="N004">geln am Spitalberg, alt 26. J.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           <div id="ab__4" class="grid-item grid-item--width2 text-end"><span id="ab__4" class="yes-index catch-word">
+                                 <br class="linebreak">An
+                                 </span></div>
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|6|99.9|0">-----[6]-----</span></div>
+                           
+                           <div id="ab__21" class="grid-item">
+                              <ul>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_1" data-num="N001">Andre Vaiterer, Burgerl. Schuh=mach., bey dem
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_2" data-num="N002">gold. Straus in der Josephst., alt 46. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_3" data-num="N003">Dem Joh. Forster, Bild=hauern, s. W. Maria, bey
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_4" data-num="N004">dem schwarz. Bock am Spitalberg, alt 83. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_5" data-num="N005">Dem Paul Ziegelhuber, Adjunct. im Kupfer=amt,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_6" data-num="N006">s. K. Bard., beym weis. Räs. auf der Landstr.,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_7" data-num="N007">alt 2. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_8" data-num="N008">Dem Wenzel Spitzinger, Bruderschaft=ansag.,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_9" data-num="N009">K. Jacob, bey St Anna in der Josephst., 4. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_10" data-num="N010">Dem Jacob Steininger, Vor=reit., s. K. Melch.,
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_11" data-num="N011">im Kreutzeris. H. am Magdal.=gr., alt 2. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_12" data-num="N012">Dem Math. Zimmerl, Tagw, s. K. Barb., im
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_13" data-num="N013">Rabis. H. am Hun dsth., alt 6. J.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_14" data-num="N014">Jacob Grätzl, alt 29. J., und Mich. Palierer, alt
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_15" data-num="N015">28. J., beyde bey denen FF. Mis.
+                                    </li>
+                                 <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_16" data-num="N016">Summa 13. Person. darunter 4. Kinder.
+                                    </li>
+                              </ul>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">DICT.</h5>
+                              <p id="p__6" class="yes-index">
+                                 <br class="linebreak">Von der N. Oe. Regierung wegen wird
+                                 <br class="linebreak">mit gegenwärtigoffenen Edict jedermänni<span class="linebreak">=</span><br class="linebreak">glich sowol an= als abwesenden, deme daran
+                                 <br class="linebreak">gelegen, kund und zu wissen gemacht.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__33" class="yes-index">
+                                 <br class="linebreak">Es seye der Johann Gottlieb Roth gewe<span class="linebreak">=</span><br class="linebreak">ster Hofacademiemahler ohne hinterlassen<span class="linebreak">=</span><br class="linebreak">letzt=willigen Geschäft mit Tod abgegangen,
+                                 <br class="linebreak">und habe sich hinnach um desselben ab inte-
+                                 <br class="linebreak">stito ruckgebliebene Verlassenschaft annoch
+                                 <br class="linebreak">niemanden angemeldet. Wann nun Regie<span class="linebreak">=</span><br class="linebreak">rung, um die etwo ein oder anderem bey die<span class="linebreak">=</span><br class="linebreak">ser Verlassenschaft von Rechts wegen gebüh
+                                 <br class="linebreak">rend=nähere Erb=sprüch in Erfahrung zu bein
+                                 <br class="linebreak">gen, anbey das etwo vorhandene Æs alic-
+                                 <br class="linebreak">num ausfindig zu machen, folgsam zu Abhan<span class="linebreak">=</span><br class="linebreak">dlung solcher Verlassenschaft sicher fürsch eit<span class="linebreak">=</span><br class="linebreak">ten zu können, eine Nohtdurft zu seyn befun<span class="linebreak">=</span><br class="linebreak">den hat, alle hieran Theil=nehmende swol
+                                 <br class="linebreak">in= als ausser Land befindliche Personen durch
+                                 <br class="linebreak">dieses offentliche Edict zu Anmeld=Legitimir-
+                                 <br class="linebreak">und Liquidirung ihrer an obbemeldte Ver<span class="linebreak">=</span><br class="linebreak">lassenschaft ex quacunque causa, velti
+                                 <br class="linebreak">tulo habender Sprüch, und Vorderungen
+                                 <br class="linebreak">gerichtlich vorzuladen, und einzuberuffen: zu
+                                 <br class="linebreak">welchemEnde dann denenselben der siehen= und
+                                 <br class="linebreak">zwanzigste Tag des Monats Aprilis 1756.
+                                 <br class="linebreak">Nachmittag um 3. Uhr zur gewöhnlichen
+                                 <br class="linebreak">Convocations= und Anmeldungs Tagsatzung
+                                 <br class="linebreak">zu all=endlicher Frist anberaumet werden.
+                                 <br class="linebreak">Solchemnach werden all= und jede, welche
+                                 <br class="linebreak">bey gedacht=Rothischer Verlassenschaft im
+                                 <br class="linebreak">rechtmäßiger Erbs= oder Schuld=forderung
+                                 <br class="linebreak">willen einige Sprüch haben, oder zu haben
+                                 <br class="linebreak">vermeinen, an ob bestimmten Tag, und Stund</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__21" class="yes-index">
+                                 <br class="linebreak">vor Regierung in der daselbst zu solchen En<span class="linebreak">=</span><br class="linebreak">de offen haltenden Commissions=stuben
+                                 <br class="linebreak">entweder selbst persönlich, oder durch hiezu
+                                 <br class="linebreak">genugsam gevollmächtigte Gewalt=tragere
+                                 <br class="linebreak">also gewiß zu erscheinen, und ihre an solche
+                                 <br class="linebreak">Verlassenschaft habende Anforderungen an<span class="linebreak">=</span><br class="linebreak">zumelden, rechtlich zu legitimiren, und zu
+                                 <br class="linebreak">liquidiren haben, als im widrigen die Ab<span class="linebreak">=</span><br class="linebreak">handlung gleichwolen vorgenommen, und
+                                 <br class="linebreak">ohngehindert deren etwo vorhandenen Erbs<span class="linebreak">=</span><br class="linebreak">prætendenten, oder Glaubigern, so sich
+                                 <br class="linebreak">mit ihren Erbs= und Schuld=forderungen in
+                                 <br class="linebreak">bestimmter Zeit nicht angemeldet, in solcher
+                                 <br class="linebreak">Verlassenschaft ex officio vorgekehret wer<span class="linebreak">=</span><br class="linebreak">den solle, was Rechtens ist. Wornach sich
+                                 <br class="linebreak">also einjeder zu richten wissen wird. So be<span class="linebreak">=</span><br class="linebreak">schehen Wien den 1 Martii 1755.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">EDICT.</h5>
+                              <p id="p__35" class="yes-index">
+                                 <br class="linebreak">Von des Kaiserl. Königl. Judicii Dele-
+                                 <br class="linebreak">gati Militaris Mixti Superioris ac Anfe-
+                                 <br class="linebreak">rioris Austriæ wegen, wird hiemit durch
+                                 <br class="linebreak">dieses offentliche Edict jedermänniglich kund
+                                 <br class="linebreak">und zu wissen gemacht: Es habe die Ma<span class="linebreak">=</span><br class="linebreak">ria Catharina Latourin weil. Johann La<span class="linebreak">=</span><br class="linebreak">torx gewestTrenckischen Hauptmanns vor<span class="linebreak">=</span><br class="linebreak">hin Herzog Hildburgshausen Jnfanteriere<span class="linebreak">=</span><br class="linebreak">giments Leutenant seel. nachgelassene Wit<span class="linebreak">=</span><br class="linebreak">tib und Erbin bey diesem Jud. Del. Mil.
+                                 <br class="linebreak">mixto angezeiget, welcher gestalten ihr er<span class="linebreak">=</span><br class="linebreak">sagt=ihres Ehe=consortens als Hildburgs
+                                 <br class="linebreak">hausischen Leutenants vom 1. Novembris
+                                 <br class="linebreak">1741. bis ultimo Septembris 1742 ausge<span class="linebreak">=</span><br class="linebreak">fertigte Verpflegsabrechnung nebst dem Co<span class="linebreak">=</span><br class="linebreak">pulations und Todienschein in Original wer<span class="linebreak">=</span><br class="linebreak">stossen, und ungehindert all=angewendetet
+                                 <br class="linebreak">Mühe nicht in Erfahrenheit gebracht wor<span class="linebreak">=</span><br class="linebreak">den wäre: auch dahero um Ausfertigung
+                                 <br class="linebreak">des erforderlichen Amortificationsedicts ge<span class="linebreak">=</span><br class="linebreak">betten. Gleichwie nun auch hierein unterm
+                                 <br class="linebreak">15. abhin gewilliget worden. Als werden
+                                 <br class="linebreak">demnach alt= und jede, so obig= in Verstoß
+                                 <br class="linebreak">gerahtene Leutenant Latourische Verpfiegs<span class="linebreak">=</span><br class="linebreak">Abrechnung nebst dem Copulations und Tod<span class="linebreak">=</span><br class="linebreak">ten=schein etwann in Handen haben, oder
+                                 <br class="linebreak">aber ansonst darauf einen Rechtlichen An<span class="linebreak">=</span><br class="linebreak">spruch zu machen vermeinen, sich darmit von
+                                 <br class="linebreak">heute unten gesetzten Dato an binnen eines
+                                 <br class="linebreak">Jahrs sechs Wochen und drey Tägen Ter
+                                 <br class="linebreak">min bey Anfangs gedachten Judicio Dele-
+                                 <br class="linebreak">gati Militari mixto also gewiß anzumel<span class="linebreak">=</span><br class="linebreak">den</p>
+                           </div>
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|7|99.9|0">-----[7]-----</span></div>
+                           
+                           <div class="grid-item">
+                              <p id="p__13" class="yes-index">
+                                 <br class="linebreak">ben haben, wie im widrigen nach Ver<span class="linebreak">=</span><br class="linebreak">fliessung desselben mehr ermeldte Abrechnung
+                                 <br class="linebreak">ipfo tacto caßirt, annullirt, und amorti<span class="linebreak">=</span><br class="linebreak">sirt, auch sohin das weitere der Ordnung
+                                 <br class="linebreak">nach ex officio vorgekehret werden solle.
+                                 <br class="linebreak">Wornach sich also jedermann zu richten, und
+                                 <br class="linebreak">vor Schaden zu hütten wissen wird. Ex
+                                 <br class="linebreak">Judicio Delegato Militari Mixto sup. ac
+                                 <br class="linebreak">Infer. Austriæ. Wten beu 7. April. 1756.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">EDICT.</h5>
+                              <p id="p__23" class="yes-index">
+                                 <br class="linebreak">Wir Burgermeister Amts=verwalter und
+                                 <br class="linebreak">Raht der Stadt Wien geben denen Ossen<span class="linebreak">=</span><br class="linebreak">bachischen Erbsinteressenten hiemit zu ver<span class="linebreak">=</span><br class="linebreak">nehmen; wasmassen wir auf Anlangen de<span class="linebreak">=</span><br class="linebreak">ren Bernreitterischen Con=leuten wegen von
+                                 <br class="linebreak">dem Joseph Carl Roska ihnen cedirten und
+                                 <br class="linebreak">auf dem Ossenbachischen in dem Schulter<span class="linebreak">=</span><br class="linebreak">gaßsel ligend=zum kleinen Jordan benamsten
+                                 <br class="linebreak">Verlassenschaft=haus habende Anforderung
+                                 <br class="linebreak">pr. 333. fl. 17. kr. 2. pf. über die bereits
+                                 <br class="linebreak">behobene Schätzungs=Vorwissens=verordnung
+                                 <br class="linebreak">untern 24 letztabgewichenen Monats Mar<span class="linebreak">=</span><br class="linebreak">tit die weitere Verordnung (siat Schätzung
+                                 <br class="linebreak">nochmalen mit Vorwissen, wofern nichts
+                                 <br class="linebreak">einkommen) ertheilet haben; Wiezumalen
+                                 <br class="linebreak">aber derenselben Aufenthalt in der Unwissen<span class="linebreak">=</span><br class="linebreak">heit beruhet. Als hat man denenselben die<span class="linebreak">=</span><br class="linebreak">se Stadt=rähtliche Verordnung durch dieses
+                                 <br class="linebreak">offene Edict hiemit kund und zu wissen ma<span class="linebreak">=</span><br class="linebreak">chen wollen. Actum Wien den 2. April
+                                 <br class="linebreak">1736.</p>
+                           </div>
+                           
+                           
+                           
+                           
+                           <div class="grid-item">
+                              <h5 id="head__2" class="yes-index text-center">
+                                 <br class="linebreak">EDICT.</h5>
+                              <p id="p__20" class="yes-index">
+                                 <br class="linebreak">Wir
+                                 <br class="linebreak">Burgermeister Amts=verwalter und
+                                 <br class="linebreak">Raht der Stadt Wien geben hiemit denen
+                                 <br class="linebreak">Abwesenden (Titl.) Gräfl. Gollischen Haus<span class="linebreak">=</span><br class="linebreak">eigentumern, und insonderheit der Frauen
+                                 <br class="linebreak">Mariä Theresiä Freyin von Dominique zu
+                                 <br class="linebreak">vernehmen: Es habe der arrestirt=gemeiner
+                                 <br class="linebreak">Stadtwien geweste Sequester Jgnaz Pas<span class="linebreak">=</span><br class="linebreak">quetta angezeiget; was gestalten auf sein
+                                 <br class="linebreak">Phorsamst beschehenes Anlangen zwar eine
+                                 <br class="linebreak">Tagsatzung mit Ziehung seiner sammentlichen
+                                 <br class="linebreak">Credttorn auf den 12. Monats elapsi, dann
+                                 <br class="linebreak">wegen Ausbleibung ein= und anderen, auf
+                                 <br class="linebreak">weiteres Anlangen eine superemtorische cum
+                                 <br class="linebreak">clausula actualis Contumaciæ vinculir<span class="linebreak">=</span><br class="linebreak">te Erforderung auf den 31. præfati anbe<span class="linebreak">=</span><br class="linebreak">raumt worden seye, aber auch diese den ge<span class="linebreak">=</span><br class="linebreak">wünschten Effect von darumen nicht errei</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__31" class="yes-index"><span class="linebreak">=</span><br class="linebreak">chei hätte, weilen erwehnte Tagsatzung de<span class="linebreak">=</span><br class="linebreak">nen Abwesenden (Titl.) Gräfl. Gollischen
+                                 <br class="linebreak">Hauses Eigentumern eben so wenig, als de<span class="linebreak">=</span><br class="linebreak">renselben unbekannten Mandatario hätte in<span class="linebreak">=</span><br class="linebreak">timiret werden können, und dahero um ein
+                                 <br class="linebreak">nochmalig=allendliche Tagsatzungs=anordnung
+                                 <br class="linebreak">und zugleich Affigirung eines in derley Fäl<span class="linebreak">=</span><br class="linebreak">len gewöhnlichen Valval=edicts, und zwar
+                                 <br class="linebreak">bey also gewisser Erscheinungs=auflag deren
+                                 <br class="linebreak">(Titl) Gräfl. Gollischen Haus=eigentumern
+                                 <br class="linebreak">und mentionirter Frauen Freyin von Domi<span class="linebreak">=</span><br class="linebreak">nique, vol per se, vel per Mandatari-
+                                 <br class="linebreak">um, wie in wiedrigen dieselbe (zumalen be<span class="linebreak">=</span><br class="linebreak">reits ein und andere Creditores in dessen
+                                 <br class="linebreak">Arrests=entlassung gewilliget, pro Consen-
+                                 <br class="linebreak">tientibus gehalten werden sollen, anzulan<span class="linebreak">=</span><br class="linebreak">gen sich bemüßiget ersehete. Wann nun
+                                 <br class="linebreak">untern 7. dieses zum Bescheid erfolget (stat
+                                 <br class="linebreak">in ein und anderen aufzulegen, wie ge<span class="linebreak">=</span><br class="linebreak">betten) zu dem Ende auch von gemeiner
+                                 <br class="linebreak">tadt Syndico primario und Stadt<span class="linebreak">=</span><br class="linebreak">schreiber Hrn. Joseph Ferdinand Riedl U.
+                                 <br class="linebreak">J. D. und Hrn Reimund Ferdinand von
+                                 <br class="linebreak">Zahlheimb, des inneren Stadt=rahts, als
+                                 <br class="linebreak">in Sachen ernannten Commissarien eine Tag<span class="linebreak">=</span><br class="linebreak">satzung auf dem 2ten künftigen Monats Ju<span class="linebreak">=</span><br class="linebreak">nii Nachmittag präcise um 3. Uhr in der
+                                 <br class="linebreak">aussern Rahts=stuben anberaumet worden.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__17" class="yes-index">
+                                 <br class="linebreak">Als werden sie (Titl.) Gräfl. Gollische
+                                 <br class="linebreak">Hauß Eigentumere, und insonderheit sie
+                                 <br class="linebreak">Frau Freyin von Dominique bey ob anbe<span class="linebreak">=</span><br class="linebreak">raumten Tagsatzung entweders Persöhnlich,
+                                 <br class="linebreak">oder durch einem hi zu genugsam bevollmäch<span class="linebreak">=</span><br class="linebreak">tigten Mandatarium also gewiß zu erschei<span class="linebreak">=</span><br class="linebreak">nen haben, wie in widrigen die ausblei<span class="linebreak">=</span><br class="linebreak">bende pro Consentientibus gehalten, und
+                                 <br class="linebreak">nicht mehr angehöret werden sollen. So
+                                 <br class="linebreak">man denenselben durch dieses offene Edict
+                                 <br class="linebreak">hiemit verkünden, und zur behörigen Wis<span class="linebreak">=</span><br class="linebreak">senschaft bringen wollen Actum Wien den
+                                 <br class="linebreak">10. April 1756.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__14" class="yes-index">
+                                 <br class="linebreak">Es seynd alltäglich in der Leopoldstadt
+                                 <br class="linebreak">die zwey sogenannte Franzenauische Häuser,
+                                 <br class="linebreak">wovon das eine nebst einem kleinen Gärtl
+                                 <br class="linebreak">pur auf die Zins=ertragnuß gebauet, und
+                                 <br class="linebreak">rechter Hand gegen den schwarzen Bärn über
+                                 <br class="linebreak">zum roten Thor genannt, das andere aber
+                                 <br class="linebreak">in der Gassen ruckwärts neben denen drey
+                                 <br class="linebreak">Artitschocken gegen den Weberl=wirtshaus
+                                 <br class="linebreak">über ligend mit einem sauberen Garten, ei</p>
+                           </div>
+                           
+                           <div class="grid-item grid-item--width2 my-5" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|17560417|8|99.9|0">-----[8]-----</span></div>
+                           
+                           <div class="grid-item">
+                              <p id="p__16" class="yes-index"><span class="linebreak">=</span><br class="linebreak">nen Garten=haus zur ebenen Erb, dann
+                                 <br class="linebreak">zweyen mit Marmor gepflasterten Sälen,
+                                 <br class="linebreak">verschiedenen Zinns=zimmern, wie auch einer
+                                 <br class="linebreak">grossen Stallung versehen ist, um billigen
+                                 <br class="linebreak">Preiß zu verkauffen, und ist sich sowol der
+                                 <br class="linebreak">Ertragnuß als anderweitigen Auskunft hal<span class="linebreak">=</span><br class="linebreak">ber in dem Zeug=gewölb auf dem hohen
+                                 <br class="linebreak">Markt zur schönen Schäferin genannt, bey
+                                 <br class="linebreak">dem Hrn. Lebl anzumelden.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__18" class="yes-index">
+                                 <br class="linebreak">Jn der Leopoldstadt ist annoch der ge<span class="linebreak">=</span><br class="linebreak">west Schmuderische Garten mit dem alda<span class="linebreak">=</span><br class="linebreak">sigen Haupt=gebäu so in 9. meublirt= und mit
+                                 <br class="linebreak">allen Zugehörungen versehenen Zimmern,
+                                 <br class="linebreak">nebst einer Salaterrena, dann ein Stal<span class="linebreak">=</span><br class="linebreak">lung auf 6. Pferd, und hierzu gehörigen
+                                 <br class="linebreak">Wagenschupfen bestehet, den Sommer hin<span class="linebreak">=</span><br class="linebreak">durch, oder auch Monatlich um einen bil<span class="linebreak">=</span><br class="linebreak">ligen Preiß zu verlassen; Der Augenschein
+                                 <br class="linebreak">kan alda alltäglich eingenommen werden.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__18" class="yes-index">
+                                 <br class="linebreak">Es seynd in der Leopoldstadt in der so<span class="linebreak">=</span><br class="linebreak">genannten Jäger=zeil zum goldenen Sattel
+                                 <br class="linebreak">genannt, unterschiedliche Wägen, Chaisen,
+                                 <br class="linebreak">Satteln, Sattlereffecten, und Wägenge<span class="linebreak">=</span><br class="linebreak">stell, täglich Vormittag von 9. bis 12. und
+                                 <br class="linebreak">Nachmittag von 2. bis 5. Uhr alda dem
+                                 <br class="linebreak">Meistbiettenden zu verkauffen, wer solche zu
+                                 <br class="linebreak">kauffen Willens ist, kan sich alda anmel<span class="linebreak">=</span><br class="linebreak">den.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__25" class="yes-index">
+                                 <br class="linebreak">Auf nächst=künftigen Mittwoch als den
+                                 <br class="linebreak">21 April werden auf den alten Bauren<span class="linebreak">=</span><br class="linebreak">Markt in dem Seiterischen Haus im ersten
+                                 <br class="linebreak">Stock unterschiedliche Verlassenschaftseffec<span class="linebreak">=</span><br class="linebreak">ten, als Geschmuck, Galanterie, Wäderl,
+                                 <br class="linebreak">Jndianische, und andere schöne Spannische
+                                 <br class="linebreak">Wänd, dann dergleichen Zupf= und andere
+                                 <br class="linebreak">Trücherl, Kästen, Porcellan, Spiegl, Tisch,
+                                 <br class="linebreak">Niederländer, und Damasdene Spallier,
+                                 <br class="linebreak">Sessel, Frauen=kleider, Spitz und Wäsch,
+                                 <br class="linebreak">wie auch ein zweysitziger rot=blüschener
+                                 <br class="linebreak">Wagen, und Piroutsch, dann mehr andere
+                                 <br class="linebreak">Fahrnussen Vormittag von 9. bis 12. und
+                                 <br class="linebreak">Nachmittag von 3. bis 6 Uhr dem Meist<span class="linebreak">=</span><br class="linebreak">biettenden verkauft werden.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__16" class="yes-index">
+                                 <br class="linebreak">Es seynd zu Meidling nächst Schönbrunn
+                                 <br class="linebreak">7. Zimmer samt Kuchel und einen schönen
+                                 <br class="linebreak">Garten nach Belieben zu verlassen, und hat
+                                 <br class="linebreak">man sich dessentwegen bey dem Verleger des
+                                 <br class="linebreak">Wiennerischen Diarii anzumelden.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__18" class="yes-index">
+                                 <br class="linebreak">Es ist die Müllerische Behausung in der
+                                 <br class="linebreak">Währinger=gassen an dem Contumaz=haus
+                                 <br class="linebreak">samt einem dabey befindlichen grossen Gar<span class="linebreak">=</span><br class="linebreak">ten alltäglich zu verkauffen, und hat man
+                                 <br class="linebreak">sich dessenthalben bey gemeiner Stadt Pu<span class="linebreak">=</span><br class="linebreak">pillen=rait=kammer anzumelden.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__31" class="yes-index">
+                                 <br class="linebreak">Auf Verordnung eines Löbl. Landmar<span class="linebreak">=</span><br class="linebreak">schallischen Gerichts werden in der Stadt
+                                 <br class="linebreak">St. Pölten in der gewesten BaronDam<span class="linebreak">=</span><br class="linebreak">nitzischen Behausung den 22. April und fol<span class="linebreak">=</span><br class="linebreak">gende Täge Vormittag von 9. bis 12. und
+                                 <br class="linebreak">Nachmittag von 3. bis 6. Uhr verschiedene
+                                 <br class="linebreak">Verlassenschafts=effecten, als Manns=kleider,
+                                 <br class="linebreak">Weiszeug, Gewehr, Porcelan, Hollitschet<span class="linebreak">=</span><br class="linebreak">geschirr, ein meßinger stark versilberter Con<span class="linebreak">=</span><br class="linebreak">fect=aufsatz, Sesseln, Canape, Kästen
+                                 <br class="linebreak">groß= und mittere Spiegel, Spallier, ein
+                                 <br class="linebreak">Trag=sessel, Beth=gewand, Hang=leuchter,
+                                 <br class="linebreak">Zinn, Meßing, Kupfer und Eisen=geschirr,
+                                 <br class="linebreak">4. Kutschenpferd samt Geschirr, 100. Em<span class="linebreak">=</span><br class="linebreak">mer Oesterreicher Wein samt denen Fässern<span class="linebreak">=</span><br class="linebreak">und mehr andere dergleichen Fahrnussen li<span class="linebreak">=</span><br class="linebreak">citando dem Meistbiettenden verkauffet wer<span class="linebreak">=</span><br class="linebreak">den.</p>
+                           </div>
+                           
+                           <div class="grid-item">
+                              <p id="p__26" class="yes-index">
+                                 <br class="linebreak">Den 22. dieses Monats Aprilis werden
+                                 <br class="linebreak">auf dem alten Fleischmarkt in dem Prie<span class="linebreak">=</span><br class="linebreak">schenkischen Haus im dritten Stockl 2331.
+                                 <br class="linebreak">Emmer gute Oesterreicher Gebürg=wein
+                                 <br class="linebreak">von verschiedenen Jahren und Gewächsern
+                                 <br class="linebreak">samt Fässern in eisernen Banden, Vormit<span class="linebreak">=</span><br class="linebreak">tag von 9. bis 12. Nachmittag aber von
+                                 <br class="linebreak">3. bis 6. Uhr dem Meistbiettenden gegen al<span class="linebreak">=</span><br class="linebreak">sogleich baar leistender Bezahlung verkauf<span class="linebreak">=</span><br class="linebreak">fet, den 23. dito aber darauf in der Ros<span class="linebreak">=</span><br class="linebreak">sau bey denen 3. Mohren mit der Licitation
+                                 <br class="linebreak">continuiret werden.</p>
+                           </div>
+                           
+                           <div id="ab__15" class="grid-item"><span id="ab__15" class="yes-index">
+                                 </span></div>
+                           
+                           <div class="grid-item">
+                              <p id="p__28" class="yes-index">
+                                 <br class="linebreak">Diarii ist zu haben:
+                                 <br class="linebreak">Francisci Antonii Königs, Leutenants,
+                                 <br class="linebreak">und Auditors, Anmerkungen, über den von
+                                 <br class="linebreak">Jhro zu Hung. und Böheim Königl. Maj.
+                                 <br class="linebreak">Maria Theresia, ErzHerzogin zu Oester<span class="linebreak">=</span><br class="linebreak">reich, rc. rc. Allergnädigst=bestättigten Kriegs
+                                 <br class="linebreak">Articuls= Brief Leopoldi I. Augustis.
+                                 <br class="linebreak">mem. de An. 1668. cum Additaments
+                                 <br class="linebreak">ex Regulamento de An. 1737. potim-
+                                 <br class="linebreak">mümn, worbey zu KriegsProcessen taugh<span class="linebreak">=</span><br class="linebreak">liche Formulæ zu finden, 4to. ungebunden
+                                 <br class="linebreak">pr. 36. kr.</p>
+                           </div>
+                           
+                           </div>
                      </div>
-                     <div class="sticky row bg-white" style="top: 1em!important;">
-                        <div class="col-md-10 my-4"><input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked">Wörter einzeln suchen
-                           <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."></div>
-                        <div id="mark-scroll" class="fade-lang col-md-2 my-4"><button class="btn font-20" data-search="next" disabled="disabled">↓</button><button class="btn font-20" data-search="prev" disabled="disabled">↑</button><button class="btn font-20" data-search="clear" disabled="disabled">✖</button><div id="results-div"></div>
-                        </div>
-                     </div>
-                     <div class="title-page py-4" id="#top_page">
-                        
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_1"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=JHRMUIJNMOHGNJZPUZVGNPOM&amp;fileType=view">-----[1]-----</span></div>
-                        
-                        
-                        <h5 id="titlePart__1" class="yes-index text-center py-2">den 17. Aprilis. 56. Num. 17 Samsta 31.</h5>
-                        
-                        <h4 id="titlePart__4" class="yes-index text-center py-2">
-                           <br class="linebreak">Wienerisches
-                           <br class="linebreak">DIARIUM
-                           </h4>
-                        
-                        <p id="titlePart__5" class="yes-index italic text-center py-2">
-                           <br class="linebreak">Gedruckt in der Kaiserl. Königl. privilegirten Zeitungsbuch
-                           <span class="linebreak">=</span><br class="linebreak">druckerey im neuen Michaeler=haus mit von Ghelischen Schriften.
-                           </p>
-                        
-                        
-                        </div>
-                     <div class="grid margin-end">
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__3" class="yes-index text-center">
-                              <br class="linebreak">Aus Spanien.
-                              <br class="linebreak">Madrid 8. Mart.</h5>
-                           <p id="p__14" class="yes-index">
-                              <br class="linebreak">Eine Maj. der König haben das Gou<span class="linebreak">=</span><br class="linebreak">vernement des Schlosses St. Christo<span class="linebreak">=</span><br class="linebreak">Se) phel zu Badajoz / dem Don Antonio
-                              <br class="linebreak">de la Riva Agnero, Obrist wachtmeister des
-                              <br class="linebreak">Regiments von Estremadura conferiret. Am
-                              <br class="linebreak">Sonntag ist alhier der Marquis von Cla<span class="linebreak">=</span><br class="linebreak">ramonte, Vicomte v Mendinueta, Rit<span class="linebreak">=</span><br class="linebreak">ter vom Groß=kreutz des Maltheser=ordens,
-                              <br class="linebreak">vor diesem Bottschafter dieses Ordens am
-                              <br class="linebreak">hiesigen Königl. Hof honoraire Generalleu<span class="linebreak">=</span><br class="linebreak">tenant deren Königl. Armeen rc. in einem
-                              <br class="linebreak">Alter von 69. Jahren mit Tod abgegangen.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Venedig 13. Martii.</h5>
-                           <p id="p__15" class="yes-index">
-                              <br class="linebreak">Durch unseren alhier angelandeten Schif<span class="linebreak">=</span><br class="linebreak">capitan Adorno, vernimmet man, daß
-                              <br class="linebreak">den 13. vorigen Monats in der Nacht ein
-                              <br class="linebreak">starkes Erd=beben auf der Jnsul Corfu
-                              <br class="linebreak">verspühret worden, welches etliche Minu<span class="linebreak">=</span><br class="linebreak">ten gedauret, doch aber keinen besonderen
-                              <br class="linebreak">Schaden verursachet; es ist auch auf unse<span class="linebreak">=</span><br class="linebreak">ren festen Land, sonderlich in der Stadt
-                              <br class="linebreak">Feltre, und dasiger Gegend, und den 25.
-                              <br class="linebreak">vörigen Monats zu Bassano ein dergleichen
-                              <br class="linebreak">starker Erdstoß erfolget, daß sich die Jnn<span class="linebreak">=</span><br class="linebreak">wohner mehresten Theils auf das Feld ge<span class="linebreak">=</span><br class="linebreak">flüchter.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Neapel 16. Martii.</h5>
-                           <p id="p__7" class="yes-index">
-                              <br class="linebreak">Unsere 6. bewafnete Bebequen seynd
-                              <br class="linebreak">von hier unter Segel gegangen, wider die
-                              <br class="linebreak">barbarische Ste=räuber zu kreutzen. Unter
-                              <br class="linebreak">anderen vielen seltsamen alten Sachen, wel<span class="linebreak">=</span><br class="linebreak">che mehrmalen zu Excolano gefunden wor</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__9" class="yes-index"><span class="linebreak">=</span><br class="linebreak">den, befindet sich auch eine silberne Son<span class="linebreak">=</span><br class="linebreak">nenuhr von unvergleichlicher arbeit. Ver<span class="linebreak">=</span><br class="linebreak">schiedene dieser Tagen alhier angekommene
-                              <br class="linebreak">Fahrzeuge berichten, daß auch zu Maltha
-                              <br class="linebreak">2. Erdbeben verspühret worden, welche je<span class="linebreak">=</span><br class="linebreak">doch keinen Schaden verursachet.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Rom 20. Martii.</h5>
-                           <p id="p__13" class="yes-index">
-                              <br class="linebreak">Se. Päbstl. Heil. haben von Trient die
-                              <br class="linebreak">Nachricht erhalten, daß der Dommherr Al<span class="linebreak">=</span><br class="linebreak">berti durch die mehrere Stimmen zum neu<span class="linebreak">=</span><br class="linebreak">en Coadjutor des dasigen Bistums erwäh<span class="linebreak">=</span><br class="linebreak">let worden. Nachdeme das Bistum von
-                              <br class="linebreak">Belluno in dem Venetianischen Staat durch
-                              <br class="linebreak">den Todes=fall des Monsig. Giacomo Costa
-                              <br class="linebreak">in Erledigung gekommen, so ist selbes dem
-                              <br class="linebreak">dermaligen Bischof von Capo d'Jstria Mon<span class="linebreak">=</span><br class="linebreak">sig. Giovanni Baptist Sandi von Sr. Päbst<span class="linebreak">=</span><br class="linebreak">lichen Heiligkeit ertheilet worden.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Venedig 20. Martii.</h5>
-                           <p id="p__7" class="yes-index">
-                              <br class="linebreak">Man hat Nachricht, daß den 2 dieses
-                              <br class="linebreak">auch in der Gegend des Lago di Garda
-                              <br class="linebreak">2. Erd=beben mit besonderen Umständen von
-                              <br class="linebreak">denen man aber nichts gewisses erfahren,
-                              <br class="linebreak">verspühret worden.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Genua 20. Martii.</h5>
-                           <p id="p__12" class="yes-index">
-                              <br class="linebreak">Montag kame ein hier ländisches Fahrzeug
-                              <br class="linebreak">mit verschiedenen Waaren von Porto Ec<span class="linebreak">=</span><br class="linebreak">cola hier an, dessen Patron berichtet, daß
-                              <br class="linebreak">den 10. dieses 6. Neapolitanische Sciabec<span class="linebreak">=</span><br class="linebreak">quen zu Longone eingeloffen, welche wider
-                              <br class="linebreak">die Seeeräuber herum zu kreutzen Befehl ha<span class="linebreak">=</span><br class="linebreak">ben. Vorgestern kame eine Maonische Tax<span class="linebreak">=</span><br class="linebreak">tana von Tunis durch welche mann ver<span class="linebreak">=</span><br class="linebreak">nommen, daß in dasigen Hafen keine Raub<span class="linebreak">=</span><br class="linebreak">schif ausgerüstet, wol aber ein Lager für</p>
-                        </div>
-                        
-                        <div id="ab__4" class="grid-item grid-item--width2 text-end"><span id="ab__4" class="yes-index catch-word">
-                              <br class="linebreak">die
-                              </span></div>
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_2"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=RJETHRPMTJOORRDUVRIAXQFD&amp;fileType=view">-----[2]-----</span></div>
-                        
-                        <div class="grid-item">
-                           <p id="p__13" class="yes-index">
-                              <br class="linebreak">die in dasiger Gegend befindliche Truppen
-                              <br class="linebreak">aufgeschlagen, und befestiget würde, inde<span class="linebreak">=</span><br class="linebreak">me die Nachricht alda eingeloffen, daß die
-                              <br class="linebreak">Algierer in Begrief stünden mit vieler Mann<span class="linebreak">=</span><br class="linebreak">schaft alda anzurucken, und den alten Bey
-                              <br class="linebreak">wiederum einzusetzen, welcher seine Zuflucht
-                              <br class="linebreak">nach Algier genommen, nachd me er von
-                              <br class="linebreak">dem jetzigen Bey verjaget worden.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__4" class="yes-index text-center">
-                              <br class="linebreak">Der Berg Vesuvius hat dieser Tagen mehr
-                              <br class="linebreak">als jemalen Aschen und Feuer ausgeworfen.
-                              <br class="linebreak">Rom 27. Mart.</h5>
-                           <p id="p__9" class="yes-index">
-                              <br class="linebreak">Montag kame der Herzog von Lanti aus
-                              <br class="linebreak">Florenz hier an, von wannen er seine Ruck<span class="linebreak">=</span><br class="linebreak">reis nach Neapel fortsetzen wird. Von Nea<span class="linebreak">=</span><br class="linebreak">pel ist die Nachricht eingeloffen, daß der
-                              <br class="linebreak">Bischof von Mileto Monsig. Filomarino,
-                              <br class="linebreak">und der Bischof von Calvi Monsig. Fregia<span class="linebreak">=</span><br class="linebreak">ni beyde mit Tod abgegangen.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__3" class="yes-index text-center">
-                              <br class="linebreak">Aus Groß=Brittannien.
-                              <br class="linebreak">Londen 26. Martii.</h5>
-                           <p id="p__30" class="yes-index">
-                              <br class="linebreak">Es haben Jhro Großbrittannische Maje<span class="linebreak">=</span><br class="linebreak">stät, in einem Staatsraht den Schluß gefas<span class="linebreak">=</span><br class="linebreak">set, daß mann den Maroccanischen Abge<span class="linebreak">=</span><br class="linebreak">sandten, der zu Plymouth angelanget, mit
-                              <br class="linebreak">seiner Suite und Bagage aus Land bringen
-                              <br class="linebreak">soll. Man hat diesen Minister mit aller sei<span class="linebreak">=</span><br class="linebreak">nem Character anhängigen Würde empfan<span class="linebreak">=</span><br class="linebreak">gen, und wird derselbe in kurzem in hiesiger
-                              <br class="linebreak">Stadt anlangen. Man versichert, dieser
-                              <br class="linebreak">Minister seye deswegen nach England geschi<span class="linebreak">=</span><br class="linebreak">cket worden, damit er seinen Herrn, den Kai<span class="linebreak">=</span><br class="linebreak">ser von Marocco, wegen der Unbilligkeit,
-                              <br class="linebreak">entschuldigen möge, die sein Sohn an etli<span class="linebreak">=</span><br class="linebreak">chen Engländern hätte lassen ausüben, die
-                              <br class="linebreak">sich zu Fetz und Tetuan aufgehalten. Es hat
-                              <br class="linebreak">dieser Maroccanische Minister auch Ordre,
-                              <br class="linebreak">den Frieden und die Freundschaft mit En<span class="linebreak">=</span><br class="linebreak">gland zu erneuern. Der Lord Digby, Par<span class="linebreak">=</span><br class="linebreak">laments=glird, wegen der Stadt Wells, hat
-                              <br class="linebreak">zum Dienst des Königs, ein completes Re<span class="linebreak">=</span><br class="linebreak">giment angeworben, dieses bestehet aus lau<span class="linebreak">=</span><br class="linebreak">ter Freywilligen. Der Lord Rommey hat
-                              <br class="linebreak">gleichfalls 150. Mann angeworben, und Herr
-                              <br class="linebreak">Johann Friederich Baronet, hat 60. Mann
-                              <br class="linebreak">zur Reuterey geliefert. Nachdem auch das
-                              <br class="linebreak">Regiment des Obristen Campel, ist vollzählig
-                              <br class="linebreak">worden, so hat er seine Reise nach Saltsbu<span class="linebreak">=</span><br class="linebreak">ry angetretten, wo sich dieses Regiment be</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__16" class="yes-index"><span class="linebreak">=</span><br class="linebreak">findet. Der Capitan Vernon, so das Kriegs<span class="linebreak">=</span><br class="linebreak">schief, la Cyme, commandiret, hat die bey<span class="linebreak">=</span><br class="linebreak">de Französisch Schiff,e Gabriel und l'Hiran<span class="linebreak">=</span><br class="linebreak">delle hinweggenommen, und im Haven zu
-                              <br class="linebreak">Plymouth aufgebracht, das ebste kommt von
-                              <br class="linebreak">Nantes und hat nach Rochefort segeln wollen,
-                              <br class="linebreak">und das andere kommt von Bourdeaux, das
-                              <br class="linebreak">Kriegs=schief l'Auguste, unter Commando
-                              <br class="linebreak">des Capitan Willes, ist zu Spithead aus Ca<span class="linebreak">=</span><br class="linebreak">dix angelanget, und hat ansehnliche Sum<span class="linebreak">=</span><br class="linebreak">men an baarem Geld, in Piastres bestehend,
-                              <br class="linebreak">auf Rechnung für unsere Kaufleute mitge<span class="linebreak">=</span><br class="linebreak">bracht.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__7" class="yes-index text-center">
-                              <br class="linebreak">Addresse, welche die zur Beför=<span class="linebreak">=</span><br class="linebreak">derung des Acker=baues und der
-                              <br class="linebreak">Fabricken errichtete Gesellschaft
-                              <br class="linebreak">zu Breconshire dem König von
-                              <br class="linebreak">England überreicht.
-                              <br class="linebreak">Gnädigster Monarch!</h5>
-                           <p id="p__32" class="yes-index">
-                              <br class="linebreak">Wir, als unterthänige und getreue Un<span class="linebreak">=</span><br class="linebreak">terthanen Eur. Majestät, die wir wegen
-                              <br class="linebreak">der Vätterlichen Gnfalt, welche Diesel<span class="linebreak">=</span><br class="linebreak">ben ohne Aufhörent das Heyl Dero Kö<span class="linebreak">=</span><br class="linebreak">nigreiche bezeigen, mit der grösten Erkännt<span class="linebreak">=</span><br class="linebreak">lichkeit durchdrungen seynd, wir bitten ganz
-                              <br class="linebreak">gehorsamst um Erlaubniß, Eur. Majestät
-                              <br class="linebreak">vorzustellen, wie sehr uns die Klugheit ge<span class="linebreak">=</span><br class="linebreak">rühret hat, welche Sie in denen mutigen
-                              <br class="linebreak">Maaßregeln gezeiget, die sie zur Behaup<span class="linebreak">=</span><br class="linebreak">tung Dero billigen und gegründeten Gericht<span class="linebreak">=</span><br class="linebreak">samen in America nehmen, so wie in denen
-                              <br class="linebreak">verschiedenen Tractaten, so Dieselben nach
-                              <br class="linebreak">und nach geschlossen, und auch in denen
-                              <br class="linebreak">Merkmalen der Menschen=liebe und Huld,
-                              <br class="linebreak">welche die unglücksteligen Einwohner von
-                              <br class="linebreak">Lisabon erfahren. Sachen, welche, wann
-                              <br class="linebreak">man sie zu denen übrigen grossen Eigenschaft
-                              <br class="linebreak">ten füget, die den Character Eur. Maje<span class="linebreak">=</span><br class="linebreak">stät bilden, nicht wenig zur Vermehrung
-                              <br class="linebreak">des Ruhmes Jhro Regierung beytragen wer<span class="linebreak">=</span><br class="linebreak">den, und zum Anwuchs der Neigung für
-                              <br class="linebreak">Dero Person und regiment in dem Herzen
-                              <br class="linebreak">eines jeden Jhrer Unterthanen, so, wie zur
-                              <br class="linebreak">Unterdrückung des Ubermutes, und der un<span class="linebreak">=</span><br class="linebreak">gerechten Eingriffe einer herrch=süchtigen
-                              <br class="linebreak">Macht, welche neidisch auf Dero Grösse
-                              <br class="linebreak">und Wolfart ist. Da wir in gegenwärti<span class="linebreak">=</span><br class="linebreak">gen critischen Umständen mit einem Einfall
-                              <br class="linebreak">bedrohet werden, und da es eine Pflicht,</p>
-                        </div>
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_3"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=QUWIECBGOQZFOGGGLFJJTTUJ&amp;fileType=view">-----[3]-----</span></div>
-                        
-                        <div class="grid-item">
-                           <p id="p__40" class="yes-index">
-                              <br class="linebreak">deren getreuen Untertanen Eur. Majestät
-                              <br class="linebreak">ist, für Dero Vertheitigung zu wachen,
-                              <br class="linebreak">so, wie für die Erhaltung der Erb=folge in
-                              <br class="linebreak">Dero Durchleuchtigsten Familie, so hoffen
-                              <br class="linebreak">wir, durch unsre Handlungen darzuthun,
-                              <br class="linebreak">wie dankbar wir für die Ansehnliche Vor<span class="linebreak">=</span><br class="linebreak">theile seynd, welche uns die Weisheit und
-                              <br class="linebreak">Billigkeit Dero Regierung verschaffet, und
-                              <br class="linebreak">wofür wir uns erbieten, eine vollständige
-                              <br class="linebreak">Compagnie leichte Reuterey zu werben, die
-                              <br class="linebreak">jederzeit bereit stehen soll, auf unsre Kosten
-                              <br class="linebreak">allenthalben hin zu marschiren, wo es Eur.
-                              <br class="linebreak">Majestät für gut befinden, unter dem Com<span class="linebreak">=</span><br class="linebreak">mando erfahrner Officiers, wie Dieselbe
-                              <br class="linebreak">wählen werden; Und im Fall, gnädigster
-                              <br class="linebreak">König dieser Beweis unserer aufrichtigen
-                              <br class="linebreak">Zuneigung für Eur. Majestät, und Dero
-                              <br class="linebreak">Durchleuchtigsten Familie nicht Dero Bey<span class="linebreak">=</span><br class="linebreak">fall erhalten sollte, so seynd wir bereit,
-                              <br class="linebreak">unser Leben und Vermögen auf alle Art auf<span class="linebreak">=</span><br class="linebreak">zuopfern, wie es Eur. Majestät uns nur
-                              <br class="linebreak">befehlen werden. Da das Heil und Wol<span class="linebreak">=</span><br class="linebreak">ergehen dieser Nation hauptsächlich auf die
-                              <br class="linebreak">Dauer des glückseeligen Standes gegründet
-                              <br class="linebreak">ist, in welchem wir uns durch den Einfluß
-                              <br class="linebreak">der Weisheit und Gerechtigkeit Eur. Maje<span class="linebreak">=</span><br class="linebreak">stät würklich befinden, so bitten wir den
-                              <br class="linebreak">grossen und höchsten Geber alles Guten, daß
-                              <br class="linebreak">Er Dero Königl. Person erhalte, daß Er
-                              <br class="linebreak">alle Maaß regeli, zu welchen Sie Dero Ey<span class="linebreak">=</span><br class="linebreak">fer für das gemeine Wol verbindet, gelin<span class="linebreak">=</span><br class="linebreak">gen lasse, und sie mit Ehre kröne, so, daß
-                              <br class="linebreak">die gegenwärtige Crisis, als eine dererjeni<span class="linebreak">=</span><br class="linebreak">gen angesehen werden möge, welche die Ge<span class="linebreak">=</span><br class="linebreak">schichte Großbrittannens am besten ver<span class="linebreak">=</span><br class="linebreak">herrlichen kann.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">London 28. Mart.</h5>
-                           <p id="p__13" class="yes-index">
-                              <br class="linebreak">Der König hat erkläret: Daß er gegen
-                              <br class="linebreak">die Mitte des künftigen Monats den Pal<span class="linebreak">=</span><br class="linebreak">last St. James verlassen, und den Pallast
-                              <br class="linebreak">von Kensington beziehen wolle. Von Lisa<span class="linebreak">=</span><br class="linebreak">von vernimt man: Daß auf die Vorstellun<span class="linebreak">=</span><br class="linebreak">gen unsers Ministers der Engländischen Na<span class="linebreak">=</span><br class="linebreak">tion der neue Zoll von 4. pro Cent erlassen
-                              <br class="linebreak">orden, und daß nunmehro die übrige Ge<span class="linebreak">=</span><br class="linebreak">sandte und Ministers darauf dringen, für
-                              <br class="linebreak">die Schiffe ihrer Nationen gleiches Recht
-                              <br class="linebreak">zu geniessen.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__3" class="yes-index text-center">
-                              <br class="linebreak">Aus Frankreich.
-                              <br class="linebreak">Douvres 18. Mart.</h5>
-                           <p id="p__18" class="yes-index">
-                              <br class="linebreak">Man hat auf unserm Pacquet=boot das
-                              <br class="linebreak">nach Calais gehet, einen verdächtigen Pas<span class="linebreak">=</span><br class="linebreak">sagier angehalten, und als seine Sachen
-                              <br class="linebreak">durchsuchet worden, hat man in einem Beu<span class="linebreak">=</span><br class="linebreak">tel 130. Briefe gefunden, so an verschie<span class="linebreak">=</span><br class="linebreak">dene Particuliers zu Boulogne, Dünkirchen,
-                              <br class="linebreak">Havre de Grace rc. addreßirt seynd. Diese Brie<span class="linebreak">=</span><br class="linebreak">fe hat man dem Staats=secretario überschicket,
-                              <br class="linebreak">der Passagier aber wird hier annoch bis auf an<span class="linebreak">=</span><br class="linebreak">derweite Ordre gefangen gehalten. Mit einem
-                              <br class="linebreak">Spanischen Schif, so gestern hier angelanget,
-                              <br class="linebreak">vernimmt man, daß am Mittwoch Abends
-                              <br class="linebreak">4. Fregatten, jede von 30. Canonen und 12.
-                              <br class="linebreak">Transport=schiffen mit Truppen von Havre
-                              <br class="linebreak">de Grace unter Segel gegangen wären, und
-                              <br class="linebreak">ihren Weg gegen America gerichtet hätten.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Lyon 20. Martii.</h5>
-                           <p id="p__15" class="yes-index">
-                              <br class="linebreak">Gestern langte der Marschall, Herzog von
-                              <br class="linebreak">Richelieu, in hiesiger Stadt an, und zwar
-                              <br class="linebreak">in Begleitung vieler Generalspersonen. Die<span class="linebreak">=</span><br class="linebreak">sen Morgen reiseten sie sammentlich weiter
-                              <br class="linebreak">nach der Provence ab. Jhre Durchreise hat
-                              <br class="linebreak">Anlaß zu allerhand G.spräche gegeben, wel<span class="linebreak">=</span><br class="linebreak">che grosse Unternehmungen, die der Hof be<span class="linebreak">=</span><br class="linebreak">schlossen haben soll, zum Grunde haben. Per<span class="linebreak">=</span><br class="linebreak">sonen, die mehr als andere von Staatsge<span class="linebreak">=</span><br class="linebreak">heimnussen wissen wollen, sagen offentlich:
-                              <br class="linebreak">daß die Touloner=flotte die Jnsel Minorca
-                              <br class="linebreak">und Port Mahon, die Brester hingegen die
-                              <br class="linebreak">Jnseln Jerfey und Gerasey angreiffen werde.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Toulon 22. Mart.</h5>
-                           <p id="p__18" class="yes-index">
-                              <br class="linebreak">Von denen 15000. Mann, welche Be<span class="linebreak">=</span><br class="linebreak">fehl haben sich auf die Provencer=küste von
-                              <br class="linebreak">Marseille an, bis Antibes zu begeben, tref<span class="linebreak">=</span><br class="linebreak">fen täglich einige in ihren angewiesenen
-                              <br class="linebreak">Quartieren ein, wie man dann beständig
-                              <br class="linebreak">von einer sehr grossen Einschiffung spricht.
-                              <br class="linebreak">Ubrigens, vernimmt man die Nach<span class="linebreak">=</span><br class="linebreak">richt, daß das für den König gemietete
-                              <br class="linebreak">Schif die Königin Johanna, welches Por<span class="linebreak">=</span><br class="linebreak">cellan nach Brest bringen wollen, auf dem
-                              <br class="linebreak">Cap St. Martin ungefähr 45. Meilen von
-                              <br class="linebreak">Alicante unglücklicher Weise untergegangen,
-                              <br class="linebreak">so daß das Schif und die ganze Ladung
-                              <br class="linebreak">verloren, und der Capitan Mallard St.
-                              <br class="linebreak">Clement von Bourdtaux mit 5. Personen
-                              <br class="linebreak">von seiner Mannschaft ertrunken ist.</p>
-                        </div>
-                        
-                        <div id="ab__4" class="grid-item grid-item--width2 text-end"><span id="ab__4" class="yes-index catch-word">
-                              <br class="linebreak">Pa
-                              </span></div>
-                        
-                        
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_4"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=VLJACHDEBLVEPATJMOGIOOTB&amp;fileType=view">-----[4]-----</span></div>
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__3" class="yes-index text-center">
-                              <br class="linebreak">Paris 26. Mart.</h5>
-                           <p id="p__15" class="yes-index">
-                              <br class="linebreak">Diejenige Personen, welche an denen Noht
-                              <br class="linebreak">wendigkeiten für die Reiterey arbeiten, seynd
-                              <br class="linebreak">unaufhörlich Tag und Nacht damit beschäf<span class="linebreak">=</span><br class="linebreak">tiget. Der König hat den Schluß gefasset,
-                              <br class="linebreak">in eigener Person verschiedene See=häfen an
-                              <br class="linebreak">dem grossen Welt=meer, und unter ande
-                              <br class="linebreak">ren den zu Orient in Augenschein zu neh
-                              <br class="linebreak">men, und ist die Abreise des Königs auf
-                              <br class="linebreak">den 22. künftigen Monats festgesetzet, da<span class="linebreak">=</span><br class="linebreak">hero dann auch die neue Kleidung dero Leib<span class="linebreak">=</span><br class="linebreak">wache ein Monat ehender als der Befehl
-                              <br class="linebreak">gegeben worden, fertig seyn muß.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__3" class="yes-index text-center">
-                              <br class="linebreak">Aus Niederland.
-                              <br class="linebreak">Antwerpen 2. April.</h5>
-                           <p id="p__13" class="yes-index">
-                              <br class="linebreak">Zu Dinant, einer an der Maas Südwärts
-                              <br class="linebreak">der Stadt Namur gelegenen Vestung, ist vor
-                              <br class="linebreak">einigen Tagen in dasigem Spitale eine unver<span class="linebreak">=</span><br class="linebreak">heuratete Frauens=person, Namens Maria
-                              <br class="linebreak">Nausenne, verstorben, welche ein Alter von
-                              <br class="linebreak">125. Jahren 11. Monat und 6. Tagen er<span class="linebreak">=</span><br class="linebreak">reicht hat. Als man sie etliche Wochen vor
-                              <br class="linebreak">ihrem Tode gefragt: wie sie dann vor diesem
-                              <br class="linebreak">gelebt? hat sie geantwortet: sie habe sich
-                              <br class="linebreak">jederzeit vor Ubermäßigkeit, vor allen Zorn
-                              <br class="linebreak">und vor schwere Sorgen gehüttet.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Aus Schweden.</h5>
-                           <p id="p__23" class="yes-index">
-                              <br class="linebreak">Seit der Zeit daß der König beständig
-                              <br class="linebreak">wieder in hiesiger Königl. Residenz Dero
-                              <br class="linebreak">Aufenthalt gehabt, hat derselbe geruhet,
-                              <br class="linebreak">täglich denen Deliberationen in dem Königl.
-                              <br class="linebreak">Seilat beyzuwohnen. Die Geschäfte deren
-                              <br class="linebreak">Reichsständen werden in dem secreten Aus<span class="linebreak">=</span><br class="linebreak">schusse denen übrigen Deputationen und in
-                              <br class="linebreak">der Commißion derselben täglich fortgesetzet.
-                              <br class="linebreak">Diejenigen Schriften welche bey dem Ein<span class="linebreak">=</span><br class="linebreak">gang dieses Reichstages wegen der Bewerk<span class="linebreak">=</span><br class="linebreak">stelligung deren Fundamental=gesätzen dieses
-                              <br class="linebreak">Reichs an hohen Orten seynd aufgesetzet
-                              <br class="linebreak">worden, sollen dem sichern Verlaut nach
-                              <br class="linebreak">nunmehro zur Druckerey überliefert worden
-                              <br class="linebreak">seyn; um auf Befehl deren Reichs=ständen
-                              <br class="linebreak">abgedruckt zu werden. Man wird daher ehe<span class="linebreak">=</span><br class="linebreak">stens davon ein mehrers vermelden können.
-                              <br class="linebreak">Von Helsingborg ist berichtet worden, daß
-                              <br class="linebreak">die beyden Kriegsschiffe Upland und Sü<span class="linebreak">=</span><br class="linebreak">dermannland, welche in dem vorigen Jahr
-                              <br class="linebreak">an denen Africanischen Küsten gekreutzet ha</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__6" class="yes-index"><span class="linebreak">=</span><br class="linebreak">ben, am 10. hujus den Sund paßiret, und
-                              <br class="linebreak">darauf die Ruckreise weiter nach Carls<span class="linebreak">=</span><br class="linebreak">crona fortgesetzet hätten.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">Wienden 17. April 1756.</h5>
-                           <p id="p__12" class="yes-index">
-                              <br class="linebreak">MJttwoch den 14. April Vormittags<span class="linebreak">=</span><br class="linebreak">d.
-                              <br class="linebreak">haben Se. Majestät der Kaiser dem
-                              <br class="linebreak">Passion=amt, und Vesper in der Hof=J
-                              <br class="linebreak">Majestät die Kaiserin aber, mit Jhren Kö<span class="linebreak">=</span><br class="linebreak">nigl. Hoheiten denen Durchleuchtigsten älte<span class="linebreak">=</span><br class="linebreak">ren Jungen Herrschaften dem ordinari GOt<span class="linebreak">=</span><br class="linebreak">tes=dienst in der Kammer=Nachmittags abet
-                              <br class="linebreak">der ersten Pumpermetten in der Hofkapel<span class="linebreak">=</span><br class="linebreak">len offentlich beygewohnet.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__29" class="yes-index">
-                              <br class="linebreak">Am Grünen=donnerstag, den 15. April,
-                              <br class="linebreak">Fruhe um 8. Uhr, haben Beede Kaiserl.
-                              <br class="linebreak">Majestäten, mit Jhren Königlichen Ho<span class="linebreak">=</span><br class="linebreak">heiten denen Durchleuchtigsten Erz=herzogen
-                              <br class="linebreak">Joseph und Carl, wie auch Jhren Königl.
-                              <br class="linebreak">Hoheiten denen durchleuchtigsten Erzherzo<span class="linebreak">=</span><br class="linebreak">ginen Maria Anna, und Maria Christina
-                              <br class="linebreak">über den bedeckten langen Gang zu denen
-                              <br class="linebreak">WW. EE. PP. Augustinern Sich begeben, und
-                              <br class="linebreak">alda der Heil. Commuionmeß (worun<span class="linebreak">=</span><br class="linebreak">ter Allerhöchst=dieselbe, und Jhre Königl.
-                              <br class="linebreak">Hoheiten, dann die Hofdames, die Her<span class="linebreak">=</span><br class="linebreak">ren geheime Rähte und Kammerer, ihrem
-                              <br class="linebreak">Rang nach, letztlichen die Kaiserl. Königl.
-                              <br class="linebreak">Truchsessen, und Edel=knaben communiciret,
-                              <br class="linebreak">dann der Predig=hohen Amt, und allen
-                              <br class="linebreak">übrigen Geistlichen Ceremonien abgewartet;
-                              <br class="linebreak">Hierauf nach Zuruck=kehrung in die Burg,
-                              <br class="linebreak">haben Se. Majestät der Kaiser 12. armen
-                              <br class="linebreak">Männern die Füsse gewaschen, welches
-                              <br class="linebreak">von Jhrer Majestät der Kaiserin an 12
-                              <br class="linebreak">armen Weibern geschehen, (von welchen
-                              <br class="linebreak">Beeden die Specification im beygehenden
-                              <br class="linebreak">Anhang zu ersehen ist; Nachmittags haben die
-                              <br class="linebreak">Allerhöchste Herrschaften der zweyten Pum<span class="linebreak">=</span><br class="linebreak">per=metten in der Hof=kapellen beygewohnet.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__14" class="yes-index">
-                              <br class="linebreak">AmChar=freytag den 16 April, Fruhe nach
-                              <br class="linebreak">8. Uhr haben Beede Kaiserl Majestäten,
-                              <br class="linebreak">mit höchstbesagten Jhren Königl. Hehel<span class="linebreak">=</span><br class="linebreak">ten über den langen Gang, zu denen WW. EE.
-                              <br class="linebreak">PP. Augustinern anwiederum Sich begeben,
-                              <br class="linebreak">und alda der Passion=predigt, wie auch dem
-                              <br class="linebreak">übrigen an diesem Tag gewöhnlichen GOt<span class="linebreak">=</span><br class="linebreak">tes=dienst, auch schließlichen gegen 12 Uhr
-                              <br class="linebreak">der Proctßion mit dem Hochwürdigsten Al<span class="linebreak">=</span><br class="linebreak">tars=sacrament zu dem Heil. Grab mit auff</p>
-                        </div>
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_5"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=KXJBSBJTEDVKJMGFIMFVZZXF&amp;fileType=view">-----[5]-----</span></div>
-                        
-                        <div class="grid-item">
-                           <p id="p__9" class="yes-index">
-                              <br class="linebreak">erbäulichster Andacht; dann Nachmittags
-                              <br class="linebreak">um halb 6. Uhr in der Hof=kapellen der
-                              <br class="linebreak">letzten Pumper=metten ab=gewartet.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__31" class="yes-index">
-                              <br class="linebreak">Ubrigens ist vergangenen Sonntags den
-                              <br class="linebreak">11ten dieses der Päpstl. Currier Franchini
-                              <br class="linebreak">von Rom hier angelangt, welcher Seiner
-                              <br class="linebreak">Hoch=fürstl. Gnaden dem allhiesigen Herrn
-                              <br class="linebreak">Erzbischoffen (Titl.) Herrn Johann Jo<span class="linebreak">=</span><br class="linebreak">seph des Heil. Röm. Reichs Fürsten, und
-                              <br class="linebreak">Grafen Trauthsen zu Falkenstein, rc. die er<span class="linebreak">=</span><br class="linebreak">freuliche Nachricht gebracht, daß Hochdie<span class="linebreak">=</span><br class="linebreak">selbe in dem von Seiner Päpstl. Heiligkeit
-                              <br class="linebreak">den 5. dieses gehaltenen Consistorio zu der
-                              <br class="linebreak">Heiligen Römischen Kirchen Cardinalen er<span class="linebreak">=</span><br class="linebreak">wählet worden seyen; wo zugleich Seine
-                              <br class="linebreak">Hoch=fürstliche Eminenz das rote Häubel
-                              <br class="linebreak">als das erste Zeichen dero hohen Würde durch
-                              <br class="linebreak">eben diesen Currier von Rom erhalten ha<span class="linebreak">=</span><br class="linebreak">ben; und zumalen erdeuteter Currier auch
-                              <br class="linebreak">eine gleiche Nachricht und rotes Häubel an
-                              <br class="linebreak">an Se. Hochfürstl. Gnaden (Titl.) Hrn.
-                              <br class="linebreak">Franz Conrad Casimir Jgnatz des Heil.
-                              <br class="linebreak">Röm. Reichs Fürsten und Bischoffen zu Con<span class="linebreak">=</span><br class="linebreak">stanz zu überbringen gehabt, als ist dersel<span class="linebreak">=</span><br class="linebreak">be gleich darauf ohne Aufenthalt von hier
-                              <br class="linebreak">nacher Constanz weiters abgereiset.
-                              <br class="linebreak">Nächst=kommenden Donnerstag als den</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__16" class="yes-index">
-                              <br class="linebreak">22. gegenwärtigen Monats April wird die
-                              <br class="linebreak">Ziehung der Kaiserl. Königl. privilegirten
-                              <br class="linebreak">Lotterie in der Königl. Hauptstadt Prag ge<span class="linebreak">=</span><br class="linebreak">wöhnlicher massen vorgenommen, und denen
-                              <br class="linebreak">angestellten Collectoren hierauf nachrichtlich
-                              <br class="linebreak">mitgegeben, daß an dieselbe wegen Bey<span class="linebreak">=</span><br class="linebreak">bringung der gesammten Schlüsse das erfor<span class="linebreak">=</span><br class="linebreak">derliche erlassen werden wird.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div id="ab__11" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_1" data-num="N001">Der Wol=ehrw. in GOtt Gelstl. Hr. Ant. Comelli,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_2" data-num="N002">Peitl. Priester, im Fürst=Schwarzembergisch. H.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_3" data-num="N003">am neuen Markt, alt 64. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_4" data-num="N004">Franz Lenz, Hausmeist., im Bild=hauerisch. H. in
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_5" data-num="N005">der Nagler=gas., alt 38. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_6" data-num="N006">Dem Adem Riemer, Lack., s. K. Apol., im Dople
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_7" data-num="N007">ckll. H. in der Klugerstr., alt 6. v. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_8" data-num="N008">Drm Lorenz Greillmayr, Maurern, s. K. Sabina,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756687_tl_9" data-num="N009">bey der Holderstand. auf der Seilerst., alt 4. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div id="ab__3" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756695_tl_1" data-num="N001">dem schwarz. Eleph. bey Maria=hülf, alt 7. v. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__4" class="yes-index">
-                              <br class="linebreak">Dem Hrn. Joh. Sebast. Fantini, s. K. Elisab., bey</p>
-                        </div>
-                        
-                        <div id="ab__14" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_1" data-num="N001">Dem Joh. Mart. Fllesser, Burgerl. Handels=m.,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_2" data-num="N002">s. K. Justina, in s. H bey St. Ulrich, alt 1. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_3" data-num="N003">Dem Franz Bauer, Schuhmach., s. K. Mag
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_4" data-num="N004">dal., im Lucatellis. H. zu Gumpendorf, alt 1. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_5" data-num="N005">Dem Jos. Mayr, Lack., s. K. Jos., bey der gold.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_6" data-num="N006">Hand am Spitalberg, alt 2. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_7" data-num="N007">Dem acob Schneller, Portiern, s. K. Anna, im
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_8" data-num="N008">Spiegel=macherls. H. am Spitalberg, alt 6. v. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_9" data-num="N009">Peter Eder, Maurer, deym grün. Baum zu Mätz
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756693_tl_10" data-num="N010">leinstorf, alt 72. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div id="ab__8" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_1" data-num="N001">Die Ehrw. Lay=schwest. Anna Elisab. Mailbäckin,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_2" data-num="N002">im Kloster bey St. Nicola, alt 55. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_3" data-num="N003">Franz Has, Academie=mahl., im Gretisch. H. am
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_4" data-num="N004">Salz=gr., alt 26. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_5" data-num="N005">Andre Goldknopf, Lack., im Winkleris. H. in bey
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756689_tl_6" data-num="N006">Römerstr., alt 58. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div id="ab__21" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_1" data-num="N001">Dem Pet. la Francone, Barrometer=mach., s. K.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_2" data-num="N002">Cathar., bey St. Anna in der Josephst., 8. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_3" data-num="N003">Veit Schrimpf, Hof=befr. Schuh=mach., bey denen
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_4" data-num="N004">3. Hüt. bey St. Ulrich, alt 59. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_5" data-num="N005">Sebast. Balleitner, Tischl., im Ruelandis. H. auf
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_6" data-num="N006">der Landstr., alt 58. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_7" data-num="N007">Tohias Thalhammer, Schnallen=mach., bey dem
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_8" data-num="N008">gold. Kreutz bey Maria=hülf, alt 48. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_9" data-num="N009">Der Anna Aprin, Wittwe, ihr K. Fried., bey dem
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_10" data-num="N010">gold. Anker am Neubau, alt 1. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_11" data-num="N011">Georg Betz, Schneid., beym schwarz. Thor in der
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_12" data-num="N012">Rossau, alt 58. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_13" data-num="N013">Jacob Blumenstorfer, Zimmerges., bey der H. Drey
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_14" data-num="N014">faltigk. oberm Neustift, alt 30. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_15" data-num="N015">Regina Edlin, in St. Joh. Nep. Spit., alt 44. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_16" data-num="N016">Paul Gutjahr, Zimmer=ges., beym bl. Pfauen im
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_17" data-num="N017">Liechienth., alt 26. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_18" data-num="N018">Dem Math. Wölfel, Tagw., s. K. Joh., bey dem
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756694_tl_19" data-num="N019">gold. Kreutz im Liechtenth., alt 3. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div id="ab__11" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_1" data-num="N001">Der Hoch=edel=geb. Jn. Ant. v. Zeberg, AA. LL.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_2" data-num="N002">Phil. &amp; Med. Doct. K. K. Raht, und Leibmedl
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_3" data-num="N003">cus, im Andleris. H. in der oderen Breunerstr.,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_4" data-num="N004">alt 77. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_5" data-num="N005">Dem Paul Schwaiger, Burgerl. Schneid., s. W.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_6" data-num="N006">Elisab., im Zinzendorfis. H. in der Herren=gas.,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_7" data-num="N007">alt 36. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_8" data-num="N008">Joh. Raisberger, Lack., im Finkis. H. untern Tuch
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756686_tl_9" data-num="N009">laub., alt 26. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div id="ab__6" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_1" data-num="N001">Hr. Joh. Jacob Köck, K. K. L. M. Gerichtscanzel
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_2" data-num="N002">list, beym rot. H. an der Wien, alt 45. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_3" data-num="N003">Cathar. hötlerin, led. Standes, bey denen 3. Ku
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_5_tr_1705756692_tl_4" data-num="N004">geln am Spitalberg, alt 26. J.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        <div id="ab__4" class="grid-item grid-item--width2 text-end"><span id="ab__4" class="yes-index catch-word">
-                              <br class="linebreak">An
-                              </span></div>
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_6"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=HMYIERWLJFAHZSAKGAMXWHLT&amp;fileType=view">-----[6]-----</span></div>
-                        
-                        <div id="ab__21" class="grid-item">
-                           <ul>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_1" data-num="N001">Andre Vaiterer, Burgerl. Schuh=mach., bey dem
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_2" data-num="N002">gold. Straus in der Josephst., alt 46. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_3" data-num="N003">Dem Joh. Forster, Bild=hauern, s. W. Maria, bey
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_4" data-num="N004">dem schwarz. Bock am Spitalberg, alt 83. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_5" data-num="N005">Dem Paul Ziegelhuber, Adjunct. im Kupfer=amt,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_6" data-num="N006">s. K. Bard., beym weis. Räs. auf der Landstr.,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_7" data-num="N007">alt 2. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_8" data-num="N008">Dem Wenzel Spitzinger, Bruderschaft=ansag.,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_9" data-num="N009">K. Jacob, bey St Anna in der Josephst., 4. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_10" data-num="N010">Dem Jacob Steininger, Vor=reit., s. K. Melch.,
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_11" data-num="N011">im Kreutzeris. H. am Magdal.=gr., alt 2. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_12" data-num="N012">Dem Math. Zimmerl, Tagw, s. K. Barb., im
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_13" data-num="N013">Rabis. H. am Hun dsth., alt 6. J.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_14" data-num="N014">Jacob Grätzl, alt 29. J., und Mich. Palierer, alt
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_15" data-num="N015">28. J., beyde bey denen FF. Mis.
-                                 </li>
-                              <li class="yes-index" data-zone="#facs_6_tr_1705755974_tl_16" data-num="N016">Summa 13. Person. darunter 4. Kinder.
-                                 </li>
-                           </ul>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">DICT.</h5>
-                           <p id="p__6" class="yes-index">
-                              <br class="linebreak">Von der N. Oe. Regierung wegen wird
-                              <br class="linebreak">mit gegenwärtigoffenen Edict jedermänni<span class="linebreak">=</span><br class="linebreak">glich sowol an= als abwesenden, deme daran
-                              <br class="linebreak">gelegen, kund und zu wissen gemacht.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__33" class="yes-index">
-                              <br class="linebreak">Es seye der Johann Gottlieb Roth gewe<span class="linebreak">=</span><br class="linebreak">ster Hofacademiemahler ohne hinterlassen<span class="linebreak">=</span><br class="linebreak">letzt=willigen Geschäft mit Tod abgegangen,
-                              <br class="linebreak">und habe sich hinnach um desselben ab inte-
-                              <br class="linebreak">stito ruckgebliebene Verlassenschaft annoch
-                              <br class="linebreak">niemanden angemeldet. Wann nun Regie<span class="linebreak">=</span><br class="linebreak">rung, um die etwo ein oder anderem bey die<span class="linebreak">=</span><br class="linebreak">ser Verlassenschaft von Rechts wegen gebüh
-                              <br class="linebreak">rend=nähere Erb=sprüch in Erfahrung zu bein
-                              <br class="linebreak">gen, anbey das etwo vorhandene Æs alic-
-                              <br class="linebreak">num ausfindig zu machen, folgsam zu Abhan<span class="linebreak">=</span><br class="linebreak">dlung solcher Verlassenschaft sicher fürsch eit<span class="linebreak">=</span><br class="linebreak">ten zu können, eine Nohtdurft zu seyn befun<span class="linebreak">=</span><br class="linebreak">den hat, alle hieran Theil=nehmende swol
-                              <br class="linebreak">in= als ausser Land befindliche Personen durch
-                              <br class="linebreak">dieses offentliche Edict zu Anmeld=Legitimir-
-                              <br class="linebreak">und Liquidirung ihrer an obbemeldte Ver<span class="linebreak">=</span><br class="linebreak">lassenschaft ex quacunque causa, velti
-                              <br class="linebreak">tulo habender Sprüch, und Vorderungen
-                              <br class="linebreak">gerichtlich vorzuladen, und einzuberuffen: zu
-                              <br class="linebreak">welchemEnde dann denenselben der siehen= und
-                              <br class="linebreak">zwanzigste Tag des Monats Aprilis 1756.
-                              <br class="linebreak">Nachmittag um 3. Uhr zur gewöhnlichen
-                              <br class="linebreak">Convocations= und Anmeldungs Tagsatzung
-                              <br class="linebreak">zu all=endlicher Frist anberaumet werden.
-                              <br class="linebreak">Solchemnach werden all= und jede, welche
-                              <br class="linebreak">bey gedacht=Rothischer Verlassenschaft im
-                              <br class="linebreak">rechtmäßiger Erbs= oder Schuld=forderung
-                              <br class="linebreak">willen einige Sprüch haben, oder zu haben
-                              <br class="linebreak">vermeinen, an ob bestimmten Tag, und Stund</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__21" class="yes-index">
-                              <br class="linebreak">vor Regierung in der daselbst zu solchen En<span class="linebreak">=</span><br class="linebreak">de offen haltenden Commissions=stuben
-                              <br class="linebreak">entweder selbst persönlich, oder durch hiezu
-                              <br class="linebreak">genugsam gevollmächtigte Gewalt=tragere
-                              <br class="linebreak">also gewiß zu erscheinen, und ihre an solche
-                              <br class="linebreak">Verlassenschaft habende Anforderungen an<span class="linebreak">=</span><br class="linebreak">zumelden, rechtlich zu legitimiren, und zu
-                              <br class="linebreak">liquidiren haben, als im widrigen die Ab<span class="linebreak">=</span><br class="linebreak">handlung gleichwolen vorgenommen, und
-                              <br class="linebreak">ohngehindert deren etwo vorhandenen Erbs<span class="linebreak">=</span><br class="linebreak">prætendenten, oder Glaubigern, so sich
-                              <br class="linebreak">mit ihren Erbs= und Schuld=forderungen in
-                              <br class="linebreak">bestimmter Zeit nicht angemeldet, in solcher
-                              <br class="linebreak">Verlassenschaft ex officio vorgekehret wer<span class="linebreak">=</span><br class="linebreak">den solle, was Rechtens ist. Wornach sich
-                              <br class="linebreak">also einjeder zu richten wissen wird. So be<span class="linebreak">=</span><br class="linebreak">schehen Wien den 1 Martii 1755.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">EDICT.</h5>
-                           <p id="p__35" class="yes-index">
-                              <br class="linebreak">Von des Kaiserl. Königl. Judicii Dele-
-                              <br class="linebreak">gati Militaris Mixti Superioris ac Anfe-
-                              <br class="linebreak">rioris Austriæ wegen, wird hiemit durch
-                              <br class="linebreak">dieses offentliche Edict jedermänniglich kund
-                              <br class="linebreak">und zu wissen gemacht: Es habe die Ma<span class="linebreak">=</span><br class="linebreak">ria Catharina Latourin weil. Johann La<span class="linebreak">=</span><br class="linebreak">torx gewestTrenckischen Hauptmanns vor<span class="linebreak">=</span><br class="linebreak">hin Herzog Hildburgshausen Jnfanteriere<span class="linebreak">=</span><br class="linebreak">giments Leutenant seel. nachgelassene Wit<span class="linebreak">=</span><br class="linebreak">tib und Erbin bey diesem Jud. Del. Mil.
-                              <br class="linebreak">mixto angezeiget, welcher gestalten ihr er<span class="linebreak">=</span><br class="linebreak">sagt=ihres Ehe=consortens als Hildburgs
-                              <br class="linebreak">hausischen Leutenants vom 1. Novembris
-                              <br class="linebreak">1741. bis ultimo Septembris 1742 ausge<span class="linebreak">=</span><br class="linebreak">fertigte Verpflegsabrechnung nebst dem Co<span class="linebreak">=</span><br class="linebreak">pulations und Todienschein in Original wer<span class="linebreak">=</span><br class="linebreak">stossen, und ungehindert all=angewendetet
-                              <br class="linebreak">Mühe nicht in Erfahrenheit gebracht wor<span class="linebreak">=</span><br class="linebreak">den wäre: auch dahero um Ausfertigung
-                              <br class="linebreak">des erforderlichen Amortificationsedicts ge<span class="linebreak">=</span><br class="linebreak">betten. Gleichwie nun auch hierein unterm
-                              <br class="linebreak">15. abhin gewilliget worden. Als werden
-                              <br class="linebreak">demnach alt= und jede, so obig= in Verstoß
-                              <br class="linebreak">gerahtene Leutenant Latourische Verpfiegs<span class="linebreak">=</span><br class="linebreak">Abrechnung nebst dem Copulations und Tod<span class="linebreak">=</span><br class="linebreak">ten=schein etwann in Handen haben, oder
-                              <br class="linebreak">aber ansonst darauf einen Rechtlichen An<span class="linebreak">=</span><br class="linebreak">spruch zu machen vermeinen, sich darmit von
-                              <br class="linebreak">heute unten gesetzten Dato an binnen eines
-                              <br class="linebreak">Jahrs sechs Wochen und drey Tägen Ter
-                              <br class="linebreak">min bey Anfangs gedachten Judicio Dele-
-                              <br class="linebreak">gati Militari mixto also gewiß anzumel<span class="linebreak">=</span><br class="linebreak">den</p>
-                        </div>
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_7"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=DNOBIYGJEUHANUZSZVTDFLBH&amp;fileType=view">-----[7]-----</span></div>
-                        
-                        <div class="grid-item">
-                           <p id="p__13" class="yes-index">
-                              <br class="linebreak">ben haben, wie im widrigen nach Ver<span class="linebreak">=</span><br class="linebreak">fliessung desselben mehr ermeldte Abrechnung
-                              <br class="linebreak">ipfo tacto caßirt, annullirt, und amorti<span class="linebreak">=</span><br class="linebreak">sirt, auch sohin das weitere der Ordnung
-                              <br class="linebreak">nach ex officio vorgekehret werden solle.
-                              <br class="linebreak">Wornach sich also jedermann zu richten, und
-                              <br class="linebreak">vor Schaden zu hütten wissen wird. Ex
-                              <br class="linebreak">Judicio Delegato Militari Mixto sup. ac
-                              <br class="linebreak">Infer. Austriæ. Wten beu 7. April. 1756.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">EDICT.</h5>
-                           <p id="p__23" class="yes-index">
-                              <br class="linebreak">Wir Burgermeister Amts=verwalter und
-                              <br class="linebreak">Raht der Stadt Wien geben denen Ossen<span class="linebreak">=</span><br class="linebreak">bachischen Erbsinteressenten hiemit zu ver<span class="linebreak">=</span><br class="linebreak">nehmen; wasmassen wir auf Anlangen de<span class="linebreak">=</span><br class="linebreak">ren Bernreitterischen Con=leuten wegen von
-                              <br class="linebreak">dem Joseph Carl Roska ihnen cedirten und
-                              <br class="linebreak">auf dem Ossenbachischen in dem Schulter<span class="linebreak">=</span><br class="linebreak">gaßsel ligend=zum kleinen Jordan benamsten
-                              <br class="linebreak">Verlassenschaft=haus habende Anforderung
-                              <br class="linebreak">pr. 333. fl. 17. kr. 2. pf. über die bereits
-                              <br class="linebreak">behobene Schätzungs=Vorwissens=verordnung
-                              <br class="linebreak">untern 24 letztabgewichenen Monats Mar<span class="linebreak">=</span><br class="linebreak">tit die weitere Verordnung (siat Schätzung
-                              <br class="linebreak">nochmalen mit Vorwissen, wofern nichts
-                              <br class="linebreak">einkommen) ertheilet haben; Wiezumalen
-                              <br class="linebreak">aber derenselben Aufenthalt in der Unwissen<span class="linebreak">=</span><br class="linebreak">heit beruhet. Als hat man denenselben die<span class="linebreak">=</span><br class="linebreak">se Stadt=rähtliche Verordnung durch dieses
-                              <br class="linebreak">offene Edict hiemit kund und zu wissen ma<span class="linebreak">=</span><br class="linebreak">chen wollen. Actum Wien den 2. April
-                              <br class="linebreak">1736.</p>
-                        </div>
-                        
-                        
-                        
-                        
-                        <div class="grid-item">
-                           <h5 id="head__2" class="yes-index text-center">
-                              <br class="linebreak">EDICT.</h5>
-                           <p id="p__20" class="yes-index">
-                              <br class="linebreak">Wir
-                              <br class="linebreak">Burgermeister Amts=verwalter und
-                              <br class="linebreak">Raht der Stadt Wien geben hiemit denen
-                              <br class="linebreak">Abwesenden (Titl.) Gräfl. Gollischen Haus<span class="linebreak">=</span><br class="linebreak">eigentumern, und insonderheit der Frauen
-                              <br class="linebreak">Mariä Theresiä Freyin von Dominique zu
-                              <br class="linebreak">vernehmen: Es habe der arrestirt=gemeiner
-                              <br class="linebreak">Stadtwien geweste Sequester Jgnaz Pas<span class="linebreak">=</span><br class="linebreak">quetta angezeiget; was gestalten auf sein
-                              <br class="linebreak">Phorsamst beschehenes Anlangen zwar eine
-                              <br class="linebreak">Tagsatzung mit Ziehung seiner sammentlichen
-                              <br class="linebreak">Credttorn auf den 12. Monats elapsi, dann
-                              <br class="linebreak">wegen Ausbleibung ein= und anderen, auf
-                              <br class="linebreak">weiteres Anlangen eine superemtorische cum
-                              <br class="linebreak">clausula actualis Contumaciæ vinculir<span class="linebreak">=</span><br class="linebreak">te Erforderung auf den 31. præfati anbe<span class="linebreak">=</span><br class="linebreak">raumt worden seye, aber auch diese den ge<span class="linebreak">=</span><br class="linebreak">wünschten Effect von darumen nicht errei</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__31" class="yes-index"><span class="linebreak">=</span><br class="linebreak">chei hätte, weilen erwehnte Tagsatzung de<span class="linebreak">=</span><br class="linebreak">nen Abwesenden (Titl.) Gräfl. Gollischen
-                              <br class="linebreak">Hauses Eigentumern eben so wenig, als de<span class="linebreak">=</span><br class="linebreak">renselben unbekannten Mandatario hätte in<span class="linebreak">=</span><br class="linebreak">timiret werden können, und dahero um ein
-                              <br class="linebreak">nochmalig=allendliche Tagsatzungs=anordnung
-                              <br class="linebreak">und zugleich Affigirung eines in derley Fäl<span class="linebreak">=</span><br class="linebreak">len gewöhnlichen Valval=edicts, und zwar
-                              <br class="linebreak">bey also gewisser Erscheinungs=auflag deren
-                              <br class="linebreak">(Titl) Gräfl. Gollischen Haus=eigentumern
-                              <br class="linebreak">und mentionirter Frauen Freyin von Domi<span class="linebreak">=</span><br class="linebreak">nique, vol per se, vel per Mandatari-
-                              <br class="linebreak">um, wie in wiedrigen dieselbe (zumalen be<span class="linebreak">=</span><br class="linebreak">reits ein und andere Creditores in dessen
-                              <br class="linebreak">Arrests=entlassung gewilliget, pro Consen-
-                              <br class="linebreak">tientibus gehalten werden sollen, anzulan<span class="linebreak">=</span><br class="linebreak">gen sich bemüßiget ersehete. Wann nun
-                              <br class="linebreak">untern 7. dieses zum Bescheid erfolget (stat
-                              <br class="linebreak">in ein und anderen aufzulegen, wie ge<span class="linebreak">=</span><br class="linebreak">betten) zu dem Ende auch von gemeiner
-                              <br class="linebreak">tadt Syndico primario und Stadt<span class="linebreak">=</span><br class="linebreak">schreiber Hrn. Joseph Ferdinand Riedl U.
-                              <br class="linebreak">J. D. und Hrn Reimund Ferdinand von
-                              <br class="linebreak">Zahlheimb, des inneren Stadt=rahts, als
-                              <br class="linebreak">in Sachen ernannten Commissarien eine Tag<span class="linebreak">=</span><br class="linebreak">satzung auf dem 2ten künftigen Monats Ju<span class="linebreak">=</span><br class="linebreak">nii Nachmittag präcise um 3. Uhr in der
-                              <br class="linebreak">aussern Rahts=stuben anberaumet worden.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__17" class="yes-index">
-                              <br class="linebreak">Als werden sie (Titl.) Gräfl. Gollische
-                              <br class="linebreak">Hauß Eigentumere, und insonderheit sie
-                              <br class="linebreak">Frau Freyin von Dominique bey ob anbe<span class="linebreak">=</span><br class="linebreak">raumten Tagsatzung entweders Persöhnlich,
-                              <br class="linebreak">oder durch einem hi zu genugsam bevollmäch<span class="linebreak">=</span><br class="linebreak">tigten Mandatarium also gewiß zu erschei<span class="linebreak">=</span><br class="linebreak">nen haben, wie in widrigen die ausblei<span class="linebreak">=</span><br class="linebreak">bende pro Consentientibus gehalten, und
-                              <br class="linebreak">nicht mehr angehöret werden sollen. So
-                              <br class="linebreak">man denenselben durch dieses offene Edict
-                              <br class="linebreak">hiemit verkünden, und zur behörigen Wis<span class="linebreak">=</span><br class="linebreak">senschaft bringen wollen Actum Wien den
-                              <br class="linebreak">10. April 1756.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__14" class="yes-index">
-                              <br class="linebreak">Es seynd alltäglich in der Leopoldstadt
-                              <br class="linebreak">die zwey sogenannte Franzenauische Häuser,
-                              <br class="linebreak">wovon das eine nebst einem kleinen Gärtl
-                              <br class="linebreak">pur auf die Zins=ertragnuß gebauet, und
-                              <br class="linebreak">rechter Hand gegen den schwarzen Bärn über
-                              <br class="linebreak">zum roten Thor genannt, das andere aber
-                              <br class="linebreak">in der Gassen ruckwärts neben denen drey
-                              <br class="linebreak">Artitschocken gegen den Weberl=wirtshaus
-                              <br class="linebreak">über ligend mit einem sauberen Garten, ei</p>
-                        </div>
-                        
-                        <div class="grid-item grid-item--width2 my-4" id="wr_page_8"><span class="anchor-pb"></span><span class="pb lightgrey" source="https://files.transkribus.eu/Get?id=OWXHCBIWXMCTZWACIYSDSFRA&amp;fileType=view">-----[8]-----</span></div>
-                        
-                        <div class="grid-item">
-                           <p id="p__16" class="yes-index"><span class="linebreak">=</span><br class="linebreak">nen Garten=haus zur ebenen Erb, dann
-                              <br class="linebreak">zweyen mit Marmor gepflasterten Sälen,
-                              <br class="linebreak">verschiedenen Zinns=zimmern, wie auch einer
-                              <br class="linebreak">grossen Stallung versehen ist, um billigen
-                              <br class="linebreak">Preiß zu verkauffen, und ist sich sowol der
-                              <br class="linebreak">Ertragnuß als anderweitigen Auskunft hal<span class="linebreak">=</span><br class="linebreak">ber in dem Zeug=gewölb auf dem hohen
-                              <br class="linebreak">Markt zur schönen Schäferin genannt, bey
-                              <br class="linebreak">dem Hrn. Lebl anzumelden.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__18" class="yes-index">
-                              <br class="linebreak">Jn der Leopoldstadt ist annoch der ge<span class="linebreak">=</span><br class="linebreak">west Schmuderische Garten mit dem alda<span class="linebreak">=</span><br class="linebreak">sigen Haupt=gebäu so in 9. meublirt= und mit
-                              <br class="linebreak">allen Zugehörungen versehenen Zimmern,
-                              <br class="linebreak">nebst einer Salaterrena, dann ein Stal<span class="linebreak">=</span><br class="linebreak">lung auf 6. Pferd, und hierzu gehörigen
-                              <br class="linebreak">Wagenschupfen bestehet, den Sommer hin<span class="linebreak">=</span><br class="linebreak">durch, oder auch Monatlich um einen bil<span class="linebreak">=</span><br class="linebreak">ligen Preiß zu verlassen; Der Augenschein
-                              <br class="linebreak">kan alda alltäglich eingenommen werden.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__18" class="yes-index">
-                              <br class="linebreak">Es seynd in der Leopoldstadt in der so<span class="linebreak">=</span><br class="linebreak">genannten Jäger=zeil zum goldenen Sattel
-                              <br class="linebreak">genannt, unterschiedliche Wägen, Chaisen,
-                              <br class="linebreak">Satteln, Sattlereffecten, und Wägenge<span class="linebreak">=</span><br class="linebreak">stell, täglich Vormittag von 9. bis 12. und
-                              <br class="linebreak">Nachmittag von 2. bis 5. Uhr alda dem
-                              <br class="linebreak">Meistbiettenden zu verkauffen, wer solche zu
-                              <br class="linebreak">kauffen Willens ist, kan sich alda anmel<span class="linebreak">=</span><br class="linebreak">den.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__25" class="yes-index">
-                              <br class="linebreak">Auf nächst=künftigen Mittwoch als den
-                              <br class="linebreak">21 April werden auf den alten Bauren<span class="linebreak">=</span><br class="linebreak">Markt in dem Seiterischen Haus im ersten
-                              <br class="linebreak">Stock unterschiedliche Verlassenschaftseffec<span class="linebreak">=</span><br class="linebreak">ten, als Geschmuck, Galanterie, Wäderl,
-                              <br class="linebreak">Jndianische, und andere schöne Spannische
-                              <br class="linebreak">Wänd, dann dergleichen Zupf= und andere
-                              <br class="linebreak">Trücherl, Kästen, Porcellan, Spiegl, Tisch,
-                              <br class="linebreak">Niederländer, und Damasdene Spallier,
-                              <br class="linebreak">Sessel, Frauen=kleider, Spitz und Wäsch,
-                              <br class="linebreak">wie auch ein zweysitziger rot=blüschener
-                              <br class="linebreak">Wagen, und Piroutsch, dann mehr andere
-                              <br class="linebreak">Fahrnussen Vormittag von 9. bis 12. und
-                              <br class="linebreak">Nachmittag von 3. bis 6 Uhr dem Meist<span class="linebreak">=</span><br class="linebreak">biettenden verkauft werden.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__16" class="yes-index">
-                              <br class="linebreak">Es seynd zu Meidling nächst Schönbrunn
-                              <br class="linebreak">7. Zimmer samt Kuchel und einen schönen
-                              <br class="linebreak">Garten nach Belieben zu verlassen, und hat
-                              <br class="linebreak">man sich dessentwegen bey dem Verleger des
-                              <br class="linebreak">Wiennerischen Diarii anzumelden.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__18" class="yes-index">
-                              <br class="linebreak">Es ist die Müllerische Behausung in der
-                              <br class="linebreak">Währinger=gassen an dem Contumaz=haus
-                              <br class="linebreak">samt einem dabey befindlichen grossen Gar<span class="linebreak">=</span><br class="linebreak">ten alltäglich zu verkauffen, und hat man
-                              <br class="linebreak">sich dessenthalben bey gemeiner Stadt Pu<span class="linebreak">=</span><br class="linebreak">pillen=rait=kammer anzumelden.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__31" class="yes-index">
-                              <br class="linebreak">Auf Verordnung eines Löbl. Landmar<span class="linebreak">=</span><br class="linebreak">schallischen Gerichts werden in der Stadt
-                              <br class="linebreak">St. Pölten in der gewesten BaronDam<span class="linebreak">=</span><br class="linebreak">nitzischen Behausung den 22. April und fol<span class="linebreak">=</span><br class="linebreak">gende Täge Vormittag von 9. bis 12. und
-                              <br class="linebreak">Nachmittag von 3. bis 6. Uhr verschiedene
-                              <br class="linebreak">Verlassenschafts=effecten, als Manns=kleider,
-                              <br class="linebreak">Weiszeug, Gewehr, Porcelan, Hollitschet<span class="linebreak">=</span><br class="linebreak">geschirr, ein meßinger stark versilberter Con<span class="linebreak">=</span><br class="linebreak">fect=aufsatz, Sesseln, Canape, Kästen
-                              <br class="linebreak">groß= und mittere Spiegel, Spallier, ein
-                              <br class="linebreak">Trag=sessel, Beth=gewand, Hang=leuchter,
-                              <br class="linebreak">Zinn, Meßing, Kupfer und Eisen=geschirr,
-                              <br class="linebreak">4. Kutschenpferd samt Geschirr, 100. Em<span class="linebreak">=</span><br class="linebreak">mer Oesterreicher Wein samt denen Fässern<span class="linebreak">=</span><br class="linebreak">und mehr andere dergleichen Fahrnussen li<span class="linebreak">=</span><br class="linebreak">citando dem Meistbiettenden verkauffet wer<span class="linebreak">=</span><br class="linebreak">den.</p>
-                        </div>
-                        
-                        <div class="grid-item">
-                           <p id="p__26" class="yes-index">
-                              <br class="linebreak">Den 22. dieses Monats Aprilis werden
-                              <br class="linebreak">auf dem alten Fleischmarkt in dem Prie<span class="linebreak">=</span><br class="linebreak">schenkischen Haus im dritten Stockl 2331.
-                              <br class="linebreak">Emmer gute Oesterreicher Gebürg=wein
-                              <br class="linebreak">von verschiedenen Jahren und Gewächsern
-                              <br class="linebreak">samt Fässern in eisernen Banden, Vormit<span class="linebreak">=</span><br class="linebreak">tag von 9. bis 12. Nachmittag aber von
-                              <br class="linebreak">3. bis 6. Uhr dem Meistbiettenden gegen al<span class="linebreak">=</span><br class="linebreak">sogleich baar leistender Bezahlung verkauf<span class="linebreak">=</span><br class="linebreak">fet, den 23. dito aber darauf in der Ros<span class="linebreak">=</span><br class="linebreak">sau bey denen 3. Mohren mit der Licitation
-                              <br class="linebreak">continuiret werden.</p>
-                        </div>
-                        
-                        <div id="ab__15" class="grid-item"><span id="ab__15" class="yes-index">
-                              </span></div>
-                        
-                        <div class="grid-item">
-                           <p id="p__28" class="yes-index">
-                              <br class="linebreak">Diarii ist zu haben:
-                              <br class="linebreak">Francisci Antonii Königs, Leutenants,
-                              <br class="linebreak">und Auditors, Anmerkungen, über den von
-                              <br class="linebreak">Jhro zu Hung. und Böheim Königl. Maj.
-                              <br class="linebreak">Maria Theresia, ErzHerzogin zu Oester<span class="linebreak">=</span><br class="linebreak">reich, rc. rc. Allergnädigst=bestättigten Kriegs
-                              <br class="linebreak">Articuls= Brief Leopoldi I. Augustis.
-                              <br class="linebreak">mem. de An. 1668. cum Additaments
-                              <br class="linebreak">ex Regulamento de An. 1737. potim-
-                              <br class="linebreak">mümn, worbey zu KriegsProcessen taugh<span class="linebreak">=</span><br class="linebreak">liche Formulæ zu finden, 4to. ungebunden
-                              <br class="linebreak">pr. 36. kr.</p>
-                        </div>
-                        
-                        </div>
                   </div>
                   <div class="col-md-6 facsimiles">
                      <div id="viewer-1" class="sticky">
@@ -1071,5 +1070,5 @@
       </main>
       <footer class="footer mt-auto py-3 bg-body-tertiary" style="margin-top: auto;">
          <div class="float-end me-3"><a href="https://github.com/wiener-diarium/wr-app"><i class="bi bi-github"></i></a></div>
-      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
+      </footer><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script><script type="text/javascript" src="js/osd_scroll.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script><script type="text/javascript" src="js/mark.js"></script><script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script><script type="text/javascript" src="js/run.js"></script><script type="text/javascript" src="js/listStopProp.js"></script></body>
 </html>
