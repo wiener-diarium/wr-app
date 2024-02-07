@@ -134,6 +134,9 @@ search.addWidgets([
                                 </tr>
                             </table>
                         </div>
+                        <div class="col-md-12 p-0 m-0">
+                            <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
+                        </div>
                     </div>
                 </a>
             `;
