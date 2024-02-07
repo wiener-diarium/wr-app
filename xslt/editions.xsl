@@ -50,11 +50,18 @@
                         <div class="page-content">
                             <!--<xsl:apply-templates select=".//tei:body"/>-->
                             <div class="row my-4">
-                                <div class="col-md-6 section px-4">
+                                <div class="col-md-6 section px-4 .yes-index">
                                     <div id="editor-widget">
                                         <label>
                                             <a href="index.html" aria-label="Zurück zur Hauptseite" class="text-light">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16"><path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"></path></svg>
+                                            </a>
+                                        </label>
+                                        <label class="fade px-2" id="show-on-scroll">
+                                            <a href="#top_page" aria-label="Zurück zur ersten Seite" class="text-light">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                                                </svg>
                                             </a>
                                         </label>
                                         <ul class="list-group">
@@ -72,7 +79,19 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="title-page py-4">
+                                    <div class="sticky row bg-white" style="top: 1em!important;">
+                                        <div class="col-md-10 my-4">
+                                            <input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked"/>Wörter einzeln suchen
+                                            <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."/>
+                                        </div>
+                                        <div id="mark-scroll" class="fade-lang col-md-2 my-4">
+                                            <button class="btn font-20" data-search="next" disabled="disabled">&#x2193;</button>
+                                            <button class="btn font-20" data-search="prev" disabled="disabled">&#x2191;</button>
+                                            <button class="btn font-20" data-search="clear" disabled="disabled">✖</button>
+                                            <div id="results-div"></div>
+                                        </div>
+                                    </div>
+                                    <div class="title-page py-4" id="#top_page">
                                         <xsl:apply-templates select=".//tei:front"/>
                                     </div>
                                     <xsl:for-each-group select=".//tei:body[tei:div[@type='article']]|.//tei:body/tei:div[@type='page']" group-starting-with="tei:pb">
@@ -126,13 +145,15 @@
                     </xsl:for-each>
                 </main>
                 <xsl:call-template name="html_footer"/>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+                <script type="text/javascript" src="js/mark.js"></script>
                 <script src="https://unpkg.com/de-micro-editor@0.3.1/dist/de-editor.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
-                <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
                 <script type="text/javascript" src="js/run.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.0.0/openseadragon.min.js"></script>
                 <script type="text/javascript" src="js/osd_scroll.js"></script>
-                <script type="text/javascript" src="js/isotope-app-detail.js"></script>
-                
+                <!--<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>-->
+                <!--<script type="text/javascript" src="js/isotope-app-detail.js"></script>-->
+                <script type="text/javascript" src="js/listStopProp.js"></script>
             </body>
         </html>
     </xsl:template>
