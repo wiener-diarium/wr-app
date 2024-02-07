@@ -34,7 +34,10 @@
                 </div>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>
+                <!--<xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>-->
+                <xsl:variable name="anno-url" select="'https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|'"/>
+                <xsl:variable name="date" select="replace(substring-after(ancestor::tei:TEI/@xml:id, 'wr_'), '.xml', '')"/>
+                <xsl:variable name="graphic-url" select="concat($anno-url, replace($date, '-', ''), '|', @n, '|99.9|0')"/>
                 <div class="grid-item grid-item--width2 my-5" id="wr_page_{@n}">
                     <span class="anchor-pb"></span>
                     <span class="pb lightgrey" source="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
