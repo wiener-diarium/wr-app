@@ -28,14 +28,14 @@
                 <xsl:variable name="img-dir-day" select="tokenize($date, '-')[3]"/>
                 <xsl:variable name="img-dir-yearx" select="concat(substring($img-dir-year, 1, 3), 'x')"/>
                 <xsl:variable name="graphic-url" select="concat($img-url, $img-dir-yearx, '/', $img-dir-year, '/', $img-dir-month, '/', $img-dir1, '/', $img-1, '/full/full/0/default.jpg')"/>
-                <div class="grid-item grid-item--width2 my-4" id="wr_page_{@n}">
+                <div class="grid-item grid-item--width2 my-5" id="wr_page_{@n}">
                     <span class="anchor-pb"></span>
                     <span class="pb lightgrey" source="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
                 </div>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="graphic-url" select="ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[starts-with(@url, 'http')]/@url"/>
-                <div class="grid-item grid-item--width2 my-4" id="wr_page_{@n}">
+                <div class="grid-item grid-item--width2 my-5" id="wr_page_{@n}">
                     <span class="anchor-pb"></span>
                     <span class="pb lightgrey" source="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
                 </div>

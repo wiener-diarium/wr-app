@@ -84,7 +84,7 @@
                                             <input type="checkbox" name="opt[]" value="separateWordSearch" checked="checked"/>Wörter einzeln suchen
                                             <input type="text" name="keyword" class="form-control input-sm" placeholder="Schlagwort eingeben..."/>
                                         </div>
-                                        <div id="mark-scroll" class="fade-lang col-md-2 my-4">
+                                        <div id="mark-scroll" class="fade-lang col-md-2">
                                             <button class="btn font-20" data-search="next" disabled="disabled">&#x2193;</button>
                                             <button class="btn font-20" data-search="prev" disabled="disabled">&#x2191;</button>
                                             <button class="btn font-20" data-search="clear" disabled="disabled">✖</button>

@@ -15,3 +15,13 @@ window.addEventListener('scroll', () => {
 top_scroll.addEventListener('click', () => {
     window.scrollTo(0, 0);
 });
+window.addEventListener('load', () => {
+    if (window.scrollY > 100) {
+        top_scroll.classList.add('show');
+    } else {
+        top_scroll.classList.remove('show');
+    }
+});
+top_scroll.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+});
