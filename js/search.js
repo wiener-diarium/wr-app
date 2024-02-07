@@ -33,6 +33,24 @@ function makeTitle(hit) {
     }
     return title;
 }
+function makeCorrections(hit, label=false) {
+    if (label) {
+        var hitCorrections = hit.label;
+    } else {
+        var hitCorrections = hit.corrections;
+    }
+    if (hitCorrections == "0") {
+        return "unkorrigiert";
+    } else if (hitCorrections == "1") {
+        return "einmal korrigiert";
+    } else if (hitCorrections == "2") {
+        return "zweimal korrigiert";
+    } else if (hitCorrections == "3") {
+        return "mehrfach korrigiert";
+    } else {
+        return hitCorrections;
+    }
+}
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     server: {
         apiKey: "jgQAkG16CRrqpASNqV0Zn8xUNtZ5nq96",
@@ -71,12 +89,11 @@ search.addWidgets([
     instantsearch.widgets.hits({
         container: "#hits",
         cssClasses: {
-            item: "w-20 border border-light rounded m-2 p-2 d-flex flex-column",
+            item: "w-20 border border-light rounded m-2 p-2 d-flex flex-column hover-shadow",
         },
         templates: {
             empty: "Keine Resultate für <q>{{ query }}</q>",
             item(hit, { html, components }) {
-                console.log(hit);
                 return html` 
                 <a class="text-decoration-none text-dark" 
                     href='${makeAnnoLink(hit)}'
@@ -88,32 +105,32 @@ search.addWidgets([
                         <div class="col-md-8">
                             <table class="table table-sm">
                                 <tr>
-                                    <td><strong>Ausgabe:</strong></td>
+                                    <td><em>Ausgabe:</em></td>
                                     <td>${makeTitle(hit)}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>ID:</strong></td>
+                                    <td><em>ID:</em></td>
                                     <td>${hit.id}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Artikel:</strong></td>
+                                    <td><em>Artikel:</em></td>
                                     <td>${hit.article_count}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Seite:</strong></td>
+                                    <td><em>Seite:</em></td>
                                     <td>${hit.page}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Jahr:</strong></td>
+                                    <td><em>Jahr:</em></td>
                                     <td>${hit.year}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Edition:</strong></td>
+                                    <td><em>Edition:</em></td>
                                     <td>${hit.edition[0]}</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Korrekturstatus:</strong></td>
-                                    <td>${hit.corrections}</td>
+                                    <td><em>Korrekturstatus:</em></td>
+                                    <td>${makeCorrections(hit)}</td>
                                 </tr>
                             </table>
                         </div>
@@ -164,6 +181,12 @@ search.addWidgets([
         container: "#corrections",
         attribute: "corrections",
         searchable: false,
+        transformItems(items) {
+            return items.map(item => ({
+              ...item,
+              highlighted: item.highlighted = makeCorrections(item, true)
+            }));
+          },
         cssClasses: {
             searchableInput: "form-control form-control-sm m-2 border-light-2",
             searchableSubmit: "d-none",
@@ -171,7 +194,7 @@ search.addWidgets([
             showMore: "btn btn-secondary btn-sm align-content-center",
             list: "list-unstyled",
             count: "badge d-flex align-self-end m-2 badge-secondary hideme ",
-            label: "d-flex align-items-start text-left text-capitalize",
+            label: "d-flex align-items-start text-left",
             checkbox: "m-2",
         },
     }),
@@ -179,6 +202,12 @@ search.addWidgets([
         container: "#has-fulltext",
         attribute: "has_fulltext",
         searchable: false,
+        transformItems(items) {
+            return items.map(item => ({
+              ...item,
+              highlighted: item.highlighted = item.label === "true" ? "mit Volltext" : "ohne Volltext"
+            }));
+        },
         cssClasses: {
             searchableInput: "form-control form-control-sm m-2 border-light-2",
             searchableSubmit: "d-none",
@@ -186,40 +215,40 @@ search.addWidgets([
             showMore: "btn btn-secondary btn-sm align-content-center",
             list: "list-unstyled",
             count: "badge d-flex align-self-end m-2 badge-secondary hideme ",
-            label: "d-flex align-items-start text-left text-capitalize",
+            label: "d-flex align-items-start text-left",
             checkbox: "m-2",
         },
     }),
-    instantsearch.widgets.refinementList({
-        container: "#digitarium-issue",
-        attribute: "digitarium_issue",
-        searchable: false,
-        cssClasses: {
-            searchableInput: "form-control form-control-sm m-2 border-light-2",
-            searchableSubmit: "d-none",
-            searchableReset: "d-none",
-            showMore: "btn btn-secondary btn-sm align-content-center",
-            list: "list-unstyled",
-            count: "badge d-flex align-self-end m-2 badge-secondary hideme ",
-            label: "d-flex align-items-start text-left text-capitalize",
-            checkbox: "m-2",
-        },
-    }),
-    instantsearch.widgets.refinementList({
-        container: "#gestrich",
-        attribute: "gestrich",
-        searchable: false,
-        cssClasses: {
-            searchableInput: "form-control form-control-sm m-2 border-light-2",
-            searchableSubmit: "d-none",
-            searchableReset: "d-none",
-            showMore: "btn btn-secondary btn-sm align-content-center",
-            list: "list-unstyled",
-            count: "badge d-flex align-self-end m-2 badge-secondary hideme ",
-            label: "d-flex align-items-start text-left text-capitalize",
-            checkbox: "m-2",
-        },
-    }),
+    // instantsearch.widgets.refinementList({
+    //     container: "#digitarium-issue",
+    //     attribute: "digitarium_issue",
+    //     searchable: false,
+    //     cssClasses: {
+    //         searchableInput: "form-control form-control-sm m-2 border-light-2",
+    //         searchableSubmit: "d-none",
+    //         searchableReset: "d-none",
+    //         showMore: "btn btn-secondary btn-sm align-content-center",
+    //         list: "list-unstyled",
+    //         count: "badge d-flex align-self-end m-2 badge-secondary hideme ",
+    //         label: "d-flex align-items-start text-left text-capitalize",
+    //         checkbox: "m-2",
+    //     },
+    // }),
+    // instantsearch.widgets.refinementList({
+    //     container: "#gestrich",
+    //     attribute: "gestrich",
+    //     searchable: false,
+    //     cssClasses: {
+    //         searchableInput: "form-control form-control-sm m-2 border-light-2",
+    //         searchableSubmit: "d-none",
+    //         searchableReset: "d-none",
+    //         showMore: "btn btn-secondary btn-sm align-content-center",
+    //         list: "list-unstyled",
+    //         count: "badge d-flex align-self-end m-2 badge-secondary hideme ",
+    //         label: "d-flex align-items-start text-left text-capitalize",
+    //         checkbox: "m-2",
+    //     },
+    // }),
 
     instantsearch.widgets.refinementList({
         container: "#refinement-list-keywords",
@@ -227,13 +256,13 @@ search.addWidgets([
         searchable: true,
         searchablePlaceholder: "Suchen",
         cssClasses: {
-            searchableInput: "form-control form-control-sm m-2 border-light-2",
+            searchableInput: "form-control form-control-sm border-light-2",
             searchableSubmit: "d-none",
             searchableReset: "d-none",
             showMore: "btn btn-secondary btn-sm align-content-center",
             list: "list-unstyled",
             count: "badge d-flex align-self-end m-2 badge-secondary hideme",
-            label: "d-flex align-items-start text-left text-capitalize",
+            label: "d-flex align-items-start text-left",
             checkbox: "m-2",
         },
     }),
@@ -256,6 +285,9 @@ search.addWidgets([
         attribute: "places",
         searchable: true,
         cssClasses: {
+            searchableInput: "form-control form-control-sm border-light-2",
+            searchableSubmit: "d-none",
+            searchableReset: "d-none",
             showMore: "btn btn-secondary btn-sm align-content-center",
             list: "list-unstyled",
             count: "badge d-flex align-self-end m-2 badge-secondary hideme",
@@ -360,6 +392,7 @@ search.addWidgets([
     instantsearch.widgets.sortBy({
         container: "#sort-by",
         items: [
+            { label: "Standard", value: "gestrich_index" },
             { label: "Jahr (aufsteigend)", value: "gestrich_index/sort/year:asc" },
             { label: "Jahr (absteigend)", value: "gestrich_index/sort/year:desc" },
         ],
