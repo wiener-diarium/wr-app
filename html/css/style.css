@@ -117,14 +117,44 @@ h5 {
     vertical-align: top;
 }
 
-.bg-diarium-menu {
+/* .bg-diarium-menu {
     border: 2px solid #bad2d4;
     border-radius: .35rem .35rem .35rem 0;  
-}
+} */
 
 .bg-diarium-search {
-    border-bottom: 2px solid #bad2d4;
-    border-right: 2px solid #bad2d4;
-    border-left: 2px solid #bad2d4;
-    border-radius: 0 0 .35rem .35rem;  
+    border: 2px solid #bad2d4;
+    border-radius: .5rem;  
+}
+
+.hover-shadow:hover {
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+.table>:not(caption)>*>* {
+    background-color: transparent!important;
+}
+
+.img-thumbnail {
+    border-color: #bad2d4;
+}
+
+@media (max-width: 768px) {
+    .ais-Hits-item {
+        width: 100%!important;
+    }
+    .hidemobile {
+        display: none!important;
+    }
+}
+@media (max-width: 576px) {
+    
+}
+@media (max-width: 992px) {
+    .ais-Hits-item {
+        width: 47%!important;
+    }
+    #searchbox {
+        width: 100%!important;
+    }
 }
