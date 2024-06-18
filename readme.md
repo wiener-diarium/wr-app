@@ -1,4 +1,4 @@
-# Digitarium (Wiener Zeitung 1703 - 1785) Web Applikation
+# Digitarium (ausgewählte Ausgaben der Wiener Zeitung 1703 - 1798) Web Applikation
 
 ## Data
 
