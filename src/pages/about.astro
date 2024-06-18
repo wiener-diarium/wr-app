@@ -1,0 +1,532 @@
+---
+import { getCollection } from "astro:content";
+
+import Presentations from "../components/Presentations.astro";
+import Publications from "../components/Publications.astro";
+import Page from "../layouts/Page.astro";
+
+const publications = await getCollection("publications");
+const presentations = await getCollection("presentations");
+
+const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
+---
+
+<Page title="Über Uns" baseurl={baseurl}>
+	<div class="flex flex-col">
+		<div
+			class="sticky top-2 mx-auto max-w-4xl rounded-md bg-white p-6 text-center shadow-md sm:p-1"
+		>
+			<ul class="grid grid-cols-6 text-gray-500 sm:grid-cols-3 sm:text-sm md:grid-cols-3">
+				<li class="flex justify-center px-2 sm:p-2 md:p-2">
+					<a id="show-on-scroll" href="#header"
+						><svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+							<path
+								fill-rule="evenodd"
+								d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+							></path>
+						</svg></a
+					>
+				</li>
+				<li class="px-2 sm:p-1 md:p-2"><a href="#team">Team</a></li>
+				<li class="px-2 sm:p-1 md:p-2"><a href="#partner">Partner</a></li>
+				<li class="px-2 sm:p-1 md:p-2"><a href="#funds">Förderungen</a></li>
+				<li class="px-2 sm:p-1 md:p-2"><a href="#publications">Publikationen</a></li>
+				<li class="px-2 sm:p-1 md:p-2"><a href="#lectures">Präsentationen</a></li>
+			</ul>
+		</div>
+		<div class="my-[3%]">
+			<span id="team" class="mb-16"></span>
+			<div class="flex justify-center">
+				<figure class="p-2">
+					<img
+						alt="Sandra Lehecka, 2021"
+						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
+						src={`${baseurl}acdh-digitarium-originalausgaben-10-Sandra_Lehecka-1024x683.jpg`}
+					/>
+					<figcaption>
+						<em>© Sandra Lehecka</em>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="my-10">
+				<h1 class="text-center text-4xl font-bold">Team</h1>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund_resch_bb96429b15-150x150.png`}
+						/>
+						<ul>
+							<li><strong>Dr. Claudia Resch</strong></li>
+							<li><a href="mailto:claudia.resch.oeaw.ac.at">claudia.resch@oeaw.ac.at</a></li>
+							<li>Gesamtprojektleitung und -koordination am ACDH-CH</li>
+						</ul>
+					</div>
+					<div class="mx-auto flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil wir daran zeigen können,
+							dass sich durch die digitale Erschließung des Volltextes die Möglichkeiten
+							wissenschaftlichen Erkenntnisgewinns für die verschiedenen Disziplinen
+							vervielfältigen.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die Zusammenarbeit mit Forschenden und Expert*innen,
+							die ein gemeinsames Interesse an der verbesserten digitalen Erschließung von
+							historischen Zeitungen haben.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund-anna-mader-kratky_round_900x900-150x150.png`}
+						/>
+						<ul>
+							<li><strong>Dr. Anna Mader-Kratky</strong></li>
+							<li><a href="mailto:anna.mader@oeaw.ac.at">anna.mader@oeaw.ac.at</a></li>
+							<li>Projektleitung am IHB</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil es die Recherche im
+							Wien(n)erischen Diarium wesentlich erleichtert und mich zielsicher nach Begriffen oder
+							Ereignissen suchen lässt, die etwa die Kunstpatronanz des Hauses Habsburg betreffen.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die inhaltliche Vielfalt dieses historischen
+							Quellenbestandes, die von europäischer Politik bis zu kuriosen Meldungen reicht.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund-gunther-muehlberger_round_900x900-150x150.jpg`}
+						/>
+						<ul>
+							<li><strong>Dr. Günter Mühlberger</strong></li>
+							<li>
+								<a href="mailto:guenter.muehlberger@uibk.ac.at">guenter.muehlberger@uibk.ac.at</a>
+							</li>
+							<li>Projektleitung am Forschungszentrum DH</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil es für Transkribus der
+							erste große Datensatz zu gedruckten Büchern war – und eindrucksvoll gezeigt hat, dass
+							Texterkennung historischer Zeitungen mit ausgezeichneten Ergebnissen durchgeführt
+							werden kann.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die Entwicklung einer Zeitung über 100 Jahre und mehr
+							zu verfolgen.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund-kampkaspar_84cce29b1d-150x150.png`}
+						/>
+						<ul>
+							<li><strong>Mag. Dario Kampkaspar</strong></li>
+							<li>
+								<a href="mailto:dario.kampkaspar@oeaw.ac.at">dario.kampkaspar@oeaw.ac.at</a>
+							</li>
+							<li>Datenmodellierung und Webinterface am ACDH-CH</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil es eine lückenlose Quelle
+							über mehr als 300 Jahre Geschichte darstellt.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die Möglichkeiten zur Datenauswertung.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund-schopper_87be04b292-150x150.png`}
+						/>
+						<ul>
+							<li><strong>Mag. Daniel Schopper</strong></li>
+							<li>
+								<a href="mailto:daniel.schopper@oeaw.ac.at">daniel.schopper@oeaw.ac.at</a>
+							</li>
+							<li>Datenmodellierung und Standards am ACDH-DH</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil es eine unikale Quelle
+							ist, um Geschichte Tag um Tag fassbar zu machen.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die Reichhaltigkeit dieser Quelle – und die
+							Möglichkeiten, die diese Quelle für die Auswertung mit digitalen Möglichkeiten bietet,
+							sofern sie in guter Qualität erschlossen ist.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}csm_team_rastinger_neu_1052568e7c-150x150.png`}
+						/>
+						<ul>
+							<li><strong>Nina Claudia Rastinger, BA BSc MA</strong></li>
+							<li>
+								<a href="mailto:nina.rastinger@oeaw.ac.at">nina.rastinger@oeaw.ac.at</a>
+							</li>
+							<li>Textkollationierung und -kodierung am ACDH-CH</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil es nicht nur einen
+							Einblick in die Geschehnisse vergangener Jahrhunderte gibt, sondern auch den Wandel
+							des Mediums Zeitung an sich einzufangen versucht.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die den Texten innewohnenden Normen, daher wer
+							überhaupt in welcher Form worüber berichten konnte.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund-nora-fischer_round_900x900-150x150.png`}
+						/>
+						<ul>
+							<li><strong>Dr. Nora Fischer</strong></li>
+							<li>
+								<a href="mailto:nora.fischer@chello.at">nora.fischer@chello.at</a>
+							</li>
+							<li>Textkollationierung und Annotation am ACDH-CH und am IHB</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil das Wien(n)erische
+							Diarium als unmittelbare Quelle des Zeitgeschehens Einblick in Auffassungen und
+							Denkweisen gewährt, die sich von den uns heute vertrauten Denkmustern unterscheiden.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Das weite Themenspektrum im Wien(n)erischen Diarium, in
+							dem fortwährend Unbekanntes, Neues und Überraschendes zu entdecken ist.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}rund-michael-ploeltzl_round_900x900-150x150.png`}
+						/>
+						<ul>
+							<li><strong> Dr. Michael Pölzl</strong></li>
+							<li>
+								<a href="mailto:poelzl-michael@gmx.at">poelzl-michael@gmx.at</a>
+							</li>
+							<li>Textkollationierung und Annotation am ACDH-CH und am IHB</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil ich auf meine
+							Forschungsfragen, etwa zum Wiener Hof (Herrschaftsrepräsentation, Hoforganisation)
+							qualitative sowie quantitative Ergebnisse erhalte, die schriftliche Quellen in
+							gewinnbringender Weise ergänzen.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Der rege interdisziplinäre Austausch und die sich
+							daraus resultierenden Möglichkeiten für die Forschung.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mt-8">
+				<div>
+					<div class="flex flex-row p-4">
+						<img
+							class="float-left mr-4 max-w-[300px]"
+							alt="Zeitungen erfordern gute Vorrectores."
+							src={`${baseurl}csm_team_elsner_neu_7bca603f15.png`}
+						/>
+						<ul>
+							<li><strong>Daniel Elsner BA MA</strong></li>
+							<li>
+								<a href="mailto:daniel.elsner@oeaw.ac.at">daniel.elsner@oeaw.ac.at</a>
+							</li>
+							<li>Datenmodellierung, Web-Interface und Datenarchivierung (RSE) am ACDH-CH</li>
+						</ul>
+					</div>
+					<div class="flex flex-col p-4">
+						<p>
+							Für mich ist das DIGITARIUM ein wertvoller Datenschatz, weil es eine historische
+							Quelle als digitalen Datensatz weltweit zugänglich macht.
+						</p>
+						<p class="mt-4">
+							Was mich besonders fasziniert: Die Durchsuchbarkeit der Zeitungen mit modernen
+							Web-Technologien um den Forscher*innen die Arbeit zu erleichtern.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="my-[3%]">
+			<span id="partner" class="mb-16"></span>
+			<div class="flex justify-center">
+				<figure class="p-2">
+					<img
+						alt="Basem Saifo, 2021"
+						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
+						src={`${baseurl}acdh-digitarium-konferenz_vom_diarium_zum_digitarium-07-Basem_Saifo-1024x768.jpg`}
+					/>
+					<figcaption>
+						<em>© Basem Saifo</em>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="mt-8">
+				<h1 class="text-center text-4xl font-bold">Partner*innen</h1>
+			</div>
+			<div class="mt-8">
+				<div class="p-4">
+					<p>
+						Das Projekt wird am <a class="hover:text-cyan-500" href="https://www.oeaw.ac.at/acdh/"
+							><strong>Austrian Centre for Digital Humanities and Cultural Heritage</strong></a
+						> geleitet und durchgeführt (Kontakt: Dr. Claudia Resch). Die Erstellung der Volltextversionen
+						und die Anreicherung der Daten erfolgt in Kooperation mit dem <a
+							class="hover:text-cyan-500"
+							href="https://www.oeaw.ac.at/ihb/"
+							><strong
+								>Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes</strong
+							></a
+						> (Kontakt: Dr. Anna Mader-Kratky) und der Gruppe <a
+							class="hover:text-cyan-500"
+							href="https://www.uibk.ac.at/germanistik/einrichtungen/dea.html"
+							><strong>Digitalisierung und Elektronische Archivierung</strong></a
+						> am Institut für Germanistik bzw. dem <a
+							class="hover:text-cyan-500"
+							href="https://www.uibk.ac.at/digital-humanities/"
+							><strong>Forschungszentrum Digital Humanities</strong></a
+						> an der Universität Innsbruck (Kontakt: Dr. Günter Mühlberger) sowie weiteren Kooperationspartner*innen.
+					</p>
+				</div>
+				<div class="mx-auto flex flex-row p-4">
+					<p>
+						Das Projektteam ist international mit all jenen vernetzt, die historische Zeitungen
+						digital erschließen, u.a. in der Arbeitsgruppe <a
+							class="hover:text-cyan-500"
+							href="https://dhd-ag-zz.github.io/"><strong>Zeitungen und Zeitschriften</strong></a
+						> des Verbands DHd – „Digital Humanities im deutschsprachigen Raum“, die es mitbegründet
+						hat, und in der Special Interest Group <a
+							class="hover:text-cyan-500"
+							href="https://tei-c.org/activities/sig/"
+							><strong>Periodicals and Newspapers</strong></a
+						> der „Text Encoding Initiative“, die Dario Kampkaspar 2018 initiiert hat und die seither
+						von ihm geleitet wird.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="my-[3%]">
+			<span id="funds" class="mb-16"></span>
+			<div>
+				<h1 class="my-8 text-center text-4xl font-bold">Förderungen</h1>
+			</div>
+			<div>
+				<div class="p-4">
+					<h4 class="text-2xl">
+						Programm „go!digital“ 2.0 der Österreichischen Akademie der Wissenschaften
+					</h4>
+					<ul class="mt-6">
+						<li>
+							<a
+								class="hover:text-cyan-500"
+								href="https://www.oeaw.ac.at/acdh/projects/completed-projects/wiennerisches-diarium-digital"
+								><strong
+									>Das Wien[n]erische Diarium: Digitaler Datenschatz für die
+									geisteswissenschaftlichen Disziplinen</strong
+								></a
+							>
+						</li>
+						<li>Projektleitung: Claudia Resch</li>
+						<li>Laufzeit: 03/2017 – 02/2020</li>
+					</ul>
+				</div>
+				<div class="p-4">
+					<h4 class="text-2xl">
+						Kultur-, Wissenschafts- und Forschungsförderung der Stadt Wien (MA7)
+					</h4>
+					<ul class="mt-6">
+						<li>
+							<a
+								class="hover:text-cyan-500"
+								href="https://www.oeaw.ac.at/acdh/projects/visiting-vienna"
+								><strong
+									>Zu Gast in Wien – digitale Ansätze zur (semi-)automatischen Auswertung der
+									Ankunftslisten des „Wien[n]erischen Diariums“</strong
+								></a
+							>
+						</li>
+						<li>Projektleitung: Nina C. Rastinger</li>
+						<li>Laufzeit: 10/2022 – 09/2023</li>
+					</ul>
+					<ul class="mt-6">
+						<li>
+							TIME MACHINE WIEN: Korrespondierende digitale Datenschätze und Wissensressourcen (am
+							Beispiel von Wienerischem DIGITARIUM und Wien Geschichte WIKI)
+						</li>
+						<li>Projektleitung: Claudia Resch</li>
+						<li>Laufzeit: 12/2020 – 11/2021</li>
+					</ul>
+					<ul class="mt-6">
+						<li>
+							<a
+								class="hover:text-cyan-500"
+								href="https://www.oeaw.ac.at/ikm/forschung/habsburgische-repraesentation/das-wiennerische-diarium/"
+								><strong
+									>Das Wien[n]erische Diarium als Medium habsburgischer Repräsentationsstrategien</strong
+								></a
+							>
+						</li>
+						<li>Projektleitung: Anna Mader-Kratky</li>
+						<li>Laufzeit: 01/2019 – 12/2019</li>
+					</ul>
+					<ul class="mt-6">
+						<li>Das Wienerische Diarium – Online-Erschließung einer historischen Zeitung</li>
+						<li>Projektleitung: Anna Mader-Kratky</li>
+						<li>Laufzeit: 07/2017 – 06/2018</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="my-[3%]">
+			<span id="publications" class="mb-16"></span>
+			<div class="flex justify-center">
+				<figure class="p-2">
+					<img
+						alt="Claudia Resch, ACDH-CH, Wien, 2021"
+						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
+						src={`${baseurl}acdh-digitarium-druckerei-Claudia_Resch-1024x576.jpg`}
+					/>
+					<figcaption>
+						<em>© Claudia Resch</em>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="mt-8">
+				<h1 class="mb-8 text-center text-4xl font-bold">Publikationen</h1>
+			</div>
+			<div>
+				<ul>
+					{
+						publications.length > 0 ? (
+							publications.map((publ) => <Publications {...publ.data} />)
+						) : (
+							<li>Keine Publikationen gefunden</li>
+						)
+					}
+				</ul>
+			</div>
+		</div>
+
+		<div class="my-[3%]">
+			<span id="lectures" class="mb-16"></span>
+			<div class="flex justify-center">
+				<figure class="p-2">
+					<img
+						alt="Claudia Resch, ACDH-CH, Wien, 2021"
+						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
+						src={`${baseurl}Diarium-Reisen-4-1024x399.png`}
+					/>
+					<figcaption>
+						<em>© Claudia Resch</em>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="mt-8">
+				<h1 class="mb-8 text-center text-4xl font-bold">Präsentationen</h1>
+			</div>
+			<div>
+				<h5 class="p-2 text-3xl">Workshop</h5>
+				<ul>
+					{
+						presentations.length > 0 ? (
+							presentations.map((pres) =>
+								pres.data.type === "Workshop" ? <Presentations {...pres.data} /> : "",
+							)
+						) : (
+							<li>Keine Präsentationen gefunden</li>
+						)
+					}
+				</ul>
+				<h5 class="p-2 text-3xl">Vortrag</h5>
+				<ul>
+					{
+						presentations.length > 0 ? (
+							presentations.map((pres) =>
+								pres.data.type === "Vortrag" ? <Presentations {...pres.data} /> : "",
+							)
+						) : (
+							<li>Keine Präsentationen gefunden</li>
+						)
+					}
+				</ul>
+				<h5 class="p-2 text-3xl">Poster</h5>
+				<ul>
+					{
+						presentations.length > 0 ? (
+							presentations.map((pres) =>
+								pres.data.type === "Poster" ? <Presentations {...pres.data} /> : "",
+							)
+						) : (
+							<li>Keine Präsentationen gefunden</li>
+						)
+					}
+				</ul>
+			</div>
+		</div>
+	</div>
+</Page>

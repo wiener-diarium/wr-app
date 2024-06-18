@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+	image: string;
+	text: string;
+	image_alt: string;
+}
+
+const { image, text, image_alt } = Astro.props;
+const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
+---
+
+<div class="my-4 flex flex-row">
+	<section class="basis-2/12 rounded-lg border border-gray-200 p-4">
+		{
+			typeof image === "string" ? (
+				<img src={`${baseurl}${image.slice(1)}`} alt={image_alt} />
+			) : (
+				<Image src={image} alt={image_alt} format="avif" quality="mid" />
+			)
+		}
+	</section>
+	<article class="basis-10/12 px-6 pt-2 text-lg">
+		{text}
+		<slot />
+	</article>
+</div>

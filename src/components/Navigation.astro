@@ -1,0 +1,212 @@
+---
+const { textcolor, baseurl } = Astro.props;
+---
+
+<div class="mx-auto max-w-7xl p-4 sm:px-6 lg:px-8">
+	<div class="relative flex items-center justify-between">
+		<div class="absolute inset-y-0 left-0 hidden items-center sm:flex">
+			<button
+				type="button"
+				class="relative inline-flex rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+				aria-controls="mobile-menu"
+				aria-expanded="false"
+			>
+				<span class="absolute -inset-0.5"></span>
+				<span class="sr-only">Open main menu</span>
+				<svg
+					class="block size-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					aria-hidden="true"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+				</svg>
+				<svg
+					class="hidden size-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					aria-hidden="true"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</button>
+		</div>
+		<div class="flex flex-1 items-center sm:justify-center">
+			<div class="float-left flex shrink-0 content-start">
+				<a href=`${baseurl}` aria-label="Index">
+					<img
+						class="h-14 w-auto"
+						src={`${baseurl}Digitarium-Logo-Vector-final.png`}
+						alt="Wiener Diarium Logo"
+					/>
+				</a>
+				<p class="p-4 font-bold text-yellow-300">
+					<abbr title="Webseite in Arbeit">BETA Version</abbr>
+				</p>
+			</div>
+			<div class="absolute right-2 ml-6 block sm:hidden">
+				<div class="flex space-x-4">
+					<a
+						href={`${baseurl}digitarium`}
+						class={`block px-2 text-lg ${textcolor}`}
+						role="menuitem"
+						tabindex="-1"
+					>
+						Dokumente
+					</a>
+					<a
+						href={`${baseurl}project`}
+						class={`block px-2 text-lg ${textcolor}`}
+						role="menuitem"
+						tabindex="-1"
+					>
+						Projekt
+					</a>
+					<a
+						href={`${baseurl}about`}
+						class={`block px-2 text-lg ${textcolor}`}
+						role="menuitem"
+						tabindex="-1"
+					>
+						Über Uns
+					</a>
+					<a
+						href={`${baseurl}news`}
+						class={`block px-2 text-lg ${textcolor}`}
+						role="menuitem"
+						tabindex="-1"
+					>
+						Neues
+					</a>
+					<a
+						href={`${baseurl}events`}
+						class={`block px-2 text-lg ${textcolor}`}
+						role="menuitem"
+						tabindex="-1"
+					>
+						Events
+					</a>
+					<a
+						href={`${baseurl}help`}
+						class={`block px-2 text-lg ${textcolor}`}
+						role="menuitem"
+						tabindex="-1"
+					>
+						Hilfe
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+			<form
+				class="my-3 hidden sm:ml-6 sm:block"
+				method="get"
+				action={`${baseurl}search?gestrich_index[query]`}
+				role="search"
+			>
+				<input
+					class="w-full rounded-md border-0 p-2 focus:outline-none focus:ring-0"
+					id="s"
+					name="gestrich_index[query]"
+					type="text"
+					placeholder="Search"
+					value=""
+					autocomplete="off"
+				/>
+				<button type="submit" class="absolute right-2 top-6">
+					<svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+						<path
+							d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+						></path>
+					</svg>
+				</button>
+			</form>
+		</div> -->
+	</div>
+</div>
+<div class="hidden" id="mobile-menu">
+	<div class="space-y-1 px-2 pb-3 pt-2 text-center">
+		<a
+			href={`${baseurl}digitarium`}
+			class={`block px-4 py-2 text-lg ${textcolor}`}
+			role="menuitem"
+			tabindex="-1"
+		>
+			Dokumente
+		</a>
+		<a
+			href={`${baseurl}project`}
+			class={`block px-4 py-2 text-lg ${textcolor}`}
+			role="menuitem"
+			tabindex="-1"
+		>
+			Projekt
+		</a>
+		<a
+			href={`${baseurl}about`}
+			class={`block px-4 py-2 text-lg ${textcolor}`}
+			role="menuitem"
+			tabindex="-1"
+		>
+			Über Uns
+		</a>
+		<a
+			href={`${baseurl}news`}
+			class={`block px-4 py-2 text-lg ${textcolor}`}
+			role="menuitem"
+			tabindex="-1"
+		>
+			Neues
+		</a>
+		<a
+			href={`${baseurl}events`}
+			class={`block px-4 py-2 text-lg ${textcolor}`}
+			role="menuitem"
+			tabindex="-1"
+		>
+			Events
+		</a>
+		<a
+			href={`${baseurl}help`}
+			class={`block px-4 py-2 text-lg ${textcolor}`}
+			role="menuitem"
+			tabindex="-1"
+		>
+			Hilfe
+		</a>
+		<!-- <form class="my-3" method="get" action={`${baseurl}search.html?ltw[query]`} role="search">
+			<input
+				class="w-full rounded-md border-0 p-2 focus:outline-none focus:ring-0"
+				id="s"
+				name="ltw[query]"
+				type="text"
+				placeholder="Search"
+				value=""
+				autocomplete="off"
+			/>
+			<button type="submit" class="absolute right-5 mt-2">
+				<svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+					<path
+						d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+					></path>
+				</svg>
+			</button>
+		</form> -->
+	</div>
+</div>
+<script>
+	const btn = document.querySelector('button[aria-controls="mobile-menu"]');
+	btn?.addEventListener("click", () => {
+		const menu = document.querySelector("#mobile-menu");
+		const expanded = menu?.getAttribute("aria-expanded") === "true" || false;
+		menu?.setAttribute("aria-expanded", String(!expanded));
+		menu?.classList.toggle("hidden");
+	});
+</script>

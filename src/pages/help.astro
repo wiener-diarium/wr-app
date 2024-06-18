@@ -1,0 +1,109 @@
+---
+import Page from "../layouts/Page.astro";
+
+const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
+---
+
+<Page title="Hilfe" baseurl={baseurl}>
+	<div class="my-[3%] flex flex-col">
+		<div class="mx-auto my-12 overflow-hidden">
+			<img
+				alt="Screenshot des DIGITARIUMs"
+				class="w-full rounded-lg border object-cover object-center shadow-md"
+				src={`${baseurl}F-A-1024x288_cropped.png`}
+			/>
+		</div>
+		<div class="mx-auto mb-8 flex flex-col">
+			<h1 class="text-4xl font-bold">Fragen & Antworten</h1>
+		</div>
+		<div class="mx-auto flex flex-col">
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">Für wen wurde das DIGITARIUM erstellt?</h4>
+				<p>
+					Das DIGITARIUM steht <a class="hover:text-cyan-500" href={baseurl}
+						><strong>allen</strong></a
+					> zur Verfügung, die Interesse an der historischen Wiener Zeitung, dem sogenannten Wien[n]erischen
+					Diarium haben. Hier können Sie diese originalen Zeitungsausgaben kostenlos Wort für Wort lesen
+					oder digital durchsuchen.
+				</p>
+			</div>
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">Welche Zeitungsausgaben kann ich im DIGITARIUM finden?</h4>
+				<p>
+					Im DIGITARIUM sind derzeit jene Zeitungsausgaben enthalten, die von Forschenden, den
+					Leser*innen der Wiener Zeitung und dem Projektteam <a
+						class="hover:text-cyan-500"
+						href=`${baseurl}project#call`><strong>nominiert</strong></a
+					> wurden.
+				</p>
+			</div>
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">Woher stammen die Bilddigitalisate?</h4>
+				<p>
+					Die Bilddigitalisate stammen teilweise aus den Beständen der Österreichischen
+					Nationalbibliothek (verfügbar über das Zeitungsportal <a
+						class="hover:text-cyan-500"
+						href="http://anno.onb.ac.at/"><strong>ANNO-Austrian Newspapers Online</strong></a
+					>) und aus der <a
+						class="hover:text-cyan-500"
+						href="https://www.oeaw.ac.at/forschung-institute/bibliothek-archiv-sammlungen/sammlung-woldan/"
+						><strong> Sammlung Woldan der Österreichischen Akadmie der Wissenschaften</strong></a
+					>.
+				</p>
+			</div>
+
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">Wer hat die Volltexte erstellt?</h4>
+				<p>
+					Die Volltexte wurden zunächst automatisch in der Plattform <a
+						class="hover:text-cyan-500"
+						href="https://transkribus.eu/"><strong>Transkribus</strong></a
+					> eingelesen und dann unter erheblichem Zeitaufwand manuell verbessert <a
+						class="hover:text-cyan-500"
+						href=`${baseurl}project#digit`><strong>(Volltextdigitalisierung)</strong></a
+					>.
+				</p>
+			</div>
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">Wer hat die Volltexte korrigiert?</h4>
+				<p>
+					Der automatisiert erstellte Text wird von ausgewiesenen Expert*innen <a
+						class="hover:text-cyan-500"
+						href=`${baseurl}about#team`><strong>(Projektteam)</strong></a
+					> in oftmals mehreren Korrekturdurchgängen und nach <a
+						class="hover:text-cyan-500"
+						href=`${baseurl}project#transcription`><strong>Transkriptionsstandards</strong></a
+					> manuell verbessert.
+				</p>
+			</div>
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">Weshalb finden sich in den Volltexten Fehler?</h4>
+				<p>
+					Bei der großen Menge an Texten, kann es immer wieder vorkommen, dass Sie Fehler entdecken,
+					insbesondere bei den automatisch eingelesenen Ausgaben. Am ACDH-CH werden derzeit
+					Möglichkeiten getestet, wie Sie in Zukunft selbst dazu beitragen könnten, Fehler nach
+					entsprechender Autorisierung zu beheben und somit die Qualität der Volltexte im DIGITARIUM
+					weiter zu verbessern.
+				</p>
+			</div>
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">
+					Welche Browser eignen sich für die Suche und Lektüre im DIGITARIUM?
+				</h4>
+				<p>
+					Bei der Wahl Ihres Browsers empfehlen wir neue(ste) Versionen von Mozilla Firefox oder
+					Google Chrome.
+				</p>
+			</div>
+			<div class="max-w-[1200px] basis-full p-4">
+				<h4 class="text-2xl">An wen kann ich mich wenden, wenn ich weitere Fragen habe?</h4>
+				<p>
+					Weitere Informationen finden Sie auf den Projektseiten – gerne können Sie sich auch direkt
+					an das <a class="hover:text-cyan-500" href=`${baseurl}about#team`
+						><strong>Projektteam</strong></a
+					> wenden!
+				</p>
+			</div>
+		</div>
+	</div>
+</Page>

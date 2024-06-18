@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"strictNullChecks": true,
+		"allowJs": true,
+		"baseUrl": "/home/daniel/Documents/LTW/astro/curved-conjunction",
+		"paths": {
+			"@/*": ["./src/*"],
+			"~/*": ["./*"]
+		},
+		"plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		],
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"noImplicitAny": true
+	},
+	"include": ["./**/*"],
+	"exclude": ["dist", "node_modules", "edition/**/*.html", "src/client"]
+}
