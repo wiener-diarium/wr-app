@@ -7,11 +7,9 @@ import keystatic from "@keystatic/astro";
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
 
-const prodUrl = "https://digitarium.acdh-dev.oeaw.ac.at";
-const devUrl = "https://curved-conjunction.vercel.app";
-const prodBase = prodUrl.includes("https://digitarium.acdh-dev.oeaw.ac.at")
-	? "/"
-	: "/curved-conjunction";
+// const prodUrl = "https://digitarium.acdh-dev.oeaw.ac.at";
+const devUrl = "https://wr-app.vercel.app";
+// const prodBase = prodUrl.includes("https://digitarium.acdh-dev.oeaw.ac.at") ? "/" : "/wr-app";
 const devBase = "/";
 
 // https://astro.build/config
@@ -36,19 +34,19 @@ export default defineConfig({
 			},
 		}),
 		react(),
-		...(process.env.SKIP_KEYSTATIC ? [] : [keystatic()]),
+		keystatic(),
 		tailwind(),
 		mdx(),
 	],
 	build: {
 		format: "file",
 	},
-	output: process.env.SKIP_KEYSTATIC ? "static" : "hybrid",
+	output: "hybrid",
 	// output: "static",
 	server: {
 		port: 3000,
 	},
-	site: process.env.SKIP_KEYSTATIC ? prodUrl : devUrl,
-	base: process.env.SKIP_KEYSTATIC ? prodBase : devBase,
-	adapter: process.env.SKIP_KEYSTATIC ? undefined : vercel(),
+	site: devUrl,
+	base: devBase,
+	adapter: vercel(),
 });

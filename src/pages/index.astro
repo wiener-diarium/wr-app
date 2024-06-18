@@ -82,43 +82,6 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 				</div>
 			</div>
 		</div>
-		<div class="my-10 self-center p-4">
-			<h2 class="pb-4 text-center text-3xl text-cyan-800">Zu den Dokumenten</h2>
-			<div
-				class="mt-6 grid grid-cols-4 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
-			>
-				<a
-					href={`${baseurl}search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc`}
-				>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">Volltextsuche</h2>
-					</div>
-				</a>
-				<a href={`${baseurl}noSearch`}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">REGEX, CQL</h2>
-					</div>
-				</a>
-				<a href={`${baseurl}toc`}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">Inhaltsverzeichnis</h2>
-					</div>
-				</a>
-				<a href={`${baseurl}model`}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">Fraktur Model</h2>
-					</div>
-				</a>
-			</div>
-		</div>
 		<div class="my-10 py-4">
 			<h2 class="pb-4 text-center text-3xl text-cyan-800">
 				<a href={`${baseurl}news`}>Neues</a>

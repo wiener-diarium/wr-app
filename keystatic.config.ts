@@ -1,24 +1,13 @@
-import {
-	collection,
-	config,
-	fields,
-	type GitHubConfig,
-	type LocalConfig,
-	singleton,
-} from "@keystatic/core";
+import { collection, config, fields, type GitHubConfig, singleton } from "@keystatic/core";
 import { wrapper } from "@keystatic/core/content-components";
 
-const isProd = process.env.NODE_ENV === "production";
-const localMode: LocalConfig["storage"] = {
-	kind: "local",
-};
 const remoteMode: GitHubConfig["storage"] = {
 	kind: "github",
-	repo: "wiener-diarium/curved-conjunction",
+	repo: "wiener-diarium/wr-app",
 };
 
 export default config({
-	storage: isProd ? remoteMode : localMode,
+	storage: remoteMode,
 	singletons: {
 		about: singleton({
 			label: "Über uns",
