@@ -2,10 +2,10 @@
 import { getCollection } from "astro:content";
 
 import Page from "../layouts/Page.astro";
+import { baseurl, createBaseurl } from "../lib/baseurl.ts";
 
 const events = await getCollection("events");
 const news = await getCollection("news");
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 ---
 
 <Page title="Wiener Diarium" baseurl={baseurl}>
@@ -14,7 +14,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 			<div class="m-10 p-10 sm:m-1 sm:p-6">
 				<img
 					class="max-w-[600px] sm:max-w-[300px] md:max-w-[400px]"
-					src={`${baseurl}Digitarium-Logo-Vector-final.png`}
+					src={createBaseurl("Digitarium-Logo-Vector-final.png")}
 					alt="Wienerisches Digitarium"
 				/>
 				<h1 class="font-medium text-cyan-800">
@@ -30,7 +30,9 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="mr-4 max-w-[300px] rounded-lg border shadow-md sm:mr-0 sm:max-w-[200px]"
 							alt="Vorrede. Geehrte Leserin."
-							src={`${baseurl}acdh-digitarium-caspar_stieler-06-Claudia_Resch-e1534863442705-300x140.jpg`}
+							src={createBaseurl(
+								"acdh-digitarium-caspar_stieler-06-Claudia_Resch-e1534863442705-300x140.jpg",
+							)}
 						/>
 						<figcaption class="mr-4">
 							<em>Vorrede. Geehrte Leserin.</em>
@@ -54,7 +56,9 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md"
 							alt="Von derer Zeitungen Würde und Wichtigkeit."
-							src={`${baseurl}acdh-digitarium-caspar_stieler-02-Claudia_Resch-e1534172057675-300x103.jpg`}
+							src={createBaseurl(
+								"acdh-digitarium-caspar_stieler-02-Claudia_Resch-e1534172057675-300x103.jpg",
+							)}
 						/>
 						<figcaption class="mr-4">
 							<em>Von derer Zeitungen Würde und Wichtigkeit.</em>
@@ -73,11 +77,11 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						Erschließung einzubringen. Die Innovation des Projekts besteht vor allem darin, dass Forscher*innen
 						von Beginn an in den interdisziplinär angelegten Erschließungsprozess involviert sind. Die
 						Zeitungsausgaben stehen der Forschungsgemeinschaft, aber auch interessierten Laien in der
-						Webapplikation <a href=`${baseurl}digitarium` class="hover:text-cyan-500"
+						Webapplikation <a href='createBaseurl("digitarium`' class="hover:text-cyan-500"
 							><strong>DIGITARIUM</strong></a
 						> zur Verfügung.
 						<br /><br />
-						<a href={`${baseurl}project`} class="text-cyan-500">Mehr über das Projekt</a>
+						<a href={createBaseurl("project")} class="text-cyan-500">Mehr über das Projekt</a>
 					</p>
 				</div>
 			</div>
@@ -88,7 +92,9 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 				class="mt-6 grid grid-cols-4 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
 			>
 				<a
-					href={`${baseurl}search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc`}
+					href={createBaseurl(
+						"search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc",
+					)}
 				>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
@@ -96,21 +102,21 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<h2 class="py-4 text-center text-3xl">Volltextsuche</h2>
 					</div>
 				</a>
-				<a href={`${baseurl}noSearch`}>
+				<a href={createBaseurl("noSearch")}>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
 					>
 						<h2 class="py-4 text-center text-3xl">REGEX, CQL</h2>
 					</div>
 				</a>
-				<a href={`${baseurl}toc`}>
+				<a href={createBaseurl("toc")}>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
 					>
 						<h2 class="py-4 text-center text-3xl">Inhaltsverzeichnis</h2>
 					</div>
 				</a>
-				<a href={`${baseurl}model`}>
+				<a href={createBaseurl("model")}>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
 					>
@@ -121,7 +127,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 		</div>
 		<div class="my-10 py-4">
 			<h2 class="pb-4 text-center text-3xl text-cyan-800">
-				<a href={`${baseurl}news`}>Neues</a>
+				<a href={createBaseurl("news")}>Neues</a>
 			</h2>
 			<div
 				class="mt-6 grid grid-cols-3 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
@@ -131,7 +137,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
 						.slice(0, 3)
 						.map((n) => (
-							<a href={`${baseurl}news/${n.slug}`}>
+							<a href={createBaseurl(`news/${n.slug}`)}>
 								<div class="p-4">
 									<img class="rounded-lg" src={n.data.image} alt={n.data.title} />
 									<h3 class="pt-4 text-xl text-cyan-800">{n.data.title}</h3>
@@ -145,7 +151,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 		</div>
 		<div class="my-10 py-4">
 			<h2 class="pb-4 text-center text-3xl text-cyan-800">
-				<a href={`${baseurl}events`}>Events</a>
+				<a href={createBaseurl("events")}>Events</a>
 			</h2>
 			<div
 				class="mt-6 grid grid-cols-3 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
@@ -155,7 +161,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
 						.slice(0, 3)
 						.map((event) => (
-							<a href={`${baseurl}events/${event.slug}`}>
+							<a href={createBaseurl(`events/${event.slug}`)}>
 								<div class="p-4">
 									<img class="rounded-lg" src={event.data.image} alt={event.data.title} />
 									<h3 class="pt-4 text-xl text-cyan-800">{event.data.title}</h3>

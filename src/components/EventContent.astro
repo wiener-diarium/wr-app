@@ -1,5 +1,6 @@
 ---
 import FormatUrl from "../components/FormatUrl.astro";
+import { createBaseurl } from "../lib/baseurl";
 
 interface Author {
 	firstName: string;
@@ -14,16 +15,15 @@ interface Props {
 	place: string | null;
 	url: string | null;
 	image: string | null;
-	baseurl: string | null;
 }
 
-const { title, date, authors, type, place, url, image, baseurl } = Astro.props;
+const { title, date, authors, type, place, url, image } = Astro.props;
 ---
 
 <div class="my-8 flex flex-col">
 	<div class="container mx-auto max-w-[1200px] py-6">
 		<div class="mx-auto flex max-w-[800px] sm:px-2 md:px-2 lg:px-2">
-			{image && <img class="rounded-lg" src={`${baseurl}${image.slice(1)}`} alt={title} />}
+			{image && <img class="rounded-lg" src={createBaseurl(image.slice(1))} alt={title} />}
 		</div>
 		<div class="my-6 border-b-2 text-gray-400 sm:px-2 md:px-2 lg:px-2">
 			<h1 class="mb-8 text-center text-4xl">{title}</h1>

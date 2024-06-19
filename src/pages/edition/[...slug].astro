@@ -2,6 +2,7 @@
 import { readdir, readFile } from "node:fs/promises";
 
 import Edition from "../../layouts/Edition.astro";
+import { baseurl } from "../../lib/baseurl.js";
 
 export async function getStaticPaths() {
 	const entries = await readdir("edition", { withFileTypes: true });
@@ -34,7 +35,6 @@ export async function getStaticPaths() {
 }
 
 const { html, date, issue, corpus, name } = Astro.props;
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 ---
 
 <style is:global>

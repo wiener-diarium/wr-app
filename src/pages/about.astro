@@ -4,11 +4,10 @@ import { getCollection } from "astro:content";
 import Presentations from "../components/Presentations.astro";
 import Publications from "../components/Publications.astro";
 import Page from "../layouts/Page.astro";
+import { baseurl, createBaseurl } from "../lib/baseurl.ts";
 
 const publications = await getCollection("publications");
 const presentations = await getCollection("presentations");
-
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 ---
 
 <Page title="Über Uns" baseurl={baseurl}>
@@ -57,7 +56,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund_resch_bb96429b15-150x150.png`}
+							src={createBaseurl("rund_resch_bb96429b15-150x150.png")}
 						/>
 						<ul>
 							<li><strong>Dr. Claudia Resch</strong></li>
@@ -86,7 +85,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund-anna-mader-kratky_round_900x900-150x150.png`}
+							src={createBaseurl("rund-anna-mader-kratky_round_900x900-150x150.png")}
 						/>
 						<ul>
 							<li><strong>Dr. Anna Mader-Kratky</strong></li>
@@ -113,7 +112,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund-gunther-muehlberger_round_900x900-150x150.jpg`}
+							src={createBaseurl("rund-gunther-muehlberger_round_900x900-150x150.jpg")}
 						/>
 						<ul>
 							<li><strong>Dr. Günter Mühlberger</strong></li>
@@ -143,7 +142,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund-kampkaspar_84cce29b1d-150x150.png`}
+							src={createBaseurl("rund-kampkaspar_84cce29b1d-150x150.png")}
 						/>
 						<ul>
 							<li><strong>Mag. Dario Kampkaspar</strong></li>
@@ -170,7 +169,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund-schopper_87be04b292-150x150.png`}
+							src={createBaseurl("rund-schopper_87be04b292-150x150.png")}
 						/>
 						<ul>
 							<li><strong>Mag. Daniel Schopper</strong></li>
@@ -199,7 +198,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}csm_team_rastinger_neu_1052568e7c-150x150.png`}
+							src={createBaseurl("csm_team_rastinger_neu_1052568e7c-150x150.png")}
 						/>
 						<ul>
 							<li><strong>Nina Claudia Rastinger, BA BSc MA</strong></li>
@@ -228,7 +227,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund-nora-fischer_round_900x900-150x150.png`}
+							src={createBaseurl("rund-nora-fischer_round_900x900-150x150.png")}
 						/>
 						<ul>
 							<li><strong>Dr. Nora Fischer</strong></li>
@@ -257,7 +256,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}rund-michael-ploeltzl_round_900x900-150x150.png`}
+							src={createBaseurl("rund-michael-ploeltzl_round_900x900-150x150.png")}
 						/>
 						<ul>
 							<li><strong> Dr. Michael Pölzl</strong></li>
@@ -287,7 +286,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						<img
 							class="float-left mr-4 max-w-[300px]"
 							alt="Zeitungen erfordern gute Vorrectores."
-							src={`${baseurl}csm_team_elsner_neu_7bca603f15.png`}
+							src={createBaseurl("csm_team_elsner_neu_7bca603f15.png")}
 						/>
 						<ul>
 							<li><strong>Daniel Elsner BA MA</strong></li>
@@ -318,7 +317,9 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 					<img
 						alt="Basem Saifo, 2021"
 						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
-						src={`${baseurl}acdh-digitarium-konferenz_vom_diarium_zum_digitarium-07-Basem_Saifo-1024x768.jpg`}
+						src={createBaseurl(
+							"acdh-digitarium-konferenz_vom_diarium_zum_digitarium-07-Basem_Saifo-1024x768.jpg",
+						)}
 					/>
 					<figcaption>
 						<em>© Basem Saifo</em>
@@ -449,7 +450,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 					<img
 						alt="Claudia Resch, ACDH-CH, Wien, 2021"
 						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
-						src={`${baseurl}acdh-digitarium-druckerei-Claudia_Resch-1024x576.jpg`}
+						src={createBaseurl("acdh-digitarium-druckerei-Claudia_Resch-1024x576.jpg")}
 					/>
 					<figcaption>
 						<em>© Claudia Resch</em>
@@ -479,7 +480,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 					<img
 						alt="Claudia Resch, ACDH-CH, Wien, 2021"
 						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
-						src={`${baseurl}Diarium-Reisen-4-1024x399.png`}
+						src={createBaseurl("Diarium-Reisen-4-1024x399.png")}
 					/>
 					<figcaption>
 						<em>© Claudia Resch</em>

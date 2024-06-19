@@ -6,6 +6,7 @@ import NewsContent from "../../components/NewsContent.astro";
 import SingleImage from "../../components/SingleImage.astro";
 import TextImage from "../../components/TextImage.astro";
 import Page from "../../layouts/Page.astro";
+import { baseurl } from "../../lib/baseurl.js";
 
 type Props = CollectionEntry<"news">;
 
@@ -21,7 +22,6 @@ export async function getStaticPaths() {
 
 const { news } = Astro.props;
 const { Content } = await news.render();
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 ---
 
 <Page baseurl={baseurl} title={news.data.title}>

@@ -1,5 +1,7 @@
 ---
-const { textcolor, baseurl } = Astro.props;
+import { createBaseurl } from "../lib/baseurl";
+
+const { textcolor } = Astro.props;
 ---
 
 <div class="mx-auto max-w-7xl p-4 sm:px-6 lg:px-8">
@@ -40,10 +42,10 @@ const { textcolor, baseurl } = Astro.props;
 		</div>
 		<div class="flex flex-1 items-center sm:justify-center">
 			<div class="float-left flex shrink-0 content-start">
-				<a href=`${baseurl}` aria-label="Index">
+				<a href={createBaseurl("")} aria-label="Index">
 					<img
 						class="h-14 w-auto"
-						src={`${baseurl}Digitarium-Logo-Vector-final.png`}
+						src={createBaseurl("Digitarium-Logo-Vector-final.png")}
 						alt="Wiener Diarium Logo"
 					/>
 				</a>
@@ -54,7 +56,7 @@ const { textcolor, baseurl } = Astro.props;
 			<div class="absolute right-2 ml-6 block sm:hidden">
 				<div class="flex space-x-4">
 					<a
-						href={`${baseurl}digitarium`}
+						href={createBaseurl("digitarium")}
 						class={`block px-2 text-lg ${textcolor}`}
 						role="menuitem"
 						tabindex="-1"
@@ -62,7 +64,7 @@ const { textcolor, baseurl } = Astro.props;
 						Dokumente
 					</a>
 					<a
-						href={`${baseurl}project`}
+						href={createBaseurl("project")}
 						class={`block px-2 text-lg ${textcolor}`}
 						role="menuitem"
 						tabindex="-1"
@@ -70,7 +72,7 @@ const { textcolor, baseurl } = Astro.props;
 						Projekt
 					</a>
 					<a
-						href={`${baseurl}about`}
+						href={createBaseurl("about")}
 						class={`block px-2 text-lg ${textcolor}`}
 						role="menuitem"
 						tabindex="-1"
@@ -78,7 +80,7 @@ const { textcolor, baseurl } = Astro.props;
 						Über Uns
 					</a>
 					<a
-						href={`${baseurl}news`}
+						href={createBaseurl("news")}
 						class={`block px-2 text-lg ${textcolor}`}
 						role="menuitem"
 						tabindex="-1"
@@ -86,7 +88,7 @@ const { textcolor, baseurl } = Astro.props;
 						Neues
 					</a>
 					<a
-						href={`${baseurl}events`}
+						href={createBaseurl("events")}
 						class={`block px-2 text-lg ${textcolor}`}
 						role="menuitem"
 						tabindex="-1"
@@ -94,7 +96,7 @@ const { textcolor, baseurl } = Astro.props;
 						Events
 					</a>
 					<a
-						href={`${baseurl}help`}
+						href={createBaseurl("help")}
 						class={`block px-2 text-lg ${textcolor}`}
 						role="menuitem"
 						tabindex="-1"
@@ -108,7 +110,7 @@ const { textcolor, baseurl } = Astro.props;
 			<form
 				class="my-3 hidden sm:ml-6 sm:block"
 				method="get"
-				action={`${baseurl}search?gestrich_index[query]`}
+				action={createBaseurl("search?gestrich_index[query]`}
 				role="search"
 			>
 				<input
@@ -134,7 +136,7 @@ const { textcolor, baseurl } = Astro.props;
 <div class="hidden" id="mobile-menu">
 	<div class="space-y-1 px-2 pb-3 pt-2 text-center">
 		<a
-			href={`${baseurl}digitarium`}
+			href={createBaseurl("digitarium")}
 			class={`block px-4 py-2 text-lg ${textcolor}`}
 			role="menuitem"
 			tabindex="-1"
@@ -142,7 +144,7 @@ const { textcolor, baseurl } = Astro.props;
 			Dokumente
 		</a>
 		<a
-			href={`${baseurl}project`}
+			href={createBaseurl("project")}
 			class={`block px-4 py-2 text-lg ${textcolor}`}
 			role="menuitem"
 			tabindex="-1"
@@ -150,7 +152,7 @@ const { textcolor, baseurl } = Astro.props;
 			Projekt
 		</a>
 		<a
-			href={`${baseurl}about`}
+			href={createBaseurl("about")}
 			class={`block px-4 py-2 text-lg ${textcolor}`}
 			role="menuitem"
 			tabindex="-1"
@@ -158,7 +160,7 @@ const { textcolor, baseurl } = Astro.props;
 			Über Uns
 		</a>
 		<a
-			href={`${baseurl}news`}
+			href={createBaseurl("news")}
 			class={`block px-4 py-2 text-lg ${textcolor}`}
 			role="menuitem"
 			tabindex="-1"
@@ -166,7 +168,7 @@ const { textcolor, baseurl } = Astro.props;
 			Neues
 		</a>
 		<a
-			href={`${baseurl}events`}
+			href={createBaseurl("events")}
 			class={`block px-4 py-2 text-lg ${textcolor}`}
 			role="menuitem"
 			tabindex="-1"
@@ -174,14 +176,14 @@ const { textcolor, baseurl } = Astro.props;
 			Events
 		</a>
 		<a
-			href={`${baseurl}help`}
+			href={createBaseurl("help")}
 			class={`block px-4 py-2 text-lg ${textcolor}`}
 			role="menuitem"
 			tabindex="-1"
 		>
 			Hilfe
 		</a>
-		<!-- <form class="my-3" method="get" action={`${baseurl}search.html?ltw[query]`} role="search">
+		<!-- <form class="my-3" method="get" action={createBaseurl("search.html?ltw[query]`} role="search">
 			<input
 				class="w-full rounded-md border-0 p-2 focus:outline-none focus:ring-0"
 				id="s"

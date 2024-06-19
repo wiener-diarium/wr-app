@@ -1,6 +1,8 @@
 ---
 import { readFile } from "node:fs/promises";
 
+import { createBaseurl } from "../lib/baseurl";
+
 interface Meta {
 	id: string;
 	title: string;
@@ -8,7 +10,6 @@ interface Meta {
 	link: string;
 	date: string;
 }
-const { baseurl } = Astro.props;
 const about = await readFile("edition/about.json", "utf-8");
 const meta: Record<
 	string,
@@ -32,7 +33,7 @@ for (const [id, { title, corpus }] of Object.entries(meta)) {
 					return "Ausgewählte Ausgaben Siebenjähriger Krieg";
 			}
 		})(),
-		link: `${baseurl}edition/${id.replace("edoc_wd_", "")}?img=on`,
+		link: createBaseurl(`edition/${id.replace("edoc_wd_", "")}?img=on`),
 		date: date.replace(/T.+/g, ""),
 	});
 }
@@ -64,7 +65,7 @@ for (const [id, { title, corpus }] of Object.entries(meta)) {
 </style>
 <script is:inline src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
 <script is:inline src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
-<script is:inline define:vars={{ baseurl, data }}>
+<script is:inline define:vars={{ data }}>
 	const table = new Tabulator("#toc", {
 		height: 1000,
 		layout: "fitColumns",

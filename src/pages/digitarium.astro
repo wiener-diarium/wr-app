@@ -2,6 +2,7 @@
 import { readFile } from "node:fs/promises";
 
 import Page from "../layouts/Page.astro";
+import { baseurl, createBaseurl } from "../lib/baseurl.ts";
 
 interface About {
 	title: string;
@@ -26,8 +27,6 @@ for (const [key, value] of Object.entries(data)) {
 		kind: value.corpus,
 	});
 }
-
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 ---
 
 <Page title="Digitarium" baseurl={baseurl}>
@@ -35,7 +34,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 		<figure class="block self-center">
 			<img
 				class="float-left max-w-[800px] rounded-lg border shadow-md sm:max-w-[300px] md:max-w-[400px]"
-				src={`${baseurl}acdh-digitarium-TagdesDenkmals-03-ÖAW_APA-Fotoservice_Schedl.jpg`}
+				src={createBaseurl("acdh-digitarium-TagdesDenkmals-03-ÖAW_APA-Fotoservice_Schedl.jpg")}
 				alt="Wiener Diarium"
 			/>
 			<figcaption class="mr-4 w-full">
@@ -47,7 +46,9 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 				class="mt-8 grid grid-cols-4 gap-8 sm:grid-cols-1 sm:gap-1 md:grid-cols-2 lg:grid-cols-2"
 			>
 				<a
-					href={`${baseurl}search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc`}
+					href={createBaseurl(
+						"search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc",
+					)}
 				>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
@@ -57,7 +58,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						</div>
 					</div>
 				</a>
-				<a href={`${baseurl}noSearch`}>
+				<a href={createBaseurl("noSearch")}>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
 					>
@@ -66,7 +67,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						</div>
 					</div>
 				</a>
-				<a href={`${baseurl}toc`}>
+				<a href={createBaseurl("toc")}>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
 					>
@@ -75,7 +76,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						</div>
 					</div>
 				</a>
-				<a href={`${baseurl}model`}>
+				<a href={createBaseurl("model")}>
 					<div
 						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
 					>

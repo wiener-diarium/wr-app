@@ -1,7 +1,6 @@
 ---
 import PageFullWidth from "../layouts/PageFullWidth.astro";
-
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
+import { baseurl } from "../lib/baseurl.ts";
 ---
 
 <link
@@ -319,7 +318,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 		panel({
 			collapsed: ({ state }) => {
-				return state.query.length === 0;
+				return state.query?.length === 0;
 			},
 			templates: {
 				header: "Sammlung wählen",
@@ -345,7 +344,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 		panel({
 			collapsed: ({ state }) => {
-				return state.query.length === 0;
+				return state.query?.length === 0;
 			},
 			templates: {
 				header: "Status <br/> (automatisch erstellter Text)",
@@ -374,7 +373,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 		panel({
 			collapsed: ({ state }) => {
-				return state.query.length === 0;
+				return state.query?.length === 0;
 			},
 			templates: {
 				header: "Wochentag",
@@ -404,7 +403,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 		panel({
 			collapsed: ({ state }) => {
-				return state.query.length === 0;
+				return state.query?.length === 0;
 			},
 			templates: {
 				header: "Jahrzehnt",
@@ -435,7 +434,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 		panel({
 			collapsed: ({ state }) => {
-				return state.query.length === 0;
+				return state.query?.length === 0;
 			},
 			templates: {
 				header: "Schlagworte",
@@ -474,7 +473,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 
 		panel({
 			collapsed: ({ state }) => {
-				return state.query.length === 0;
+				return state.query?.length === 0;
 			},
 			templates: {
 				header: "Orte",

@@ -1,7 +1,6 @@
 ---
 import Page from "../layouts/Page.astro";
-
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
+import { baseurl, createBaseurl } from "../lib/baseurl.ts";
 ---
 
 <Page title="Hilfe" baseurl={baseurl}>
@@ -10,7 +9,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 			<img
 				alt="Screenshot des DIGITARIUMs"
 				class="w-full rounded-lg border object-cover object-center shadow-md"
-				src={`${baseurl}F-A-1024x288_cropped.png`}
+				src={createBaseurl("F-A-1024x288_cropped.png")}
 			/>
 		</div>
 		<div class="mx-auto mb-8 flex flex-col">
@@ -33,7 +32,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 					Im DIGITARIUM sind derzeit jene Zeitungsausgaben enthalten, die von Forschenden, den
 					Leser*innen der Wiener Zeitung und dem Projektteam <a
 						class="hover:text-cyan-500"
-						href=`${baseurl}project#call`><strong>nominiert</strong></a
+						href={createBaseurl("project#call")}><strong>nominiert</strong></a
 					> wurden.
 				</p>
 			</div>
@@ -60,7 +59,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 						href="https://transkribus.eu/"><strong>Transkribus</strong></a
 					> eingelesen und dann unter erheblichem Zeitaufwand manuell verbessert <a
 						class="hover:text-cyan-500"
-						href=`${baseurl}project#digit`><strong>(Volltextdigitalisierung)</strong></a
+						href={createBaseurl("project#digit")}><strong>(Volltextdigitalisierung)</strong></a
 					>.
 				</p>
 			</div>
@@ -69,10 +68,11 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 				<p>
 					Der automatisiert erstellte Text wird von ausgewiesenen Expert*innen <a
 						class="hover:text-cyan-500"
-						href=`${baseurl}about#team`><strong>(Projektteam)</strong></a
+						href={createBaseurl("about#team")}><strong>(Projektteam)</strong></a
 					> in oftmals mehreren Korrekturdurchgängen und nach <a
 						class="hover:text-cyan-500"
-						href=`${baseurl}project#transcription`><strong>Transkriptionsstandards</strong></a
+						href={createBaseurl("project#transcription")}
+						><strong>Transkriptionsstandards</strong></a
 					> manuell verbessert.
 				</p>
 			</div>
@@ -99,7 +99,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 				<h4 class="text-2xl">An wen kann ich mich wenden, wenn ich weitere Fragen habe?</h4>
 				<p>
 					Weitere Informationen finden Sie auf den Projektseiten – gerne können Sie sich auch direkt
-					an das <a class="hover:text-cyan-500" href=`${baseurl}about#team`
+					an das <a class="hover:text-cyan-500" href={createBaseurl("about#team")}
 						><strong>Projektteam</strong></a
 					> wenden!
 				</p>

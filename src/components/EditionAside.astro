@@ -1,18 +1,20 @@
 ---
+import { createBaseurl } from "../lib/baseurl";
 import EditionEditor from "./EditionEditor.astro";
 
-const { textcolor, baseurl, backgroundcolor, width, issue, corpus, date, name } = Astro.props;
+const { textcolor, backgroundcolor, width, issue, corpus, date, name } = Astro.props;
 
 function verifyArche() {
 	const format = "?format=raw";
 	if (corpus === "1") {
 		const url = "https://id.acdh.oeaw.ac.at/digitarium/";
-		const doc = "edoc_" + name.replace(".html", ".xml");
+		const doc = "ed__" + name.replace(".html", ".xml");
 		return url + doc + format;
 	} else {
-		const url = "https://id.acdh.oeaw.ac.at/digitarium2/";
-		const doc = name.replace(".html", ".xml");
-		return url + doc + format;
+		// const url = "https://id.acdh.oeaw.ac.at/digitarium2/";
+		// const doc = name.replace(".html", ".xml");
+		// return url + doc + format;
+		return "/";
 	}
 }
 ---
@@ -55,19 +57,18 @@ function verifyArche() {
 		</ul>
 	</div>
 	<div class="active sticky top-16" id="edition-aside">
-		<div class="my-6 flex shrink-0 text-center text-white">
-			<a href=`${baseurl}digitarium` aria-label="Zurück zur Hauptseite">
+		<div class="my-4 flex shrink-0 justify-center text-center text-white">
+			<a href={createBaseurl("digitarium")} aria-label="Zurück zur Hauptseite">
 				<img
-					class="w-auto p-6"
-					src={`${baseurl}Digitarium-Logo-Vector-final.png`}
+					class="w-60 p-4"
+					src={createBaseurl("Digitarium-Logo-Vector-final.png")}
 					alt="Wiener Diarium Logo"
 				/>
-				Zurück zur Hauptseite
 			</a>
 		</div>
 
 		<div class="flex items-center justify-center text-center text-white">
-			<div class="p-6">
+			<div class="p-4">
 				<p>
 					{
 						(() => {

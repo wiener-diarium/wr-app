@@ -1,4 +1,6 @@
 ---
+import { createBaseurl } from "../lib/baseurl.ts";
+
 interface Image {
 	image: string;
 	alt: string;
@@ -8,7 +10,6 @@ interface Props {
 	image: Image;
 }
 const { image } = Astro.props;
-const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 ---
 
 <div class="flex flex-col">
@@ -18,7 +19,7 @@ const baseurl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL : "";
 				<figure class="object-contain">
 					<img
 						class="rounded-lg hover:saturate-50"
-						src={`${baseurl}${image.image.slice(1)}`}
+						src={createBaseurl(image.image.slice(1))}
 						alt={image.alt}
 					/>
 					<figcaption class="pr-1 text-center text-sm text-gray-500">{image.caption}</figcaption>
