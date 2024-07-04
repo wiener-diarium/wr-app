@@ -1,5 +1,8 @@
 ---
+import PageCard from "../components/PageCard.astro";
+import PageSection from "../components/PageSection.astro";
 import Page from "../layouts/Page.astro";
+import PageContent from "../layouts/PageContent.astro";
 import { baseurl } from "../lib/baseurl.ts";
 
 async function impressum() {
@@ -11,7 +14,18 @@ const imprint = impressum();
 ---
 
 <Page title="Imprint" baseurl={baseurl}>
-	<div class="m-4 p-4" set:html={imprint} />
+	<PageContent classNames={["container", "mx-auto", "mb-auto", "max-w-7xl"]}>
+		<PageSection>
+			<h1 class="border-b border-[#00000026] text-xl font-medium">
+				<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+					Imprint
+				</span>
+			</h1>
+			<PageCard>
+				<div set:html={imprint} />
+			</PageCard>
+		</PageSection>
+	</PageContent>
 </Page>
 <style is:global>
 	h2 {

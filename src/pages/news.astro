@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
+import Media from "../components/Media.astro";
 import PageCard from "../components/PageCard.astro";
 import PageSection from "../components/PageSection.astro";
 import Page from "../layouts/Page.astro";
@@ -14,6 +15,7 @@ interface Author {
 }
 
 const news = await getCollection("news");
+const media = await getCollection("media");
 ---
 
 <Page title="Neues" baseurl={baseurl}>
@@ -60,6 +62,24 @@ const news = await getCollection("news");
 									</div>
 								</div>
 							))
+					}
+				</PageCard>
+			</PageSection>
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Medienspiegel
+					</span>
+				</h2>
+				<PageCard>
+					{
+						media.length > 0 ? (
+							media
+								.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
+								.map((m) => <Media {...m.data} />)
+						) : (
+							<div>Keine Präsentationen gefunden</div>
+						)
 					}
 				</PageCard>
 			</PageSection>
