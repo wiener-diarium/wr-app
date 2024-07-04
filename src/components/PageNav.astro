@@ -5,12 +5,12 @@ interface Item {
 }
 
 const { items } = Astro.props;
-const gridCols = `grid-cols-${items.length}`;
+const cols = items.length.toString();
 ---
 
 <div class="sticky top-2 rounded-md border border-[#0000001a] bg-white sm:p-1">
 	<div
-		class=`${gridCols} grid text-center text-gray-500 shadow-md sm:grid-cols-3 sm:text-sm md:grid-cols-3`
+		class=`grid grid-cols-${cols} text-center text-gray-500 shadow-md sm:grid-cols-3 sm:text-sm	md:grid-cols-3`
 	>
 		{
 			items.map((item: Item) => (
