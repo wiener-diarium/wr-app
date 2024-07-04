@@ -1,7 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 
+import Card from "../components/Card.astro";
+import PageCard from "../components/PageCard.astro";
+import PageSection from "../components/PageSection.astro";
+import Tile from "../components/Tile.astro";
 import Page from "../layouts/Page.astro";
+import PageContent from "../layouts/PageContent.astro";
 import { baseurl, createBaseurl } from "../lib/baseurl.ts";
 
 const events = await getCollection("events");
@@ -9,195 +14,171 @@ const news = await getCollection("news");
 ---
 
 <Page title="Wiener Diarium" baseurl={baseurl}>
-	<div class="flex flex-col">
-		<div class="mx-auto my-[5%] text-center">
-			<div class="m-10 p-10 sm:m-1 sm:p-6">
-				<img
-					class="max-w-[600px] sm:max-w-[300px] md:max-w-[400px]"
-					src={createBaseurl("Digitarium-Logo-Vector-final.png")}
-					alt="Wienerisches Digitarium"
-				/>
-				<h1 class="font-medium text-cyan-800">
-					<div class="text-4xl sm:text-xl">Digitaler Datensatz für</div>
-					<span class="text-4xl sm:text-xl" id="intro-typed"></span>
-				</h1>
-			</div>
+	<section class="relative mb-6 border-y border-brand">
+		<div class="absolute inset-0 size-full bg-neutral-400">
+			<img
+				class="size-full object-cover"
+				src={createBaseurl("acdh-digitarium-TagdesDenkmals-03-ÖAW_APA-Fotoservice_Schedl.jpg")}
+				alt="Wienerisches Digitarium"
+			/>
+			<div class="absolute inset-0 size-full bg-[#cfeefbeb]"></div>
 		</div>
-		<div class="mb-[3%] flex flex-col">
-			<div class="basis-full">
-				<div class="flex flex-row p-4 sm:mx-auto sm:flex-col sm:items-center sm:p-2">
-					<figure class="sm:mb-4 sm:flex sm:flex-col">
-						<img
-							class="mr-4 max-w-[300px] rounded-lg border shadow-md sm:mr-0 sm:max-w-[200px]"
-							alt="Vorrede. Geehrte Leserin."
-							src={createBaseurl(
-								"acdh-digitarium-caspar_stieler-06-Claudia_Resch-e1534863442705-300x140.jpg",
-							)}
-						/>
-						<figcaption class="mr-4">
-							<em>Vorrede. Geehrte Leserin.</em>
-						</figcaption>
-					</figure>
-					<p>
-						Das <strong>Wien[n]erische Diarium</strong>, bis Juni 2023 in gedruckter Form als <strong
-							>Wiener Zeitung</strong
-						> erhältlich, war im 18. Jahrhundert das bedeutendste Medium der Habsburgermonarchie. Dass
-						sich seit seiner Gründung 1703 sämtliche Ausgaben erhalten haben, macht es zu einer historischen
-						Quelle von besonderem Wert, denn es dokumentiert zahlreiche historische Ereignisse, Personen
-						und Orte. Auch Veränderungen der Sprache und die Entwicklung des Journalismus lassen sich
-						über die Jahre hinweg erforschen. Für viele geisteswissenschaftliche Disziplinen ist das
-						<strong>Wien[n]erische Diarium</strong> daher eine wichtige Quelle, etwa für die historische
-						Sprachwissenschaft, historische Medienwissenschaft, Kunstgeschichte, Musikgeschichte, Sozialgeschichte
-						u.v.m.
-					</p>
+		<div class="relative mx-auto grid w-full max-w-screen-custom gap-y-6 px-4 py-16">
+			<h1 class="mt-8 font-medium text-cyan-800">
+				<div class="text-5xl">Das Wien[n]erische Diarium:</div>
+				<div class="text-4xl sm:text-xl">Digitaler Datensatz für</div>
+				<span class="text-4xl sm:text-xl" id="intro-typed"></span>
+			</h1>
+		</div>
+	</section>
+	<PageContent classNames={["container", "mx-auto", "mb-auto", "max-w-7xl"]}>
+		<div class="flex flex-col">
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Willkommen
+					</span>
+				</h2>
+				<div>
+					<PageCard
+						image="/acdh-digitarium-caspar_stieler-06-Claudia_Resch-e1534863442705-300x140.jpg"
+					>
+						<h2 class="text-xl">Vorrede. Geehrte Leserin.</h2>
+						<p class="text-lg">
+							Das Wien[n]erische Diarium, bis Juni 2023 in gedruckter Form als Wiener
+							Zeitungerhältlich, war im 18. Jahrhundert das bedeutendste Medium der
+							Habsburgermonarchie. Dass sich seit seiner Gründung 1703 sämtliche Ausgaben erhalten
+							haben, macht es zu einer historischen Quelle von besonderem Wert, denn es dokumentiert
+							zahlreiche historische Ereignisse, Personen und Orte. Auch Veränderungen der Sprache
+							und die Entwicklung des Journalismus lassen sich über die Jahre hinweg erforschen. Für
+							viele geisteswissenschaftliche Disziplinen ist das Wien[n]erische Diarium daher eine
+							wichtige Quelle, etwa für die historische Sprachwissenschaft, historische
+							Medienwissenschaft, Kunstgeschichte, Musikgeschichte, Sozialgeschichte u.v.m.
+						</p>
+						<p class="text-lg">
+							Das Ziel des vorliegenden Vorhabens ist es daher, in enger Zusammenarbeit mit
+							Forscher*innen dieser Disziplinen zu untersuchen, welche Aspekte der Erschließung aus
+							deren Sicht von besonderer gemeinsamer Relevanz sind. Als breite Materialbasis dienen
+							mehrere hundert Zeitungsausgaben verteilt über das 18. Jahrhundert, zu denen
+							sorgfältig korrigierte, gesicherte Volltextversionen mit strukturellen
+							Basisannotationen (TEI P5) erstellt werden. Da die weitere Erschließung – z.B. die
+							Annotation von Personen- und Ortsnamen – spezielles Fachwissen voraussetzt, sind
+							Forschende der genannten geisteswissenschaftlichen Disziplinen als Expert*innen dazu
+							eingeladen, ihr vorhandenes Wissen über den Text bei dessen Erschließung einzubringen.
+							Die Innovation des Projekts besteht vor allem darin, dass Forscher*innen von Beginn an
+							in den interdisziplinär angelegten Erschließungsprozess involviert sind. Die
+							Zeitungsausgaben stehen der Forschungsgemeinschaft, aber auch interessierten Laien in
+							der Webapplikation DIGITARIUM zur Verfügung.
+						</p>
+						<a href={createBaseurl("project")} class="text-lg text-cyan-800"> Projekt </a>
+					</PageCard>
 				</div>
-				<div class="mt-10 flex flex-row p-4 sm:mx-auto sm:flex-col sm:items-center sm:p-2">
-					<figure class="sm:mb-4 sm:mr-0 sm:flex sm:max-w-[200px] sm:flex-col">
-						<img
-							class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md"
-							alt="Von derer Zeitungen Würde und Wichtigkeit."
-							src={createBaseurl(
-								"acdh-digitarium-caspar_stieler-02-Claudia_Resch-e1534172057675-300x103.jpg",
-							)}
-						/>
-						<figcaption class="mr-4">
-							<em>Von derer Zeitungen Würde und Wichtigkeit.</em>
-						</figcaption>
-					</figure>
-					<p>
-						Das Ziel des vorliegenden Vorhabens ist es daher, in enger Zusammenarbeit mit
-						Forscher*innen dieser Disziplinen zu untersuchen, welche Aspekte der Erschließung aus
-						deren Sicht von besonderer gemeinsamer Relevanz sind.
-						<br /><br />
-						Als breite Materialbasis dienen mehrere hundert Zeitungsausgaben verteilt über das 18. Jahrhundert,
-						zu denen sorgfältig korrigierte, gesicherte Volltextversionen mit strukturellen Basisannotationen
-						(TEI P5) erstellt werden. Da die weitere Erschließung – z.B. die Annotation von Personen-
-						und Ortsnamen – spezielles Fachwissen voraussetzt, sind Forschende der genannten geisteswissenschaftlichen
-						Disziplinen als Expert*innen dazu eingeladen, ihr vorhandenes Wissen über den Text bei dessen
-						Erschließung einzubringen. Die Innovation des Projekts besteht vor allem darin, dass Forscher*innen
-						von Beginn an in den interdisziplinär angelegten Erschließungsprozess involviert sind. Die
-						Zeitungsausgaben stehen der Forschungsgemeinschaft, aber auch interessierten Laien in der
-						Webapplikation <a href='createBaseurl("digitarium`' class="hover:text-cyan-500"
-							><strong>DIGITARIUM</strong></a
-						> zur Verfügung.
-						<br /><br />
-						<a href={createBaseurl("project")} class="text-cyan-500">Mehr über das Projekt</a>
-					</p>
+			</PageSection>
+		</div>
+
+		<div class="my-10 self-center p-4">
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Zum DIGITARIUM
+					</span>
+				</h2>
+				<div
+					class="mt-6 grid grid-cols-4 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+				>
+					<Tile
+						title="Volltextsuche"
+						url="search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc"
+					/>
+					<Tile title="REGEX, CQL" url="noSearch" />
+					<Tile title="Inhaltsverzeichnis" url="toc" />
+					<Tile title="Fraktur Model" url="model" />
 				</div>
-			</div>
+			</PageSection>
 		</div>
 		<div class="my-10 self-center p-4">
-			<h2 class="pb-4 text-center text-3xl text-cyan-800">Zu den Dokumenten</h2>
-			<div
-				class="mt-6 grid grid-cols-4 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
-			>
-				<a
-					href={createBaseurl(
-						"search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc",
-					)}
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Neues
+					</span>
+				</h2>
+				<div
+					class="mt-6 grid grid-cols-3 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
 				>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">Volltextsuche</h2>
-					</div>
-				</a>
-				<a href={createBaseurl("noSearch")}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">REGEX, CQL</h2>
-					</div>
-				</a>
-				<a href={createBaseurl("toc")}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">Inhaltsverzeichnis</h2>
-					</div>
-				</a>
-				<a href={createBaseurl("model")}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500 sm:mx-2"
-					>
-						<h2 class="py-4 text-center text-3xl">Fraktur Model</h2>
-					</div>
-				</a>
-			</div>
+					{
+						news
+							.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
+							.slice(0, 3)
+							.map((n) => (
+								<Card
+									image={
+										n.data.image
+											? n.data.image
+											: "/acdh-digitarium-caspar_stieler-06-Claudia_Resch-e1534863442705-300x140.jpg"
+									}
+									title={n.data.title}
+									leadIn=""
+									link={{ label: "Mehr", href: createBaseurl(`news/${n.slug}`) }}
+								/>
+							))
+					}
+				</div>
+			</PageSection>
 		</div>
-		<div class="my-10 py-4">
-			<h2 class="pb-4 text-center text-3xl text-cyan-800">
-				<a href={createBaseurl("news")}>Neues</a>
-			</h2>
-			<div
-				class="mt-6 grid grid-cols-3 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
-			>
-				{
-					news
-						.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
-						.slice(0, 3)
-						.map((n) => (
-							<a href={createBaseurl(`news/${n.slug}`)}>
-								<div class="p-4">
-									<img class="rounded-lg" src={n.data.image} alt={n.data.title} />
-									<h3 class="pt-4 text-xl text-cyan-800">{n.data.title}</h3>
-									<p>{n.data.date?.toLocaleDateString("de-De")}</p>
-									<p>{n.data.authors.map((author) => author.lastName + ", " + author.firstName)}</p>
-								</div>
-							</a>
-						))
-				}
-			</div>
+		<div class="my-10 self-center p-4">
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Events
+					</span>
+				</h2>
+				<div
+					class="mt-6 grid grid-cols-3 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
+				>
+					{
+						events
+							.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
+							.slice(0, 3)
+							.map((n) => (
+								<Card
+									image={
+										n.data.image
+											? n.data.image
+											: "/acdh-digitarium-caspar_stieler-06-Claudia_Resch-e1534863442705-300x140.jpg"
+									}
+									title={n.data.title}
+									leadIn=""
+									link={{ label: "Mehr", href: createBaseurl(`events/${n.slug}`) }}
+								/>
+							))
+					}
+				</div>
+			</PageSection>
 		</div>
-		<div class="my-10 py-4">
-			<h2 class="pb-4 text-center text-3xl text-cyan-800">
-				<a href={createBaseurl("events")}>Events</a>
-			</h2>
-			<div
-				class="mt-6 grid grid-cols-3 gap-8 sm:m-0 sm:mb-4 sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3"
-			>
-				{
-					events
-						.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
-						.slice(0, 3)
-						.map((event) => (
-							<a href={createBaseurl(`events/${event.slug}`)}>
-								<div class="p-4">
-									<img class="rounded-lg" src={event.data.image} alt={event.data.title} />
-									<h3 class="pt-4 text-xl text-cyan-800">{event.data.title}</h3>
-									<p>{event.data.date?.toLocaleDateString("de-De")}</p>
-									<p>
-										{event.data.authors.map((author) => author.lastName + ", " + author.firstName)}
-									</p>
-								</div>
-							</a>
-						))
-				}
-			</div>
-		</div>
-	</div>
-
-	<script>
-		import Typed from "typed.js";
-
-		const options = {
-			strings: [
-				"Schüler*innen",
-				"Musikwissenschafter*innen",
-				"Journalist*innen",
-				"Genealog*innen",
-				"Numismatiker*innen",
-				"Zeitreisende",
-				"Medienhistoriker*innen",
-				"Medizinhistoriker*innen",
-				"Wissbegierige",
-				"Namensforscher*innen",
-			],
-			typeSpeed: 80,
-			backSpeed: 60,
-			loop: true,
-		};
-
-		const typed = new Typed("#intro-typed", options);
-	</script>
+	</PageContent>
 </Page>
+
+<script>
+	import Typed from "typed.js";
+
+	const options = {
+		strings: [
+			"Schüler*innen",
+			"Musikwissenschafter*innen",
+			"Journalist*innen",
+			"Genealog*innen",
+			"Numismatiker*innen",
+			"Zeitreisende",
+			"Medienhistoriker*innen",
+			"Medizinhistoriker*innen",
+			"Wissbegierige",
+			"Namensforscher*innen",
+		],
+		typeSpeed: 80,
+		backSpeed: 60,
+		loop: true,
+	};
+
+	const typed = new Typed("#intro-typed", options);
+</script>

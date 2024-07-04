@@ -20,8 +20,12 @@ module.exports = {
 					"5xl": "2550px",
 				},
 			},
+			colors: {
+				brand: "var(--color-brand)",
+			},
 		},
 		screens: {
+			custom: "70rem",
 			sm: { min: "320px", max: "767px" },
 			// => @media (min-width: 640px and max-width: 767px) { ... }
 

@@ -3,9 +3,12 @@ import { type CollectionEntry, getCollection } from "astro:content";
 
 import ImageGallery from "../../components/ImageGallery.astro";
 import NewsContent from "../../components/NewsContent.astro";
+import PageCard from "../../components/PageCard.astro";
+import PageSection from "../../components/PageSection.astro";
 import SingleImage from "../../components/SingleImage.astro";
 import TextImage from "../../components/TextImage.astro";
 import Page from "../../layouts/Page.astro";
+import PageContent from "../../layouts/PageContent.astro";
 import { baseurl } from "../../lib/baseurl.js";
 
 type Props = CollectionEntry<"news">;
@@ -25,7 +28,13 @@ const { Content } = await news.render();
 ---
 
 <Page baseurl={baseurl} title={news.data.title}>
-	<NewsContent baseurl={baseurl} {...news.data}>
-		<Content baseurl={baseurl} components={{ ...components }} />
-	</NewsContent>
+	<PageContent classNames={["container", "mx-auto", "mb-auto", "max-w-7xl"]}>
+		<PageSection>
+			<PageCard>
+				<NewsContent baseurl={baseurl} {...news.data}>
+					<Content baseurl={baseurl} components={{ ...components }} />
+				</NewsContent>
+			</PageCard>
+		</PageSection>
+	</PageContent>
 </Page>

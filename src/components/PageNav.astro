@@ -1,0 +1,26 @@
+---
+interface Item {
+	title: string;
+	hash: string;
+}
+
+const { items } = Astro.props;
+const gridCols = `grid-cols-${items.length}`;
+---
+
+<div class="sticky top-2 rounded-md border border-[#0000001a] bg-white sm:p-1">
+	<div
+		class=`${gridCols} grid text-center text-gray-500 shadow-md sm:grid-cols-3 sm:text-sm md:grid-cols-3`
+	>
+		{
+			items.map((item: Item) => (
+				<a
+					href={item.hash}
+					class="rounded-md p-6 px-2 hover:bg-cyan-500 hover:text-white sm:p-1 md:p-2"
+				>
+					{item.title}
+				</a>
+			))
+		}
+	</div>
+</div>

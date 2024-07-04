@@ -1,11 +1,25 @@
 ---
 import Noske from "../components/Noske.astro";
+import PageCard from "../components/PageCard.astro";
+import PageSection from "../components/PageSection.astro";
 import Page from "../layouts/Page.astro";
+import PageContent from "../layouts/PageContent.astro";
 import { baseurl } from "../lib/baseurl.ts";
 ---
 
 <Page title="CQL, Regex Suche" baseurl={baseurl}>
-	<div class="flex min-h-[600px] flex-col">
-		<Noske id="hits" />
-	</div>
+	<PageContent classNames={["container", "mx-auto", "mb-auto", "max-w-7xl"]}>
+		<PageSection>
+			<h2 class="border-b border-[#00000026] text-xl font-medium">
+				<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+					Einfache Suche in den Wiener Diarium Transkripten
+				</span>
+			</h2>
+			<PageCard>
+				<div class="flex min-h-[600px] flex-col">
+					<Noske id="hits" />
+				</div>
+			</PageCard>
+		</PageSection>
+	</PageContent>
 </Page>

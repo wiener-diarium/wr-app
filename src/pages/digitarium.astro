@@ -1,8 +1,12 @@
 ---
 import { readFile } from "node:fs/promises";
 
+import PageCard from "../components/PageCard.astro";
+import PageSection from "../components/PageSection.astro";
+import Tile from "../components/Tile.astro";
 import Page from "../layouts/Page.astro";
-import { baseurl, createBaseurl } from "../lib/baseurl.ts";
+import PageContent from "../layouts/PageContent.astro";
+import { baseurl } from "../lib/baseurl.ts";
 
 interface About {
 	title: string;
@@ -30,233 +34,205 @@ for (const [key, value] of Object.entries(data)) {
 ---
 
 <Page title="Digitarium" baseurl={baseurl}>
-	<div class="my-[4%] flex flex-col">
-		<figure class="block self-center">
-			<img
-				class="float-left max-w-[800px] rounded-lg border shadow-md sm:max-w-[300px] md:max-w-[400px]"
-				src={createBaseurl("acdh-digitarium-TagdesDenkmals-03-ÖAW_APA-Fotoservice_Schedl.jpg")}
-				alt="Wiener Diarium"
-			/>
-			<figcaption class="mr-4 w-full">
-				<em>© APA Fotoservice Schedl</em>
-			</figcaption>
-		</figure>
-		<div class="self-center py-4">
-			<div
-				class="mt-8 grid grid-cols-4 gap-8 sm:grid-cols-1 sm:gap-1 md:grid-cols-2 lg:grid-cols-2"
-			>
-				<a
-					href={createBaseurl(
-						"search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc",
-					)}
-				>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
-					>
-						<div class="flex flex-col items-center self-center p-4">
-							<h2 class="py-4 text-center text-3xl">Volltextsuche</h2>
-						</div>
-					</div>
-				</a>
-				<a href={createBaseurl("noSearch")}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
-					>
-						<div class="flex flex-col items-center self-center p-4">
-							<h2 class="py-4 text-center text-3xl">REGEX, CQL</h2>
-						</div>
-					</div>
-				</a>
-				<a href={createBaseurl("toc")}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
-					>
-						<div class="flex flex-col items-center self-center p-4">
-							<h2 class="py-4 text-center text-3xl">Inhaltsverzeichnis</h2>
-						</div>
-					</div>
-				</a>
-				<a href={createBaseurl("model")}>
-					<div
-						class="flex flex-col rounded-lg border border-gray-100 bg-cyan-800 p-6 text-white shadow-md hover:bg-cyan-500"
-					>
-						<div class="flex flex-col items-center self-center p-4">
-							<h2 class="py-4 text-center text-3xl">Fraktur Model</h2>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="mx-auto mt-8">
-			<div class="p-4">
-				<div>
-					<acdh-ch-calendar>
-						<label>
-							<span class="text-lg">Jahr:</span>
-							<acdh-ch-calendar-year-picker></acdh-ch-calendar-year-picker>
-						</label>
-						<acdh-ch-calendar-year data-variant="sparse"></acdh-ch-calendar-year>
-					</acdh-ch-calendar>
-					<div id="calendar" class="mt-6 p-2"></div>
-					<div class="my-6">
-						<h2 class="mb-2 block">Legende:</h2>
-						<div class="flex">
-							<div class="mr-4 size-[20px] bg-cyan-300"></div> Korpus 1: Alle Ausgaben 18. Jahrhundert
-						</div>
-
-						<div class="flex">
-							<div class="mr-4 size-[20px] bg-cyan-500"></div> Korpus 2: Ausgewählte Ausgaben Siebenjähriger
-							Krieg (1756-1763)
-						</div>
-						<div class="flex">
-							<div class="mr-4 size-[20px] bg-cyan-700"></div> Korpus 1 und 2
-						</div>
+	<PageContent classNames={["container", "mx-auto", "mb-auto", "max-w-7xl"]}>
+		<div class="mt-8 flex flex-col">
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Zugriff auf die Datenbank
+					</span>
+				</h2>
+				<div class="self-center">
+					<div class="grid grid-cols-4 gap-8 sm:grid-cols-1 sm:gap-1 md:grid-cols-2 lg:grid-cols-2">
+						<Tile
+							title="Volltextsuche"
+							url="search?gestrich_index%5BsortBy%5D=gestrich_index%2Fsort%2Fday%3Aasc%2Cpage%3Aasc"
+						/>
+						<Tile title="REGEX, CQL" url="noSearch" />
+						<Tile title="Inhaltsverzeichnis" url="toc" />
+						<Tile title="Fraktur Model" url="model" />
 					</div>
 				</div>
-			</div>
+			</PageSection>
+			<PageSection>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Kalender
+					</span>
+				</h2>
+				<PageCard>
+					<div class="p-4">
+						<div>
+							<acdh-ch-calendar>
+								<label>
+									<span class="text-lg">Jahr:</span>
+									<acdh-ch-calendar-year-picker></acdh-ch-calendar-year-picker>
+								</label>
+								<acdh-ch-calendar-year data-variant="sparse"></acdh-ch-calendar-year>
+							</acdh-ch-calendar>
+							<div id="calendar" class="mt-6 p-2"></div>
+							<div class="my-6">
+								<h2 class="mb-2 block">Legende:</h2>
+								<div class="flex">
+									<div class="mr-4 size-[20px] bg-cyan-300"></div> Korpus 1: Alle Ausgaben 18. Jahrhundert
+								</div>
+
+								<div class="flex">
+									<div class="mr-4 size-[20px] bg-cyan-500"></div> Korpus 2: Ausgewählte Ausgaben Siebenjähriger
+									Krieg (1756-1763)
+								</div>
+								<div class="flex">
+									<div class="mr-4 size-[20px] bg-cyan-700"></div> Korpus 1 und 2
+								</div>
+							</div>
+						</div>
+					</div>
+				</PageCard>
+			</PageSection>
 		</div>
-	</div>
-	<link rel="stylesheet" href="https://unpkg.com/@acdh-oeaw/calendar-component/dist/calendar.css" />
-	<script is:inline type="module" define:vars={{ calendar }}>
-		import { register } from "https://unpkg.com/@acdh-oeaw/calendar-component/dist/calendar.js";
-
-		/**
-		 * Defaults to radio group for selecting current calendar year.
-		 *
-		 * To display a `<select>` instead, use `register({ picker: "select" });`.
-		 */
-		register();
-
-		const de = {
-			months: [
-				"Jänner",
-				"Februar",
-				"März",
-				"April",
-				"Mai",
-				"Juni",
-				"Juli",
-				"August",
-				"September",
-				"Oktober",
-				"November",
-				"Dezember",
-			],
-		};
-
-		function createCalendar(i18n, events, onEventClick) {
-			const calendar = document.querySelector("acdh-ch-calendar");
-
-			if (i18n != null) {
-				calendar.setI18n(i18n);
-			}
-
-			calendar.setData({ events, currentYear: 1703 });
-
-			calendar.addEventListener("calendar-event-click", onEventClick);
-		}
-
-		function onEventClick(event) {
-			const { events } = event.detail;
-			if (events.length === 0) {
-				return;
-			} else if (events.length === 1) {
-				window.location.href = "edition/" + events[0].url + "?img=on";
-				return;
-			} else {
-				const calendar = document.getElementById("calendar");
-				calendar.innerHTML = events.map((event) => {
-					return `<a href="edition/${event.url}?img=on" class="inline p-2 hover:bg-gray-100 cursor">
-									Korpus: ${event.kind} | Ausgabe: ${event.label}
-								</a>`;
-				});
-			}
-		}
-
-		try {
-			const events = calendar.map((event) => {
-				return { ...event, date: new Date(event.date) };
-			});
-			createCalendar(de, events, onEventClick);
-			console.log("Successfully created calendar.");
-		} catch (error) {
-			console.error("Failed to create calendar.\n", String(error));
-		}
-	</script>
-	<style is:global>
-		:root {
-			font-family: ui-sans-serif, system-ui, sans-serif;
-		}
-
-		acdh-ch-calendar-year {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			gap: 1rem;
-		}
-
-		acdh-ch-calendar-year table > tr > td {
-			padding: 0.3rem;
-			font-size: 1rem;
-			text-align: center;
-		}
-
-		acdh-ch-calendar-year-picker select {
-			margin-left: 0.5rem;
-			padding: 0.5rem;
-			font-size: 1rem;
-		}
-
-		acdh-ch-calendar {
-			display: grid;
-			gap: 4rem;
-		}
-
-		acdh-ch-calendar > label > span {
-			display: block;
-			font-weight: 600;
-			margin-block-end: 1rem;
-		}
-
-		acdh-ch-calendar-year-picker div[role="radiogroup"] {
-			gap: 0 2rem;
-		}
-
-		acdh-ch-calendar-year-picker div[role="radiogroup"] > label {
-			line-height: 2rem;
-		}
-
-		/** When using tailwindcss, explicitly set text and background colors of events. */
-		acdh-ch-calendar-year td > * {
-			background-color: var(--calendar-cell-color);
-			color: var(--calendar-cell-color-foreground);
-		}
-
-		acdh-ch-calendar-year td > button[data-event-kinds="1"] {
-			--calendar-cell-color: #02c7c7;
-		}
-
-		acdh-ch-calendar-year td > button[data-event-kinds="2"] {
-			--calendar-cell-color: #00a5a5;
-		}
-
-		acdh-ch-calendar-year td > button[data-event-kinds-count="2"] {
-			--calendar-cell-color: #006363;
-		}
-
-		@media screen and (max-width: 1024px) {
-			acdh-ch-calendar-year {
-				grid-template-columns: repeat(3, 1fr);
-			}
-		}
-		@media screen and (max-width: 768px) {
-			acdh-ch-calendar-year {
-				grid-template-columns: repeat(2, 1fr);
-			}
-		}
-		@media screen and (max-width: 640px) {
-			acdh-ch-calendar-year {
-				grid-template-columns: repeat(1, 1fr);
-			}
-		}
-	</style>
+	</PageContent>
 </Page>
+
+<link rel="stylesheet" href="https://unpkg.com/@acdh-oeaw/calendar-component/dist/calendar.css" />
+<script is:inline type="module" define:vars={{ calendar }}>
+	import { register } from "https://unpkg.com/@acdh-oeaw/calendar-component/dist/calendar.js";
+
+	/**
+	 * Defaults to radio group for selecting current calendar year.
+	 *
+	 * To display a `<select>` instead, use `register({ picker: "select" });`.
+	 */
+	register();
+
+	const de = {
+		months: [
+			"Jänner",
+			"Februar",
+			"März",
+			"April",
+			"Mai",
+			"Juni",
+			"Juli",
+			"August",
+			"September",
+			"Oktober",
+			"November",
+			"Dezember",
+		],
+	};
+
+	function createCalendar(i18n, events, onEventClick) {
+		const calendar = document.querySelector("acdh-ch-calendar");
+
+		if (i18n != null) {
+			calendar.setI18n(i18n);
+		}
+
+		calendar.setData({ events, currentYear: 1703 });
+
+		calendar.addEventListener("calendar-event-click", onEventClick);
+	}
+
+	function onEventClick(event) {
+		const { events } = event.detail;
+		if (events.length === 0) {
+			return;
+		} else if (events.length === 1) {
+			window.location.href = "edition/" + events[0].url + "?img=on";
+			return;
+		} else {
+			const calendar = document.getElementById("calendar");
+			calendar.innerHTML = events.map((event) => {
+				return `<a href="edition/${event.url}?img=on" class="inline p-2 hover:bg-gray-100 cursor">
+						Korpus: ${event.kind} | Ausgabe: ${event.label}
+					</a>`;
+			});
+		}
+	}
+
+	try {
+		const events = calendar.map((event) => {
+			return { ...event, date: new Date(event.date) };
+		});
+		createCalendar(de, events, onEventClick);
+		console.log("Successfully created calendar.");
+	} catch (error) {
+		console.error("Failed to create calendar.\n", String(error));
+	}
+</script>
+<style is:global>
+	:root {
+		font-family: ui-sans-serif, system-ui, sans-serif;
+	}
+
+	acdh-ch-calendar-year {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+	}
+
+	acdh-ch-calendar-year table > tr > td {
+		padding: 0.3rem;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	acdh-ch-calendar-year-picker select {
+		margin-left: 0.5rem;
+		padding: 0.5rem;
+		font-size: 1rem;
+	}
+
+	acdh-ch-calendar {
+		display: grid;
+		gap: 4rem;
+	}
+
+	acdh-ch-calendar > label > span {
+		display: block;
+		font-weight: 600;
+		margin-block-end: 1rem;
+	}
+
+	acdh-ch-calendar-year-picker div[role="radiogroup"] {
+		gap: 0 2rem;
+	}
+
+	acdh-ch-calendar-year-picker div[role="radiogroup"] > label {
+		line-height: 2rem;
+	}
+
+	/** When using tailwindcss, explicitly set text and background colors of events. */
+	acdh-ch-calendar-year td > * {
+		background-color: var(--calendar-cell-color);
+		color: var(--calendar-cell-color-foreground);
+	}
+
+	acdh-ch-calendar-year td > button[data-event-kinds="1"] {
+		--calendar-cell-color: #02c7c7;
+	}
+
+	acdh-ch-calendar-year td > button[data-event-kinds="2"] {
+		--calendar-cell-color: #00a5a5;
+	}
+
+	acdh-ch-calendar-year td > button[data-event-kinds-count="2"] {
+		--calendar-cell-color: #006363;
+	}
+
+	@media screen and (max-width: 1024px) {
+		acdh-ch-calendar-year {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	@media screen and (max-width: 768px) {
+		acdh-ch-calendar-year {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media screen and (max-width: 640px) {
+		acdh-ch-calendar-year {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+</style>

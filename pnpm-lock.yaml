@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@acdh-oeaw/lib':
+        specifier: ^0.1.12
+        version: 0.1.12
+      '@acdh-oeaw/validate-env':
+        specifier: ^0.0.3
+        version: 0.0.3
       '@astrojs/check':
         specifier: ^0.5.4
         version: 0.5.5(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.3.3)
@@ -66,8 +72,8 @@ importers:
         specifier: ^18.2.19
         version: 18.2.19
       acdh-noske-search:
-        specifier: ^0.0.8
-        version: 0.0.8
+        specifier: ^0.1.1
+        version: 0.1.1
       algoliasearch:
         specifier: ^4.22.1
         version: 4.22.1
@@ -197,6 +203,10 @@ packages:
       eslint: 8.x
       typescript: '>=5'
 
+  '@acdh-oeaw/lib@0.1.12':
+    resolution: {integrity: sha512-yNAjUxcoqvEXX+YsqWqOqCOJeFg6oYL2Q+bVdhu6LEQU1MGpcMbo7haSTX12X8UYZjIU6oWpHrZfdKZZxRH23Q==}
+    engines: {node: '>=20', pnpm: '>=9'}
+
   '@acdh-oeaw/prettier-config@2.0.0':
     resolution: {integrity: sha512-PhjHkJRb5K5uWMZ6s6IzNLvBns4Ei+osR6g/XmItFb0B844VOsU6iO3DbRyrHo8zTpMzsftkxVxT9S/b3KVmtQ==}
     peerDependencies:
@@ -211,6 +221,10 @@ packages:
     resolution: {integrity: sha512-gNSjq64DlR1pgpM3bYWNedxbN8VrD4dXlT/ZOP/xv4VCloslNBzadXI5WABkFvdSK56YuAn8uTo4BCD9lW2skg==}
     peerDependencies:
       typescript: '>=5'
+
+  '@acdh-oeaw/validate-env@0.0.3':
+    resolution: {integrity: sha512-dP7ZGC533M/Hfebriu5THBQt9DXOuldywY0U5893JMBuAXrGr5f+ONuDE5tk5zp5XHu2Lks+VDkg2wX+TQ03ow==}
+    engines: {node: '>=20', pnpm: '>=9'}
 
   '@algolia/cache-browser-local-storage@4.22.1':
     resolution: {integrity: sha512-Sw6IAmOCvvP6QNgY9j+Hv09mvkvEIDKjYW8ow0UDDAxSXy664RBNQk3i/0nt7gvceOJ6jGmOTimaZoY1THmU7g==}
@@ -1863,8 +1877,8 @@ packages:
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
 
-  acdh-noske-search@0.0.8:
-    resolution: {integrity: sha512-bxVG0V7vSCv6wFBJFTze8cF7iEr6hshs7Qrykkd43p5jnwJ6CQ41ESRPPMZ5FkSPln5cHHcBtxDiYiTbpuZLvg==}
+  acdh-noske-search@0.1.1:
+    resolution: {integrity: sha512-LUFCRFyAyZIkYY0HthPrrLjy9JXnw21SddHmnlR2vCzDc+hqRnQQNiwQWjimpHH619AWR63pi8BfLccT2JiInQ==}
     engines: {node: ^20.11.1, npm: ^10.2.4}
 
   acorn-jsx@5.3.2:
@@ -5235,6 +5249,8 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
+  '@acdh-oeaw/lib@0.1.12': {}
+
   '@acdh-oeaw/prettier-config@2.0.0(prettier@3.2.5)':
     dependencies:
       prettier: 3.2.5
@@ -5252,6 +5268,8 @@ snapshots:
   '@acdh-oeaw/tsconfig@1.0.2(typescript@5.3.3)':
     dependencies:
       typescript: 5.3.3
+
+  '@acdh-oeaw/validate-env@0.0.3': {}
 
   '@algolia/cache-browser-local-storage@4.22.1':
     dependencies:
@@ -7650,7 +7668,7 @@ snapshots:
 
   abbrev@1.1.1: {}
 
-  acdh-noske-search@0.0.8: {}
+  acdh-noske-search@0.1.1: {}
 
   acorn-jsx@5.3.2(acorn@8.11.3):
     dependencies:

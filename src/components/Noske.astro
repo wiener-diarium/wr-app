@@ -2,11 +2,10 @@
 
 ---
 
-<div class="my-8">
+<div>
 	<div class="py-4 text-center sm:px-2 md:px-2">
 		<div class="px-4">
-			<h4 class="pt-2 text-lg">Einfache Suche in den Wiener Diarium Transkripten</h4>
-			<div class="text-sm text-gray-600">
+			<div class="py-6 text-sm text-gray-600">
 				<a target="_blank" href="https://diarium-noske.acdh-dev.oeaw.ac.at/crystal"
 					>Erweiterte Suche in Crystal</a
 				>
@@ -22,10 +21,13 @@
 </div>
 
 <script>
+	// import { NoskeSearch } from "acdh-noske-search";
 	import { NoskeSearch } from "acdh-noske-search";
 
 	const search = new NoskeSearch({
 		container: "noske-search",
+		autocomplete: true,
+		wordlistattr: ["word", "id", "antiqua", "label", "cert"],
 	});
 
 	search.minQueryLength = 1;
@@ -49,6 +51,7 @@
 		searchInput: {
 			id: "noske-input",
 			placeholder: "Suche nach Wörter, Phrase (inkl. Regular Expressions) oder mit CQL",
+			button: "Suchen",
 		},
 		pagination: {
 			id: "noske-pagination",
@@ -66,6 +69,14 @@
 		config: {
 			customUrl: "https://digitarium.acdh-dev.oeaw.ac.at/edition",
 			urlparam: "&img=on",
+		},
+		autocompleteOptions: {
+			id: "noske-autocomplete",
+			css: {
+				div: "bg-white border border-gray-300 absolute ml-[10%] mt-10 text-left overflow-y-scroll h-[400px]",
+				ul: "p-0",
+				li: "p-2 hover:bg-gray-100 text-sm text-gray-500 hover:cursor-pointer",
+			},
 		},
 	});
 </script>

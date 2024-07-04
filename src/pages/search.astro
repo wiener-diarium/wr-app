@@ -1,5 +1,5 @@
 ---
-import PageFullWidth from "../layouts/PageFullWidth.astro";
+import Page from "../layouts/Page.astro";
 import { baseurl } from "../lib/baseurl.ts";
 ---
 
@@ -7,8 +7,8 @@ import { baseurl } from "../lib/baseurl.ts";
 	rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
 />
-<PageFullWidth title="Volltextsuche" baseurl={baseurl}>
-	<div class="my-8">
+<Page title="Volltextsuche" baseurl={baseurl}>
+	<div class="bg-white">
 		<div class="container mx-auto max-w-[800px] px-5 py-4 align-middle">
 			<div class="px-4 text-center">
 				<h4 class="pt-2">Volltextsuche</h4>
@@ -50,7 +50,7 @@ import { baseurl } from "../lib/baseurl.ts";
 			</div>
 		</div>
 	</div>
-</PageFullWidth>
+</Page>
 <script>
 	import instantsearch from "instantsearch.js";
 	import {

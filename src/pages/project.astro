@@ -1,358 +1,433 @@
 ---
+import { getCollection } from "astro:content";
+
+import PageCard from "../components/PageCard.astro";
+import PageNav from "../components/PageNav.astro";
+import PageSection from "../components/PageSection.astro";
+import Presentations from "../components/Presentations.astro";
+import Publications from "../components/Publications.astro";
 import Page from "../layouts/Page.astro";
+import PageContent from "../layouts/PageContent.astro";
 import { baseurl, createBaseurl } from "../lib/baseurl.ts";
+
+const items = [
+	{ title: "Call for Nominations", hash: "#call" },
+	{ title: "Volltextdigitalisierung", hash: "#digit" },
+	{ title: "Transkription", hash: "#transcription" },
+	{ title: "Annotation", hash: "#annotation" },
+	{ title: "Publikationen", hash: "#publications" },
+	{ title: "Präsentationen", hash: "#lectures" },
+];
+
+const publications = await getCollection("publications");
+const presentations = await getCollection("presentations");
 ---
 
 <Page title="Projekt" baseurl={baseurl}>
-	<div class="flex flex-col">
-		<div
-			class="sticky top-2 mx-auto max-w-4xl rounded-md bg-white p-6 text-center shadow-md sm:p-1"
-		>
-			<ul class="grid grid-cols-5 text-gray-500 sm:grid-cols-3 sm:text-sm md:grid-cols-3">
-				<li class="flex justify-center px-2 sm:p-1 md:p-2">
-					<a id="show-on-scroll" href="#header"
-						><svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
-							<path
-								fill-rule="evenodd"
-								d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
-							></path>
-						</svg></a
-					>
-				</li>
-				<li class="px-2 sm:p-1 md:p-2"><a href="#call">Call for Nominations</a></li>
-				<li class="px-2 sm:p-1 md:p-2"><a href="#digit">Volltextdigitalisierung</a></li>
-				<li class="px-2 sm:p-1 md:p-2"><a href="#transcription">Transkription</a></li>
-				<li class="px-2 sm:p-1 md:p-2"><a href="#annotation">Annotation</a></li>
-			</ul>
-		</div>
+	<PageContent classNames={["container", "mx-auto", "mb-auto", "max-w-7xl"]}>
+		<div class="my-4 flex flex-col">
+			<PageNav items={items} />
+			<PageSection>
+				<span id="call"></span>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Call for Nominations
+					</span>
+				</h2>
+				<PageCard
+					image={createBaseurl(
+						"acdh-digitarium-konferenz_vom_diarium_zum_digitarium-06-Basem_Saifo-1024x683.jpg",
+					)}
+					><em>© Basem Saifo</em>
+					<div class="mx-auto flex flex-col">
+						<div class="mx-auto flex flex-col">
+							<p class="py-4 text-3xl">Sie haben gewählt …?</p>
+						</div>
+						<div class="grid grid-cols-2 sm:grid-cols-1">
+							<div class="mx-auto flex max-w-[1200px] basis-full flex-row p-4">
+								<p>
+									<figure>
+										<img
+											class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+											alt="Zeitungen haben mancherley Sachen im Blick."
+											src={createBaseurl(
+												"acdh-digitarium-caspar_stieler-15-Claudia_Resch-e1534861817939-185x300.jpg",
+											)}
+										/>
+										<figcaption class="mr-4">
+											<em>Zeitungen haben mancherley Sachen im Blick.</em>
+										</figcaption>
+									</figure>
+									Bei der Auswertung der eingegangenen Nominierungen hat sich gezeigt, wie breit deren
+									Themenspektrum ist: Zur Volltextdigitalisierung empfohlen wurden Ausgaben mit Geburten,
+									Taufen und Sterbefällen bekannter Persönlichkeiten, Geburts- und Namenstagen, Krönungen
+									und Erbhuldigungen, kirchlichen und weltlichen Festen, Ankündigungen, Eröffnungen und
+									Einweihungen sowie Berichten über Besuche prominenter Gäste in der Residenzstadt. Errungenschaften
+									im weitesten Sinn wie die Erklärung der Menschenrechte oder der Beginn der Luftfahrt
+									waren ebenso in der Auswahl enthalten wie das medienimmanente Thema der Herausgeberschaft.
+								</p>
+							</div>
+							<div class="mx-auto flex max-w-[1200px] basis-full flex-row p-4">
+								<p>
+									<figure>
+										<img
+											class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+											alt="Zeitungen liest imer einer anders als der andere."
+											src={createBaseurl(
+												"acdh-digitarium-caspar_stieler-17-Claudia_Resch-e1534865099692-232x300.jpg",
+											)}
+										/>
+										<figcaption class="mr-4">
+											<em>Von derer Zeitungen Würde und Wichtigkeit.</em>
+										</figcaption>
+									</figure>
+									Die Ergänzungen, die das Projektteam vorgenommen hat, betrafen daher weniger die Vielfalt
+									der angesprochenen Themen, sondern waren darauf ausgerichtet, zeitliche Lücken zu füllen.
+									Vor dem Hintergrund der Entwicklung des Wien[n]erischen Diariums zu einer Zeitung im
+									modernen Verständnis wurde somit versucht, ein ausgewogenes Korpus zu bilden, das dazu
+									geeignet ist, die Umbrüche und Wendungen in einer Periode sich verändernder politischer,
+									sozialer, wissenschaftlicher und künstlerischer Bedingungen im 18. Jahrhundert zum
+									Ausdruck zu bringen. Jeder aufgenommene Jahrgang ist derzeit durch fünf Ausgaben vertreten.
+								</p>
+							</div>
+						</div>
+					</div>
+				</PageCard>
+			</PageSection>
+			<PageSection>
+				<span id="digit"></span>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Volltextdigitalisierung
+					</span>
+				</h2>
 
-		<div class="mx-auto my-[3%] flex flex-col">
-			<span id="call" class="mb-16"></span>
-			<div class="flex justify-center">
-				<figure class="p-2">
-					<img
-						alt="Basem Saifo, 2021"
-						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
-						src={createBaseurl(
-							"acdh-digitarium-konferenz_vom_diarium_zum_digitarium-06-Basem_Saifo-1024x683.jpg",
-						)}
-					/>
-					<figcaption>
-						<em>© Basem Saifo</em>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="mx-auto mt-8 flex flex-col">
-				<h1 class="text-4xl font-bold">Call for Nominations</h1>
-				<p class="py-4 text-xl">Sie haben gewählt …?</p>
-			</div>
-			<div class="mx-auto grid grid-cols-2 sm:grid-cols-1">
-				<div class="mx-auto flex max-w-[1200px] basis-full flex-row p-4">
-					<p>
-						<figure>
-							<img
-								class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-								alt="Zeitungen haben mancherley Sachen im Blick."
-								src={createBaseurl(
-									"acdh-digitarium-caspar_stieler-15-Claudia_Resch-e1534861817939-185x300.jpg",
-								)}
-							/>
-							<figcaption class="mr-4">
-								<em>Zeitungen haben mancherley Sachen im Blick.</em>
-							</figcaption>
-						</figure>
-						Bei der Auswertung der eingegangenen Nominierungen hat sich gezeigt, wie breit deren Themenspektrum
-						ist: Zur Volltextdigitalisierung empfohlen wurden Ausgaben mit Geburten, Taufen und Sterbefällen
-						bekannter Persönlichkeiten, Geburts- und Namenstagen, Krönungen und Erbhuldigungen, kirchlichen
-						und weltlichen Festen, Ankündigungen, Eröffnungen und Einweihungen sowie Berichten über Besuche
-						prominenter Gäste in der Residenzstadt. Errungenschaften im weitesten Sinn wie die Erklärung
-						der Menschenrechte oder der Beginn der Luftfahrt waren ebenso in der Auswahl enthalten wie
-						das medienimmanente Thema der Herausgeberschaft.
-					</p>
-				</div>
-				<div class="mx-auto flex max-w-[1200px] basis-full flex-row p-4">
-					<p>
-						<figure>
-							<img
-								class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-								alt="Zeitungen liest imer einer anders als der andere."
-								src={createBaseurl(
-									"acdh-digitarium-caspar_stieler-17-Claudia_Resch-e1534865099692-232x300.jpg",
-								)}
-							/>
-							<figcaption class="mr-4">
-								<em>Von derer Zeitungen Würde und Wichtigkeit.</em>
-							</figcaption>
-						</figure>
-						Die Ergänzungen, die das Projektteam vorgenommen hat, betrafen daher weniger die Vielfalt
-						der angesprochenen Themen, sondern waren darauf ausgerichtet, zeitliche Lücken zu füllen.
-						Vor dem Hintergrund der Entwicklung des Wien[n]erischen Diariums zu einer Zeitung im modernen
-						Verständnis wurde somit versucht, ein ausgewogenes Korpus zu bilden, das dazu geeignet ist,
-						die Umbrüche und Wendungen in einer Periode sich verändernder politischer, sozialer, wissenschaftlicher
-						und künstlerischer Bedingungen im 18. Jahrhundert zum Ausdruck zu bringen. Jeder aufgenommene
-						Jahrgang ist derzeit durch fünf Ausgaben vertreten.
-					</p>
-				</div>
-			</div>
-		</div>
+				<PageCard
+					image={createBaseurl(
+						"acdh-digitarium-originalausgaben-11-Sandra_Lehecka-2-e1534170763123-1024x217.jpg",
+					)}
+					><em>© Claudia Resch</em>
+					<div class="flex flex-col">
+						<div class="grid grid-cols-1 sm:grid-cols-1">
+							<div class="flex p-4">
+								<figure class="inline">
+									<img
+										class="mr-4 max-w-[300px] rounded-lg border object-none shadow-md sm:max-w-[150px]"
+										alt="Transkribus Screenshot"
+										src={createBaseurl("acdh-digitarium-transkribus-screenshot-02-300x175.png")}
+									/>
+								</figure>
+								<p>
+									In Vorbereitung der Volltextdigitalisierung werden die Bild-Digitalisate aus dem
+									<a
+										class="hover:text-cyan-500"
+										href="http://anno.onb.ac.at/cgi-content/anno?aid=wrz"><strong>ANNO</strong></a
+									>-Portal der Österreichischen Nationalbibliothek zunächst am ACDH-CH vorbearbeitet
+									(z.B. gerade gerückt), um dann in die Texterkennungsplattform <a
+										class="hover:text-cyan-500"
+										href="https://transkribus.eu/Transkribus/"><strong>TRANSKRIBUS</strong></a
+									> überspielt zu werden, wo ihr Layout (Textregionen, Zeilen und Wörter) seitenweise
+									automatisch eingelesen und eine Lesereihenfolge für die Transkription vorgeschlagen
+									wird. Unter Anwendung eines kombinierten Ansatzes von Optical Character Recognition
+									(OCR) und Handwritten Text Recognition (HTR) werden die einzelnen Einheiten schließlich
+									eingelesen und in computerlesbaren Text transformiert.
+								</p>
+							</div>
+							<div class="flex p-4">
+								<p>
+									Der automatisiert erstellte, unkorrigierte Text muss dann in mehreren Schritten,
+									unter erheblichem zeitlichen Aufwand und gemäß der im Projekt entwickelten
+									Transkriptionsrichtlinien manuell nachbearbeitet werden. Die erzeugten Textdaten
+									geben den historischen Sprachstand unverändert wieder, erreichen nach den
+									genannten Verarbeitungsschritten eine Genauigkeit von 99,7 Prozent und dienen dem
+									Training neuer Texterkennungsmodelle mit dem Ziel, weitere Ausgaben bereits mit
+									einer höheren Genauigkeit und Trefferquote automatisch erkennen zu können. Unser
+									Modell steht zur Nachnutzung zur Verfügung – Sie können es <a
+										class="hover:text-cyan-500"
+										href='createBaseurl("model`'><strong>hier</strong></a
+									> ausprobieren oder über <a
+										class="hover:text-cyan-500"
+										href="https://readcoop.eu/de/modelle/german-fraktur-18th-century/"
+										><strong>Transkribus</strong></a
+									> Genaueres erfahren.
+								</p>
+								<figure>
+									<img
+										class="ml-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+										alt="Transkribus Screenshot"
+										src={createBaseurl("acdh-digitarium-transkribus-screenshot-01-768x466.jpg")}
+									/>
+								</figure>
+							</div>
+						</div>
+						<div class="flex flex-row p-4">
+							<figure>
+								<img
+									class="mr-2 max-w-[150px] rounded-lg border shadow-md sm:max-w-[150px]"
+									alt="Zeitungen erfordern gute Vorrectores."
+									src={createBaseurl(
+										"acdh-digitarium-caspar_stieler-20-Claudia_Resch-e1534862625266-276x300.jpg",
+									)}
+								/>
+								<figcaption class="mr-2">
+									<em>Zeitungen erfordern gute Vorrectores.</em>
+								</figcaption>
+							</figure>
+							<p class="ml-4">
+								Trotz der Trainingserfolge werden Zeitungstexte aus dieser Zeitperiode immer der
+								manuellen Nachkorrektur bedürfen, wobei zu hoffen bleibt, dass sich der Aufwand mit
+								der Zeit weiter verringert. Das Bemühen um einen hochwertigen Volltext, der
+								XML-ifiziert und gemäß internationaler Standards der Text Encoding Initiative (TEI)
+								kodiert wird, steht bei der Erstellung dieses historischen Zeitungskorpus jedenfalls
+								an erster Stelle.
+								<br /><br />
+								Wenn Sie Fehler im <a class="hover:text-cyan-500" href={createBaseurl("digitarium")}
+									><strong>DIGITARIUM</strong></a
+								> entdecken, nehmen Sie bitte Kontakt auf – wir sind um deren baldige Behebung bemüht!
+							</p>
+						</div>
+					</div>
+				</PageCard>
+			</PageSection>
+			<PageSection>
+				<span id="transcription"></span>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Transkription
+					</span>
+				</h2>
 
-		<div class="mx-auto my-[3%] flex flex-col">
-			<span id="digit" class="mb-16"></span>
-			<div class="flex justify-center">
-				<figure class="p-2">
-					<img
-						alt="Sandra Lehecka, 2021"
-						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
-						src={createBaseurl(
-							"acdh-digitarium-originalausgaben-11-Sandra_Lehecka-2-e1534170763123-1024x217.jpg",
-						)}
-					/>
-					<figcaption>
-						<em>© Sandra Lehecka</em>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="mx-auto flex flex-col">
-				<h1 class="mb-8 text-4xl font-bold">Volltextdigitalisierung</h1>
-			</div>
-			<div class="grid grid-cols-1 sm:grid-cols-1">
-				<div class="flex p-4">
-					<figure class="inline">
-						<img
-							class="mr-4 max-w-[300px] rounded-lg border object-none shadow-md sm:max-w-[150px]"
-							alt="Transkribus Screenshot"
-							src={createBaseurl("acdh-digitarium-transkribus-screenshot-02-300x175.png")}
-						/>
-					</figure>
-					<p>
-						In Vorbereitung der Volltextdigitalisierung werden die Bild-Digitalisate aus dem
-						<a class="hover:text-cyan-500" href="http://anno.onb.ac.at/cgi-content/anno?aid=wrz"
-							><strong>ANNO</strong></a
-						>-Portal der Österreichischen Nationalbibliothek zunächst am ACDH-CH vorbearbeitet (z.B.
-						gerade gerückt), um dann in die Texterkennungsplattform <a
-							class="hover:text-cyan-500"
-							href="https://transkribus.eu/Transkribus/"><strong>TRANSKRIBUS</strong></a
-						> überspielt zu werden, wo ihr Layout (Textregionen, Zeilen und Wörter) seitenweise automatisch
-						eingelesen und eine Lesereihenfolge für die Transkription vorgeschlagen wird. Unter Anwendung
-						eines kombinierten Ansatzes von Optical Character Recognition (OCR) und Handwritten Text
-						Recognition (HTR) werden die einzelnen Einheiten schließlich eingelesen und in computerlesbaren
-						Text transformiert.
-					</p>
-				</div>
-				<div class="flex p-4">
-					<p>
-						Der automatisiert erstellte, unkorrigierte Text muss dann in mehreren Schritten, unter
-						erheblichem zeitlichen Aufwand und gemäß der im Projekt entwickelten
-						Transkriptionsrichtlinien manuell nachbearbeitet werden. Die erzeugten Textdaten geben
-						den historischen Sprachstand unverändert wieder, erreichen nach den genannten
-						Verarbeitungsschritten eine Genauigkeit von 99,7 Prozent und dienen dem Training neuer
-						Texterkennungsmodelle mit dem Ziel, weitere Ausgaben bereits mit einer höheren
-						Genauigkeit und Trefferquote automatisch erkennen zu können. Unser Modell steht zur
-						Nachnutzung zur Verfügung – Sie können es <a
-							class="hover:text-cyan-500"
-							href='createBaseurl("model`'><strong>hier</strong></a
-						> ausprobieren oder über <a
-							class="hover:text-cyan-500"
-							href="https://readcoop.eu/de/modelle/german-fraktur-18th-century/"
-							><strong>Transkribus</strong></a
-						> Genaueres erfahren.
-					</p>
-					<figure>
-						<img
-							class="ml-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-							alt="Transkribus Screenshot"
-							src={createBaseurl("acdh-digitarium-transkribus-screenshot-01-768x466.jpg")}
-						/>
-					</figure>
-				</div>
-			</div>
-			<div class="flex flex-row p-4">
-				<figure>
-					<img
-						class="mr-2 max-w-[150px] rounded-lg border shadow-md sm:max-w-[150px]"
-						alt="Zeitungen erfordern gute Vorrectores."
-						src={createBaseurl(
-							"acdh-digitarium-caspar_stieler-20-Claudia_Resch-e1534862625266-276x300.jpg",
-						)}
-					/>
-					<figcaption class="mr-2">
-						<em>Zeitungen erfordern gute Vorrectores.</em>
-					</figcaption>
-				</figure>
-				<p class="ml-4">
-					Trotz der Trainingserfolge werden Zeitungstexte aus dieser Zeitperiode immer der manuellen
-					Nachkorrektur bedürfen, wobei zu hoffen bleibt, dass sich der Aufwand mit der Zeit weiter
-					verringert. Das Bemühen um einen hochwertigen Volltext, der XML-ifiziert und gemäß
-					internationaler Standards der Text Encoding Initiative (TEI) kodiert wird, steht bei der
-					Erstellung dieses historischen Zeitungskorpus jedenfalls an erster Stelle.
-					<br /><br />
-					Wenn Sie Fehler im <a class="hover:text-cyan-500" href={createBaseurl("digitarium")}
-						><strong>DIGITARIUM</strong></a
-					> entdecken, nehmen Sie bitte Kontakt auf – wir sind um deren baldige Behebung bemüht!
-				</p>
-			</div>
-		</div>
+				<PageCard image={createBaseurl("acdh-digitarium-setzkasten-Claudia_Resch-1024x576.jpg")}>
+					<em>© Claudia Resch</em>
+					<div class="flex flex-col">
+						<div class="grid grid-cols-2 sm:grid-cols-1">
+							<div class="p-4">
+								<p>
+									Um eine wissenschaftlich fundierte Grundlage für die philologische Deutung und
+									möglichst viele Erkenntnisinteressen zu schaffen, verzichtet man heute auf
+									jegliche normalisierende oder glättende Eingriffe und sucht nach Möglichkeiten,
+									den historischen Sprachstand der Druckvorlage nahezu unverändert wiederzugeben.
+									Bei dieser Art der Textsicherung wird die Typografie des Originals weitgehend
+									beibehalten, d.h. „u“ und „v“ sowie „i“ und „j“ bleiben ebenso bestehen wie
+									Ligaturen, Kapitälchen oder der Wechsel von Fraktur- und Antiquadruck – lediglich
+									auf eine Differenzierung der beiden Varianten von „s“ und „r“ (sogenanntes „langes
+									s“ und „rundes r“) wird verzichtet.
+								</p>
+								<p class="pt-4">
+									Konsonantische Ligaturen, wie sie etwa bei „tz“, „ct“, „st“ oder „ff“ vorkommen,
+									werden im transkribierten Text aufgelöst. Zusammenfügungen mit
+									Mittelstrichschreibung wie „Kreutz=Orden“, „Reichs=Raht“ oder „Land=Stände“ werden
+									mit dem Istgleichzeichen dargestellt, weil es dem damaligen Druckbild am nächsten
+									kommt.
+								</p>
+							</div>
+							<div class="p-4">
+								<p class="mb-4">
+									Für den Computer und den Menschen unleserliche Textstellen (siehe Abbildung), die
+									etwa durch Verschmutzung, Abrieb, schlechte Bildvorlagen oder abgeschnittene
+									Seitenränder entstehen, werden in der Transkription mit &gt;…&lt; gekennzeichnet;
+									unsichere, durch die Herausgeber*innen ergänzte Textstellen werden ebenfalls mit
+									spitzen Klammern markiert.
+								</p>
+								<figure>
+									<img
+										class="float-left mr-2 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+										alt="Unleserliche Textstelle (Ausgabe vom 5. November 1712, S. 7)
+								© Claudia Resch"
+										src={createBaseurl("acdh-digitarium-Ausgabe_0511171_S.7-768x238.png")}
+									/>
+									<figcaption class="mr-4">
+										<em
+											>Unleserliche Textstelle (Ausgabe vom 5. November 1712, S. 7) © Claudia Resch</em
+										>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</PageCard>
+			</PageSection>
+			<PageSection>
+				<span id="annotation"></span>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Annotation
+					</span>
+				</h2>
+				<PageCard>
+					<div class="flex flex-col">
+						<div class="grid grid-cols-3 sm:grid-cols-1">
+							<figure class="p-2">
+								<img
+									class="w-[500px] rounded-lg border shadow-md"
+									alt="Foto von Besuchern eines Vortrages über das Wiener Darium."
+									src={createBaseurl("acdh-digitarium-workshop-05-Sandra_Lehecka-1024x681.jpg")}
+								/>
+								<figcaption>
+									<em>© Sandra Lehecka.</em>
+								</figcaption>
+							</figure>
+							<figure class="p-2">
+								<img
+									class="w-[500px] rounded-lg border shadow-md"
+									alt="Foto von Besuchern eines Vortrages über das Wiener Darium."
+									src={createBaseurl("acdh-digitarium-workshop-06-Sandra_Lehecka-1024x681.jpg")}
+								/>
+								<figcaption>
+									<em>© Sandra Lehecka</em>
+								</figcaption>
+							</figure>
+							<figure class="p-2">
+								<img
+									class="w-[500px] rounded-lg border shadow-md"
+									alt="Foto von Besuchern eines Vortrages über das Wiener Darium."
+									src={createBaseurl(
+										"acdh-digitarium-workshop-01-Sandra_Lehecka-e1534774011518-1024x500.jpg",
+									)}
+								/>
+								<figcaption>
+									<em>© Sandra Lehecka</em>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="mt-6 grid grid-cols-2 sm:grid-cols-1">
+							<div class="mx-auto basis-6/12 p-4">
+								<p>
+									Die Annotation der Quelle <strong>Wien[n]erisches Diarium</strong> bzw. der <strong
+										>Wiener Zeitung</strong
+									> ist eine komplexe, anspruchsvolle Aufgabe. Sie verlangt ein profundes historisch-kulturelles
+									Wissen, erfordert Entscheidungssicherheit und Urteilsvermögen, setzt zudem Vertrautheit
+									mit der Quelle voraus und ist bei genauerer Betrachtung eine Forschungsleistung, die
+									nur gemeinsam und unter Beteiligung von Expert*innen aus den verschiedenen geisteswissenschaftlichen
+									Disziplinen erbracht werden kann.
+								</p>
+								<p class="pt-4">
+									Das Projektteam trifft daher in regelmäßigen Abständen Forschende, die mit dem
+									<strong>Wien[n]erischen Diarium</strong> arbeiten, moderiert die Diskussionsrunden
+									und behält dabei die technische Umsetzbarkeit der vorgeschlagenen Annotationskonzepte
+									im Blick. Im Dialog mit künftigen User*innen stellt sich heraus, auf welche Kernfunktionalitäten
+									im <a class="hover:text-cyan-500" href='createBaseurl("digitarium`'
+										><strong>DIGITARIUM</strong></a
+									>
+									nicht verzichtet werden kann und was darüber hinaus wünschenswert wäre.
+								</p>
+								<p class="pt-4">
+									Da nicht alle Fragestellungen an das <strong>Wien[n]erisches Diarium</strong> bzw.
+									die
+									<strong>Wiener Zeitung</strong> antizipiert werden können, bleibt im Moment die Sicherung
+									der Volltexte das vorrangige Anliegen dieses Vorhabens. Des Weiteren bleibt abzuwarten,
+									welche unterschiedlichen Sichtweisen es seitens der verschiedenen Disziplinen auf den
+									Datenschatz gibt, welche Aspekte bei der Erschließung von besonderer Relevanz sind
+									oder ob man sich bei der Annotation auf einen „kleinsten gemeinsamen Nenner“, der von
+									möglichst vielen Forschenden als wertvoll für ihre Erkenntnisinteressen eingeschätzt
+									wird, verständigen kann.
+								</p>
+							</div>
+							<div class="flex basis-6/12 flex-row p-4">
+								<p class="ml-4">
+									Gerade weil die erfragten Anforderungen und Nutzungsszenarien bei dieser
+									vielseitigen Quelle divergent oder zumindest heterogen sind, ist es wichtig, die
+									jeweiligen User*innengruppen (Forschende, Lehrende, Lernende, Wissbegierige aus
+									den verschiedenen Bereichen) besser kennenzulernen, ihre Erkenntnisinteressen und
+									Forschungspraktiken zu erfragen und – davon ausgehend – Anforderungen an das
+									entstehende <a class="hover:text-cyan-500" href='createBaseurl("digitarium`'
+										><strong>DIGITARIUM</strong></a
+									> abzuleiten.
+									<br /><br />
+									Idealerweise erfolgt die Entwicklung von Prototypen daher partizipativ und wird von
+									Interviews, Diskussionsrunden, Tests und Auswertungen begleitet, denn nur durch eine
+									iterative Anpassung der Technologie an ihre künftigen User*innen kann sichergestellt
+									werden, dass das neue digitale Angebot auch tatsächlich angenommen und genutzt wird.
+								</p>
+								<figure>
+									<img
+										class="float-left ml-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+										alt="Was die Zeitungsleser vor Geräte haben müssen?"
+										src={createBaseurl(
+											"acdh-digitarium-caspar_stieler-18-Claudia_Resch-e1534865307383-189x300.jpg",
+										)}
+									/>
+									<figcaption class="ml-4">
+										<em>Was die Zeitungsleser vor Geräte haben müssen?</em>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</PageCard>
+			</PageSection>
+			<PageSection>
+				<span id="publications"></span>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Publikationen
+					</span>
+				</h2>
+				<PageCard image={createBaseurl("acdh-digitarium-druckerei-Claudia_Resch-1024x576.jpg")}>
+					<em>© Claudia Resch</em>
+					<div>
+						<ul>
+							{
+								publications.length > 0 ? (
+									publications.map((publ) => <Publications {...publ.data} />)
+								) : (
+									<li>Keine Publikationen gefunden</li>
+								)
+							}
+						</ul>
+					</div>
+				</PageCard>
+			</PageSection>
+			<PageSection>
+				<span id="lectures"></span>
+				<h2 class="border-b border-[#00000026] text-xl font-medium">
+					<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+						Präsentationen
+					</span>
+				</h2>
+				<PageCard image={createBaseurl("Diarium-Reisen-4-1024x399.png")}>
+					<em>© Claudia Resch</em>
 
-		<div class="mx-auto my-[3%] flex flex-col">
-			<span id="transcription" class="mb-16"></span>
-			<div class="flex justify-center">
-				<figure class="p-2">
-					<img
-						alt="Claudia Resch, 2021"
-						class="w-full max-w-[800px] rounded-lg border object-cover object-center shadow-md"
-						src={createBaseurl("acdh-digitarium-setzkasten-Claudia_Resch-1024x576.jpg")}
-					/>
-					<figcaption>
-						<em>© Claudia Resch</em>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="mx-auto mt-8 flex flex-col">
-				<h1 class="mb-8 text-4xl font-bold">Transkription</h1>
-			</div>
-			<div class="grid grid-cols-2 sm:grid-cols-1">
-				<div class="p-4">
-					<p>
-						Um eine wissenschaftlich fundierte Grundlage für die philologische Deutung und möglichst
-						viele Erkenntnisinteressen zu schaffen, verzichtet man heute auf jegliche
-						normalisierende oder glättende Eingriffe und sucht nach Möglichkeiten, den historischen
-						Sprachstand der Druckvorlage nahezu unverändert wiederzugeben. Bei dieser Art der
-						Textsicherung wird die Typografie des Originals weitgehend beibehalten, d.h. „u“ und „v“
-						sowie „i“ und „j“ bleiben ebenso bestehen wie Ligaturen, Kapitälchen oder der Wechsel
-						von Fraktur- und Antiquadruck – lediglich auf eine Differenzierung der beiden Varianten
-						von „s“ und „r“ (sogenanntes „langes s“ und „rundes r“) wird verzichtet.
-					</p>
-					<p class="pt-4">
-						Konsonantische Ligaturen, wie sie etwa bei „tz“, „ct“, „st“ oder „ff“ vorkommen, werden
-						im transkribierten Text aufgelöst. Zusammenfügungen mit Mittelstrichschreibung wie
-						„Kreutz=Orden“, „Reichs=Raht“ oder „Land=Stände“ werden mit dem Istgleichzeichen
-						dargestellt, weil es dem damaligen Druckbild am nächsten kommt.
-					</p>
-				</div>
-				<div class="p-4">
-					<p class="mb-4">
-						Für den Computer und den Menschen unleserliche Textstellen (siehe Abbildung), die etwa
-						durch Verschmutzung, Abrieb, schlechte Bildvorlagen oder abgeschnittene Seitenränder
-						entstehen, werden in der Transkription mit &gt;…&lt; gekennzeichnet; unsichere, durch
-						die Herausgeber*innen ergänzte Textstellen werden ebenfalls mit spitzen Klammern
-						markiert.
-					</p>
-					<figure>
-						<img
-							class="float-left mr-2 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-							alt="Unleserliche Textstelle (Ausgabe vom 5. November 1712, S. 7)
-							© Claudia Resch"
-							src={createBaseurl("acdh-digitarium-Ausgabe_0511171_S.7-768x238.png")}
-						/>
-						<figcaption class="mr-4">
-							<em>Unleserliche Textstelle (Ausgabe vom 5. November 1712, S. 7) © Claudia Resch</em>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
+					<div>
+						<h5 class="p-2 text-3xl">Workshop</h5>
+						<ul>
+							{
+								presentations.length > 0 ? (
+									presentations.map((pres) =>
+										pres.data.type === "Workshop" ? <Presentations {...pres.data} /> : "",
+									)
+								) : (
+									<li>Keine Präsentationen gefunden</li>
+								)
+							}
+						</ul>
+						<h5 class="p-2 text-3xl">Vortrag</h5>
+						<ul>
+							{
+								presentations.length > 0 ? (
+									presentations.map((pres) =>
+										pres.data.type === "Vortrag" ? <Presentations {...pres.data} /> : "",
+									)
+								) : (
+									<li>Keine Präsentationen gefunden</li>
+								)
+							}
+						</ul>
+						<h5 class="p-2 text-3xl">Poster</h5>
+						<ul>
+							{
+								presentations.length > 0 ? (
+									presentations.map((pres) =>
+										pres.data.type === "Poster" ? <Presentations {...pres.data} /> : "",
+									)
+								) : (
+									<li>Keine Präsentationen gefunden</li>
+								)
+							}
+						</ul>
+					</div>
+				</PageCard>
+			</PageSection>
 		</div>
-
-		<div class="mx-auto my-[3%] flex flex-col">
-			<span id="annotation" class="mb-16"></span>
-			<div class="grid grid-cols-3 sm:grid-cols-1">
-				<figure class="p-2">
-					<img
-						class="w-[500px] rounded-lg border shadow-md"
-						alt="Foto von Besuchern eines Vortrages über das Wiener Darium."
-						src={createBaseurl("acdh-digitarium-workshop-05-Sandra_Lehecka-1024x681.jpg")}
-					/>
-					<figcaption>
-						<em>© Sandra Lehecka.</em>
-					</figcaption>
-				</figure>
-				<figure class="p-2">
-					<img
-						class="w-[500px] rounded-lg border shadow-md"
-						alt="Foto von Besuchern eines Vortrages über das Wiener Darium."
-						src={createBaseurl("acdh-digitarium-workshop-06-Sandra_Lehecka-1024x681.jpg")}
-					/>
-					<figcaption>
-						<em>© Sandra Lehecka</em>
-					</figcaption>
-				</figure>
-				<figure class="p-2">
-					<img
-						class="w-[500px] rounded-lg border shadow-md"
-						alt="Foto von Besuchern eines Vortrages über das Wiener Darium."
-						src={createBaseurl(
-							"acdh-digitarium-workshop-01-Sandra_Lehecka-e1534774011518-1024x500.jpg",
-						)}
-					/>
-					<figcaption>
-						<em>© Sandra Lehecka</em>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="mx-auto mt-8">
-				<h1 class="mb-8 text-4xl font-bold">Annotation</h1>
-			</div>
-			<div class="mx-auto grid grid-cols-2 sm:grid-cols-1">
-				<div class="mx-auto basis-6/12 p-4">
-					<p>
-						Die Annotation der Quelle <strong>Wien[n]erisches Diarium</strong> bzw. der <strong
-							>Wiener Zeitung</strong
-						> ist eine komplexe, anspruchsvolle Aufgabe. Sie verlangt ein profundes historisch-kulturelles
-						Wissen, erfordert Entscheidungssicherheit und Urteilsvermögen, setzt zudem Vertrautheit mit
-						der Quelle voraus und ist bei genauerer Betrachtung eine Forschungsleistung, die nur gemeinsam
-						und unter Beteiligung von Expert*innen aus den verschiedenen geisteswissenschaftlichen Disziplinen
-						erbracht werden kann.
-					</p>
-					<p class="pt-4">
-						Das Projektteam trifft daher in regelmäßigen Abständen Forschende, die mit dem
-						<strong>Wien[n]erischen Diarium</strong> arbeiten, moderiert die Diskussionsrunden und behält
-						dabei die technische Umsetzbarkeit der vorgeschlagenen Annotationskonzepte im Blick. Im Dialog
-						mit künftigen User*innen stellt sich heraus, auf welche Kernfunktionalitäten im <a
-							class="hover:text-cyan-500"
-							href='createBaseurl("digitarium`'><strong>DIGITARIUM</strong></a
-						>
-						nicht verzichtet werden kann und was darüber hinaus wünschenswert wäre.
-					</p>
-					<p class="pt-4">
-						Da nicht alle Fragestellungen an das <strong>Wien[n]erisches Diarium</strong> bzw. die <strong
-							>Wiener Zeitung</strong
-						> antizipiert werden können, bleibt im Moment die Sicherung der Volltexte das vorrangige
-						Anliegen dieses Vorhabens. Des Weiteren bleibt abzuwarten, welche unterschiedlichen Sichtweisen
-						es seitens der verschiedenen Disziplinen auf den Datenschatz gibt, welche Aspekte bei der
-						Erschließung von besonderer Relevanz sind oder ob man sich bei der Annotation auf einen „kleinsten
-						gemeinsamen Nenner“, der von möglichst vielen Forschenden als wertvoll für ihre Erkenntnisinteressen
-						eingeschätzt wird, verständigen kann.
-					</p>
-				</div>
-				<div class="flex basis-6/12 flex-row p-4">
-					<p class="ml-4">
-						Gerade weil die erfragten Anforderungen und Nutzungsszenarien bei dieser vielseitigen
-						Quelle divergent oder zumindest heterogen sind, ist es wichtig, die jeweiligen
-						User*innengruppen (Forschende, Lehrende, Lernende, Wissbegierige aus den verschiedenen
-						Bereichen) besser kennenzulernen, ihre Erkenntnisinteressen und Forschungspraktiken zu
-						erfragen und – davon ausgehend – Anforderungen an das entstehende <a
-							class="hover:text-cyan-500"
-							href='createBaseurl("digitarium`'><strong>DIGITARIUM</strong></a
-						> abzuleiten.
-						<br /><br />
-						Idealerweise erfolgt die Entwicklung von Prototypen daher partizipativ und wird von Interviews,
-						Diskussionsrunden, Tests und Auswertungen begleitet, denn nur durch eine iterative Anpassung
-						der Technologie an ihre künftigen User*innen kann sichergestellt werden, dass das neue digitale
-						Angebot auch tatsächlich angenommen und genutzt wird.
-					</p>
-					<figure>
-						<img
-							class="float-left ml-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-							alt="Was die Zeitungsleser vor Geräte haben müssen?"
-							src={createBaseurl(
-								"acdh-digitarium-caspar_stieler-18-Claudia_Resch-e1534865307383-189x300.jpg",
-							)}
-						/>
-						<figcaption class="ml-4">
-							<em>Was die Zeitungsleser vor Geräte haben müssen?</em>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</div>
+	</PageContent>
 </Page>
