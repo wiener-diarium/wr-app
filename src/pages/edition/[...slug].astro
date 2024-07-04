@@ -2,6 +2,7 @@
 import { readdir, readFile } from "node:fs/promises";
 
 import Edition from "../../layouts/Edition.astro";
+import PageContent from "../../layouts/PageContent.astro";
 import { baseurl } from "../../lib/baseurl.js";
 
 export async function getStaticPaths() {
@@ -45,6 +46,8 @@ const { html, date, issue, corpus, name } = Astro.props;
 </style>
 <Edition title={issue} baseurl={baseurl} date={date} issue={issue} corpus={corpus} name={name}>
 	<div class="flex flex-col">
-		<div set:html={html} />
+		<PageContent classNames={["container", "mb-auto"]}>
+			<div set:html={html} />
+		</PageContent>
 	</div>
 </Edition>

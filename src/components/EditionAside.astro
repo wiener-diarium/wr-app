@@ -1,5 +1,4 @@
 ---
-import { createBaseurl } from "../lib/baseurl";
 import EditionEditor from "./EditionEditor.astro";
 
 const { textcolor, backgroundcolor, width, issue, corpus, date, name } = Astro.props;
@@ -24,7 +23,7 @@ function verifyArche() {
 		<ul>
 			<li>
 				<a
-					class="open text-white"
+					class="open text-gray-700"
 					id="aside-button"
 					aria-label="Schließen"
 					role="button"
@@ -44,7 +43,7 @@ function verifyArche() {
 					id="show-on-scroll"
 					href="#top_page"
 					aria-label="Zurück zur ersten Seite"
-					class="fade pt-2 text-white"
+					class="fade pt-2 text-gray-700"
 				>
 					<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
 						<path
@@ -56,8 +55,8 @@ function verifyArche() {
 			</li>
 		</ul>
 	</div>
-	<div class="active sticky top-16" id="edition-aside">
-		<div class="my-4 flex shrink-0 justify-center text-center text-white">
+	<div class="active sticky top-24 py-6" id="edition-aside">
+		<!-- <div class="my-4 flex shrink-0 justify-center text-center text-gray-700">
 			<a href={createBaseurl("digitarium")} aria-label="Zurück zur Hauptseite">
 				<img
 					class="w-60 p-4"
@@ -65,9 +64,9 @@ function verifyArche() {
 					alt="Wiener Diarium Logo"
 				/>
 			</a>
-		</div>
+		</div> -->
 
-		<div class="flex items-center justify-center text-center text-white">
+		<div class="flex items-center justify-center text-center text-gray-700">
 			<div class="p-4">
 				<p>
 					{
