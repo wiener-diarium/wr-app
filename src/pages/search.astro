@@ -251,8 +251,9 @@ import { baseurl } from "../lib/baseurl.ts";
 							</div>
 							<div class="flex flex-row">
 								<div
-									class="basis-4/12 self-center mx-2 p-1 border-2 rounded ${makeCorrections(hit) ==
-									"unüberprüft"
+									class="max-w-[175px] basis-4/12 mx-2 p-1 border-2 rounded ${makeCorrections(
+										hit,
+									) == "unüberprüft"
 										? "border-black-200"
 										: makeCorrections(hit) == "einmal überprüft"
 											? "border-cyan-100"
@@ -262,7 +263,11 @@ import { baseurl } from "../lib/baseurl.ts";
 													? "border-cyan-700"
 													: ""}"
 								>
-									<img src="${whichEdition(hit)}" class="img-thumbnail" alt="Bild" />
+									<img
+										src="${whichEdition(hit)}"
+										class="mx-auto img-thumbnail max-w-[150px]"
+										alt="Bild"
+									/>
 								</div>
 								<div class="basis-8/12">
 									<table>
