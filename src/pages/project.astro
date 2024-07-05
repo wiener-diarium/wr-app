@@ -43,51 +43,53 @@ const presentations = await getCollection("presentations");
 						<div class="mx-auto flex flex-col">
 							<p class="py-4 text-3xl">Sie haben gewählt …?</p>
 						</div>
-						<div class="grid grid-cols-2 sm:grid-cols-1">
-							<div class="mx-auto flex max-w-[1200px] basis-full flex-row p-4">
-								<p>
-									<figure>
-										<img
-											class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-											alt="Zeitungen haben mancherley Sachen im Blick."
-											src={createBaseurl(
-												"acdh-digitarium-caspar_stieler-15-Claudia_Resch-e1534861817939-185x300.jpg",
-											)}
-										/>
-										<figcaption class="mr-4">
-											<em>Zeitungen haben mancherley Sachen im Blick.</em>
-										</figcaption>
-									</figure>
-									Bei der Auswertung der eingegangenen Nominierungen hat sich gezeigt, wie breit deren
-									Themenspektrum ist: Zur Volltextdigitalisierung empfohlen wurden Ausgaben mit Geburten,
-									Taufen und Sterbefällen bekannter Persönlichkeiten, Geburts- und Namenstagen, Krönungen
-									und Erbhuldigungen, kirchlichen und weltlichen Festen, Ankündigungen, Eröffnungen und
-									Einweihungen sowie Berichten über Besuche prominenter Gäste in der Residenzstadt. Errungenschaften
-									im weitesten Sinn wie die Erklärung der Menschenrechte oder der Beginn der Luftfahrt
-									waren ebenso in der Auswahl enthalten wie das medienimmanente Thema der Herausgeberschaft.
+						<div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1">
+							<div class="mx-auto grid max-w-[1200px] grid-cols-2 p-4 sm:grid-cols-1">
+								<figure>
+									<img
+										class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+										alt="Zeitungen haben mancherley Sachen im Blick."
+										src={createBaseurl(
+											"acdh-digitarium-caspar_stieler-15-Claudia_Resch-e1534861817939-185x300.jpg",
+										)}
+									/>
+									<figcaption class="mr-4 sm:mb-2">
+										<em>Zeitungen haben mancherley Sachen im Blick.</em>
+									</figcaption>
+								</figure>
+								<p class="sm:mt-2">
+									Bei der Auswertung der eingegangenen Nominierungen hat sich gezeigt, wie breit
+									deren Themenspektrum ist: Zur Volltextdigitalisierung empfohlen wurden Ausgaben
+									mit Geburten, Taufen und Sterbefällen bekannter Persönlichkeiten, Geburts- und
+									Namenstagen, Krönungen und Erbhuldigungen, kirchlichen und weltlichen Festen,
+									Ankündigungen, Eröffnungen und Einweihungen sowie Berichten über Besuche
+									prominenter Gäste in der Residenzstadt. Errungenschaften im weitesten Sinn wie die
+									Erklärung der Menschenrechte oder der Beginn der Luftfahrt waren ebenso in der
+									Auswahl enthalten wie das medienimmanente Thema der Herausgeberschaft.
 								</p>
 							</div>
-							<div class="mx-auto flex max-w-[1200px] basis-full flex-row p-4">
-								<p>
-									<figure>
-										<img
-											class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
-											alt="Zeitungen liest imer einer anders als der andere."
-											src={createBaseurl(
-												"acdh-digitarium-caspar_stieler-17-Claudia_Resch-e1534865099692-232x300.jpg",
-											)}
-										/>
-										<figcaption class="mr-4">
-											<em>Von derer Zeitungen Würde und Wichtigkeit.</em>
-										</figcaption>
-									</figure>
-									Die Ergänzungen, die das Projektteam vorgenommen hat, betrafen daher weniger die Vielfalt
-									der angesprochenen Themen, sondern waren darauf ausgerichtet, zeitliche Lücken zu füllen.
-									Vor dem Hintergrund der Entwicklung des Wien[n]erischen Diariums zu einer Zeitung im
-									modernen Verständnis wurde somit versucht, ein ausgewogenes Korpus zu bilden, das dazu
-									geeignet ist, die Umbrüche und Wendungen in einer Periode sich verändernder politischer,
-									sozialer, wissenschaftlicher und künstlerischer Bedingungen im 18. Jahrhundert zum
-									Ausdruck zu bringen. Jeder aufgenommene Jahrgang ist derzeit durch fünf Ausgaben vertreten.
+							<div class="mx-auto grid max-w-[1200px] grid-cols-2 p-4 sm:grid-cols-1">
+								<figure>
+									<img
+										class="float-left mr-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+										alt="Zeitungen liest imer einer anders als der andere."
+										src={createBaseurl(
+											"acdh-digitarium-caspar_stieler-17-Claudia_Resch-e1534865099692-232x300.jpg",
+										)}
+									/>
+									<figcaption class="mr-4">
+										<em>Von derer Zeitungen Würde und Wichtigkeit.</em>
+									</figcaption>
+								</figure>
+								<p class="sm:mt-2">
+									Die Ergänzungen, die das Projektteam vorgenommen hat, betrafen daher weniger die
+									Vielfalt der angesprochenen Themen, sondern waren darauf ausgerichtet, zeitliche
+									Lücken zu füllen. Vor dem Hintergrund der Entwicklung des Wien[n]erischen Diariums
+									zu einer Zeitung im modernen Verständnis wurde somit versucht, ein ausgewogenes
+									Korpus zu bilden, das dazu geeignet ist, die Umbrüche und Wendungen in einer
+									Periode sich verändernder politischer, sozialer, wissenschaftlicher und
+									künstlerischer Bedingungen im 18. Jahrhundert zum Ausdruck zu bringen. Jeder
+									aufgenommene Jahrgang ist derzeit durch fünf Ausgaben vertreten.
 								</p>
 							</div>
 						</div>
@@ -109,7 +111,7 @@ const presentations = await getCollection("presentations");
 					><em>© Claudia Resch</em>
 					<div class="flex flex-col">
 						<div class="grid grid-cols-1 sm:grid-cols-1">
-							<div class="flex p-4">
+							<div class="grid grid-cols-2 p-4 sm:grid-cols-1">
 								<figure class="inline">
 									<img
 										class="mr-4 max-w-[300px] rounded-lg border object-none shadow-md sm:max-w-[150px]"
@@ -117,7 +119,7 @@ const presentations = await getCollection("presentations");
 										src={createBaseurl("acdh-digitarium-transkribus-screenshot-02-300x175.png")}
 									/>
 								</figure>
-								<p>
+								<p class="sm:mt-2">
 									In Vorbereitung der Volltextdigitalisierung werden die Bild-Digitalisate aus dem
 									<a
 										class="hover:text-cyan-500"
@@ -133,7 +135,7 @@ const presentations = await getCollection("presentations");
 									eingelesen und in computerlesbaren Text transformiert.
 								</p>
 							</div>
-							<div class="flex p-4">
+							<div class="grid grid-cols-2 p-4 sm:grid-cols-1">
 								<p>
 									Der automatisiert erstellte, unkorrigierte Text muss dann in mehreren Schritten,
 									unter erheblichem zeitlichen Aufwand und gemäß der im Projekt entwickelten
@@ -153,14 +155,14 @@ const presentations = await getCollection("presentations");
 								</p>
 								<figure>
 									<img
-										class="ml-4 max-w-[300px] rounded-lg border shadow-md sm:max-w-[150px]"
+										class="ml-4 max-w-[300px] rounded-lg border shadow-md sm:mb-2 sm:max-w-[150px]"
 										alt="Transkribus Screenshot"
 										src={createBaseurl("acdh-digitarium-transkribus-screenshot-01-768x466.jpg")}
 									/>
 								</figure>
 							</div>
 						</div>
-						<div class="flex flex-row p-4">
+						<div class="grid grid-cols-2 p-4 sm:grid-cols-1">
 							<figure>
 								<img
 									class="mr-2 max-w-[150px] rounded-lg border shadow-md sm:max-w-[150px]"
@@ -173,7 +175,7 @@ const presentations = await getCollection("presentations");
 									<em>Zeitungen erfordern gute Vorrectores.</em>
 								</figcaption>
 							</figure>
-							<p class="ml-4">
+							<p class="ml-4 sm:ml-0 sm:mt-2">
 								Trotz der Trainingserfolge werden Zeitungstexte aus dieser Zeitperiode immer der
 								manuellen Nachkorrektur bedürfen, wobei zu hoffen bleibt, dass sich der Aufwand mit
 								der Zeit weiter verringert. Das Bemühen um einen hochwertigen Volltext, der
@@ -324,7 +326,7 @@ const presentations = await getCollection("presentations");
 								</p>
 							</div>
 							<div class="flex basis-6/12 flex-row p-4">
-								<p class="ml-4">
+								<p class="ml-4 sm:ml-0">
 									Gerade weil die erfragten Anforderungen und Nutzungsszenarien bei dieser
 									vielseitigen Quelle divergent oder zumindest heterogen sind, ist es wichtig, die
 									jeweiligen User*innengruppen (Forschende, Lehrende, Lernende, Wissbegierige aus
@@ -347,7 +349,7 @@ const presentations = await getCollection("presentations");
 											"acdh-digitarium-caspar_stieler-18-Claudia_Resch-e1534865307383-189x300.jpg",
 										)}
 									/>
-									<figcaption class="ml-4">
+									<figcaption class="ml-4 sm:ml-0">
 										<em>Was die Zeitungsleser vor Geräte haben müssen?</em>
 									</figcaption>
 								</figure>
@@ -388,7 +390,7 @@ const presentations = await getCollection("presentations");
 				<PageCard image={createBaseurl("Diarium-Reisen-4-1024x399.png")}>
 					<em>© Claudia Resch</em>
 
-					<div>
+					<div class="overflow-hidden sm:max-w-[540px]">
 						<h5 class="p-2 text-3xl">Workshop</h5>
 						<ul>
 							{
