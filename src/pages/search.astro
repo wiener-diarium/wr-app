@@ -103,10 +103,10 @@ import { baseurl } from "../lib/baseurl.ts";
 		let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 		if (hitDigit) {
 			let wr_app_id = hidId.split("__")[0].replace("wr_", "");
-			return `${baseurl}edition/${wr_app_id}?img=on&mark=${hitString}`;
+			return `${baseurl}edition/${wr_app_id}?img=on&mark=${hitString}&aside=closed`;
 		} else if (hitGestrich) {
 			let wr_app_id = hidId.split("__")[0];
-			return `${baseurl}edition/${wr_app_id}?img=on&mark=${hitString}`;
+			return `${baseurl}edition/${wr_app_id}?img=on&mark=${hitString}&aside=closed`;
 		} else {
 			return `${annoUrl}${hitDate}&seite=${hitPage}`;
 		}

@@ -144,7 +144,7 @@ for (const [key, value] of Object.entries(data)) {
 		} else {
 			const calendar = document.getElementById("calendar");
 			calendar.innerHTML = events.map((event) => {
-				return `<a href="edition/${event.url}?img=on" class="inline p-2 hover:bg-gray-100 cursor">
+				return `<a href="edition/${event.url}?img=on&aside=closed" class="inline p-2 hover:bg-gray-100 cursor">
 						Korpus: ${event.kind} | Ausgabe: ${event.label}
 					</a>`;
 			});
