@@ -221,6 +221,24 @@ for (const [key, value] of Object.entries(data)) {
 		--calendar-cell-color: #006363;
 	}
 
+	input {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border-width: 0;
+	}
+
+	input[type="radio"]:checked + span {
+		outline: 2px solid #006363;
+		border-radius: 0.35rem;
+		outline-offset: 4px;
+	}
+
 	@media screen and (max-width: 1024px) {
 		acdh-ch-calendar-year {
 			grid-template-columns: repeat(3, 1fr);

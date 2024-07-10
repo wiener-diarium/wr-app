@@ -6,7 +6,7 @@ import "../styles/index.css";
 import BaseHead from "../components/BaseHead.astro";
 import EditionAside from "../components/EditionAside.astro";
 import Footer from "../components/Footer.astro";
-// import Header from "../components/Header.astro";
+import Header from "../components/Header.astro";
 import MatomoAnalytics from "../components/MatomoAnalytics.astro";
 import { baseurl, createBaseurl } from "../lib/baseurl.js";
 
@@ -28,9 +28,9 @@ const siteId = 94;
 		/>
 	</head>
 	<body class="flex flex-col">
-		<!-- <header id="header" class="basis-full">
+		<header id="header" class="basis-full">
 			<Header backgroundcolor={backgroundcolor} baseurl={baseurl} />
-		</header> -->
+		</header>
 		<main class="mb-auto flex flex-row">
 			<EditionAside
 				textcolor={textcolor}
