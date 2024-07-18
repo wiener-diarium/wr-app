@@ -216,7 +216,7 @@
 </xsl:template>
 
 <xsl:template match="tei:signed">
-	<p id="{@xml:id}" class="yes-index text-justify py-2 ">
+	<p id="{@xml:id}" class="yes-index text-justify py-2 px-2">
 		<xsl:apply-templates/>
 	</p>
 </xsl:template>
