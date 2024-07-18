@@ -276,10 +276,6 @@ import { baseurl } from "../lib/baseurl.ts";
 											<td class="px-2">${makeTitle(hit)}</td>
 										</tr>
 										<tr>
-											<td><em>Seite:</em></td>
-											<td class="px-2">${hit.page}</td>
-										</tr>
-										<tr>
 											<td><em>Datum:</em></td>
 											<td class="px-2">
 												${new Date(hit.id.replace("wr_", "").split("__")[0]).toLocaleDateString(

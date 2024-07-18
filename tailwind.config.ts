@@ -23,6 +23,9 @@ module.exports = {
 			colors: {
 				brand: "var(--color-brand)",
 			},
+			fontFamily: {
+				antiqua: "Helvetica, Verdana, sans-serif",
+			},
 		},
 		screens: {
 			custom: "70rem",

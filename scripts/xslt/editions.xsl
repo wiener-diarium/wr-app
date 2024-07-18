@@ -32,13 +32,23 @@
 <div class="flex flex-row transcript active p-2 sm:flex-col">
 	<div class="basis-7/12 text px-4 yes-index sm:px-2 sm:basis-full md:basis-full">
 		<div class="flex flex-col section">
-			<xsl:for-each-group select=".//tei:front/tei:titlePage/*|.//tei:body/tei:div[@type='article']/*" group-starting-with="self::tei:pb">
-				<xsl:for-each select="current-group()/self::tei:pb">
-					<!-- <xsl:value-of select="*/name()"/> -->
-					<xsl:apply-templates select="self::tei:pb"/>
+			<xsl:for-each-group select=".//tei:front/tei:titlePage/tei:docTitle/*|.//tei:front/tei:titlePage/tei:imprimatur/*|.//tei:body/tei:div[@type='article']/*" group-starting-with="tei:pb">
+
 					<xsl:for-each select="current-group()">
-						<xsl:apply-templates select="self::tei:docTitle|self::tei:milestone|self::tei:imprimatur|self::tei:ab[@type='imprint']|self::tei:ab[@type='count-date']"/>
+						<xsl:apply-templates select="self::tei:pb" />
 					</xsl:for-each>
+
+					<xsl:for-each select="current-group()/parent::tei:docTitle|current-group()/parent::tei:imprimatur">
+						<xsl:choose>
+							<xsl:when test="self::tei:docTitle">
+								<xsl:call-template name="docTitle"/>
+							</xsl:when>
+							<xsl:when test="self::tei:imprimatur">
+								<xsl:call-template name="imprimatur"/>
+							</xsl:when>
+						</xsl:choose>
+					</xsl:for-each>
+
 					<div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1">
 						<xsl:choose>
 							<xsl:when test="current-group()/self::*[@rendition='#lc'] or current-group()/self::*[@rendition='#rc']">
@@ -62,10 +72,11 @@
 							</xsl:when>
 						</xsl:choose>
 					</div>
+
 					<xsl:for-each select="current-group()">
-						<xsl:apply-templates select="self::tei:fw"/>
+						<xsl:apply-templates select="self::tei:fw"  />
 					</xsl:for-each>
-				</xsl:for-each>
+
 			</xsl:for-each-group>
 		</div>
 	</div>
@@ -84,30 +95,38 @@
 
 </xsl:template>
 
-<xsl:template match="tei:docTitle">
-	<div class="title-page py-4" id="#top_page">
-		<xsl:apply-templates/>
+<xsl:template match="tei:docTitle" name="docTitle">
+	<div class="title-page py-2" id="#top_page">
+		<xsl:apply-templates select="node() except tei:pb" />
 	</div>
 </xsl:template>
 
-<xsl:template match="tei:titlePart">
+<xsl:template match="tei:titlePart" name="titlePart">
 	<xsl:choose>
-		<xsl:when test="@type='count-date-normalized' or @type='num'">
-			<h5 id="{@xml:id}" class="yes-index text-center py-4 text-lg"><xsl:apply-templates/></h5>
+		<xsl:when test="@type='num'">
+			<h5 id="{@xml:id}" class="yes-index text-center py-2 text-xl">
+				<xsl:apply-templates select="node() except tei:lb"/>
+			</h5>
 		</xsl:when>
-		<xsl:when test="@type='main-title' or @type='main'">
-			<h4	id="{@xml:id}" class="yes-index text-center py-4 text-2xl"><xsl:apply-templates/></h4>
+		<xsl:when test="@type='main-title'">
+			<h4	id="{@xml:id}" class="yes-index text-center py-2 text-4xl font-bold">
+				<xsl:apply-templates/>
+			</h4>
 		</xsl:when>
 	</xsl:choose>
 </xsl:template>
 
-<xsl:template match="tei:milestone">
-	<hr class="mx-10 p-4 border-gray-500"/>
+<xsl:template match="tei:figure" name="figure">
+	<h5 id="{@xml:id}" class="yes-index text-center py-2">
+		<xsl:apply-templates/>
+	</h5>
 </xsl:template>
 
-<xsl:template match="tei:imprimatur">
-	<div id="{@xml:id}">
-		<p id="{@xml:id}" class="yes-index italic text-center py-4"><xsl:apply-templates/></p>
+<xsl:template match="tei:imprimatur" name="imprimatur">
+	<div id="{@xml:id}" class="mb-4">
+		<p id="{@xml:id}" class="yes-index text-lg text-center py-2">
+			<xsl:apply-templates/>
+		</p>
 	</div>
 </xsl:template>
 
@@ -189,11 +208,17 @@
 <xsl:template match="tei:pc"/>
 
 <xsl:template match="tei:fw[@type='catch']">
-	<div id="{@xml:id}" class="basis-full float-right text-right px-4">
+	<div id="{@xml:id}" class="basis-full float-right text-right ">
 		<span class="yes-index">
 			<xsl:apply-templates/>
 		</span>
 	</div>
+</xsl:template>
+
+<xsl:template match="tei:signed">
+	<p id="{@xml:id}" class="yes-index text-justify py-2 ">
+		<xsl:apply-templates/>
+	</p>
 </xsl:template>
 
 <xsl:template match="tei:ab">
@@ -230,7 +255,7 @@
 </xsl:template>
 
 <xsl:template match="tei:p">
-	<p id="{@xml:id}" class="yes-index text-justify py-2 px-4">
+	<p id="{@xml:id}" class="yes-index text-justify px-4">
 		<xsl:apply-templates/>
 		<!--<xsl:if test="following-sibling::tei:p[@prev]">
 				<xsl:if test="following-sibling::*[1]/name() = 'pb'">
@@ -247,8 +272,8 @@
 </xsl:template>
 
 <xsl:template match="tei:list">
-	<ul class="p-4" id="{@xml:id}">
-		<xsl:apply-templates/>
+	<ul class="px-4" id="{@xml:id}">
+		<xsl:apply-templates select="node() except tei:lb"/>
 	</ul>
 </xsl:template>
 

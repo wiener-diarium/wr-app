@@ -47,7 +47,7 @@ const { html, date, issue, corpus, name } = Astro.props;
 <Edition title={issue} baseurl={baseurl} date={date} issue={issue} corpus={corpus} name={name}>
 	<div class="flex flex-col">
 		<PageContent classNames={["container", "mb-auto"]}>
-			<div set:html={html} />
+			<div set:html={html} class="font-antiqua" />
 		</PageContent>
 	</div>
 </Edition>
