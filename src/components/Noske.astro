@@ -30,7 +30,7 @@
 		wordlistattr: ["word", "id", "antiqua", "label", "cert"],
 	});
 
-	search.minQueryLength = 1;
+	search.minQueryLength = 2;
 
 	search.search({
 		client: {
@@ -67,16 +67,19 @@
 			},
 		},
 		config: {
-			customUrl: "https://digitarium.acdh.oeaw.ac.at/edition",
+			customUrl: "/edition",
 			// customUrl: "edition",
-			urlparam: "&img=on&aside=closed",
+			urlparam: { img: "on", aside: "closed" },
+			tableView: true,
 		},
 		autocompleteOptions: {
 			id: "noske-autocomplete",
 			css: {
-				div: "bg-white border border-gray-300 absolute ml-[10%] mt-10 text-left overflow-y-scroll h-[400px]",
+				div: "bg-white border border-gray-300 absolute ml-[180px] mt-10 text-left overflow-y-scroll h-[400px]",
 				ul: "p-0",
 				li: "p-2 hover:bg-gray-100 text-sm text-gray-500 hover:cursor-pointer",
+				loader:
+					"m-2 border-4 border-gray-300 border-t-4 border-t-black rounded-full relative w-[40px] h-[40px] text-center",
 			},
 		},
 	});
