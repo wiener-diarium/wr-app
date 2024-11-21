@@ -4,17 +4,22 @@ import EditionEditor from "./EditionEditor.astro";
 
 const { textcolor, backgroundcolor, width, issue, corpus, date, name } = Astro.props;
 
+const fileName = name.replace(".html", ".xml");
+const corpusName = corpus;
+
 function verifyArche() {
-	const format = "?format=raw";
-	if (corpus === "1") {
-		const url = "https://id.acdh.oeaw.ac.at/digitarium/";
-		const doc = "ed__" + name.replace(".html", ".xml");
-		return url + doc + format;
+	// const format = "?format=rawInline";
+	// arche = "https://arche.acdh.oeaw.ac.at/digitarium/"
+	if (corpusName === "1") {
+		const url =
+			"https://raw.githubusercontent.com/wiener-diarium/wr-data/refs/heads/main/data/wrd-present/";
+		const doc = "ed__" + fileName;
+		return url + doc;
 	} else {
-		// const url = "https://id.acdh.oeaw.ac.at/digitarium2/";
-		// const doc = name.replace(".html", ".xml");
-		// return url + doc + format;
-		return "/";
+		const url =
+			"https://raw.githubusercontent.com/wiener-diarium/wr-data/refs/heads/main/data/wrd-present/";
+		const doc = fileName;
+		return url + doc;
 	}
 }
 ---
@@ -93,7 +98,7 @@ function verifyArche() {
 					}
 				</p>
 				<p class="mt-4 flex justify-center">
-					<a href={verifyArche()} aria-label="Download" target="_blank">
+					<button id="XMLFileDownload" data-xml={verifyArche()} aria-label="File Download">
 						<svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
 							<path
 								d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
@@ -102,13 +107,31 @@ function verifyArche() {
 								d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
 							></path>
 						</svg>
-					</a>
+					</button>
 				</p>
 			</div>
 		</div>
 		<EditionEditor />
 	</div>
 </aside>
+<script>
+	import { xmlDownload } from "../lib/xmlDownload";
+
+	const XMLFileDownload = document.getElementById("XMLFileDownload");
+
+	XMLFileDownload!.addEventListener("click", async () => {
+		const url = XMLFileDownload!.dataset.xml as string;
+		const fileName = url!.split("/");
+		console.log(url);
+		const link = document.createElement("a");
+		const content = await xmlDownload(url);
+		const file = new Blob([content], { type: "text/plain" });
+		link.href = URL.createObjectURL(file);
+		link.download = fileName[fileName.length - 1];
+		link.click();
+		URL.revokeObjectURL(link.href);
+	});
+</script>
 <script>
 	(() => {
 		const urlparam = new URLSearchParams(window.location.search);
