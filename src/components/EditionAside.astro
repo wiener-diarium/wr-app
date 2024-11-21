@@ -10,17 +10,11 @@ const corpusName = corpus;
 function verifyArche() {
 	// const format = "?format=rawInline";
 	// arche = "https://arche.acdh.oeaw.ac.at/digitarium/"
-	if (corpusName === "1") {
-		const url =
-			"https://raw.githubusercontent.com/wiener-diarium/wr-data/refs/heads/main/data/wrd-legacy/";
-		const doc = "ed__" + fileName;
-		return url + doc;
-	} else {
-		const url =
-			"https://raw.githubusercontent.com/wiener-diarium/wr-data/refs/heads/main/data/wrd-present/";
-		const doc = fileName;
-		return url + doc;
-	}
+	const base = "https://raw.githubusercontent.com/wiener-diarium/wr-data/refs/heads/main/data/";
+	const baseType = corpusName === "1" ? "wrd-legacy/" : "wrd-present/";
+	// if switched to arche the fileName for corpus 1 needs a prefix "ed__"
+	const doc = corpusName === "1" ? fileName : fileName;
+	return base + baseType + doc;
 }
 ---
 
