@@ -8,7 +8,7 @@ import { baseurl } from "../lib/baseurl.ts";
 	href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
 />
 <Page title="Volltextsuche" baseurl={baseurl}>
-	<div class="bg-white">
+	<div class="bg-gray-100">
 		<div class="container mx-auto max-w-[800px] px-5 py-4 align-middle">
 			<div class="px-4 text-center">
 				<h4 class="pt-2">Volltextsuche</h4>
@@ -25,7 +25,7 @@ import { baseurl } from "../lib/baseurl.ts";
 			</div> -->
 		</div>
 		<div class="mt-12 flex flex-row p-4 sm:flex-col md:flex-col">
-			<div class="basis-1/6 rounded border border-cyan-500 px-4">
+			<div class="basis-1/6 rounded border border-cyan-500 bg-white px-4">
 				<div class="py-2 text-center" id="clear-refinements"></div>
 				<div id="menu-edition"></div>
 				<div id="corrections"></div>
@@ -229,7 +229,7 @@ import { baseurl } from "../lib/baseurl.ts";
 		hits({
 			container: "#hits",
 			cssClasses: {
-				item: "border-light rounded hover-shadow hover:bg-cyan-50 w-[32%] xl:w-[48%] md:w-[47%] sm:w-[98%] lg:w-[46%] m-2 p-2",
+				item: "border-light rounded hover-shadow bg-white hover:bg-cyan-50 w-[32%] xl:w-[48%] md:w-[47%] sm:w-[98%] lg:w-[46%] m-2 p-2",
 			},
 			templates: {
 				empty(results, { html }) {
@@ -283,8 +283,10 @@ import { baseurl } from "../lib/baseurl.ts";
 											</td>
 										</tr>
 										<tr>
-											<td><em>Umfang:</em></td>
-											<td class="px-2">${hit.page_count} Seiten</td>
+											<td><em>${hit.page_count ? "Umfang:" : "Seite:"}</em></td>
+											<td class="px-2">
+												${hit.page_count ? hit.page_count + " Seiten" : hit.page}
+											</td>
 										</tr>
 										<tr>
 											<td><em>Edition:</em></td>
@@ -533,7 +535,7 @@ import { baseurl } from "../lib/baseurl.ts";
 			padding: 2,
 			cssClasses: {
 				list: "pagination my-4",
-				item: "page-item",
+				item: "page-item bg-white",
 				link: "page-link",
 			},
 		}),
@@ -543,7 +545,7 @@ import { baseurl } from "../lib/baseurl.ts";
 			padding: 2,
 			cssClasses: {
 				list: "pagination my-4",
-				item: "page-item",
+				item: "page-item bg-white",
 				link: "page-link",
 			},
 		}),
