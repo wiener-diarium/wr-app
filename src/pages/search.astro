@@ -91,22 +91,25 @@ import { baseurl } from "../lib/baseurl.ts";
 				return "Samstag";
 			case 6:
 				return "Sonntag";
+			default:
+				return "Unbekannt";
 		}
 	}
 
 	function makeAnnoLink(hit: any) {
 		let hitDate = hit.day;
+		let hitEdition = hit.edition[0];
 		let hitPage = hit.page;
 		let hitDigit = hit.digitarium_issue;
 		let hidId = hit.id;
 		let hitGestrich = hit.gestrich;
-		let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
+		// let hitString = hit._snippetResult?.full_text.matchedWords;
 		if (hitDigit) {
 			let wr_app_id = hidId.split("__")[0].replace("wr_", "");
-			return `${baseurl}edition/${wr_app_id}?img=on&mark=${hitString}&aside=closed`;
-		} else if (hitGestrich) {
+			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed`;
+		} else if (hitGestrich && hitEdition !== "Gestrich") {
 			let wr_app_id = hidId.split("__")[0];
-			return `${baseurl}edition/${wr_app_id}?img=on&mark=${hitString}&aside=closed`;
+			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed`;
 		} else {
 			return `${annoUrl}${hitDate}&seite=${hitPage}`;
 		}
@@ -130,8 +133,8 @@ import { baseurl } from "../lib/baseurl.ts";
 		return `${acdhIIIF}${hitDate}-${hitPageTrailingZeros}.jp2/full/400,/0/default.jpg`;
 	}
 	function whichEdition(hit: any) {
-		let hitday = String(hit.day);
-		if (hitday.startsWith("1703")) {
+		let hitDay = String(hit.day);
+		if (hitDay.startsWith("1703")) {
 			return makeDigitImgUrl(hit);
 		} else {
 			return makeAnnoImgUrl(hit);
@@ -145,6 +148,8 @@ import { baseurl } from "../lib/baseurl.ts";
 			var title = hit.title.split(", ")[0];
 		} else if (hitGestrich) {
 			var title = hit.title.split(", ")[2];
+		} else {
+			var title = hit.title;
 		}
 		return title;
 	}
@@ -164,6 +169,26 @@ import { baseurl } from "../lib/baseurl.ts";
 			return "mehrfach überprüft";
 		} else {
 			return hitCorrections;
+		}
+	}
+	function hasText(hit: any, components: any) {
+		if (hit.has_fulltext && hit._snippetResult?.full_text.matchedWords.length > 0) {
+			return `<div class="flex flex-row">
+								<div>
+									<h5
+										class="pb-4 font-semibold"
+									>
+										Schlagworte im Kontext
+									</h5>
+									<p
+										class="pb-4"
+									>
+										${components.Snippet({ hit, attribute: "full_text" })}
+									</p>
+								</div>
+							</div>`;
+		} else {
+			return "";
 		}
 	}
 	const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
@@ -217,38 +242,7 @@ import { baseurl } from "../lib/baseurl.ts";
 							href="${makeAnnoLink(hit)}"
 							aria-label="Link zu Dokument: ${hit.title}"
 						>
-							<div class="flex flex-row">
-								<div>
-									<h5
-										class=${
-											// @ts-expect-error
-											hit._snippetResult?.full_text.matchedWords.length > 0
-												? "pb-4 font-semibold"
-												: ""
-										}
-									>
-										${
-											// @ts-expect-error
-											hit._snippetResult?.full_text.matchedWords.length > 0
-												? "Schlagworte im Kontext:"
-												: ""
-										}
-									</h5>
-									<p
-										class=${
-											// @ts-expect-error
-											hit._snippetResult?.full_text.matchedWords.length > 0 ? "pb-4" : ""
-										}
-									>
-										${
-											// @ts-expect-error
-											hit._snippetResult?.full_text.matchedWords.length > 0
-												? components.Snippet({ hit, attribute: "full_text" })
-												: ""
-										}
-									</p>
-								</div>
-							</div>
+							${hasText(hit, components)}
 							<div class="flex flex-row">
 								<div
 									class="max-w-[175px] basis-4/12 mx-2 p-1 border-2 rounded ${makeCorrections(
@@ -358,8 +352,8 @@ import { baseurl } from "../lib/baseurl.ts";
 			container: "#corrections",
 			attribute: "corrections",
 			searchable: false,
-			transformItems(items) {
-				return items.map((item) => ({
+			transformItems(items: any) {
+				return items.map((item: any) => ({
 					...item,
 					highlighted: (item.highlighted = makeCorrections(item, true)),
 				}));
@@ -388,8 +382,8 @@ import { baseurl } from "../lib/baseurl.ts";
 			attribute: "weekday",
 			searchable: false,
 			sortBy: ["isRefined", "name:asc"],
-			transformItems(items) {
-				return items.map((item) => ({
+			transformItems(items: any) {
+				return items.map((item: any) => ({
 					...item,
 					highlighted: (item.highlighted = weekdayToString(item)),
 				}));
@@ -457,7 +451,7 @@ import { baseurl } from "../lib/baseurl.ts";
 			sortBy: ["isRefined", "name:asc"],
 			showMoreLimit: 9999,
 			templates: {
-				showMoreText({ isShowingMore }) {
+				showMoreText({ isShowingMore }: any) {
 					return isShowingMore ? "Weniger anzeigen" : "Mehr anzeigen";
 				},
 				searchableNoResults() {
@@ -495,7 +489,7 @@ import { baseurl } from "../lib/baseurl.ts";
 			showMoreLimit: 9999,
 			searchableIsAlwaysActive: false,
 			templates: {
-				showMoreText({ isShowingMore }) {
+				showMoreText({ isShowingMore }: any) {
 					return isShowingMore ? "Weniger anzeigen" : "Mehr anzeigen";
 				},
 				searchableNoResults() {
