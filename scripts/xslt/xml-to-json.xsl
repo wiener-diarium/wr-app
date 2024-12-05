@@ -11,9 +11,9 @@
 		<xsl:variable name="files" select="collection('../../data/editions/legacy')"/>
 		<xsl:variable name="files2" select="collection('../../data/editions/present')"/>
 		<xsl:variable name="xml">
-			<array>
+			<map>
 				<xsl:for-each select="$files//tei:TEI">
-					<map>
+					<map key="{replace(@xml:id, '.xml', '')}">
 						<string key="id">
 							<xsl:value-of select="replace(@xml:id, '.xml', '')"/>
 						</string>
@@ -33,7 +33,7 @@
 					</map>
 				</xsl:for-each>
 				<xsl:for-each select="$files2//tei:TEI">
-					<map>
+					<map key="{replace(@xml:id, '.xml', '')}">
 						<string key="id">
 							<xsl:value-of select="replace(@xml:id, '.xml', '')"/>
 						</string>
@@ -52,7 +52,7 @@
 						</string>
 					</map>
 				</xsl:for-each>
-			</array>
+			</map>
 		</xsl:variable>
 		<!-- OUTPUT -->
 		<xsl:value-of select="xml-to-json($xml)"/>
