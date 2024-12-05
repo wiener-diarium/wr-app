@@ -9,6 +9,23 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
+	vite: {
+		server: {
+			watch: {
+				ignored: [
+					"**/node_modules/**",
+					"**/.git/**",
+					"**/data/**",
+					"**/edition/**",
+					"**/saxon/**",
+					"**/dist/**",
+					"**/.vscode/**",
+					"**/.github/**",
+					"**/scripts/**",
+				],
+			},
+		},
+	},
 	integrations: [
 		icon({
 			include: {
