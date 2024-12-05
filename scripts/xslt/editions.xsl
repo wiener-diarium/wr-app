@@ -30,8 +30,8 @@
 
 <xsl:template match="/">
 <div class="flex flex-row transcript active p-2 sm:flex-col">
-	<div class="basis-7/12 text px-4 yes-index sm:px-2 sm:basis-full md:basis-full">
-		<div class="flex flex-col section">
+	<div class="basis-7/12 text p-4 yes-index sm:p-2 sm:basis-full md:basis-full">
+		<div class="flex flex-col section bg-white shadow-md shadow-gray-500/50">
 			<xsl:for-each-group select=".//tei:front/tei:titlePage/tei:docTitle/*|.//tei:front/tei:titlePage/tei:imprimatur/*|.//tei:body/tei:div[@type='article']/*" group-starting-with="tei:pb">
 
 					<xsl:for-each select="current-group()">

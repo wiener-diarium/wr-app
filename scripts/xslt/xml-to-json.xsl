@@ -13,7 +13,10 @@
 		<xsl:variable name="xml">
 			<map>
 				<xsl:for-each select="$files//tei:TEI">
-					<map key="{@xml:id}">
+					<map key="{replace(@xml:id, '.xml', '')}">
+						<string key="id">
+							<xsl:value-of select="replace(@xml:id, '.xml', '')"/>
+						</string>
 						<string key="title">
 							<xsl:value-of select="//tei:titleStmt/tei:title[@level='a' or @type='num']"/>
 						</string>
@@ -30,7 +33,10 @@
 					</map>
 				</xsl:for-each>
 				<xsl:for-each select="$files2//tei:TEI">
-					<map key="{substring-before(@xml:id, '.xml')}">
+					<map key="{replace(@xml:id, '.xml', '')}">
+						<string key="id">
+							<xsl:value-of select="replace(@xml:id, '.xml', '')"/>
+						</string>
 						<string key="title">
 								<xsl:value-of select="//tei:titleStmt/tei:title[@level='a' or @type='num']"/>
 						</string>

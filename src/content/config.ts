@@ -1,7 +1,16 @@
+// import { file } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
 // Export a single `collections` object to register your collection(s)
 export const collections = {
+	// edition: defineCollection({
+	// 	loader: file("edition/about.json"),
+	// 	schema: z.object({
+	// 		id: z.string(),
+	// 		title: z.string(),
+	// 		corpus: z.string(),
+	// 	}),
+	// }),
 	publications: defineCollection({
 		type: "data",
 		schema: z.object({
@@ -69,6 +78,22 @@ export const collections = {
 		}),
 	}),
 	news: defineCollection({
+		type: "content",
+		schema: z.object({
+			authors: z.array(
+				z.object({
+					firstName: z.string(),
+					lastName: z.string(),
+					middleName: z.string().optional(),
+				}),
+			),
+			title: z.string(),
+			date: z.date().optional(),
+			url: z.string().optional(),
+			image: z.string().optional(),
+		}),
+	}),
+	media: defineCollection({
 		type: "content",
 		schema: z.object({
 			authors: z.array(

@@ -7,7 +7,7 @@ get container wrapper of osd viewer
 */
 // var container = document.getElementById("container_facs_2");
 // container.style.display = "none";
-var height = screen.height;
+var height = window.innerHeight;
 var width = document.querySelector(".text").clientWidth;
 var container = document.getElementById("container_facs_1");
 var wrapper = document.getElementsByClassName("facsimiles")[0];
@@ -23,7 +23,7 @@ height is always the screen height minus some offset
 ##################################################################
 */
 if (!wrapper.classList.contains("fade")) {
-	container.style.height = `${String(height / 1.2)}px`;
+	container.style.height = `${String(height / 1.1)}px`;
 	// set osd wrapper container width
 	var container = document.querySelector(".section");
 	if (container !== null) {
@@ -32,7 +32,7 @@ if (!wrapper.classList.contains("fade")) {
 	var container = document.getElementById("viewer-1");
 	container.style.width = `${String(width / 1.16)}px`;
 } else {
-	container.style.height = `${String(height / 1.2)}px`;
+	container.style.height = `${String(height / 1.1)}px`;
 	// set osd wrapper container width
 	var container = document.querySelector(".section");
 	if (container !== null) {

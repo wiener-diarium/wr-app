@@ -31,7 +31,9 @@ import { baseurl } from "../lib/baseurl.ts";
 				<div id="corrections"></div>
 				<div id="weekday"></div>
 				<div id="decade"></div>
+				<div id="refinement-list-places-top" class="hidemobile"></div>
 				<div id="refinement-list-places" class="hidemobile"></div>
+				<div id="refinement-list-keywords-top" class="hidemobile pb-4"></div>
 				<div id="refinement-list-keywords" class="hidemobile pb-4"></div>
 			</div>
 			<div class="basis-5/6 px-4">
@@ -103,13 +105,14 @@ import { baseurl } from "../lib/baseurl.ts";
 		let hitDigit = hit.digitarium_issue;
 		let hidId = hit.id;
 		let hitGestrich = hit.gestrich;
-		// let hitString = hit._snippetResult?.full_text.matchedWords;
-		if (hitDigit) {
+		if (hitEdition == "Ausgewählte Ausgaben: 18. Jahrhundert") {
+			let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 			let wr_app_id = hidId.split("__")[0].replace("wr_", "");
-			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed`;
-		} else if (hitGestrich && hitEdition !== "Gestrich") {
+			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed&mark=${hitString}`;
+		} else if (hitEdition == "Alle Ausgaben: Siebenjähriger Krieg") {
+			let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 			let wr_app_id = hidId.split("__")[0];
-			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed`;
+			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed&mark=${hitString}`;
 		} else {
 			return `${annoUrl}${hitDate}&seite=${hitPage}`;
 		}
@@ -477,6 +480,45 @@ import { baseurl } from "../lib/baseurl.ts";
 				return state.query?.length === 0;
 			},
 			templates: {
+				header: "Themen",
+			},
+			// hidden(options) {
+			// 	return options.results.nbHits === 0;
+			// },
+		})(refinementList)({
+			container: "#refinement-list-keywords-top",
+			attribute: "keywords_top",
+			searchable: true,
+			searchablePlaceholder: "Suchen",
+			showMore: true,
+			searchableIsAlwaysActive: false,
+			sortBy: ["isRefined", "name:asc"],
+			showMoreLimit: 9999,
+			templates: {
+				showMoreText({ isShowingMore }: any) {
+					return isShowingMore ? "Weniger anzeigen" : "Mehr anzeigen";
+				},
+				searchableNoResults() {
+					return "Keine Ergebnisse gefunden ";
+				},
+			},
+			cssClasses: {
+				searchableInput: "form-control form-control-sm border-light-2",
+				searchableSubmit: "d-none",
+				searchableReset: "d-none",
+				showMore: "btn btn-secondary btn-sm align-content-center",
+				list: "list-unstyled",
+				count: "badge flex align-self-end m-2 badge-secondary hideme",
+				label: "flex align-items-start text-left",
+				checkbox: "m-2",
+			},
+		}),
+
+		panel({
+			collapsed: ({ state }) => {
+				return state.query?.length === 0;
+			},
+			templates: {
 				header: "Orte",
 			},
 			// hidden(options) {
@@ -485,6 +527,44 @@ import { baseurl } from "../lib/baseurl.ts";
 		})(refinementList)({
 			container: "#refinement-list-places",
 			attribute: "places",
+			searchable: true,
+			showMore: true,
+			sortBy: ["isRefined", "name:asc"],
+			showMoreLimit: 9999,
+			searchableIsAlwaysActive: false,
+			templates: {
+				showMoreText({ isShowingMore }: any) {
+					return isShowingMore ? "Weniger anzeigen" : "Mehr anzeigen";
+				},
+				searchableNoResults() {
+					return "Keine Ergebnisse gefunden ";
+				},
+			},
+			cssClasses: {
+				searchableInput: "form-control form-control-sm border-light-2",
+				searchableSubmit: "d-none",
+				searchableReset: "d-none",
+				showMore: "btn btn-secondary btn-sm align-content-center",
+				list: "list-unstyled",
+				count: "badge flex align-self-end m-2 badge-secondary hideme",
+				label: "flex align-items-start text-left",
+				checkbox: "m-2",
+			},
+		}),
+
+		panel({
+			collapsed: ({ state }) => {
+				return state.query?.length === 0;
+			},
+			templates: {
+				header: "Regionen",
+			},
+			// hidden(options) {
+			// 	return options.results.nbHits === 0;
+			// },
+		})(refinementList)({
+			container: "#refinement-list-places-top",
+			attribute: "places_top",
 			searchable: true,
 			showMore: true,
 			sortBy: ["isRefined", "name:asc"],
@@ -591,6 +671,7 @@ import { baseurl } from "../lib/baseurl.ts";
 		}),
 
 		configure({
+			// @ts-ignore
 			hitsPerPage: 20,
 			attributesToSnippet: ["full_text"],
 		}),
