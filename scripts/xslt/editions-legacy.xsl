@@ -30,8 +30,8 @@
 
 <xsl:template match="/">
 <div class="flex flex-row transcript active p-4 sm:p-2">
-	<div class="basis-7/12 text px-4 yes-index sm:px-2 sm:basis-full md:basis-full">
-		<div class="section">
+	<div class="basis-7/12 text p-4 yes-index sm:p-2 sm:basis-full md:basis-full">
+		<div class="section bg-white shadow-md shadow-gray-500/50">
 			<div class="flex flex-col items-center">
 				<xsl:for-each select=".//tei:front/tei:titlePage|.//tei:body">
 						<xsl:apply-templates/>
