@@ -36,34 +36,28 @@ export async function getStaticPaths() {
 		}));
 }
 
-// type ed = Record<string, edition>;
+// type ed = Array<edition>;
 
 // interface edition {
 // 	id: string;
 // 	title: string;
 // 	corpus: string;
+// 	html: string;
 // }
 
 // export async function getStaticPaths() {
-// 	const file = await readFile("edition/about.json", "utf-8");
-// 	const edition: ed = JSON.parse(file);
-// 	const paths = [];
-// 	for (const ed in edition) {
-// 		paths.push({
-// 			params: { id: ed.startsWith("edoc_wd_") ? ed.replace(/^edoc_wd_/, "") : ed },
-// 			props: {
-// 				html: readFile(
-// 					`edition/${ed.startsWith("edoc_wd_") ? ed.replace(/^edoc_wd_/, "") : ed}.html`,
-// 					"utf-8",
-// 				),
-// 				date: new Date(ed),
-// 				issue: edition[ed].title,
-// 				corpus: edition[ed].corpus,
-// 				name: ed,
-// 			},
-// 		});
-// 	}
-// 	return paths;
+// 	const about = await readFile("edition/new_about.json", "utf-8");
+// 	const editions: ed = JSON.parse(about);
+// 	return editions.map((edition) => ({
+// 		params: { slug: edition.id },
+// 		props: {
+// 			html: edition.html,
+// 			date: new Date(edition.id.replace("wr_", "")),
+// 			issue: edition.title,
+// 			corpus: edition.corpus,
+// 			name: edition.id.startsWith("wr_") ? edition.id : `edoc_wd_${edition.id}`,
+// 		},
+// 	}));
 // }
 
 const { html, date, issue, corpus, name } = Astro.props;

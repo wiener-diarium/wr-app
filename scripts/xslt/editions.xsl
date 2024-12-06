@@ -31,13 +31,14 @@
 <xsl:template match="/">
 <div class="flex flex-row transcript active p-2 sm:flex-col">
 	<div class="basis-7/12 text p-4 yes-index sm:p-2 sm:basis-full md:basis-full">
-		<div class="flex flex-col section bg-white shadow-md shadow-gray-500/50 px-4">
+		<div class="flex flex-col section">
 			<xsl:for-each-group select=".//tei:front/tei:titlePage/tei:docTitle/*|.//tei:front/tei:titlePage/tei:imprimatur/*|.//tei:body/tei:div[@type='article']/*" group-starting-with="tei:pb">
 
-					<xsl:for-each select="current-group()">
-						<xsl:apply-templates select="self::tei:pb" />
-					</xsl:for-each>
+				<xsl:for-each select="current-group()">
+					<xsl:apply-templates select="self::tei:pb" />
+				</xsl:for-each>
 
+				<div class="bg-white shadow-md shadow-gray-500/50 p-6">
 					<xsl:for-each select="current-group()/parent::tei:docTitle|current-group()/parent::tei:imprimatur">
 						<xsl:choose>
 							<xsl:when test="self::tei:docTitle">
@@ -76,11 +77,12 @@
 					<xsl:for-each select="current-group()">
 						<xsl:apply-templates select="self::tei:fw"  />
 					</xsl:for-each>
+				</div>
 
 			</xsl:for-each-group>
 		</div>
 	</div>
-	<div class="basis-5/12 facsimiles sm:hidden md:hidden">
+	<div class="basis-5/12 facsimiles sm:hidden md:hidden py-4">
 		<div id="viewer-1" class="sticky top-4">
 			<div id="container_facs_1">
 			</div>

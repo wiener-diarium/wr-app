@@ -31,15 +31,15 @@
 <xsl:template match="/">
 <div class="flex flex-row transcript active p-4 sm:p-2">
 	<div class="basis-7/12 text p-4 yes-index sm:p-2 sm:basis-full md:basis-full">
-		<div class="section bg-white shadow-md shadow-gray-500/50 px-4">
+		<div class="section">
 			<div class="flex flex-col items-center">
-				<xsl:for-each select=".//tei:front/tei:titlePage|.//tei:body">
+				<xsl:for-each select=".//tei:front|.//tei:body">
 						<xsl:apply-templates/>
 				</xsl:for-each>
 			</div>
 		</div>
 	</div>
-	<div class="basis-5/12 facsimiles sm:hidden md:hidden">
+	<div class="basis-5/12 facsimiles sm:hidden md:hidden py-4">
 		<div id="viewer-1" class="sticky top-4">
 			<div id="container_facs_1">
 			</div>
@@ -70,8 +70,14 @@
 	</xsl:choose>
 </xsl:template>
 
+<xsl:template match="tei:titlePage">
+	<div class="p-6 bg-white shadow-md shadow-gray-500/50 w-full">
+		<xsl:apply-templates/>
+	</div>
+</xsl:template>
+
 <xsl:template match="tei:docTitle">
-	<div class="title-page p-4" id="#top_page">
+	<div class="title-page" id="#top_page">
 		<xsl:apply-templates/>
 	</div>
 </xsl:template>
@@ -141,8 +147,9 @@
 </xsl:template>
 
 <xsl:template match="tei:div[@type='page']">
-	<div class="py-2 px-4 basis-full">
-		<xsl:apply-templates select=".//tei:pb"/>
+	<xsl:apply-templates select=".//tei:pb"/>
+	<div class="p-6 basis-full bg-white shadow-md shadow-gray-500/50 w-full">
+
 			<xsl:if test="./tei:div[./*[contains(@rendition, 'f')]]">
 				<div class="flex flex-row">
 					<div class="basis-full">
