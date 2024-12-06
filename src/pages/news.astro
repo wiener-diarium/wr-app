@@ -78,7 +78,7 @@ const media = await getCollection("media");
 								.sort((a, b) => (a.data.date && b.data.date && a.data.date > b.data.date ? -1 : 1))
 								.map((m) => <Media {...m.data} />)
 						) : (
-							<div>Keine Präsentationen gefunden</div>
+							<div>Keine Medien gefunden</div>
 						)
 					}
 				</PageCard>

@@ -13,7 +13,7 @@ const { title, subTitle, url, image } = Astro.props;
 		<div class="flex flex-row py-2">
 			<div class="basis-1/3 p-4">
 				<img
-					src={createBaseurl(image.slice(1))}
+					src={createBaseurl(image?.slice(1))}
 					alt={title}
 					class="h-auto w-[400px] rounded-md border border-[#00000026]"
 				/>

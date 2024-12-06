@@ -94,7 +94,7 @@ export const collections = {
 		}),
 	}),
 	media: defineCollection({
-		type: "content",
+		type: "data",
 		schema: z.object({
 			authors: z.array(
 				z.object({
@@ -104,9 +104,10 @@ export const collections = {
 				}),
 			),
 			title: z.string(),
-			date: z.date().optional(),
+			date: z.string().optional(),
 			url: z.string().optional(),
 			image: z.string().optional(),
+			subTitle: z.string().optional(),
 		}),
 	}),
 };

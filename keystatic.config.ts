@@ -643,8 +643,8 @@ export default config({
 										{
 											image: fields.image({
 												label: "Bild",
-												directory: "public/images/events/component",
-												publicPath: "/images/events/component",
+												directory: "public/images/news/component",
+												publicPath: "/images/news/component",
 											}),
 											alt: fields.text({
 												label: "Alt",
@@ -670,6 +670,139 @@ export default config({
 											label: "Bild",
 											directory: "public/images/news/component",
 											publicPath: "/images/news/component",
+										}),
+										alt: fields.text({
+											label: "Alt",
+										}),
+										caption: fields.text({
+											label: "Caption",
+										}),
+									},
+									{
+										label: "Einzelbild",
+									},
+								),
+							},
+						}),
+					},
+				}),
+			},
+		}),
+		media: collection({
+			label: "Medien",
+			slugField: "title",
+			parseSlugForSort: (slug) => {
+				return slug + "-" + String(new Date().getTime());
+			},
+			path: "src/content/media/*",
+			entryLayout: "content",
+			format: {
+				contentField: "content",
+			},
+			schema: {
+				authors: fields.array(
+					fields.object({
+						firstName: fields.text({ label: "Vorname" }),
+						lastName: fields.text({ label: "Nachname" }),
+						middleName: fields.text({ label: "Zweiter Vorname" }),
+					}),
+					{
+						label: "Autor(en)",
+					},
+				),
+				title: fields.slug({
+					name: { label: "Titel" },
+				}),
+				subTitle: fields.slug({
+					name: { label: "Titel" },
+				}),
+				date: fields.date({
+					label: "Datum",
+				}),
+				url: fields.text({
+					label: "URL",
+				}),
+				image: fields.image({
+					label: "Titelbild",
+					directory: "public/images/media/title",
+					publicPath: "/images/media/title",
+				}),
+				content: fields.mdx({
+					label: "Content",
+					options: {
+						image: {
+							directory: "public/images/media/content",
+							publicPath: "/images/media/content",
+						},
+					},
+					components: {
+						TextImage: wrapper({
+							label: "Text and Image",
+							description: "A container with text and an image",
+							schema: {
+								text: fields.text({
+									label: "Text",
+									description: "The text to display next to the image.",
+									validation: {
+										length: {
+											min: 20,
+										},
+									},
+								}),
+								image: fields.image({
+									label: "Image",
+									directory: "public/images/media/component",
+									publicPath: "/images/media/component",
+								}),
+								image_alt: fields.text({
+									label: "Image Alt",
+									description: "The alt text for the image",
+								}),
+							},
+						}),
+						ImageGallery: wrapper({
+							label: "Gallerie",
+							description: "Eine Gallerie mit Bildern",
+							// ContentView: (props) => {
+							// 	const images = props.value.images;
+							// 	if (!images.image) return null;
+							// 	return `<div>
+							// 			<img src="${images.image.filename}" alt="${images.alt}" />
+							// 		</div>`;
+							// },
+							schema: {
+								images: fields.array(
+									fields.object(
+										{
+											image: fields.image({
+												label: "Bild",
+												directory: "public/images/media/component",
+												publicPath: "/images/media/component",
+											}),
+											alt: fields.text({
+												label: "Alt",
+											}),
+											caption: fields.text({
+												label: "Caption",
+											}),
+										},
+										{
+											label: "Bilder",
+										},
+									),
+								),
+							},
+						}),
+						SingleImage: wrapper({
+							label: "Einzelbild",
+							description: "Ein einzelnes Bild",
+							schema: {
+								image: fields.object(
+									{
+										image: fields.image({
+											label: "Bild",
+											directory: "public/images/media/component",
+											publicPath: "/images/media/component",
 										}),
 										alt: fields.text({
 											label: "Alt",
