@@ -71,7 +71,7 @@
 </xsl:template>
 
 <xsl:template match="tei:titlePage">
-	<div class="p-6 bg-white shadow-md shadow-gray-500/50 w-full">
+	<div class="py-10 px-8 bg-white shadow-md shadow-gray-500/50 w-full">
 		<xsl:apply-templates/>
 	</div>
 </xsl:template>
@@ -148,7 +148,7 @@
 
 <xsl:template match="tei:div[@type='page']">
 	<xsl:apply-templates select=".//tei:pb"/>
-	<div class="p-6 basis-full bg-white shadow-md shadow-gray-500/50 w-full">
+	<div class="py-10 px-8 basis-full bg-white shadow-md shadow-gray-500/50 w-full">
 
 			<xsl:if test="./tei:div[./*[contains(@rendition, 'f')]]">
 				<div class="flex flex-row">

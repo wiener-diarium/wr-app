@@ -102,17 +102,17 @@ import { baseurl } from "../lib/baseurl.ts";
 		let hitDate = hit.day;
 		let hitEdition = hit.edition[0];
 		let hitPage = hit.page;
-		let hitDigit = hit.digitarium_issue;
+		// let hitDigit = hit.digitarium_issue;
 		let hidId = hit.id;
-		let hitGestrich = hit.gestrich;
+		// let hitGestrich = hit.gestrich;
 		if (hitEdition == "Ausgewählte Ausgaben: 18. Jahrhundert") {
 			let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 			let wr_app_id = hidId.split("__")[0].replace("wr_", "");
-			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed&mark=${hitString}`;
+			return `${baseurl}edition/${wr_app_id}?img=on&aside=open&mark=${hitString}`;
 		} else if (hitEdition == "Alle Ausgaben: Siebenjähriger Krieg") {
 			let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 			let wr_app_id = hidId.split("__")[0];
-			return `${baseurl}edition/${wr_app_id}?img=on&aside=closed&mark=${hitString}`;
+			return `${baseurl}edition/${wr_app_id}?img=on&aside=open&mark=${hitString}`;
 		} else {
 			return `${annoUrl}${hitDate}&seite=${hitPage}`;
 		}
@@ -174,22 +174,14 @@ import { baseurl } from "../lib/baseurl.ts";
 			return hitCorrections;
 		}
 	}
-	function hasText(hit: any, components: any) {
+	function hasText(hit: any, html: any, components: any) {
 		if (hit.has_fulltext && hit._snippetResult?.full_text.matchedWords.length > 0) {
-			return `<div class="flex flex-row">
-								<div>
-									<h5
-										class="pb-4 font-semibold"
-									>
-										Schlagworte im Kontext
-									</h5>
-									<p
-										class="pb-4"
-									>
-										${components.Snippet({ hit, attribute: "full_text" })}
-									</p>
-								</div>
-							</div>`;
+			return html`<div class="flex flex-row">
+				<div>
+					<h5 class="pb-4 font-semibold">Schlagworte im Kontext</h5>
+					<p class="pb-4">${components.Snippet({ hit, attribute: "full_text" })}</p>
+				</div>
+			</div>`;
 		} else {
 			return "";
 		}
@@ -245,7 +237,7 @@ import { baseurl } from "../lib/baseurl.ts";
 							href="${makeAnnoLink(hit)}"
 							aria-label="Link zu Dokument: ${hit.title}"
 						>
-							${hasText(hit, components)}
+							${hasText(hit, html, components)}
 							<div class="flex flex-row">
 								<div
 									class="max-w-[175px] basis-4/12 mx-2 p-1 border-2 rounded ${makeCorrections(
