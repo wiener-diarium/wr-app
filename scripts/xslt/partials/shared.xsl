@@ -22,7 +22,7 @@
 							<xsl:variable name="img-fn" select="substring-after(ancestor::tei:TEI//tei:surface[@xml:id=$graphic-id]/tei:graphic[1]/@url, 'anno:')"/>
 							<xsl:variable name="img-1" select="replace(replace(tokenize($img-fn, '_')[last()], '.jpg', ''), '.png', '')"/>
 							<xsl:choose>
-								<xsl:when test="starts-with($date, '1703') or starts-with($date, '1716') or starts-with($date, '1719') or starts-with($date, '1720') or starts-with($date, '1721'))">
+								<xsl:when test="starts-with($date, '1703') or starts-with($date, '1716') or starts-with($date, '1719') or starts-with($date, '1720') or starts-with($date, '1721')">
 										<xsl:variable name="img-url" select="'digit__'"/>
 										<xsl:variable name="graphic-url" select="concat($img-url, $img-1)"/>
 										<div class="my-2 basis-full page_switch" id="wr_page_{@n}">
