@@ -108,11 +108,11 @@ import { baseurl } from "../lib/baseurl.ts";
 		if (hitEdition == "Ausgewählte Ausgaben: 18. Jahrhundert") {
 			let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 			let wr_app_id = hidId.split("__")[0].replace("wr_", "");
-			return `${baseurl}edition/${wr_app_id}?img=on&aside=open&mark=${hitString}`;
+			return `${baseurl}edition/${wr_app_id}?img=on&lb=on&aside=closed&mark=${hitString}`;
 		} else if (hitEdition == "Alle Ausgaben: Siebenjähriger Krieg") {
 			let hitString = hit._snippetResult?.full_text.matchedWords.join("+");
 			let wr_app_id = hidId.split("__")[0];
-			return `${baseurl}edition/${wr_app_id}?img=on&aside=open&mark=${hitString}`;
+			return `${baseurl}edition/${wr_app_id}?img=on&lb=on&aside=closed&mark=${hitString}`;
 		} else {
 			return `${annoUrl}${hitDate}&seite=${hitPage}`;
 		}

@@ -142,12 +142,12 @@ for (const [key, value] of Object.entries(data)) {
 		if (events.length === 0) {
 			return;
 		} else if (events.length === 1) {
-			window.location.href = "edition/" + events[0].url + "?img=on";
+			window.location.href = "edition/" + events[0].url + "?img=on&lb=on&aside=closed";
 			return;
 		} else {
 			const calendar = document.getElementById("calendar");
 			calendar.innerHTML = events.map((event) => {
-				return `<a href="edition/${event.url}?img=on&aside=closed" class="inline p-2 hover:bg-gray-100 cursor">
+				return `<a href="edition/${event.url}?img=on&lb=on&aside=closed" class="inline p-2 hover:bg-gray-100 cursor">
 						Korpus: ${event.kind} | Ausgabe: ${event.label}
 					</a>`;
 			});
