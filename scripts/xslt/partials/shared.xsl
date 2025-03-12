@@ -25,7 +25,7 @@
 								<xsl:when test="starts-with($date, '1703') or starts-with($date, '1716') or starts-with($date, '1719') or starts-with($date, '1720') or starts-with($date, '1721'))">
 										<xsl:variable name="img-url" select="'digit__'"/>
 										<xsl:variable name="graphic-url" select="concat($img-url, $img-1)"/>
-										<div class="my-2 basis-full" id="wr_page_{@n}">
+										<div class="my-2 basis-full page_switch" id="wr_page_{@n}">
 												<span class="anchor-pb"></span>
 												<span class="pb text-gray-400" id="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
 										</div>
@@ -40,7 +40,7 @@
 										<xsl:variable name="img-dir-yearx" select="concat(substring($img-dir-year, 1, 3), 'x')"/>
 										<xsl:variable name="graphic-url" select="concat($img-url, $img-dir-yearx, '/', $img-dir-year, '/', $img-dir-month, '/', $img-dir1, '/', $img-1, '/full/full/0/default.jpg')"/> -->
 										<xsl:variable name="graphic-url" select="concat($img-url, $filedate, '|', @n, '|99.9|0' )"/>
-										<div class="my-2 basis-full" id="wr_page_{@n}">
+										<div class="my-2 basis-full page_switch" id="wr_page_{@n}">
 												<span class="anchor-pb"></span>
 												<span class="pb text-gray-400" id="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
 										</div>
@@ -52,7 +52,7 @@
                 <xsl:variable name="anno-url" select="'wrz|'"/>
                 <xsl:variable name="date" select="replace(substring-after(ancestor::tei:TEI/@xml:id, 'wr_'), '.xml', '')"/>
                 <xsl:variable name="graphic-url" select="concat($anno-url, replace($date, '-', ''), '|', @n, '|99.9|0')"/>
-                <div class="my-2 basis-full" id="wr_page_{@n}">
+                <div class="my-2 basis-full page_switch" id="wr_page_{@n}">
                     <span class="anchor-pb"></span>
                     <span class="pb text-gray-400" id="{$graphic-url}">-----[<xsl:value-of select="./@n"/>]-----</span>
                 </div>
