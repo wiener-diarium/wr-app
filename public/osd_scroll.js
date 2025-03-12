@@ -7,7 +7,7 @@ get container wrapper of osd viewer
 */
 // var container = document.getElementById("container_facs_2");
 // container.style.display = "none";
-const transcript = document.querySelectorAll("div.page_switch");
+// const transcript = document.querySelectorAll("div.page_switch");
 var height = window.innerHeight;
 var width = document.querySelector(".text").clientWidth;
 var container = document.getElementById("container_facs_1");
@@ -100,89 +100,89 @@ viewport position of next and previous element with class pb
 pb = pagebreaks
 ##################################################################
 */
-document.addEventListener(
-	"scroll",
-	debounce(() => {
-		// iterate over section elements
-		for (let el of transcript) {
-			// check if image is in viewport
-			if (isInViewport(el)) {
-				// get all image elements
-				var img = el.querySelector("span.pb");
-				// load new image
-				try {
-					loadNewImage(img);
-				} catch (error) {
-					console.log(error);
-				}
-			}
+// document.addEventListener(
+// 	"scroll",
+// 	debounce(() => {
+// 		// iterate over section elements
+// 		for (let el of transcript) {
+// 			// check if image is in viewport
+// 			if (isInViewport(el)) {
+// 				// get all image elements
+// 				var img = el.querySelector("span.pb");
+// 				// load new image
+// 				try {
+// 					loadNewImage(img);
+// 				} catch (error) {
+// 					console.log(error);
+// 				}
+// 			}
+// 		}
+// 	}, 150),
+// );
+
+// document.addEventListener(
+// 	"load",
+// 	debounce(() => {
+// 		// iterate over section elements
+// 		for (let el of transcript) {
+// 			// check if image is in viewport
+// 			if (isInViewport(el)) {
+// 				// get all image elements
+// 				var img = el.querySelector("span.pb");
+// 				// load new image
+// 				try {
+// 					loadNewImage(img);
+// 				} catch (error) {
+// 					console.log(error);
+// 				}
+// 			}
+// 		}
+// 	}, 150),
+// );
+
+window.addEventListener("scroll", function (event) {
+	// elements in view
+	var esiv = [];
+	for (let el of element) {
+		if (isInViewportAll(el)) {
+			esiv.push(el);
 		}
-	}, 150),
-);
-
-document.addEventListener(
-	"load",
-	debounce(() => {
-		// iterate over section elements
-		for (let el of transcript) {
-			// check if image is in viewport
-			if (isInViewport(el)) {
-				// get all image elements
-				var img = el.querySelector("span.pb");
-				// load new image
-				try {
-					loadNewImage(img);
-				} catch (error) {
-					console.log(error);
-				}
-			}
+	}
+	if (esiv.length !== 0) {
+		// first element in view
+		var eiv = esiv[0];
+		// get idx of element
+		var eiv_idx = Array.from(element).findIndex((el) => el === eiv);
+		idx = eiv_idx + 1;
+		prev_idx = eiv_idx - 1;
+		// test if element is in viewport position to load correct image
+		if (isInViewport(element[eiv_idx])) {
+			loadNewImage(element[eiv_idx]);
 		}
-	}, 150),
-);
+	}
+});
 
-// window.addEventListener("scroll", function (event) {
-// 	// elements in view
-// 	var esiv = [];
-// 	for (let el of element) {
-// 		if (isInViewportAll(el)) {
-// 			esiv.push(el);
-// 		}
-// 	}
-// 	if (esiv.length !== 0) {
-// 		// first element in view
-// 		var eiv = esiv[0];
-// 		// get idx of element
-// 		var eiv_idx = Array.from(element).findIndex((el) => el === eiv);
-// 		idx = eiv_idx + 1;
-// 		prev_idx = eiv_idx - 1;
-// 		// test if element is in viewport position to load correct image
-// 		if (isInViewport(element[eiv_idx])) {
-// 			loadNewImage(element[eiv_idx]);
-// 		}
-// 	}
-// });
-
-// window.addEventListener("load", function (event) {
-// 	// elements in view
-// 	var esiv = [];
-// 	for (let el of element) {
-// 		if (isInViewportAll(el)) {
-// 			esiv.push(el);
-// 		}
-// 	}
-// 	if (esiv.length !== 0) {
-// 		// first element in view
-// 		var eiv = esiv[0];
-// 		// get idx of element
-// 		var eiv_idx = Array.from(element).findIndex((el) => el === eiv);
-// 		idx = eiv_idx + 1;
-// 		prev_idx = eiv_idx - 1;
-// 		// test if element is in viewport position to load correct image
-// 		if (isInViewport(element[eiv_idx])) {
-// 			loadNewImage(element[eiv_idx]);
-// 		}
-// 	}
-// });
+window.addEventListener("load", function (event) {
+	// elements in view
+	var esiv = [];
+	for (let el of element) {
+		if (isInViewportAll(el)) {
+			esiv.push(el);
+		}
+	}
+	if (esiv.length !== 0) {
+		// first element in view
+		var eiv = esiv[0];
+		// get idx of element
+		var eiv_idx = Array.from(element).findIndex((el) => el === eiv);
+		idx = eiv_idx + 1;
+		prev_idx = eiv_idx - 1;
+		// test if element is in viewport position to load correct image
+		if (isInViewport(element[eiv_idx])) {
+			loadNewImage(element[eiv_idx]);
+		}
+	}
+});
 
 // simple implementation of debounce
 // prevents loading a lot of images when
@@ -266,55 +266,55 @@ function to check if element is close to top of window viewport
 ##################################################################
 */
 
+// function isInViewport(element) {
+// 	// Get the bounding client rectangle position in the viewport
+// 	let bounding = element.getBoundingClientRect();
+// 	let top = bounding.top;
+// 	let bottom = bounding.bottom;
+// 	// Checking part. Here the code checks if el is close to top of viewport.
+// 	if (top < 0 && bottom > 0) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
 function isInViewport(element) {
 	// Get the bounding client rectangle position in the viewport
-	let bounding = element.getBoundingClientRect();
-	let top = bounding.top;
-	let bottom = bounding.bottom;
+	var bounding = element.getBoundingClientRect();
 	// Checking part. Here the code checks if el is close to top of viewport.
-	if (top < 0 && bottom > 0) {
+	// console.log("Top");
+	// console.log(bounding.top);
+	// console.log("Bottom");
+	// console.log(bounding.bottom);
+	if (bounding.top <= 180 && bounding.bottom <= 210 && bounding.top >= 0 && bounding.bottom >= 0) {
 		return true;
 	} else {
 		return false;
 	}
 }
 
-// function isInViewport(element) {
-// 	// Get the bounding client rectangle position in the viewport
-// 	var bounding = element.getBoundingClientRect();
-// 	// Checking part. Here the code checks if el is close to top of viewport.
-// 	// console.log("Top");
-// 	// console.log(bounding.top);
-// 	// console.log("Bottom");
-// 	// console.log(bounding.bottom);
-// 	if (bounding.top <= 180 && bounding.bottom <= 210 && bounding.top >= 0 && bounding.bottom >= 0) {
-// 		return true;
-// 	} else {
-// 		return false;
-// 	}
-// }
-
 /*
 ##################################################################
 function to check if element is anywhere in window viewport
 ##################################################################
 */
-// function isInViewportAll(element) {
-// 	// Get the bounding client rectangle position in the viewport
-// 	var bounding = element.getBoundingClientRect();
-// 	// Checking part. Here the code checks if el is close to top of viewport.
-// 	// console.log("Top");
-// 	// console.log(bounding.top);
-// 	// console.log("Bottom");
-// 	// console.log(bounding.bottom);
-// 	if (
-// 		bounding.top >= 0 &&
-// 		bounding.left >= 0 &&
-// 		bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-// 		bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-// 	) {
-// 		return true;
-// 	} else {
-// 		return false;
-// 	}
-// }
+function isInViewportAll(element) {
+	// Get the bounding client rectangle position in the viewport
+	var bounding = element.getBoundingClientRect();
+	// Checking part. Here the code checks if el is close to top of viewport.
+	// console.log("Top");
+	// console.log(bounding.top);
+	// console.log("Bottom");
+	// console.log(bounding.bottom);
+	if (
+		bounding.top >= 0 &&
+		bounding.left >= 0 &&
+		bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+	) {
+		return true;
+	} else {
+		return false;
+	}
+}
