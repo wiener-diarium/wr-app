@@ -137,7 +137,13 @@ import { baseurl } from "../lib/baseurl.ts";
 	}
 	function whichEdition(hit: any) {
 		let hitDay = String(hit.day);
-		if (hitDay.startsWith("1703")) {
+		if (
+			hitDay.startsWith("1703") ||
+			hitDay.startsWith("1716") ||
+			hitDay.startsWith("1719") ||
+			hitDay.startsWith("1720") ||
+			hitDay.startsWith("1721")
+		) {
 			return makeDigitImgUrl(hit);
 		} else {
 			return makeAnnoImgUrl(hit);
