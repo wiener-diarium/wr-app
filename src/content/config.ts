@@ -35,7 +35,7 @@ export const collections = {
 			urldate: z
 				.string()
 				.optional()
-				.transform((str) => (str ? new Date(str) : "")),
+				.transform((str: string) => (str ? new Date(str) : "")),
 		}),
 	}),
 	presentations: defineCollection({
@@ -54,7 +54,7 @@ export const collections = {
 			date: z
 				.string()
 				.optional()
-				.transform((str) => (str ? new Date(str) : "")),
+				.transform((str: string) => (str ? new Date(str) : "")),
 			place: z.string().optional(),
 			url: z.string().optional(),
 		}),

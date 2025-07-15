@@ -7,12 +7,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/public/**.@(gif|jp
 
 export function getImageImport(path: string) {
 	/** Upstream type issue. */
-	// eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-explicit-any
-	if (!path.startsWith("/")) return path as any;
+
+	if (!path.startsWith("/")) return path;
 
 	const publicPath = join("/public", path);
 	const image = images[publicPath];
 	assert(image, `Missing image "${publicPath}".`);
 
-	return image();
+	return image() as Promise<{ default: ImageMetadata }>;
 }

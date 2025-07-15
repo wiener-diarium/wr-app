@@ -38,7 +38,7 @@
 					<xsl:apply-templates select="self::tei:pb" />
 				</xsl:for-each>
 
-				<div class="bg-white shadow-md shadow-gray-500/50 py-10 px-8">
+				<div class="bg-white shadow-md shadow-gray-500/50 py-10 px-8 min-height-[calc(100vh-4rem)]">
 					<xsl:for-each select="current-group()/parent::tei:docTitle|current-group()/parent::tei:imprimatur">
 						<xsl:choose>
 							<xsl:when test="self::tei:docTitle">
