@@ -17,7 +17,7 @@ export const components = { TextImage, SingleImage, ImageGallery };
 
 export async function getStaticPaths() {
 	const news = await getCollection("news");
-	return news.map((news) => ({
+	return news.map((news: CollectionEntry<"news">) => ({
 		params: { slug: news.slug },
 		props: { news: news },
 	}));

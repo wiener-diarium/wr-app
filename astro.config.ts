@@ -53,7 +53,6 @@ export default defineConfig({
 		format: "file",
 	},
 	output: "static",
-	// output: "static",
 	server: {
 		port: 3000,
 	},

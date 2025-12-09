@@ -17,7 +17,7 @@ export const components = { TextImage, ImageGallery, SingleImage };
 
 export async function getStaticPaths() {
 	const events = await getCollection("events");
-	return events.map((eve) => ({
+	return events.map((eve: CollectionEntry<"events">) => ({
 		params: { slug: eve.slug },
 		props: { event: eve },
 	}));
