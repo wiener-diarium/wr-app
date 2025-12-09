@@ -66,8 +66,6 @@ if (String(img).includes("digit__")) {
 	// var img = anno_url + img;
 }
 
-console.log(img);
-
 var imageURL = {
 	type: "image",
 	url: img,
@@ -224,14 +222,12 @@ function loadNewImage(new_item) {
 			var new_image_part = new_image.split("-")[0].replace("digit__", "");
 			var new_image =
 				new_image.replace("digit__", arche_url + new_image_part + "/") + arche_url_suffix;
-			console.log(new_image);
 		} else {
 			// var new_image = anno_url + new_image;
 			var new_image = new_image.split("|");
 			var img_year = new_image[1];
 			var img_page = String(Number(new_image[2]) - 1).padStart(3, "0");
 			var new_image = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
-			console.log(new_image);
 		}
 		var old_image = viewer.world.getItemAt(0);
 		if (old_image) {
