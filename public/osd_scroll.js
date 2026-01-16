@@ -59,11 +59,11 @@ if (String(img).includes("digit__")) {
 	var img_part = img.split("-")[0].replace("digit__", "");
 	var img = img.replace("digit__", arche_url + img_part + "/") + arche_url_suffix;
 } else {
-	var img = img.split("|");
-	var img_year = img[1];
-	var img_page = String(Number(img[2]) - 1).padStart(3, "0");
-	var img = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
-	// var img = anno_url + img;
+	// var img = img.split("|");
+	// var img_year = img[1];
+	// var img_page = String(Number(img[2]) - 1).padStart(3, "0");
+	// var img = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
+	var img = anno_url + img;
 }
 
 var imageURL = {
