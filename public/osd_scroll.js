@@ -12,7 +12,7 @@ var height = window.innerHeight;
 var width = document.querySelector(".text").clientWidth;
 var container = document.getElementById("container_facs_1");
 var wrapper = document.getElementsByClassName("facsimiles")[0];
-var anno_url = "https://anno.onb.ac.at/cgi-content/annoshow?call=";
+var anno_url = "https://iiif.onb.ac.at/images/ANNO/";
 var digit_url = "https://iiif.acdh.oeaw.ac.at/iiif/images/digitarium/";
 var arche_url = "https://id.acdh.oeaw.ac.at/digitarium/facs/";
 var arche_url_suffix = ".png?format=image%2Fpng&param=full/600,/0/default.png";
@@ -63,7 +63,13 @@ if (String(img).includes("digit__")) {
 	// var img_year = img[1];
 	// var img_page = String(Number(img[2]) - 1).padStart(3, "0");
 	// var img = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
-	var img = anno_url + img;
+	var img =
+		anno_url +
+		"wrz" +
+		img.split("|")[1] +
+		"/" +
+		parseInt(img.split("|")[2]).toString().padStart(8, "0") +
+		"/full/full/0/default.jpg";
 }
 
 var imageURL = {

@@ -73,7 +73,7 @@ import { baseurl } from "../lib/baseurl.ts";
 
 	var project_collection_name = "gestrich_index";
 	const annoUrl = "https://anno.onb.ac.at/cgi-content/anno?aid=wrz&datum=";
-	const annoImgUrl = "https://anno.onb.ac.at/cgi-content/annoshow?call=wrz|";
+	const annoImgUrl = "https://iiif.onb.ac.at/images/ANNO/";
 	const acdhIIIF = "https://iiif.acdh.oeaw.ac.at/iiif/images/digitarium/";
 	const archeURL = "https://id.acdh.oeaw.ac.at/digitarium/facs/";
 	const archeURLSuffix = ".png?format=image%2Fpng&param=full/150,/0/default.png";
@@ -122,7 +122,7 @@ import { baseurl } from "../lib/baseurl.ts";
 	function makeAnnoImgUrl(hit: any) {
 		let hitDate = hit.day;
 		let hitPage = hit.page;
-		return `${annoImgUrl}${hitDate}|${hitPage}|10.0|0`;
+		return `${annoImgUrl}wrz${hitDate}/${parseInt(hitPage).toString().padStart(8, "0")}/full/,400/0/default.jpg`;
 	}
 	function makeDigitImgUrl(hit: any) {
 		// let part1 = `${date.slice(0, 3)}x`;
