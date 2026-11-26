@@ -64,9 +64,11 @@ if (String(img).includes("digit__")) {
 	// var img_page = String(Number(img[2]) - 1).padStart(3, "0");
 	// var img = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
 	var img_year = img.split("|")[1];
-	if (img_year == "17050103") {
-		img_year = "17050107";
-	}
+	// if (img_year == "17050103") {
+	// 	img_year = "17050107";
+	// } else if (img_year == "17050107") {
+	// 	img_year = "17050110";
+	// }
 	var img_page = parseInt(img.split("|")[2]).toString().padStart(8, "0");
 	var img = anno_url + "wrz" + img_year + "/" + img_page + "/full/full/0/default.jpg";
 }
@@ -231,8 +233,8 @@ function loadNewImage(new_item) {
 			// var new_image = anno_url + new_image;
 			var new_image = new_image.split("|");
 			var img_year = new_image[1];
-			var img_page = String(Number(new_image[2]) - 1).padStart(3, "0");
-			var new_image = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
+			var img_page = String(Number(new_image[2])).padStart(8, "0");
+			var new_image = anno_url + "wrz" + img_year + "/" + img_page + "/full/full/0/default.jpg";
 		}
 		var old_image = viewer.world.getItemAt(0);
 		if (old_image) {
