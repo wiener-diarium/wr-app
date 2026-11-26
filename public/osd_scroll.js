@@ -63,13 +63,12 @@ if (String(img).includes("digit__")) {
 	// var img_year = img[1];
 	// var img_page = String(Number(img[2]) - 1).padStart(3, "0");
 	// var img = arche_url + img_year + "/" + img_year + "-" + img_page + arche_url_suffix;
-	var img =
-		anno_url +
-		"wrz" +
-		img.split("|")[1] +
-		"/" +
-		parseInt(img.split("|")[2]).toString().padStart(8, "0") +
-		"/full/full/0/default.jpg";
+	var img_year = img.split("|")[1];
+	if (img_year == "17050103") {
+		img_year = "17050107";
+	}
+	var img_page = parseInt(img.split("|")[2]).toString().padStart(8, "0");
+	var img = anno_url + "wrz" + img_year + "/" + img_page + "/full/full/0/default.jpg";
 }
 
 var imageURL = {

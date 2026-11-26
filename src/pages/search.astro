@@ -122,6 +122,9 @@ import { baseurl } from "../lib/baseurl.ts";
 	function makeAnnoImgUrl(hit: any) {
 		let hitDate = hit.day;
 		let hitPage = hit.page;
+		if (hitDate == "17050103") {
+			hitDate = "17050107";
+		}
 		return `${annoImgUrl}wrz${hitDate}/${parseInt(hitPage).toString().padStart(8, "0")}/full/,400/0/default.jpg`;
 	}
 	function makeDigitImgUrl(hit: any) {
